@@ -12,7 +12,7 @@ import { cx } from "@/lib/format";
 export function BikeImage({
   bike, brandName, className, sizes = "100vw", priority, variant = "tile",
 }: {
-  bike: Pick<BikeModel, "id" | "name" | "year" | "imageUrl" | "officialUrl">;
+  bike: Pick<BikeModel, "id" | "name" | "year" | "imageUrl" | "officialUrl"> & { yearBasis?: BikeModel["yearBasis"] };
   brandName?: string;
   className?: string;
   sizes?: string;
@@ -56,7 +56,7 @@ export function BikeImage({
     );
   }
 
-  return <MissingBikeImage className={root} brandName={brandName} name={bike.name} year={bike.year} officialUrl={variant === "detail" ? bike.officialUrl : null} variant={variant} />;
+  return <MissingBikeImage className={root} brandName={brandName} name={bike.name} year={bike.yearBasis === "undated" ? undefined : bike.year} officialUrl={variant === "detail" ? bike.officialUrl : null} variant={variant} />;
 }
 
 /** Deliberately designed "no verified photo" state — typographic, never a fake bicycle. */

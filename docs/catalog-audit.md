@@ -7,13 +7,13 @@ Generated 2026-11-16 by `npm run audit` from the live data files. Every figure b
 |---|---|
 | Brands | 201 |
 | Brands with at least one bicycle model | 46 |
-| Bicycle models (model × year × variant records) | 573 |
-| — imported from official manufacturer pages | 407 |
+| Bicycle models (model × year × variant records) | 571 |
+| — imported from official manufacturer pages | 405 |
 | — researched from cited sources (unverified until reviewed) | 80 |
 | — earlier editorial seed records (unverified) | 86 |
-| Verified model records (Verified Official / Distributor / Cross-Verified) | 407 |
-| Models with a verified, licensed product photo | 2 |
-| Models without a verified photo (designed placeholder + official link) | 571 |
+| Verified model records (Verified Official / Distributor / Cross-Verified) | 405 |
+| Models with a verified, licensed product photo | 407 |
+| Models without a verified photo (designed placeholder + official link) | 164 |
 | Models with unverified specifications | 166 |
 | Component products (all types) | 627 |
 | Wheelset products | 251 |
@@ -22,34 +22,34 @@ Generated 2026-11-16 by `npm run audit` from the live data files. Every figure b
 ## Bicycle models by category
 | Category | Models | Official imports | Verified photos |
 |---|---|---|---|
-| Road | 174 | 122 | 1 |
-| MTB | 134 | 97 | 1 |
-| Gravel | 72 | 65 | 0 |
+| Road | 173 | 121 | 122 |
+| MTB | 134 | 97 | 98 |
+| Gravel | 71 | 64 | 64 |
 | Urban & Hybrid | 6 | 0 | 0 |
-| Electric | 119 | 97 | 0 |
-| Folding | 39 | 19 | 0 |
+| Electric | 119 | 97 | 97 |
+| Folding | 39 | 19 | 19 |
 | BMX | 7 | 0 | 0 |
-| Specialty | 22 | 7 | 0 |
+| Specialty | 22 | 7 | 7 |
 
 ## Image coverage — every bicycle model
 Each model is classified from the product-image registry. An image counts only if it is the manufacturer’s own photo for that exact product (or a licensed photo verified against the model), downloaded and validated, and attached to no other record.
 
 | Class | Models | Share |
 |---|---|---|
-| Verified official image | 0 | 0.0% |
+| Verified official image | 405 | 70.9% |
 | Verified authorised-distributor image | 0 | 0.0% |
-| Licensed product image | 2 | 0.3% |
+| Licensed product image | 2 | 0.4% |
 | Unverified image | 0 | 0.0% |
-| Missing image | 571 | 99.7% |
+| Missing image | 164 | 28.7% |
 
 | Brand | Models | Verified official image | Verified authorised-distributor image | Licensed product image | Unverified image | Missing image |
 |---|---|---|---|---|---|---|
-| Specialized | 134 | 0 | 0 | 0 | 0 | 134 |
-| Canyon | 106 | 0 | 0 | 0 | 0 | 106 |
-| Santa Cruz | 83 | 0 | 0 | 0 | 0 | 83 |
-| Cervélo | 57 | 0 | 0 | 0 | 0 | 57 |
+| Specialized | 134 | 124 | 0 | 0 | 0 | 10 |
+| Canyon | 104 | 100 | 0 | 0 | 0 | 4 |
+| Santa Cruz | 83 | 82 | 0 | 0 | 0 | 1 |
+| Cervélo | 57 | 56 | 0 | 0 | 0 | 1 |
 | Pacific | 46 | 0 | 0 | 0 | 0 | 46 |
-| Tern | 45 | 0 | 0 | 0 | 0 | 45 |
+| Tern | 45 | 43 | 0 | 0 | 0 | 2 |
 | Polygon | 28 | 0 | 0 | 2 | 0 | 26 |
 | Trek | 6 | 0 | 0 | 0 | 0 | 6 |
 | Giant | 6 | 0 | 0 | 0 | 0 | 6 |
@@ -110,12 +110,14 @@ Site access: Cloudflare block (HTTP 403) for automated clients on every path inc
 ## Image audit
 | Check | Previous release (63dd2f2) | Now |
 |---|---|---|
-| Bike records pictured | 94 | 573 |
+| Bike records pictured | 94 | 571 |
 | Records shown with a photo shared by other models | 91 | 0 |
 | Most models sharing one photo | 16 | 1 |
 | Records shown with category / cyclist photography instead of the product | 94 | 0 |
-| Records with a verified photo of the actual model | 0 | 2 |
+| Records with a verified photo of the actual model | 0 | 407 |
 | Same image file assigned to different models | — | 0 |
+| Broken image references (registered file missing on disk) | — | 0 |
+| Wheelsets / components with a verified official image | — | 187 |
 
 Broken or wrong image references fixed: **94** records that showed category photography now show either their own verified photo or the VELOX placeholder. No product image URL is hot-linked; `npm run validate:images` checks files, formats, dimensions, checksums and duplicate assignments.
 
@@ -123,6 +125,8 @@ Broken or wrong image references fixed: **94** records that showed category phot
 | Check | Found |
 |---|---|
 | Duplicate listings removed during official import (colour / size pages of the same model-year) | 65 |
+| Duplicate records merged because their official photo proved they were the same bike | 2 |
+| Product images rejected because the identical file was already assigned to another record | see validate:images / harvest logs |
 | Wheelset listings rejected during import (regional duplicates, pre-orders, bundles, outlet one-offs and non-wheelset listings) | 50 |
 | Bike records sharing brand + model + year + variant | 0 |
 | Bike records sharing the same official product URL | 0 |
@@ -131,8 +135,8 @@ Broken or wrong image references fixed: **94** records that showed category phot
 ## Prices
 | Price basis | Bikes | Components |
 |---|---|---|
-| Published manufacturer price (MSRP) | 399 | 204 |
-| — of which published in USD and converted to IDR (labelled) | 362 | 204 |
+| Published manufacturer price (MSRP) | 397 | 204 |
+| — of which published in USD and converted to IDR (labelled) | 360 | 204 |
 | Retailer / distributor price | 0 | 0 |
 | VELOX estimate (seed data, labelled “Estimated”) | 66 | 321 |
 | No price (shown as Not Available) | 107 | 102 |
@@ -142,7 +146,7 @@ USD prices are converted at Bank Indonesia JISDOR (4 Nov 2026): Rp 18,148 per US
 ## Model years
 | Basis | Records |
 |---|---|
-| Manufacturer model year (official data) | 240 |
+| Manufacturer model year (official data) | 238 |
 | Listed in the official 2026 range — manufacturer publishes no model year (Specialized, Tern) | 167 |
 | Researched records (year from the cited source) | 80 |
 | Seed records whose model year has not been checked | 86 |
@@ -150,14 +154,14 @@ USD prices are converted at Bank Indonesia JISDOR (4 Nov 2026): Rp 18,148 per US
 ## Specification completeness — official imports
 | Field | Filled | Not Available |
 |---|---|---|
-| frameMaterial | 297 | 110 |
-| groupset | 339 | 68 |
-| drivetrain | 174 | 233 |
-| brakes | 362 | 45 |
-| wheelset | 353 | 54 |
-| tires | 324 | 83 |
-| wheelSize | 179 | 228 |
-| weightKg | 397 | 10 |
+| frameMaterial | 295 | 110 |
+| groupset | 337 | 68 |
+| drivetrain | 174 | 231 |
+| brakes | 360 | 45 |
+| wheelset | 352 | 53 |
+| tires | 324 | 81 |
+| wheelSize | 179 | 226 |
+| weightKg | 395 | 10 |
 
 Fields are filled only when the manufacturer publishes them; nothing is inferred.
 
@@ -165,7 +169,7 @@ Fields are filled only when the manufacturer publishes them; nothing is inferred
 | Brand | Models |
 |---|---|
 | Specialized | 134 |
-| Canyon | 106 |
+| Canyon | 104 |
 | Santa Cruz | 83 |
 | Cervélo | 57 |
 | Pacific | 46 |
@@ -258,5 +262,7 @@ Brands named in the brief that still have fewer than three model records — the
 
 ## Sources that could not be read automatically
 - polygonbikes.com, rodalink.com, pacific-bike.com, scott-sports.com, orbea.com — refuse automated access (HTTP 403); researched via search-indexed official pages instead
+- merida-bikes.com — readable, but product specs load separately and images sit on merida-cdn.m-c-g.net (outside the allowed network); adapter not yet built
+- web.archive.org — refused by the environment's network policy, so archived copies of blocked official pages could not be used
 - trekbikes.com, giant-bicycles.com, cannondale.com — product sitemaps hosted on hosts outside the allowed network
 - enve.com, reservewheels.com, farsports.com, superteamwheels.com, zipp.com — redirect to hosts outside the allowed network

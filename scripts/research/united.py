@@ -11,12 +11,20 @@ def get_img(u):
     u = urllib.parse.quote(u, safe=":/%?=&")
     with urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "VELOX-catalog-research/1.0"}), timeout=40) as r:
         return r.status, r.headers.get("Content-Type", ""), r.read(), u
+done = set()
+if os.path.exists("united.jsonl"):
+    for l in open("united.jsonl"):
+        try: done.add(json.loads(l)["url"])
+        except Exception: pass
+for l in open("united_skipped.txt") if os.path.exists("united_skipped.txt") else []: done.add(l.strip())
 out, seen = [], {}
 for i, u in enumerate(urls):
+    if u in done: continue
     try: s, f, h = fetch(u)
     except Exception as e: print(i, u, "ERR", e, flush=True); time.sleep(1); continue
     prod = next((b for b in ld_blocks(h) if b.get("@type") == "Product"), None)
-    if not prod: time.sleep(0.8); continue
+    if not prod:
+        open("united_skipped.txt", "a").write(u + "\n"); time.sleep(0.8); continue
     cat = re.search(r'category-info">([^<]*)<', h); cat = H.unescape(cat.group(1)).strip() if cat else None
     t = text(h)
     m = re.search(r"\| (?:Product Overview|Geometry) \|.*?\| %s \|(.*?)\| Geometry \|" % re.escape(prod["name"]), t)
@@ -49,7 +57,8 @@ for i, u in enumerate(urls):
                     rec["image"] = {"file": f"/media/products/{slug}.webp", "original": qu, "contentType": ct, "w": w, "h": hh, "width": img.size[0], "height": img.size[1], "sha256": hashlib.sha256(b).hexdigest(), "how": "Open Graph image (site's cached rendition of the schema.org product image)" if og else "schema.org Product image"}
             else: rec["imageIssue"] = f"rejected: HTTP {st} {ct} {w}x{hh}"
         except Exception as e: rec["imageIssue"] = f"download failed: {str(e)[:120]}"
+    open("united.jsonl", "a").write(json.dumps(rec, ensure_ascii=False) + "\n")
     out.append(rec); print(i, rec["name"], "|", cat, "|", rec["price"], "| img" if rec["image"] else "| " + str(rec.get("imageIssue")), flush=True)
     time.sleep(1.0)
-json.dump(out, open("united.json", "w"), indent=1, ensure_ascii=False)
+json.dump([json.loads(l) for l in open("united.jsonl")], open("united.json", "w"), indent=1, ensure_ascii=False)
 print("DONE", len(out))

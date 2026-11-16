@@ -8,8 +8,7 @@ import { useHydrated, useStore } from "@/lib/store";
 import { estimateValue } from "@/lib/garage";
 import { summarize, SLOT_LABEL } from "@/lib/builds";
 import type { GarageLogEntry } from "@/lib/types";
-import { Photo } from "@/components/Photo";
-import { mediaForCategory } from "@/data/media";
+import { BikeImage, MissingBikeImage } from "@/components/BikeImage";
 import { Button, ButtonLink, EmptyState, Field, SpecRows, Stat } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
 import { cx, formatMoney, titleCase, uid } from "@/lib/format";
@@ -63,7 +62,7 @@ export function GarageBikeProfile({ id }: { id: string }) {
       <div className="container-x pt-8"><Link href="/garage" className="inline-flex items-center gap-2 text-sm text-muted hover:text-fg"><ArrowLeft className="h-4 w-4" /> My Garage</Link></div>
       <section className="container-x grid gap-10 pb-12 pt-8 lg:grid-cols-[1.2fr_1fr] [&>*]:min-w-0">
         <div className="relative aspect-[4/3] overflow-hidden">
-          <Photo asset={mediaForCategory(category, model?.subcategory)} sizes="(min-width: 1024px) 55vw, 100vw" className="absolute inset-0 h-full w-full" label="representative" />
+          {model ? <BikeImage bike={model} brandName={cat.brandById.get(model.brandId)?.name} variant="detail" sizes="(min-width: 1024px) 55vw, 100vw" className="absolute inset-0 h-full w-full" /> : <MissingBikeImage className="absolute inset-0" brandName={g.manual?.brand ?? "Custom build"} name={g.manual?.model ?? g.nickname} year={g.manual?.year ?? undefined} variant="detail" />}
         </div>
         <div>
           <p className="eyebrow">{model ? "Catalogue bike" : g.manual ? "Unlisted bike" : "Custom build"}</p>

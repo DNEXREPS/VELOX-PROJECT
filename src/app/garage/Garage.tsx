@@ -11,6 +11,7 @@ import { STATUS_TEXT, type CompatStatus } from "@/lib/compat";
 import type { BrakeType, CategoryId, GarageBike, WheelSize } from "@/lib/types";
 import { Photo } from "@/components/Photo";
 import { mediaForCategory } from "@/data/media";
+import { BikeImage, MissingBikeImage } from "@/components/BikeImage";
 import { ComponentGlyph } from "@/components/Glyphs";
 import { Button, ButtonLink, EmptyState, Field, PageHeader, Price, Segmented, Skeleton } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
@@ -90,7 +91,7 @@ export function Garage() {
                 const title = bike ? `${cat.brandById.get(bike.brandId)?.name} ${bike.name} (${bike.year})` : `${comp!.manufacturer} ${comp!.name}`;
                 return (
                   <li key={w.id} className="flex items-center gap-4 border-b hairline py-4">
-                    {bike ? <Photo asset={mediaForCategory(bike.category, bike.subcategory)} sizes="96px" className="h-14 w-24 shrink-0" /> : <ComponentGlyph type={comp!.type} className="h-10 w-10 text-muted" />}
+                    {bike ? <BikeImage bike={bike} variant="thumb" sizes="96px" className="h-14 w-24 shrink-0" /> : <ComponentGlyph type={comp!.type} className="h-10 w-10 text-muted" />}
                     <Link href={bike ? `/bikes/${bike.slug}` : `/components/${comp!.id}`} className="min-w-0 flex-1 truncate text-[15px] link-u">{title}</Link>
                     <Price price={bike ? bike.price : comp!.price} className="hidden text-sm sm:inline-flex" />
                     <button onClick={() => wishlistStore.set((l) => l.filter((x) => x.id !== w.id))} className="text-subtle hover:text-bad" aria-label={`Remove ${title} from wishlist`}><X className="h-4 w-4" /></button>
@@ -116,7 +117,7 @@ function GarageTile({ g }: { g: GarageBike }) {
     <li className="group relative border-t hairline pt-5">
       <Link href={`/garage/${g.id}`} className="absolute inset-0 z-10" aria-label={`Open ${g.nickname}`} />
       <div className="relative aspect-[4/3] overflow-hidden">
-        <Photo asset={mediaForCategory(category, model?.subcategory)} sizes="(min-width: 768px) 33vw, 100vw" className="absolute inset-0 h-full w-full" imgClassName="transition-transform duration-[1200ms] group-hover:scale-[1.05]" label="representative" />
+        {model ? <BikeImage bike={model} brandName={cat.brandById.get(model.brandId)?.name} sizes="(min-width: 768px) 33vw, 100vw" className="absolute inset-0 h-full w-full" /> : <MissingBikeImage className="absolute inset-0" brandName={g.manual?.brand ?? "Custom build"} name={g.manual?.model ?? g.nickname} year={g.manual?.year ?? undefined} />}
       </div>
       <div className="mt-4 flex items-start justify-between gap-3">
         <div className="min-w-0"><p className="label-tech truncate">{sub}</p><h3 className="mt-1 truncate text-lg font-medium tracking-tight">{g.nickname}</h3></div>

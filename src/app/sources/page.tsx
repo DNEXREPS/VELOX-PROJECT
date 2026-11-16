@@ -5,6 +5,8 @@ import { BIKES } from "@/data/bikes";
 import { COMPONENTS } from "@/data/components";
 import { MEDIA_LIST } from "@/data/media";
 import { OFFICIAL_SOURCES, PENDING_BRANDS } from "@/data/research";
+import { IMPORT_LOG } from "@/data/import-log";
+import { PRODUCT_IMAGES } from "@/data/product-images";
 import { PageHeader } from "@/components/ui";
 import { isVerified, SOURCE_TYPE_LABEL, STATUS_LABEL, titleCase } from "@/lib/format";
 import type { VerificationStatus } from "@/lib/types";
@@ -30,14 +32,14 @@ export default function Page() {
           <div className="mt-6 grid grid-cols-2 gap-px bg-line sm:grid-cols-4">
             {statuses.map((s) => <div key={s} className="bg-ink-950 p-5"><p className="tabular text-3xl font-medium tracking-tight">{all.filter((r) => r.provenance.status === s).length}</p><p className="label-tech mt-1">{STATUS_LABEL[s]}</p></div>)}
           </div>
-          <p className="mt-4 text-sm text-muted">{all.filter((r) => isVerified(r.provenance.status)).length} verified records (bearing designations by ISO standard, and brands confirmed by multiple independent sources). Product specifications for bikes and most components are still unverified seed data, and every price is a VELOX estimate.</p>
+          <p className="mt-4 text-sm text-muted">{all.filter((r) => isVerified(r.provenance.status)).length} verified records: models and wheelsets imported from official manufacturer pages, bearing designations by ISO standard, and brands confirmed by multiple independent sources. Older seed records remain unverified and their prices are VELOX estimates. Run <code className="font-mono text-xs">npm run audit</code> for the full catalogue audit.</p>
           <h3 className="label-tech mb-2 mt-8">Source types cited</h3>
           <div className="flex flex-wrap gap-2">{[...sourceTypes.entries()].sort((a, b) => b[1] - a[1]).map(([t, n]) => <span key={t} className="rounded-full border hairline px-3 py-1 text-xs text-muted">{SOURCE_TYPE_LABEL[t as keyof typeof SOURCE_TYPE_LABEL]} · {n}</span>)}</div>
         </section>
 
         <section>
           <h2 className="text-2xl font-medium tracking-tight">Research pass — 16 November 2026</h2>
-          <p className="mt-2 max-w-2xl text-sm text-muted">{researchedBrands.length} brand records were researched through web search. Facts are recorded only where a source stated them; conflicts are left empty and noted. Official manufacturer sites could not be fetched from the build environment, so no product data was imported from them yet.</p>
+          <p className="mt-2 max-w-2xl text-sm text-muted">{researchedBrands.length} brand records were researched through web search. Facts are recorded only where a source stated them; conflicts are left empty and noted. Official manufacturer product data is imported separately — see below.</p>
           <div className="mt-6 overflow-x-auto">
             <table className="w-full min-w-[720px] text-sm">
               <thead><tr className="border-b hairline text-left">{["Brand", "Status", "Confidence", "Sources", "Notes"].map((h) => <th key={h} className="py-2 pr-4 font-normal label-tech">{h}</th>)}</tr></thead>
@@ -54,6 +56,54 @@ export default function Page() {
           </div>
         </section>
 
+        <section>
+          <h2 className="text-2xl font-medium tracking-tight">Official manufacturer imports — {IMPORT_LOG.date}</h2>
+          <p className="mt-2 max-w-2xl text-sm text-muted">Read from the manufacturers' own product pages with robots.txt respected and at least 1.2 s between requests. Only published fields are filled. USD prices are converted at {IMPORT_LOG.usdIdrRate.source} (Rp {IMPORT_LOG.usdIdrRate.rate.toLocaleString("en-US")}/USD) and labelled as conversions.</p>
+          <div className="mt-6 overflow-x-auto">
+            <table className="w-full min-w-[640px] text-sm">
+              <thead><tr className="border-b hairline text-left">{["Source", "Listings read", "Duplicates removed", "Records in catalogue"].map((h) => <th key={h} className="py-2 pr-4 font-normal label-tech">{h}</th>)}</tr></thead>
+              <tbody>
+                {IMPORT_LOG.bikes.map((x) => (
+                  <tr key={x.source} className="border-b hairline">
+                    <td className="py-3 pr-4"><a href={x.url} target="_blank" rel="noreferrer" className="link-u">{x.source}</a></td>
+                    <td className="tabular py-3 pr-4 text-muted">{x.listingsRead}</td>
+                    <td className="tabular py-3 pr-4 text-muted">{x.duplicateListingsDropped}</td>
+                    <td className="tabular py-3 text-muted">{BIKES.filter((b) => b.provenance.status === "verified-official" && b.provenance.sources[0]?.label.startsWith(x.source.split(" ")[0])).length}</td>
+                  </tr>
+                ))}
+                <tr className="border-b hairline">
+                  <td className="py-3 pr-4">{IMPORT_LOG.wheels.source}</td>
+                  <td className="tabular py-3 pr-4 text-muted">{IMPORT_LOG.wheels.listingsRead}</td>
+                  <td className="tabular py-3 pr-4 text-muted">{IMPORT_LOG.wheels.rejected}</td>
+                  <td className="tabular py-3 text-muted">{COMPONENTS.filter((c) => c.type === "wheelset" && c.provenance.status === "verified-official").length} wheelsets</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 className="label-tech mb-2 mt-8">Could not be read automatically</h3>
+          <ul className="space-y-1 text-sm text-muted">{IMPORT_LOG.blocked.map((b) => <li key={b}>· {b}</li>)}</ul>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-medium tracking-tight">Product photography</h2>
+          <p className="mt-2 max-w-2xl text-sm text-muted">
+            A model is pictured only with a photo confirmed by eye to show that model (or the same frame generation) and that VELOX is licensed to display. {PRODUCT_IMAGES.length} model{PRODUCT_IMAGES.length === 1 ? "" : "s"} currently qualify; every other model shows the VELOX placeholder with a link to the manufacturer’s own photos. Manufacturer photography will be added once licences are recorded. In the previous release {IMPORT_LOG.imageBaseline.recordsOnSharedPhotos} of {IMPORT_LOG.imageBaseline.bikes} models were shown with one of {IMPORT_LOG.imageBaseline.distinctPhotos} shared category photos — that is no longer possible.
+          </p>
+          <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {PRODUCT_IMAGES.map((i) => {
+              const bike = BIKES.find((b) => b.id === i.subjectId);
+              return (
+                <li key={i.id}>
+                  <div className="relative aspect-[4/3] overflow-hidden bg-ink-900"><Image src={i.primary_image_url} alt={i.alt} fill sizes="360px" className="object-contain" /></div>
+                  <p className="mt-2 text-sm">{bike ? `${BRANDS.find((b) => b.id === bike.brandId)?.name} ${bike.name} (${bike.year})` : i.subjectId}</p>
+                  <p className="text-[11px] text-subtle">{i.author ?? "Author not recorded"} · <a href={i.image_source_url} target="_blank" rel="noreferrer" className="link-u">Wikimedia Commons</a> · <a href={i.licenseUrl ?? undefined} target="_blank" rel="noreferrer" className="link-u">{i.license}</a></p>
+                  <p className="mt-1 text-[11px] text-muted">{i.matchNotes}</p>
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+
         <section className="grid gap-12 lg:grid-cols-2">
           <div>
             <h2 className="text-2xl font-medium tracking-tight">Requested but not found</h2>
@@ -61,15 +111,15 @@ export default function Page() {
             <ul className="mt-5 border-t hairline">{PENDING_BRANDS.map((p) => <li key={p.name} className="border-b hairline py-3 text-sm"><span className="font-medium">{p.name}</span> <span className="text-subtle">· {p.context}</span><p className="text-xs text-muted">{p.finding}</p></li>)}</ul>
           </div>
           <div>
-            <h2 className="text-2xl font-medium tracking-tight">Official sources awaiting integration</h2>
-            <p className="mt-2 text-sm text-muted">The ingestion pipeline's official-page adapter will read these once the server is permitted to reach them. Imports always pass through admin review.</p>
+            <h2 className="text-2xl font-medium tracking-tight">Official sources not yet imported</h2>
+            <p className="mt-2 text-sm text-muted">Several refuse automated readers; VELOX does not work around that. Their data enters through search-indexed official pages, distributor feeds or admin import, always via review.</p>
             <ul className="mt-5 border-t hairline">{OFFICIAL_SOURCES.map((o) => <li key={o.url} className="border-b hairline py-3 text-sm"><span className="font-medium">{o.brand}</span> <span className="text-subtle">· {SOURCE_TYPE_LABEL[o.type]}</span><p className="text-xs text-muted">{o.url} — {o.covers}</p><p className="label-tech mt-0.5 text-warn">{titleCase(o.status)}</p></li>)}</ul>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-medium tracking-tight">Image registry</h2>
-          <p className="mt-2 max-w-2xl text-sm text-muted">All photography is used under the Pexels License (free commercial use, modification allowed). Images are representative of a category and are never presented as a specific product. Manufacturer product photography will be added only with permission or through licensed feeds.</p>
+          <h2 className="text-2xl font-medium tracking-tight">Category photography</h2>
+          <p className="mt-2 max-w-2xl text-sm text-muted">Used under the Pexels License on the homepage and category tiles only. These photos illustrate categories and are never used to picture a specific model.</p>
           <ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {MEDIA_LIST.map((m) => (
               <li key={m.id}>

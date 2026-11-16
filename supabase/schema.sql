@@ -14,6 +14,10 @@ create type confidence_level   as enum ('high', 'medium', 'low');
 create type brand_kind         as enum ('bicycles', 'frames', 'wheels', 'components', 'e-bikes', 'oem-manufacturer', 'private-label', 'distributor');
 create type license_status     as enum ('Pexels License', 'Manufacturer press', 'Licensed', 'Admin upload', 'AI generated');
 create type price_type         as enum ('msrp', 'distributor', 'retailer', 'estimated', 'historical');
+create type image_source_type  as enum ('manufacturer', 'manufacturer-catalog', 'distributor', 'retailer', 'wikimedia-commons', 'licensed', 'admin-upload');
+create type image_license_status as enum ('open-license', 'licensed', 'permission-required', 'unknown', 'rejected');
+create type image_model_match  as enum ('exact', 'model', 'generation', 'family');
+create type image_verification_status as enum ('verified', 'pending-review', 'rejected');
 create type user_role          as enum ('user', 'admin');
 create type subject_type       as enum ('brand', 'bike_model', 'component');
 create type component_type     as enum ('frame','fork','groupset','shifters','front-derailleur','rear-derailleur','crankset','cassette','chain','brakes','wheelset','tires','handlebar','stem','saddle','seatpost','pedals','hub','bearing','accessory');
@@ -89,6 +93,8 @@ create table bike_models (
   brand_id          text not null references brands(id) on delete restrict,
   name              text not null,
   model_year        int not null check (model_year between 1900 and 2100),
+  -- 'listed-in-range': manufacturer publishes no model year; model_year = year confirmed in the official range
+  year_basis        text not null default 'model-year' check (year_basis in ('model-year', 'listed-in-range')),
   generation        text,
   category_id       text not null references categories(id),
   subcategory_id    text,
@@ -219,9 +225,16 @@ create table prices (
   amount_idr   bigint not null check (amount_idr >= 0),
   price_type   price_type not null,
   source       text,
+  source_url   text,
   observed_on  date not null default current_date,
   note         text,
-  is_current   boolean not null default true
+  -- price exactly as published when not in IDR; amount_idr is then a labelled conversion
+  original_amount   numeric(12,2),
+  original_currency char(3),
+  conversion_rate   numeric(12,4),
+  is_current   boolean not null default true,
+  check ((original_amount is null) = (original_currency is null) and (original_amount is null) = (conversion_rate is null)),
+  check (price_type = 'estimated' or source_url is not null)
 );
 create index prices_subject_idx on prices(subject, subject_id, is_current);
 
@@ -244,6 +257,39 @@ create table media_assets (
   verified_at   date not null default current_date,
   sort_order    int not null default 0
 );
+
+-- model-specific product photography: one file belongs to one catalogue record
+create table product_images (
+  id                         text primary key,
+  subject                    subject_type not null,
+  subject_id                 text not null,
+  primary_image_url          text not null,          -- stable Storage copy, never a hot-linked URL
+  gallery_images             text[] not null default '{}',
+  width                      int not null check (width > 0),
+  height                     int not null check (height > 0),
+  alt                        text not null,
+  image_source_url           text not null,
+  original_file_url          text,
+  image_source_type          image_source_type not null,
+  image_license_status       image_license_status not null,
+  license                    text not null,
+  license_url                text,
+  author                     text,
+  image_verification_status  image_verification_status not null default 'pending-review',
+  image_model_match          image_model_match not null,
+  match_notes                text not null,
+  view                       text check (view in ('side-profile','three-quarter','detail','in-use')),
+  last_image_verified_at     date not null default current_date,
+  sha256                     char(64) not null,
+  -- displayable only when licensed, verified and the same model or frame generation
+  displayable boolean generated always as (
+    image_license_status in ('open-license','licensed') and image_verification_status = 'verified' and image_model_match <> 'family'
+  ) stored
+);
+create unique index product_images_file_uniq on product_images(sha256);           -- same file never on two records
+create unique index product_images_url_uniq on product_images(primary_image_url);
+create unique index product_images_source_uniq on product_images(image_source_url);
+create index product_images_subject_idx on product_images(subject, subject_id) where displayable;
 
 create table data_sources (
   id           uuid primary key default gen_random_uuid(),
@@ -346,7 +392,7 @@ declare t text;
 begin
   -- catalogue: public read, admin-only write (regular users can never modify manufacturer data)
   foreach t in array array['countries','categories','subcategories','brands','brand_categories','bike_families','bike_models',
-                           'component_manufacturers','components','wheelset_specs','bearings','groupset_parts','compatibility_rules','prices','media_assets','data_sources']
+                           'component_manufacturers','components','wheelset_specs','bearings','groupset_parts','compatibility_rules','prices','media_assets','product_images','data_sources']
   loop
     execute format('alter table %I enable row level security', t);
     execute format('create policy "%s public read" on %I for select using (true)', t, t);

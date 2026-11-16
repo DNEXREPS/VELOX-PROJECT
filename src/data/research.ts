@@ -34,7 +34,7 @@ export interface OfficialSource {
   url: string;
   type: SourceType;
   covers: string;
-  status: "awaiting-integration" | "blocked-by-network" | "needs-permission";
+  status: "awaiting-integration" | "blocked-by-network" | "needs-permission" | "refuses-automated-access";
 }
 
 /**
@@ -43,13 +43,13 @@ export interface OfficialSource {
  * no product data has been imported from them.
  */
 export const OFFICIAL_SOURCES: OfficialSource[] = [
-  { brand: "Polygon", url: "https://www.polygonbikes.com", type: "official-website", covers: "Model pages, specs, geometry, MSRP by region", status: "blocked-by-network" },
-  { brand: "Polygon", url: "https://www.rodalink.com/id/", type: "authorized-distributor", covers: "Indonesian retail pricing and availability (Polygon, Wimcycle and others)", status: "blocked-by-network" },
-  { brand: "Pacific", url: "https://pacific-bike.com", type: "official-website", covers: "Model catalogue", status: "blocked-by-network" },
-  { brand: "United Bike", url: "https://www.unitedbike.com", type: "official-website", covers: "Model catalogue (domain to be confirmed)", status: "blocked-by-network" },
+  { brand: "Polygon", url: "https://www.polygonbikes.com", type: "official-website", covers: "Model pages, specs, geometry, MSRP by region", status: "refuses-automated-access" },
+  { brand: "Polygon", url: "https://www.rodalink.com/id/", type: "authorized-distributor", covers: "Indonesian retail pricing and availability (Polygon, Wimcycle and others)", status: "refuses-automated-access" },
+  { brand: "Pacific", url: "https://pacific-bike.com", type: "official-website", covers: "Model catalogue", status: "refuses-automated-access" },
+  { brand: "United Bike", url: "https://www.unitedbike.com", type: "official-website", covers: "Model catalogue (domain to be confirmed)", status: "awaiting-integration" },
   { brand: "Pardus", url: "https://www.pardusbicycle.com", type: "official-website", covers: "Road, track and TT models", status: "blocked-by-network" },
   { brand: "Tavelo", url: "https://tavelo.cc", type: "official-website", covers: "Arow / Arden / Grow / Wild", status: "blocked-by-network" },
   { brand: "Quick Pro", url: "https://www.quickprousa.com", type: "official-website", covers: "AR:ONE / ER:ONE / SR:ONE / TT:ONE", status: "blocked-by-network" },
-  { brand: "Light Bicycle", url: "https://www.lightbicycle.com", type: "official-website", covers: "Rim and wheel specifications", status: "blocked-by-network" },
+  { brand: "Light Bicycle", url: "https://www.lightbicycle.com", type: "official-website", covers: "Rim and wheel specifications", status: "awaiting-integration" },
   { brand: "Magene / EXAR", url: "https://support.magene.com", type: "technical-manual", covers: "EXAR wheel specifications", status: "blocked-by-network" },
 ];

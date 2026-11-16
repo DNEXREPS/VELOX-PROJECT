@@ -2,14 +2,16 @@
   "name": "velox",
   "version": "0.1.0",
   "private": true,
-  "description": "VELOX — Cycling Intelligence Platform. Ride Smarter.",
+  "description": "VELOX \u2014 Cycling Intelligence Platform. Ride Smarter.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "tsc --noEmit",
     "test": "vitest run",
-    "test:e2e": "node scripts/smoke.mjs"
+    "test:e2e": "node scripts/smoke.mjs",
+    "audit": "node scripts/audit-catalog.mjs",
+    "validate:images": "node scripts/validate-images.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.8.0",

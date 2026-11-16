@@ -19,8 +19,14 @@ describe("data integrity", () => {
     expect(new Set(BRANDS.map((b) => b.id)).size).toBe(BRANDS.length);
   });
   it("never labels seed prices as official", () => {
-    for (const b of BIKES) if (b.price) expect(b.price.type).toBe("estimated");
-    for (const c of COMPONENTS) if (c.price) expect(c.price.type).toBe("estimated");
+    // seed prices stay estimates; any non-estimate price must cite where it was published
+    for (const b of BIKES) if (b.price && b.price.type !== "estimated") {
+      expect(b.price.sourceUrl, b.id).toMatch(/^https:\/\//);
+      expect(b.price.date, b.id).toBeTruthy();
+      if (b.price.original) expect(b.price.original.rate).toBeGreaterThan(0);
+    }
+    for (const b of BIKES) if (b.price?.type === "estimated") expect(b.provenance.demo ?? b.provenance.status !== "verified-official", b.id).toBeTruthy();
+    for (const c of COMPONENTS) if (c.price && c.price.type !== "estimated") { expect(c.price.sourceUrl, c.id).toMatch(/^https:\/\//); expect(c.price.date, c.id).toBeTruthy(); }
   });
 });
 

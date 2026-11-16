@@ -3,12 +3,11 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, Check, ExternalLink, Minus, Plus, Sparkles } from "lucide-react";
 import { useCatalog, garageStore } from "@/lib/state";
-import { Photo } from "@/components/Photo";
-import { mediaForBike } from "@/data/media";
+import { BikeImage } from "@/components/BikeImage";
 import { BikeTile, CompareButton, WishlistButton } from "@/components/catalog";
 import { Button, ButtonLink, DemoNotice, EmptyState, Price, ProvenanceLine, SpecRows, Tag } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
-import { formatWeightKg, NA, titleCase, uid } from "@/lib/format";
+import { formatOriginal, formatWeightKg, NA, PRICE_TYPE_LABEL, titleCase, uid } from "@/lib/format";
 import { useHydrated } from "@/lib/store";
 
 export function BikeDetail({ slug }: { slug: string }) {
@@ -75,24 +74,13 @@ export function BikeDetail({ slug }: { slug: string }) {
       </div>
       <section className="container-x grid gap-10 pb-16 pt-8 lg:grid-cols-[1.25fr_1fr] lg:gap-16 [&>*]:min-w-0">
         <div className="relative order-2 aspect-[4/3] overflow-hidden bg-ink-900 lg:order-1">
-          {bike.imageUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={bike.imageUrl} alt={label} className="relative h-full w-full object-contain p-6" />
-          ) : (
-            <>
-              <Photo asset={mediaForBike(bike)} priority sizes="(min-width: 1024px) 55vw, 100vw" className="absolute inset-0 h-full w-full" overlay="bottom" label="representative" />
-              <div className="absolute bottom-4 left-5 right-5 max-w-sm text-xs text-fg/70">
-                Representative {bike.category} photo — not the {label}.{" "}
-                {bike.officialUrl ? <a href={bike.officialUrl} target="_blank" rel="noreferrer" className="text-lime link-u">See official product photos ↗</a> : "Official product photos will appear once licensed imagery is imported."}
-              </div>
-            </>
-          )}
+          <BikeImage bike={bike} brandName={brand?.name} variant="detail" priority sizes="(min-width: 1024px) 55vw, 100vw" className="absolute inset-0 h-full w-full" />
         </div>
         <div className="order-1 animate-fade-up lg:order-2">
           <Link href={`/brands/${brand?.slug}`} className="eyebrow link-u inline-flex items-center gap-2 hover:text-fg">{brand?.name} · {brand?.country}</Link>
           <h1 className="display mt-4 text-[clamp(2.4rem,5vw,4.2rem)]">{bike.name}</h1>
           <div className="mt-4 flex flex-wrap gap-2">
-            <Tag>{bike.year}</Tag>
+            <Tag>{bike.yearBasis === "listed-in-range" ? `Listed ${bike.year} · model year not published` : bike.year}</Tag>
             <Tag>{category?.name}</Tag>
             <Tag>{sub?.name ?? titleCase(bike.subcategory)}</Tag>
             {brand?.region === "Indonesia" && <Tag active>Indonesian brand</Tag>}
@@ -102,6 +90,12 @@ export function BikeDetail({ slug }: { slug: string }) {
             <p className="label-tech mb-2">Price</p>
             <Price price={bike.price} className="text-2xl" />
             {bike.price?.type === "estimated" && <p className="mt-2 text-xs text-subtle">VELOX estimate, not an official manufacturer or distributor price. Check with an authorised dealer.</p>}
+            {bike.price?.original && (
+              <p className="mt-2 text-xs text-subtle">
+                Published as {formatOriginal(bike.price.original)} ({PRICE_TYPE_LABEL[bike.price.type]}, {bike.price.source ?? "source"}{bike.price.date ? `, retrieved ${bike.price.date}` : ""}). The rupiah figure is a conversion at Rp {bike.price.original.rate.toLocaleString("id-ID")} per {bike.price.original.currency}, not an Indonesian price.{" "}
+                {bike.price.sourceUrl && <a href={bike.price.sourceUrl} target="_blank" rel="noreferrer" className="link-u text-muted">Source ↗</a>}
+              </p>
+            )}
             {!!bike.priceHistory?.length && (
               <ul className="mt-3 space-y-1 text-xs text-muted">
                 {bike.priceHistory.map((p, i) => <li key={i}>History · {p.date?.slice(0, 4)} · <Price price={p} className="text-xs" /></li>)}

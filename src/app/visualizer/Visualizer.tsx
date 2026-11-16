@@ -7,8 +7,7 @@ import { buildConceptPrompt, type Concept, type Scene } from "@/lib/visualizer";
 import type { Component, ComponentType } from "@/lib/types";
 import { BikePicker, PartPickers, SimulatorPanel, useBikeProfile, usePlanPicks, type Picks } from "@/components/upgrade-config";
 import { AIStatusBadge, useAIStatus } from "@/components/AIStatusBadge";
-import { Photo } from "@/components/Photo";
-import { mediaForCategory } from "@/data/media";
+import { BikeImage, MissingBikeImage } from "@/components/BikeImage";
 import { Button, Chip, Field, Segmented } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
 
@@ -75,7 +74,6 @@ export function Visualizer() {
     }
   };
 
-  const reference = photo ? null : profile ? mediaForCategory(profile.category, model?.subcategory) : null;
 
   return (
     <div className="container-x py-10 md:py-14">
@@ -125,9 +123,9 @@ export function Visualizer() {
                     {photo ? (
                       // eslint-disable-next-line @next/next/no-img-element
                       <img src={photo.preview} alt="Original" className="h-full w-full object-cover" />
-                    ) : reference && <Photo asset={reference} sizes="(min-width: 768px) 30vw, 100vw" className="absolute inset-0 h-full w-full" label="representative" />}
+                    ) : model ? <BikeImage bike={model} brandName={cat.brandById.get(model.brandId)?.name} sizes="(min-width: 768px) 30vw, 100vw" className="absolute inset-0 h-full w-full" /> : <MissingBikeImage className="absolute inset-0" name={profile.label} />}
                   </div>
-                  <figcaption className="label-tech mt-2">Original {photo ? "· your photo" : "· representative category photo"}</figcaption>
+                  <figcaption className="label-tech mt-2">Original {photo ? "· your photo" : "· catalogue photo when verified"}</figcaption>
                 </figure>
                 <figure>
                   <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden border border-dashed hairline bg-ink-900">

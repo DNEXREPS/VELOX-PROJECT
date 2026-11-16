@@ -10,6 +10,7 @@ import { STATUS_TEXT, type CompatStatus } from "@/lib/compat";
 import type { Build, CompareKind, Component } from "@/lib/types";
 import { Photo } from "@/components/Photo";
 import { mediaForCategory } from "@/data/media";
+import { BikeImage } from "@/components/BikeImage";
 import { BrandMark, ComponentGlyph } from "@/components/Glyphs";
 import { MAX_COMPARE } from "@/components/catalog";
 import { Button, EmptyState, Segmented, StatusBadge } from "@/components/ui";
@@ -29,7 +30,7 @@ function rowsFor(kind: CompareKind, ids: string[], cat: Catalog, builds: Build[]
     const items = ids.map((id) => cat.bikeById.get(id)).filter(Boolean) as NonNullable<ReturnType<typeof cat.bikeById.get>>[];
     const brand = (b: (typeof items)[number]) => cat.brandById.get(b.brandId);
     return {
-      heads: items.map((b) => ({ id: b.id, title: b.name, sub: `${brand(b)?.name} · ${b.year}`, href: `/bikes/${b.slug}`, visual: <Photo asset={mediaForCategory(b.category, b.subcategory)} sizes="240px" className="aspect-[4/3] w-full" label="representative" /> })),
+      heads: items.map((b) => ({ id: b.id, title: b.name, sub: `${brand(b)?.name} · ${b.year}`, href: `/bikes/${b.slug}`, visual: <BikeImage bike={b} brandName={brand(b)?.name} sizes="240px" className="aspect-[4/3] w-full" /> })),
       rows: [
         { group: "Overview", label: "Price", values: items.map((b) => b.price?.amount), best: "min", fmt: money },
         { label: "Price type", values: items.map((b) => (b.price ? PRICE_TYPE_LABEL[b.price.type] : null)) },

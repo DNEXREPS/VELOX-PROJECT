@@ -62,8 +62,15 @@ export interface PriceEntry {
   currency: "IDR";
   type: PriceType;
   source?: string | null;
+  /** where the price was published (official page, distributor listing…) */
+  sourceUrl?: string | null;
   date?: string | null;
   note?: string | null;
+  /**
+   * The price exactly as published when it was not in IDR (e.g. a US MSRP). `amount` is then a
+   * conversion at `rate` and is labelled as such — it is never an Indonesian price.
+   */
+  original?: { amount: number; currency: "USD" | "EUR" | "GBP" | "AUD" | "JPY" | "TWD" | "CNY"; rate: number } | null;
 }
 
 export type Region = "Indonesia" | "International";
@@ -305,6 +312,61 @@ export interface MediaAsset {
 }
 
 /* ------------------------------------------------------------------ */
+/* Product images — model-specific photography                         */
+/* ------------------------------------------------------------------ */
+
+export type ImageSourceType =
+  | "manufacturer" // official product photography
+  | "manufacturer-catalog"
+  | "distributor"
+  | "retailer"
+  | "wikimedia-commons" // openly licensed, individually attributed
+  | "licensed" // licence obtained and recorded by an admin
+  | "admin-upload";
+
+/** Whether VELOX may display the file. Only "open-license" and "licensed" are ever rendered. */
+export type ImageLicenseStatus = "open-license" | "licensed" | "permission-required" | "unknown" | "rejected";
+
+/** How the photographed bicycle relates to the catalogue record it is attached to. */
+export type ImageModelMatch =
+  | "exact" // same model, variant and model year
+  | "model" // same model and variant; model year not identifiable from the photo
+  | "generation" // same frame generation, different build / trim / colour
+  | "family"; // same family, different generation — never used as a primary image
+
+export type ImageVerificationStatus = "verified" | "pending-review" | "rejected";
+
+export interface ProductImage {
+  id: string;
+  subjectKind: "bike" | "component";
+  /** catalogue record(s) this photograph depicts */
+  subjectId: string;
+  /** local, stable copy served by VELOX (never a search-result or hot-linked URL) */
+  primary_image_url: string;
+  gallery_images?: string[];
+  width: number;
+  height: number;
+  alt: string;
+  /** page that documents the file and its licence */
+  image_source_url: string;
+  /** original file URL at the source */
+  original_file_url: string | null;
+  image_source_type: ImageSourceType;
+  image_license_status: ImageLicenseStatus;
+  license: string; // e.g. "CC BY-SA 2.0"
+  licenseUrl: string | null;
+  author: string | null;
+  image_verification_status: ImageVerificationStatus;
+  image_model_match: ImageModelMatch;
+  /** what was checked to establish the match (decals, frame shape, title, uploader…) */
+  matchNotes: string;
+  view: "side-profile" | "three-quarter" | "detail" | "in-use";
+  last_image_verified_at: string; // ISO date
+  /** sha-256 of the stored file, used to detect the same photo assigned to different models */
+  sha256: string;
+}
+
+/* ------------------------------------------------------------------ */
 /* Bicycle models                                                      */
 /* ------------------------------------------------------------------ */
 
@@ -320,6 +382,11 @@ export interface BikeModel {
   name: string; // "Strattos S4"
   variant?: string | null; // trim / configuration within a model year
   year: number;
+  /**
+   * "model-year" (default): the manufacturer's model year. "listed-in-range": the manufacturer does
+   * not publish a model year — `year` is when VELOX confirmed the model in the official range.
+   */
+  yearBasis?: "model-year" | "listed-in-range";
   generation?: string | null;
   category: CategoryId;
   subcategory: string; // subcategory id

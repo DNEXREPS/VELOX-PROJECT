@@ -26,7 +26,20 @@ export function formatIdrShort(amount: number | null | undefined): string {
 export function formatPrice(p: PriceEntry | null | undefined, currency: Currency = "IDR"): string {
   if (!p) return NA;
   if (p.amount === 0 && p.note) return p.note;
-  return formatMoney(p.amount, currency);
+  // a published USD price is shown as published, not round-tripped through the IDR conversion
+  if (currency === "USD" && p.original?.currency === "USD") return formatOriginal(p.original);
+  return (p.original ? "≈ " : "") + formatMoney(p.amount, currency);
+}
+
+/** A price exactly as the source published it, e.g. "US$3,199". */
+export function formatOriginal(o: NonNullable<PriceEntry["original"]>): string {
+  const s = new Intl.NumberFormat("en-US", { style: "currency", currency: o.currency, maximumFractionDigits: o.amount % 1 ? 2 : 0 }).format(o.amount);
+  return o.currency === "USD" ? s.replace(/^\$/, "US$") : s;
+}
+
+/** "2026", or "Listed 2026" when the manufacturer publishes no model year. */
+export function yearLabel(b: { year: number; yearBasis?: "model-year" | "listed-in-range" }): string {
+  return b.yearBasis === "listed-in-range" ? `Listed ${b.year}` : String(b.year);
 }
 
 export function formatWeightG(g: number | null | undefined): string {

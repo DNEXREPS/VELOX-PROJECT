@@ -2,6 +2,7 @@ import type { BrakeType, CompatAttrs, Component, ComponentType, Discipline, Free
 import { DEMO_PROVENANCE, est } from "./provenance";
 import { slugify } from "./brands";
 import { BEARINGS, EXTRA_WHEELS, HUBS } from "./wheels";
+import { OFFICIAL_WHEELS } from "./wheels.official";
 
 /**
  * Seed component catalogue.
@@ -587,6 +588,7 @@ export const COMPONENTS: Component[] = [
   ...BRAKES,
   ...WHEELS.map(withWheelSpec),
   ...EXTRA_WHEELS,
+  ...OFFICIAL_WHEELS,
   ...HUBS,
   ...BEARINGS,
   ...TIRES,

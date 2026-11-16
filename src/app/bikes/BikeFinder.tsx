@@ -6,6 +6,7 @@ import { useCatalog } from "@/lib/state";
 import { findBikes, type FinderCriteria } from "@/lib/finder";
 import type { CategoryId, Experience, Usage, WheelSize } from "@/lib/types";
 import { BikeTile } from "@/components/catalog";
+import { imageForBike } from "@/data/product-images";
 import { Button, Chip, DemoNotice, EmptyState, Field, Segmented, Skeleton } from "@/components/ui";
 import { cx, formatIdrShort } from "@/lib/format";
 import { useHydrated } from "@/lib/store";
@@ -55,11 +56,17 @@ export function BikeFinder() {
   }, [c.category, c.subcategory, c.region, c.brandIds, c.budgetMax, c.experience, c.usage, c.q, pathname, router]);
 
   const set = <K extends keyof FinderCriteria>(k: K, v: FinderCriteria[K]) => setC((p) => ({ ...p, [k]: v }));
-  const results = useMemo(() => findBikes(cat.bikes, cat.brandById, c), [cat, c]);
+  const [onlyOfficial, setOnlyOfficial] = useState(false);
+  const [onlyPhoto, setOnlyPhoto] = useState(false);
+  const results = useMemo(
+    () => findBikes(cat.bikes, cat.brandById, c).filter((r) => (!onlyOfficial || r.bike.provenance.status === "verified-official") && (!onlyPhoto || !!imageForBike(r.bike.id))),
+    [cat, c, onlyOfficial, onlyPhoto],
+  );
+  const modelCount = useMemo(() => { const m = new Map<string, number>(); for (const b of cat.bikes) m.set(b.brandId, (m.get(b.brandId) ?? 0) + 1); return m; }, [cat.bikes]);
   const category = cat.categories.find((x) => x.id === c.category);
   const countries = useMemo(() => Array.from(new Set(cat.brands.map((b) => b.country))).sort(), [cat.brands]);
   const brandsForFilter = useMemo(() => cat.brands.filter((b) => (c.region === "all" || b.region === c.region) && cat.bikes.some((m) => m.brandId === b.id)), [cat, c.region]);
-  const activeCount = [c.category !== "all", c.subcategory !== "all", c.region !== "all", c.country !== "all", !!c.brandIds?.length, c.budgetMax != null, c.experience !== "any", !!c.usage?.length, c.material !== "all", c.groupsetBrand !== "all", c.brakes !== "all", c.wheelSize !== "all", c.suspension !== "all", !!c.includeDiscontinued, !!c.q].filter(Boolean).length;
+  const activeCount = [c.category !== "all", c.subcategory !== "all", c.region !== "all", c.country !== "all", !!c.brandIds?.length, c.budgetMax != null, c.experience !== "any", !!c.usage?.length, c.material !== "all", c.groupsetBrand !== "all", c.brakes !== "all", c.wheelSize !== "all", c.suspension !== "all", !!c.includeDiscontinued, !!c.q, onlyOfficial, onlyPhoto].filter(Boolean).length;
 
   const filters = (
     <div className="flex flex-col gap-7">
@@ -84,7 +91,7 @@ export function BikeFinder() {
         <Field label="Brand" htmlFor="f-brand">
           <select id="f-brand" className="field" value={c.brandIds?.[0] ?? ""} onChange={(e) => set("brandIds", e.target.value ? [e.target.value] : [])}>
             <option value="">All brands</option>
-            {brandsForFilter.map((b) => <option key={b.id} value={b.id}>{b.name}</option>)}
+            {brandsForFilter.map((b) => <option key={b.id} value={b.id}>{b.name} ({modelCount.get(b.id) ?? 0})</option>)}
           </select>
         </Field>
         <Field label="Country" htmlFor="f-country">
@@ -123,7 +130,15 @@ export function BikeFinder() {
         <input type="checkbox" checked={!!c.includeDiscontinued} onChange={(e) => set("includeDiscontinued", e.target.checked)} className="h-4 w-4 accent-[#C5F36A]" />
         Include discontinued & historical models
       </label>
-      <Button variant="ghost" size="sm" className="self-start" onClick={() => setC(DEFAULTS)}><RotateCcw className="h-3.5 w-3.5" /> Reset all filters</Button>
+      <label className="flex items-center gap-2.5 text-sm text-muted">
+        <input type="checkbox" checked={onlyOfficial} onChange={(e) => setOnlyOfficial(e.target.checked)} className="h-4 w-4 accent-[#C5F36A]" />
+        Official manufacturer data only
+      </label>
+      <label className="flex items-center gap-2.5 text-sm text-muted">
+        <input type="checkbox" checked={onlyPhoto} onChange={(e) => setOnlyPhoto(e.target.checked)} className="h-4 w-4 accent-[#C5F36A]" />
+        With verified product photo only
+      </label>
+      <Button variant="ghost" size="sm" className="self-start" onClick={() => { setC(DEFAULTS); setOnlyOfficial(false); setOnlyPhoto(false); }}><RotateCcw className="h-3.5 w-3.5" /> Reset all filters</Button>
     </div>
   );
 

@@ -54,23 +54,8 @@ export function mediaForCategory(category: CategoryId, subcategory?: string | nu
   return map[category];
 }
 
-/** Pools of category-appropriate images, rotated per model so grids don't repeat one photo. */
-const POOLS: Partial<Record<CategoryId, MediaAsset[]>> = {
-  road: [MEDIA.road, MEDIA.roadbikeWall, MEDIA.hero],
-  mtb: [MEDIA.mtb, MEDIA.trailSunset],
-  gravel: [MEDIA.gravel, MEDIA.road],
-  urban: [MEDIA.urban, MEDIA.hybrid, MEDIA.visualizer],
-  folding: [MEDIA.folding],
-  electric: [MEDIA.electric],
-  bmx: [MEDIA.bmx],
-};
-
-export function mediaForBike(b: { id: string; category: CategoryId; subcategory?: string | null }): MediaAsset {
-  const specific = mediaForCategory(b.category, b.subcategory);
-  const pool = POOLS[b.category];
-  // subcategory-specific images (TT, track, touring, e-folding…) take precedence over rotation
-  if (!pool || !pool.includes(specific)) return specific;
-  let h = 0;
-  for (const ch of b.id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
-  return pool[h % pool.length];
-}
+/*
+ * There is deliberately no "image for this bike" helper here. Category photography illustrates
+ * categories only; specific models are pictured exclusively through src/data/product-images.ts
+ * (see components/BikeImage.tsx), which falls back to a designed placeholder.
+ */

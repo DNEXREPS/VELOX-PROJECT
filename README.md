@@ -20,6 +20,8 @@ npm run dev          # http://localhost:3000
 | `npm run lint` | TypeScript strict type-check |
 | `npm test` | Unit tests (Vitest) |
 | `npm run test:e2e` | Browser end-to-end test of every primary flow — start the app, then `BASE_URL=http://localhost:3000 npm run test:e2e` |
+| `npm run audit` | Catalogue quality audit computed from the live data → `docs/catalog-audit.md` |
+| `npm run validate:images` | Product-image checks: files, format, dimensions, checksums, duplicate files/URLs, duplicate assignments (`-- --remote` also checks source URLs over HTTP) |
 
 ### Environment variables (all optional, server-side only)
 
@@ -34,7 +36,25 @@ Keys are read only in server code (`src/lib/ai/*`, `src/app/api/*`, guarded by `
 
 ---
 
-## What changed in this release
+## This release — product database & image quality overhaul (16 Nov 2026)
+
+The UI, design system and features are unchanged; this release fixes product imagery and data quality. Full numbers: [`docs/catalog-audit.md`](docs/catalog-audit.md) (`npm run audit`).
+
+### Product images
+- **Fixed the shared-photo problem.** The previous release pictured all 94 models with 15 category photos (91 models shared a photo; one photo stood in for 16 models; none showed the actual product). Bike cards, bike pages, compare, garage and the visualizer now use a single component, `components/BikeImage.tsx`, which shows either a **verified photo of that model** or a deliberately designed **VELOX placeholder** ("Verified product photo not available") with a link to the manufacturer’s own photos. It cannot fall back to category photography or another model’s image; `mediaForBike` was deleted.
+- **Centralised product-image registry** (`src/data/product-images*.ts`): `primary_image_url`, `gallery_images`, `image_source_url`, `image_source_type`, `image_license_status`, `image_verification_status`, `image_model_match` (exact / model / generation / family), `last_image_verified_at`, author, licence and SHA-256. Only licensed + verified + same-model-or-generation images are displayed; one file can belong to one model only.
+- **2 verified product photos so far** (Polygon Strattos S3, Polygon Xquarone EX9), from Wikimedia Commons under CC BY-SA 2.0, checked by eye, stored locally as WebP and credited on the page. Manufacturer photography was **not** used: usage rights could not be confirmed, so those models show the placeholder plus the official link.
+- `npm run validate:images` + unit and browser tests enforce: no duplicate files/URLs, no cross-model assignment, no category photo on a product card, checksums unchanged.
+
+### Catalogue expansion from official sources
+- **520 bicycle models** (was 94). **407 imported from official manufacturer product pages**: Canyon 102, Specialized 124, Santa Cruz 82, Cervélo 56, Tern 43. Read with robots.txt respected and ≥1.2 s between requests; fields are filled only when the manufacturer publishes them. 65 duplicate colour/size listings were collapsed.
+- Specialized and Tern publish no model year; those records say **“Listed 2026 · model year not published”** (`yearBasis: "listed-in-range"`) instead of inventing one.
+- **Prices:** official US MSRP is stored as published (`price.original`, e.g. US$3,199) and converted to IDR at Bank Indonesia’s JISDOR rate (Rp 18,148/USD, 4 Nov 2026). The UI labels it “converted, not an Indonesian price”. Seed prices remain labelled “Estimated”; nothing new was estimated.
+- **Indonesian research:** 19 new records (Polygon Strattos S3/S5 Disc/F2, Helios A8, Collosus TE0/TE8/TLE/DH, Cascade, Tambora AE, Xquarone EX9; Pacific Noris 2.3 / Aviator; United Dresden V1/V2) citing official Polygon Indonesia pages as indexed by search, Rodalink and reputable listings. They stay “unverified” because polygonbikes.com, rodalink.com and pacific-bike.com refuse automated readers, and VELOX does not work around that.
+- **Wheelsets: 251** (was 47) — **204 from manufacturers’ own stores** (Hunt, ICAN, Winspace/Lún) with official USD prices; depth/width/weight only where stated explicitly.
+- Bike Finder (same UI): brand list shows model counts; new “Official manufacturer data only” and “With verified product photo only” filters.
+
+## Previous release — visual redesign & intelligence expansion
 
 ### Visual redesign
 - **Cinematic full-bleed hero** with licensed photography, oversized editorial type, glass stat strip computed from the database.
@@ -56,7 +76,7 @@ Keys are read only in server code (`src/lib/ai/*`, `src/app/api/*`, guarded by `
 ### Real-world research (16 Nov 2026)
 - Web research on 32 brand records (plus Indonesian company checks). Facts are recorded **only where a source stated them**, with the source URL, type and retrieval date; conflicts are left empty and explained in reviewer notes. Examples of corrections: United Bike → PT Terang Dunia Internusa Tbk (founded 1988, Tangerang Selatan; earlier seed domain removed as unconfirmed); Wimcycle and Thrill → Gresik; Pacific → PT Roda Pacific Mandiri (since 1995); Element → Kendal (since 2008).
 - 13 requested names could not be substantiated (e.g. Hygge, OG-EVKIN, ONIRII, BXT, Carbonal, CSC, Tideace, VeloBuild) and are **kept out of the catalogue** in a research queue (`src/data/research.ts`, shown on `/sources`).
-- Official manufacturer sites could not be fetched from the build environment, so **no product specifications were imported from official sites yet**; they are listed as sources awaiting integration.
+- (Superseded: official product data is now imported — see the current release above.)
 
 ### Provenance model
 Statuses: **Verified Official · Verified Distributor · Cross-Verified · Community Submitted · Unverified · Historical · Discontinued · Archived**. Every record supports source URL + source type + retrieval date, confidence (high/medium/low), original manufacturer and reviewer notes. A record cannot be approved as verified without a source.
@@ -89,13 +109,17 @@ src/
     mechanic/   visualizer/   simulator/   sources/        ← new
     api/ai/status  api/mechanic  api/visualizer             ← server routes (AI providers)
   components/
-    Photo.tsx                     registry-backed next/image with licence/representative labels
+    BikeImage.tsx                 the only way a specific bike is pictured: verified photo or placeholder
+    Photo.tsx                     registry-backed next/image for category photography
     upgrade-config.tsx            shared bike/part pickers + SimulatorPanel
     AIStatusBadge.tsx             honest provider status
     layout/ (Header with Tools menu, CommandSearch, Footer), ui/, catalog.tsx, Glyphs.tsx
   data/
     brands.ts (researched + seed)  bikes.ts  components.ts  wheels.ts (wheelsets, hubs, bearings)
-    media.ts (image registry)      research.ts (pending names, official sources)  categories.ts
+    bikes.official.ts  wheels.official.ts   GENERATED from official manufacturer data
+    product-images.ts  product-images.records.ts   model-specific photo registry
+    import-log.ts                  what was imported, duplicates removed, what was blocked
+    media.ts (category photography) research.ts (pending names, official sources)  categories.ts
   lib/
     compat.ts finder.ts upgrade.ts builds.ts search.ts           (existing engines, unchanged APIs)
     ingest.ts                      adapters, dedupe, staging
@@ -103,9 +127,12 @@ src/
     simulator.ts  visualizer.ts
     ai/ types.ts anthropic.ts registry.ts                        (server-only)
 supabase/schema.sql                23 tables, 42 RLS policies (validated on PostgreSQL 16)
-tests/                             Vitest (43 tests)
-scripts/smoke.mjs                  Playwright end-to-end (39 flows)
-public/media/                      licensed photography (WebP)
+tests/                             Vitest (54 tests)
+scripts/smoke.mjs                  Playwright end-to-end (42 flows)
+scripts/audit-catalog.mjs          catalogue audit → docs/catalog-audit.md
+scripts/validate-images.mjs        product-image validation
+public/media/                      category photography (WebP)
+public/media/products/             verified, licensed product photos (WebP)
 ```
 
 ## Database architecture
@@ -117,25 +144,27 @@ Additions to the relational schema: `source_type`, `confidence_level`, `brand_ki
 | Check | Result |
 | --- | --- |
 | `npm run lint` (TypeScript strict) | ✅ |
-| `npm test` | ✅ 43 / 43 — previous engine tests plus database integrity (unique ids, valid subcategories, kinds on every brand, no verified record without a source, researched records cite https sources with dates, pending names excluded, all requested subcategories covered), media registry (files exist, licence data, distinct category imagery), AI Mechanic engine (routing, re-ranking, safety stop, Indonesian terms, no photo-only identification), bearing matcher (markings, ISO naming, measurements, SHIS), simulator (no total when weights unknown, no performance claims), ingestion (staging, duplicate certainty, product-ID dedupe, schema.org extraction), visualizer brief (geometry kept, no brand names) |
-| `npm run build` | ✅ |
-| `npm run test:e2e` (dev and production) | ✅ 39 / 39, no console/runtime errors — all previous flows plus Tools menu, AI status honesty, AI Mechanic diagnose + follow-up re-ranking + brake safety stop, bearing ID by marking and measurement, simulator plan loading, visualizer brief + refusal to fake an image, sources page, staged CSV ingest that is invisible until approved, and no horizontal overflow at 390 px on 13 routes |
-| `supabase/schema.sql` | ✅ applied to PostgreSQL 16; identity index rejects a case-variant duplicate |
+| `npm test` | ✅ 54 / 54. The 43 earlier tests, plus: image registry (every image belongs to an existing model, local file with matching checksum and licence, never the same photo on two models, never category photography, only licensed and verified same-model photos shown, no fallback for models without a photo, BikeImage independent of category media); catalogue integrity (known brand, unique identity, every official import cites its official page and retrieval date, Specialized/Tern labelled “listed”, converted prices carry the original amount and rate); every non-estimate price cites a source URL and date |
+| `npm run validate:images` | ✅ 2 images, no duplicate files, URLs or assignments, dimensions and checksums match |
+| `npm run build` | ✅ (520 bike pages, 588 component pages prerendered) |
+| `npm run test:e2e` (production) | ✅ 42 / 42, no console or runtime errors. The 39 earlier flows, plus: every Finder card shows a distinct verified photo or the placeholder and never category photography; the Strattos S3 shows its own photo; a Canyon page shows the placeholder with the official link and the labelled US$ to IDR conversion; the official-data filter and brand model counts work. No horizontal overflow at 390 px on 13 routes |
+| `supabase/schema.sql` | ✅ applied to PostgreSQL 16 (24 tables, 44 RLS policies). `product_images` rejects the same file on a second record; `prices` rejects a non-estimate price without a source URL |
 
 ## Known limitations
 
-- **Most specifications are still unverified seed data**, and every bike/component price is a VELOX estimate. Brand-level research is real and sourced; product-level data from official manufacturer sites has **not** been imported (the build environment could not reach those sites). `/sources` shows exact counts by status.
-- **No live AI in this build**: no `ANTHROPIC_API_KEY` or image provider was available, so AI Mechanic ran on its rule-based engine and the Visualizer could not generate images. The Anthropic provider code type-checks against the installed SDK but has **not been exercised against the live API**.
-- **Hero image**: no free-licensed dark studio carbon product shot was available; the hero is an editorial road photo with a cinematic grade. Swapping in commissioned or licensed studio photography is a one-line change in `src/data/media.ts`.
-- Category photos are representative and repeat within a category; model-specific photography needs licensed manufacturer imagery.
+- **Product photos:** only 2 of 520 models have a verified photo. Every other model shows the VELOX placeholder with a link to the manufacturer’s photos. Manufacturer images were not copied because their licences are unconfirmed, and Wikimedia Commons has very few photos of current models.
+- **Official imports cover five brands** (Canyon, Cervélo, Santa Cruz, Specialized, Tern). Trek, Giant and Cannondale sitemaps sit on hosts outside the allowed network. Polygon, Rodalink, Pacific, Scott and Orbea refuse automated access. Their data comes from search-indexed official pages (unverified) or is still missing. `docs/catalog-audit.md` lists the requested brands that still have fewer than three models (including Scott, Merida, BMC, Colnago, Orbea, Trek and Giant).
+- **Thin categories:** Urban & Hybrid (5), BMX (3) and Specialty (16) are thin because the imported brands focus on road, MTB, gravel and e-bikes.
+- **Prices:** imported prices are US MSRPs converted to IDR (labelled). No official Indonesian MSRP was retrievable. 67 seed bikes still carry labelled VELOX estimates.
+- **Model years:** 87 seed records have unchecked model years. Specialized and Tern are marked “Listed 2026” because neither publishes a model year.
+- **No live AI in this build** (no `ANTHROPIC_API_KEY` or image provider), and the Anthropic provider code has not been exercised against the live API.
 - Persistence is still per-browser (localStorage); Supabase schema is ready but not wired. The demo admin role is not security.
-- Audio: dictation uses the browser's speech recognition where available; audio files are not uploaded or transcribed server-side.
 
 ## Recommended next steps
 
-1. Allow the official manufacturer hosts listed on `/sources` (or provide licensed feeds) and run the schema.org adapter to import model-year specs and images into the review queue — start with Polygon, United, Pacific, Element, Wimcycle.
-2. Set `ANTHROPIC_API_KEY` and run an evaluation set of real symptom descriptions against AI Mechanic before exposing it widely.
-3. Connect an image provider via `VELOX_IMAGE_API_URL` and tune the brief with real user photos.
-4. Commission or license a dark-studio hero and per-model product photography.
-5. Wire Supabase (auth, catalogue reads, staging, media storage) using the included schema.
-6. Bahasa Indonesia localisation.
+1. **Product photography:** ask manufacturers and Indonesian distributors (Polygon / Rodalink, Pacific, United) for written permission or a press-image feed, then record each image with `image_license_status: "licensed"`. The registry, validation and UI are ready.
+2. **Indonesian data:** obtain an official product export (CSV/JSON) from Polygon, Pacific and United and run it through the admin import → review queue, rather than scraping sites that refuse automated access.
+3. **More official imports:** allow the sitemap hosts for Trek, Giant and Cannondale, and add Scott, Merida, Orbea, BMC and Cube when reachable. The harvesters follow the same pattern as the five done.
+4. Review and promote the 26 researched records, and replace the 67 remaining seed price estimates with sourced prices or “Not Available”.
+5. Set `ANTHROPIC_API_KEY` and an image provider, then evaluate AI Mechanic and the Visualizer on real inputs.
+6. Wire Supabase and add Bahasa Indonesia localisation.

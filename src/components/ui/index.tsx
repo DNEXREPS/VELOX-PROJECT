@@ -2,7 +2,7 @@
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 import { AlertTriangle, Check, CircleHelp, Inbox, X } from "lucide-react";
-import { cx, formatPrice, isVerified, NA, PRICE_TYPE_LABEL, show, SOURCE_TYPE_LABEL, STATUS_LABEL } from "@/lib/format";
+import { cx, formatOriginal, formatPrice, isVerified, NA, PRICE_TYPE_LABEL, show, SOURCE_TYPE_LABEL, STATUS_LABEL } from "@/lib/format";
 import type { PriceEntry, Provenance, VerificationStatus } from "@/lib/types";
 import { STATUS_TEXT, type CompatStatus } from "@/lib/compat";
 import { settingsStore } from "@/lib/state";
@@ -117,7 +117,7 @@ export function Price({ price, className, showType = true }: { price: PriceEntry
       <span className="tabular font-medium">{formatPrice(price, currency)}</span>
       {showType && !(price.amount === 0 && price.note) && (
         <span className={cx("font-mono text-[10px] uppercase tracking-[0.08em]", price.type === "estimated" ? "text-warn/80" : "text-subtle")} title={price.note ?? undefined}>
-          {PRICE_TYPE_LABEL[price.type]}
+          {price.original && !(currency === "USD" && price.original.currency === "USD") ? `${formatOriginal(price.original)} ${PRICE_TYPE_LABEL[price.type]} · converted` : PRICE_TYPE_LABEL[price.type]}
         </span>
       )}
     </span>
@@ -247,7 +247,7 @@ export function DemoNotice({ className }: { className?: string }) {
   return (
     <p className={cx("flex items-start gap-2 text-xs leading-relaxed text-subtle", className)}>
       <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-warn" />
-      Demonstration catalogue: specifications are unverified editorial seed data and every price is a VELOX estimate in IDR — never an official price. Confirm with the manufacturer or an authorised dealer before buying.
+      Each record shows its source and verification status. Official imports carry the manufacturer’s published specs and price (USD prices are converted to IDR and labelled); older seed records are unverified and their prices are VELOX estimates. Confirm with the manufacturer or an authorised dealer before buying.
     </p>
   );
 }

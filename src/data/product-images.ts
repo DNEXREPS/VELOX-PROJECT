@@ -1,0 +1,42 @@
+import type { ImageModelMatch, ProductImage } from "@/lib/types";
+import { PRODUCT_IMAGE_RECORDS } from "./product-images.records";
+
+/**
+ * Model-specific product photography.
+ *
+ * Rules enforced here and in tests/images.test.ts:
+ *  - a file is attached to exactly one catalogue record (no silent inheritance across models);
+ *  - only openly licensed or explicitly licensed files are rendered;
+ *  - "family" matches (a different frame generation) are never shown as the product photo;
+ *  - when no verified image exists the UI shows the VELOX placeholder — never another bike's photo
+ *    and never category photography.
+ */
+export const PRODUCT_IMAGES: ProductImage[] = PRODUCT_IMAGE_RECORDS;
+
+const DISPLAYABLE_MATCH: ImageModelMatch[] = ["exact", "model", "generation"];
+
+export function isDisplayable(img: ProductImage): boolean {
+  return (
+    (img.image_license_status === "open-license" || img.image_license_status === "licensed") &&
+    img.image_verification_status === "verified" &&
+    DISPLAYABLE_MATCH.includes(img.image_model_match)
+  );
+}
+
+const BY_SUBJECT = new Map<string, ProductImage>();
+for (const img of PRODUCT_IMAGES) if (isDisplayable(img) && !BY_SUBJECT.has(`${img.subjectKind}:${img.subjectId}`)) BY_SUBJECT.set(`${img.subjectKind}:${img.subjectId}`, img);
+
+export function imageForBike(bikeId: string): ProductImage | null {
+  return BY_SUBJECT.get(`bike:${bikeId}`) ?? null;
+}
+
+export function imageForComponent(componentId: string): ProductImage | null {
+  return BY_SUBJECT.get(`component:${componentId}`) ?? null;
+}
+
+export const MATCH_LABEL: Record<ImageModelMatch, string> = {
+  exact: "Exact model & year",
+  model: "Same model · year not confirmed",
+  generation: "Same frame generation · different build",
+  family: "Different generation",
+};

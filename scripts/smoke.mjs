@@ -48,6 +48,54 @@ await step("Bike Finder filters by budget + category and explains results", asyn
   assert((await page.locator("section[aria-label=Results] article li").count()) > 0, "no recommendation reasons");
 });
 
+await step("Bike Finder: every product image is distinct, real or an honest placeholder", async () => {
+  await go("/bikes?q=strattos");
+  await page.getByLabel("Include discontinued & historical models").first().check();
+  await page.waitForTimeout(400);
+  const figs = page.locator("section[aria-label=Results] article [data-image-status]");
+  const n = await figs.count();
+  assert(n > 2, "too few Strattos results: " + n);
+  const srcs = [];
+  for (let i = 0; i < n; i++) {
+    const f = figs.nth(i);
+    const status = await f.getAttribute("data-image-status");
+    if (status === "verified") srcs.push(decodeURIComponent((await f.locator("img").getAttribute("src")) ?? ""));
+    else assert(status === "missing" || status === "admin-unverified", "unexpected image status " + status);
+  }
+  assert(srcs.length >= 1, "Strattos S3 should show its verified photo");
+  assert(new Set(srcs).size === srcs.length, "same photo shown for two models");
+  assert(srcs.every((u) => u.includes("/media/products/")), "a product card used non-product imagery: " + srcs.join(","));
+  const s3 = page.locator("section[aria-label=Results] article", { hasText: "Strattos S3" });
+  assert((await s3.locator("[data-image-status=verified]").count()) === 1, "Strattos S3 is not showing its own photo");
+  // nothing on the whole finder may use category photography
+  await go("/bikes");
+  await page.waitForTimeout(400);
+  const all = await page.locator("section[aria-label=Results] article img").evaluateAll((els) => els.map((e) => decodeURIComponent(e.getAttribute("src") ?? "")));
+  assert(all.every((u) => u.includes("/media/products/")), "category photo found on a product card");
+});
+
+await step("Product page: placeholder links to the manufacturer and converted price is labelled", async () => {
+  await go("/bikes/canyon-ultimate-cf-7-di2-2027");
+  await page.locator("[data-image-status=missing]").first().waitFor();
+  const link = page.getByRole("link", { name: /manufacturer’s photos/ });
+  assert((await link.getAttribute("href"))?.startsWith("https://www.canyon.com/"), "official link missing");
+  await page.getByText(/US\$3,199/).first().waitFor();
+  await page.getByText(/not an Indonesian price/).first().waitFor();
+  await go("/bikes/polygon-strattos-s3-2019");
+  await page.locator("[data-image-status=verified]").first().waitFor();
+  await page.getByText(/CC BY-SA 2.0/).first().waitFor();
+});
+
+await step("Bike Finder: official-data filter and brand counts", async () => {
+  await go("/bikes");
+  await page.getByLabel("Official manufacturer data only").first().check();
+  await page.waitForTimeout(300);
+  const count = Number((await page.locator("section[aria-label=Results] p .tabular").first().textContent()) ?? "0");
+  assert(count > 300, "official filter returned " + count);
+  const opt = await page.locator("#f-brand option", { hasText: "Specialized" }).first().textContent();
+  assert(/\(\d+\)/.test(opt ?? ""), "brand option lacks model count: " + opt);
+});
+
 await step("Bike Finder: Indonesian-only filter", async () => {
   await go("/bikes?region=Indonesia");
   await page.waitForTimeout(300);
@@ -186,7 +234,7 @@ await step("Admin: edit + archive hides a model from the public finder", async (
   await go("/admin");
   await page.getByRole("radio", { name: "Bike models" }).click();
   await page.getByLabel("Search models").fill("Strattos S3");
-  await page.getByRole("button", { name: /Archive Polygon Strattos S3/ }).click();
+  await page.getByRole("button", { name: /Archive Polygon Strattos S3 \(2025\)/ }).click();
   await go("/bikes?q=strattos%20s3");
   await page.getByText("No bikes match every filter").waitFor();
 });
@@ -265,7 +313,8 @@ await step("AI Visualizer: builds a brief and refuses to fake an image without a
 
 await step("Sources page lists image licences and research findings", async () => {
   await go("/sources");
-  await page.getByRole("heading", { name: "Image registry" }).waitFor();
+  await page.getByRole("heading", { name: "Product photography" }).waitFor();
+  await page.getByRole("heading", { name: /Official manufacturer imports/ }).waitFor();
   await page.getByRole("heading", { name: "Requested but not found" }).waitFor();
 });
 

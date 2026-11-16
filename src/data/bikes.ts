@@ -1,13 +1,15 @@
 import type { BikeModel, CompatAttrs, SourceRef, WheelSize } from "@/lib/types";
 import { DEMO_PROVENANCE, discontinued, est } from "./provenance";
 import { slugify } from "./brands";
+import { OFFICIAL_BIKES } from "./bikes.official";
 
 /**
  * Seed bicycle model catalogue.
  *
  * Each record is one model + model year (+ trim). The same family across years is
  * deliberately stored as separate records so specs are never assumed identical.
- * All records are unverified editorial seed data and every price is a VELOX estimate.
+ * Seed records are unverified editorial data with VELOX-estimate prices; researched records cite
+ * their sources. Official manufacturer imports live in bikes.official.ts.
  * Unknown values are null → "Not Available".
  */
 
@@ -685,6 +687,73 @@ const SEEDS: Seed[] = [
     sources: [["Cyclingnews — SEKA Spear review", "https://www.cyclingnews.com/bikes/road/seka-spear-review/", "publication"]],
   },
 
+  /* ================= INDONESIAN RESEARCH PASS · 2026-11-16 =================
+   * Polygon, Pacific and Rodalink block automated reading, so these records cite the official
+   * Polygon Indonesia product pages as indexed by web search (model, year and the quoted facts
+   * only), plus reputable listings. Status stays "unverified" until a reviewer opens the page. */
+  {
+    brand: "Polygon", family: "Strattos", name: "Strattos S3", year: 2019, category: "road", subcategory: "endurance", status: "discontinued",
+    frameMaterial: "ALX aluminium", groupset: "Shimano Sora", drivetrain: "2x9", brakes: "Tektro R-312 rim caliper", brakeType: "rim-caliper",
+    wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "Entry endurance road riding", usage: ["fitness", "commuting"], experience: ["beginner"],
+    highlights: ["Shimano Sora 2x9 with a Sunrace 11-28T cassette", "Carbon fork on an aluminium frame"], drawbacks: ["Rim brakes", "Published weights disagree (10.1 kg vs 10.6 kg) — shown as Not Available"],
+    compat: roadRim(9, "shimano-road-9", { seatpostDiameter: null }), frameColor: "#EAB308",
+    sources: [["Rodalink Malaysia — Polygon Strattos S3 2019", "https://rodalinkmalaysia.blogspot.com/2019/02/polygon-strattos-s3-2019.html", "retailer"], ["ChooseMyBicycle — Strattos S3 2019 review", "https://choosemybicycle.com/en/woc/expert-reviews/polygon-strattos-s3-2019-review", "publication"], ["bikes.fan — 2019 Strattos S3 build", "https://bikes.fan/?p=72059", "community"]],
+    notes: "Groupset, gearing, frame, fork and brakes agree across a Rodalink (authorised Polygon retailer) listing and a review. Weight left unset because sources disagree.",
+  },
+  {
+    brand: "Polygon", family: "Xquarone", name: "Xquarone EX9", year: 2018, category: "mtb", subcategory: "enduro", status: "discontinued",
+    frameMaterial: "Carbon", groupset: "SRAM XX1 Eagle", drivetrain: "1x12", brakes: "SRAM Guide Ultimate hydraulic disc", brakeType: "hydraulic-disc",
+    wheelset: "27.5\" carbon wheels", tires: null, wheelSize: "27.5", tireClearanceMm: null, suspension: "full", travel: "180 mm front / 180 mm rear", weightKg: null, priceJt: null,
+    ridingStyle: "Long-travel enduro and freeride", usage: ["trail", "downhill"], experience: ["advanced"],
+    highlights: ["Fox 36 Float Factory fork and Fox Float X2 Factory shock", "Polygon's dual-link long-travel platform"], drawbacks: ["Discontinued — check spare-part availability for the linkage"],
+    compat: mtb("27.5", 12, "sram-eagle", { travelMm: 180 }), frameColor: "#3F6212",
+    sources: [["Bikewise — Polygon Xquarone EX9 2018", "https://bikewise.io/polygon/xquarone-ex9-2018", "community"], ["99 Spokes — 2018 Polygon Xquarone EX9", "https://99spokes.com/bikes/polygon/2018/xquarone-ex9", "community"], ["bikes.fan — Polygon Xquarone EX9 2018", "https://bikes.fan/polygon-xquarone-ex9-2018/", "community"]],
+    notes: "Travel, drivetrain, brakes and suspension agree across three independent spec databases; not yet checked against Polygon's archived spec sheet.",
+  },
+  {
+    brand: "Polygon", family: "Strattos", name: "Strattos S5 Disc", year: 2025, category: "road", subcategory: "all-rounder",
+    frameMaterial: "ALX aluminium", groupset: "Shimano 105", drivetrain: "2x11", brakes: "Shimano 105 hydraulic disc", brakeType: "hydraulic-disc",
+    wheelset: "Alloy 700c", tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "All-round road riding and commuting", usage: ["fitness", "commuting"], experience: ["beginner", "intermediate"],
+    highlights: ["Internal cable routing and a full-carbon fork", "Hydraulic disc brakes"], drawbacks: [],
+    compat: roadDisc(11, "shimano-road-11"), frameColor: "#E5E7EB",
+    sources: [["99 Spokes — 2025 Polygon Strattos S5 Disc", "https://99spokes.com/en-EU/bikes/polygon/2025/strattos-s5-disc", "community"], ["Bums on the Saddle — Strattos S5 Disc listing", "https://bumsonthesaddle.com/products/polygon-strattos-s5-disc-special-edition-white", "retailer"], ["DBYK — Strattos S5 Disc 2025", "https://dbykstore.com/products/polygon-strattos-s5-disc-white-2025", "retailer"]],
+    notes: "Frame, fork, groupset and brakes agree across listings. Weight (~9.6 kg) is an aggregator figure and is not shown. No official IDR price was found.",
+  },
+  { brand: "Polygon", family: "Strattos", name: "Strattos F2", year: 2027, category: "road", subcategory: "all-rounder", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, sizes: ["S", "M", "L"], ridingStyle: "Road riding", usage: ["fitness"], experience: ["beginner", "intermediate"], compat: {}, frameColor: "#64748B",
+    sources: [["Polygon Indonesia — STRATTOS F2 Road Bike 2027", "https://www.polygonbikes.com/id/strattos-f2-road-bike-2027/", "official-website"]], notes: "Model, year and size run (S/M/L) from the official page title and geometry table; components were not available in the indexed page." },
+  { brand: "Polygon", family: "Helios", name: "Helios A8", year: 2025, category: "road", subcategory: "aero", frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, sizes: ["XXS", "XS", "S", "M", "L", "XL"], ridingStyle: "Aero road racing", usage: ["racing"], experience: ["intermediate", "advanced"], highlights: ["Polygon quotes a frame of about 800 g", "Polygon claims 31% less drag than the previous generation"], compat: {}, frameColor: "#111827",
+    sources: [["Polygon Indonesia — 2025 HELIOS A8 Road Bike", "https://polygonbikes.com/id/sepeda/sepeda-balap/helios-a8", "official-website"], ["Polygon Indonesia — Helios A launch", "https://www.polygonbikes.com/id/launching-road-bike-helios-a-dari-indonesia-untuk-dunia/", "manufacturer-announcement"]], notes: "Frame-weight and drag figures are Polygon's own claims as quoted on the official page." },
+  { brand: "Polygon", family: "Collosus", name: "Collosus TE0", year: 2026, category: "electric", subcategory: "e-mtb", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "full", weightKg: 23.8, priceJt: null, ridingStyle: "Full-power electric trail and enduro", usage: ["trail"], experience: ["intermediate", "advanced"], electric: { motor: "Bosch Performance Line CX (100 Nm)", batteryWh: 800 }, highlights: ["Size M weight 23.8 kg as published by Polygon"], compat: {}, frameColor: "#1F2937",
+    sources: [["Polygon Indonesia — COLLOSUS TE0 2026", "https://www.polygonbikes.com/id/sepeda-gunung-electric-collosus-te0-2026/", "official-website"]] },
+  { brand: "Polygon", family: "Collosus", name: "Collosus TE8", year: 2026, category: "electric", subcategory: "e-mtb", frameMaterial: "ACX carbon", groupset: "SRAM GX Eagle AXS", drivetrain: "1x12", brakes: null, brakeType: null, wheelset: null, tires: "Maxxis Dissector 29 x 2.40 (tubeless ready)", wheelSize: "29", tireClearanceMm: null, suspension: "full", travel: "160 mm front (Marzocchi Bomber Z1) / 150 mm rear", weightKg: 23.8, priceJt: null, ridingStyle: "Full-power electric trail and enduro", usage: ["trail"], experience: ["intermediate", "advanced"], electric: { motor: null, batteryWh: null }, highlights: ["Marzocchi Bomber Z1 fork and Bomber Air shock"], compat: mtb("29", 12, "sram-axs", { travelMm: 160 }), frameColor: "#374151",
+    sources: [["Polygon Indonesia — Collosus TE8 2026", "https://www.polygonbikes.com/id/sepeda-gunung-electric-collosus-te8-2026/", "official-website"]], notes: "Weight is Polygon's size-M figure stated for both TE0 and TE8. Motor not stated on the indexed TE8 page." },
+  { brand: "Polygon", family: "Collosus", name: "Collosus TLE 8 AXS", year: 2026, category: "electric", subcategory: "e-mtb", frameMaterial: null, groupset: "SRAM GX Eagle AXS", drivetrain: "1x12", brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "full", travel: "160 mm front (Marzocchi Bomber Z1)", weightKg: null, priceJt: null, ridingStyle: "Lightweight electric trail riding", usage: ["trail"], experience: ["intermediate", "advanced"], electric: { motor: null, batteryWh: null }, compat: {}, frameColor: "#4B5563",
+    sources: [["Polygon Indonesia — COLLOSUS TLE 8 AXS 2026", "https://www.polygonbikes.com/id/collosus-tle-8-axs/", "official-website"]] },
+  { brand: "Polygon", family: "Collosus", name: "Collosus TLE 0 AXS", year: 2026, category: "electric", subcategory: "e-mtb", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "full", travel: "160 mm front (FOX)", weightKg: null, priceJt: null, ridingStyle: "Lightweight electric trail riding", usage: ["trail"], experience: ["intermediate", "advanced"], electric: { motor: "Bosch Performance Line SX (55 Nm)", batteryWh: 400 }, compat: {}, frameColor: "#6B7280",
+    sources: [["Polygon Indonesia — COLLOSUS TLE 0 AXS 2026", "https://www.polygonbikes.com/id/collosus-tle-0-axs/", "official-website"]] },
+  { brand: "Polygon", family: "Collosus", name: "Collosus DH9", year: 2025, category: "mtb", subcategory: "downhill", frameMaterial: null, groupset: "SRAM X01 DH", drivetrain: "1x7", brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "full", weightKg: null, priceJt: null, ridingStyle: "Downhill racing", usage: ["downhill"], experience: ["advanced"], compat: { speeds: 7, chainrings: 1 }, frameColor: "#0F172A",
+    sources: [["Polygon Indonesia — COLLOSUS DH9 2025", "https://www.polygonbikes.com/id/collosus-dh9/", "official-website"]] },
+  { brand: "Polygon", family: "Collosus", name: "Collosus DH7", year: 2025, category: "mtb", subcategory: "downhill", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "full", weightKg: null, priceJt: null, ridingStyle: "Downhill racing", usage: ["downhill"], experience: ["advanced"], compat: {}, frameColor: "#1E293B",
+    sources: [["Polygon Indonesia — COLLOSUS DH7 2025", "https://www.polygonbikes.com/id/collosus-dh7/", "official-website"]] },
+  { brand: "Polygon", family: "Cascade", name: "Cascade 3", year: 2026, category: "mtb", subcategory: "hardtail", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "front", weightKg: null, priceJt: null, ridingStyle: "Entry mountain biking", usage: ["trail", "fitness"], experience: ["beginner"], compat: {}, frameColor: "#B91C1C",
+    sources: [["Polygon Indonesia — Sepeda Gunung CASCADE 3 2026", "https://www.polygonbikes.com/id/cascade-3-2/", "official-website"]], notes: "The indexed page is titled 2026 but lists an MY25 build — model year needs a reviewer check." },
+  { brand: "Polygon", family: "Cascade", name: "Cascade 5", year: 2026, category: "mtb", subcategory: "hardtail", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "front", weightKg: null, priceJt: null, ridingStyle: "Entry mountain biking", usage: ["trail", "fitness"], experience: ["beginner"], compat: {}, frameColor: "#065F46",
+    sources: [["Polygon Indonesia — 2026 CASCADE 5 MTB", "https://www.polygonbikes.com/id/cascade-5/", "official-website"]] },
+  { brand: "Polygon", family: "Tambora", name: "Tambora AE GRX", year: 2025, category: "electric", subcategory: "e-gravel", frameMaterial: "Carbon", groupset: "Shimano GRX", drivetrain: null, brakes: "Disc (max 160 mm rotors)", brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: 45, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Assisted speed gravel", usage: ["bikepacking", "fitness"], experience: ["intermediate"], electric: { motor: "Bosch Performance Line SX (55 Nm, assist to 45 km/h as stated)", batteryWh: null }, highlights: ["Max system load 120 kg (Polygon)", "Tyre clearance up to 45c"], compat: { maxTireMm: 45, maxRotorMm: 160 }, frameColor: "#78350F",
+    sources: [["Polygon Indonesia — TAMBORA AE GRX Gravel E-Bike 2025", "https://www.polygonbikes.com/id/tambora-ae-grx/", "official-website"]], notes: "The indexed page names the motor as a Bosch Performance Line variant with 55 Nm; the exact motor name needs a reviewer check on the page." },
+  { brand: "Polygon", family: "Tambora", name: "Tambora AE GX", year: 2025, category: "electric", subcategory: "e-gravel", frameMaterial: "Carbon", groupset: "SRAM GX", drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: 45, suspension: "rigid", weightKg: null, priceJt: null, sizes: ["S", "M", "L", "XL"], ridingStyle: "Assisted speed gravel", usage: ["bikepacking", "fitness"], experience: ["intermediate"], electric: { motor: null, batteryWh: null }, compat: { maxTireMm: 45 }, frameColor: "#92400E",
+    sources: [["Polygon Indonesia — TAMBORA AE GX Gravel E-Bike 2025", "https://www.polygonbikes.com/id/tambora-ae-gx/", "official-website"]] },
+  { brand: "Pacific", family: "Noris", name: "Noris 2.3", year: 2025, category: "folding", subcategory: "urban-folding", frameMaterial: "Aluminium", groupset: null, drivetrain: "8-speed", brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Folding commuter", usage: ["commuting"], experience: ["beginner"], compat: { speeds: 8 }, frameColor: "#0EA5E9",
+    sources: [["BigGo Indonesia — Pacific Noris 2.3 listings (Aug 2025)", "https://biggo.id/s/sepeda%20pacific%20lipat", "retailer"]], notes: "Marketplace listings only (Rp 3.2–4.3 jt, Aug 2025) — not an official price; the official Pacific site blocks automated reading." },
+  { brand: "Pacific", family: "Aviator", name: "Aviator 2689 XT VT", year: 2025, category: "mtb", subcategory: "hardtail", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: "27.5", tireClearanceMm: null, suspension: "front", weightKg: null, priceJt: null, ridingStyle: "Entry mountain biking", usage: ["trail", "leisure"], experience: ["beginner"], compat: {}, frameColor: "#1D4ED8",
+    sources: [["BigGo Indonesia — Pacific MTB listings (Oct 2025)", "https://biggo.id/s/Pacific+MTB+Bike", "retailer"]], notes: "Model name and 27.5\" wheel size from marketplace listings (Rp 2,994,000 seen Oct 2025); not an official price." },
+  { brand: "United Bike", family: "Dresden", name: "Dresden V1", year: 2025, category: "electric", subcategory: "e-urban", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Electric city riding", usage: ["commuting"], experience: ["beginner"], electric: { motor: null, batteryWh: null }, compat: {}, frameColor: "#334155",
+    sources: [["Radar Tasik — United Dresden Series 2025 (30 Jun 2025)", "https://radartasik.id/2025/06/30/rekomendasi-sepeda-listrik-united-dresden-series-2025-harga-spesifikasi-terbaru/", "publication"]], notes: "Press-reported price Rp 5,490,000 (June 2025) — not confirmed with United Bike." },
+  { brand: "United Bike", family: "Dresden", name: "Dresden V2", year: 2025, category: "electric", subcategory: "e-urban", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Electric city riding", usage: ["commuting"], experience: ["beginner"], electric: { motor: null, batteryWh: null }, compat: {}, frameColor: "#475569",
+    sources: [["Radar Tasik — United Dresden Series 2025 (30 Jun 2025)", "https://radartasik.id/2025/06/30/rekomendasi-sepeda-listrik-united-dresden-series-2025-harga-spesifikasi-terbaru/", "publication"]], notes: "Press-reported price Rp 5,590,000 (June 2025) — not confirmed with United Bike." },
+
   /* ================= SPECIALTY & MISSING SUBCATEGORIES (seed) ================= */
   { brand: "Cervélo", family: "P5", name: "P5", year: 2024, category: "road", subcategory: "time-trial", frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Time trial and triathlon", usage: ["racing"], experience: ["advanced"], highlights: ["Dedicated aero TT platform"], drawbacks: ["Specialised position — fit required"], compat: {}, frameColor: "#0F172A" },
   { brand: "Giant", family: "Trinity", name: "Trinity Advanced Pro", year: 2024, category: "road", subcategory: "triathlon", frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: "Disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Triathlon", usage: ["racing"], experience: ["advanced"], highlights: ["Triathlon-specific storage and fit"], drawbacks: ["Not UCI-legal for mass-start road races"], compat: {}, frameColor: "#1E293B" },
@@ -729,4 +798,5 @@ function toModel(s: Seed): BikeModel {
   };
 }
 
-export const BIKES: BikeModel[] = SEEDS.map(toModel);
+/** Seed + researched records first, then models imported from official manufacturer pages. */
+export const BIKES: BikeModel[] = [...SEEDS.map(toModel), ...OFFICIAL_BIKES];

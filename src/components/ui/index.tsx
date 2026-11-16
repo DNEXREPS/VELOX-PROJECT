@@ -2,7 +2,7 @@
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 import { AlertTriangle, Check, CircleHelp, Inbox, X } from "lucide-react";
-import { cx, formatPrice, NA, PRICE_TYPE_LABEL, show, STATUS_LABEL } from "@/lib/format";
+import { cx, formatPrice, isVerified, NA, PRICE_TYPE_LABEL, show, SOURCE_TYPE_LABEL, STATUS_LABEL } from "@/lib/format";
 import type { PriceEntry, Provenance, VerificationStatus } from "@/lib/types";
 import { STATUS_TEXT, type CompatStatus } from "@/lib/compat";
 import { settingsStore } from "@/lib/state";
@@ -63,9 +63,12 @@ export function PageHeader({ eyebrow, title, children, action }: { eyebrow: stri
 /* --------------------------------- Badges --------------------------------- */
 
 const statusTone: Record<VerificationStatus, string> = {
-  verified: "text-ok border-ok/30",
+  "verified-official": "text-ok border-ok/30",
+  "verified-distributor": "text-ok border-ok/30",
+  "cross-verified": "text-ok border-ok/25",
   community: "text-info border-info/30",
   unverified: "text-muted border-line-strong",
+  historical: "text-info border-info/25",
   discontinued: "text-warn border-warn/30",
   archived: "text-subtle border-line",
 };
@@ -75,21 +78,33 @@ export function StatusBadge({ status, demo, className }: { status: VerificationS
     <span className={cx("inline-flex items-center gap-1.5 rounded-sm border px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.08em]", statusTone[status], className)} title={demo ? "Demonstration seed data — not yet checked against an official source" : undefined}>
       <span className={cx("h-1 w-1 rounded-full bg-current")} />
       {STATUS_LABEL[status]}
-      {demo && status !== "verified" && <span className="text-subtle">· Demo</span>}
+      {demo && !isVerified(status) && <span className="text-subtle">· Demo</span>}
     </span>
   );
 }
 
-export function ProvenanceLine({ p }: { p: Provenance }) {
+export function ProvenanceLine({ p, detailed }: { p: Provenance; detailed?: boolean }) {
   return (
-    <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted">
-      <StatusBadge status={p.status} demo={p.demo} />
-      <span className="label-tech">Updated {new Date(p.updatedAt).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</span>
-      {p.sources.map((s, i) => (
-        <span key={i} className="label-tech normal-case tracking-normal">
-          Source: {s.url ? <a className="link-u text-muted" href={s.url} target="_blank" rel="noreferrer">{s.label}</a> : s.label}
-        </span>
-      ))}
+    <div className="flex flex-col gap-2 text-xs text-muted">
+      <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        <StatusBadge status={p.status} demo={p.demo} />
+        {p.confidence && <span className="label-tech">Confidence: {p.confidence}</span>}
+        <span className="label-tech">Updated {new Date(p.updatedAt).toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" })}</span>
+        {p.originalManufacturer && <span className="label-tech normal-case tracking-normal">Maker: {p.originalManufacturer}</span>}
+      </div>
+      {(detailed || p.sources.length <= 1) && p.sources.length > 0 && (
+        <ul className="space-y-1">
+          {p.sources.map((s, i) => (
+            <li key={i} className="flex flex-wrap gap-x-2">
+              <span className="label-tech">{s.type ? SOURCE_TYPE_LABEL[s.type] : "Source"}</span>
+              {s.url ? <a className="link-u text-muted hover:text-fg" href={s.url} target="_blank" rel="noreferrer">{s.label} ↗</a> : <span>{s.label}</span>}
+              {s.retrievedAt && <span className="text-subtle">· retrieved {s.retrievedAt}</span>}
+            </li>
+          ))}
+        </ul>
+      )}
+      {!detailed && p.sources.length > 1 && <span className="label-tech">{p.sources.length} sources</span>}
+      {p.reviewerNotes && <p className="max-w-xl text-subtle">Reviewer notes: {p.reviewerNotes}</p>}
     </div>
   );
 }

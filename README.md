@@ -1,8 +1,8 @@
 # VELOX — Ride Smarter.
 
-A cycling intelligence platform: discover bicycles, explore Indonesian and international brands, browse components, configure custom builds with a real compatibility engine, get goal-driven upgrade advice, compare anything side by side, and manage a personal garage.
+A cycling intelligence platform: discover bicycles from Indonesia and around the world, explore brands, wheel makers and components, configure custom builds with a real compatibility engine, get goal-driven upgrade advice, diagnose problems with **AI Mechanic**, preview upgrades with the **AI Bike Visualizer**, calculate weight and cost changes with the **Upgrade Simulator**, compare anything side by side, and manage a personal garage.
 
-Built with **Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · Lucide · Geist**. Runs fully in **local demonstration mode** with no credentials; a complete Supabase/PostgreSQL schema is included for the persistent backend.
+Built with **Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS 4 · Lucide · Geist · Anthropic SDK · Zod**. Runs fully without credentials; AI features say clearly when no provider is connected.
 
 ---
 
@@ -15,43 +15,67 @@ npm run dev          # http://localhost:3000
 
 | Script | What it does |
 | --- | --- |
-| `npm run dev` | Development server (Turbopack) |
-| `npm run build` / `npm start` | Production build (485 pages statically prerendered) / serve it |
-| `npm run lint` | TypeScript type-check (`tsc --noEmit`) |
-| `npm test` | Unit tests (Vitest) — compatibility engine, finder, advisor, search, import |
-| `npm run test:e2e` | End-to-end browser test of every primary flow. Start the app first, then `BASE_URL=http://localhost:3000 npm run test:e2e` (needs Playwright + Chromium) |
+| `npm run dev` | Development server |
+| `npm run build` / `npm start` | Production build / serve |
+| `npm run lint` | TypeScript strict type-check |
+| `npm test` | Unit tests (Vitest) |
+| `npm run test:e2e` | Browser end-to-end test of every primary flow — start the app, then `BASE_URL=http://localhost:3000 npm run test:e2e` |
 
-### Environment variables
+### Environment variables (all optional, server-side only)
 
-None are required. See `.env.example`:
+| Variable | Enables |
+| --- | --- |
+| `ANTHROPIC_API_KEY` | AI Mechanic language + photo analysis (structured output, server-side refusal fallback). Without it, the rule-based engine runs alone and the UI says so. |
+| `VELOX_AI_MODEL` | Model override (default `claude-opus-5-5`) |
+| `VELOX_IMAGE_API_URL`, `VELOX_IMAGE_API_KEY` | Image generation for the Visualizer via any provider behind a small gateway (contract in `src/lib/ai/registry.ts`). Without it, no image is generated and no illustration is substituted. |
+| `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Reserved for the Supabase backend (schema included, adapter not yet wired) |
 
-| Variable | Required | Purpose |
-| --- | --- | --- |
-| `NEXT_PUBLIC_SUPABASE_URL` | No | Reserved for the Supabase backend (not yet wired — see *Next steps*) |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | No | As above |
+Keys are read only in server code (`src/lib/ai/*`, `src/app/api/*`, guarded by `server-only`) and never reach the browser.
 
 ---
 
-## Implemented features
+## What changed in this release
 
-| Area | Route | What works |
-| --- | --- | --- |
-| **Home** | `/` | Cinematic hero, 8 category entry points, live example build (real compatibility output), real Upgrade Advisor output, brands (Indonesian and international side-by-side), component spotlight, comparison table, “Why VELOX” |
-| **Bike Finder** | `/bikes` | Budget in IDR (presets + custom), experience, riding usage, category → subcategory, local/international, brand, country, frame material, groupset brand, brake type, wheel size, suspension, discontinued toggle. Ranked by suitability + drivetrain *value* (never by price alone) with per-bike reasons and cautions. URL-shareable filters, sort options, mobile filter drawer |
-| **Bike profiles** | `/bikes/[slug]` | Full spec sheet with “Not Available” markers and missing-field count, price with price-type label and history, provenance (status, source, updated date), other model years/generations, similar bikes, add to garage / compare / wishlist, upgrade ideas |
-| **Build a Bike** | `/build` | 17 component slots + accessories, discipline filter, picker with search/sort and live per-candidate compatibility, groupset “kit” install, running price and weight totals (with counts of parts lacking data), compatibility report, save / duplicate / new, multiple saved builds, export `.txt` / `.json`, print, compare builds, add to garage. Draft auto-persists |
-| **Compatibility engine** | `src/lib/compat.ts` | 22 rules: headset/steerer, frame–fork wheel size and brake interface, bottom bracket × spindle matrix, brake mounts (flat/post/rim/V), lever ↔ caliper actuation, rotor mount (Center Lock / 6-bolt), rotor size, wheel size, axle standards (QR, thru-axle, Boost, BMX), freehub bodies (HG/MicroSpline/XD/XDR/Campagnolo/BMX driver), drivetrain speeds, pull-ratio/electronic protocol, derailleur capacity, chainrings vs front derailleur, FD mount, Di2 routing vs wireless AXS, UDH for SRAM Transmission, tyre ↔ rim (ISO diameters), tubeless, rim width ratio, tyre clearance, seatpost diameter / shims / proprietary posts, stem ↔ steerer, bar clamp, pedal thread. Results: *Compatible · Potentially Compatible · Incompatible · Insufficient Information* — never assumes compatibility when data is missing |
-| **Upgrade Advisor** | `/upgrade` | Register a bike from the catalogue, from My Garage (incl. custom builds) or manually. Budget + goals (speed, climbing, comfort, reliability, control, versatility) + optional area limits. Candidates are checked against a virtual model of the bike using the same engine, tier-gated (no sideways/downward moves), and packed into **Budget / Balanced / Performance** plans with current part, replacement, price, benefits, weight delta (when known), implications, compatibility notes and priority. Areas with nothing worthwhile are listed with a reason |
-| **Brand Explorer** | `/brands`, `/brands/[slug]` | 82 brands (14 Indonesian). Search (typo-tolerant), region, country, category, sort, grid/list. Profiles with origin, founding year, website, categories, current and historical models, components, and cross-region alternatives |
-| **Component Explorer** | `/components`, `/components/[id]` | 321 components. Type tabs, search, manufacturer, discipline, tier, sort. Detail pages with specs, compatibility attributes, kit contents, “part of” groupsets, automatic checks against counterpart parts, “Use in a build” |
-| **Compare** | `/compare` | Bikes, brands, components (incl. groupsets/wheels/tyres) and custom builds, up to 4 each. Grouped technical table, differences emphasised, “Best” markers for price/weight/clearance, “only differences” toggle, shareable `?kind=bike&ids=…` URLs |
-| **My Garage** | `/garage`, `/garage/[id]` | Add catalogue, unlisted (manual) or custom-build bikes; per-bike profile with editable details, estimated value (clearly labelled), modifications / component-change / maintenance / note log with costs, links to Upgrade Advisor and builder; saved builds; wishlist |
-| **Search** | ⌘K / `/` anywhere, `/search` | Global command palette and results page across brands, bikes, components and categories with typo tolerance (bounded Levenshtein), kind and brand filters, suggestions and empty states |
-| **Admin Panel** | `/admin` | Role-gated. Overview and data-quality counts; CRUD for brands / bike models / components (incl. compatibility JSON, specs, prices with price type + source, image upload); verification status workflow (source required to verify); archive/restore; add subcategories; review community submissions (approve → published as *Community Submitted*); CSV/JSON import with validation preview; JSON/CSV export; reset overlay |
-| **Community submissions** | `/submit` | Brand / bike / component / correction submissions with source and notes, routed to admin review |
-| **Account** | `/account` | Demo sign-in with Rider or Administrator role; local data management |
+### Visual redesign
+- **Cinematic full-bleed hero** with licensed photography, oversized editorial type, glass stat strip computed from the database.
+- **Photographic category mosaic** (Road, Mountain, Gravel, Electric, Urban, Hybrid, Folding, BMX, Touring, Track & Fixed) — distinct imagery per category, never one photo reused across unrelated categories.
+- Varied editorial compositions: split image/panel layouts, full-width photo bands (AI Mechanic, closing "Ride Smarter"), a brand marquee, numbered editorial lists.
+- **All wireframe bicycle illustrations removed.** Bike tiles, bike pages, garage, compare and builder now use photography; where a photo stands in for a specific product it carries a "Representative image" label and a link to the official product page when known.
+- Navigation: fixed translucent header (transparent over the hero), refined spacing and animated active underline, and a **Tools ▾ menu** for AI Mechanic, AI Bike Visualizer and Upgrade Simulator. Responsive mobile menu includes the tools.
 
-Cross-cutting: IDR default with a labelled demo USD toggle; verification badges; “Estimated” price labels everywhere; toasts; skeletons; empty/error/404 states; keyboard navigation and focus styles; skip link; reduced-motion support; responsive from 390 px to wide desktop.
+### Imagery & licensing
+- 20 photographs from **Pexels** (free commercial use, modification allowed), downloaded and **visually checked** before use, served locally as WebP via `next/image`.
+- Central **image registry** (`src/data/media.ts`) records source URL, photographer (where stated), licence, quality, verification date and the `representative` flag. Public listing at `/sources`.
+- No manufacturer product photography is bundled: licensing could not be confirmed. Admin image upload exists for licensed assets.
+
+### Global database expansion
+- **199 manufacturers** (14 Indonesian, 55 China & Taiwan, 63 Europe, 54 North America, 9 Japan & Korea), each labelled by what it actually does: complete bicycles, framesets, wheels, components, e-bikes, OEM manufacturing, private-label/open-mould, distribution.
+- **41 wheel makers**, **47 wheelsets** with an extended spec model (rim material/depth, internal/external width, hub, spokes, bearings, max system weight, warranty), **11 hubs**, **25 reference bearings**.
+- **94 bike models / model years**, now covering TT, triathlon, track, fat bike, downhill, dirt jump, e-road, e-gravel, e-folding, e-cargo, cargo, tandem, recumbent, kids, balance and adaptive bikes, plus researched Chinese models (Pardus, Tavelo, Quick Pro, Elves, Winspace, SEKA).
+
+### Real-world research (16 Nov 2026)
+- Web research on 32 brand records (plus Indonesian company checks). Facts are recorded **only where a source stated them**, with the source URL, type and retrieval date; conflicts are left empty and explained in reviewer notes. Examples of corrections: United Bike → PT Terang Dunia Internusa Tbk (founded 1988, Tangerang Selatan; earlier seed domain removed as unconfirmed); Wimcycle and Thrill → Gresik; Pacific → PT Roda Pacific Mandiri (since 1995); Element → Kendal (since 2008).
+- 13 requested names could not be substantiated (e.g. Hygge, OG-EVKIN, ONIRII, BXT, Carbonal, CSC, Tideace, VeloBuild) and are **kept out of the catalogue** in a research queue (`src/data/research.ts`, shown on `/sources`).
+- Official manufacturer sites could not be fetched from the build environment, so **no product specifications were imported from official sites yet**; they are listed as sources awaiting integration.
+
+### Provenance model
+Statuses: **Verified Official · Verified Distributor · Cross-Verified · Community Submitted · Unverified · Historical · Discontinued · Archived**. Every record supports source URL + source type + retrieval date, confidence (high/medium/low), original manufacturer and reviewer notes. A record cannot be approved as verified without a source.
+
+### Data ingestion
+`src/lib/ingest.ts` — reusable adapters (**CSV**, **JSON**, **official product page via schema.org JSON-LD**, **manual entry**) → normalisation → **duplicate detection** (record id, product ID/SKU/GTIN, brand + model + year + variant, near-identical names) → **staging queue** → admin **Review queue** (approve as new, update existing, reject, set status, reviewer notes). Nothing reaches the catalogue without review. The SQL schema enforces the identity rule with a unique index.
+
+### VELOX AI Mechanic (`/mechanic`)
+- Text, dictation (Web Speech API where supported), bike from My Garage or catalogue, system selection, up to 6 photos.
+- **Rule-based diagnostic engine** (19 systems, 28 causes, 15 targeted follow-up questions, English + common Indonesian terms) ranks **likely** vs **possible** causes, lists **confirmed** facts (your answers, catalogue data) and **unknowns**, gives ordered inspection steps and repair complexity, and suggests catalogue parts with a compatibility check against your bike.
+- **Safety**: anything affecting braking, steering, fork or frame triggers a "stop riding until inspected" warning.
+- **Bearing identification**: match by seal marking (2RS/LLB suffixes, ISO 618xx naming handled) or measured ID × OD × width; SHIS headset code decoder; bottom-bracket standards reference (BSA, ITA, T47, BB86, BB92, PF30, BB30, BB386EVO, BBright). Never identifies a bearing from a photo.
+- With `ANTHROPIC_API_KEY`, the server adds a Claude analysis (structured output via Zod, photos as vision input, grounded in the engine's result and catalogue data); without it, the page states that only the local engine ran.
+
+### VELOX AI Bike Visualizer (`/visualizer`)
+Choose a garage/catalogue bike, upload a side-on photo, pick concept (Original / Budget / Balanced / Performance — loaded from Upgrade Advisor plans — or Custom), parts from the catalogue, frame-colour concept and scene. VELOX builds a **geometry-preserving brief** (keep silhouette, wheelbase, fork, proportions; no brand logos or names) and sends it to the configured image provider. Results are labelled **AI concept visualisation**. Without a provider: no image, no substitute illustration — the exact brief is shown.
+
+### Performance Upgrade Simulator (`/simulator`)
+Per-part weight Δ only when both weights are catalogued; bike total only when the bike weight and every Δ are known; cost totals with estimate labelling; practical effects described qualitatively. **No speed/watt gains are invented.** The calculation method is shown on the page. Embedded in the Visualizer and linked from Upgrade Advisor plans and garage bikes.
 
 ---
 
@@ -59,77 +83,59 @@ Cross-cutting: IDR default with a labelled demo USD toggle; verification badges;
 
 ```
 src/
-  app/                    # routes (App Router). Each feature: page.tsx (server, metadata) + client component
-    page.tsx              # Home
+  app/
+    page.tsx                      Home (editorial redesign)
     bikes/ build/ upgrade/ brands/ components/ compare/ garage/ search/ admin/ submit/ account/
+    mechanic/   visualizer/   simulator/   sources/        ← new
+    api/ai/status  api/mechanic  api/visualizer             ← server routes (AI providers)
   components/
-    ui/                   # design-system primitives (Button, badges, Price, fields, SpecRows, toast…)
-    layout/               # Header (nav, ⌘K search), CommandSearch, Footer
-    BikeGraphic.tsx       # procedural technical bicycle illustrations per category
-    Glyphs.tsx            # component glyphs, brand monograms, VELOX logo
-    catalog.tsx           # BikeTile, ComponentRow, Compare/Wishlist buttons
-  data/                   # seed catalogue (NOT hard-coded in components)
-    brands.ts categories.ts bikes.ts components.ts provenance.ts
+    Photo.tsx                     registry-backed next/image with licence/representative labels
+    upgrade-config.tsx            shared bike/part pickers + SimulatorPanel
+    AIStatusBadge.tsx             honest provider status
+    layout/ (Header with Tools menu, CommandSearch, Footer), ui/, catalog.tsx, Glyphs.tsx
+  data/
+    brands.ts (researched + seed)  bikes.ts  components.ts  wheels.ts (wheelsets, hubs, bearings)
+    media.ts (image registry)      research.ts (pending names, official sources)  categories.ts
   lib/
-    types.ts              # domain model (mirrors the SQL schema)
-    compat.ts             # compatibility engine
-    finder.ts             # Bike Finder filtering + scoring
-    upgrade.ts profiles.ts# Upgrade Advisor
-    builds.ts             # build totals, kits, export
-    search.ts             # index + typo-tolerant search
-    state.ts store.ts     # catalogue overlay + user data stores (localStorage), admin write guard
-    importers.ts csv.ts   # CSV/JSON import normalisers
-    format.ts garage.ts
-supabase/schema.sql       # relational schema + RLS (validated on PostgreSQL 16)
-tests/                    # Vitest unit tests
-scripts/smoke.mjs         # Playwright end-to-end test
+    compat.ts finder.ts upgrade.ts builds.ts search.ts           (existing engines, unchanged APIs)
+    ingest.ts                      adapters, dedupe, staging
+    mechanic/ knowledge.ts engine.ts standards.ts
+    simulator.ts  visualizer.ts
+    ai/ types.ts anthropic.ts registry.ts                        (server-only)
+supabase/schema.sql                23 tables, 42 RLS policies (validated on PostgreSQL 16)
+tests/                             Vitest (43 tests)
+scripts/smoke.mjs                  Playwright end-to-end (39 flows)
+public/media/                      licensed photography (WebP)
 ```
 
 ## Database architecture
 
-`supabase/schema.sql` — 20 tables, 37 row-level-security policies:
+Additions to the relational schema: `source_type`, `confidence_level`, `brand_kind`, `license_status` enums; provenance columns (`confidence`, `original_manufacturer`, `reviewer_notes`) on brands, bike models and components; `brands.kinds/parent_company/headquarters`; `bike_models.variant` with a **unique identity index** (brand + lower(name) + year + variant); `components.product_id/model_year` with a unique product-ID index; `wheelset_specs`; `bearings` (indexed by dimensions); `media_assets` (licence + attribution + representative flag); `data_sources.type`; `ingest_staging` (admin-only RLS). Catalogue tables remain public-read / admin-write.
 
-- **Reference:** `countries` (brand origin, region), `categories` → `subcategories` (expandable hierarchy)
-- **Brands:** `brands`, `brand_categories`
-- **Bicycles:** `bike_families` (e.g. *Strattos*) → `bike_models` (one row per model-year/trim, e.g. *Strattos S4 2024*; generation, specs, `compat` JSONB for the engine)
-- **Components:** `component_manufacturers` → `components` (type, tier, specs JSONB, compat JSONB), `groupset_parts` (kits), `compatibility_rules`
-- **Polymorphic facts:** `prices` (amount in IDR, `price_type` = msrp · distributor · retailer · estimated · historical, source, date, current flag), `images`, `data_sources`
-- **Provenance on every catalogue row:** `status` (verified · community · unverified · discontinued · archived), `is_demo`, `updated_at`
-- **Users:** `profiles` (role: user/admin), `builds`, `garage_bikes`, `garage_log`, `wishlist`, `submissions`
-- **RLS:** catalogue is public-read and admin-only write (`is_admin()`), so regular users can never modify manufacturer data; personal tables are owner-only; submissions are insert-own / admin-review
-
-In demo mode the same model lives in `src/lib/state.ts`: seed data + an admin **overlay** (edits, imports, archives, approved submissions) merged at read time, plus per-user stores in `localStorage` (`velox:v1:*`).
-
----
-
-## Testing results
-
-All run in this environment on the final code:
+## Testing results (final code)
 
 | Check | Result |
 | --- | --- |
-| `npm run lint` (TypeScript strict) | ✅ no errors |
-| `npm test` (Vitest) | ✅ 18 / 18 — catalogue integrity, engine rules (valid race build, electronic-only frame, axle/freehub mismatch, insufficient data, UDH, clearance/shims, pull ratio, 1x+FD, full BMX build), finder budget/region/value ranking, advisor tiers respect caps and rim-brake constraints, typo search, CSV round-trip |
-| `npm run build` | ✅ 485 static pages |
-| `npm run test:e2e` against dev **and** production builds | ✅ 27 / 27, zero console/runtime errors — finder filtering + URL sync, local-only filter, ⌘K typo search, builder (frame, fork, groupset kit, wheels, totals, checks, save, reload persistence, incompatibility detection), advisor (catalogue + manual), compare (shared URL, “Best”, diff toggle, builds), garage (add, profile, log, link to advisor), admin gate, submission → approval → published, CSV import, archive hides from finder, component search → detail → use in build, Indonesian brand filter, no horizontal overflow at 390 px on 9 routes, mobile menu |
-| `supabase/schema.sql` | ✅ applied cleanly to PostgreSQL 16 (with a stub `auth` schema) |
+| `npm run lint` (TypeScript strict) | ✅ |
+| `npm test` | ✅ 43 / 43 — previous engine tests plus database integrity (unique ids, valid subcategories, kinds on every brand, no verified record without a source, researched records cite https sources with dates, pending names excluded, all requested subcategories covered), media registry (files exist, licence data, distinct category imagery), AI Mechanic engine (routing, re-ranking, safety stop, Indonesian terms, no photo-only identification), bearing matcher (markings, ISO naming, measurements, SHIS), simulator (no total when weights unknown, no performance claims), ingestion (staging, duplicate certainty, product-ID dedupe, schema.org extraction), visualizer brief (geometry kept, no brand names) |
+| `npm run build` | ✅ |
+| `npm run test:e2e` (dev and production) | ✅ 39 / 39, no console/runtime errors — all previous flows plus Tools menu, AI status honesty, AI Mechanic diagnose + follow-up re-ranking + brake safety stop, bearing ID by marking and measurement, simulator plan loading, visualizer brief + refusal to fake an image, sources page, staged CSV ingest that is invisible until approved, and no horizontal overflow at 390 px on 13 routes |
+| `supabase/schema.sql` | ✅ applied to PostgreSQL 16; identity index rejects a case-variant duplicate |
 
 ## Known limitations
 
-- **Catalogue data is unverified demo seed.** Brands, models and components are real products, but specifications are editorial seed data that has *not* been checked against manufacturer sources (every record is labelled *Unverified · Demo*), and **every price is a VELOX estimate in IDR** — never presented as MSRP or distributor pricing. Where values were uncertain they are left empty (“Not Available”), including most bike weights and several Indonesian models, which surfaces as *Insufficient Information* in the engine.
-- **No photography.** No manufacturer images are bundled; bikes use procedurally drawn technical illustrations and components use glyphs. Admin image upload works (stored as data URLs, ≤ 400 KB, demo only).
-- **Persistence is per-browser.** Accounts, roles, garage, builds and admin edits live in `localStorage`; the demo “Administrator” role is self-selected and is **not** security — real enforcement is the RLS in the SQL schema once Supabase is wired.
-- **Supabase is not yet connected in code.** The schema is complete and validated, but there is no data adapter yet; env vars are reserved.
-- The whole seed catalogue ships to the client (simple and fast at this size, ~70 bikes / 321 components; move to server queries as it grows).
-- The compatibility engine covers the common standards listed above; it does not yet model chainline, BB shell width per crank, brake hose/cable routing, rotor-adapter sizes per mount, or rim-tyre pressure limits.
-- USD display uses a fixed demo rate (labelled). UI is English; Bahasa Indonesia is not yet provided.
+- **Most specifications are still unverified seed data**, and every bike/component price is a VELOX estimate. Brand-level research is real and sourced; product-level data from official manufacturer sites has **not** been imported (the build environment could not reach those sites). `/sources` shows exact counts by status.
+- **No live AI in this build**: no `ANTHROPIC_API_KEY` or image provider was available, so AI Mechanic ran on its rule-based engine and the Visualizer could not generate images. The Anthropic provider code type-checks against the installed SDK but has **not been exercised against the live API**.
+- **Hero image**: no free-licensed dark studio carbon product shot was available; the hero is an editorial road photo with a cinematic grade. Swapping in commissioned or licensed studio photography is a one-line change in `src/data/media.ts`.
+- Category photos are representative and repeat within a category; model-specific photography needs licensed manufacturer imagery.
+- Persistence is still per-browser (localStorage); Supabase schema is ready but not wired. The demo admin role is not security.
+- Audio: dictation uses the browser's speech recognition where available; audio files are not uploaded or transcribed server-side.
 
 ## Recommended next steps
 
-1. **Verify and expand the catalogue:** source official specs/prices per model year (start with Polygon, United, Element, Pacific, Thrill, Wimcycle), attach `data_sources`, flip records to *Verified*; add frame geometry tables.
-2. **Wire Supabase:** a `CatalogRepository` / `UserRepository` implementing the same API as `state.ts` (read catalogue server-side, Supabase Auth for sessions/roles, Storage for images), then seed from `/admin` JSON export.
-3. **Real product imagery** via Storage with responsive `next/image`.
-4. **Price tracking:** distributor/retailer feeds into `prices` with history charts; local availability by city.
-5. **Engine depth:** chainline, BB shell width, cable/hose routing, rotor adapters; fit/geometry-based size recommendation in the Finder.
-6. **Bahasa Indonesia** localisation and IDR-first copy.
-7. Add CI (lint, unit, e2e against `next start`) and server-side search for large catalogues.
+1. Allow the official manufacturer hosts listed on `/sources` (or provide licensed feeds) and run the schema.org adapter to import model-year specs and images into the review queue — start with Polygon, United, Pacific, Element, Wimcycle.
+2. Set `ANTHROPIC_API_KEY` and run an evaluation set of real symptom descriptions against AI Mechanic before exposing it widely.
+3. Connect an image provider via `VELOX_IMAGE_API_URL` and tune the brief with real user photos.
+4. Commission or license a dark-studio hero and per-model product photography.
+5. Wire Supabase (auth, catalogue reads, staging, media storage) using the included schema.
+6. Bahasa Indonesia localisation.

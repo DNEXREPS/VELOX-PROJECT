@@ -8,7 +8,8 @@ import { createStore, useHydrated, useStore } from "@/lib/store";
 import { applyKit, buildToText, disciplineMatches, resolveSelection, SLOT_GROUPS, SLOT_LABEL, summarize } from "@/lib/builds";
 import { checkBuild, checkCandidate, STATUS_TEXT, worst, type CompatStatus } from "@/lib/compat";
 import type { Build, BuildSelection, Component, ComponentType, Discipline } from "@/lib/types";
-import { BikeGraphic } from "@/components/BikeGraphic";
+import { Photo } from "@/components/Photo";
+import { MEDIA } from "@/data/media";
 import { ComponentGlyph } from "@/components/Glyphs";
 import { Button, CompatBadge, compatDot, DemoNotice, Price, Segmented, SpecRows } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
@@ -24,7 +25,7 @@ const draftStore = createStore<Build>("builder-draft", newBuild());
 const DISCIPLINES: Array<{ value: Discipline; label: string }> = [
   { value: "road", label: "Road" }, { value: "gravel", label: "Gravel" }, { value: "mtb", label: "MTB" }, { value: "urban", label: "Urban" }, { value: "bmx", label: "BMX" },
 ];
-const GRAPHIC: Record<Discipline, Parameters<typeof BikeGraphic>[0]["category"]> = { road: "road", gravel: "gravel", mtb: "mtb", urban: "urban", bmx: "bmx", universal: "road" };
+const BANNER: Record<Discipline, keyof typeof MEDIA> = { road: "roadbikeWall", gravel: "gravel", mtb: "mtb", urban: "urban", bmx: "bmx", universal: "road" };
 
 export function Builder() {
   const cat = useCatalog();
@@ -136,10 +137,12 @@ export function Builder() {
       <div className="container-x grid gap-10 py-10 lg:grid-cols-[1fr_380px] xl:gap-14 [&>*]:min-w-0">
         {/* slots */}
         <div>
-          <div className="relative mb-10 overflow-hidden border hairline bg-gradient-to-b from-ink-900 to-ink-950">
-            <div className="grid-bg absolute inset-0 opacity-60" />
-            <BikeGraphic category={GRAPHIC[draft.discipline]} suspension={draft.discipline === "mtb" ? (sel.frame?.compat.travelMm ? "full" : "front") : undefined} color={draft.discipline === "bmx" ? "#E11D48" : "#E6EAEE"} disc={sel.brakes ? sel.brakes.compat.brakeInterface === "disc" : draft.discipline !== "bmx"} className="relative mx-auto w-full max-w-3xl p-4 md:p-8" />
-            <div className="absolute bottom-3 left-4 right-4 flex justify-between label-tech"><span>{sel.frame ? labelFor(sel.frame) : "No frame selected"}</span><span>{summary.weightKnown ? formatWeightG(summary.weightG) : "—"}</span></div>
+          <div className="relative mb-10 aspect-[21/9] overflow-hidden">
+            <Photo asset={MEDIA[BANNER[draft.discipline]]} sizes="(min-width: 1024px) 60vw, 100vw" className="absolute inset-0 h-full w-full" overlay="bottom" label="representative" />
+            <div className="absolute bottom-4 left-5 right-5 flex flex-wrap items-end justify-between gap-2">
+              <div><p className="label-tech text-fg/60">{titleCase(draft.discipline)} build</p><p className="text-lg font-medium tracking-tight">{sel.frame ? labelFor(sel.frame) : "No frame selected"}</p></div>
+              <p className="tabular font-mono text-sm text-fg/80">{summary.weightKnown ? formatWeightG(summary.weightG) : "—"}</p>
+            </div>
           </div>
 
           {SLOT_GROUPS.map((g) => (

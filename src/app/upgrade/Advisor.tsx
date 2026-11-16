@@ -79,6 +79,7 @@ export function Advisor() {
     };
   }, [source, garage, garageId, cat, builds, modelId, manual]);
 
+  const profileRef = source === "garage" && garageId ? `garage=${garageId}` : source === "catalog" && modelId ? `bike=${modelId}` : null;
   const result = useMemo(() => (profile ? adviseUpgrades({ profile, budget, goals, areas, catalog: cat.components, componentById: cat.componentById }) : null), [profile, budget, goals, areas, cat]);
 
   const toggle = <T,>(list: T[], v: T) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
@@ -185,7 +186,11 @@ export function Advisor() {
                         <h3 className="text-xl font-medium tracking-tight">{plan.title}</h3>
                         <p className="text-sm text-muted">{plan.description} Cap {formatIdrShort(plan.cap)}.</p>
                       </div>
-                      <p className="tabular text-lg">{formatMoney(plan.total)} <span className="text-xs text-subtle">est.</span></p>
+                      <div className="flex items-center gap-3">
+                        {plan.items.length > 0 && profileRef && <Link href={`/simulator?${profileRef}`} className="text-xs text-muted link-u hover:text-fg">Simulate</Link>}
+                        {plan.items.length > 0 && profileRef && <Link href={`/visualizer?${profileRef}`} className="text-xs text-muted link-u hover:text-fg">Visualise</Link>}
+                        <p className="tabular text-lg">{formatMoney(plan.total)} <span className="text-xs text-subtle">est.</span></p>
+                      </div>
                     </div>
                     {plan.items.length === 0 ? (
                       <p className="py-6 text-sm text-muted">No worthwhile upgrade fits within this tier&apos;s budget. Increase the budget or adjust goals.</p>

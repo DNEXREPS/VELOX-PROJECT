@@ -55,11 +55,30 @@ export const PRICE_TYPE_LABEL: Record<PriceType, string> = {
 };
 
 export const STATUS_LABEL: Record<VerificationStatus, string> = {
-  verified: "Verified",
+  "verified-official": "Verified Official",
+  "verified-distributor": "Verified Distributor",
+  "cross-verified": "Cross-Verified",
   community: "Community Submitted",
   unverified: "Unverified",
+  historical: "Historical",
   discontinued: "Discontinued",
   archived: "Archived",
+};
+
+export const isVerified = (s: VerificationStatus) => s === "verified-official" || s === "verified-distributor" || s === "cross-verified";
+
+export const SOURCE_TYPE_LABEL: Record<import("./types").SourceType, string> = {
+  "official-website": "Official website",
+  "official-catalog": "Official catalogue",
+  "technical-manual": "Technical manual",
+  "authorized-distributor": "Authorised distributor",
+  retailer: "Retailer",
+  "manufacturer-announcement": "Manufacturer announcement",
+  "official-social": "Official social media",
+  publication: "Cycling publication",
+  community: "Community",
+  standard: "Published standard",
+  "editorial-seed": "Editorial seed",
 };
 
 export const titleCase = (s: string) => s.replace(/[-_]/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());

@@ -24,7 +24,8 @@ const browser = await chromium.launch();
 const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
 const page = await ctx.newPage();
 page.on("pageerror", (e) => errors.push(`${page.url()} :: ${e.message}`));
-page.on("console", (m) => { if (m.type() === "error" && !/404/.test(m.text())) errors.push(`${page.url()} :: ${m.text().slice(0, 200)}`); });
+// 404 = intentional not-found test; 503 = Visualizer's honest "no image provider configured" response
+page.on("console", (m) => { if (m.type() === "error" && !/404|503/.test(m.text())) errors.push(`${page.url()} :: ${m.text().slice(0, 200)}`); });
 const go = (p) => page.goto(BASE + p, { waitUntil: "networkidle" });
 
 await step("Home renders hero and CTAs", async () => {
@@ -165,11 +166,18 @@ await step("Community submission → admin approval publishes record", async () 
   await page.getByText("Community Submitted").first().waitFor();
 });
 
-await step("Admin: CSV import creates a new bike model", async () => {
+await step("Admin: CSV ingest is staged, de-duplicated and published only after review", async () => {
   await go("/admin");
   await page.getByRole("radio", { name: "Import / Export" }).click();
   await page.getByRole("button", { name: "Insert sample" }).click();
-  await page.getByRole("button", { name: /Import 1 records/ }).click();
+  await page.getByLabel("Source URL (where this data came from)").fill("https://www.polygonbikes.com/");
+  await page.getByRole("button", { name: "Stage for review" }).click();
+  await page.getByText(/Polygon Strattos S3|polygon Strattos S3/i).first().waitFor();
+  await go("/bikes/polygon-strattos-s3-2025");
+  await page.getByText("Bike not found").waitFor(); // not public before approval
+  await go("/admin");
+  await page.getByRole("radio", { name: "Review queue" }).click();
+  await page.getByRole("button", { name: "Approve as new" }).first().click();
   await go("/bikes/polygon-strattos-s3-2025");
   await page.getByRole("heading", { name: "Strattos S3" }).waitFor();
 });
@@ -201,10 +209,70 @@ await step("Brand Explorer filters Indonesian brands", async () => {
   assert(n >= 14, "expected ≥14 Indonesian brands, got " + n);
 });
 
+await step("Tools menu opens AI Mechanic", async () => {
+  await go("/");
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("button", { name: /Tools/ }).click();
+  await page.getByRole("menuitem", { name: /AI Mechanic/ }).click();
+  await page.waitForURL("**/mechanic");
+});
+
+await step("AI status endpoint reports honestly (no provider configured)", async () => {
+  const res = await page.request.get(BASE + "/api/ai/status");
+  const s = await res.json();
+  assert(s.language.connected === false && s.imageGeneration.connected === false, JSON.stringify(s));
+});
+
+await step("AI Mechanic: diagnoses, asks follow-ups, re-ranks on answers", async () => {
+  await go("/mechanic?q=" + encodeURIComponent("derailleur skips gears under load"));
+  await page.getByRole("heading", { name: /Likely causes|Possible causes/ }).first().waitFor();
+  await page.getByText("Checks that would narrow this down").waitFor();
+  await page.getByRole("button", { name: "Checker shows worn (≥0.5–0.75%)" }).click();
+  await page.waitForTimeout(600);
+  await page.getByText("Worn (stretched) chain").first().waitFor();
+  await page.getByText(/No AI provider is connected/).waitFor();
+});
+
+await step("AI Mechanic: braking problem triggers stop-riding warning", async () => {
+  await go("/mechanic?q=" + encodeURIComponent("my brake lever is spongy and pulls to the bar"));
+  await page.getByText("Stop riding until inspected").waitFor();
+});
+
+await step("Bearing identification by marking and measurements", async () => {
+  await go("/mechanic?tab=bearing");
+  await page.getByLabel("Marking on the seal").fill("61902-2RS");
+  await page.getByText("15 × 28 × 7 mm").first().waitFor();
+  await page.getByLabel("Marking on the seal").fill("");
+  await page.getByLabel("Inner diameter (mm)").fill("17");
+  await page.getByLabel("Outer diameter (mm)").fill("30");
+  await page.getByLabel("Width (mm)").fill("7");
+  await page.getByText("6903").first().waitFor();
+});
+
+await step("Upgrade Simulator: loads an advisor plan and calculates cost", async () => {
+  await go("/simulator?bike=giant-tcr-advanced-1-2024");
+  await page.getByRole("button", { name: "Balanced", exact: true }).click();
+  await page.getByText("Upgrade cost").waitFor();
+  await page.getByText("How these numbers are calculated").waitFor();
+});
+
+await step("AI Visualizer: builds a brief and refuses to fake an image without a provider", async () => {
+  await go("/visualizer?bike=polygon-strattos-s4-2024");
+  await page.getByRole("button", { name: "Performance", exact: true }).click();
+  await page.getByText("Concept brief", { exact: true }).waitFor();
+  await page.getByRole("button", { name: "Generate concept" }).click();
+  await page.getByText(/No image was generated/).first().waitFor();
+});
+
+await step("Sources page lists image licences and research findings", async () => {
+  await go("/sources");
+  await page.getByRole("heading", { name: "Image registry" }).waitFor();
+  await page.getByRole("heading", { name: "Requested but not found" }).waitFor();
+});
+
 /* --------------------------- responsive checks --------------------------- */
 const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
 const m = await mobile.newPage();
-for (const p of ["/", "/bikes", "/build", "/upgrade", "/brands", "/components", "/compare", "/garage", "/bikes/polygon-strattos-s4-2024"]) {
+for (const p of ["/", "/bikes", "/build", "/upgrade", "/brands", "/components", "/compare", "/garage", "/bikes/polygon-strattos-s4-2024", "/mechanic", "/visualizer", "/simulator", "/sources"]) {
   await step(`Mobile 390px has no horizontal overflow: ${p}`, async () => {
     await m.goto(BASE + p, { waitUntil: "networkidle" });
     const over = await m.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
@@ -214,8 +282,8 @@ for (const p of ["/", "/bikes", "/build", "/upgrade", "/brands", "/components", 
 await step("Mobile navigation menu opens and navigates", async () => {
   await m.goto(BASE + "/", { waitUntil: "networkidle" });
   await m.getByRole("button", { name: "Open menu" }).click();
-  await m.getByRole("navigation", { name: "Mobile" }).getByRole("link", { name: /Upgrade Advisor/ }).click();
-  await m.waitForURL("**/upgrade");
+  await m.getByRole("navigation", { name: "Mobile" }).getByRole("link", { name: /AI Mechanic/ }).click();
+  await m.waitForURL("**/mechanic");
 });
 
 await browser.close();

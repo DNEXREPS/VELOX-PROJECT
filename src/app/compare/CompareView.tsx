@@ -8,7 +8,8 @@ import { useHydrated, useStore } from "@/lib/store";
 import { summarize, SLOT_LABEL } from "@/lib/builds";
 import { STATUS_TEXT, type CompatStatus } from "@/lib/compat";
 import type { Build, CompareKind, Component } from "@/lib/types";
-import { BikeGraphic } from "@/components/BikeGraphic";
+import { Photo } from "@/components/Photo";
+import { mediaForCategory } from "@/data/media";
 import { BrandMark, ComponentGlyph } from "@/components/Glyphs";
 import { MAX_COMPARE } from "@/components/catalog";
 import { Button, EmptyState, Segmented, StatusBadge } from "@/components/ui";
@@ -28,7 +29,7 @@ function rowsFor(kind: CompareKind, ids: string[], cat: Catalog, builds: Build[]
     const items = ids.map((id) => cat.bikeById.get(id)).filter(Boolean) as NonNullable<ReturnType<typeof cat.bikeById.get>>[];
     const brand = (b: (typeof items)[number]) => cat.brandById.get(b.brandId);
     return {
-      heads: items.map((b) => ({ id: b.id, title: b.name, sub: `${brand(b)?.name} · ${b.year}`, href: `/bikes/${b.slug}`, visual: <BikeGraphic category={b.category} subcategory={b.subcategory} suspension={b.suspension} color={b.frameColor} detail={false} className="w-full" /> })),
+      heads: items.map((b) => ({ id: b.id, title: b.name, sub: `${brand(b)?.name} · ${b.year}`, href: `/bikes/${b.slug}`, visual: <Photo asset={mediaForCategory(b.category, b.subcategory)} sizes="240px" className="aspect-[4/3] w-full" label="representative" /> })),
       rows: [
         { group: "Overview", label: "Price", values: items.map((b) => b.price?.amount), best: "min", fmt: money },
         { label: "Price type", values: items.map((b) => (b.price ? PRICE_TYPE_LABEL[b.price.type] : null)) },
@@ -94,7 +95,7 @@ function rowsFor(kind: CompareKind, ids: string[], cat: Catalog, builds: Build[]
   const sums = items.map((b) => summarize(b, cat.componentById));
   const slots = Array.from(new Set(items.flatMap((b) => Object.keys(b.selection)))) as Array<keyof typeof SLOT_LABEL>;
   return {
-    heads: items.map((b) => ({ id: b.id, title: b.name, sub: titleCase(b.discipline), href: `/build?id=${b.id}`, visual: <BikeGraphic category={b.discipline === "universal" ? "road" : b.discipline} detail={false} className="w-full" /> })),
+    heads: items.map((b) => ({ id: b.id, title: b.name, sub: titleCase(b.discipline), href: `/build?id=${b.id}`, visual: <Photo asset={mediaForCategory(b.discipline === "universal" ? "road" : b.discipline)} sizes="240px" className="aspect-[4/3] w-full" label="representative" /> })),
     rows: [
       { group: "Overview", label: "Estimated total", values: sums.map((s) => s.price), best: "min", fmt: money },
       { label: "Listed weight", values: sums.map((s) => (s.weightKnown ? s.weightG : null)), best: "min", fmt: (v) => (v == null ? NA : formatWeightG(Number(v))) },

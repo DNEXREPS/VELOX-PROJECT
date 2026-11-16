@@ -8,7 +8,8 @@ import { useHydrated, useStore } from "@/lib/store";
 import { estimateValue } from "@/lib/garage";
 import { summarize, SLOT_LABEL } from "@/lib/builds";
 import type { GarageLogEntry } from "@/lib/types";
-import { BikeGraphic } from "@/components/BikeGraphic";
+import { Photo } from "@/components/Photo";
+import { mediaForCategory } from "@/data/media";
 import { Button, ButtonLink, EmptyState, Field, SpecRows, Stat } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
 import { cx, formatMoney, titleCase, uid } from "@/lib/format";
@@ -61,9 +62,8 @@ export function GarageBikeProfile({ id }: { id: string }) {
     <>
       <div className="container-x pt-8"><Link href="/garage" className="inline-flex items-center gap-2 text-sm text-muted hover:text-fg"><ArrowLeft className="h-4 w-4" /> My Garage</Link></div>
       <section className="container-x grid gap-10 pb-12 pt-8 lg:grid-cols-[1.2fr_1fr] [&>*]:min-w-0">
-        <div className="relative overflow-hidden border hairline bg-gradient-to-b from-ink-900 to-ink-950">
-          <div className="grid-bg absolute inset-0 opacity-60" />
-          <BikeGraphic category={category} subcategory={model?.subcategory} suspension={model?.suspension} color={model?.frameColor} className="relative w-full p-6" />
+        <div className="relative aspect-[4/3] overflow-hidden">
+          <Photo asset={mediaForCategory(category, model?.subcategory)} sizes="(min-width: 1024px) 55vw, 100vw" className="absolute inset-0 h-full w-full" label="representative" />
         </div>
         <div>
           <p className="eyebrow">{model ? "Catalogue bike" : g.manual ? "Unlisted bike" : "Custom build"}</p>
@@ -80,6 +80,9 @@ export function GarageBikeProfile({ id }: { id: string }) {
           </div>
           <div className="mt-6 flex flex-wrap gap-2">
             <ButtonLink href={`/upgrade?garage=${g.id}`}><Sparkles className="h-4 w-4" /> Upgrade Advisor</ButtonLink>
+            <ButtonLink href={`/mechanic`} variant="secondary">AI Mechanic</ButtonLink>
+            <ButtonLink href={`/visualizer?garage=${g.id}`} variant="secondary">Visualise</ButtonLink>
+            <ButtonLink href={`/simulator?garage=${g.id}`} variant="secondary">Simulate upgrades</ButtonLink>
             {build ? <ButtonLink href={`/build?id=${build.id}`} variant="secondary"><Hammer className="h-4 w-4" /> Edit build</ButtonLink> : <ButtonLink href="/build" variant="secondary"><Hammer className="h-4 w-4" /> Plan a custom build</ButtonLink>}
             {model && <ButtonLink href={`/bikes/${model.slug}`} variant="ghost">Catalogue page</ButtonLink>}
             <Button variant="danger" onClick={() => { if (confirm(`Remove ${g.nickname} from your garage? Its log will be deleted.`)) { garageStore.set((l) => l.filter((x) => x.id !== g.id)); toast("Bike removed", { tone: "info" }); router.push("/garage"); } }}><Trash2 className="h-4 w-4" /> Remove</Button>

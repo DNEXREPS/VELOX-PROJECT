@@ -6,8 +6,8 @@ import { slugify } from "@/data/brands";
 import type { BikeModel, Brand, CategoryId, Component, ComponentType, PriceEntry, PriceType, Provenance, VerificationStatus } from "./types";
 
 const CATS: CategoryId[] = ["road", "mtb", "gravel", "urban", "electric", "folding", "bmx", "other"];
-const TYPES: ComponentType[] = ["frame", "fork", "groupset", "shifters", "front-derailleur", "rear-derailleur", "crankset", "cassette", "chain", "brakes", "wheelset", "tires", "handlebar", "stem", "saddle", "seatpost", "pedals", "accessory"];
-const STATUSES: VerificationStatus[] = ["verified", "community", "unverified", "discontinued", "archived"];
+const TYPES: ComponentType[] = ["frame", "fork", "groupset", "shifters", "front-derailleur", "rear-derailleur", "crankset", "cassette", "chain", "brakes", "wheelset", "tires", "handlebar", "stem", "saddle", "seatpost", "pedals", "hub", "bearing", "accessory"];
+const STATUSES: VerificationStatus[] = ["verified-official", "verified-distributor", "cross-verified", "community", "unverified", "historical", "discontinued", "archived"];
 const PRICE_TYPES: PriceType[] = ["msrp", "distributor", "retailer", "estimated", "historical"];
 
 type Raw = Record<string, unknown>;

@@ -2,7 +2,8 @@
 import Link from "next/link";
 import { GitCompare, Heart } from "lucide-react";
 import type { BikeModel, Brand, CompareKind, Component } from "@/lib/types";
-import { BikeGraphic } from "./BikeGraphic";
+import { Photo } from "./Photo";
+import { mediaForBike } from "@/data/media";
 import { ComponentGlyph } from "./Glyphs";
 import { Price, StatusBadge } from "./ui";
 import { toast } from "./ui/toast";
@@ -69,18 +70,18 @@ export function WishlistButton({ kind, refId, label, className }: { kind: "bike"
 export function BikeTile({ bike, brand, className, children }: { bike: BikeModel; brand?: Brand; className?: string; children?: React.ReactNode }) {
   const label = `${brand?.name ?? ""} ${bike.name}`;
   return (
-    <article className={cx("group relative flex flex-col border-t hairline pt-5", className)}>
+    <article className={cx("group relative flex min-w-0 flex-col border-t hairline pt-5", className)}>
       <Link href={`/bikes/${bike.slug}`} className="absolute inset-0 z-0" aria-label={`${label} ${bike.year}`} />
-      <div className="relative -mx-1 aspect-[5/3] overflow-hidden bg-gradient-to-b from-ink-900 to-ink-950">
-        <div className="grid-bg absolute inset-0 opacity-60" />
+      <div className="relative aspect-[4/3] overflow-hidden bg-ink-900">
         {bike.imageUrl ? (
           // eslint-disable-next-line @next/next/no-img-element
-          <img src={bike.imageUrl} alt={label} loading="lazy" className="relative h-full w-full object-contain p-3 transition-transform duration-500 group-hover:scale-[1.03]" />
+          <img src={bike.imageUrl} alt={label} loading="lazy" className="relative h-full w-full object-contain p-3 transition-transform duration-700 group-hover:scale-[1.03]" />
         ) : (
-          <BikeGraphic category={bike.category} subcategory={bike.subcategory} suspension={bike.suspension} color={bike.frameColor} disc={bike.brakeType?.includes("disc")} className="relative h-full w-full p-3 transition-transform duration-500 group-hover:scale-[1.03]" title={label} />
+          <Photo asset={mediaForBike(bike)} sizes="(min-width: 1536px) 30vw, (min-width: 768px) 45vw, 100vw" className="absolute inset-0 h-full w-full" imgClassName="transition-transform duration-[1200ms] ease-out group-hover:scale-[1.05] saturate-[0.85]" label="representative" />
         )}
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink-950/50 to-transparent" />
         <div className="absolute left-3 top-3 flex gap-1.5">
-          {brand?.region === "Indonesia" && <span className="rounded-sm bg-ink-950/80 px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.08em] text-lime">Lokal · ID</span>}
+          {brand?.region === "Indonesia" && <span className="rounded-full bg-ink-950/75 backdrop-blur-md px-1.5 py-0.5 font-mono text-[10px] uppercase tracking-[0.08em] text-lime">Lokal · ID</span>}
           {bike.provenance.status === "discontinued" && <StatusBadge status="discontinued" />}
         </div>
       </div>

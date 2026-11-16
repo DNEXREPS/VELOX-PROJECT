@@ -69,7 +69,7 @@ export function ComponentDetail({ id }: { id: string }) {
             <CompareButton kind="component" id={c.id} label={label} className="h-10 px-4 text-sm" />
             <WishlistButton kind="component" refId={c.id} label={label} className="h-10 w-10" />
           </div>
-          <div className="mt-8"><ProvenanceLine p={c.provenance} /></div>
+          <div className="mt-8"><ProvenanceLine p={c.provenance} detailed /></div>
         </div>
       </section>
 
@@ -85,6 +85,22 @@ export function ComponentDetail({ id }: { id: string }) {
         </div>
       </section>
 
+      {c.type === "wheelset" && (
+        <section className="container-x pt-16">
+          <h2 className="mb-5 text-2xl font-medium tracking-tight">Wheelset specification</h2>
+          <div className="grid gap-x-14 lg:grid-cols-2">
+            <SpecRows rows={[["Manufacturer", c.manufacturer], ["Model", c.name], ["Model year", c.modelYear], ["Discipline", c.discipline.map(titleCase)], ["Rim material", c.wheel?.rimMaterial], ["Rim depth", c.wheel?.rimDepthMm != null ? `${c.wheel.rimDepthMm} mm` : null], ["Internal width", c.wheel?.internalWidthMm != null ? `${c.wheel.internalWidthMm} mm` : null], ["External width", c.wheel?.externalWidthMm != null ? `${c.wheel.externalWidthMm} mm` : null], ["Tubeless", c.compat.tubeless == null ? null : c.compat.tubeless ? "Yes" : "No"]]} />
+            <SpecRows rows={[["Brake type", c.compat.brakeInterface === "disc" ? `Disc${c.compat.rotorMount ? ` (${c.compat.rotorMount})` : ""}` : c.compat.brakeInterface === "rim" ? "Rim" : null], ["Hub", [c.wheel?.hubManufacturer, c.wheel?.hubModel].filter(Boolean).join(" ") || null], ["Freehub options", c.compat.freehubOptions], ["Axles (front / rear)", c.compat.frontAxle || c.compat.rearAxle ? `${c.compat.frontAxle ?? "?"} / ${c.compat.rearAxle ?? "?"}` : null], ["Spoke count", c.wheel?.spokeCount], ["Spokes", c.wheel?.spokeType], ["Bearings", c.wheel?.bearings], ["Max. system weight", c.wheel?.maxSystemWeightKg != null ? `${c.wheel.maxSystemWeightKg} kg` : null], ["Warranty", c.wheel?.warranty], ["Weight", c.weightG != null ? formatWeightG(c.weightG) : null]]} />
+          </div>
+        </section>
+      )}
+      {c.bearing && (
+        <section className="container-x pt-16">
+          <h2 className="mb-5 text-2xl font-medium tracking-tight">Bearing dimensions</h2>
+          <SpecRows rows={[["Designation", c.bearing.designation], ["Inner Ø × Outer Ø × Width", `${c.bearing.innerMm} × ${c.bearing.outerMm} × ${c.bearing.widthMm} mm`], ["Type", titleCase(c.bearing.kind)], ["Contact angle", c.bearing.contactAngle], ["Sealing", c.bearing.sealing ?? "Depends on the specific part (2RS, LLB, open…)"], ["Typical bicycle use", c.bearing.typicalUse]]} />
+          <Link href="/mechanic?tab=bearing" className="mt-4 inline-block text-sm text-lime link-u">Identify a bearing from measurements →</Link>
+        </section>
+      )}
       {kitParts.length > 0 && (
         <section className="container-x pt-16"><h2 className="mb-4 text-2xl font-medium tracking-tight">Parts in this groupset</h2><div className="border-t hairline">{kitParts.map((p) => <ComponentRow key={p.id} c={p} />)}</div></section>
       )}

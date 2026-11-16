@@ -3,13 +3,13 @@ import { VeloxLogo } from "@/components/Glyphs";
 
 const COLS: Array<[string, Array<[string, string]>]> = [
   ["Discover", [["Bike Finder", "/bikes"], ["Brand Explorer", "/brands"], ["Indonesian brands", "/brands?region=Indonesia"], ["Search", "/search"]]],
-  ["Tools", [["Build a Bike", "/build"], ["Upgrade Advisor", "/upgrade"], ["Compare", "/compare"], ["My Garage", "/garage"]]],
-  ["Catalogue", [["Components", "/components"], ["Suggest data", "/submit"], ["Admin", "/admin"], ["Account", "/account"]]],
+  ["Tools", [["Build a Bike", "/build"], ["Upgrade Advisor", "/upgrade"], ["AI Mechanic", "/mechanic"], ["AI Bike Visualizer", "/visualizer"], ["Upgrade Simulator", "/simulator"], ["Compare", "/compare"], ["My Garage", "/garage"]]],
+  ["Catalogue", [["Components", "/components"], ["Data & image sources", "/sources"], ["Suggest data", "/submit"], ["Admin", "/admin"], ["Account", "/account"]]],
 ];
 
 export function Footer() {
   return (
-    <footer className="mt-32 border-t hairline">
+    <footer className="mt-24 border-t hairline">
       <div className="container-x grid gap-12 py-16 md:grid-cols-[1.4fr_repeat(3,1fr)]">
         <div className="max-w-sm">
           <VeloxLogo />
@@ -29,7 +29,7 @@ export function Footer() {
       </div>
       <div className="border-t hairline">
         <div className="container-x flex flex-col gap-3 py-6 text-xs text-subtle md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} VELOX. Demonstration build — catalogue data is unverified and prices are estimates.</p>
+          <p>© {new Date().getFullYear()} VELOX. Catalogue data is largely unverified and prices are estimates — see <Link href="/sources" className="link-u">Data &amp; image sources</Link>. Photography: Pexels License.</p>
           <p className="font-mono">IDR · Bahasa Indonesia support planned</p>
         </div>
       </div>

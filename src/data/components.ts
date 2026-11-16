@@ -1,6 +1,7 @@
 import type { BrakeType, CompatAttrs, Component, ComponentType, Discipline, Freehub, Tier } from "@/lib/types";
 import { DEMO_PROVENANCE, est } from "./provenance";
 import { slugify } from "./brands";
+import { BEARINGS, EXTRA_WHEELS, HUBS } from "./wheels";
 
 /**
  * Seed component catalogue.
@@ -572,13 +573,22 @@ const ACCESSORIES: Component[] = [
   c("acc-pro-bikepacking-frame-bag", "accessory", "PRO", "Discover Frame Bag", { tier: "mid", disc: ["gravel", "universal"], g: null, idr: k(900), specs: { Type: "Bikepacking bag" } }),
 ];
 
+/** Derive the extended wheelset spec for the original seed wheels from their existing fields. */
+function withWheelSpec(c: Component): Component {
+  const depth = typeof c.specs.Depth === "string" ? c.specs.Depth.replace(/\s*mm$/, "") : null;
+  return { ...c, wheel: { rimMaterial: c.material, rimDepthMm: depth && /^\d+$/.test(depth) ? Number(depth) : depth, internalWidthMm: c.compat.internalRimMm ?? null } };
+}
+
 export const COMPONENTS: Component[] = [
   ...FRAMES,
   ...FORKS,
   ...GROUPSETS.flatMap(expandGroupset),
   ...EXTRA_DRIVETRAIN,
   ...BRAKES,
-  ...WHEELS,
+  ...WHEELS.map(withWheelSpec),
+  ...EXTRA_WHEELS,
+  ...HUBS,
+  ...BEARINGS,
   ...TIRES,
   ...COCKPIT,
   ...ACCESSORIES,

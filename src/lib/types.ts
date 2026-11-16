@@ -7,11 +7,29 @@
  */
 
 export type VerificationStatus =
-  | "verified"
+  | "verified-official" // confirmed against the manufacturer's own site / catalogue / manual
+  | "verified-distributor" // confirmed against an authorised distributor
+  | "cross-verified" // two or more independent reputable sources agree
+  | "community" // community submitted, reviewed but not independently verified
+  | "unverified" // seed or single-source data awaiting verification
+  | "historical" // describes a past model year / product state
+  | "discontinued" // no longer produced
+  | "archived"; // hidden from public views
+
+export type SourceType =
+  | "official-website"
+  | "official-catalog"
+  | "technical-manual"
+  | "authorized-distributor"
+  | "retailer"
+  | "manufacturer-announcement"
+  | "official-social"
+  | "publication"
   | "community"
-  | "unverified"
-  | "discontinued"
-  | "archived";
+  | "standard" // published industry / ISO standard
+  | "editorial-seed";
+
+export type Confidence = "high" | "medium" | "low";
 
 export type PriceType =
   | "msrp" // manufacturer suggested retail price
@@ -23,6 +41,7 @@ export type PriceType =
 export interface SourceRef {
   label: string;
   url?: string | null;
+  type?: SourceType;
   retrievedAt?: string | null;
 }
 
@@ -32,6 +51,10 @@ export interface Provenance {
   updatedAt: string; // ISO date
   /** true for seed/demo records that have not been checked against official sources */
   demo?: boolean;
+  confidence?: Confidence;
+  /** the company that actually designs / manufactures the product, when it differs from the brand */
+  originalManufacturer?: string | null;
+  reviewerNotes?: string | null;
 }
 
 export interface PriceEntry {
@@ -45,6 +68,17 @@ export interface PriceEntry {
 
 export type Region = "Indonesia" | "International";
 
+/** What a company actually does — never claim manufacturing for a distributor or private label. */
+export type BrandKind =
+  | "bicycles" // designs/sells complete bicycles under its own name
+  | "frames" // sells framesets
+  | "wheels"
+  | "components"
+  | "e-bikes"
+  | "oem-manufacturer" // contract manufacturer for other brands
+  | "private-label" // sells rebranded / open-mould products
+  | "distributor";
+
 export interface Brand {
   id: string;
   slug: string;
@@ -56,6 +90,9 @@ export interface Brand {
   description: string;
   history?: string | null;
   categories: CategoryId[];
+  kinds?: BrandKind[];
+  parentCompany?: string | null;
+  headquarters?: string | null;
   /** two-letter monogram + colour used for the generated wordmark (no third-party logos are bundled) */
   mark?: { color: string } | null;
   logoUrl?: string | null;
@@ -187,6 +224,8 @@ export type ComponentType =
   | "saddle"
   | "seatpost"
   | "pedals"
+  | "hub"
+  | "bearing"
   | "accessory";
 
 export type Discipline = "road" | "gravel" | "mtb" | "urban" | "bmx" | "universal";
@@ -211,7 +250,58 @@ export interface Component {
   benefits?: string[];
   imageUrl?: string | null;
   officialUrl?: string | null;
+  /** manufacturer part number / SKU / GTIN when documented — used for duplicate detection */
+  productId?: string | null;
+  modelYear?: number | null;
+  wheel?: WheelsetSpec | null;
+  bearing?: BearingSpec | null;
   provenance: Provenance;
+}
+
+/** Extended wheelset specification — every field optional; null renders "Not Available". */
+export interface WheelsetSpec {
+  rimMaterial?: string | null;
+  rimDepthMm?: number | string | null; // "50/56" for staggered
+  internalWidthMm?: number | null;
+  externalWidthMm?: number | null;
+  hubManufacturer?: string | null;
+  hubModel?: string | null;
+  spokeCount?: string | null; // "24/24"
+  spokeType?: string | null;
+  bearings?: string | null;
+  maxSystemWeightKg?: number | null;
+  warranty?: string | null;
+}
+
+export interface BearingSpec {
+  designation: string; // e.g. "6802", "MR15267", "ACB 41.8x30.15x8 45/45"
+  innerMm: number;
+  outerMm: number;
+  widthMm: number;
+  kind: "deep-groove" | "angular-contact" | "headset-acb" | "needle";
+  contactAngle?: string | null; // "45x45", "36x45"
+  sealing?: string | null; // "2RS", "LLB", "open"
+  typicalUse: string[];
+}
+
+/** Centralised image record — every image shown in VELOX has licence and attribution data. */
+export interface MediaAsset {
+  id: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  subject: string;
+  source: string;
+  sourceUrl: string | null;
+  photographer: string | null;
+  license: "Pexels License" | "Manufacturer press" | "Licensed" | "Admin upload" | "AI generated";
+  licenseUrl: string | null;
+  quality: "hero" | "high" | "standard";
+  verifiedAt: string;
+  /** representative imagery must never be presented as a specific product */
+  representative: boolean;
+  focal?: string; // CSS object-position
 }
 
 /* ------------------------------------------------------------------ */
@@ -228,6 +318,7 @@ export interface BikeModel {
   brandId: string;
   family: string; // "Strattos" — groups generations / years
   name: string; // "Strattos S4"
+  variant?: string | null; // trim / configuration within a model year
   year: number;
   generation?: string | null;
   category: CategoryId;

@@ -22,6 +22,7 @@ export function BrandExplorer() {
   const [category, setCategory] = useState<CategoryId | "all">((sp.get("category") as CategoryId) ?? "all");
   const [sort, setSort] = useState<Sort>("az");
   const [view, setView] = useState<"grid" | "list">("grid");
+  const [kind, setKind] = useState<"all" | "bicycles" | "wheels" | "components">((sp.get("kind") as "wheels") ?? "all");
 
   const modelCount = useMemo(() => {
     const m = new Map<string, number>();
@@ -36,13 +37,14 @@ export function BrandExplorer() {
       .filter((b) => region === "all" || b.region === region)
       .filter((b) => country === "all" || b.country === country)
       .filter((b) => category === "all" || b.categories.includes(category))
+      .filter((b) => kind === "all" || (kind === "bicycles" ? b.kinds?.some((k) => k === "bicycles" || k === "frames" || k === "e-bikes") : b.kinds?.includes(kind)))
       .filter((b) => {
         if (!term) return true;
         const n = b.name.toLowerCase();
         return n.includes(term) || b.country.toLowerCase().includes(term) || (term.length >= 4 && editDistance(term, n.slice(0, term.length + 1), 2) <= 1);
       })
       .sort((a, b) => (sort === "models" ? (modelCount.get(b.id) ?? 0) - (modelCount.get(a.id) ?? 0) : sort === "founded" ? (a.founded ?? 9999) - (b.founded ?? 9999) : a.name.localeCompare(b.name)));
-  }, [cat.brands, region, country, category, q, sort, modelCount]);
+  }, [cat.brands, region, country, category, q, sort, modelCount, kind]);
 
   const local = cat.brands.filter((b) => b.region === "Indonesia").length;
 
@@ -62,6 +64,7 @@ export function BrandExplorer() {
             <button onClick={() => setView("list")} aria-label="List view" aria-pressed={view === "list"} className={cx("flex h-9 w-9 items-center justify-center rounded-sm", view === "list" ? "bg-ink-700 text-fg" : "text-muted")}><List className="h-4 w-4" /></button>
           </div>
         </div>
+        <Segmented value={kind} onChange={setKind} options={[{ value: "all", label: "All makers" }, { value: "bicycles", label: "Bicycles & frames" }, { value: "wheels", label: "Wheels" }, { value: "components", label: "Components" }]} className="w-fit" />
         <div className="flex flex-wrap gap-1.5">
           <Chip active={category === "all"} onClick={() => setCategory("all")}>All categories</Chip>
           {cat.categories.map((c) => <Chip key={c.id} active={category === c.id} onClick={() => setCategory(c.id)}>{c.name}</Chip>)}
@@ -83,9 +86,10 @@ export function BrandExplorer() {
               </div>
               <h2 className="mt-8 text-xl font-medium tracking-tight">{b.name}</h2>
               <p className="mt-1 text-sm text-muted">{b.country}{b.founded ? ` · Est. ${b.founded}` : ""}</p>
+              <p className="mt-1 text-xs text-subtle">{(b.kinds ?? []).filter((k) => !["oem-manufacturer", "private-label", "distributor"].includes(k)).join(" · ")}{b.provenance.sources.some((x) => x.type && x.type !== "editorial-seed") ? " · researched" : ""}</p>
               <p className="mt-3 line-clamp-2 text-[13px] leading-relaxed text-subtle">{b.description}</p>
               <div className="relative mt-5 flex items-center justify-between">
-                <span className="label-tech">{modelCount.get(b.id) ?? 0} models · {b.categories.length} categories</span>
+                <span className="label-tech">{modelCount.get(b.id) ?? 0} models</span>
                 <CompareButton kind="brand" id={b.id} label={b.name} compact />
               </div>
             </li>

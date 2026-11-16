@@ -17,6 +17,7 @@ const GROUPS: Array<{ id: string; label: string; types: ComponentType[] }> = [
   { id: "brakes", label: "Brakes", types: ["brakes"] },
   { id: "frames", label: "Frames & forks", types: ["frame", "fork"] },
   { id: "cockpit", label: "Cockpit & contact", types: ["handlebar", "stem", "saddle", "seatpost", "pedals"] },
+  { id: "hubs", label: "Hubs & bearings", types: ["hub", "bearing"] },
   { id: "accessories", label: "Accessories", types: ["accessory"] },
 ];
 const TIERS: Tier[] = ["entry", "mid", "performance", "pro"];

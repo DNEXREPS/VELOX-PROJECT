@@ -2,16 +2,17 @@
 import { useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { Archive, Check, Download, Lock, Pencil, Plus, RotateCcw, Upload, X } from "lucide-react";
-import { canAdmin, catalogWrite, sessionStore, submissionsStore, useCatalog } from "@/lib/state";
+import { canAdmin, catalogWrite, sessionStore, stagingStore, submissionsStore, useCatalog } from "@/lib/state";
+import { ADAPTERS, stage, type AnyRecord, type EntityKind, type StagedRecord } from "@/lib/ingest";
 import { useHydrated, useStore } from "@/lib/store";
-import { importMany, normalizeBrand, normalizeComponent, normalizeModel } from "@/lib/importers";
-import { download, parseCsv, toCsv } from "@/lib/csv";
+import { normalizeBrand, normalizeComponent, normalizeModel } from "@/lib/importers";
+import { download, toCsv } from "@/lib/csv";
 import type { BikeModel, Brand, CategoryId, Component, PriceType, VerificationStatus } from "@/lib/types";
 import { Button, ButtonLink, EmptyState, Field, PageHeader, Segmented, Skeleton, StatusBadge } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
-import { cx, formatIdrShort, NA, PRICE_TYPE_LABEL, STATUS_LABEL, titleCase } from "@/lib/format";
+import { cx, formatIdrShort, isVerified, NA, PRICE_TYPE_LABEL, STATUS_LABEL, titleCase } from "@/lib/format";
 
-type Tab = "overview" | "brands" | "models" | "components" | "categories" | "submissions" | "data";
+type Tab = "overview" | "brands" | "models" | "components" | "categories" | "submissions" | "data" | "review";
 type Entity = "brands" | "models" | "components";
 const STATUSES = Object.keys(STATUS_LABEL) as VerificationStatus[];
 const PRICE_TYPES = Object.keys(PRICE_TYPE_LABEL) as PriceType[];
@@ -19,7 +20,7 @@ const PRICE_TYPES = Object.keys(PRICE_TYPE_LABEL) as PriceType[];
 const guard = (fn: () => void, ok?: string) => {
   try { fn(); if (ok) toast(ok); } catch (e) { toast((e as Error).message, { tone: "error" }); }
 };
-const touch = <T extends { provenance: Brand["provenance"] }>(r: T, status?: VerificationStatus): T => ({ ...r, provenance: { ...r.provenance, status: status ?? r.provenance.status, updatedAt: new Date().toISOString(), demo: status === "verified" ? false : r.provenance.demo } });
+const touch = <T extends { provenance: Brand["provenance"] }>(r: T, status?: VerificationStatus): T => ({ ...r, provenance: { ...r.provenance, status: status ?? r.provenance.status, updatedAt: new Date().toISOString(), demo: status && isVerified(status) ? false : r.provenance.demo } });
 
 export function AdminPanel() {
   const session = useStore(sessionStore);
@@ -47,7 +48,7 @@ export function AdminPanel() {
       </PageHeader>
       <div className="container-x py-10">
         <div className="-mx-4 overflow-x-auto px-4">
-          <Segmented value={tab} onChange={setTab} options={[{ value: "overview", label: "Overview" }, { value: "brands", label: "Brands" }, { value: "models", label: "Bike models" }, { value: "components", label: "Components" }, { value: "categories", label: "Categories" }, { value: "submissions", label: "Submissions" }, { value: "data", label: "Import / Export" }]} />
+          <Segmented value={tab} onChange={setTab} options={[{ value: "overview", label: "Overview" }, { value: "brands", label: "Brands" }, { value: "models", label: "Bike models" }, { value: "components", label: "Components" }, { value: "categories", label: "Categories" }, { value: "submissions", label: "Submissions" }, { value: "data", label: "Import / Export" }, { value: "review", label: "Review queue" }]} />
         </div>
         <div className="mt-10">
           {tab === "overview" && <Overview go={setTab} />}
@@ -56,7 +57,8 @@ export function AdminPanel() {
           {tab === "components" && <EntityTable entity="components" />}
           {tab === "categories" && <Categories />}
           {tab === "submissions" && <Submissions />}
-          {tab === "data" && <DataTools />}
+          {tab === "data" && <DataTools go={setTab} />}
+          {tab === "review" && <ReviewQueue />}
         </div>
       </div>
     </>
@@ -276,7 +278,7 @@ function Editor({ entity, record, onClose }: { entity: Entity; record: Brand | B
           <Field label="Source reference" htmlFor="e-src" hint="Required before marking a record Verified."><input id="e-src" className="field" value={source} onChange={(e) => setSource(e.target.value)} placeholder="https://manufacturer.example/product" /></Field>
         </div>
         <div className="mt-8 flex gap-2">
-          <Button onClick={() => { if (status === "verified" && !source.trim()) return toast("Add a source reference before verifying", { tone: "error" }); save(); }}><Check className="h-4 w-4" /> Save</Button>
+          <Button onClick={() => { if (isVerified(status) && !source.trim()) return toast("Add a source reference before verifying", { tone: "error" }); save(); }}><Check className="h-4 w-4" /> Save</Button>
           <Button variant="ghost" onClick={onClose}>Cancel</Button>
         </div>
       </div>
@@ -363,63 +365,57 @@ const SAMPLE: Record<Entity, string> = {
   components: "manufacturer,name,type,tier,discipline,weightG,priceIdr,specs,compat\nShimano,CS-HG700 11-34,cassette,mid,road|gravel,,800000,\"{\"\"Range\"\":\"\"11-34\"\"}\",\"{\"\"speeds\"\":11,\"\"freehub\"\":\"\"HG-road\"\",\"\"maxCog\"\":34}\"",
 };
 
-function DataTools() {
+function DataTools({ go }: { go: (t: Tab) => void }) {
   const cat = useCatalog();
   const [entity, setEntity] = useState<Entity>("models");
+  const [adapterId, setAdapterId] = useState("csv");
   const [text, setText] = useState("");
-  const [format, setFormat] = useState<"csv" | "json">("csv");
-  const [status, setStatus] = useState<VerificationStatus>("unverified");
+  const [sourceUrl, setSourceUrl] = useState("");
+  const [errors, setErrors] = useState<string[]>([]);
   const fileRef = useRef<HTMLInputElement>(null);
+  const adapter = ADAPTERS.find((a) => a.id === adapterId)!;
+  const kind: EntityKind = entity === "brands" ? "brand" : entity === "models" ? "bike" : "component";
 
-  const preview = useMemo(() => {
-    if (!text.trim()) return null;
-    try {
-      const rows = format === "json" ? (JSON.parse(text) as Record<string, unknown>[]) : parseCsv(text);
-      if (!Array.isArray(rows)) return { ok: [], errors: ["JSON must be an array of records"] };
-      const fn = entity === "brands" ? (r: Record<string, unknown>) => normalizeBrand(r, status) : entity === "models" ? (r: Record<string, unknown>) => normalizeModel(r, status) : (r: Record<string, unknown>) => normalizeComponent(r, status);
-      return importMany(rows, fn as (r: Record<string, unknown>) => Brand | BikeModel | Component);
-    } catch (e) {
-      return { ok: [], errors: [(e as Error).message] };
+  const runStage = () => {
+    const existing = (entity === "brands" ? cat.all.brands : entity === "models" ? cat.all.bikes : cat.all.components) as AnyRecord[];
+    const pending = stagingStore.get().filter((x) => x.state === "pending" && x.kind === kind).map((x) => x.record);
+    const res = stage({ kind, adapter, input: text, sourceUrl: sourceUrl.trim() || null, existing: [...existing, ...pending] });
+    setErrors(res.errors);
+    if (res.staged.length) {
+      stagingStore.set((l) => [...res.staged, ...l]);
+      const dups = res.staged.filter((x) => x.duplicates.length).length;
+      toast(`${res.staged.length} record(s) staged for review`, { body: dups ? `${dups} flagged as possible duplicates.` : "No duplicates detected." });
+      setText("");
+      go("review");
     }
-  }, [text, format, entity, status]);
-
-  const runImport = () => {
-    if (!preview?.ok.length) return;
-    guard(() => catalogWrite.bulk({ [entity === "models" ? "models" : entity]: preview.ok } as never), `Imported ${preview.ok.length} ${entity}`);
-    setText("");
   };
 
-  const exportData = (kind: "json" | "csv") => {
+  const exportData = (format: "json" | "csv") => {
     const rows = (entity === "brands" ? cat.all.brands : entity === "models" ? cat.all.bikes : cat.all.components) as unknown as Record<string, unknown>[];
-    if (kind === "json") download(`velox-${entity}.json`, JSON.stringify(rows, null, 2), "application/json");
+    if (format === "json") download(`velox-${entity}.json`, JSON.stringify(rows, null, 2), "application/json");
     else download(`velox-${entity}.csv`, toCsv(rows.map((r) => ({ ...r, provenance: undefined, status: (r.provenance as Brand["provenance"]).status }))), "text/csv");
   };
 
   return (
     <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr] [&>*]:min-w-0">
       <div>
-        <div className="flex flex-wrap items-center gap-3">
+        <h3 className="text-lg font-medium">Ingest data</h3>
+        <p className="mt-1 text-sm text-muted">Every import is normalised, checked for duplicates (brand · model · year · variant · product ID) and placed in the review queue. Nothing reaches the catalogue until approved.</p>
+        <div className="mt-5 flex flex-wrap items-center gap-3">
           <Segmented value={entity} onChange={setEntity} options={[{ value: "brands", label: "Brands" }, { value: "models", label: "Bike models" }, { value: "components", label: "Components" }]} />
-          <Segmented value={format} onChange={setFormat} options={[{ value: "csv", label: "CSV" }, { value: "json", label: "JSON" }]} />
+          <select value={adapterId} onChange={(e) => setAdapterId(e.target.value)} className="field w-auto" aria-label="Import adapter">{ADAPTERS.map((a) => <option key={a.id} value={a.id}>{a.label}</option>)}</select>
         </div>
-        <textarea value={text} onChange={(e) => setText(e.target.value)} rows={12} className="field mt-4 font-mono text-xs" placeholder={format === "csv" ? SAMPLE[entity] : "[ { \"name\": \"…\" } ]"} aria-label="Import data" />
+        <p className="mt-2 text-xs text-subtle">{adapter.description}</p>
+        <textarea value={text} onChange={(e) => setText(e.target.value)} rows={11} className="field mt-4 font-mono text-xs" placeholder={adapterId === "csv" ? SAMPLE[entity] : adapterId === "schema-org" ? "<html>… <script type=\"application/ld+json\">{ \"@type\": \"Product\", … }</script>" : "[ { \"name\": \"…\" } ]"} aria-label="Import data" />
+        <Field label="Source URL (where this data came from)" htmlFor="ing-src" className="mt-3" hint="Recorded on every staged record. Required before a record can be approved as verified."><input id="ing-src" className="field" value={sourceUrl} onChange={(e) => setSourceUrl(e.target.value)} placeholder="https://manufacturer.example/product" /></Field>
         <div className="mt-3 flex flex-wrap items-center gap-3">
-          <input ref={fileRef} type="file" accept=".csv,.json,text/csv,application/json" className="hidden" onChange={(e) => { const f = e.target.files?.[0]; if (!f) return; setFormat(f.name.endsWith(".json") ? "json" : "csv"); f.text().then(setText); }} />
+          <input ref={fileRef} type="file" accept=".csv,.json,.html,.htm,text/csv,application/json,text/html" className="hidden" onChange={(e) => { const f = e.target.files?.[0]; if (!f) return; setAdapterId(f.name.endsWith(".json") ? "json" : /\.html?$/.test(f.name) ? "schema-org" : "csv"); f.text().then(setText); }} />
           <Button variant="secondary" size="sm" onClick={() => fileRef.current?.click()}><Upload className="h-3.5 w-3.5" /> Load file</Button>
-          <Button variant="ghost" size="sm" onClick={() => { setFormat("csv"); setText(SAMPLE[entity]); }}>Insert sample</Button>
-          <label className="ml-auto flex items-center gap-2 text-xs text-muted">Import as
-            <select value={status} onChange={(e) => setStatus(e.target.value as VerificationStatus)} className="field h-8 w-auto py-1 text-xs">{STATUSES.map((s) => <option key={s} value={s}>{STATUS_LABEL[s]}</option>)}</select>
-          </label>
+          <Button variant="ghost" size="sm" onClick={() => { setAdapterId("csv"); setText(SAMPLE[entity]); }}>Insert sample</Button>
+          <Button size="sm" className="ml-auto" disabled={!text.trim()} onClick={runStage}>Stage for review</Button>
         </div>
-        {preview && (
-          <div className="mt-5 border hairline p-4 text-sm">
-            <p><span className="tabular text-lime">{preview.ok.length}</span> valid records · <span className={cx("tabular", preview.errors.length > 0 && "text-bad")}>{preview.errors.length}</span> errors</p>
-            {preview.errors.slice(0, 6).map((e) => <p key={e} className="mt-1 text-xs text-bad">{e}</p>)}
-            {preview.ok.slice(0, 5).map((r) => <p key={r.id} className="mt-1 font-mono text-xs text-muted">+ {r.id} <StatusBadge status={r.provenance.status} className="ml-2" /></p>)}
-            <Button className="mt-4" size="sm" disabled={!preview.ok.length} onClick={runImport}>Import {preview.ok.length} records</Button>
-          </div>
-        )}
-        <p className="mt-4 text-xs text-subtle">Missing values import as empty and display as “{NA}”. Lists use “|” in CSV. Existing ids are updated, new ids are created.</p>
+        {errors.length > 0 && <div className="mt-4 border border-bad/30 p-3 text-xs text-bad">{errors.slice(0, 8).map((e) => <p key={e}>{e}</p>)}</div>}
+        <p className="mt-4 text-xs text-subtle">Missing values import as empty and display as “{NA}”. Lists use “|” in CSV. Official-website fetching runs server-side once manufacturer hosts are permitted — see the research registry for sources awaiting integration.</p>
       </div>
       <div className="space-y-8">
         <div className="border hairline p-6">
@@ -433,6 +429,68 @@ function DataTools() {
           <Button variant="danger" size="sm" className="mt-4" onClick={() => { if (confirm("Discard all local catalogue changes?")) guard(() => catalogWrite.resetOverlay(), "Catalogue reset to seed data"); }}><RotateCcw className="h-3.5 w-3.5" /> Reset</Button>
         </div>
       </div>
+    </div>
+  );
+}
+
+/* ------------------------------- review queue ------------------------------- */
+
+function ReviewQueue() {
+  const cat = useCatalog();
+  const staged = useStore(stagingStore);
+  const [show, setShow] = useState<"pending" | "all">("pending");
+  const [statusFor, setStatusFor] = useState<Record<string, VerificationStatus>>({});
+  const [notes, setNotes] = useState<Record<string, string>>({});
+  const list = staged.filter((x) => show === "all" || x.state === "pending");
+  const label = (x: StagedRecord) => (x.kind === "brand" ? (x.record as Brand).name : x.kind === "bike" ? `${(x.record as BikeModel).brandId} ${(x.record as BikeModel).name} (${(x.record as BikeModel).year})` : `${(x.record as Component).manufacturer} ${(x.record as Component).name}`);
+
+  const decide = (x: StagedRecord, action: "approve" | "merge" | "reject") => {
+    if (action === "reject") { stagingStore.set((l) => l.map((y) => (y.id === x.id ? { ...y, state: "rejected", reviewerNotes: notes[x.id] } : y))); toast("Rejected", { tone: "info" }); return; }
+    const status = statusFor[x.id] ?? "unverified";
+    if (isVerified(status) && !x.record.provenance.sources.length) return toast("A source is required to approve as verified", { tone: "error" });
+    const target = action === "merge" ? x.duplicates.find((d) => d.certainty !== "possible")?.existingId ?? x.duplicates[0]?.existingId : null;
+    const rec = { ...x.record, id: target ?? x.record.id, provenance: { ...x.record.provenance, status, updatedAt: new Date().toISOString(), reviewerNotes: notes[x.id] || x.record.provenance.reviewerNotes || null } } as AnyRecord;
+    if (target && x.kind === "bike") (rec as BikeModel).slug = cat.all.bikes.find((b) => b.id === target)?.slug ?? (rec as BikeModel).slug;
+    guard(() => {
+      if (x.kind === "brand") catalogWrite.upsertBrand(rec as Brand);
+      else if (x.kind === "bike") catalogWrite.upsertModel(rec as BikeModel);
+      else catalogWrite.upsertComponent(rec as Component);
+      stagingStore.set((l) => l.map((y) => (y.id === x.id ? { ...y, state: target ? "merged" : "approved", reviewerNotes: notes[x.id] } : y)));
+    }, target ? `Merged into ${target}` : `Published as ${STATUS_LABEL[status]}`);
+  };
+
+  return (
+    <div>
+      <Segmented value={show} onChange={setShow} options={[{ value: "pending", label: `Pending (${staged.filter((x) => x.state === "pending").length})` }, { value: "all", label: `All (${staged.length})` }]} />
+      {list.length === 0 ? <div className="mt-8"><EmptyState title="Review queue is empty">Stage records in Import / Export; they appear here for approval.</EmptyState></div> : (
+        <ul className="mt-6 border-t hairline">
+          {list.map((x) => (
+            <li key={x.id} className="grid gap-4 border-b hairline py-5 lg:grid-cols-[1fr_340px]">
+              <div className="min-w-0">
+                <p className="label-tech">{titleCase(x.kind)} · via {x.adapter} · {x.state}</p>
+                <p className="mt-1 text-[17px] font-medium tracking-tight">{label(x)}</p>
+                <p className="mt-1 truncate font-mono text-[11px] text-subtle">{x.record.id}{x.sourceUrl ? ` · ${x.sourceUrl}` : " · no source URL"}</p>
+                {x.duplicates.length > 0 ? (
+                  <ul className="mt-3 space-y-1 text-xs">
+                    {x.duplicates.map((d, i) => <li key={i} className={d.certainty === "possible" ? "text-warn" : "text-bad"}>{d.certainty === "possible" ? "Possible" : d.certainty === "exact" ? "Exact" : "Likely"} duplicate of <span className="font-mono">{d.existingId}</span> — {d.reason}</li>)}
+                  </ul>
+                ) : <p className="mt-3 text-xs text-lime">No duplicates detected</p>}
+              </div>
+              {x.state === "pending" ? (
+                <div className="flex flex-col gap-2">
+                  <select aria-label="Status on approval" className="field h-9 py-1 text-sm" value={statusFor[x.id] ?? "unverified"} onChange={(e) => setStatusFor({ ...statusFor, [x.id]: e.target.value as VerificationStatus })}>{STATUSES.filter((s) => s !== "archived").map((s) => <option key={s} value={s}>{STATUS_LABEL[s]}</option>)}</select>
+                  <input aria-label="Reviewer notes" className="field h-9 py-1 text-sm" placeholder="Reviewer notes" value={notes[x.id] ?? ""} onChange={(e) => setNotes({ ...notes, [x.id]: e.target.value })} />
+                  <div className="flex flex-wrap gap-2">
+                    <Button size="sm" onClick={() => decide(x, "approve")}><Check className="h-3.5 w-3.5" /> Approve as new</Button>
+                    {x.duplicates.length > 0 && <Button size="sm" variant="secondary" onClick={() => decide(x, "merge")}>Update existing</Button>}
+                    <Button size="sm" variant="danger" onClick={() => decide(x, "reject")}><X className="h-3.5 w-3.5" /> Reject</Button>
+                  </div>
+                </div>
+              ) : <p className="text-sm text-muted">{titleCase(x.state)}{x.reviewerNotes ? ` — ${x.reviewerNotes}` : ""}</p>}
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }

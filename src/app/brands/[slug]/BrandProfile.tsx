@@ -7,6 +7,9 @@ import { BrandMark } from "@/components/Glyphs";
 import { BikeTile, CompareButton, ComponentRow } from "@/components/catalog";
 import { ButtonLink, EmptyState, ProvenanceLine, SpecRows, Tag } from "@/components/ui";
 
+const KIND_LABEL: Record<string, string> = { bicycles: "Complete bicycles", frames: "Framesets", wheels: "Wheels", components: "Components", "e-bikes": "E-bikes", "oem-manufacturer": "OEM manufacturing for other brands", "private-label": "Private-label / open-mould products", distributor: "Distribution" };
+const kindLabel = (k: string) => KIND_LABEL[k] ?? k;
+
 export function BrandProfile({ slug }: { slug: string }) {
   const cat = useCatalog();
   const hydrated = useHydrated();
@@ -40,14 +43,14 @@ export function BrandProfile({ slug }: { slug: string }) {
                 {brand.categories.map((c) => <Link key={c} href={`/bikes?brand=${brand.id}&category=${c}`}><Tag className="hover:border-line-strong hover:text-fg">{cat.categories.find((x) => x.id === c)?.name}</Tag></Link>)}
               </div>
               <div className="mt-8 flex flex-wrap gap-2">
-                <ButtonLink href={`/bikes?brand=${brand.id}`}>Find {brand.name} bikes</ButtonLink>
+                {models.length > 0 ? <ButtonLink href={`/bikes?brand=${brand.id}`}>Find {brand.name} bikes</ButtonLink> : components.length > 0 ? <ButtonLink href={`/components?mfr=${brand.slug}`}>Browse {brand.name} components</ButtonLink> : null}
                 <CompareButton kind="brand" id={brand.id} label={brand.name} className="h-10 px-4 text-sm" />
                 {brand.website && <a href={brand.website} target="_blank" rel="noreferrer" className="inline-flex h-10 items-center gap-2 px-3 text-sm text-muted hover:text-fg">Official website <ExternalLink className="h-3.5 w-3.5" /></a>}
               </div>
             </div>
             <div>
-              <SpecRows rows={[["Country of origin", brand.country], ["Founded", brand.founded], ["Official website", brand.website?.replace(/^https?:\/\//, "")], ["Catalogued models", models.length], ["Categories", brand.categories.length], ["Brand history", brand.history]]} />
-              <div className="mt-5"><ProvenanceLine p={brand.provenance} /></div>
+              <SpecRows rows={[["Country of origin", brand.country], ["Headquarters", brand.headquarters], ["Parent / operating company", brand.parentCompany], ["What they make", (brand.kinds ?? []).map(kindLabel)], ["Founded", brand.founded], ["Official website", brand.website?.replace(/^https?:\/\//, "")], ["Catalogued models", models.length], ["Catalogued components", components.length], ["Brand history", brand.history]]} />
+              <div className="mt-5"><ProvenanceLine p={brand.provenance} detailed /></div>
             </div>
           </div>
         </div>

@@ -12,6 +12,7 @@ import { COMPONENTS } from "@/data/components";
 import { createStore, useStore } from "./store";
 import type { BikeModel, Brand, Build, Category, CategoryId, CompareItem, Component, GarageBike, Role, Subcategory, Submission, WishlistItem } from "./types";
 import type { Currency } from "./format";
+import type { StagedRecord } from "./ingest";
 
 /* --------------------------------- stores --------------------------------- */
 
@@ -36,6 +37,8 @@ export const wishlistStore = createStore<WishlistItem[]>("wishlist", []);
 export const compareStore = createStore<CompareItem[]>("compare", []);
 export const submissionsStore = createStore<Submission[]>("submissions", []);
 export const settingsStore = createStore<{ currency: Currency }>("settings", { currency: "IDR" });
+/** Ingestion staging queue — records wait here until an administrator reviews them. */
+export const stagingStore = createStore<StagedRecord[]>("staging", []);
 
 /* --------------------------------- catalog -------------------------------- */
 

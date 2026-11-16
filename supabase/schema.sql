@@ -8,11 +8,15 @@ create extension if not exists "pgcrypto";
 create extension if not exists pg_trgm;   -- typo-tolerant search on names
 
 -- ---------- enums ----------------------------------------------------
-create type verification_status as enum ('verified', 'community', 'unverified', 'discontinued', 'archived');
+create type verification_status as enum ('verified-official', 'verified-distributor', 'cross-verified', 'community', 'unverified', 'historical', 'discontinued', 'archived');
+create type source_type        as enum ('official-website', 'official-catalog', 'technical-manual', 'authorized-distributor', 'retailer', 'manufacturer-announcement', 'official-social', 'publication', 'community', 'standard', 'editorial-seed');
+create type confidence_level   as enum ('high', 'medium', 'low');
+create type brand_kind         as enum ('bicycles', 'frames', 'wheels', 'components', 'e-bikes', 'oem-manufacturer', 'private-label', 'distributor');
+create type license_status     as enum ('Pexels License', 'Manufacturer press', 'Licensed', 'Admin upload', 'AI generated');
 create type price_type         as enum ('msrp', 'distributor', 'retailer', 'estimated', 'historical');
 create type user_role          as enum ('user', 'admin');
 create type subject_type       as enum ('brand', 'bike_model', 'component');
-create type component_type     as enum ('frame','fork','groupset','shifters','front-derailleur','rear-derailleur','crankset','cassette','chain','brakes','wheelset','tires','handlebar','stem','saddle','seatpost','pedals','accessory');
+create type component_type     as enum ('frame','fork','groupset','shifters','front-derailleur','rear-derailleur','crankset','cassette','chain','brakes','wheelset','tires','handlebar','stem','saddle','seatpost','pedals','hub','bearing','accessory');
 create type tier               as enum ('entry', 'mid', 'performance', 'pro');
 
 -- ---------- reference data ------------------------------------------
@@ -51,7 +55,13 @@ create table brands (
   history      text,                       -- only when verified
   logo_url     text,
   mark_color   text,
+  kinds        brand_kind[] not null default '{bicycles}',  -- what the company actually does
+  parent_company text,
+  headquarters text,
   status       verification_status not null default 'unverified',
+  confidence   confidence_level not null default 'low',
+  original_manufacturer text,
+  reviewer_notes text,
   is_demo      boolean not null default false,
   updated_at   timestamptz not null default now()
 );
@@ -104,11 +114,17 @@ create table bike_models (
   electric          jsonb,                  -- { motor, batteryWh }
   compat            jsonb not null default '{}',  -- CompatAttrs used by the compatibility engine
   official_url      text,
+  variant           text,                    -- trim / configuration within a model year
   status            verification_status not null default 'unverified',
-  is_demo           boolean not null default false,
-  updated_at        timestamptz not null default now(),
+  confidence        confidence_level not null default 'low',
+  original_manufacturer text,
+  reviewer_notes text,
+  is_demo      boolean not null default false,
+  updated_at   timestamptz not null default now(),
   foreign key (category_id, subcategory_id) references subcategories(category_id, id)
 );
+-- duplicate guard: one record per brand + model + year + variant
+create unique index bike_models_identity on bike_models (brand_id, lower(name), model_year, coalesce(lower(variant), ''));
 create index bike_models_brand_idx on bike_models(brand_id);
 create index bike_models_category_idx on bike_models(category_id, subcategory_id);
 create index bike_models_year_idx on bike_models(model_year desc);
@@ -135,13 +151,49 @@ create table components (
   compat          jsonb not null default '{}',   -- CompatAttrs
   benefits        text[] not null default '{}',
   official_url    text,
-  status          verification_status not null default 'unverified',
-  is_demo         boolean not null default false,
-  updated_at      timestamptz not null default now()
+  product_id      text,                      -- SKU / MPN / GTIN for duplicate detection
+  model_year      int,
+  status       verification_status not null default 'unverified',
+  confidence   confidence_level not null default 'low',
+  original_manufacturer text,
+  reviewer_notes text,
+  is_demo      boolean not null default false,
+  updated_at   timestamptz not null default now()
 );
+create unique index components_product_id on components (manufacturer_id, lower(product_id)) where product_id is not null;
 create index components_type_idx on components(type);
 create index components_mfr_idx on components(manufacturer_id);
 create index components_compat_gin on components using gin (compat);
+
+-- extended wheelset specification (one row per wheelset component)
+create table wheelset_specs (
+  component_id        text primary key references components(id) on delete cascade,
+  rim_material        text,
+  rim_depth_mm        text,                  -- text to allow staggered "50/56"
+  internal_width_mm   numeric(4,1),
+  external_width_mm   numeric(4,1),
+  hub_manufacturer    text,
+  hub_model           text,
+  spoke_count         text,
+  spoke_type          text,
+  bearings            text,
+  max_system_weight_kg numeric(5,1),
+  warranty            text
+);
+
+-- bearing reference data (ISO / industry dimensions)
+create table bearings (
+  component_id  text primary key references components(id) on delete cascade,
+  designation   text not null,
+  inner_mm      numeric(6,2) not null,
+  outer_mm      numeric(6,2) not null,
+  width_mm      numeric(5,2) not null,
+  kind          text not null check (kind in ('deep-groove','angular-contact','headset-acb','needle')),
+  contact_angle text,
+  sealing       text,
+  typical_use   text[] not null default '{}'
+);
+create index bearings_dims_idx on bearings (inner_mm, outer_mm, width_mm);
 
 -- groupset kits: which parts a groupset installs
 create table groupset_parts (
@@ -173,13 +225,24 @@ create table prices (
 );
 create index prices_subject_idx on prices(subject, subject_id, is_current);
 
-create table images (
-  id         uuid primary key default gen_random_uuid(),
-  subject    subject_type not null,
-  subject_id text not null,
-  url        text not null,                 -- Supabase Storage public URL
-  alt        text,
-  sort_order int not null default 0
+-- centralised image management: every image carries licence and attribution
+create table media_assets (
+  id            uuid primary key default gen_random_uuid(),
+  subject       subject_type,                -- null for editorial / category imagery
+  subject_id    text,
+  url           text not null,               -- Supabase Storage URL
+  alt           text not null,
+  width         int,
+  height        int,
+  source        text not null,
+  source_url    text,
+  photographer  text,
+  license       license_status not null,
+  license_url   text,
+  quality       text check (quality in ('hero','high','standard')),
+  representative boolean not null default true,  -- never presented as the specific product
+  verified_at   date not null default current_date,
+  sort_order    int not null default 0
 );
 
 create table data_sources (
@@ -188,8 +251,10 @@ create table data_sources (
   subject_id   text not null,
   label        text not null,
   url          text,
+  type         source_type not null default 'editorial-seed',
   retrieved_at date
 );
+
 create index data_sources_subject_idx on data_sources(subject, subject_id);
 
 -- ---------- users & personal data ------------------------------------
@@ -243,6 +308,22 @@ create table wishlist (
   unique (owner_id, subject, subject_id)
 );
 
+-- ingestion staging: nothing enters the catalogue without review
+create table ingest_staging (
+  id           uuid primary key default gen_random_uuid(),
+  kind         subject_type not null,
+  adapter      text not null,                -- csv | json | schema-org | manual | ...
+  record       jsonb not null,               -- normalised record
+  source_url   text,
+  duplicates   jsonb not null default '[]',  -- [{existing_id, reason, certainty}]
+  state        text not null default 'pending' check (state in ('pending','approved','rejected','merged')),
+  staged_by    uuid references profiles(id),
+  staged_at    timestamptz not null default now(),
+  reviewed_by  uuid references profiles(id),
+  reviewed_at  timestamptz,
+  reviewer_notes text
+);
+
 create table submissions (
   id           uuid primary key default gen_random_uuid(),
   kind         text not null check (kind in ('brand','bike','component','correction')),
@@ -265,7 +346,7 @@ declare t text;
 begin
   -- catalogue: public read, admin-only write (regular users can never modify manufacturer data)
   foreach t in array array['countries','categories','subcategories','brands','brand_categories','bike_families','bike_models',
-                           'component_manufacturers','components','groupset_parts','compatibility_rules','prices','images','data_sources']
+                           'component_manufacturers','components','wheelset_specs','bearings','groupset_parts','compatibility_rules','prices','media_assets','data_sources']
   loop
     execute format('alter table %I enable row level security', t);
     execute format('create policy "%s public read" on %I for select using (true)', t, t);
@@ -285,6 +366,9 @@ alter table garage_log enable row level security;
 create policy "own garage log" on garage_log for all using (exists (select 1 from garage_bikes g where g.id = bike_id and g.owner_id = auth.uid()));
 alter table wishlist enable row level security;
 create policy "own wishlist" on wishlist for all using (owner_id = auth.uid()) with check (owner_id = auth.uid());
+
+alter table ingest_staging enable row level security;
+create policy "admin only staging" on ingest_staging for all using (is_admin()) with check (is_admin());
 
 alter table submissions enable row level security;
 create policy "submit when signed in" on submissions for insert with check (auth.uid() is not null and submitted_by = auth.uid() and state = 'pending');

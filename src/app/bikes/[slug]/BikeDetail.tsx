@@ -3,7 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, Check, ExternalLink, Minus, Plus, Sparkles } from "lucide-react";
 import { useCatalog, garageStore } from "@/lib/state";
-import { BikeGraphic } from "@/components/BikeGraphic";
+import { Photo } from "@/components/Photo";
+import { mediaForBike } from "@/data/media";
 import { BikeTile, CompareButton, WishlistButton } from "@/components/catalog";
 import { Button, ButtonLink, DemoNotice, EmptyState, Price, ProvenanceLine, SpecRows, Tag } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
@@ -73,15 +74,17 @@ export function BikeDetail({ slug }: { slug: string }) {
         <button onClick={() => router.back()} className="inline-flex items-center gap-2 text-sm text-muted hover:text-fg"><ArrowLeft className="h-4 w-4" /> Back</button>
       </div>
       <section className="container-x grid gap-10 pb-16 pt-8 lg:grid-cols-[1.25fr_1fr] lg:gap-16 [&>*]:min-w-0">
-        <div className="relative order-2 overflow-hidden border hairline bg-gradient-to-b from-ink-900 to-ink-950 lg:order-1">
-          <div className="grid-bg absolute inset-0 opacity-70" />
+        <div className="relative order-2 aspect-[4/3] overflow-hidden bg-ink-900 lg:order-1">
           {bike.imageUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={bike.imageUrl} alt={label} className="relative aspect-[5/3] w-full object-contain p-6" />
+            <img src={bike.imageUrl} alt={label} className="relative h-full w-full object-contain p-6" />
           ) : (
             <>
-              <BikeGraphic category={bike.category} subcategory={bike.subcategory} suspension={bike.suspension} color={bike.frameColor} disc={bike.brakeType?.includes("disc")} className="relative w-full p-6 md:p-10" title={label} />
-              <p className="label-tech absolute bottom-3 left-4">Illustration — not product photography</p>
+              <Photo asset={mediaForBike(bike)} priority sizes="(min-width: 1024px) 55vw, 100vw" className="absolute inset-0 h-full w-full" overlay="bottom" label="representative" />
+              <div className="absolute bottom-4 left-5 right-5 max-w-sm text-xs text-fg/70">
+                Representative {bike.category} photo — not the {label}.{" "}
+                {bike.officialUrl ? <a href={bike.officialUrl} target="_blank" rel="noreferrer" className="text-lime link-u">See official product photos ↗</a> : "Official product photos will appear once licensed imagery is imported."}
+              </div>
             </>
           )}
         </div>
@@ -111,7 +114,7 @@ export function BikeDetail({ slug }: { slug: string }) {
             <CompareButton kind="bike" id={bike.id} label={label} className="h-10 px-4 text-sm" />
             <WishlistButton kind="bike" refId={bike.id} label={label} className="h-10 w-10" />
           </div>
-          <div className="mt-8"><ProvenanceLine p={bike.provenance} /></div>
+          <div className="mt-8"><ProvenanceLine p={bike.provenance} detailed /></div>
         </div>
       </section>
 

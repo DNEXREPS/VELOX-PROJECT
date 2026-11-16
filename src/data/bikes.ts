@@ -1,4 +1,4 @@
-import type { BikeModel, CompatAttrs, WheelSize } from "@/lib/types";
+import type { BikeModel, CompatAttrs, SourceRef, WheelSize } from "@/lib/types";
 import { DEMO_PROVENANCE, discontinued, est } from "./provenance";
 import { slugify } from "./brands";
 
@@ -41,6 +41,9 @@ type Seed = Omit<BikeModel, "id" | "slug" | "provenance" | "price" | "brandId" |
   drawbacks?: string[];
   status?: "discontinued";
   priceHistory?: BikeModel["priceHistory"];
+  /** researched records: where the model name / listed facts were found */
+  sources?: Array<[label: string, url: string, type: SourceRef["type"]]>;
+  notes?: string;
 };
 
 const S = ["XS", "S", "M", "L", "XL"];
@@ -620,12 +623,94 @@ const SEEDS: Seed[] = [
     highlights: ["Thoroughbred cyclocross racer"], drawbacks: ["Specialised use"],
     compat: roadDisc(12, "sram-axs", { chainrings: 1, freehub: "XDR", maxTireMm: 40, drivetrainSupport: ["mechanical", "electronic-wired", "electronic-wireless"] }), frameColor: "#1E3A8A",
   },
+
+  /* ================= RESEARCHED — CHINESE & ASIAN BRANDS (2026-11-16) ================= */
+  {
+    brand: "Pardus", family: "Super EVO", name: "Super EVO", year: 2025, category: "road", subcategory: "endurance",
+    frameMaterial: "Carbon (T1100 blend)", groupset: null, drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc",
+    wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "Lightweight endurance road", usage: ["fitness", "racing"], experience: ["intermediate", "advanced"],
+    highlights: ["Frame quoted at about 680 g (manufacturer claim)", "Brand supplies the Chinese national team"], drawbacks: ["Prices found only in EUR — no IDR pricing"],
+    compat: roadDisc(12, "unknown"), frameColor: "#B91C1C",
+    sources: [["Cyclists Hub — Pardus Super EVO", "https://www.cyclistshub.com/pardus-introduces-spark-evo-gen-4", "publication"], ["Cycling Weekly — Pardus Europe launch", "https://www.cyclingweekly.com/products/another-chinese-manufacturer-arrives-in-europe-with-a-6-7kg-race-bike-and-its-half-the-price-of-the-big-brands", "publication"]],
+    notes: "Builds listed at €4,090 (105 Di2) and €5,090 (Ultegra Di2) in European coverage; not converted to IDR.",
+  },
+  {
+    brand: "Tavelo", family: "Arow", name: "Arow Race Ultegra Di2", year: 2024, category: "road", subcategory: "race",
+    frameMaterial: "Carbon", groupset: "Shimano Ultegra Di2 R8100", drivetrain: "2x12", brakes: "Hydraulic disc", brakeType: "hydraulic-disc",
+    wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "Road racing", usage: ["racing"], experience: ["advanced"], highlights: ["Integrated carbon cockpit"], drawbacks: ["Limited dealer support in Indonesia"],
+    compat: roadDisc(12, "shimano-di2-12"), frameColor: "#1E3A8A",
+    sources: [["Cycle Limited — Tavelo Arow Race Ultegra Di2 2024", "https://cyclelimited.com/products/tavelo-arow-race-polestar-ultegra-di2-road-bike-2024-x-large", "retailer"], ["Bike Insights — 2024 Tavelo Arow", "https://bikeinsights.com/bikes/66832d20b59776001b1606ba-tavelo-arow", "publication"]],
+  },
+  {
+    brand: "Quick Pro", family: "AR:ONE", name: "AR:ONE 105 Di2", year: 2024, category: "road", subcategory: "all-rounder",
+    frameMaterial: "Carbon (T1100 + M65)", groupset: "Shimano 105 Di2 R7100", drivetrain: "2x12", brakes: "Hydraulic disc", brakeType: "hydraulic-disc",
+    wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "Aero all-round road", usage: ["racing", "fitness"], experience: ["intermediate", "advanced"], highlights: ["5-year frame warranty (manufacturer)"], drawbacks: ["Frame weight differs between listings"],
+    compat: roadDisc(12, "shimano-di2-12"), frameColor: "#4C1D95",
+    sources: [["Quick Pro USA — AR:ONE 105 Di2", "https://www.quickprousa.com/products/ar-one-105-di2", "official-website"], ["Bike Insights — 2024 Quick Pro AR:ONE", "https://bikeinsights.com/bike-geometries/68f539f67d8930001b5bbfd9-2024-quick-pro-arone-base-m", "publication"]],
+  },
+  {
+    brand: "Quick Pro", family: "TT:ONE", name: "TT:ONE Frameset", year: 2024, category: "road", subcategory: "time-trial",
+    frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: null, brakeType: null,
+    wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "Time trial", usage: ["racing"], experience: ["advanced"], highlights: ["Wind-tunnel developed (manufacturer claim)"], drawbacks: ["Frameset only"],
+    compat: {}, frameColor: "#312E81",
+    sources: [["Panda Podium — Quick Pro TT:ONE frameset", "https://www.pandapodium.cc/?p=44194", "retailer"]],
+  },
+  {
+    brand: "Elves", family: "Falath", name: "Falath EXP Sport", year: 2024, category: "road", subcategory: "aero",
+    frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc",
+    wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "Aero road", usage: ["racing", "fitness"], experience: ["intermediate", "advanced"], highlights: ["UCI-approved frame (per review)", "52 cm frameset 1,220 g unpainted with hardware (review measurement)"], drawbacks: ["Heavier than flagship aero frames"],
+    compat: roadDisc(12, "unknown"), frameColor: "#065F46",
+    sources: [["Cycling Weekly — Elves Falath EXP Sport review", "https://www.cyclingweekly.com/reviews/road-bikes/elves-falath-exp-sport-review-an-aero-bike-that-brings-performance-and-value-to-the-people", "publication"]],
+  },
+  {
+    brand: "Winspace", family: "G5", name: "G5 Aero Gravel", year: 2025, category: "gravel", subcategory: "gravel-racing",
+    frameMaterial: "Carbon", groupset: "Shimano GRX RX825 Di2 / SRAM Force AXS (builds)", drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc",
+    wheelset: "Lún GRAPID 2", tires: null, wheelSize: "700c", tireClearanceMm: 58, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "Fast gravel racing", usage: ["racing", "bikepacking"], experience: ["intermediate", "advanced"], highlights: ["Takes a 58 mm front tyre"], drawbacks: ["Direct-to-consumer only — after-sales support takes patience"],
+    compat: roadDisc(12, "unknown", { maxTireMm: 58 }), frameColor: "#0E7490",
+    sources: [["BikeRadar — Winspace G5", "https://www.bikeradar.com/news/winspace-g5-aero-gravel-bike", "publication"]],
+    notes: "58 mm is the front clearance quoted by BikeRadar; rear clearance not recorded.",
+  },
+  {
+    brand: "SEKA", family: "Spear", name: "Spear Disc Frameset", year: 2024, category: "road", subcategory: "aero",
+    frameMaterial: "Carbon (six fibre types)", groupset: null, drivetrain: null, brakes: "Disc", brakeType: "hydraulic-disc",
+    wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null,
+    ridingStyle: "Aero road racing", usage: ["racing"], experience: ["advanced"], highlights: ["Strong wind-tunnel result in Cyclingnews testing"], drawbacks: ["Reviewers found it insufficiently stiff"],
+    compat: roadDisc(12, "unknown"), frameColor: "#111827",
+    sources: [["Cyclingnews — SEKA Spear review", "https://www.cyclingnews.com/bikes/road/seka-spear-review/", "publication"]],
+  },
+
+  /* ================= SPECIALTY & MISSING SUBCATEGORIES (seed) ================= */
+  { brand: "Cervélo", family: "P5", name: "P5", year: 2024, category: "road", subcategory: "time-trial", frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Time trial and triathlon", usage: ["racing"], experience: ["advanced"], highlights: ["Dedicated aero TT platform"], drawbacks: ["Specialised position — fit required"], compat: {}, frameColor: "#0F172A" },
+  { brand: "Giant", family: "Trinity", name: "Trinity Advanced Pro", year: 2024, category: "road", subcategory: "triathlon", frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: "Disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Triathlon", usage: ["racing"], experience: ["advanced"], highlights: ["Triathlon-specific storage and fit"], drawbacks: ["Not UCI-legal for mass-start road races"], compat: {}, frameColor: "#1E293B" },
+  { brand: "Fuji", family: "Track", name: "Track", year: 2024, category: "road", subcategory: "track", frameMaterial: "Aluminium", groupset: null, drivetrain: "Single speed (fixed)", brakes: null, brakeType: "none", wheelset: null, tires: "700c", wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Velodrome and fixed-gear", usage: ["racing", "commuting"], experience: ["intermediate"], highlights: ["Simple fixed-gear drivetrain"], drawbacks: ["No brakes in track configuration — illegal on many roads"], compat: { speeds: 1, chainrings: 1 }, frameColor: "#A3A3A3" },
+  { brand: "Surly", family: "Ice Cream Truck", name: "Ice Cream Truck", year: 2024, category: "mtb", subcategory: "fat-bike", frameMaterial: "Steel", groupset: null, drivetrain: null, brakes: "Disc", brakeType: "mechanical-disc", wheelset: null, tires: "26 x 4.8", wheelSize: "26", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Sand, snow and soft terrain", usage: ["trail", "touring"], experience: ["intermediate"], highlights: ["Huge flotation tyres"], drawbacks: ["Heavy and slow on pavement"], compat: {}, frameColor: "#7C2D12" },
+  { brand: "Commencal", family: "Supreme DH", name: "Supreme DH", year: 2024, category: "mtb", subcategory: "downhill", frameMaterial: "Aluminium", groupset: null, drivetrain: "1x7", brakes: "4-piston hydraulic", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: "29", tireClearanceMm: null, suspension: "full", travel: "200 mm class", weightKg: null, priceJt: null, ridingStyle: "Downhill racing and bike parks", usage: ["downhill"], experience: ["advanced"], highlights: ["Gravity-race geometry"], drawbacks: ["Not for climbing"], compat: {}, frameColor: "#374151" },
+  { brand: "Specialized", family: "P.3", name: "P.3", year: 2024, category: "mtb", subcategory: "dirt-jump", frameMaterial: "Aluminium", groupset: null, drivetrain: "Single speed", brakes: "Rear hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: "26\"", wheelSize: "26", tireClearanceMm: null, suspension: "front", weightKg: null, priceJt: null, ridingStyle: "Dirt jump and pump track", usage: ["tricks"], experience: ["intermediate", "advanced"], highlights: ["Strong, compact jump frame"], drawbacks: ["Single purpose"], compat: { speeds: 1 }, frameColor: "#4B5563" },
+  { brand: "Specialized", family: "Turbo Creo", name: "Turbo Creo 2 Comp", year: 2024, category: "electric", subcategory: "e-road", frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Assisted road and gravel", usage: ["fitness", "touring"], experience: ["intermediate"], electric: { motor: null, batteryWh: null }, highlights: ["Light-assist e-road concept"], drawbacks: ["Premium price"], compat: {}, frameColor: "#1F2937" },
+  { brand: "Cannondale", family: "Topstone Neo", name: "Topstone Neo Carbon", year: 2024, category: "electric", subcategory: "e-gravel", frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Assisted gravel adventures", usage: ["bikepacking", "touring"], experience: ["intermediate"], electric: { motor: null, batteryWh: null }, highlights: ["Gravel geometry with assist"], drawbacks: ["Heavier than unassisted gravel bikes"], compat: {}, frameColor: "#3F6212" },
+  { brand: "Brompton", family: "Electric", name: "Electric C Line", year: 2024, category: "electric", subcategory: "e-folding", frameMaterial: "Steel", groupset: null, drivetrain: null, brakes: "Rim caliper", brakeType: "rim-caliper", wheelset: "16\" (349)", tires: null, wheelSize: "16", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Assisted multi-modal commuting", usage: ["commuting"], experience: ["beginner", "intermediate"], electric: { motor: null, batteryWh: null }, highlights: ["Brompton fold with assist"], drawbacks: ["Premium price"], compat: {}, frameColor: "#92400E" },
+  { brand: "Tern", family: "GSD", name: "GSD", year: 2024, category: "electric", subcategory: "e-cargo", frameMaterial: "Aluminium", groupset: null, drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: "20\"", wheelSize: "20", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Compact family and cargo hauling", usage: ["cargo", "commuting"], experience: ["beginner", "intermediate"], electric: { motor: null, batteryWh: null }, highlights: ["Compact longtail footprint"], drawbacks: ["Heavy"], compat: {}, frameColor: "#0369A1" },
+  { brand: "Surly", family: "Big Easy", name: "Big Fat Dummy", year: 2024, category: "other", subcategory: "cargo", frameMaterial: "Steel", groupset: null, drivetrain: null, brakes: "Disc", brakeType: "mechanical-disc", wheelset: null, tires: null, wheelSize: "26", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Unassisted longtail cargo", usage: ["cargo"], experience: ["intermediate"], highlights: ["Very high load capacity (manufacturer positioning)"], drawbacks: ["Heavy, unassisted"], compat: {}, frameColor: "#57534E" },
+  { brand: "Van Raam", family: "Twinny", name: "Twinny Plus Tandem", year: 2024, category: "other", subcategory: "tandem", frameMaterial: "Aluminium", groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Side-by-side or tandem riding with a companion", usage: ["leisure"], experience: ["beginner"], highlights: ["Adapted riding with a companion"], drawbacks: ["Specialist dealer required"], compat: {}, frameColor: "#2563EB" },
+  { brand: "Van Raam", family: "Easy Rider", name: "Easy Rider Tricycle", year: 2024, category: "other", subcategory: "adaptive-bikes", frameMaterial: "Aluminium", groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Stable low-step adaptive tricycle", usage: ["leisure", "commuting"], experience: ["beginner"], highlights: ["Low step-in, stable three-wheel platform"], drawbacks: ["Large footprint"], compat: {}, frameColor: "#1D4ED8" },
+  { brand: "HP Velotechnik", family: "Scorpion", name: "Scorpion fs 26", year: 2024, category: "other", subcategory: "recumbent", frameMaterial: "Aluminium", groupset: null, drivetrain: null, brakes: "Disc", brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "full", weightKg: null, priceJt: null, ridingStyle: "Recumbent touring trike", usage: ["touring", "leisure"], experience: ["beginner", "intermediate"], highlights: ["Reclined seated position, three-wheel stability"], drawbacks: ["Specialist dealer required"], compat: {}, frameColor: "#4B5563" },
+  { brand: "Woom", family: "Woom", name: "Woom 3", year: 2024, category: "other", subcategory: "kids", frameMaterial: "Aluminium", groupset: null, drivetrain: "Single speed", brakes: "V-brake", brakeType: "v-brake", wheelset: "16\"", tires: null, wheelSize: "16", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "First pedal bike", usage: ["leisure"], experience: ["beginner"], highlights: ["Lightweight kids-specific design"], drawbacks: ["Outgrown quickly"], compat: { speeds: 1 }, frameColor: "#DC2626" },
+  { brand: "Strider", family: "Strider", name: "12 Sport", year: 2024, category: "other", subcategory: "balance-bikes", frameMaterial: "Steel", groupset: null, drivetrain: "None (balance bike)", brakes: null, brakeType: "none", wheelset: "12\"", tires: null, wheelSize: "12", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Learning balance before pedalling", usage: ["leisure"], experience: ["beginner"], highlights: ["No pedals — builds balance first"], drawbacks: ["Toddlers only"], compat: {}, frameColor: "#16A34A" },
+  { brand: "Electra", family: "Cruiser", name: "Cruiser 1", year: 2024, category: "other", subcategory: "beach-cruisers", frameMaterial: "Aluminium", groupset: null, drivetrain: "Single speed", brakes: "Coaster brake", brakeType: "coaster", wheelset: null, tires: "26 x 2.35", wheelSize: "26", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Relaxed seaside cruising", usage: ["leisure"], experience: ["beginner"], highlights: ["Flat-foot relaxed geometry"], drawbacks: ["Single speed"], compat: { speeds: 1 }, frameColor: "#0EA5E9" },
+  { brand: "Specialized", family: "Epic", name: "Epic 8 Comp", year: 2024, category: "mtb", subcategory: "full-suspension", frameMaterial: "Carbon", groupset: null, drivetrain: "1x12", brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: "29\"", wheelSize: "29", tireClearanceMm: null, suspension: "full", travel: "120 mm class", weightKg: null, priceJt: null, ridingStyle: "XC racing", usage: ["racing", "trail"], experience: ["advanced"], highlights: ["Efficient XC full suspension"], drawbacks: ["Premium price"], compat: {}, frameColor: "#111827" },
+  { brand: "Kona", family: "Sutra", name: "Sutra", year: 2024, category: "urban", subcategory: "touring", frameMaterial: "Steel", groupset: null, drivetrain: null, brakes: "Disc", brakeType: "mechanical-disc", wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Loaded touring", usage: ["touring", "bikepacking"], experience: ["intermediate"], highlights: ["Rack and fender mounts"], drawbacks: ["Heavy"], compat: {}, frameColor: "#A16207" },
 ];
 
 function toModel(s: Seed): BikeModel {
   const brandId = slugify(s.brand);
   const slug = slugify(`${s.brand}-${s.name}-${s.year}`);
-  const { brand: _b, priceJt, status, sizes, highlights, drawbacks, priceHistory, ...rest } = s;
+  const { brand: _b, priceJt, status, sizes, highlights, drawbacks, priceHistory, sources, notes, ...rest } = s;
   void _b;
   return {
     ...rest,
@@ -638,7 +723,9 @@ function toModel(s: Seed): BikeModel {
     geometry: null,
     price: priceJt == null ? null : est(jt(priceJt)),
     priceHistory: priceHistory ?? [],
-    provenance: status === "discontinued" ? discontinued() : DEMO_PROVENANCE,
+    provenance: sources?.length
+      ? { status: status ?? "unverified", sources: sources.map(([label, url, type]) => ({ label, url, type, retrievedAt: "2026-11-16" })), updatedAt: "2026-11-16", confidence: "medium", reviewerNotes: notes ?? "Model existence and listed facts from the cited sources; other specs await the official spec sheet." }
+      : status === "discontinued" ? discontinued() : DEMO_PROVENANCE,
   };
 }
 

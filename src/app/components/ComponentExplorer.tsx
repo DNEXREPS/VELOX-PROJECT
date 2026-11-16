@@ -12,7 +12,7 @@ const GROUPS: Array<{ id: string; label: string; types: ComponentType[] }> = [
   { id: "all", label: "All", types: [] },
   { id: "groupsets", label: "Groupsets", types: ["groupset"] },
   { id: "drivetrain", label: "Drivetrain parts", types: ["shifters", "front-derailleur", "rear-derailleur", "crankset", "cassette", "chain"] },
-  { id: "wheels", label: "Wheelsets", types: ["wheelset"] },
+  { id: "wheels", label: "Wheels & rims", types: ["wheelset", "rim"] },
   { id: "tires", label: "Tyres", types: ["tires"] },
   { id: "brakes", label: "Brakes", types: ["brakes"] },
   { id: "frames", label: "Frames & forks", types: ["frame", "fork"] },

@@ -6,7 +6,7 @@ import { COMPONENTS } from "@/data/components";
 import { MEDIA_LIST } from "@/data/media";
 import { OFFICIAL_SOURCES, PENDING_BRANDS } from "@/data/research";
 import { IMPORT_LOG } from "@/data/import-log";
-import { PRODUCT_IMAGES } from "@/data/product-images";
+import { COVERAGE_LABEL, imageCoverage, PRODUCT_IMAGES, type ImageCoverage } from "@/data/product-images";
 import { PageHeader } from "@/components/ui";
 import { isVerified, SOURCE_TYPE_LABEL, STATUS_LABEL, titleCase } from "@/lib/format";
 import type { VerificationStatus } from "@/lib/types";
@@ -87,10 +87,14 @@ export default function Page() {
         <section>
           <h2 className="text-2xl font-medium tracking-tight">Product photography</h2>
           <p className="mt-2 max-w-2xl text-sm text-muted">
-            A model is pictured only with a photo confirmed by eye to show that model (or the same frame generation) and that VELOX is licensed to display. {PRODUCT_IMAGES.length} model{PRODUCT_IMAGES.length === 1 ? "" : "s"} currently qualify; every other model shows the VELOX placeholder with a link to the manufacturer’s own photos. Manufacturer photography will be added once licences are recorded. In the previous release {IMPORT_LOG.imageBaseline.recordsOnSharedPhotos} of {IMPORT_LOG.imageBaseline.bikes} models were shown with one of {IMPORT_LOG.imageBaseline.distinctPhotos} shared category photos — that is no longer possible.
+            A model is pictured only with the photo its manufacturer declares for that exact product on its own product page (schema.org / Open Graph / product feed), or with a licensed photo checked against the model. Every file is downloaded, validated (HTTP status, image type, decodable, minimum size), stored locally, de-duplicated by checksum and reviewed on a contact sheet. Manufacturer photos are shown unaltered, credited and linked to the source page. Models without one show the VELOX missing-image state with a link to the official page.
           </p>
+          <div className="mt-6 grid grid-cols-2 gap-px bg-line sm:grid-cols-5">
+            {(Object.keys(COVERAGE_LABEL) as ImageCoverage[]).map((k) => <div key={k} className="bg-ink-950 p-5"><p className="tabular text-3xl font-medium tracking-tight">{BIKES.filter((b) => imageCoverage(b) === k).length}</p><p className="label-tech mt-1">{COVERAGE_LABEL[k]}</p></div>)}
+          </div>
+          <h3 className="label-tech mb-2 mt-8">Licensed photographs</h3>
           <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {PRODUCT_IMAGES.map((i) => {
+            {PRODUCT_IMAGES.filter((i) => i.image_source_type !== "manufacturer").map((i) => {
               const bike = BIKES.find((b) => b.id === i.subjectId);
               return (
                 <li key={i.id}>

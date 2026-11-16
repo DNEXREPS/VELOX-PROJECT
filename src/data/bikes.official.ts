@@ -100,7 +100,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "colors": [
+   "Anchor Grey",
+   "Moon Silver",
+   "Light Yellow"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Precede:ON",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0093 Disc",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance Line Sport",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube 500Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano CUES U4000",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano CUES U4000",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Miranda Delta",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CUES LG300",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Cues LG500",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT30",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Alexrims Supra-BH 27.5 / Hub Shimano MT400 15x100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Alexrims Supra-BH 27.5 / Hub Shimano MT4050 9x135",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe Big Ben Plus Reflex 55mm",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP0044 Comfort Cockpit",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0067 Supension Post",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Royal Essenza+ Moderate Wide",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "50.72 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-strive-on-cfr-underdog-2024",
@@ -194,7 +291,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "speeds": 12,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Strive:ON",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "Fox 38 Rhythm Grip",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Fox Float X Evol",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance Line CX",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube 750Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Deore M6100, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M6100, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "e*thirteen E-Spec Plus BOSCH",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Centerline",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss H1900",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss H1900",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Maxxis Assegai 3C MaxxGrip",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0047",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon G5",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Iridium Dropper",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "ERGON SM10 EMTB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "54.02 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-strive-on-cfr-2024",
@@ -285,7 +489,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Strive:ON",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 38 Performance Elite GripX2",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX X2 Performance",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance Line CX",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube 750Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Deore XT SL-M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore XT M8100",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "e*thirteen E-Spec Plus BOSCH",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore SLX CS-M7100",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano DEORE XT M8120",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT66",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss HX1700",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss HX1700 12x148",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "MAXXIS Minion DHR II",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0047",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon G5",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon G5",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "ERGON SM10 EMTB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "53.58 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-on-cf-9-axs-2027",
@@ -380,7 +691,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Spectral:ON CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 36 Factory",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Avinox M2S",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Avinox",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM AXS Pod Controller Rocker Paddle",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM X0 Eagle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 Eagle Transmission XS-1295",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM HS2",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss HXC1700",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss HXC1700",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "MAXXIS Minion DHR II",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0047",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0040",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0070-01",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM10 Enduro",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "47.85 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-torque-on-cf-8-2023",
@@ -476,7 +894,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Torque:ON CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "Fox 38 Rhythm Grip",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Fox X2 Performance",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Shimano EP801",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Canyon BT010",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Deore SLX M7100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano SLX 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano Steps",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano SLX M7120",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Center Lock Bremsscheibe 220mm SM-RT64",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss HFR1700",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss HFR1700",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Maxxis Assegai 3C MaxxGrip",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Handlebar HB0057",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon:ON ST0031",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Iridium Dropper",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Gravita Alpaca X5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "54.77 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-onfly-cf-6-2025",
@@ -576,7 +1101,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": false,
    "maxTireMm": 35
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Endurace:ONfly CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0140",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "TQ HPR40",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "TQ 290 Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano 105 R7120 12s",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 FD-R7100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 RD-R7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Praxis EC-5",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CS-HG710 11-36 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-M7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT64",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss Endurance LN",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss Endurance LN SH11",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe One, 32mm",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar 90 mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0057 VCLS",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia Model X",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "26.68 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-onfly-cf-7-2025",
@@ -676,7 +1293,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 35
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Endurace:ONfly CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0140",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "TQ HPR40",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "TQ 290 Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano 105 R7170 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 Di2 FD-R7150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Praxis EC-5",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CS-HG710 11-36 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-M7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT70",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss Endurance LN",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss Endurance LN SH11",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe One, 32mm",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar 90 mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon S15 VCLS 2.0 CF",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Aliante R5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "25.84 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-onfly-sub-10-2025",
@@ -773,7 +1482,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 35
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Endurace:ONfly CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0140",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "TQ HPR40",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "TQ 290 Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano BR-R9270",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace Di2 FD-R9250",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace Di2 R9250, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Praxis EC-5",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace R9200, 12-speed, 11-34",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL900",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ERC 1100 Dicut",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ERC 1100 Dicut",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe Pro One Evo Tube Type",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar 90 mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Schmolke TLO UD",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Antares 00",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.74 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grizl-6-2027",
@@ -871,7 +1672,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 54
-  }
+  },
+  "colors": [
+   "Off Berry",
+   "Milk"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grizl AL",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0153 Disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Apex 12s",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex XPLR",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Apex 12s",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XPLR PG-1231",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Apex 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Centerline Rounded",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Alex Rims GVX24P",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Alex Rims GVX24P",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One RX Performance, 45mm",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0067",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0046",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0057 VCLS",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Royal SRX",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.22 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grizl-cf-6-2027",
@@ -969,7 +1856,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 54
-  }
+  },
+  "colors": [
+   "Acid White",
+   "Floating Violet"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grizl CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FK0143",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Apex 12s",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex XPLR",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Apex 1 WIDE",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XPLR PG-1231",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Apex 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss Gravel LN",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss Gravel LN",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Contintental Terra Adventure Trail Grip",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0067",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0046",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0057 VCLS",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Royal SRX",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.04 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grizl-cf-7-axs-2027",
@@ -1067,7 +2040,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 54
-  }
+  },
+  "colors": [
+   "Acid White",
+   "Floating Violet"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grizl CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FK0143",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Rival AXS HRD",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival XPLR AXS RD 13s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Rival XPLR",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival XPLR XG-1351",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G1800",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G 1800 with TRACKR SPEED",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One RX Performance, 45mm",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0067",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0046",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP100",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Argo Terra X5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.55 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grizl-cf-7-esc-2027",
@@ -1165,7 +2229,88 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 54
-  }
+  },
+  "colors": [
+   "Acid White",
+   "Nebula White"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grizl CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FK0143",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano GRX 610",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX RD-RX822 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano GRX FC-RX610",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SunRace CSMZ800 12s 11-51T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-M7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano SM-RT64",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G1800",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G1800",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One Overland Performance",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon Cockpit CP0050",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP100",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Royal SRX",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.65 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grizl-cf-8-di2-2027",
@@ -1263,7 +2408,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 54
-  }
+  },
+  "colors": [
+   "Acid White",
+   "Floating Violet"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grizl CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FK0143",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN320",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano GRX ST-RX825",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore XT Di2 RD-M8250-GS 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano RX820",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore XT CS-M8200-12",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Deore XT MT800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon GR 30 CF",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon GR 30 CF",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One RX Performance, 45mm",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0067",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0046",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP100",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Argo Terra X5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.15 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grizl-cf-8-esc-w-eclips-2027",
@@ -1361,7 +2597,84 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 54
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grizl CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0144 Power Supply",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano GRX BL-RX820",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX RD-RX822 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano RX820",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SunRace CSMZ800 12s 11-51T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-M7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Deore XT MT800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss GR 1600 Spline",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss GR 1600",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One Overland Performance",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon Cockpit CP0050",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP100",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Argo Terra X5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "22.36 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cf-slx-7-di2-2027",
@@ -1458,7 +2771,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 57
-  }
+  },
+  "colors": [
+   "Monochrome",
+   "Metallic Acid"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grail CF SLX",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0166",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN320",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano RX715",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano RX717",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano GRX FC-RX610",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL700",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon GR 50 CF",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon GR 50 CF",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One R Performance TLE",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 80 mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP0093 VCLS Aero",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.08 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cf-slx-8-axs-2027",
@@ -1554,7 +2953,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 57
-  }
+  },
+  "colors": [
+   "Monochrome",
+   "Metallic Acid"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grail CF SLX",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0166",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Force AXS HRD",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force XPLR Etap AXS E1 46t",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM FORCE",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force XPLR XG-1371 E1 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss GRC 1400 Spline",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss GRC 1400 50mm",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One R Performance TLE",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 80 mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP0093 VCLS Aero",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "19.67 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cf-7-speed-2027",
@@ -1652,7 +3137,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 57
-  }
+  },
+  "colors": [
+   "Clean Slate",
+   "Sandstone"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grail CF SL",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0155",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Rival AXS HRD",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival XPLR AXS RD 13s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Rival XPLR",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival XPLR XG-1351",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon GR 50 CF",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon GR 50 CF",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One R Performance TLE",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon Cockpit CP0039",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP0093 VCLS Aero",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Royal SRX",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.2 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cf-7-2027",
@@ -1750,7 +3321,88 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 57
-  }
+  },
+  "colors": [
+   "Clean Slate",
+   "Sandstone"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grail CF SL",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0155",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano GRX 610",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX RD-RX822 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano GRX FC-RX610",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano SLX CS-M7100",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL300",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "NEWMEN Wheel Advanced G.34",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "NEWMEN wheel Advanced G.34",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One R Performance TLE",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon Cockpit CP0039",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP0093 VCLS Aero",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Royal SRX",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.33 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cfr-axs-2027",
@@ -1847,7 +3499,94 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 57
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grail CFR",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0157",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Red AXS HRD",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red XPLR",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Red XPLR Powermeter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red XPLR",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline X",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss GRC 1100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "WH GRC1100 50 DI 28 12X142 CL XDR",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One RS Pro",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 80 mm",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Control Drops",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP0093 VCLS Aero",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X1",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "17.6 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cfr-di2-2027",
@@ -1945,7 +3684,94 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 57
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Grail CFR",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0157",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN320",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano GRX ST-RX825",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX RX827 Di2 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano RX820 + 4iiii single-sided Powermeter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore XT CS-M8100",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Ultegra RT-CL800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss GRC 1100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss GRC1100",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe G-One RS Pro",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 80 mm",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Control Drops",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP0093 VCLS Aero",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X1",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "18.5 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-lux-world-cup-cf-9-2027",
@@ -2039,7 +3865,108 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "colors": [
+   "Grey",
+   "Fire"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Lux WC CFR",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "Rock Shox SID Select+ 3-Position Remote",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Rock Shox SIDLuxe Select+ 3-Position Remote",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM Eagle 90 Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Eagle 90 Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Eagle 90 Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS-1275",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Motive Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Centerline Rounded",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss XR 1700",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss XR 1700",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe Racing Ralph SR TLE EVO 2.35\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0072",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0039",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "ERGON SPR20 NEO",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "25.36 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-lux-world-cup-cfr-x0-axs-2027",
@@ -2132,7 +4059,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "chainrings": 1,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Lux WC CFR",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "Rock Shox SID Select+ 3-Position Remote",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Rock Shox SIDLuxe Select+ 3-Position Remote",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM AXS Pod Controller Rocker Paddle",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM X0 Eagle Power Meter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 Eagle Transmission XS-1295",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XO T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Motive Silver",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM HS2 Rounded",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss XRC 1500",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss XRC 1500",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe Racing Ralph SR TLE EVO 2.35\"",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP0036",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SPR20 NEO TiNox",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "24.17 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-lux-world-cup-cfr-xtr-di2-2027",
@@ -2226,7 +4250,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Lux WC CFR",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 34 SL Factory",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX Float SL Factory 3-Pos Remote",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN320",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano XTR Di2",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XTR Di2 Groupset",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano FC-M9200",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XTR",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano XTR Brakes M9220/9200",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL900",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Shimano WH-M9200 XTR Wheelset",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Shimano WH-M9200",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Pirelli Scorpion XC RC Race Lite",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP0036",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Fox Transfer SL Factory",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SRS Pro Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.65 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-sender-cfr-cllctv-2027",
@@ -2318,7 +4439,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 63
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Sender CFR",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 40 Float",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX DHX2 Factory",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM X01 DH",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X01 DH",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM X01 DH",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG720",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM PC 1110 11s",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM HS2",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss EX1500",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss EX1500",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Maxxis Minion DHR II",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon G5",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon G5",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "G5 Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SMD20",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "41.01 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-sender-cfr-team-2025",
@@ -2410,7 +4623,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 63
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Sender CFR",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "RockShox BoXXer Ultimate",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox Vivid COIL DH",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM X01 DH",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X01 DH",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM X01 DH",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG720",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Connection Link 11s",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Maven Silver Stealth",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM HS2",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss FR1500",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss FR1500",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Maxxis Minion DHR II 2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon G5",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon G5",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "G5 Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SMD20",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "39.51 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-lux-trail-cf-6-2027",
@@ -2503,7 +4808,108 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "colors": [
+   "Glacier",
+   "Grove"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Lux Trail CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 34 Rhythm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX Float Rhythm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano XT Shift Lever SL-M8200-IR",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano M8200",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano Deore XT M8200",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano Deore XT M8220",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Ultegra RT-CL800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon XC 30 AL Wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon XC 30 AL Wheel",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Maxxis Rekon",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0073",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0039",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SPS20 NEO",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "29.22 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-lux-trail-cf-7-2027",
@@ -2596,7 +5002,108 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "colors": [
+   "Grove",
+   "Glacier"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Lux Trail CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 36 SL Performance Series",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX Float Performance",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM Eagle 90 Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Eagle 90 Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Eagle 90",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS-1275",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Motive Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Centerline Rounded",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon XC 30 CF",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon XC 30 CF",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Maxxis Rekon",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0073",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0039",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SPS20 NEO",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "28.22 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-lux-trail-cf-8-2027",
@@ -2688,7 +5195,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "chainrings": 1,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Lux Trail CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 36 SL Performance Elite Series",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX Float Performance Elite",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM AXS Pod Controller Rocker Paddle",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM GX Eagle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS-1275",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Motive Silver",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM HS2 Rounded",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon XC 30 CF",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon XC 30 CF",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Maxxis Rekon",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "RaceFace Era",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "RaceFace Turbine SL Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SPR20 NEO",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "27.12 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-lux-trail-cf-9-2027",
@@ -2780,7 +5389,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "chainrings": 1,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Lux Trail CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 36 SL Factory",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX Float Factory",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM AXS Pod Controller Rocker Paddle",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM X0 Eagle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 Eagle Transmission XS-1295",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Motive Ultimate",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM HS2 Rounded",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon XC 30 CF",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon XC 30 CF",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Maxxis Rekon",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "RaceFace Era",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "RaceFace Turbine SL Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "FOX Transfer Factory",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SRS Pro Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "26.81 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-neuron-5-2027",
@@ -2872,7 +5583,108 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "chainrings": 1
-  }
+  },
+  "colors": [
+   "Aloe",
+   "Doppio"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Neuron",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "RockShox Recon Silver RL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox Deluxe Select+",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano FC-M6200",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano M6220",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT64",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon XC 30 AL Wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon XC 30 AL Wheel",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe Romy Trail",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0073",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0039",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SPS20 NEO",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "33.52 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-neuron-6-2027",
@@ -2965,7 +5777,108 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "colors": [
+   "Doppio",
+   "Demin"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Neuron",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "Fox 34 Rhythm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Fox Float Rhythm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano XT Shift Lever SL-M8200-IR",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano M8200",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano M8200",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano Deore XT M8220",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Ultegra RT-CL800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Canyon XC 30 AL Wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Canyon XC 30 AL Wheel",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe Romy Trail",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0073",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0039",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SPS20 NEO",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "31.75 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-5-2027",
@@ -3057,7 +5970,108 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "chainrings": 1
-  }
+  },
+  "colors": [
+   "Powder Coat Black",
+   "Maize"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Spectral",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "RockShox Lyrik",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox Deluxe Select+",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano FC-MT520",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano M6220",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano SM-RT30",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "XC 30 AL :ON",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "XC 30 AL",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "MAXXIS Minion DHR II",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0047",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0040",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM10 Enduro Neo",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "35.02 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-6-2027",
@@ -3150,7 +6164,108 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "colors": [
+   "Powder Coat Black",
+   "Maize"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Spectral",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 36 Performance",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX Float X Performance",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano XT Shift Lever SL-M8200-IR",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano M8200",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano FC-MT520",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano Deore XT M8220",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT64",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "XC 30 AL :ON",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "XC 30 AL",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "MAXXIS Minion DHR II",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0047",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0040",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0081",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM10 Enduro Neo",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "35.02 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-cf-7-2027",
@@ -3242,7 +6357,108 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "chainrings": 1
-  }
+  },
+  "colors": [
+   "Orbit",
+   "Cream"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Spectral CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 36 Rythm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX Float X Performance",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano FC-MT520",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano M6200",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano Deore XT M8220",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT64",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "XC 30 AL :ON",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "XC 30 AL",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "MAXXIS Minion DHR II",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0047",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0040",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0070-01",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM10 Enduro Neo",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "35.26 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-cf-8-2027",
@@ -3335,7 +6551,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Spectral CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 36 Performance Elite",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX Float X Performance Elite",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano XT Shift Lever SL-M8200-IR",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano M8200",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano Deore XT M8200",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XT",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "Shimano Deore XT M8220",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss M 1900",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss M1900",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "MAXXIS Minion DHR II",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0047",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0040",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0070-01",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM10 Enduro Neo",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "33.3 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-cf-9-2027",
@@ -3427,7 +6740,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Spectral CF",
+    "componentId": null
+   },
+   {
+    "label": "Suspension Fork",
+    "value": "FOX 36 FLOAT Factory Series",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory Series",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "SRAM AXS Pod Controller Rocker Paddle",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM XO Eagle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS-1275 Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Disc Brake",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM HS2",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss XM1700",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss XM1700",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "MAXXIS Minion DHR II",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0055",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0040",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0070-01",
+    "componentId": null
+   },
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM10 Enduro",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "33.38 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-pathlite-on-5-suv-mid-step-2023",
@@ -3517,7 +6932,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "58.87 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-pathlite-on-5-suv-step-through-2024",
@@ -3607,7 +7029,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "57.99 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-on-cf-7-2022",
@@ -3697,7 +7131,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "50.8 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-on-cf-7-2023",
@@ -3787,7 +7233,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "51.38 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-on-cf-7-2024",
@@ -3877,7 +7335,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "53.41 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-spectral-on-cf-8-2024",
@@ -3967,7 +7437,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "54.51 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-us-spectral-on-cf-8-2022",
@@ -4057,7 +7539,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "53.8 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cf-7-2026",
@@ -4145,7 +7639,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": false,
    "maxTireMm": 42
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "20.42 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cf-8-1by-2026",
@@ -4233,7 +7734,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 42
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "19.58 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cf-sl-7-aero-2026",
@@ -4322,7 +7830,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 42
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "18.65 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cf-slx-8-axs-rs-2026",
@@ -4410,7 +7925,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 42
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "18.08 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cfr-axs-2026",
@@ -4499,7 +8021,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": true,
    "maxTireMm": 42
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "16.63 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grail-cfr-di2-2024",
@@ -4588,7 +8117,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 42
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "18.21 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-grizl-cf-6-2026",
@@ -4677,95 +8213,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "electronic": false,
    "maxTireMm": 54
-  }
- },
- {
-  "id": "canyon-grl-cf-slx-7-di-27-s-bk-wh-2027",
-  "slug": "canyon-grl-cf-slx-7-di-27-s-bk-wh-2027",
-  "brandId": "canyon",
-  "family": "GRL",
-  "name": "GRL CF SLX 7 DI 27 S bk/wh",
-  "variant": null,
-  "year": 2027,
-  "generation": null,
-  "category": "gravel",
-  "subcategory": "adventure-gravel",
-  "usage": [
-   "bikepacking",
-   "touring"
-  ],
-  "experience": [
-   "beginner",
-   "intermediate"
-  ],
-  "officialUrl": "https://www.canyon.com/en-us/outlet-bikes/gravel-bikes/grl-cf-slx-7-di-27-s-bkwh/50056608.html",
-  "drawbacks": [],
-  "priceHistory": [],
-  "provenance": {
-   "status": "verified-official",
-   "sources": [
-    {
-     "label": "Canyon official product page (US)",
-     "url": "https://www.canyon.com/en-us/outlet-bikes/gravel-bikes/grl-cf-slx-7-di-27-s-bkwh/50056608.html",
-     "type": "official-website",
-     "retrievedAt": "2026-11-16"
-    },
-    {
-     "label": "Bank Indonesia JISDOR reference rate (USD→IDR conversion)",
-     "url": "https://www.bi.go.id/en/publikasi/lelang/non-operasi-moneter/Pages/Swap-Hedging-of-External-Funding,-November-4th-2026.aspx",
-     "type": "official-website",
-     "retrievedAt": "2026-11-16"
-    }
-   ],
-   "updatedAt": "2026-11-16",
-   "confidence": "high",
-   "reviewerNotes": "Imported from the schema.org product data on Canyon's official US product page. Fields Canyon does not publish there are shown as Not Available. Weight as stated by Canyon (frame size not specified)."
   },
-  "frameMaterial": "Carbon (CF)",
-  "groupset": "Shimano RX717",
-  "drivetrain": null,
-  "brakes": "Shimano disc brakes",
-  "brakeType": null,
-  "wheelset": "Canyon",
-  "tires": null,
-  "wheelSize": null,
-  "tireClearanceMm": null,
-  "suspension": "rigid",
-  "travel": null,
-  "weightKg": 9.56,
-  "price": {
-   "amount": 78926000.0,
-   "currency": "IDR",
-   "type": "msrp",
-   "source": "Canyon official US price",
-   "sourceUrl": "https://www.canyon.com/en-us/outlet-bikes/gravel-bikes/grl-cf-slx-7-di-27-s-bkwh/50056608.html",
-   "date": "2026-11-16",
-   "note": "Published in USD on the manufacturer's US site; IDR converted at Bank Indonesia JISDOR Rp 18,148/USD (4 Nov 2026).",
-   "original": {
-    "amount": 4349.0,
-    "currency": "USD",
-    "rate": 18148
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "22.01 lbs",
+    "componentId": null
    }
-  },
-  "sizes": [],
-  "geometry": {
-   "stackMm": 558.0,
-   "reachMm": 394.0,
-   "headAngle": 71.5,
-   "seatAngle": 73.9,
-   "note": "Size None, from Canyon's published geometry"
-  },
-  "ridingStyle": "Privateer gravel race performance",
-  "highlights": [
-   "Benchmark 57 mm tyre clearance.",
-   "PACE Technology: fast cockpit adjustments."
-  ],
-  "electric": null,
-  "compat": {
-   "brakeInterface": "disc",
-   "chainrings": 1,
-   "electronic": true
-  }
+  ]
  },
  {
   "id": "canyon-spectral-125-cf-8-2022",
@@ -4851,7 +8306,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 1,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Dropper Post",
+    "value": "true",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "30.38 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cf-slx-7-axs-2027",
@@ -4937,7 +8404,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "17.42 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cf-slx-8-di2-2027",
@@ -5022,7 +8496,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "16.76 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cfr-axs-2026",
@@ -5106,7 +8587,29 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1100 Dicut db",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC1100",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Pirelli P Zero Race RS",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.39 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cfr-axs-2025",
@@ -5193,7 +8696,79 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Rival AXS HRD",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS Groupset",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "FC PM SRAM RIV E1 DUB 12S 160 48/35",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival XG-1250, 12-speed, 10-36",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1600 DICUT db 55",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC 1600 Dicut",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 80 mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "CANYON SP0077-01",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia SLR Advan Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.44 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cfr-di2-2026",
@@ -5280,7 +8855,74 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano 105 R7170 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano 105 R7100",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 R7101 11-34 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-M7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL700 Brake Rotor 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1600 DICUT db 55",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC 1600 Wheelset",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar 90 mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0077",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia SLR Boost Superflow S saddle",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.52 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cfr-di2-2025",
@@ -5366,7 +9008,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "15.66 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cfr-di2-2027",
@@ -5442,93 +9091,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Shimano Dura-Ace Di2 with dual-sided power meter."
   ],
   "electric": null,
-  "compat": {}
- },
- {
-  "id": "canyon-aro-cf-slx-7-axs-27-s-wh-2027",
-  "slug": "canyon-aro-cf-slx-7-axs-27-s-wh-2027",
-  "brandId": "canyon",
-  "family": "ARO",
-  "name": "ARO CF SLX 7 AXS 27 S wh",
-  "variant": null,
-  "year": 2027,
-  "generation": null,
-  "category": "road",
-  "subcategory": "aero",
-  "usage": [
-   "racing"
-  ],
-  "experience": [
-   "advanced"
-  ],
-  "officialUrl": "https://www.canyon.com/en-us/outlet-bikes/road-bikes/aro-cf-slx-7-axs-27-s-wh/50054017.html",
-  "drawbacks": [],
-  "priceHistory": [],
-  "provenance": {
-   "status": "verified-official",
-   "sources": [
-    {
-     "label": "Canyon official product page (US)",
-     "url": "https://www.canyon.com/en-us/outlet-bikes/road-bikes/aro-cf-slx-7-axs-27-s-wh/50054017.html",
-     "type": "official-website",
-     "retrievedAt": "2026-11-16"
-    },
-    {
-     "label": "Bank Indonesia JISDOR reference rate (USD→IDR conversion)",
-     "url": "https://www.bi.go.id/en/publikasi/lelang/non-operasi-moneter/Pages/Swap-Hedging-of-External-Funding,-November-4th-2026.aspx",
-     "type": "official-website",
-     "retrievedAt": "2026-11-16"
-    }
-   ],
-   "updatedAt": "2026-11-16",
-   "confidence": "high",
-   "reviewerNotes": "Imported from the schema.org product data on Canyon's official US product page. Fields Canyon does not publish there are shown as Not Available. Weight as stated by Canyon (frame size not specified)."
-  },
-  "frameMaterial": "Carbon (CF)",
-  "groupset": "SRAM Rival eTap",
-  "drivetrain": null,
-  "brakes": "SRAM disc brakes",
-  "brakeType": null,
-  "wheelset": null,
-  "tires": null,
-  "wheelSize": null,
-  "tireClearanceMm": null,
-  "suspension": "rigid",
-  "travel": null,
-  "weightKg": 7.9,
-  "price": {
-   "amount": 81648000.0,
-   "currency": "IDR",
-   "type": "msrp",
-   "source": "Canyon official US price",
-   "sourceUrl": "https://www.canyon.com/en-us/outlet-bikes/road-bikes/aro-cf-slx-7-axs-27-s-wh/50054017.html",
-   "date": "2026-11-16",
-   "note": "Published in USD on the manufacturer's US site; IDR converted at Bank Indonesia JISDOR Rp 18,148/USD (4 Nov 2026).",
-   "original": {
-    "amount": 4499.0,
-    "currency": "USD",
-    "rate": 18148
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "15.7 lbs",
+    "componentId": null
    }
-  },
-  "sizes": [],
-  "geometry": {
-   "stackMm": 539.0,
-   "reachMm": 390.0,
-   "headAngle": 72.8,
-   "seatAngle": 73.5,
-   "note": "Size None, from Canyon's published geometry"
-  },
-  "ridingStyle": "Fastest frame design in the peloton",
-  "highlights": [
-   "Unmatched race pedigree from Aeroad CFR.",
-   "SRAM Rival AXS groupset."
-  ],
-  "electric": null,
-  "compat": {
-   "brakeInterface": "disc",
-   "chainrings": 2,
-   "electronic": true
-  }
+  ]
  },
  {
   "id": "canyon-aro-cf-slx-8-axs-27-xs-vt-2027",
@@ -5613,7 +9183,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "16.54 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aro-cf-slx-8-di-27-xl-wh-2027",
@@ -5698,7 +9275,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "16.76 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aro-cfr-axs-custom-27-xs-c15-2027",
@@ -5774,7 +9358,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "SRAM RED AXS with dual-sided power meter."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Front Wheel",
+    "value": "Zipp 454 NSW TL Wheelset",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Zipp 454 NSW TL Hookless, XDR",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.74 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aro-cfr-di-custom-26-xs-c15-2026",
@@ -5850,7 +9451,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Pro precision: Shimano Dura-Ace Di2 with integrated power meter."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "15.52 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-canyon-ultimate-cf-7-di2-2027",
@@ -5938,7 +9546,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "18.35 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-edr-cf-6-27-2xs-bk-2027",
@@ -6025,7 +9640,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "chainrings": 2
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "19.58 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-allroad-2027",
@@ -6113,7 +9735,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "23.73 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-7-axs-2027",
@@ -6201,7 +9830,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "18.61 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-7-di2-2027",
@@ -6289,7 +9925,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "18.96 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-slx-7-axs-2027",
@@ -6377,7 +10020,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "18.65 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-slx-8-axs-ar60-2024",
@@ -6465,7 +10115,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 35
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "17.88 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-slx-8-di2-grc-2024",
@@ -6551,7 +10208,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 35
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "17.33 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-slx-8-di2-2026",
@@ -6639,7 +10303,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 35
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "17.29 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-slx-9-di2-2027",
@@ -6726,7 +10397,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "17.29 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-7-di2-aero-2026",
@@ -6812,7 +10490,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "17.99 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-7-2026",
@@ -6900,7 +10585,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": false,
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "19.14 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-7-2027",
@@ -6988,7 +10680,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": false
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "19.01 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-sl-7-di2-2023",
@@ -7066,7 +10765,79 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Continental GP 5000s TR 25mm Front & 28mm rear."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano BR-R9270",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace Di2 FD-R9250",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "FC SHIM R9200P-A 12S HT2 175 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace CS-R9200",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano XTR RT-MT900",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1100 Dicut",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC 1100 Dicut",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental GP 5000 S TR",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP18 Cockpit CF",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0055",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia SLR Boost Superflow S saddle Carbon Rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "17.68 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-sl-7-etap-2023",
@@ -7156,7 +10927,84 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FK 28 FK0104-01-DISC P51-L FM",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM RED eTap AXS HRD, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM RED eTap AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED eTap AXS 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM RED D1",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XG-1290, 12-speed, 10-28",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED D1 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Centerline X",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "ZIPP 454NSW Db",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "ZIPP 454NSW Db",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Grand Prix 5000, 25 mm",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP18 Cockpit CF",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0055 CF Comfort Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Antares Versus R1",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "17.02 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-sl-frameset-2025",
@@ -7242,7 +11090,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "5.17 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-slx-8-axs-2026",
@@ -7330,7 +11185,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "16.36 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-slx-8-axs-2027",
@@ -7418,7 +11280,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "15.79 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-slx-8-di2-2026",
@@ -7506,7 +11375,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "16.05 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-slx-8-di2-2027",
@@ -7594,7 +11470,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "chainrings": 2,
    "electronic": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "15.66 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-slx-frameset-2025",
@@ -7680,7 +11563,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "5.34 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cfr-di2-2023",
@@ -7768,7 +11658,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "13.94 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cf-slx-7-di2-2027",
@@ -7864,7 +11761,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 32
-  }
+  },
+  "colors": [
+   "Crystal White",
+   "Metallic Acid"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Aeroad CF SLX",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0137 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano 105 R7170 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 Di2 FD-R7150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano 105 Crankset with 4iii Powermeter 3+",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 R7101 11-34 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-M7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL700",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1600 Spline",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC 1600 Dicut",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0077",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia SLR Advan Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "17.55 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cf-slx-8-axs-2027",
@@ -7959,7 +11947,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 32
-  }
+  },
+  "colors": [
+   "Crystal White",
+   "Metallic Acid"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Aeroad CF SLX",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0137 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Force AXS E1 Powermeter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Zipp 404 S",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Zipp 404 S",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Pirelli P Zero Race SL-R TLR",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0077",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia SLR Advan Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "16.54 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-aeroad-cfr-axs-2027",
@@ -8054,7 +12133,94 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 32
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Aeroad CFR",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0137 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Red AXS HRD",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS Rear Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Red AXS Power Meter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline X",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1100 DICUT db 55",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC 1100 DICUT db 55",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP0105 Aero",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia SLR Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.74 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-slx-8-di2-2027",
@@ -8152,7 +12318,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 38
-  }
+  },
+  "colors": [
+   "Crystal White",
+   "Champagne"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Endurace CF SLX",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0165 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano Ultegra Di2 R8170",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra Di2 FD-R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "4iiii P3+ Shimano Ultegra R8100",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CS-R8101 11-34 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Ultegra RT-CL800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ERC 1600 Dicut",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ERC 1600 Dicut HG",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe Pro One Evo 32 mm",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP0093 VCLS Aero",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Aliante R5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "17.86 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-6-2027",
@@ -8252,7 +12509,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Stealth",
+   "Milk Tea"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Endurace CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0154 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano CUES 6030",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano CUES 6030",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano CUES RD6040",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano CUES 6040-2",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CUES RS400",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Cues LG500",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT10",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss Endurance LN",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss Endurance LN",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "TY CONT Grand Prix Clinch 32-622 bk",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0076 Ergo",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0035",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0057 VCLS",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Royal SRX",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "19.58 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-endurace-cf-7-2027",
@@ -8354,7 +12702,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Stealth",
+   "Milk Tea"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Endurace CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0154 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano 105 R7120 12s",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 FD-R7100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 RD-R7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano 105 R7100 50/34",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CS-HG710 11-36 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL300",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss Endurance LN",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss Endurance LN",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "TY CONT Grand Prix Clinch 32-622 bk",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon HB0076 Ergo",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0035",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0057 VCLS",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Royal SRX",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.57 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cf-7-di2-2027",
@@ -8452,7 +12891,103 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 33
-  }
+  },
+  "colors": [
+   "Bordeaux",
+   "White"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Ultimate CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0141 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano 105 R7170 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 Di2 FD-R7150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano 105 Crankset",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 R7101 11-34 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL300",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss Performance LN",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss Performance LN HG",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Schwalbe One, 28mm",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Canyon H17 Ergobar AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Canyon ST0035",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0094 CF",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia Model A Greentech",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "18.35 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-ultimate-cfr-axs-2026",
@@ -8549,7 +13084,94 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 33
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Ultimate CFR",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0146 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Red AXS HRD",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS Rear Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Red E1 172.5 mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline X",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1100 Dicut db",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC1100",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Pirelli P Zero Race RS",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "CP0048 PACE T-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0095 CF",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia SLR Boost Superflow S saddle Carbon Rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.95 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-speedmax-cfr-track-2024",
@@ -8637,7 +13259,69 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "speeds": 11,
    "maxTireMm": 25
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Speedmax Track CFR",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0113 CF",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRM Origin Track Powermeter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Kappstein Pro Line 15t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-HG901 11s",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "CANYON CFR Track Disc Front",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "CANYON CFR Track Disc Rear",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental 5000 S TR",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP0040 Basebar",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0068 Aero Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia Watt Kit Carbonio Superflow",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "17.55 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-speedmax-cf-slx-7-di2-2027",
@@ -8731,7 +13415,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 30
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Speedmax SLX",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon Speedmax Gabel",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano Dura-Ace",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Dura-Ace Di2 R9160 Remote TT",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 Di2 FD-R7150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano 105 Crankset with 4iii Powermeter 3+",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 R7101 11-34 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-M7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano RT-CL700",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1600 Spline",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC 1600 Spline",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon Cockpit",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP102 Standard Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.43 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-speedmax-cf-slx-8-di2-vanquish-2025",
@@ -8825,7 +13601,94 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 30
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Speedmax CF SLX Disc",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0080 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano Dura-Ace Di2 ST-R9180",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Dura-Ace Di2 R9160 Remote TT",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra Di2 FD-R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano Ultegra FC-R8100 4iiii Precision Powermeter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CS-R8101 11-30 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Ultegra RT-CL800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "HED Vanquish V62",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "HED Vanquish V62",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Grand Prix 5000 S TR, 28mm",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP0019 Triathlon Flatbar short",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0049 Aero Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Selle Italia Watt Superflow",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-speedmax-cf-slx-8-di2-2027",
@@ -8919,7 +13782,103 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 30
-  }
+  },
+  "colors": [
+   "Cosmic Dust",
+   "Lava Red"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Speedmax SLX",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon Speedmax Gabel",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano Dura-Ace",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Dura-Ace Di2 R9160 Remote TT",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra Di2 FD-R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano Ultegra R8100 4iiii Precision",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CS-R8101 11-30 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Ultegra RT-CL800",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1600 Spline",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC 1600 Spline",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon Cockpit",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SP102 Standard Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.08 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-speedmax-cf-7-di2-2026",
@@ -9014,7 +13973,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 30
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Speedmax CF",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0120 Speedmax",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano Dura-Ace Di2 ST-R9180",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Dura-Ace Di2 R9160 Remote TT",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 Di2 FD-R7150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano 105 R7100 4iiii Precision",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 R7101 11-34 12s",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-M7100 12s",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano SM-RT70",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC1600",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC1600",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP0041 Triathlon Flatbar Long",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0048 Aero Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R5",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.31 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-speedmax-cfr-axs-2027",
@@ -9107,7 +14158,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 28
-  }
+  },
+  "colors": [
+   "Paradigm Shift",
+   "Pro Black",
+   "Pro White"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Speedmax CFR",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon Speedmax Gabel",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "SRAM Powerpack",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "SRAM Red Aero Bremse",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "AXS Wireless Blips",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS Rear Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "SRAM Red AXS Power Meter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "SRAM Paceline X",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT SWISS ARC 1100 CSX",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon Cockpit CP0054",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Splitter Plate Pro",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R1",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.07 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-speedmax-cfr-di2-2026",
@@ -9201,7 +14349,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 30
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Speedmax CFR",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon FK0080 CF Disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano Dura-Ace Di2 ST-R9180",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Dura-Ace Di2 R9160 Remote TT",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace Di2 FD-R9250",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano Dura Ace Frontcrank Powermeter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace CS-R9200",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Dura-Ace RT-CL900",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss ARC 1100",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon CP0019 Triathlon Flatbar long",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Canyon SP0049 Aero Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R1",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.42 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "canyon-speedmax-cfr-di2-2027",
@@ -9295,7 +14535,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 2,
    "electronic": true,
    "maxTireMm": 28
-  }
+  },
+  "colors": [
+   "Paradigm Shift",
+   "Pro Black",
+   "Pro White"
+  ],
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Canyon Speedmax CFR",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Canyon Speedmax Gabel",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano BT-DN300 Di2 Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift / brake levers",
+    "value": "Shimano Dura-Ace Di2 ST-R9180",
+    "componentId": null
+   },
+   {
+    "label": "Shift Lever",
+    "value": "Shimano Dura-Ace Di2 R9160 Remote TT",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace Di2 FD-R9250",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace Di2",
+    "componentId": null
+   },
+   {
+    "label": "Crank",
+    "value": "Shimano Dura-Ace Di2 R9200 Powermeter",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace R9200, 12-speed, 11-34",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR",
+    "componentId": null
+   },
+   {
+    "label": "Brake Rotor",
+    "value": "Shimano Dura-Ace RT-CL900",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss ARC 1100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT SWISS ARC 1100 CSX",
+    "componentId": null
+   },
+   {
+    "label": "Tyre",
+    "value": "Continental Aero 111",
+    "componentId": null
+   },
+   {
+    "label": "Cockpit",
+    "value": "Canyon Cockpit CP0054",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Splitter Plate Pro",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R1",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.51 lbs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-5-force-axs-1-2027",
@@ -9386,7 +14723,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black (Aspero-5 2027)",
+   "Digital Moss (Aspero-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero-5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force 1 AXS E1, 48T Aero, DUB Wide, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Wide Ceramic, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 Eagle, T-Type, 10-52T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 48 GR, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 53 GR, DT Swiss 350, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Control TLR G2.0 700x42c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB16 Carbon, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST31 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.18 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-5-frameset-2027",
@@ -9470,7 +14898,44 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "The Áspero-5 is faster, lighter, and even better looking."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "colors": [
+   "Orchid (Aspero-5 2027)",
+   "Five Black (Aspero-5 2027)",
+   "Digital Moss (Aspero-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero-5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB16 Carbon, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST31 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.31 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-5-grx-rx827-di2-2027",
@@ -9560,7 +15025,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Digital Moss (Aspero-5 2027)",
+   "Five Black (Aspero-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano GRX, RX825",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX, RX827 SGS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano GRX, RX820",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed SL, T47 BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XTR, M9200, 10-51T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 48 GR, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 53 GR, DT Swiss 350, 12x142mm, MS freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Control TLR G2.0 700x42c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB16 Carbon, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST31 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.24 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-5-red-axs-2027",
@@ -9650,7 +15206,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Digital Moss (Aspero-5 2027)",
+   "Five Black (Aspero-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX SL Eagle AXS, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Red 1 AXS E1, 48T Aero, DUB Wide, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Wide Ceramic, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX SL Eagle, T-Type, 10-52T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX SL Eagle, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 48 GR, DT Swiss 240, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 53 GR, DT Swiss 240, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Control TLR G2.0 700x42c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB16 Carbon, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST31 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X1",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.86 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-apex-1-2027",
@@ -9740,7 +15387,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Quarry (Aspero 2027)",
+   "Dusty Unicorn (Aspero 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Apex D1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex EAGLE D1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Apex 1, 46T, DUB Wide",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Wide, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG 1210 Eagle, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM S200 Eagle",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Centerline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision Team 30 Disc, 27mm IW, J-Bend, 12x100mm, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision Team 30 Disc, 27mm IW, J-Bend, 12x142mm, HG freehub, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "WTB Vulpine TCS Light Fast Rolling Dual DNA 60tpi 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB23 alloy 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo Alloy 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X5",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.43 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-apex-axs-1-2027",
@@ -9830,7 +15568,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Dusty Unicorn (Aspero 2027)",
+   "Quarry (Aspero 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Apex AXS D1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S1000 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Apex 1, 46T, DUB Wide",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Wide, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1270 Eagle Transmission, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Eagle 70, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Centerline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 30 GR AL, Reserve 4LD, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 30 GR AL, Reserve 4LD, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "WTB Vulpine TCS Light Fast Rolling Dual DNA SG 120tpi 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo AB09 Carbon, 31.8mm clamp, 16 degree flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.33 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-force-axs-1-2027",
@@ -9920,7 +15749,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Quarry (Aspero 2027)",
+   "Dusty Unicorn (Aspero 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force XPLR AXS E1, 46T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Wide, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 Eagle, T-Type, 10-52T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 48 GR, DT Swiss 370, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 53 GR, DT Swiss 370, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "WTB Vulpine TCS Light Fast Rolling Dual DNA SG 120tpi 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo AB09 Carbon, 31.8mm clamp, 16 degree flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.61 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-frameset-2027",
@@ -10004,7 +15924,34 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "brakeInterface": "disc"
-  }
+  },
+  "colors": [
+   "Aurora (Aspero 2027)",
+   "Dusty Unicorn (Aspero 2027)",
+   "Quarry (Aspero 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.08 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-grx-rx610-1-2027",
@@ -10093,7 +16040,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Dusty Unicorn (Aspero 2027)",
+   "Quarry (Aspero 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX, RX822 SGS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano GRX 610, 40T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, T47 BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano M6200, 10-51",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M7100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL700 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision Team 30 Disc, 27mm IW, J-Bend, 12x100mm, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision Team 30 Disc, 27mm IW, J-Bend, 12x142mm, MS freehub, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "WTB Vulpine TCS Light Fast Rolling Dual DNA 60tpi 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB23 alloy 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo Alloy 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X5",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.23 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-grx-rx827-di2-2027",
@@ -10182,7 +16215,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Dusty Unicorn (Aspero 2027)",
+   "Quarry (Aspero 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano GRX, RX825",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX, RX827 SGS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano GRX, RX820",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, T47 BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XT, M8200, 10-51T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 48 GR, DT Swiss 370, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 53 GR, DT Swiss 370, 12x142mm, MS freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "WTB Vulpine TCS Light Fast Rolling Dual DNA SG 120tpi 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo AB09 Carbon, 31.8mm clamp, 16 degree flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.08 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-aspero-rival-axs-1-2027",
@@ -10271,7 +16395,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Quarry (Aspero 2027)",
+   "Dusty Unicorn (Aspero 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Aspero Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival 1 AXS E1, 46T, DUB Wide",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Wide, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX Eagle, 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Eagle 70, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 40TA GR, Reserve hub, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 44TA GR, Reserve hub, 4 Pawl, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "WTB Vulpine TCS Light Fast Rolling Dual DNA SG 120tpi 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo AB09 Carbon, 31.8mm clamp, 16 degree flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.85 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-105-2027",
@@ -10363,7 +16578,103 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Nightshift (Caledonia 2027)",
+   "Mocha (Caledonia 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano 105, R7120",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105, R7100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105, R7100",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105, R7100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, T47 BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105, R7101, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M7100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano RT66 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision Team i23 Disc, 23mm IW, J-Bend, 12x100mm, 6 bolt, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision Team i23 Disc, 23mm IW, J-Bend, 12x142mm, HG freehub, 6 bolt, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB23 alloy 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo Alloy 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Cervélo Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.63 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-105-di2-2027",
@@ -10455,7 +16766,103 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Mocha (Caledonia 2027)",
+   "Nightshift (Caledonia 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano 105, R7170",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105, R7150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105, R7150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105, R7100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, T47 BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105, R7101, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M7100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL700 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision Team i23 Disc, 23mm IW, direct pull, 12x100mm, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision Team i23 Disc, 23mm IW, direct pull, 12x142mm, HG freehub, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB23 alloy 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Cervélo Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.21 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-5-dura-ace-di2-2027",
@@ -10545,7 +16952,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Sandstone (Caledonia-5 2027)",
+   "Five Black (Caledonia-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia-5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Dura-Ace, R9270",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace, R9250",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace, R9250",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Dura-Ace, R9200, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed SL, BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace, R9200, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M9100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL900 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 240 Dicut, 12x142mm, HG freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Control TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Nack Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.02 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-5-force-axs-2027",
@@ -10635,7 +17128,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black (Caledonia-5 2027)",
+   "Sandstone (Caledonia-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia-5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force AXS E1, 48/35T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 350, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Tirox Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.38 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-5-frameset-2027",
@@ -10719,7 +17298,33 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "brakeInterface": "disc"
-  }
+  },
+  "colors": [
+   "Sandstone (Caledonia-5 2027)",
+   "Five Black (Caledonia-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia-5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.09 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-5-red-axs-2027",
@@ -10809,7 +17414,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black (Caledonia-5 2027)",
+   "Sandstone (Caledonia-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia-5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Red AXS E1, 48/35T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Ceramic, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red E1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 240 Dicut, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Control TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Nack Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.06 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-5-rival-axs-2027",
@@ -10899,7 +17590,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black (Caledonia-5 2027)",
+   "Sandstone (Caledonia-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia-5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival AXS E1, 48/35T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival D1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 370, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 370, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Tirox Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.77 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-5-ultegra-di2-2027",
@@ -10989,7 +17766,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Sandstone (Caledonia-5 2027)",
+   "Five Black (Caledonia-5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia-5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Ultegra, R8170",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra, R8100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, BBright thread together for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra, R8100, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 350, 12x142mm, HG freehub 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Tirox Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.42 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-force-axs-2027",
@@ -11081,7 +17944,103 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Mocha (Caledonia 2027)",
+   "Nightshift (Caledonia 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force AXS E1, 48/35T, DUB",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 40, Reserve hub, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 44, Reserve hub, 4 Pawl, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x30c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB23 alloy 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.69 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-caledonia-rival-axs-2027",
@@ -11173,7 +18132,103 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Nightshift (Caledonia 2027)",
+   "Mocha (Caledonia 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Caledonia Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival AXS E1, 48/35T, DUB",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival D1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision Team i23 Disc, 23mm IW, direct pull, 12x100mm, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision Team i23 Disc, 23mm IW, direct pull, 12x142mm, XDR freehub, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB23 alloy 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Cervélo Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.31 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p-series-105-2027",
@@ -11264,7 +18319,103 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Haleakala (P-Series 2027)",
+   "Abyss (P-Series 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered P Fork",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105, R7100",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105, R7100",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105 R7100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, BBright thread together for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105, R7101, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M7100",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "Riderever Triva Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL700 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision TC60 i23",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision TC60 i23",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Profile Design Bracket Riser Kit 30mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Cervélo Tri Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.78 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p-series-105-di2-2027",
@@ -11355,7 +18506,103 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Abyss (P-Series 2027)",
+   "Haleakala (P-Series 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered P Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Riderever Triva Carbon Di2 for Shimano SW-R9150 Shift Switch",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105, R7150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105, R7150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105 R7100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, BBright thread together for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105, R7101, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M7100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL700 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision TC60 i23",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision TC60 i23",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Profile Design Bracket Riser Kit 30mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R5",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.54 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p-series-force-axs-1-2027",
@@ -11446,7 +18693,92 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Haleakala (P-Series 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered P Fork",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force 1 AXS E1, 48T Aero, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Force Aero",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 57TA, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 64TA, DT Swiss 350, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Profile Design A3A Low Riser Kit (5/10/20mm)",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Profile Design WING bearing cap for P-Series",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.75 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p-series-frameset-2027",
@@ -11531,7 +18863,38 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "brakeInterface": "disc"
-  }
+  },
+  "colors": [
+   "Abyss (P-Series 2027)",
+   "Haleakala (P-Series 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered P Fork",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST32 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.48 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p-series-rival-axs-1-2027",
@@ -11622,7 +18985,97 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Haleakala (P-Series 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered P Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Riderever Triva Carbon AXS for SRAM AXS Blip controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival AXS E1, 48T Aero, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival D1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL700 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision TC60 i23",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision TC60 i23",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Profile Design Bracket Riser Kit 30mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R5",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.28 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p-series-ultegra-di2-2027",
@@ -11713,7 +19166,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Abyss (P-Series 2027)",
+   "Haleakala (P-Series 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered P Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Dura-Ace, R9180",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra R8100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, BBright thread together for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra, R8100, 11-30T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision TC60 i23",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision TC60 i23",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Profile Design A3A Low Riser Kit (5/10/20mm)",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Profile Design WING bearing cap for P-Series",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.47 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p-series-ultegra-di2-classified-2027",
@@ -11803,7 +19347,92 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Chainsmoke (P-Series 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered P Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Dura-Ace, R9180",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra R8100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed SL, BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Classified 12-Speed, 11-34",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 77TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 88TA, Classified Powershift, 12x142mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Profile Design A3A High Riser Kit with BTA",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R1 Light",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Profile Design WING bearing cap for P-Series",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.74 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p5-dura-ace-di2-2027",
@@ -11894,7 +19523,92 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black (P5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet P5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Dura-Ace, R9180",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace, R9250",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace, R9250",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Dura-Ace, R9200, 54/40T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed SL, BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace, R9200, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M9100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL900 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 77TA, DT Swiss 180, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 88TA, DT Swiss 180, 12x142mm, HG freehub 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R1 Light",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/8, 36° x 45° / 1-1/4, 45° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.34 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p5-force-axs-2027",
@@ -11985,7 +19699,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Platinum (P5 2027)",
+   "Five Black (P5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet P5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force AXS E1, 50/37T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1, 10-33T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Force Aero",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 77TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 88TA, DT Swiss 240 Dicut, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/8, 36° x 45° / 1-1/4, 45° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.47 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p5-frameset-2027",
@@ -12070,7 +19870,29 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "brakeInterface": "disc"
-  }
+  },
+  "colors": [
+   "Imperial (P5 2027)",
+   "Five Black (P5 2027)",
+   "Platinum (P5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet P5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/8, 36° x 45° / 1-1/4, 45° x 45°",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p5-red-axs-1-2027",
@@ -12161,7 +19983,87 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black (P5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet P5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Red 1 AXS E1, 50T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Ceramic, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red E1, 10-33T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red E1",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Red Aero",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 77TA, DT Swiss 180, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 88TA, DT Swiss 180, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R1 Light",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/8, 36° x 45° / 1-1/4, 45° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.08 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-p5-ultegra-di2-2027",
@@ -12252,7 +20154,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Platinum (P5 2027)",
+   "Five Black (P5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet P5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Dura-Ace, R9180",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra R8100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, BBright thread together for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra, R8100, 11-30T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 77TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 88TA, DT Swiss 240 Dicut, 12x142mm, HG freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP23 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Transiro Aeris LD R3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/8, 36° x 45° / 1-1/4, 45° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.6 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-r5-cx-rival-axs-1-2027",
@@ -12340,7 +20328,98 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "November Sky (R5-CX 2026)",
+   "Racing Red (R5-CX 2026)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered R5CX Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS D1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival 1 AXS E1, 42T, DUB Wide, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Wide, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival D1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 30 GR AL, Reserve 4LD, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 30 GR AL, Reserve 4LD, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Terreno T80 CX TLR G2.0 700x33c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB13 Carbon, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST31 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP24 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.11 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-r5-dura-ace-di2-2027",
@@ -12429,7 +20508,92 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black Bronze (R5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered R5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Dura-Ace, R9270",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace, R9250",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace, R9250",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Dura-Ace, R9200, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed SL, BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace, R9200, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M9100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL900 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 34TA SL, DT Swiss 180, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 37TA SL, DT Swiss 180, 12x142mm, HG freehub 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Speed TLR G2.0 700x26c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Nack Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "5.99 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-r5-force-axs-2027",
@@ -12518,7 +20682,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black Bronze (R5 2027)",
+   "Five Black Silver (R5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered R5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force AXS E1, 48/35T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1, 10-33T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 34TA, DT Swiss 240, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 37TA, DT Swiss 240, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Speed TLR G2.0 700x26c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Tirox Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.28 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-r5-frameset-2027",
@@ -12600,7 +20850,34 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "ridingStyle": "The perfect bike for stage racing, the R5 epitomizes our definition of exceptional ride quality at an ultra-low weight",
   "highlights": [],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "colors": [
+   "Five Black Silver (R5 2027)",
+   "Five Black Bronze (R5 2027)",
+   "Tvlab Replica (R5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered R5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "1.57 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-r5-red-axs-2027",
@@ -12689,7 +20966,92 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black Bronze (R5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered R5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Red AXS E1, 48/35T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Ceramic, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red E1, 10-33T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 34TA SL, DT Swiss 180, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 37TA SL, DT Swiss 180, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Speed TLR G2.0 700x26c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Nack Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "5.78 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-r5-red-xplr-axs-1-2027",
@@ -12778,7 +21140,87 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black Bronze (R5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered R5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red XPLR AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Red 1 AXS E1, 48T Aero, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Ceramic, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red XPLR E1, 10-46T, 13-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 34TA SL, DT Swiss 180, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 37TA SL, DT Swiss 180, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Speed TLR G2.0 700x26c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Nack Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "5.86 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-r5-ultegra-di2-2027",
@@ -12867,7 +21309,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black Bronze (R5 2027)",
+   "Five Black Silver (R5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered R5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Ultegra, R8170",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra, R8100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, BBright thread together for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra, R8100, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 34TA, DT Swiss 240, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 37TA, DT Swiss 240, 12x142mm, HG freehub 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro Speed TLR G2.0 700x26c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP33 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Tirox Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.45 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-rouvida-force-xplr-1-2027",
@@ -12957,7 +21485,97 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Sulfur (Rouvida 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Rouvida Fork",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua Ride 60 Energy 430 Fixed Mount",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force XPLR AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "FSA CK-703 Carbon for Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force XPLR E1, 10-46T, 13-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 48 GR, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 53 GR, DT Swiss 350, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "WTB Vulpine TCS Light Fast Rolling Dual DNA 60tpi 700x40c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo AB09 Carbon, 31.8mm clamp, 16 degree flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.72 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-rouvida-grx-rx610-1-2027",
@@ -13047,7 +21665,97 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Sulfur (Rouvida 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Rouvida Fork",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua Ride 60 Energy 430 Fixed Mount",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano GRX, RX610",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX, RX822 GS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "FSA CK-703 Alloy for Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano SLX, M7100, 10-45T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M7100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL700 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision Team 30 Disc, 27mm IW, J-Bend, 12x100mm, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision Team 30 Disc, 27mm IW, J-Bend, 12x142mm, MS freehub, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "WTB Vulpine TCS Light Fast Rolling Dual DNA 60tpi 700x40c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB23 alloy 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Vento Argo X5",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.76 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-rouvida-red-xplr-2027",
@@ -13136,7 +21844,97 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Peacock (Rouvida 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Rouvida Fork",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua Ride 60 Energy 430 Fixed Mount",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red XPLR AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "FSA CK-703 Carbon for Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red XPLR E1, 10-46T, 13-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 240 Dicut, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB13 Carbon, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST31 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Nack Lightweight",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "11.9 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-rouvida-rival-axs-1-2027",
@@ -13226,7 +22024,97 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Peacock (Rouvida 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Rouvida Fork",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua Ride 60 Energy 430 Fixed Mount",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival XPLR AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "FSA CK-703 Alloy for Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival XPLR E1, 10-46T, 13-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Vision Team 30 Disc, 25mm IW, 12x100mm, centerlock tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Vision Team 30 Disc, 25mm IW, 12x142mm, XDR freehub, centerlock tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Cervélo HB23 alloy 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cervélo ST36 Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP19 Carbon 27.2",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Prologo Nago R4 PAS Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.62 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-s5-dura-ace-di2-2027",
@@ -13316,7 +22204,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Reef Blue (S5 2027)",
+   "Five Black (S5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet S5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Dura-Ace, R9270",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace, R9250",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace, R9250",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Dura-Ace, R9200, 54/40T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed SL, BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace, R9200, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M9100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL900 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 57TA, DT Swiss 180, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 64TA, DT Swiss 180, 12x142mm, HG freehub 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP34 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R1 Light",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/8, 36° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.4 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-s5-force-axs-2027",
@@ -13406,7 +22380,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black (S5 2027)",
+   "Reef Blue (S5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet S5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force AXS E1, 50/37T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1, 10-33T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 57TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 64TA, DT Swiss 240 Dicut, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP34 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R1",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/8, 36° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.7 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-s5-frameset-2027",
@@ -13490,7 +22550,35 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "brakeInterface": "disc"
-  }
+  },
+  "colors": [
+   "Five Black (S5 2027)",
+   "Infrared (S5 2027)",
+   "Reef Blue (S5 2027)",
+   "Maps Ltd (S5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet S5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP34 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/8, 36° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.97 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-s5-red-axs-1-2027",
@@ -13580,7 +22668,87 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Five Black (S5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet S5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Red 1 AXS E1, 50T Aero, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Ceramic, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red E1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 180 Carbon Spoke, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 180 Carbon Spoke, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP34 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R1 Light",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/8, 36° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.74 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-s5-red-axs-2027",
@@ -13670,7 +22838,94 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Maps Ltd (S5 2027)",
+   "Reef Blue (S5 2027)",
+   "Five Black (S5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet S5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Red AXS E1, 50/37T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Ceramic, BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red E1, 10-33T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 57TA, DT Swiss 180, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 64TA, DT Swiss 180, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP34 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R1 Light",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/8, 36° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.32 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-s5-ultegra-di2-2027",
@@ -13760,7 +23015,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Reef Blue (S5 2027)",
+   "Five Black (S5 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Bayonet S5 Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Ultegra, R8170",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra, R8100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, BBright thread together for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra, R8100, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 57TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 64TA, DT Swiss 240 Dicut, 12x142mm, HG freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP34 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R1",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/8, 36° x 45° / 1-3/8, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.74 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-soloist-force-axs-2027",
@@ -13853,7 +23194,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Black Magic (Soloist 2027)",
+   "Cloud Break (Soloist 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Soloist Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force AXS E1, 48/35T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1, 10-33T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 350, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.05 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-soloist-force-xplr-axs-1-2027",
@@ -13946,7 +23373,87 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Cloud Break (Soloist 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Soloist Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force XPLR AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force 1 AXS E1, 48T Aero, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force XPLR E1, 10-46T, 13-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 350, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.09 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-soloist-frameset-2027",
@@ -14033,7 +23540,29 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "brakeInterface": "disc"
-  }
+  },
+  "colors": [
+   "Black Magic (Soloist 2027)",
+   "Cloud Break (Soloist 2027)",
+   "Maldive (Soloist 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Soloist Fork",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-soloist-red-axs-2027",
@@ -14126,7 +23655,92 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Black Magic (Soloist 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Soloist Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Red AXS E1, 48/35T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Ceramic, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Red E1, 10-33T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Red E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline X Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 240 Dicut, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 240 Dicut, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa Pro TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R1 Light",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA SL IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.86 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-soloist-rival-axs-2027",
@@ -14219,7 +23833,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Black Magic (Soloist 2027)",
+   "Cloud Break (Soloist 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Soloist Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival AXS E1, 48/35T, DUB, with power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, T47 BBright",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival D1, 10-36T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "SRAM Paceline Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 40, Reserve hub, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 44, Reserve hub, 4 Pawl, 12x142mm, XDR freehub, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R5",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.41 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "cervelo-soloist-ultegra-di2-2027",
@@ -14312,7 +24012,93 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "colors": [
+   "Cloud Break (Soloist 2027)",
+   "Black Magic (Soloist 2027)"
+  ],
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Cervélo All-Carbon, Tapered Soloist Fork",
+    "componentId": null
+   },
+   {
+    "label": "Shifters",
+    "value": "Shimano Ultegra, R8170",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra, R8150",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra, R8100, 52/36T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, T47 BBright for 24mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra, R8100, 11-34T, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano M8100",
+    "componentId": null
+   },
+   {
+    "label": "Rotors",
+    "value": "Shimano CL800 Centerlock",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Reserve 42TA, DT Swiss 350, 12x100mm, 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Reserve 49TA, DT Swiss 350, 12x142mm, HG freehub 24H, centerlock, tubeless compatible",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vittoria Corsa N.EXT TLR G2.0 700x29c",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Cervélo SP27 Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Arione R3",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS2 1-1/4, 45° x 45° / 1-1/2, 36° x 45°",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.13 kgs",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-al-deore-7200-2027",
@@ -14402,7 +24188,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Aluminum MX 150mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Base, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore M6200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M7200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "e13 Helix Core e*spec All Sizes: 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M7200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "Shimano Deore MT6220",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "Shimano RT750, Centerlock, 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "Shimano RT750, Centerlock, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano TC500, 15x110, Centerlock, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano TC600, 12x148, MicroSpline, Centerlock, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII, 27.5\"x2.5\", DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Bicycles Aluminum Bar, 35mm S: 780mm, 20mm Rise, M-XL: 800mm, 30mm Rise -or- RaceFace Aeffect R, 20mm Rise, 780mm (small only)",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm, M: 170mm, L-XL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado, Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "52.61 lbs / 23.86 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-xx-axs-race-fa-rsv-2027",
@@ -14492,7 +24405,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 120
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 120mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox SID Ultimate Flight Attendant, 120mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox SIDLuxe Ultimate Flight Attendant, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller Rocker",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX SL Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX SL Eagle Power Meter T-Type, 34t S: 165mm; M-XL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68/73mm Threaded BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX SL 1299 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX SL Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Motive Ultimate",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2, Centerlock, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2, Centerlock, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 28|XC SL Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 28|XC SL Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 180, 15x110, Centerlock, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 180 EXP, 12x148, XD, Centerlock, 36t, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rekon Race 29\"x2.4\" 3C MaxxSpeed, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rekon Race 29\"x2.4\" 3C MaxxSpeed, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Carbon Flat Bar, 31.8, 7mm Rise All Sizes: 760mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Cane Creek GXC All Sizes: 60mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS S: 100mm or 125mm; M: 125mm or 150mm; L-XL: 150mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, Stainless",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 70 Slam Hellbender",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "25.23lbs / 11.44kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-gx-axs-race-rsv-2027",
@@ -14582,7 +24617,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 120
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 120mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Sid Select+, 3-Position, 120mm, w/Remote",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox SidLuxe Select+, 3-Position w/ Remote, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle DUB T-Type, 34t S: 165mm; M-XL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Motive Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2, Centerlock, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2, Centerlock, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 28|XC Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 28|XC Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, Centerlock, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350, 12x148, XD, Centerlock, 36t, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rekon Race 29\"x2.4\" 3C MaxxSpeed, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rekon Race 29\"x2.4\" 3C MaxxSpeed, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Carbon Flat Bar, 31.8, 7mm Rise All Sizes: 760mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "SRAM Atmos 7k All Sizes: 60mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm; M: 120mm or 150mm; LG-XL: 150mm or 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 40 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "26.59lbs / 12.06kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-xtr-rsv-2027",
@@ -14672,7 +24829,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 120
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 120mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 34 SL Float Factory, Grip X, 120mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float SL Factory, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano XTR M9250 Shift Switch w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XTR Di2 M9250, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano XTR M9200, 34t S: 165mm; M-XL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano XTR Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XTR M9200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR M9100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Motive Ultimate",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2, Centerlock, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2, Centerlock, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 28|XC SL Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 28|XC SL Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 180, 15x110, Centerlock, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 180 EXP, 12x148, MS, Centerlock, 36t, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon, 35mm S-M: 760mm, 20mm Rise; L-XL: 760mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "RaceFace Turbine SL All Sizes: 50mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 125mm; M: 150mm; L: 180mm: XL: 210mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, Stainless",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Chris King DropSet 3 Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "25.19lbs / 11.43kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-x0-axs-rsv-2027",
@@ -14762,7 +25041,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 120
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 120mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 34 SL Float Factory, Grip X, 120mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float SL Factory, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller Rocker",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle DUB T-Type, 34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Motive Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2, Centerlock, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2, Centerlock, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 28|XC Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 28|XC Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, Centerlock, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350, 12x148, XD, Centerlock, 36t, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon, 35mm S-M: 760mm, 20mm Rise; L-XL: 760mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "RaceFace Turbine SL All Sizes: 50mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 125mm; M: 150mm; L: 180mm: XL: 210mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 70 Slam Hellbender",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "25.74lbs / 11.68kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-gx-axs-2027",
@@ -14852,7 +25253,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 120
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 120mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 34 SL Float Performance Elite, Grip X, 120mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float SL Performance Elite, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle DUB T-Type, 34t S: 165mm; M-XL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Motive Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace ARC Offset 27",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace ARC Offset 27",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon, 35mm S-M: 760mm, 20mm Rise; L-XL: 760mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Santa Cruz CNC All Sizes: 50mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 125mm; M: 150mm; L: 180mm: XL: 210mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 40 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "26.36lbs / 11.96kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-90-2027",
@@ -14942,7 +25465,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 120
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 120mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 34 SL Float Performance, Grip, 120mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float SL Performance, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type, 34t S: 165mm; M-XL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace AR Offset 27 29",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace AR Offset 27 29",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "RaceFace Ride, 35mm, 10mm Rise All Sizes: 760mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Santa Cruz CNC All Sizes: 50mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 125mm; M: 150mm; L: 180mm: XL: 210mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 40 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "27.56lbs / 12.5kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-deore-2027",
@@ -15032,7 +25677,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 120
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 120mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Sid Base, 3-Position, 120mm, w/ Lever",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Rhythm, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore M6200, 12spd w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M7200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Deore M6200, 32t S: 165mm; M-XL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano MT501 68/73mm Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace AR Offset 27 29",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace AR Offset 27 29",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano TC500, 15x110, Centerlock, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano TC600, 12x148, MicroSpline, Centerlock, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Aspen AT 29x2.4 MaxxSpeed EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "RaceFace Ride, 35mm, 10mm Rise All Sizes: 760mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "RaceFace Ride All Sizes: 50mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm, M: 150mm; L: 170mm; XL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "29.12lbs / 13.21kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-frame-2027",
@@ -15120,7 +25887,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 120
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 120mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float SL Factory, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "4.94 lbs / 2.24 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-tallboy-xx-axs-fa-rsv-2027",
@@ -15211,7 +25995,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 130,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 130mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Pike Ultimate Flight Attendant, 140mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Super Deluxe Ultimate Flight Attendant, 185x50",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller Rocker",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX SL Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX SL Eagle Power Meter T-Type, 32t XS-S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68/73mm Threaded BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX SL 1299 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX SL Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Ultimate Carbon, Custom",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|SL Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|SL Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Chris King, 15x110, 6-Bolt, 28h, 50th Anniversary Gold",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Chris King, 12x148, XD, 6-Bolt 28h, 50th Anniversary Gold",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Dissector 29\"x2.4, 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Dissector 29\"x2.4\", MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm XS-M: 760mm, 20mm Rise, L-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry Nine A35 All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 XS: 120mm, S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Chris King DropSet 3 50th Anniversary Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "30.25 lbs / 13.27 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-frame-2027",
@@ -15298,7 +26204,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "4.12lbs / 1.87kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-apex-2027",
@@ -15387,7 +26305,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Apex",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Apex, 42t XS-S: 165mm; M-L: 170mm; XL-XXL: 172.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG1275 Eagle, 12spd, 10-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM SX Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Apex",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace AR Offset 25",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace AR Offset 25",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x142, XDr, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course 70 XPLR AL Bar, 31.8 XS-S: 42cm; M-L: 44cm; XL-XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Zipp Service Course, 27.2 All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.86 lbs / 9.46 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-force-1x-axs-rsv-2027",
@@ -15476,7 +26506,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Force AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force XPLR, 42t XS-S: 165mm; M-L: 170mm; XL-XXL: 172.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Force AXS",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 25|GR Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 25|GR Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 12x100, Centerlock, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350, 12x142, XDr, Centerlock, 36t, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course SL-70 XPLR Bar, 31.8 XS-S: 42cm; M-L: 44cm; XL-XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Easton EC70, 27.2, Zero Offset, 27.2 All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "19.14 lbs / 8.68 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-force-axs-rudy-rsv-2027",
@@ -15565,7 +26707,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Rudy Ultimate XPLR, 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Force AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force XPLR, 42t XS-S: 165mm; M-L: 170mm; XL-XXL: 172.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Force AXS",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 25|GR Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 25|GR Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 12x100, Centerlock, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350, 12x142, XDr, Centerlock, 36t, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course SL-70 XPLR Bar, 31.8 XS-S: 42cm; M-L: 44cm; XL-XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS XPLR, 27.2 XS-S: 50mm; M-XXL: 75mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23 lbs / 10.43 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-xt-lite-2027",
@@ -15656,7 +26915,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Performance, Grip, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano XT M8200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XT M8200, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "e13 Helix Race Alloy e*spec All Sizes: 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimamo XT M8200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT M8100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "Shimano XT M8220",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "Shimano RT750, 6-Bolt, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "Shimano RT750, 6-Bolt, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, MicroSpline, 6-Bolt, 36t, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5x2.5, 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL-XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bronson-deore-2027",
@@ -15744,7 +27125,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Lyrik Base, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Select+, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore M6200, 12spd w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M7200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Deore M6200, 32t S: 165mm; M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano MT501 68/73mm Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano TC500, 15x110, 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano TC600, 12x148, MicroSpline, 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Aluminum Bar, 35mm S: 760mm, 20mm Rise; M-XXL: 800mm, 30mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Burgtec Enduro Stem All Sizes: 42mm -or- OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm; M: 150mm; L: 170mm; XL-XXL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.85 lbs / 15.81 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-rival-axs-rudy-2027",
@@ -15833,7 +27336,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Rudy Base XPLR, 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Rival AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Rival XPLR, 42t XS-S: 165mm; M-L: 170mm; XL-XXL: 172.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Rival AXS",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace AR Offset 25",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace AR Offset 25",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x142, XDr, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course 70 XPLR AL Bar, 31.8 XS-S: 42cm; M-L: 44cm; XL-XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Easton EC70, 27.2, Zero Offset, 27.2 All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.5 lbs / 10.66 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-rival-1x-axs-2027",
@@ -15922,7 +27542,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Rival AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Rival XPLR, 42t XS-S: 165mm; M-L: 170mm; XL-XXL: 172.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Rival AXS",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace AR Offset 25",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace AR Offset 25",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x142, XDr, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, Hyper-X, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course 70 XPLR AL Bar, 31.8 XS-S: 42cm; M-L: 44cm; XL-XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Easton EC70, 27.2, Zero Offset, 27.2 All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.64 lbs / 9.36 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-al-deore-6200-2027",
@@ -16012,7 +27744,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Aluminum MX 150mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Psylo Gold RC, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Select, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore M6200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M6200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "e13 Helix Core e*spec All Sizes: 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "Shimano Deore MT6220",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "Shimano RT750, Centerlock, 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "Shimano RT750, Centerlock, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "WTB ST Tough 30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "WTB ST Tough 30",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano TC500, 15x110, Centerlock, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano TC600, 12x148, MicroSpline, Centerlock, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29x2.5\", EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII, 27.5\"x2.5\", DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Bicycles Aluminum Bar, 35mm S: 780mm, 20mm Rise, M-XL: 800mm, 30mm Rise -or- RaceFace Aeffect R, 20mm Rise, 780mm (small only)",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "TransX Dropper, 31.6 S: 125mm, M: 170mm, L-XL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado, Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "52.46 lbs / 23.79 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-hightower-deore-2027",
@@ -16104,7 +27963,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C 29\" 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Lyrik Base, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Select+, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore M6200, 12spd w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M7200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Deore M6200, 32t S: 165mm; M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano MT501 68/73mm Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano TC500, 15x110, 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano TC600, 12x148, MicroSpline, 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Minion DHF 29\"x2.5\", 3C MaxxGrip, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 29\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Aluminum Bar, 35mm S: 760mm, 20mm Rise; M-XXL: 800mm, 30mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Burgtec Enduro Stem All Sizes: 42mm -or- OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm; M: 150mm; L: 170mm; XL-XXL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.76 lbs / 15.77 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-nomad-deore-2027",
@@ -16191,7 +28172,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Base, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Super Deluxe Select, 230x65",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore M6200, 12spd w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M7200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Deore M6200, 32t S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano MT501 68/73mm Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano TC500, 15x110, 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano TC600, 12x148, MicroSpline, 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis High Roller, 29\"x2.4\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Aluminum Bar, 35mm S: 760mm, 20mm Rise, M-XXL: 800mm, 30mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm, M: 150mm, L: 170mm, XL-XXL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "35.63 lbs / 16.16 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-tallboy-deore-2027",
@@ -16284,7 +28382,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 130,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 130mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Pike Base, 140mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Select+, 185x50",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore M6200, 12spd w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M7200, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Deore M6200, 32t XS-S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano MT501 68/73mm Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano TC500, 15x110, 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano TC600, 12x148, MicroSpline, 6-Bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Aluminum Bar, 35mm XS-M: 760mm, 20mm Rise, L-XXL: 800mm, 30mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 XS: 125mm, S: 150mm, M: 170mm, L-XL: 210mm, XXL: 230mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "31.79 lbs / 14.42 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-tallboy-90-2027",
@@ -16377,7 +28597,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 130,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 130mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Pike Select, 140mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Select+, 185x50",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type, 32t XS-S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar, 35mm XS-M: 760mm, 20mm Rise, L-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 XS: 120mm, S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "30.79 lbs / 13.97 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-tallboy-xt-di2-2027",
@@ -16470,7 +28812,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 130,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 130mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Pike Ultimate, 140mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Ultimate, 185x50",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore XT M8250 Shift Switch w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XT M8250 Di2, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano XT M8200, 32t XS-S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano MT801 Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimamo XT M8200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT M8100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Motive Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG DF, 12x148, MiscroSpline, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm XS-M: 760mm, 20mm Rise, L-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Santa Cruz CNC All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 XS: 120mm, S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "29.7 lbs / 13.47 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-tallboy-x0-axs-rsv-2027",
@@ -16563,7 +29027,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 130,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 130mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Pike Ultimate, 140mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Ultimate, 185x50",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller Rocker",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle DUB T-Type, 32t XS-S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Motive Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|SL Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|SL Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG DF, 12x148, XD, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm XS-M: 760mm, 20mm Rise, L-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "RaceFace Turbine SL All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 XS: 120mm, S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "29.2 lbs / 13.24 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-tallboy-gx-axs-2027",
@@ -16656,7 +29242,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 130,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 130mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Pike Select+, 140mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Select+, 185x50",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle DUB T-Type, 32t XS-S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Motive Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Forekaster 29\"x2.4\", MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm XS-M: 760mm, 20mm Rise, L-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 XS: 120mm, S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "29.35 lbs / 13.31 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-tallboy-frame-2027",
@@ -16747,7 +29455,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 130,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 130mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Ultimate, 185x50",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.47 lbs / 2.94 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-xx-axs-lite-rsv-2027",
@@ -16835,7 +29560,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 150mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Factory, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Factory, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller Rocker",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "e13 Helix Race Carbon e*spec All Sizes: 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX 1297 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Ultimate Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 240, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 240 DEG DF, 12x148, XD, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5x2.5, 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry Nine A35 All SIzes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL-XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, Stainless",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Chris King DropSet 3 Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "45.50 lbs / 20.64 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-xt-di2-lite-rsv-2027",
@@ -16923,7 +29775,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 150mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Factory, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Factory, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore XT M8250 Shift Switch",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore XT Di2 M8260, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "e13 Helix Race Alloy e*spec All Sizes: 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimamo XT M8200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT M8100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "Shimano XT M8220",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "Shimano RT750, 6-Bolt, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "Shimano RT750, 6-Bolt, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG DF, 12x148, MiscroSpline, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5x2.5, 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Santa Cruz CNC All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL-XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "46.00 lbs / 20.87 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bullit-x0-axs-rsv-2027",
@@ -17010,7 +29989,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "travelMm": 170
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 170mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Fox 38 Float Factory, Grip X2, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X2 Factory, 205x65",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller Rocker",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle, 155mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|DH Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG DF, 12x148, XD, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise, M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Santa Cruz CNC All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL-XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "47.88 lbs / 21.72 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bullit-xt-di2-rsv-2027",
@@ -17097,7 +30203,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "travelMm": 170
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 170mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Fox Podium Factory, Grip X2, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "Fox DHX2 Factory S: 400lb, M: 450lb, L: 500lb, XL: 550lb, XXL: 600lb",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore XT M8250 Shift Switch w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore XT Di2 M8260, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "e13 Helix Race Alloy e*spec All Sizes: 155mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimamo XT M8200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT M8100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|DH Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 20x110 Boost, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG DF, 12x148, MiscroSpline, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise, M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry Nine A35 All SIzes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL-XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, Stainless",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "50.04 lbs / 22.70 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-xt-di2-rsv-2027",
@@ -17185,7 +30418,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 150mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Factory, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Factory, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore XT M8250 Shift Switch w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore XT Di2 M8260, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "e13 Helix Race Alloy e*spec All Sizes: 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimamo XT M8200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT M8100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG DF, 12x148, MiscroSpline, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Santa Cruz CNC All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL-XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "47.11 lbs / 21.37 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-nomad-frame-2027",
@@ -17271,7 +30631,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "travelMm": 170,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 170mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "Fox DHX2 Factory S: 400lb, M: 450lb, L: 500lb, XL-XXL: 550lb",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.68 lbs / 4.39 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-nomad-xt-di2-coil-2027",
@@ -17359,7 +30736,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 170,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 170mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Fox 38 Float Factory, Grip X2, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "Fox DHX2 Factory S: 400lb, M: 450lb, L: 500lb, XL-XXL: 550lb",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore XT M8250 Shift Switch w/ Wolf Tooth Shiftmount Adapter for MM",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XT M8250 Di2, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano XT M8200, 32t S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano MT801 Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimamo XT M8200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT M8100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG DF, 12x148, MiscroSpline, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis High Roller, 29\"x2.4\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise, M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.54 lbs / 15.67 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-nomad-x0-axs-rsv-coil-2027",
@@ -17447,7 +30946,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 170,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 170mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Fox 38 Float Factory, Grip X2, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "Fox DHX2 Factory S: 400lb, M: 450lb, L: 500lb, XL-XXL: 550lb",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller Rocker",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle DUB T-Type, 32t S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG DF, 12x148, XD, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis High Roller, 29\"x2.4\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise, M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "33.83 lbs / 15.34 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-nomad-90-2027",
@@ -17535,7 +31156,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 170,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 170mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Select, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Super Deluxe Select, 230x65",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type, 32t S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Base",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis High Roller, 29\"x2.4\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar, 35mm S: 800mm, 20mm Rise, M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "35.15 lbs / 15.94 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-nomad-gx-axs-2027",
@@ -17623,7 +31366,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 170,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 170mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Select+, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Super Deluxe Select+, 230x65",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle DUB T-Type, 32t S: 165mm, M-XXL: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis High Roller, 29\"x2.4\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Carbon Bar, 35mm S: 760mm, 20mm Rise, M-XXL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 150mm, M: 180mm, L-XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.48 lbs / 15.64 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-v10-dh-x01-2027",
@@ -17711,7 +31576,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 208
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 208mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 40 Float Factory, Grip X2, 203mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "Fox DHX2 Factory S: 450lb, M: 500lb, L: 550lb, XL: 600lb",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM X01 DH",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X01 DH, 7spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X01 DH, DUB 83, 36t All Sizes: 165mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 83mm Threaded BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X01 DH, 7spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM PC1170, 11spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Industry Nine 1/1, 20x110 Boost, 32h -or- DT Swiss 350, 20x110 Boost, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Industry Nine 1/1, 12x157, XD, 32h -or- DT Swiss 350, DEG DF, 12x157, XD, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, DH",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.5\", 3C MaxxGrip, DH",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar, 35mm (Size S: Burgtec RW Alloy DH Bar, 31.8) S: 800mm, 15mm Rise, M/L/XL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Direct Mount Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Burgtec Aluminum Post, 31.6 All Sizes: 300mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Alpaca Gravita X5 Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS41 Headset 1-1/8\"",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "37.10 lbs / 16.83 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-v10-dh-s-2027",
@@ -17799,7 +31786,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 208
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 208mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShock BoXXer Select, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Vivid Select+ Coil S: 400, M: 450lb, L: 500lb, XL: 550lb",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM GX, 7spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX DH, 7spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Descendant DH, 36t All Sizes: 165mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 83mm Threaded BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG720 DH, 11-25t -or- SRAM PG720 DH Slim, 11-25t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM PC1110, 11spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Industry Nine 1/1, 20x110 Boost, 32h -or- DT Swiss 350, 20x110 Boost, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Industry Nine 1/1, 12x157, HG, 32h -or- DT Swiss 350, DEG DF, 12x157, HG Slim, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, DH",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.5\", 3C MaxxGrip, DH",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar, 35mm (Size S: Burgtec RW Alloy DH Bar, 31.8) S: 800mm, 15mm Rise; M-XL: 800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Direct Mount Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RaceFace Chester, 31.6 All Sizes: 325mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Fizik Alpaca Gravita X5 Saddle",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS41 Headset 1-1/8\"",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "37.70 lbs / 17.10 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-v10-frame-2027",
@@ -17883,7 +31992,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "29"
    ],
    "travelMm": 208
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 208mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "Fox DHX2 Factory S: 450lb, M: 500lb, L: 550lb, XL: 600lb",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.73 lbs / 4.41 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-htsqd-frame-2026",
@@ -17965,7 +32091,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "4.12lbs / 1.87kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-xt-di2-2026",
@@ -18051,7 +32189,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Factory, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Factory, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore XT M8250 Shift Switch",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 26 Deore XT M8260 Di2 SGS 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "RaceFace Aeffect R All Sizes: 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimamo XT 8200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT 8100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "Shimano XT 8220",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "Shimano MT905, 203mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "Shimano MT905, 203mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG, 12x148, MS, 6-Bolt, 72t, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Carbon Bar All Sizes: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm. M: 180mm, L: 210mm, XL/XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "47.3lbs / 21.45kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-frame-2026",
@@ -18134,7 +32399,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "4.12lbs / 1.87kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-rival-1x-axs-rudy-2026",
@@ -18219,7 +32496,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Rudy Base XPLR, 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Rival AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Rival XPLR, 42t XS/S: 165mm, M/L: 170mm, XL: 172.5, XXL 175mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Rival",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Easton ARC Offset 25 700c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Easton ARC Offset 25 700c",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x142, XDr, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course 70 XPLR AL Bar, 31.8 XS/S: 42cm, M: 44cm, L/XL/XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Easton EC70, 27.2, Zero Offset All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset -or- Cane Creek 40 IS Integrated Headest",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.5lbs / 10.66kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-rival-1x-axs-2026",
@@ -18304,7 +32698,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Rival AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Rival XPLR, 42t XS/S: 165mm, M/L: 170mm, XL: 172.5, XXL 175mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Rival",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Easton ARC Offset 25 700c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Easton ARC Offset 25 700c",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x142, XDr, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course 70 XPLR AL Bar, 31.8 XS/S: 42cm, M: 44cm, L/XL/XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Easton EC70, 27.2, Zero Offset All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset -or- Cane Creek 40 IS Integrated Headest",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.64lbs / 9.36kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-apex-2026",
@@ -18390,7 +32901,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Apex",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Apex, 42t XS/S: 165mm, M/L: 170mm, XL: 172.5, XXL 175mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG1275 Eagle, 12spd, 10-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM SX Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Apex",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "WTB ASYM i25 28h 700c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "WTB ASYM i25 28h 700c",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x142, XDr, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course 70 XPLR AL Bar, 31.8 XS/S: 42cm, M: 44cm, L/XL/XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Zipp Service Course, 27.2 All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.86lbs / 9.46kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-force-1x-axs-rsv-rudy-2026",
@@ -18474,7 +33102,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Rudy Ultimate XPLR, 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Force AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force XPLR, 42t XS/S: 165mm, M/L: 170mm, XL: 172.5, XXL 175mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Force",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 25|GR",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 25|GR",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 12x100, Centerlock, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350, 12x142, XDr, Centerlock, 36t, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course SL-70 XPLR Bar, 31.8 XS/S: 42cm, M: 44cm, L/XL/XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS XPLR, 27.2 XS/S: 50mm, M/L/XL/XXL: 75mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset -or- Cane Creek 40 IS Integrated Headest",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23lbs / 10.43kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-stigmata-force-1x-axs-rsv-2026",
@@ -18559,7 +33304,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Force AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force XPLR, 42t XS/S: 165mm, M/L: 170mm, XL: 172.5, XXL 175mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 68mm Road Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Force",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 25|GR",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 25|GR",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 12x100, Centerlock, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350, 12x142, XDr, Centerlock, 36t, 24h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rambler, 700x45c, DC, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course SL-70 XPLR Bar, 31.8 XS/S: 42cm, M: 44cm, L/XL/XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Easton EC70, 27.2, Zero Offset All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset -or- Cane Creek 40 IS Integrated Headest",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "19.14lbs / 8.68kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-al-deore-2026",
@@ -18646,7 +33508,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Aluminum MX 150mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Psylo Gold RC, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Deluxe Select, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore M6100, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "E13 Helix eSpec, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore 6100, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore 6100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "Shimano Deore M6120",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "Shimano RT66, 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "Shimano RT66, 203mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "WTB ST Tough 30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "WTB ST Tough 30",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "WTB Frequency Sport, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "WTB Frequency Sport, 12x148, MicroSpline, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII, 27.5\"x2.5\", DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Bicycles Aluminum Bar, 35x800, 30mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "53.11lbs / 24.09kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-al-70-2026",
@@ -18733,7 +33717,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Aluminum MX 150mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Base, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "RockShox Super Deluxe Base, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 70 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "E13 Helix eSpec, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1270 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "SRAM MTH 716, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "SRAM MTH 746, 12x148, HG, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII, 27.5\"x2.5\", DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Bicycles Aluminum Bar, 35x800, 30mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "53.68lbs / 24.35kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-hightower-frame-c-2026",
@@ -18820,7 +33926,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance Elite, 230x57.5",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bronson-gx-axs-2026",
@@ -18904,7 +34022,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Performance Elite, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance Elite, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle DUB T-Type Crankset, 32t All Sizes: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace ARC 30 -or- Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace ARC 30 -or- Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Carbon Bar S: 35x760mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 150mm, M: 180m, L/XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "33.21lbs / 15.06kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-xx-axs-rsv-2026",
@@ -18991,7 +34231,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 150mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Factory, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Factory, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle Cranks, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX 1297 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Ultimate",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Industry Nine Hydra 2, 15x110, 6-Bolt 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Industry Nine Hydra 2, 12x148, XD, 6-Bolt 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Carbon Bar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Burgtec Enduro MK3 Machined, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, Stainless",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Chris King DropSet 3 Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "46.6lbs / 21.13kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-x0-axs-rsv-2026",
@@ -19079,7 +34441,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 150mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Factory, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Factory, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle Cranks, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 1295 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG, 12x148, XD, 6-Bolt, 72t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Carbon Bar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "46.53lbs / 21.1kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-gx-axs-2026",
@@ -19167,7 +34651,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Float Performance Elite, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance Elite, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle Cranks, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "E13 SL, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "E13 SL E-Spec, 12x148, XD, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar, 35mm Rise, 800mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Max Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "48.46lbs / 21.98kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-hightower-gx-axs-2026",
@@ -19255,7 +34861,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Performance Elite, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance Elite, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle DUB T-Type Crankset, 32t All Sizes: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm -or- SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace ARC 30 -or- Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace ARC 30 -or- Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Minion DHF 29\"x2.5\", 3C MaxxGrip, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 29\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Carbon Bar S: 35x800mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 150mm, M: 180m, L/XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "32.64lbs / 14.8kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-hightower-xtr-rsv-2026",
@@ -19342,7 +35070,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC 29\" 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Factory, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Factory, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Shimano Battery DN320",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano XTR M9250 Shift Switch",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XTR Di2 M9250, SGS, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano XTR M9220, 32t All Sizes: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano XTR Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XTR 9200, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR 9100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "Shimano XTR 9220",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "Shimano MT905, 203mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "Shimano MT905, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Industry Nine Hydra 2, 15x110, 6-Bolt 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Industry Nine Hydra 2, 12x148, MicroSpline, 6-Bolt 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Minion DHF 29\"x2.5\", 3C MaxxGrip, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 29\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz Carbon Bar S: 35x800mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry Nine A35 All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS S: 150mm, M: 175mm, L/XL: 200, XXL: 225mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, Stainless",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Chris King DropSet 3 Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "31.95lbs / 14.49kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-skitch-gx-axs-2026",
@@ -19429,7 +35284,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua 480Wh Integrated Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Rival AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Praxis eTor AL, 107BCD S: 165mm, M/L: 170mm, XL/XXL: 172.mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Rival",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Paceline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Paceline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Easton ARC Offset 25 700c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Easton ARC Offset 25 700c",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Schwalbe G-One Overland, Pro EVO, 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Schwalbe G-One Overland, Pro EVO, 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course 70 XPLR AL Bar, 31.8 S: 42cm, M: 44cm, L/XL/XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Easton EC70, 27.2, Zero Offset All Sizes: 350mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "30.04lbs / 13.62kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-skitch-apex-flat-bar-2026",
@@ -19516,7 +35493,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua 480Wh Integrated Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM NX Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Praxis eTor AL, 107BCD S: 165mm, M/L: 170mm, XL/XXL: 172.mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG1275 Eagle, 12spd, 10-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM SX Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM S300",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "WTB ASYM i25 28h 700c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "WTB ASYM i25 28h 700c",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "WTB Frequency Sport, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "WTB Frequency Sport, 12x148, XD, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Schwalbe G-One Overland, Pro EVO, 700x50c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Schwalbe G-One Overland, Pro EVO, 700x50c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "RaceFace Ride All Sizes: 35x760mm, 10mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "RaceFace Ride All Sizes: 80mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RaceFace Ride, 27.2 All Sizes: 375mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "30.91lbs / 14.02kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-skitch-gx-axs-flat-bar-2026",
@@ -19603,7 +35702,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Rudy Base XPLR, 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua 480Wh Integrated Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Praxis eTor AL, 107BCD S: 165mm, M/L: 170mm, XL/XXL: 172.mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Level Silver 2-Piston",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Paceline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Paceline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Easton ARC Offset 25 700c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Easton ARC Offset 25 700c",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Schwalbe G-One Overland, Pro EVO, 700x50c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Schwalbe G-One Overland, Pro EVO, 700x50c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "SRAM Atmos Flat Bar All Sizes: 31.8x760mm, 0mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "SRAM Atmos Stem All Sizes: 80mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 27.2 S/M: 90mm Long, L/XL/XXL: 120mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "33.41lbs / 15.15kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-skitch-apex-2026",
@@ -19690,7 +35911,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC Gravel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Carbon",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua 480Wh Integrated Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM Apex",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Praxis eTor AL, 107BCD S: 165mm, M/L: 170mm, XL/XXL: 172.mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG1275 Eagle, 12spd, 10-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM SX Eagle, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Apex",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, Centerlock, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "WTB ASYM i25 28h 700c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "WTB ASYM i25 28h 700c",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "WTB Frequency Sport, 12x100, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "WTB Frequency Sport, 12x148, XD, Centerlock, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Schwalbe G-One Overland, Pro EVO, 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Schwalbe G-One Overland, Pro EVO, 700x45c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Zipp Service Course 70 XPLR AL Bar, 31.8 S: 42cm, M: 44cm, L/XL/XXL: 46cm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Zipp Service Course Stem All Sizes: 70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Zipp Service Course, 27.2 All Sizes: 350m",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium, CroMo",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA IS-2/47/42 ACB",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "30.58lbs / 13.87kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-heckler-sl-70-2026",
@@ -19778,7 +36121,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPPâ„¢",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Lyrik Base, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float Performance, 210x55",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua Energy 480Wh Integrated Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, Single Click, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 70 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "E13 Helix eSpec All Sizes: 165mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1270 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "WTB ST Tough 30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "WTB ST Tough 30",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "SRAM MTH 716, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "SRAM MTH 746, 12x148, HG, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Schwalbe Albert, 29\"x2.5\", Trail Radial Ultra Soft",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Schwalbe Albert, 27.5\"x2.5\", Trail Radial Soft",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Alloy Bar All Sizes: 35x800mm, 30mm Rise -or- e13 TRS Base Bar All Sizes: 35x800, 30mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm -or- e13 TRS Base Stem All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm, M: 150, L: 170mm, XL/XXL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Max",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "43.98lbs / 19.95kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-heckler-sl-gx-axs-2026",
@@ -19865,7 +36335,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPPâ„¢",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Performance Elite, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance Elite, 210x55",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua 480Wh Integrated Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Race Face Aeffect R All Sizes: 165mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|SL AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Schwalbe Albert, 29\"x2.5\", Trail Radial Ultra Soft",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Schwalbe Albert, 27.5\"x2.5\", Trail Radial Soft",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz eCarbon Bar S: 35x800mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120m, M: 150mm, L: 180mm, XL/XXL 210mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Max Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "43.84lbs / 19.88kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-heckler-sl-90-2026",
@@ -19953,7 +36550,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPPâ„¢",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Performance, Grip, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 210x55",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua Energy 480Wh Integrated Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, Single Click, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "E13 Helix eSpec All Sizes: 165mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Base",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "E13 SL, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "E13 SL E-Spec, 12x148, XD, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Schwalbe Albert, 29\"x2.5\", Trail Radial Ultra Soft",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Schwalbe Albert, 27.5\"x2.5\", Trail Radial Soft",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar S: 35x800mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120m, M: 150mm, L: 180mm, XL/XXL 210mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Max Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "44.35lbs / 20.12kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-heckler-sl-stout-2026",
@@ -20041,7 +36765,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPPâ„¢",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Float Performance Elite, Grip X2, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X2 Performance Elite, 210x55",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Fazua Ride 60",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Fazua Energy 480Wh Integrated Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, Single Click, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Race Face Aeffect R All Sizes: 165mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "E13 SL, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "E13 SL E-Spec, 12x148, XD, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz eCarbon Bar S: 35x800mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120m, M: 150mm, L: 180mm, XL/XXL 210mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Max Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "45.86lbs / 20.8kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bronson-frame-c-2026",
@@ -20124,7 +36975,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance Elite, 230x57.5",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-highball-90-2026",
@@ -20211,7 +37074,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "29"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C 29\" Hardtail",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Sid SL Select+, 100mm, w/ Remote",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type Crankset, 34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace AR Offset 27 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace AR Offset 27 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rekon Race 29\"x2.35\", EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rekon Race 29\"x2.35\", EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "SRAM Atmos Flat Bar, 31.8x760",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "SRAM Atmos Stem, 60mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RaceFace Next, 27.2, 400mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "24.15lbs / 10.95 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-hightower-90-2026",
@@ -20300,7 +37275,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C 29\" 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Performance, Grip, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type Crankset, 32t All Sizes: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Base",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Minion DHF 29\"x2.5\", 3C MaxxGrip, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 29\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar S: 35x760mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 150mm, M: 180m, L/XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.06lbs / 15.45kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-hightower-70-2026",
@@ -20389,7 +37486,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    ],
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C 29\" 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Lyrik Base, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float Rhythm, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 70 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 70 Eagle DUB T-Type Crankset, 32t All Sizes: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1270 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "SRAM MTH 716, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "SRAM MTH 746, 12x148, HG, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Minion DHF 29\"x2.5\", 3C MaxxGrip, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 29\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Alloy Bar S: 35x760mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 30mm Rise -or- e13 TRS Base Bar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm -or- e13 TRS Base Stem All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm, M: 150, L: 170mm, XL/XXL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.71lbs / 15.74kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-megatower-90-2026",
@@ -20476,7 +37695,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "29"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C 29\" 170mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Float Performance, Grip, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 230x65",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type Crankset, 32t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 29x2.4\" 3C MaxxTerra, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "36.06lbs / 16.36 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-nomad-90-2026",
@@ -20559,7 +37895,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "speeds": 12,
    "brakeInterface": "disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 170mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Float Performance, Grip, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 230x65",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type Crankset, 32t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "35.58lbs / 16.14 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-nomad-70-2026",
@@ -20642,7 +38095,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "speeds": 12,
    "brakeInterface": "disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 170mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Base, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 230x65",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 70 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 70 Eagle DUB T-Type Crankset, 32t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1270 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "SRAM MTH 716, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "SRAM MTH 746, 12x148, HG, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Alloy Bar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "35.92lbs / 16.29 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bullit-90-2026",
@@ -20729,7 +38299,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "travelMm": 170
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 170mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Float Performance, Grip, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 205x65",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, Single Click, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "E13 Helix eSpec All Sizes: 155mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Base",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "E13 SL, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "E13 SL E-Spec, 12x148, XD, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C, MaxxGrip, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar S: 35x800mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL/XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Max Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "49.42lbs / 22.42kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bullit-70-2026",
@@ -20816,7 +38513,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "travelMm": 170
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 170mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Base, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 205x65",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, Single Click, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 70 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "E13 Helix eSpec All Sizes: 155mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS1270 Eagle T-Type, 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "SRAM MTH 716, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "SRAM MTH 746, 12x148, HG, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C, MaxxGrip, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Aluminum Bar All Sizes: 35x800mm, 30mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm, M: 170mm, L/XL/XXL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Max",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "49.56lbs / 22.48kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bullit-gx-axs-2026",
@@ -20903,7 +38727,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "travelMm": 170
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 170mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Fox 38 Float Performance Elite, Grip X2, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance Elite, 205x65",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Bridge",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle Cranks All Sizes: 155mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Bronze",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL 6069",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "E13 SL, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "E13 SL E-Spec, 12x148, XD, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C, MaxxGrip, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar S: 35x800mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL/XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Max Lux-Alloy Atmos",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "49.4lbs / 22.41kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bullit-x0-axs-rsv-2026",
@@ -20990,7 +38941,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "travelMm": 170
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon CC MX 170mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Fox 38 Float Factory, Grip X2, 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X2 Factory, 205x65",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM AXS Pod Controller Rocker Paddle",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle AXS T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle Cranks All Sizes: 155mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Silver",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|DH",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 350, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 350 DEG, 12x148x XD, 6-Bolt, 72t, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C, MaxxGrip, Double Down",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra, DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Santa Cruz 35 Carbon Bar S: 35x800mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 120mm, M: 180mm, L: 210mm, XL/XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "WTB Silverado Medium Fusion, CroMo SL",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "48.4lbs / 21.95kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-70-2026",
@@ -21078,7 +39156,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Base, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 70 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "E13 Helix eSpec, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1270 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "SRAM MTH 716, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "SRAM MTH 746, 12x148, HG, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Alloy Bar -or- e13 TRS Base Bar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm -or- e13 TRS Base Stem, 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Max",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "49.14lbs / 22.29kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-vala-90-2026",
@@ -21166,7 +39366,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel, 4-Bar",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 38 Float Performance, Grip, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 205x60",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX BDU38",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerTube Battery 600Wh",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "E13 Helix eSpec, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Base",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|HD AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "E13 SL, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "E13 SL E-Spec, 12x148, XD, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHRII 27.5\"x2.5\", 3C MaxxTerra DoubleDown",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem, 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Max Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "48.93lbs / 22.19kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bronson-90-2026",
@@ -21251,7 +39573,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 Float Performance, Grip, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float X Performance, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type Crankset, 32t All Sizes: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM Maven Base",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "OneUp Aluminum Bar S: 35x760mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6 S: 150mm, M: 180m, L/XL: 210mm, XXL: 240mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.14lbs / 15.48kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-bronson-70-2026",
@@ -21336,7 +39780,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "brakeInterface": "disc",
    "travelMm": 150,
    "udh": true
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C MX 150mm Travel VPP™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Lyrik Base, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float Rhythm, 230x57.5",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 70 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 70 Eagle DUB T-Type Crankset, 32t All Sizes: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1270 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Brakes",
+    "value": "SRAM DB8",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "Reserve 30|TR AL",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "SRAM MTH 716, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "SRAM MTH 746, 12x148, HG, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Assegai 29\"x2.5\", 3C MaxxGrip, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Minion DHR II 27.5\"x2.4\", 3C MaxxTerra, EXO+",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Burgtec Alloy Bar S: 35x760mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 30mm Rise -or- e13 TRS Base Bar S: 35x760mm, 20mm Rise, M/L/XL/XXL: 35x800mm, 35mm Rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "OneUp Enduro Stem All Sizes: 42mm -or- e13 TRS Base Stem All Sizes: 40mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6 S: 125mm, M: 150, L: 170mm, XL/XXL: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.79lbs / 15.78kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-70-trail-2026",
@@ -21423,7 +39989,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "29"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C 29\" 115mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Sid Base, 120mm, w/ 3-Position Lever",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Rhythm, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 70 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 70 Eagle DUB T-Type Crankset, 34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1270 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM Centerline, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM Centerline, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace AR Offset 27 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace AR Offset 27 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "SRAM MTH 716, 15x110, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "SRAM MTH 746, 12x148, HG, 6-Bolt, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rekon 29\"x2.4\"WT, 3C MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rekon 29\"x2.4\"WT, 3C MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "RaceFace Ride, 10mm Rise, 35x760mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "RaceFace Ride, 60mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SDG Tellis Dropper, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3, Steel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 10 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "29.75lbs / 13.5 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "santa-cruz-blur-90-trail-2026",
@@ -21510,7 +40193,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "29"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Carbon C 29\" 115mm Travel Superlight™",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 34 SL Float Performance, Grip, 120mm",
+    "componentId": null
+   },
+   {
+    "label": "Shock",
+    "value": "FOX Float SL Performance, 190x45",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM 90 Eagle T-Type, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM 90 Eagle DUB T-Type Crankset, 34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB 73mm MTB Wide BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1275 Eagle T-Type, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle T-Type, Flattop, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rotor",
+    "value": "SRAM HS2 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Rim",
+    "value": "RaceFace AR Offset 27 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Rim",
+    "value": "RaceFace AR Offset 27 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110, 6-Bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148, XD, 6-Bolt, 36t, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Maxxis Rekon 29\"x2.4\"WT, 3C MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Maxxis Rekon 29\"x2.4\"WT, 3C MaxxTerra, EXO",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "SRAM Atmos Flat Bar, 31.8x760",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "SRAM Atmos Stem, 60mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp Dropper Post, 31.6",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "SDG Bel-Air V3 Lux-Alloy",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cane Creek 50 IS Integrated Headset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "28.1lbs / 12.75 kg",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-creo-2-sram-red-axs-listed-2026",
@@ -21598,7 +40398,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11r carbon, front/rear thru-axles, fully integrated down tube battery, internal cable routing, fender/rack mounts, 12x142mm",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Red AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Red AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Carbon DUB Crank Arms",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM X-Sync Eagle, 107 BCD, 44T",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG 1295, 12-Speed, 10-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX1 Eagle",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Red, hydraulic disc, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Red, hydraulic disc, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra CLX II, 25mm internal width, 32mm depth, 21h, Tubeless ready, Roval LFD hub with ceramic SINC bearings, Centerlock disc, DT Swiss Aerolite spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra CLX II, 25mm internal width, 32mm depth, 24h, Tubeless ready, Roval LFD hub with ceramic SINC bearings, Centerlock disc, DT Swiss Aerolite spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer Pro, 700x42c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer Pro, 700x42c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Terra, carbon, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "S-Works Future Stem w/ Integrated Computer mount",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SRAM Reverb AXS XPLR Dropper, 49cm-52cm: 50mm drop",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry S-Works Power",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.96kg (28 lb, 9.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-creo-2-expert-shimano-grx-di2-listed-2026",
@@ -21685,7 +40587,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11r carbon, front/rear thru-axles, fully integrated down tube battery, internal cable routing, fender/rack mounts, 12x142mm",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "NEW Shimano GRX Di2 RX825",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX Di2 RD-RX827, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Alloy Crankset, DUB interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "New SL 1.2 spider, 104BCD w/SRAM 107BCD 44T",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XT M8200, 12-speed, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT CN-M8100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano GRX RX820, hyrdaulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano GRX RX820, hyrdaulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra C, 25mm inner width carbon tubeless ready rim, 32mm depth, DT 370 hub, 24h, DT Swiss Comp Race spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra C, 25mm inner width carbon tubeless ready rim, 32mm depth, DT 370 hub, 24h, DT Swiss Comp Race spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire, 700x50c, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire, 700x50c, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Pro",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic Dropper, 50mm travel",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.8 kg (30 lb, 6.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-roubaix-sl8-sport-shimano-listed-2026",
@@ -21771,7 +40775,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.2 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano 105 R7120, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 R7100, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimnao 105 R7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105, 12-speed 50/34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 R7100, 12-speed 11-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano SLX CN-M7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano 105 Hydraulic Brake",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano 105 Hydraulic Brake",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Mondo Folding Endurance Tire, 700x32, GRIPTON T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Mondo Folding Endurance Tire, 700x32, GRIPTON T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Hover Comp, Alloy, 125mm Drop, 75mm Reach w/Di2 Hole",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Pave",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.03 kg (19 lb, 14.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-tarmac-sl9-sram-red-axs-e1-listed-2026",
@@ -21859,7 +40960,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM RED AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM RED AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM RED AXS E1 with Quarq Power Meter, 50/37",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed BB Alpha, BSA DUB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XG-1290 E1, 12-speed, 10-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Rapide CLX III, Tubeless, 21mm internal width carbon rim, 51mm depth, Win Tunnel Engineered, Roval LF18F 18H hub with Sinc Ceramic Bearings, Roval by ARRIS Composite Aero Spoke with Ti end fittings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Rapide CLX III, Tubeless, 21mm internal width carbon rim, 48.5mm depth, Win Tunnel Engineered, Roval LF19-R 24H hub with Sinc Ceramic Bearings, Roval by ARRIS Composite Aero Spoke with Ti end fittings",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Rapide Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Rapide Post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.6 kg (14 lb, 8.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-aethos-2-sram-red-axs-e1-listed-2026",
@@ -21947,7 +41140,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works Aethos 2 FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM RED AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM RED AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM RED E1 with Quarq Power Meter, 48/35t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed BB Alpha, BSA DUB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XG-1290 E1, 12-speed, 10-33t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED E1 Flattop 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Alpinist CLX III, Tubeless, 33mm depth, 26.5 width, and 21mm internal width carbon rim, Roval LF21-F 21H hub with Sinc Ceramic Bearings, Roval by ARRIS Composite Aero Spoke with Ti end fittings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Alpinist CLX III, Tubeless, 33mm depth, 26.5 width, and 21mm internal width carbon rim, Roval LF19-R 24H hub with Sinc Ceramic Bearings, Roval by ARRIS Composite Aero Spoke with Ti end fittings",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Alpinist Cockpit II, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost, light weight clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.09kg (13 lb, 6.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-aethos-2-shimano-dura-ace-di2-listed-2026",
@@ -22034,7 +41319,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works Aethos 2 FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Dura-Ace Di2 R9270, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace Di2 R9250, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace Di2 R9250, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Dura-Ace R9200, HollowTech II, 12-speed with 4iiii Precision Pro dual-sided powermeter, 52/36t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Dura-Ace, BB-R9100",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace, 12-speed, 11-30t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR M9100, 12-speed w/ quick link",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Dura-Ace BR-R9270 hydraulic brake",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Dura-Ace BR-R9270 hydraulic brake",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Alpinist CLX III, Tubeless, 33mm depth, 26.5 width, and 21mm internal width carbon rim, Roval LF21-F 21H hub with Sinc Ceramic Bearings, Roval by ARRIS Composite Aero Spoke with Ti end fittings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Alpinist CLX III, Tubeless, 33mm depth, 26.5 width, and 21mm internal width carbon rim, Roval LF19-R 24H hub with Sinc Ceramic Bearings, Roval by ARRIS Composite Aero Spoke with Ti end fittings",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Turbo TLR Race Tire, 700x28c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Turbo TLR Race Tire, 700x28c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Alpinist Cockpit II, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost, light weight clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.05 kg (13 lb, 5.4 oz), tubeless",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-tarmac-sl9-s-level-sram-red-axs-e1-listed-2026",
@@ -22122,7 +41499,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM RED AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM RED AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM RED AXS E1 with Quarq Power Meter, 50/37t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XG-1290 E1, 12-speed, 10-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED E1, Flattop",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Rapide CL III, Tubeless, 21mm internal width carbon rim, 51mm depth, Win Tunnel Engineered, DT350 hub, 18h, DT Swiss Competition Race Straight Pull Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Rapide CL III, Tubeless, 21mm internal width carbon rim, 48.5mm depth, Win Tunnel Engineered, DT350 hub, 24h, DT Swiss Competition Race Straight Pull Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Rapide Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Power Pro Mirror, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.1 kg (15 lb, 10.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-tarmac-sl9-s-level-shimano-dura-ace-listed-2026",
@@ -22210,7 +41679,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Dura-Ace ST-R9270",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace FD-R9250, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace RD-R9250, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Dura-Ace FC-R9200, HollowTech II, 12-speed with 4iiii Precision Pro dual-sided powermeter, 52/36t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace CS-R9200, 12-speed, 11-34t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR M9100, 12-speed w/ quick link",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Dura-Ace BR-R9270, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Dura-Ace BR-R9270, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Rapide CL III, Tubeless, 21mm internal width carbon rim, 51mm depth, Win Tunnel Engineered, DT350 hub, 18h, DT Swiss Competition Race Straight Pull Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Rapide CL III, Tubeless, 21mm internal width carbon rim, 48.5mm depth, Win Tunnel Engineered, DT350 hub, 24h, DT Swiss Competition Race Straight Pull Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Rapide Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Power Pro Mirror, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.1 kg (15 lb, 10.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-tarmac-sl9-expert-sram-force-axs-e1-listed-2026",
@@ -22298,7 +41859,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force E1 Crankset, 48/35t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force XG-1270 E1, 12 speed 10-36",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1, Flattop",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Expert Shallow Drop, alloy, 125mm drop x 75mm reach",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Rapide, alloy, 4 bolt, -6 degrees",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.55 kg (16 lb, 10.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-tarmac-sl9-shimano-dura-ace-listed-2026",
@@ -22384,7 +42042,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Dura-Ace ST-R9270",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace FD-R9250, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace RD-R9250, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Dura-Ace FC-R9200, HollowTech II, 12-speed with 4iiii Precision Pro dual-sided powermeter, 52/36t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "CeramicSpeed Alpha Bottom Bracket, BSA Threaded Shimano",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace CS-R9200, 12-speed, 11-34t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR M9100, 12-speed w/ quick link",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Dura-Ace BR-R9270",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Dura-Ace BR-R9270",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Rapide CLX III, Tubeless, 21mm internal width carbon rim, 51mm depth, Win Tunnel Engineered, Roval LF18F 18H hub with Sinc Ceramic Bearings, Roval by ARRIS Composite Aero Spoke with Ti end fittings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Rapide CLX III, Tubeless, 21mm internal width carbon rim, 48.5mm depth, Win Tunnel Engineered, Roval LF19-R 24H hub with Sinc Ceramic Bearings, Roval by ARRIS Composite Aero Spoke with Ti end fittings",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Rapide Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Rapide Post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.6 kg (14 lb, 8.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-aethos-2-pro-sram-force-axs-e1-listed-2026",
@@ -22472,7 +42222,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Aethos 2 FACT 10r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force with Quarq Power Meter, 48/35t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force XG-1270, 12-speed, 10-33t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force Flattop E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Alpinist CL II, 21mm internal width carbon rim, 33mm depth, Win Tunnel Engineered, DT for Roval 350 hub, DT Swiss Aerolite spokes, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Alpinist CL II, 21mm internal width carbon rim, 33mm depth, Win Tunnel Engineered, DT for Roval 350 hub, DT Swiss Aerolite spokes, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Alpinist Cockpit II, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Power Pro Mirror, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.65 kg (14 lb, 10.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-tarmac-sl9-frameset-listed-2026",
@@ -22551,7 +42393,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Not just because it’s our most aero."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Rapide Post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "1.39 kg (3 lb, 1.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-tarmac-sl9-comp-sram-rival-axs-e1-listed-2026",
@@ -22639,7 +42498,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Rival AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival E1, 48/35t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival XG-1250 D1, 12-speed 10-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival Flattop E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Rival E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Rival E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss R470 rim, 20mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples.",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss R470 rim, 20mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples.",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Shallow Drop, 6061, 70x125mm, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Rapide, alloy, 4 bolt, -6 degrees",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Comp, chrome alloy rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.14 kg (17 lb, 15.1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-shiv-tt-disc-module-listed-2026",
@@ -22716,7 +42672,34 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "For the 'flat an..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works FACT carbon, UCI Legal, 100x12mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Shiv TT Integrated bar/stem aerobar",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Shiv TT Basebar stem cover",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "2019 S-Works Venge aero seatpost, FACT carbon, Di2-compatible",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.69 kg (5 lb, 14.9 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-aethos-2-pro-shimano-ultegra-di2-listed-2026",
@@ -22804,7 +42787,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Aethos 2 FACT 10r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Ultegra Di2 R8170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra Di2 R8150, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra Di2 R8150, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra R8100 with 4iiii Precision 3+ single-sided Power Meter, 52/36t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra, 12-speed, 11-30t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT CN-M8100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Ultegra BR-R8170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Ultegra BR-R8170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Alpinist CL II, 21mm internal width carbon rim, 33mm depth, Win Tunnel Engineered, DT for Roval 350 hub, DT Swiss Aerolite spokes, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Alpinist CL II, 21mm internal width carbon rim, 33mm depth, Win Tunnel Engineered, DT for Roval 350 hub, DT Swiss Aerolite spokes, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Turbo TLR Race Tire, 700x28c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Turbo TLR Race Tire, 700x28c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Alpinist Cockpit II, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Power Pro Mirror, Hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.73 kg (14 lb, 13.4 oz), tubeless",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-tarmac-sl9-expert-shimano-ultegra-di2-listed-2026",
@@ -22892,7 +42967,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Ultegra Di2 ST-R8170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra Di2 FD-R8150, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra Di2 RD-R8150, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra R8100, 52/36t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra CS-R8100, 12-speed, 11-34t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT CN-M8100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Ultegra BR-8170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Ultegra BR-8170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Expert Shallow Drop, alloy, 125mm drop x 75mm reach",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Rapide, alloy, 4 bolt, -6 degrees",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.53 kg (16 lb, 9.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-creo-2-comp-shimano-grx-di2-listed-2026",
@@ -22979,7 +43151,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11r carbon, front/rear thru-axles, fully integrated down tube battery, internal cable routing, fender/rack mounts, 12x142mm",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.2 w/ Smooth Boot, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano GRX Di2 RX715/717",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX Di2 RD-RX717 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Alloy Crankset, DUB interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM X-Sync Eagle, 107 BCD, 44t",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Deore M6100, 12-speed w/ Hyperglide+, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Deore M6100, 12-speed w/quick link",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano GRX RX410, hyrdaulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano GRX RX410, hyrdaulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire, 700x50c, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire, 700x50c, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic Dropper, 50mm travel",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.65 kg (32 lb, 4.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-roubaix-sl8-expert-sram-force-axs-e1-listed-2026",
@@ -23066,7 +43340,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.2 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Force AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force E1, 46/33t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force XG-1270 E1, 12 speed 10-36",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force Flattop E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Mondo TLR Endurance Tire, 700x32, GRIPTON T2/T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Mondo TLR Endurance Tire, 700x32, GRIPTON T2/T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Hover Expert, Alloy, 125mm Drop, 75mm Reach w/Di2 Hole",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Pro",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Pave",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.1 kg (17 lb, 13.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-roubaix-sl8-shimano-tiagra-listed-2026",
@@ -23152,7 +43523,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.1 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Tiagra R4000, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Tiagra R4000, braze on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Tiagra RD-R4000, 11 speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Tiagra FC-R4000, 11-speed, 50/34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CUES CS-RS400, 11-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-LG500",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano BR-RS405, hyrdaulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano BR-RS405, hyrdaulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Axis Elite Disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Axis Elite Disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Roadsport Wirebead Tire 700x32",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Roadsport Wirebead Tire 700x32",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Hover Comp, Alloy, 125mm Drop, 75mm Reach w/Di2 Hole",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Pave",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.44 kg (20 lb, 13.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-allez-comp-shimano-listed-2026",
@@ -23239,7 +43707,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Specialized FACT full carbon, flat mount disc, 1-1/8\" to 1-3/8\" taper, fender eyelets, 12x100mm thru-axle",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano 105 R7120, 12 speed Mechanical",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105, Braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimnao 105 R7100, 12-Speed Mechanical",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105, 12-speed Hollowtech 2, 50/34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105, 12-speed, 11-34t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano SLX CN-M7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano 105, Hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano 105, Hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT R470 Disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT R470 Disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Turbo Pro, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Turbo Pro, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Shallow Drop, 6061, 70x125mm, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "3D-forged alloy, 31.8mm, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt Clamp, 12mm offset, 27.2mm, anti-corrosion hardware",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Bridge Saddle, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.09 kg (20 lb, 0.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-roubaix-sl8-shimano-dura-ace-listed-2026",
@@ -23326,7 +43891,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Dura-Ace R9270, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Dura-Ace R9250, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Dura-Ace R9250, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Dura-Ace R9200, HollowTech II, 12-speed with 4iiii Precision Pro dual-sided powermeter",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "50/34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Dura-Ace, BB-R9100",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Dura-Ace, 12-speed, 11-34t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano Dura-Ace, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Dura-Ace, Hydraulic Disc, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Dura-Ace, Hydraulic Disc, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra CLX II, 25mm internal width, 32mm depth, 21h, Tubeless ready, Roval LFD hub with ceramic SINC bearings, Centerlock disc, DT Swiss Aerolite spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra CLX II, 25mm internal width, 32mm depth, 24h, Tubeless ready, Roval LFD hub with ceramic SINC bearings, Centerlock disc, DT Swiss Aerolite spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Mondo 2BR, 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Mondo 2BR, 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "S-Works Carbon Hover Drop 125mm, Reach 75mm, w/Di2 hole",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "S-Works Future Stem, w/ Integrated Computer Mount",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Pave Seat post",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.25 kg (15 lb, 15.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-creo-2-comp-e5-sram-apex-eagle-listed-2026",
@@ -23413,7 +44080,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized E5 Premium Aluminum frame, front/rear thru-axles, fully integrated down tube battery, internal cable routing, fender/rack mounts, 12x142mm, flat-mount disc brakes",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.1 w/ Smooth Boot, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Apex, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex Eagle 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Alloy Crankset, DUB interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM X-Sync Eagle, 107 BCD, 44T",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG-1210 Eagle, 11-50T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM S100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Apex, hyrdaulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Apex, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G500 rim, 26mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G500 rim, 26mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder TLR Fast Gravel Tire 700x40c, GRIPTON T2/T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder TLR Fast Gravel Tire 700x40c, GRIPTON T2/T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Carbon, single-bolt, 27.2mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.12 kg (33 lb, 5.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-roubaix-sl8-sram-red-axs-listed-2026",
@@ -23500,7 +44269,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "NEW SRAM RED AXS, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "NEW SRAM RED AXS, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "NEW SRAM RED AXS, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "NEW SRAM RED AXS Power Meter",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "46/33",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "NEW SRAM RED XG-1290, 12-speed, 10-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "NEW SRAM RED 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "NEW SRAM RED, Hydraulic Disc, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "NEW SRAM RED, Hydraulic Disc, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra CLX II, 25mm internal width, 32mm depth, 21h, Tubeless ready, Roval LFD hub with ceramic SINC bearings, Centerlock disc, DT Swiss Aerolite spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra CLX II, 25mm internal width, 32mm depth, 24h, Tubeless ready, Roval LFD hub with ceramic SINC bearings, Centerlock disc, DT Swiss Aerolite spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Mondo 2BR, 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Mondo 2BR, 700x32c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "S-Works Carbon Hover Drop 125mm, Reach 75mm, w/Di2 hole",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "S-Works Future Stem, w/ Integrated Computer Mount",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Pave Seat post",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.2 kg (15 lb, 14.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-tarmac-sl9-ltd-sram-red-axs-e1-listed-2026",
@@ -23587,7 +44458,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "S-Works Tarmac SL9 FACT 12r Carbon, Rider First Engineered, Win Tunnel Engineered, Ceramic Speed SLT headset bearings, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM RED AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM RED AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM RED AXS E1 with Quarq Power Meter, 50/37t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed BB Alpha, BSA DUB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XG-1290 E1, 12-speed, 10-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED Flattop E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Rapide Sprint CLX, Tubeless, 21mm internal width carbon rim, 63mm depth, Win Tunnel Engineered, Roval LF18-F hub, 18h, Roval by ARRIS Composite Aero Spoke with Ti End Pieces",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Rapide Sprint CLX, Tubeless, 21mm internal width carbon rim, 58mm depth, Win Tunnel Engineered, Roval LF19-R hub, 24h, Roval by ARRIS Composite Aero Spoke with Ti End Pieces",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cotton TLR, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Rapide Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Rapide Post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "6.78 kg (14 lb, 15.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-aethos-2-frameset-listed-2026",
@@ -23666,7 +44634,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Built by breaking the rules of..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works Aethos 2 FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost, light weight clamp",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "1.24 kg (2 lb, 11.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-allez-shimano-cues-listed-2026",
@@ -23752,7 +44737,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Specialized FACT full carbon, flat mount disc, 1-1/8\" to 1-3/8\" taper, fender eyelets, 12x100mm thru-axle",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano CUES ST-U6030",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano CUES FD-U6030, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano CUES RD-U6020, 10-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano CUES FC-U6030, 50/34T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CUES CS-LG300-10, 10 speed, 11-39t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC XGlide",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano CUES Hydraulic Brake",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano CUES Hydraulic Brake",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "AXIS Sport Disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "AXIS Sport Disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "RoadSport, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "RoadSport, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Shallow Drop, 6061, 70x125mm, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "3D-forged alloy, 31.8mm, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt Clamp, 12mm offset, 27.2mm, anti-corrosion hardware",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Bridge Saddle, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "10.0 kg (22 lb, 0.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-roubaix-sl8-frameset-listed-2026",
@@ -23830,7 +44912,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Today, the new Roubaix SL8 with Future Shoc..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Pave",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.11 kg (4 lb, 10.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-aethos-2-expert-shimano-ultegra-di2-listed-2026",
@@ -23917,7 +45016,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Aethos 2 FACT 10r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Ultegra Di2 R8170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Ultegra Di2 R8150, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Ultegra Di2 R8150, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Ultegra R8100, 52/36t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano Ultegra, 12-speed, 11-30t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT CN-M8100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Ultegra BR-R8170 Hydraulic Brake",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Ultegra BR-R8170 Hydraulic Brake",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Alpinist Carbon Handlebar, 125mm drop, 75mm reach",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Alpinist, alloy, 4 bolt, -6 degrees",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.27 kg (16 lb, 0.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-allez-sprint-frameset-listed-2026",
@@ -23995,7 +45191,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "We tore the Tarmac apart, and rebuilt it from alloy with our Smartweld technology."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac Carbon seat post, FACT Carbon, 20mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.27 kg (5 lb, 0.1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-aethos-2-frameset-listed-2026",
@@ -24074,7 +45287,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Built by breaking racing’s rules to deliver pure road rid..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Aethos 2 FACT 10r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "1.37 kg (3 lb, 0.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-roubaix-sl8-pro-sram-force-axs-e1-listed-2026",
@@ -24161,7 +45391,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Force AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force E1, Quarq Power Meter, 46/33T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force XG-1270 E1, 12 speed 10-36",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force Flattop E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Rapide CL III, 21mm internal width carbon rim tubeless ready, 51mm depth, Win Tunnel Engineered, DT for Roval 350 hub, 18h, DT Swiss Comp Race spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Rapide CL III, 21mm internal width carbon rim tubeless ready, 48.5mm depth, Win Tunnel Engineered, DT for Roval 350 hub, 24h, DT Swiss Comp Race spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Mondo TLR Endurance Tire, 700x32, GRIPTON T2/T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Mondo TLR Endurance Tire, 700x32, GRIPTON T2/T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Alpinist Carbon Handlebar, 125mm drop, 75mm reach",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized Pro SL, alloy, 4-bolt",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Pave",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized S-Works Power Mirror, Ti Rails, 143mm/155mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.05 kg (17 lb, 12.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-tarmac-sl9-comp-shimano-di2-listed-2026",
@@ -24249,7 +45576,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT 12r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano 105 Di2 R7170, 12-speed hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 R7170, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 Di2 R7150, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105 FC-R7100, 12-speed, 52/36t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 CS-R7100, 12-speed, 11-34t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano SLX CN-M7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano 105 BR-R7170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano 105 BR-R7170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss R470 rim, 20mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples.",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss R470 rim, 20mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples.",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Turbo, 700x30",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Shallow Drop, 6061, 70x125mm, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Rapide, alloy, 4 bolt, -6 degrees",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Comp, chrome alloy rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.21 kg (18 lb, 1.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-roubaix-sl8-comp-shimano-di2-listed-2026",
@@ -24336,7 +45760,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.2 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano 105 Di2 R7170, 12-speed hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 R7170, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105 Di2 R7150. 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105 FC-R7100, 12-speed, 50/34t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 R7100, 12-speed 11-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano SLX CN-M7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano 105 BR-R7170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano 105 BR-R7170, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G500 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G500 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Mondo Folding Endurance Tire, 700x32, GRIPTON T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Mondo Folding Endurance Tire, 700x32, GRIPTON T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Hover Comp, Alloy, 125mm Drop, 75mm Reach w/Di2 Hole",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Pave",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Comp, chrome alloy rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.91 kg (19 lb, 10.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-aethos-2-expert-sram-force-axs-e1-listed-2026",
@@ -24424,7 +45945,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Aethos 2 FACT 10r Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Force AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "SRAM Force AXS E1, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force E1 Crankset, 48/35t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force XG-1270, 12-speed, 10-33t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force Flattop E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval C38, 21mm internal width carbon rim, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Turbo, 700x28",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Turbo, 700x28",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Alpinist Carbon Handlebar, 125mm drop, 75mm reach",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized Pro SL, alloy, 4-bolt",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.05 kg (15 lb, 8.7 oz), tubeless",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-tarmac-sl7-sport-shimano-listed-2026",
@@ -24496,7 +46114,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "See override",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105 R7100, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimnao 105 R7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano 105 FC-R7100, 12-speed, 52/36t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano 105 CS-R7100, 12-speed, 11-34t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano SLX CN-M7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano 105, Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano 105, Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss R470 rim, 20mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples.",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss R470 rim, 20mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples.",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Turbo Pro, 700x26",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Turbo Pro, 700x26",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Shallow Drop, 6061, 70x125mm, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tarmac integrated stem, 6-degree",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac Carbon seat post, FACT Carbon, 20mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.27 kg (18 lb, 3.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-creo-2-comp-sram-x1-eagle-axs-listed-2026",
@@ -24584,7 +46299,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11r carbon, front/rear thru-axles, fully integrated down tube battery, internal cable routing, fender/rack mounts, 12x142mm",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.2 w/ Smooth Boot, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Apex eTap AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X1 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Alloy DUB Crank Arms",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM X-Sync Eagle, 107 BCD, 44T",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG1210, 12-Speed, 11-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM NX Eagle, 12-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM APEX, hydraulic disc, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM APEX, hydraulic disc, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer Pro, 700x42c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer Pro, 700x42c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Trans-X Dropper, 50mm Travel",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.55kg (32 lb, 1.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-allez-shimano-claris-listed-2026",
@@ -24670,7 +46487,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Specialized FACT full carbon, flat mount disc, 1-1/8\" to 1-3/8\" taper, fender eyelets, 12x100mm thru-axle",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Claris 2000, 8-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Claris, 8-speed, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Claris, 8-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano Claris R200 - 50/34t",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "50/34T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano 68mm threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SunRace, 8-speed, 11-32t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X8 w/ Missing Link™",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Tektro MD-550 Mechanical Disc - 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Tektro MD-550 Mechanical Disc - 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Axis Sport Disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Axis Sport Disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Roadsport, 700X30c",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Roadsport, 700X30c",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Shallow Drop, 70x125mm, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "3D-forged alloy, 31.8mm, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt Clamp, 12mm offset, 27.2mm, anti-corrosion hardware",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Bridge Saddle, steel rails",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-stumpjumper-15-evo-shimano-xtr-di2-listed-2026",
@@ -24751,7 +46665,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Factory, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm Kabolt axle, 44mm offset, S1:150mm of travel, S2-S6:160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever, LSC adjustment, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano XTR Di2",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XTR Di2 RD-M9250, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano XTR, 55mm chainline, 32T, S1-S3: 165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano BB93",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XTR CS-M9200, 12-speed, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR, 12-speed w/ quick link",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano XTR, 4-piston caliper, hydraulic disc, 203mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano XTR, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 203mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 Hydra 2 Hub, 15x110mm, 28h, DT Swiss Revolite Spokes, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 Hydra 2 Hub, 12x148mm, 28h, DT Swiss Revolite Spokes, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, TLR, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, Gripton T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "RaceFace ERA Carbon, 5-degree upsweep, 8-degree backsweep. S1-S2: 800 width, 20mm rise: S3-S6: 800 width, 55mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Race Face Turbine R, 35mm clamp, 40mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "FOX Transfer NEO Factory, 34.9, S1:125mm, S2: 150mm, S3: 175mm, S4-S6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized S-Works Power Mirror, Ti Rails, S1-S2: 155mm, S3-S6:143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.95 kg (30 lb, 12.1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-4-evo-comp-listed-2026",
@@ -24835,7 +46846,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "All New SRAM FS ZEB Select, 29\" 180mm, Linear XL spring, Delta RC damper, rebound adjust",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "All New Vivid Select air, 230x62.5mm, Linear XL spring, RT damper w/climb switch, rebound adjust",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S1000 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM S1000 Alloy crank, ISIS interface, 155mm length",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized Alloy Rims",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Specialized alloy front hub disc, sealed cardridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized alloy rear hub disc, sealed cartridge bearings, 6-Bolt, 12X148mm thru-axle, 32h, HG Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID Gravity, T9, TLR, 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cannibal GRID Gravity T9 TLR Downhill Tire 27.5x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy handlebars, 35mm diameter, 8 degree back sweep, 6 degree up sweep, S1/S2: 780mm/30mm rise, S3-S6: 800mm/50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Xfusion Manic, infinite adjustable, two bolt head, Remote SLR LE lever, 34.9, S2: 125mm, S3: 170mm, S4-S6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "25.16 kg (55 lb, 7.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-levo-4-listed-2026",
@@ -24919,7 +47042,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 38 Factory, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm axle, 44mm offset, 160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Specialized 3.1 S-Works motor, 111Nm power, 850W power",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Ultimate Controller with Discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX Eagle Transmission, Wired SRAM AXS battery (powers AXS rear derailleur with integrated hot shoe directly off the Levo 4 main battery).",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX Carbon crank, 55mm Chainline, ISIS interface, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX Eagle Transmission Cassette, 12spd, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX EagleTransmission Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Ultimate, 4-piston caliper, hydraulic disc, 220mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Ultimate, 4-piston caliper, hydraulic disc, 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse HD 29\", hookless carbon, 30mm inner width, tubeless ready, DT Swiss 240 DEG, 15x110mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse HD 27.5\", hookless carbon, 30mm inner width, tubeless ready, DT Swiss 240 DEG, 12x148mm, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID GRAVITY casing, GRIPTON® T9 compound, 2Bliss Ready, 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Butcher, GRID GRAVITY casing, GRIPTON® T9 compound, 2Bliss Ready, 27.5x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "RaceFace Era Carbon, riser bar, 5-degree upsweep, 8-degree backsweep, S2:20mm Rise, S3-S6:40mm Rise, 800mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry 9 Mountain stem, 35mm clamp, 40mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "FOX Transfer NEO Factory, 34.9, S2: 125mm, S3: 175mm, S4-S6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Power Pro Mirror w/hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.68kg (52 lb, 3.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-levo-r-listed-2026",
@@ -25002,7 +47232,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, carbon shock extension, titanium hardware, SWAT downtube storage, 12x148mm UDH compatible rear dropout, side entry battery, adjustable geometry, 130mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 SL Factory, GRIP X Damper, HSC, LSC, LSR adjust, 140mm travel, 44mm offset, 15x110mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Factory GENIE, Ride Dynamics Developed, 2-position compression adjust, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized Turbo X2 840Wh integrated battery pack",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Ultimate Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX Carbon crank, 160mm, ISIS interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX Transmission, XS 1297, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Ultimate, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Ultimate, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 Hydra 2 Hub, 15x110mm, 28H, DT Swiss Revolite Spokes, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 Hydra 2 Hub, 12x148mm, 32H, DT Swiss Revolite Spokes, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Purgatory, GRID Casing, T9 Compound, 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Purgatory, GRID Trail Casing, T9 Compound, 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Control SL RISE Integrated cockpit, 50mm integrated stem, 8-degree backsweep, 2 degree upsweep, 780mm wide",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS, 34.9mm, S2: 125mm, S3: 150mm, S4-6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized S-Works Power Mirror, Ti Rails, 143mm/155mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.16 kg (46 lb, 10.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-r-expert-listed-2026",
@@ -25086,7 +47418,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, SWAT downtube storage, 12x148mm UDH compatible rear dropout, side entry battery, adjustable geometry, 130mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 SL Performance Elite, GRIP X Damper, HSC, LSC, LSR adjust, 140mm travel, 44mm offset, 15x110mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Performance Elite GENIE, Ride Dynamics Developed, 2-position compression adjust, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized Turbo X2 840Wh integrated battery pack",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle, BROSE/ISIS, 160mm, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX Transmission, XS 1275, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 1/1 Hub, 15x110mm, 28H, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 1/1 Hub, 12x148mm, 32H, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Purgatory, GRID Casing, T9 Compound, 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Purgatory, GRID Trail Casing, T7 Compound, 29x2.4 (S1 27.5x2.4)",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Alloy, 30mm/40mm rise, 35mm, 800mm wide",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic, 34.9, S1-S2: 125mm, S3: 150mm, S4: 170mm, S5-S6: 190mm Travel, 0mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Comp, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "21.76 kg (47 lb, 15.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-r-comp-listed-2026",
@@ -25170,7 +47609,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, SWAT downtube storage, 12x148mm UDH compatible rear dropout, side entry battery, adjustable geometry, 130mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 SL Performance, GRIP Damper, 140mm travel, 44mm offset, 15x110mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Performance GENIE, Ride Dynamics Developed, 2-position compression adjust, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized Turbo X2 840Wh integrated battery pack",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S1000 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Eagle 70, BROSE/ISIS, 160mm, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX Transmission, XS 1275, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized Alloy Rear Hub Disc, Sealed Cardridge Bearings, 6-Bolt, 12X148mm Thru-Axle, 32H, Xd Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Purgatory, GRID Casing, T9 Compound, 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Purgatory, GRID Trail Casing, T7 Compound, 29x2.4 (S1 27.5x2.4)",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Alloy, 30mm/40mm rise, 35mm, 800mm wide",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic, 34.9, S1-S2: 125mm, S3: 150mm, S4: 170mm, S5-S6: 190mm Travel, 0mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Comp, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "22.34 kg (49 lb, 4.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-4-pro-listed-2026",
@@ -25254,7 +47810,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "All new Levo 4 frame, FACT 11m carbon chassis and rear-end, 12x148mm dropouts, sealed cartridge bearing pivots, SRAM UDH compatible, w/ SWAT storage, 150mm of travel, side entry battery, fork travel up to 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 38 Factory, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm axle, 44mm offset, 160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Specialized 3.1 Motor, 105Nm torque, 810W power",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission, Wired SRAM AXS battery (powers AXS rear derailleur with integrated hot shoe directly off the Levo 4 main battery).",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XO Alloy crank, ISIS interface, 55mm Chainline, 155mm",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34T T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XO 1295, 12 speed, 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 220mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse HD 29\", hookless carbon, 30mm inner width, tubeless ready, DT Swiss 350, 15x110, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse HD 27.5\", hookless carbon, 30mm inner width, tubeless ready, DT Swiss 350, 12x148, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID GRAVITY casing, GRIPTON® T9 compound, 2Bliss Ready, 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Butcher, GRID GRAVITY casing, GRIPTON® T9 compound, 2Bliss Ready, 27.5x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "RaceFace Era Carbon, riser bar, 5-degree upsweep, 8-degree backsweep, S2:20mm Rise, S3-S6:40mm Rise, 800mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry 9 Mountain stem, 35mm clamp, 40mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Bike Yoke Revive Max 3.0, 34.9, S2:125mm, S3:160mm, S4: 185mm, S5/S6:213mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Mimic Expert, Hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.94kg (52 lb, 12.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-levo-4-frameset-listed-2026",
@@ -25334,7 +48002,39 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "motor": "Specialized 3.1 S-Works motor, 111Nm power, 850W power",
    "batteryWh": null
   },
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Specialized 3.1 S-Works motor, 111Nm power, 850W power",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX Carbon crank, 55mm Chainline, ISIS interface, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.36 kg (27 lb, 4.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-alloy-shimano-slx-listed-2026",
@@ -25415,7 +48115,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 38 Factory, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm QR axle, 44mm offset, 160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX DHX Factory, Ride Dynamics Trail Tune, 210x55mm, S2: 400lbs, S3: 450lbs, S4: 500bs, S5: 550lbs, S6: 600lbs",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano SLX, M7100, 12spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano SLX, M7100, SGS, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano SLX, M7120, 32T ring, 55mm chainline, S2-S3:165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano, BB-MT801, Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano SLX, CS-M7100, 12-speed, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano SLX, M7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "TRP DH-R EVO, 4-piston caliper, hydraulic disc, 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "TRP DH-R EVO, 4-piston caliper, hydraulic disc, 203mm",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Roval Traverse, hookless alloy, 30mm inner width, tubeless ready, Front: 29, Rear: 27.5",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148mm, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Sapim Force",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, 2Bliss Ready, 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID GRAVITY casing, GRIPTON® T9/T7 compound, 2Bliss Ready, 27.5x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Deity, Racepoint, 5-degree upsweep, 9-degree backsweep, 810 width, S2: 25mm rise: S3-S6: 38mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Deity, 35mm clamp, 35mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "PNW Loam OE Dropper, tool-less travel adjust, Range lever, 34.9, S2: 150mm, S3: 170mm, S4-S6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails, S1-S2: 155mm, S3-S6: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "16.90 kg (37 lb, 4.1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-epic-9-listed-2026",
@@ -25495,7 +48302,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "S-Works FACT 12m Carbon, Progressive XC Race Geometry, Rider-First Engineered™, threaded BB, 12x148mm UDH compatible rear dropout, internal cable routing, 120mm of travel, Optimized for wireless drivetrain",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox SID ULTIMATE Flight Attendant, Ride Dynamics developed 3 position, Debon Air, 15x110mm, 44mm offset, 120mm Travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox SIDLuxe ULTIMATE Flight Attendant, Ride Dynamics developed 3 position, Solo Air, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Ultimate Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX SL Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM / Quarq XX SL Eagle Power Meter Crankset, DUB SM:165mm, M-XL:170mm, 34T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "CeramicSpeed Alpha, DUB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM CS-1299, 12 speed, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX SL Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Ultimate, 4-piston caliper, hydraulic disc, 180mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Ultimate, 4-piston caliper, hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Control World Cup, Mini hooked carbon, 28.5mm inner width, tubeless ready, Roval Control World Cup hub, DT Swiss ceramic bearings, Roval Carbon spokes w/ Ti end pieces",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Control World Cup, Mini hooked carbon, 28.5mm inner width, tubeless ready, Roval Control World Cup hub, DT Swiss 180 internals, Roval Carbon spokes w/ Ti end pieces",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Fast Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Air Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Control II Integrated cockpit, 60mm/70mm X- 6 degree integrated stem, 5mm rise, 9-degree backsweep, 3 degree upsweep, 760mm wide",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS, 30.9mm, S: 125mm, M/L:150mm, XL: 175mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized S-Works Power EVO Mirror, Carbon Rails, SM: 155mm, M-XL: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.66 kg (21 lb, 4.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-epic-9-pro-listed-2026",
@@ -25575,7 +48479,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, Progressive XC Race Geometry, Rider-First Engineered™, threaded BB, 12x148mm UDH compatible rear dropout, internal cable routing, 120mm of travel, Optimized for wireless drivetrain",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox SID ULTIMATE Flight Attendant, Ride Dynamics developed 3 position, Debon Air, 15x110mm, 44mm offset, 120mm Travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox SIDLuxe ULTIMATE Flight Attendant, Ride Dynamics developed 3 position, Solo Air, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM / Quarq XO Eagle Power Meter Crankset, DUB SM:165mm, M-XL:170mm, 34T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1295, 12 speed, 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Silver, 4-piston caliper, hydraulic disc, 180mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Silver, 4-piston caliper, hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Control SL VI, Hookless carbon, 29mm inner width, tubeless ready, DT Swiss 350 hub, DT Revolution Straight Pull",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Control SL VI, Hookless carbon, 29mm inner width, tubeless ready, DT Swiss 350 hub, DT Revolution Straight Pull",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Fast Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Air Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Control SL Flat, 6-degree upsweep, 8-degree backsweep, 10mm rise, 760mm, 35mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Alloy XC 2-bolt stem, 60mm/70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Bike Yoke Divine SL, SM:100mm, M-XL:125mm travel, 30.9",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Power Expert, Ti Rails, SM: 155mm, M-XL: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "10.39 kg (22 lb, 14.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-demo-11-ltd-sram-xx-dh-axs-t-type-listed-2026",
@@ -25652,7 +48658,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Ohlins DH38 m.2 Air TTX18 29'', 54mm offset, 200mm travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Ohlins TTX22m.2, 250x75mm, S3: 457lb, S4: 491lb, S5: 525lb",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Ultimate with Discrete Clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX DH AXS T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX HighGear Crankset, 165mm length.",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM GXP",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM CS XS 797 T-Type 10-24 DH XD",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Ultimate B1, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Ultimate B1, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss EX471, 240 hub, 20x110mm spacing",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss EX471, 240 hub, XD freehub body, 12x148mm spacing",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "S-Works Cannibal GRID Gravity T9 TLR Downhill Tire 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "S-Works Cannibal GRID Gravity T9 TLR Downhill Tire 27.5x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Renthal Fatbar 35 V3 Aluminum Riser Bar, 35mm clamp, 800mm width, 30mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Renthal Integra 35mm Direct Mount Stem, 45mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Thomson, alloy, straight, 12-degree clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Henge DH, hollow titanium rails, 130mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "18.2 kg (40 lb, 2.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-demo-11-listed-2026",
@@ -25729,7 +48832,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Rockshox Boxxer Ultimate, tall crowns, 52mm offset, 200mm travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Rockshox Vivid Coil Ultimate DH, 250x75mm,S3 - 450lbs., S4 - 500lbs., S5 - 525lbs",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Ultimate with Discrete Clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX DH AXS T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX HighGear Crankset, 165mm length.",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM GXP",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM CS XS 797 T-TYPE 10-24 DH XD",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Ultimate B1, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Ultimate B1, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse Gravity Alloy 29\" Rim, 32h alloy rim, 28mm inner rim width, DT Swiss 350 hub, 20x110mm, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse Gravity Alloy 27.5\" Rim, 32h alloy rim, 28mm inner rim width, DT Swiss 350 hub, 12x148mm, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Cannibal GRID Gravity T9 TLR Downhill Tire 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cannibal GRID Gravity T9 TLR Downhill Tire 27.5x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "SRAM Descendant Handlebar, 35mm clamp, 800mm width, 30mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "SRAM Descendant DH Stem, 35mm Clamp, 50mm length, Direct Mount, Black",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Thomson, alloy, straight, 12-degree clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Henge DH, hollow titanium rails, 130mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "19.03 kg (41 lb, 15.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-stumpjumper-15-evo-listed-2026",
@@ -25810,7 +49010,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "All New SRAM Rockshox Lyrik Ultimate, 29\" 160mm (S2-S6)",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "All New Rockshox Super Deluxe Ultimate GENIE, RC2T damper with (LSC) Low Speed Compression and (HSC) High Speed Compression, GENIE adjustable airspring, rebound adjust, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Ultimate with Discrete Clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX Eagle Transmission Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX Eagle Crankset, 32T ring, Integrated Guard, 55mm Chainline",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM CS-1299, 12 speed, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX SL Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Ultimate B1, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Ultimate B1, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 Hydra 2 Hub, 15x110mm, 28h, DT Swiss Revolite Spokes, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 Hydra 2 Hub, 12x148mm, 28h, DT Swiss Revolite Spokes, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, TLR, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, Gripton T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Deity Speedway Carbon, 5-degree upsweep, 9-degree backsweep. S1-S2: 810 width, 30mm rise: S3-S6: 810 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Deity, 35mm clamp, 42mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox, Reverb AXS, 34.9, S1: 125mm, S2: 150mm, S3: 175mm, S4-S5: 200mm, S6:225mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Power Pro Mirror w/hollow Ti rails, 143mm/155mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.05 kg (30 lb, 15.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-epic-9-ltd-sram-xx-sl-eagle-axs-listed-2026",
@@ -25892,7 +49189,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "RockShox SID ULTIMATE Flight Attendant, Ride Dynamics developed 3 position, Debon Air, 15x110mm, 44mm offset, 120mm Travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox SIDLuxe ULTIMATE Flight Attendant, Ride Dynamics developed 3 position, Solo Air, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Ultimate Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX SL Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM / Quarq XX SL Eagle Power Meter Crankset, DUB SM:165mm, M-XL:170mm, 34T",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "32T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramicspeed Alpha, DUB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM CS-1299, 12 speed, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX SL Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Ultimate, 4-piston caliper, hydraulic disc, 180mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Ultimate, 4-piston caliper, hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Control World Cup, Mini hooked carbon, 28.5mm inner width, tubeless ready, Roval Control World Cup hub, DT Swiss ceramic bearings, Roval Carbon spokes w/ Ti end pieces",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Control World Cup, Mini hooked carbon, 28.5mm inner width, tubeless ready, Roval Control World Cup hub, DT Swiss 180 internals, Roval Carbon spokes w/ Ti end pieces",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Fast Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Air Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Control SL Integrated cockpit, 60mm/70mm X- 6 degree integrated stem, 8-degree backsweep, 2 degree upsweep, 760mm wide",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS, 30.9mm, S: 125, M/L:150, XL: 175mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized S-Works Power EVO Mirror, Carbon Rails, SM: 155mm, M-XL: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.69 kg (21 lb, 5.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-r-pro-listed-2026",
@@ -25974,7 +49368,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   },
   "compat": {
    "speeds": 12
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, SWAT downtube storage, 12x148mm UDH compatible rear dropout, side entry battery, adjustable geometry, 130mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "All New SRAM Rockshox Lyrik Ultimate, 29\" 140mm, LinearXL air spring with ButterCups and adjustable bottom out, new Charger 3.2 damper with HSC and LSC, rebound adjust",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "All New Rockshox Super Deluxe Ultimate GENIE, RC2T damper with (LSC) Low Speed Compression and (HSC) High Speed Compression, GENIE adjustable airspring, rebound adjust, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Alloy Crank, ISIS interface, 55mm chainline, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1295, 12 speed, 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Sram Maven Silver, 4 piston, SRAM HS2 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Sram Maven Silver, 4 piston, SRAM HS2 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 1/1 Hub, 15x110mm, 28H, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 1/1 Hub, 12x148mm, 32H, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Trail Control, GRID Casing, T9 Compound, TLR, 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Trail Control, GRID Casing, T7 Compound, TLR, 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Traverse SL Carbon, 6-degree upsweep, 8-degree backsweep, 30mm rise, 35mm, 780mm wide",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry Nine A35, 50mm, 35mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS, 34.9mm, S2: 125mm, S3: 150mm, S4-6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Power Expert, Ti Rails, 143mm/155mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "22.58 kg (49 lb, 12.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-epic-9-expert-listed-2026",
@@ -26054,7 +49555,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, Progressive XC Race Geometry, Rider-First Engineered™, threaded BB, 12x148mm UDH compatible rear dropout, internal cable routing, 120mm of travel, Optimized for wireless drivetrain",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox SID Select+, Ride Dynamics developed 3 position, Debon Air, 15x110mm, 44mm offset, 120mm Travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox SIDLuxe Select+, Ride Dynamics developed 3 position, TwistLoc remote adjust, Solo Air, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle, DUB, SM:165mm, M-XL:170mm, 34T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG-1275 Transmission 12-Speed 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 180mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Control SL V, Hookless carbon, 29mm inner width, tubeless ready, DT Swiss 370 hub, Sapim D-Light Straight Pull",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Control SL V, Hookless carbon, 29mm inner width, tubeless ready, DT Swiss 370 hub, Sapim D-Light Straight Pull",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Fast Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Air Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Alloy Minirise, 10mm rise, 750mm, 35mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Alloy XC 2-bolt stem, 60mm/70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic, 30.9, SM: 125mm, M: 150mm, L-XL: 170mm Travel, 0mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "10.95 kg (24 lb, 2.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-pro-listed-2026",
@@ -26135,7 +49738,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "All New SRAM Rockshox Lyrik Ultimate, 29\" 160mm (S2-S6)",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "All New Rockshox Super Deluxe Ultimate GENIE, RC2T damper with (LSC) Low Speed Compression and (HSC) High Speed Compression, GENIE adjustable airspring, rebound adjust, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle Crankset, 32T ring, Integrated Guard, 55mm Chainline, S1-S3:165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1295, 12 speed, 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 1/1 Hub, 15x110mm, 28h, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, S1-S2: 27.5\", S3-S6: 29\", Industry 9 1/1 Hub, 12x148mm, 28h, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, TLR, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, Gripton T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "S1-S2: Bike Yoke, Barmate Al7050 800x50x35mm, 9 degree backsweep, 6 degree upsweep",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 35mm Clamp, 35mm Reach",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Bike Yoke, Revive Max 3.0, 34.9, S1: 125mm, S2: 160mm, S3-S4: 185mm, S5-S6: 213mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Expert with MIMIC, Hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.63 kg (32 lb, 4.1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-epic-9-comp-listed-2026",
@@ -26215,7 +49915,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, Progressive XC Race Geometry, Rider-First Engineered™, threaded BB, 12x148mm UDH compatible rear dropout, internal cable routing, 120mm of travel, Optimized for wireless drivetrain",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox SID Select, Ride Dynamics developed 3 position, Debon Air, 15x110mm, 44mm offset, 120mm Travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox SIDLuxe Select+, Ride Dynamics developed 3 position, TwistLoc remote adjust, Solo Air, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S1000 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM S1000 Eagle, DUB, SM:165mm, M-XL:170mm, 34T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 180mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized Alloy 29, 27mm internal width, tubeless",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Specialized alloy front hub disc, sealed cardridge bearings, 6-bolt, 15x110mm thru-axle, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy, sealed cartridge bearings, 12x148mm thru-axle, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Fast Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Air Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Alloy Minirise, 10mm rise, 750mm, 35mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Alloy XC 2-bolt stem, 60mm/70mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic, 30.9, SM: 125mm, M: 150mm, L-XL: 170mm Travel, 0mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Comp, chrome alloy rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "11.78 kg (25 lb, 15.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-sram-gx-eagle-transmission-derailleur-listed-2026",
@@ -26296,7 +50108,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Öhlins RXF38 M.2 29, TTX Twin Tube Damping, external low speed rebound adjust, external high and low speed compression adjustment, 15x110mm, 44mm offset, 160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Öhlins TTX 22 M Coil, Ride Dynamics trail tune, external rebound adjust, external high and low speed compression adjustment, 210x55, S2: 434lbs, S3: 480lbs, S4: 525lbs, S5: 571lbs, S6: 605lbs",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle Transmission Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle Crankset, 32T ring, 55mm Chainline, S2-S3:165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BSA 73mm Wide, Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX Eagle Transmission Cassette, 12spd, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "TRP DH-R EVO, 4-piston caliper, hydraulic disc, 220mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "TRP DH-R EVO, 4-piston caliper, hydraulic disc, 203mm",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Roval Traverse, hookless alloy, 30mm inner width, tubeless ready, Front: 29, Rear: 27.5",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148mm, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Sapim Force",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, 2Bliss Ready, 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID GRAVITY casing, GRIPTON® T9/T7 compound, 2Bliss Ready, 27.5x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Deity, Racepoint, 5-degree upsweep, 9-degree backsweep, 810 width, S2: 25mm rise: S3-S6: 38mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Deity, 35mm clamp, 35mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "PNW Loam Dropper, tool-less travel adjust, Range lever, 34.9, S2: 150mm, S3: 170mm, S4-S6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails, S1-S2: 155mm, S3-S6: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.30kg (33 lb, 11.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-epic-9-sport-listed-2026",
@@ -26376,7 +50295,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, Progressive XC Race Geometry, Rider-First Engineered™, threaded BB, 12x148mm UDH compatible rear dropout, internal cable routing, 120mm of travel, Optimized for wireless drivetrain",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox REBA, Motion Control damper, 15x110mm, 44mm offset, 120mm Travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox SIDLuxe Select+, Ride Dynamics developed 3 position, Lever adjust, Solo Air, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S1000 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Eagle 70, 165/170mm, 55mm chainline, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM DB4, 4-piston caliper, hydraulic disc, 180mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM DB4, 4-piston caliper, hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized Alloy, Tubeless ready, 27mm inner width, disc, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy, sealed cartridge bearings, 12x148mm thru-axle, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Fast Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Air Trak, Flex Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Alloy XC minirise, double-butted alloy, 8-degree backsweep, 6-degree upsweep, 10mm rise, 31.8mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 3D-forged alloy, 4-bolt, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "TranzX Dropper, 30.9mm, SM: 100mm, M: 125mm, L-XL: 150mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "11.91 kg (26 lb, 4.1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-levo-4-x-listed-2026",
@@ -26460,7 +50491,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo 4 carbon frame, 150mm travel, w/SWAT storage, side entry battery, fork travel up to 180mm, adjustable head angle, BB height, chainstay length",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX Factory 38, GRIP X2 damper, high/low speed compression adjust, high/low speed rebound adjust, 15x110mm axle, 44mm offset, 160mm travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Fox Float X Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Ultimate with Discrete Clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX Eagle Transmission Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX Carbon crank, 160mm, ISIS interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX Transmission, XS 1297, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Ultimate, 4-piston caliper, hydraulic disc, 220mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Ultimate, 4-piston caliper, hydraulic disc, 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse HD 29\", hookless carbon, 30mm inner width, tubeless ready, DT Swiss 240 Hub, 15 x 110mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse HD 27.5\", hookless carbon, 30mm inner width, tubeless ready, DT Swiss 240 Hub, 12 x 148mm, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID Gravity, T9, TLR, 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID Gravity casing, Gripton T7/T9 compound, 27.5X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "RaceFace Era Carbon Handlebars, 35mm clamp, back-sweep 8-degrees, up-sweep 5 degrees, 800mm width, S1/S2: 40mm rise, S3-S6: 55mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry 9 A35 Mountain stem, 35mm clamp, 40mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox Reverb AXS, 34.9mm, S2: 125mm, S3: 150mm, S4-6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Power Pro Mirror w/hollow Ti rails, 143mm/155mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "27.25 kg (60 lb, 1.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-4-comp-alloy-listed-2026",
@@ -26544,7 +50682,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo 4 alloy frame, 150mm travel, adjustable chainstay, adjustable head tube angle, adjustable bottom bracket, internal SWAT storage 148mm spacing, 29\" front wheel/27.5\" rear wheel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Rhythm, GRIP damper, two position Sweep adjustment, 15x110mm QR axle, 44mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Fox FLOAT X Genie, Performance series, 210x55, Low speed rebound adjust, climb switch",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Specialized 3.1 Motor, 105Nm torque, 810W power",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Eagle 90T, single click, with MMX",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Eagle 90 T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM S1000 Alloy crank, ISIS interface, 155mm length",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized alloy rear hub disc, sealed cartridge bearings, 6-Bolt, 12x148mm thru-axle, 32h, HG Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher GRID Gravity Radial T9 TLR Enduro Tire 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Butcher GRID Gravity Radial T9 TLR Enduro Tire 27.5x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy handlebars, 35mm diameter, 8 degree back sweep, 6 degree up sweep, S1/S2: 780mm/30mm rise, S3-S6: 800mm/50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Xfusion Manic, infinite adjustable, two bolt head, Remote SLR LE lever, 34.9, S1: 125mm, S2: 150mm, S5: 170, S4: 200mm, S5-S6: 230mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "26.37 kg (58 lb, 2.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-demo-11-frameset-listed-2026",
@@ -26618,7 +50878,29 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "ridingStyle": "Developed over three years with World Cup-winning prototypes and the fastest riders on the planet, Demo 11 had one objective: go faster everywhere",
   "highlights": [],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Rear Shock",
+    "value": "Rockshox Vivid Coil Ultimate DH, 250x75mm,S3 - 450lbs., S4 - 500lbs., S5 - 525lbs",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX HighGear Crankset, 165mm length.",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM GXP",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "5.79 kg (12 lb, 12.2 oz) with Cranks and HighGear System",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-elite-alloy-listed-2026",
@@ -26699,7 +50981,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "All New SRAM Rockshox Lyrik Ultimate, 29\" 160mm (S2-S6)",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "All New Rockshox Super Deluxe Select GENIE, GENIE adjustable airspring, rebound adjust, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM 90 trigger, 12-speed, single click",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Eagle 90 T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Eagle 90, S1-S3: 165mm, S4-S6: 170mm, 55mm chainline, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Ultimate B1, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Ultimate B1, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse Rim 29\", hookless alloy, 30mm inner width, tubeless ready, DT Swiss 370 Hub, 15x110mm, 28h, Sapim Force Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse Rim, hookless alloy, 30mm inner width, tubeless ready, DT Swiss 370 Hub, 15x110mm, 28h, Sapim Force Spokes, S1-S2: 27.5\", S3:-S6: 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, TLR, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, Gripton T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized, 6000 series alloy, 6-degree upsweep, 8-degree backsweep. S1-S2: 780 width, 20mm rise: S3-S6: 800 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 35mm Clamp, 35mm Reach",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Xfusion Manic, infinite adjustable, two bolt head, Remote SLR LE lever, 34.9, S2: 125mm, S3: 170mm, S4-S6: 190mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "16.79 kg (37 lb, 0.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-rockhopper-sport-listed-2026",
@@ -26784,7 +51163,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "27.5"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "SR Suntour XCM 29, 30mm stanchions, Rx Tune, coil spring, QR, 90/100mm travel (size-specific), 42mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "microSHIFT Advent, 9-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "microSHIFT Advent, 1x9 w/ clutch",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Stout 1x, forged alloy",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Square-tapered, 73mm, internal bearings, 122.5mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "microSHIFT, CS-H093, 11-46T, 9-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC eGlide11-Speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano BR-MT200, hydraulic disc, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano BR-MT200, hydraulic disc, 180mm",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized alloy, disc only, double-wall, 25mm inner width, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy, Sealed bearing, 6-Bolt, disc, 100x9mm spacing, quick-release",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy Sealed bearing, 6-Bolt, disc, 135x9mm spacing, quick-release",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Ground Control, 27.5/29x2.35, T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Ground Control, 27.5/29x2.35, T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy Mini Rise, 9-degree backsweep, 15mm rise, 31.8mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "3D-forged alloy, 31.8mm, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt clamp, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Sport, Steel rails, 155/143mm",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Specialized, platform",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-p-3-listed-2026",
@@ -26862,7 +51343,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "brakeInterface": "disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "2025 Marzocchi Bomber DJ, 26in, 100mm Travel, Grip, Sweep-Adj, Matte Blk, Neutral/Matte Blk Logo, 15x100mm, 37mm Offset",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Alloy crankset, 1x direct mount chainring, 165mm length",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "30T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "73mm BSA,24mm Spindle Diameter",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC Z610, single speed, 1/2x3/32\"",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Tektro, mechanical disc, resin pads, 160mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM DB4, 4-piston caliper, hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "P.Series, 32 Hole, 26mm ID, disc brake only",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Specialized alloy front hub disc, sealed cardridge bearings, 6-bolt, 15x110mm thru-axle, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Bear Pawl, 6-bolt, 12x148TA, 32h, single speed",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Kicker Wirebead, 26x2.1\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Kicker Wirebead, 26x2.1\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized P.Series MTB Dirt, 6061 alloy, 9-degree backsweep, 6-degree upsweep, 38mm rise, 750mm width, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 31.8mm Clap, 35mm Reach",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Specialized, 6061 alloy, 2-bolt clamp, 0mm setback, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized P.series, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Specialized, platform",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "11.29 kg (24 lb, 14.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-4-expert-listed-2026",
@@ -26946,7 +51524,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo 4 carbon frame, 150mm travel, w/SWAT storage, side entry battery, fork travel up to 180mm, adjustable head angle, BB height, chainstay length",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Rockshox Zeb Select+, high/low speed compression adjust, rebound adjust, 15x110mm axle, 44mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "All New Rockshox Super Deluxe Select + GENIE, RCT damper with (LSC) Low Speed Compression, GENIE adjustable airspring, rebound adjust, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Specialized 3.1 Motor, 105Nm torque, 810W power",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Alloy crank, ISIS interface, 155mm length",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG-1275 Transmission 12-Speed 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse Alloy 29\", DT Swiss 370, 15x110mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse Alloy 27.5\", DT Swiss 370 XD freehub body, 12x148mm, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher GRID Gravity Radial T9 TLR Enduro Tire 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Butcher GRID Gravity Radial T9 TLR Enduro Tire 27.5x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy handlebars, 35mm diameter, 8 degree back sweep, 6 degree up sweep, S1/S2: 780mm/30mm rise, S3-S6: 800mm/50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 35mm Clamp, 35mm Reach",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Bike Yoke, Revive Max 3.0, 34.9, S1: 125mm, S2: 160mm, S3-S4: 185mm, S5-S6: 213mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Bridge Comp with Mimic",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "24.72 kg (54 lb, 8.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-expert-listed-2026",
@@ -27027,7 +51717,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Rockshox Lyrik Select+, 29\" 160mm (S2-S6)",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "All New Rockshox Super Deluxe Select + GENIE, RCT damper with (LSC) Low Speed Compression, GENIE adjustable airspring, rebound adjust, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle Crankset, 32T ring, Integrated Guard, 55mm Chainline",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG-1275 Transmission 12-Speed 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse 29\" Rim, hookless alloy, 30mm inner width, tubeless ready, DT Swiss 370 Hub, 15x110mm, 28h, Sapim Force Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse Rim, hookless alloy, 30mm inner width, tubeless ready, DT Swiss 370 Hub, 12x148mm, 28h, Sapim Force Spokes, S1-S2: 27.5\", S3:-S6: 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, TLR, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, Gripton T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized, 6000 series alloy, 6-degree upsweep, 8-degree backsweep. S1-S2: 780 width, 20mm rise: S3-S6: 800 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 35mm Clamp, 35mm Reach",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Bike Yoke, Revive Max 3.0, 34.9, S2: 125mm, S3: 160mm, S4: 185mm, S5-S6: 213mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.26 kg (33 lb, 10.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-comp-alloy-sram-eagle-70-transmission-listed-2026",
@@ -27108,7 +51895,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Rhythm, GRIP damper, two position Sweep adjustment, 15x110mm QR axle, 44mm offset S1:150mm of travel, S2-S6:160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Performance with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Eagle 70",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Eagle 70 Transmission, 12-speed, easy shift under load",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Eagle 70, 165/170mm, 55mm chainline, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM DB8 Stealth, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM DB8 Stealth, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized alloy rear hub disc, sealed cartridge bearings, 6-Bolt, 12x148mm thru-axle, 28h, HG Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, TLR, 29X2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, Gripton T7 compound, TLR, S1-S2: 27.5x2.4\", S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized, 6000 series alloy, 6-degree upsweep, 8-degree backsweep. S1-S2: 780 width, 20mm rise: S3-S6: 800 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Xfusion Manic, infinite adjustable, two bolt head, Remote SLR LE lever, 34.9, S1: 125mm, S2: 150mm, S5: 170, S4-S5: 200mm, S6: 230mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "16.69 kg (36 lb, 12.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-stumpjumper-15-evo-frameset-listed-2026",
@@ -27185,7 +52079,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Short-travel control, playfulness, and ..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Rear Shock",
+    "value": "All New Rockshox Super Deluxe Ultimate GENIE, RC2T damper with (LSC) Low Speed Compression and (HSC) High Speed Compression, GENIE adjustable airspring, rebound adjust, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.99 kg (6 lb, 9.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-4-comp-listed-2026",
@@ -27269,7 +52175,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo 4 carbon frame, 150mm travel, w/SWAT storage, side entry battery, fork travel up to 180mm, adjustable head angle, BB height, chainstay length",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Rhythm, GRIP damper, two position Sweep adjustment, 15x110mm QR axle, 44mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Fox FLOAT X Genie, Performance series, 210x55, Low speed rebound adjust, climb switch",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Specialized 3.1 Motor, 105Nm torque, 810W power",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S1000 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM S1000 Alloy crank, ISIS interface, 155mm length",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized alloy rear hub disc, sealed cartridge bearings, 6-Bolt, 12x148mm thru-axle, 32h, HG Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher GRID Gravity Radial T9 TLR Enduro Tire 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Butcher GRID Gravity Radial T9 TLR Enduro Tire 27.5x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy handlebars, 35mm diameter, 8 degree back sweep, 6 degree up sweep, S1/S2: 780mm/30mm rise, S3-S6: 800mm/50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Xfusion Manic, infinite adjustable, two bolt head, Remote SLR LE lever, 34.9, S2: 150mm, S3: 170mm, S4: 200mm, S5-S6: 230mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "24.54 kg (54 lb, 1.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-rockhopper-comp-listed-2026",
@@ -27354,7 +52382,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "27.5"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "RockShox Judy, Solo Air, Turnkey damper, 46mm offset, QR, 80/90/100mm travel (size-specific), steel steerer",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM SL S100 Shift Lever",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S100, 12 Speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Stout 1x, forged alloy",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 30T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Square-tapered, 73mm, internal bearings, 122.5mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG-1210 Eagle, 11-50T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM S100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Tektro HD-M280, 2 Piston Hydraulic Brake, 180mm Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Tektro HD-M280, 2 Piston Hydraulic Brake, 180mm Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized Alloy, hookless, Tubeless ready, 25mm inner width",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy, Sealed bearing, 6-Bolt, disc, 100x9mm spacing, quick-release",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy Sealed bearing, 6-Bolt, disc, 135x9mm spacing, quick-release",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Ground Control, 27.5/29x2.35, T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Ground Control, 27.5/29x2.35, T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy Mini Rise, 9-degree backsweep, 15mm rise, 31.8mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "3D-forged alloy, 31.8mm, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt clamp, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Sport, Steel rails, 155/143mm",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Specialized, platform",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.32 kg (29 lb, 5.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-4-alloy-listed-2026",
@@ -27438,7 +52578,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo 4 alloy frame, 150mm travel, adjustable chainstay, adjustable head tube angle, adjustable bottom bracket, internal SWAT storage 148mm spacing, 29\" front wheel/27.5\" rear wheel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Marzocchi Bomber Z1, 29\", S2-S6: 160mm, S1: 150mm, sweep adjust compression",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Marzocchi Bomber Inline, Evol LV air sleeve, rebound adjust",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Specialized 3.1 Motor, 105Nm torque, 810W power",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Eagle 70 T-Type, single click with MMX",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Eagle 70 Transmission, 12-speed, easy shift under load",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM S1000 Alloy crank, ISIS interface, 155mm length",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM DB8 Stealth, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM DB8 Stealth, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized alloy rear hub disc, sealed cartridge bearings, 6-Bolt, 12x148mm thru-axle, 32h, HG Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher GRID Gravity Radial T9 TLR Enduro Tire 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Butcher GRID Gravity Radial T9 TLR Enduro Tire 27.5x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy handlebars, 35mm diameter, 8 degree back sweep, 6 degree up sweep, S1/S2: 780mm/30mm rise, S3-S6: 800mm/50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "TranzX dropper, 34.9mm, S1: 100mm, S2: 125mm, S3: 150mm. S4: 170mm, S5-S6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Bridge Saddle, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "26.0 kg (57 lb, 5.1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-rockhopper-expert-listed-2026",
@@ -27523,7 +52785,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "27.5"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "RockShox Judy, Solo Air, Turnkey damper, 46mm offset, QR, 80/90/100mm travel (size-specific), alloy steerer",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM S200 Eagle Trigger Shifter",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S200 Eagle",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Eagle S100, 30T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM Powerspline",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG-1210 Eagle, 11-50T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM CN S200 EAGLE DRVTRN XXX LINK",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM DB6, 4-piston caliper, hydraulic disc, 180mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM DB6, 4-piston caliper, hydraulic disc, 160mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized Alloy, hookless, Tubeless ready, 25mm inner width",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy, Sealed bearing, 6-Bolt, disc, 100x9mm spacing, quick-release",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy Sealed bearing, 6-Bolt, disc, 135x9mm spacing, quick-release",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Ground Control, 27.5/29x2.35, T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Ground Control, 27.5/29x2.35, T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy Mini Rise, 9-degree backsweep, 15mm rise, 31.8mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "3D-forged alloy, 31.8mm, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt clamp, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Specialized, platform",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.11 kg (28 lb, 14.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-epic-9-frameset-listed-2026",
@@ -27599,7 +52968,29 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "ridingStyle": "Epic 9 represents 24 years of winning XC innovation, distilled into the fastest race bike in the world.We started with Epic 8’s world-beating benchmark",
   "highlights": [],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "S-Works FACT 12m Carbon, Progressive XC Race Geometry, Rider-First Engineered™, threaded BB, 12x148mm UDH compatible rear dropout, internal cable routing, 120mm of travel, Optimized for wireless drivetrain",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox SID ULTIMATE Flight Attendant, Ride Dynamics developed 3 position, Debon Air, 15x110mm, 44mm offset, 120mm Travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "RockShox SIDLuxe ULTIMATE Flight Attendant, Ride Dynamics developed 3 position, Solo Air, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "3.49 kg (7 lb, 11.1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-r-comp-alloy-listed-2026",
@@ -27670,7 +53061,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "M5 Aluminum, SWAT downtube storage, 12x148mm UDH compatible rear dropout, side entry battery, adjustable geometry, 130mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 SL Performance, GRIP Damper, 140mm travel, 44mm offset, 15x110mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Performance GENIE, Ride Dynamics Developed, 2-position compression adjust, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Eagle 90T, single click, with MMX",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Eagle 90 T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Eagle 70, BROSE/ISIS, 160mm, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX Transmission, XS 1275, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Motive Bronze, 4-piston caliper, hydraulic disc, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized Alloy Rear Hub Disc, Sealed Cardridge Bearings, 6-Bolt, 12X148mm Thru-Axle, 32H, Xd Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Trail Control, GRID Casing, T9 Compound, TLR, 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Purgatory, GRID Trail Casing, T7 Compound, 29x2.4 (S1 27.5x2.4)",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Alloy, 30mm/40mm rise, 35mm, 800mm wide",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic, 34.9, S1-S2: 125mm, S3: 150mm, S4: 170mm, S5-S6: 190mm Travel, 0mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Comp, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "24.24 kg (53 lb, 7.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-levo-r-ultralight-listed-2026",
@@ -27751,7 +53259,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "motor": "Specialized 3.1 S-Works motor, 111Nm power, 850W power",
    "batteryWh": 600
   },
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m Carbon, carbon shock extension, titanium hardware, SWAT downtube storage, 12x148mm UDH compatible rear dropout, side entry battery, adjustable geometry, 130mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX 36 SL Factory, GRIP X Damper, HSC, LSC, LSR adjust, 140mm travel, 44mm offset, 15x110mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Factory GENIE, Ride Dynamics Developed, 2-position compression adjust, 190x45mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "600Wh Battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Ultimate with Discrete Clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX SL Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX Carbon crank, 160mm, ISIS interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX Transmission, XS 1297, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX, T-Type",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "TRICKSTUFF Direttissima, 4-piston, 200mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "TRICKSTUFF Direttissima, 4-piston, 180mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Control SL VI, Mini hooked carbon, 25mm inner width, tubeless ready, Industry 9 Solix hub, Vonoa Carbon spokes w/ Ti end pieces, 15x110mm",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Control SL VI, Mini hooked carbon, 25mm inner width, tubeless ready, Industry 9 Solix hub, Vonoa Carbon spokes w/ Ti end pieces, 12x148mm",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Trail Control, GRID Casing, T9 Compound, TLR, 29x2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Ground Control, Grid Lite Casing, T5/T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Control SL RISE Integrated cockpit, 50mm integrated stem, 8-degree backsweep, 2 degree upsweep, 780mm wide",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "BIKEYOKE REVIVE 3.0 - silver ltd, 30.9mm diameter, S2: 125mm, S3: 160mm, S4: 185mm, S5: 213mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power Mirror, Carbon rails, Carbon base, 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "18.84 kg (41 lb, 8.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-4-evo-pro-listed-2026",
@@ -27835,7 +53445,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "All New SRAM FS ZEB Ultimate, 29\" 180mm, Linear XL spring with ButterCups and adjustable bottom out, new Charger 3.2 damper with HSC and LSC, rebound adjust",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "All New Vivid Ultimate air, 230x62.5mm, Linear XL spring, RCT2 damper w/HSC and LCS adjust, and HBO adjust, rebound adjust",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "840Wh battery",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XO Alloy crank, 155mm, ISIS interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM 34t T-Type chainring, 104 BCD, steel",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1295, 12 speed, 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 220mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Traverse HD Carbon 29\" rim, DT Swiss 350, 29, 28H, carbon rim, 30mm inner width",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Traverse HD 350, 27.5\", 32H, carbon rim, 30mm inner width, DT Swiss 350 hub, 12x148",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID Gravity, T9, TLR, 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Cannibal GRID Gravity T9 TLR Downhill Tire 27.5x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Deity Speedway Carbon, 5-degree upsweep, 9-degree backsweep. S1-S2: 810 width, 30mm rise: S3-S6: 810 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Deity, 35mm clamp, 42mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Bike Yoke Revive Max 3.0, 34.9, S2:125mm, S3:160mm, S4: 185mm, S5/S6:213mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Expert with MIMIC, Hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "24.4 kg (53 lb, 12.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-pro-sram-x0-eagle-transmission-listed-2026",
@@ -27916,7 +53628,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Factory, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm QR axle, 44mm offset, S1:150mm of travel, S2-S6:160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever, LSC adjustment, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle Crankset, 32T ring, Integrated Guard, 55mm Chainline, S1-S3:165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XS 1295, 12 speed, 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, 29\", Industry 9 1/1 Hub, 15x110mm, 28h, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse SL II Rim, hookless carbon, 30mm inner width, tubeless ready, Industry 9 1/1 Hub, 15x110mm, 28h, Sapim D-Light Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, GRIPTON® T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Deity Speedway Carbon, 5-degree upsweep, 9-degree backsweep. S1-S2: 810 width, 30mm rise: S3-S6: 810 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Deity, 35mm clamp, 42mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Bike Yoke, Revive Max 3.0, 34.9, S1: 125mm, S2: 160mm, S3-S4: 185mm, S5-S6: 213mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Expert with MIMIC, Hollow Ti rails, S1-S2: 155mm, S3-S6:143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.05 kg (30 lb, 15.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-comp-sram-eagle-axs-listed-2026",
@@ -27997,7 +53806,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Rhythm, GRIP damper, two position Sweep adjustment, 15x110mm QR axle, 44mm offset S1:150mm of travel, S2-S6:160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Performance with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS Pod Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S1000 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Eagle 70, S1-S3: 165mm, S4-S6: 170mm, 55mm chainline, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Specialized alloy front hub disc, sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized alloy rear hub disc, sealed cartridge bearings, 6-Bolt, 12X148mm thru-axle, 32h, HG Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, GRIPTON® T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized, 6000 series alloy, 6-degree upsweep, 8-degree backsweep. S1-S2: 780 width, 20mm rise: S3-S6: 800 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic, infinite adjustable, two-bolt head, bottom mount cable routing, remote SLR LE lever, 34.9, S1: 125mm, S2: 150mm, S3: 170mm, S4-S6: 190mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails S1-S2: 155mm S3-S6: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.14 kg (33 lb, 6.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-expert-sram-gx-eagle-axs-transmission-listed-2026",
@@ -28078,7 +53994,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Performance Elite, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm Kabolt axle, 44mm offset, S1:150mm of travel, S2-S6:160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Performance Elite with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever, LSC adjustment, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle AXS Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle Crankset, S1-S3:165mm, S4-S6:170mm, 32T ring, Integrated Guard, 55mm Chainline",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB Threaded Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XG-1275 T-Type 12-Speed 10-52",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 200mm Centerline Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse 29\" Rim, hookless alloy, 30mm inner width, tubeless ready, DT Swiss 370 Hub, 15x110mm, 28h, Sapim Force Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse Rim, hookless alloy, 30mm inner width, tubeless ready, DT Swiss 370 Hub, 15x110mm, 28h, Sapim Force Spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, GRIPTON® T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized, 6000 series alloy, 6-degree upsweep, 8-degree backsweep. S1-S2: 780 width, 20mm rise: S3-S6: 800 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "PNW Loam Dropper, tool-less travel adjust, Range lever, 34.9, S1: 125mm, S2: 150mm, S3: 175mm, S4-S5: 200mm, S6: 225mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails S1-S2: 155mm, S3-S6: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.61 kg (32 lb, 3.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-evo-elite-alloy-sram-gx-eagle-listed-2026",
@@ -28160,7 +54173,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "RockShox Lyrik Ultimate, Charger 3 RC2 W/ButterCups, 15x110mm, 44mm offset, S1: 150mm of travel, S2-S6: 160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Rock Shox Super Deluxe Ultimate, Rx Trail Tune,RC2T Damper, Hydraulic Bottom Out control , S1:210x50mm, S2-S6:210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM GX, trigger, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle Alloy, DUB, 165/170/175mm, 32t",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "32T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BSA 73mm, Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Sram XG-1275, 12-speed, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Code RS, 4-piston caliper, hydraulic disc, 200mm Centerline",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Code RS, 4-piston caliper, hydraulic disc, 200mm Centerline",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Roval Traverse 29F/27.5R Alloy, 30mm inner width, hand-built, 2Bliss Ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Roval, sealed cartridge bearings, 15x110mm spacing, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Roval DT Swiss 370, Ratchet LN, SRAM XD driver body, 12mm thru-axle, 148mm spacing, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Competition Race",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, 2Bliss Ready, 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, GRIPTON® T7 compound, 2Bliss Ready, 27.5 x 2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized, 6061 alloy, 6-degree upsweep, 8-degree backsweep, 30mm rise, 780mm width",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Deity, 35.0mm",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "OneUp, Dropper Post-V2, MMX lever, 34.9 (S1:120mm, S2/S3:150mm, S4: 180mm, S5/S6: 210mm)",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "15.55kg (34 lb, 4.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-rockhopper-listed-2026",
@@ -28247,7 +54372,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "27.5"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "SR Suntour XCE 26/27.5/29, 28mm stanchions, coil spring, QR, 80/90/100mm travel (size-specific), 42mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano Altus, RapidFire Plus, 9-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Altus 2-speed",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Altus, 9-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Stout 2x, forged alloy",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Square-tapered, 73mm, internal bearings, 122.5mm spindle",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SunRace, 9-Speed, 11-36t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X9EPT, 9-speed, anti-corrosion coating w/ reusable Missing Link™",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Tektro HD-M280, 2-piston caliper, hydrailic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Tektro HD-M280, 2-piston caliper, hydrailic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized alloy, disc only, double-wall, 25mm inner width, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy, Sealed bearing, 6-Bolt, disc, 100x9mm spacing, quick-release",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy Sealed bearing, 6-Bolt, disc, 135x9mm spacing, quick-release",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Ground Control, 27.5/29x2.35, T5",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Ground Control, 27.5/29x2.35, T5",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy Mini Rise, 9-degree backsweep, 15mm rise, 31.8mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Stout 3D-forged alloy, 31.8mm, 6-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt clamp, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Sport, Steel rails, 155/143mm",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Specialized, platform",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.1 kg (31 lb, 1.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-alloy-frameset-listed-2026",
@@ -28324,7 +54561,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Short-travel control, playfulness..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Performance with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "4.46 kg (9 lb, 13.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-chisel-hardtail-comp-listed-2026",
@@ -28406,7 +54655,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "RockShox Judy Gold, Motion Control damper, Solo Air, 42mm offset, 15x110mm thru-axle, 100mm of travel (XS - 80mm travel)",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM NX Eagle, trigger, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM NX Eagle, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X1000 Eagle, DUB, 165/170/175mm",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "32t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BSA 73mm, Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM NX Eagle, 12-speed, 11-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX1 Eagle solid-pin, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Level T hydraulic disc, 2-Piston Caliper",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Level T hydraulic disc, 2-Piston Caliper",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized Alloy, Tubeless ready, 27mm inner width, disc, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy front hub, sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy rear hub, sealed cartridge bearings, 12x148mm thru-axle, 6-bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Fast Trak, Control Casing, T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Fast Trak, Control Casing, T5 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Alloy XC minirise, double-butted alloy, 8-degree backsweep, 6-degree upsweep, 10mm rise, 31.8mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 3D-forged alloy, 4-bolt, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Specialized Alloy, Single Bolt, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "11.76 kg (25 lb, 14.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-chisel-frameset-listed-2026",
@@ -28484,7 +54840,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "18.4% lighter than the closest competitor and sharing geometry and kinematics from our Wo..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Rear Shock",
+    "value": "RockShox Deluxe Select+, Ride Dynamics Tuned, Two Position, Rebound Adjust, 190x40mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.72kg (5 lb, 15.9 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-chisel-hardtail-listed-2026",
@@ -28566,7 +54934,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "RockShox Judy Silver, TurnKey damper, Solo Air, 42mm offset, 15x110mm thru-axle, 100mm of travel (XS - 80mm travel)",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM SX Eagle, trigger, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM NX Eagle, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM SX Eagle, Powerspline",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "32t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM Powerspline",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG-1210 Eagle, 11-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM, SX Eagle, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Level T hydraulic disc, 2-Piston Caliper",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Level T hydraulic disc, 2-Piston Caliper",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized 29, 27mm inner width, 28h, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy front hub, sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy rear hub, sealed cartridge bearings, 12x148mm thru-axle, 6-bolt, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Fast Trak, Control Casing, T7 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Fast Trak, Control Casing, T5 Compound, 29x2.35",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Alloy XC minirise, double-butted alloy, 8-degree backsweep, 6-degree upsweep, 10mm rise, 31.8mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 3D-forged alloy, 4-bolt, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt clamp, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-levo-sl-2-di2-listed-2026",
@@ -28650,7 +55120,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo SL Carbon Frame, Fact 11m Carbon, Carbon shock extension, 150mm travel, adjustable head angle, BB height, and compatible with 27.5 or 29\" wheels.",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Factory, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm QR axle, 44mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, S2-S6:210x55mm, S1: FOX FLOAT Factory 210x52.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano XTR Di2",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XTR Di2, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Carbon crankset, 165mm, Dub interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "Race Face alloy chainring, 104 BCD, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XTR, 12 Speed, 10-51T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR M9100, 12-speed w/ quick link",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano XTR 9220, 4-piston caliper, hydraulic disc, 203mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano XTR 9220, 4-piston caliper, hydraulic disc, 203mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse HD carbon, 29\", hookless carbon, 30mm inner width, tubeless ready, DT Swiss 240 Hub, 15x110mm, 28h, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse HD carbon, 27.5\", hookless carbon, 30mm inner width, tubeless ready, DT Swiss 240 DEG Hub, 12x148mm, 32h, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, TLR, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID GRAVITY casing, GRIPTON® T7/T9 compound, TLR, 27.5X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Race Face Era Carbon Handlebars, 35mm clamp, back-sweep 8-degrees, up-sweep 5 degrees, 800mm width, S1/S2: 40mm rise, S3-S6: 55mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Race Face Turbine R,35mm clamp,40mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "FOX Transfer Neo wireless, 34.9mm, S1: 100mm, S2: 125mm, S3: 175mm, S4-S6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Power Pro Mirror, Ti Rails, 143/155mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "18.0 kg (39 lb, 10.9 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-sl-2-expert-di2-listed-2026",
@@ -28732,7 +55309,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   },
   "compat": {
    "speeds": 12
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo SL carbon Frame, Fact 11m carbon, alloy shock extension, 150mm travel, adjustable head angle, BB height, and compatible with 27.5 or 29\" wheels.",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Performance Elite, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm QR axle, 44mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Performance Elite with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever , LSR adjustment, S2-S6:210x55mm, S1: FOX FLOAT Performance Elite 210x52.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano XT Di2",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XT Di2, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Alloy Crankset, 165mm, Dub interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "Race Face alloy chainring, 104 BCD, 32T",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XT M8200, 12-speed, 10-51",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT M8100, 12-speed w/ quick link",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Deore XT brake, 4 piston, Metal pad w/fin, 203mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Deore XT brake, 4 piston, Metal pad w/fin, 203mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Traverse Alloy 370, 29, 28H, alloy rim, 30mm inner width, 15x110mm, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Traverse Alloy 370, 27.5, 32H, alloy rim, 30mm inner width, DT Swiss 370 rear hub, 12x148mm, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, TLR, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID GRAVITY casing, GRIPTON® T7/T9 compound, TLR, 27.5X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy handlebars, 35mm diameter, 8 degree back sweep, 6 degree up sweep, S1/S2: 780mm/30mm rise, S3-S6: 800mm/50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "PNW Loam Dropper, tool-less travel adjust, Range lever, 34.9, S1: 125mm, S2: 150mm, S3: 175mm, S4-S5: 200mm, S6: 225mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Bridge Comp with Mimic",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "18.92 kg (41 lb, 11.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-kenevo-sl-2-frameset-listed-2026",
@@ -28812,7 +55496,39 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "motor": "Specialized SL 1.2 Custom Rx Trail Tuned Motor",
    "batteryWh": 320
   },
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m full carbon, 29\", full internal cable routing, 148mm spacing, fully sealed cartridge bearings, 170mm rear travel, geo adjust head tube, geo adjust horst pivot",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Rockshox Vivid Ultimate, 230x62.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Carbon crankset, 165mm, Dub interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM T-type ring, 32t, alloy",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.51 kg (18 lb, 12.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-p-4-frame-listed-2026",
@@ -28888,7 +55604,14 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "The lightweight, but tough alloy frame is desig..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Weight",
+    "value": "2.12kg (4 lb, 10.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-kenevo-sl-2-comp-listed-2026",
@@ -28972,7 +55695,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "FACT 11m full carbon, 29\", full internal cable routing, 148mm spacing, fully sealed cartridge bearings, 170mm rear travel, geo adjust head tube, geo adjust horst pivot",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "RockShox Zeb Select, Charger RC damper, 15x110mm, 44mm offset, 170mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "Rockshox SuperDeluxe Select rear shock, 230x62.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S-1000 Eagle AXS Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Alloy Crankset, 165mm, Dub interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM T-type ring, 32t, alloy",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 1270 Transmission Cassette, 12 Spd,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission 12-Speed Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Specialized alloy front hub disc, sealed cardridge bearings, 6-bolt, 15x110mm thru-axle, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized alloy rear hub disc, sealed cartridge bearings, 6-Bolt, 12X148mm thru-axle, 28h, HG Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID GRAVITY casing, GRIPTON® T9 compound, TLR, 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Butcher, GRID GRAVITY casing, GRIPTON® T9 compound, TLR, 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy handlebars, 35mm diameter, 8 degree back sweep, 6 degree up sweep, S1/S2: 780mm/30mm rise, S3-S6: 800mm/50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic, infinite adjustable, two-bolt head, bottom mount cable routing, remote SLR LE lever, 34.9mm, S2: 125mm, S3/S4: 150mm, S5: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "20.19 kg (44 lb, 8.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-turbo-levo-sl-2-comp-listed-2026",
@@ -29056,7 +55896,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo SL carbon Frame, Fact 11m carbon, alloy shock extension, 150mm travel, adjustable head angle, BB height, and compatible with 27.5 or 29\" wheels.",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Rhythm, GRIP damper, two position Sweep adjustment, 15x110mm QR axle, 44mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Performance with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever, LSR adjustment, S2-S6:210x55mm, S1: FOX FLOAT Performance 210x52.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller w/discrete clamp",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S-1000 Eagle AXS Transmission",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Alloy Crankset, 165mm, Dub interface",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM T-type ring, 32t, alloy",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 1270 Transmission Cassette, 12 Spd,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM 70 Transmission Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Specialized, hookless alloy, 30mm inner width, tubeless ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Specialized alloy front hub disc, sealed cartridge bearings, 6-bolt, 15x110mm thru-axle, 32h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Specialized alloy rear hub disc, sealed cartridge bearings, 6-Bolt, 12X148mm thru-axle, 28h, HG Steel Fhb",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Elemental",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, Gripton T9 compound, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID GRAVITY casing, Gripton T7/T9 compound, 27.5X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Alloy handlebars, 35mm diameter, 8 degree back sweep, 6 degree up sweep, S1/S2: 780mm/30mm rise, S3-S6: 800mm/50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "X-Fusion Manic, infinite adjustable, two-bolt head, bottom mount cable routing, remote SLR LE lever, 34.9, S1: 100mm, S2: 125mm, S3: 150mm, S4/S5: 170mm, S6: 190mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails 155/143",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "19.37 kg (42 lb, 11.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-pro-sram-x0-eagle-transmission-derailleur-listed-2026",
@@ -29137,7 +56094,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Factory, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm QR axle, 44mm offset, S1:140mm of travel, S2-S6:150mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, S1:210x52.5mm, S2-S6:210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X0 Eagle Transmission Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM X0 Eagle Crankset, 32T ring, Integrated Guard, 55mm Chainline, S1-S3:165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BSA 73mm Wide, Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM X0 Eagle Transmission Cassette, 12spd, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM X0 Eagle Transmission Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Silver, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Roval Traverse SL II, hookless carbon, 30mm inner width, tubeless ready, Front: 29, Rear: S1-S2: 27.5, S3- S6: 29",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Industry 9 1/1, 15x110mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Industry 9 1/1, 12x148mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Sapim D-Light",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, 2Bliss Ready, 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, GRIPTON® T7 compound, 2Bliss Ready, S1-S2: 27.5x2.3, S3- S6: 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Traverse SL Carbon, riser bar, 6-degree upsweep, 8-degree backsweep, 30mm rise, S1-S2: 780mm: S3-S6: 800mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Industry 9 Moutain stem, 35mm clamp, 40mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Bike Yoke, Revive Max, 34.9, S1: 125mm, S2: 160mm, S3-S4: 185mm, S5-S6: 213mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Expert with MIMIC, Hollow Ti rails, S1-S2: 155mm, S3-S6: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.99kg (30 lb, 13.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-turbo-levo-sl-2-frameset-listed-2026",
@@ -29217,7 +56281,39 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "motor": "Specialized 1.2 SL Custom RX Trail Tuned Motor, 50Nm power, 320W power",
    "batteryWh": 320
   },
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Levo SL carbon Frame, Fact 11m carbon, alloy shock extension, 150mm travel, adjustable head angle, BB height, and compatible with 27.5 or 29\" wheels.",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, S2-S6:210x55mm, S1: FOX FLOAT Factory 210x52.5mm",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Specialized SL1-320, fully integrated, 320Wh",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Eagle Crankset, 32T ring, Integrated Guard, 55mm Chainline, 165mm",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "SRAM T-type ring, 32t",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.55 kg (16 lb, 10.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-stumpjumper-15-sram-xx-eagle-transmission-derailleur-listed-2026",
@@ -29298,7 +56394,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Factory, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm QR axle, 44mm offset, S1:140mm of travel, S2-S6:150mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, S1:210x52.5mm, S2-S6:210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Ultimate Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM XX Eagle Transmission Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM XX Eagle Crankset, 32T ring, Integrated Guard, 55mm Chainline, S1-S3:165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BSA 73mm Wide, Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM XX Eagle SL Transmission Cassette, 12spd, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM XX Eagle SL Transmission Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Ultimate, 4-piston caliper, hydraulic disc, 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Ultimate, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Roval Traverse SL II, hookless carbon, 30mm inner width, tubeless ready, 28h, Front: 29, Rear: S1-S2: 27.5, S3- S6: 29",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 240, 15x110mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 240, 12x148mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "DT Swiss Aerolite",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, 2Bliss Ready, 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, GRIPTON® T7 compound, 2Bliss Ready, S1-S2: 27.5x2.3, S3- S6: 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Traverse SL Carbon, riser bar, 6-degree upsweep, 8-degree backsweep, 30mm rise, S1-S2: 780mm: S3-S6: 800mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Deity, 35mm clamp, 35mm length",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "RockShox, Reverb AXS, 30.9, S1: 125mm, S2: 150mm, S3-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Power Pro Mirror, Hollow Ti rails, S1-S2: 155mm, S3-S6: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.56kg (29 lb, 14.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-expert-sram-gx-eagle-transmission-derailleur-listed-2026",
@@ -29379,7 +56582,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Performance Elite, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm QR axle, 44mm offset, S1:140mm of travel, S2-S6:150mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Performance Elite with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, S1:210x52.5mm, S2-S6:210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM AXS POD Controller",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM GX Eagle Transmission Derailleur",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM GX Eagle Crankset, 32T ring, Integrated Guard, 55mm Chainline, S1-S3:165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB, BSA 73mm Wide, Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM GX Eagle Transmission Cassette, 12spd, 10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX Eagle Transmission Flattop Chain",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Maven Bronze, 4-piston caliper, hydraulic disc, S1-S2: 180mm, S3-S6: 200mm HS2 Rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Roval Traverse, hookless alloy, 30mm inner width, tubeless ready, Front: 29, Rear: S1-S2: 27.5, S3- S6: 29",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "DT Swiss 370, 15x110mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "DT Swiss 370, 12x148mm, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Sapim Force",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, 2Bliss Ready, 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, GRIPTON® T7 compound, 2Bliss Ready, S1-S2: 27.5x2.3, S3- S6: 29x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized, 6000 series alloy, 6-degree upsweep, 8-degree backsweep. S1-S2: 780 width, 20mm rise: S3-S4: 800 width, 30mm rise: S5-S6: 800 width, 40mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "PNW Loam Dropper, tool-less travel adjust, Range lever, 34.9, S1: 125mm, S2: 150mm, S3: 170mm, S4-S6: 200mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails, S1-S2: 155mm, S3-S6: 143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.47kg (31 lb, 14.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-evo-expert-shimano-xt-di2-listed-2026",
@@ -29458,7 +56768,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "electric": null,
   "compat": {
    "speeds": 12
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FOX FLOAT 36 Performance Elite, GRIP X2 damper, HS and LS rebound and compression adjustment, 15x110mm Kabolt axle, 44mm offset, S1:150mm of travel, S2-S6:160mm of travel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT X Performance Elite with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever, LSC adjustment, LSR adjustment, 210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano XT Di2",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XT Di2, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano XT, 55mm chainline, 32T, S1-S3: 165mm, S4-S6: 170mm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano, BB-MT801, Threaded",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XT M8200, 12-speed, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT CN-M8100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Deore XT brake, 4 piston, Metal pad w/fin, 203mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Deore XT brake, 4 piston, Metal pad w/fin, S1-S2: 180mm, S3-S6: 203mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Traverse 29\" Rim, hookless alloy, 30mm inner width, tubeless ready, DT Swiss 370, 15x110mm, 28h, Sapim Force Spokes, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Traverse Rim, hookless alloy, 30mm inner width, tubeless ready, DT Swiss 370, 15x110mm, 28h, Sapim Force Spokes, 6 bolt",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Butcher, GRID TRAIL casing, GRIPTON® T9 compound, TLR, 29X2.4",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Eliminator, GRID TRAIL casing, Gripton T7 compound, TLR, S1-S2: 27.5x2.4, S3- S6: 29x2.4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized, 6000 series alloy, 6-degree upsweep, 8-degree backsweep. S1-S2: 780 width, 20mm rise: S3-S6: 800 width, 50mm rise",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Alloy Trail Stem, 35mm bar bore",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "PNW Loam Dropper, tool-less travel adjust, Range lever, 34.9, S1: 125mm, S2: 150mm, S3: 175mm, S4-S5: 200mm, S6: 225mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Comp, Hollow Cr-mo rails S1-S2:155mm, S3-S6:143mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.48 kg (31 lb, 14.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-stumpjumper-15-alloy-frameset-listed-2026",
@@ -29535,7 +56942,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Short-travel control, playfulness, an..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Performance with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/LSR adjustment, S1:210x52.5mm, S2-S6:210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "4.31 kg (9 lb, 8.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-stumpjumper-15-frameset-listed-2026",
@@ -29612,7 +57031,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Short-travel control, playfulness, and effi..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Rear Shock",
+    "value": "FOX FLOAT Factory with Specialized GENIE Shock Tech, Ride Dynamics Trail Tune, 2-position lever w/3 setting Open mode tuning range, LSR adjustment, S1:210x52.5mm, S2-S6:210x55mm",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.84 kg (6 lb, 4.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-diverge-4-sram-red-axs-xplr-e1-listed-2026",
@@ -29699,7 +57130,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge FACT 11r carbon, SWAT™ Door integration, Future Shock suspension with integrated cable routing, threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, FACT 11r Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM RED AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED AXS XPLR E1, 13-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM RED E1 XPLR, DUB Wide, 40t, Quarq Power Meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed BB Alpha, BSA DUB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XPLR E1, 13-speed, 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra CLX III, Tubeless, 27mm internal width carbon rim, 25.5 mm depth, 4.9mm bead hook width, Roval LF18-F hub, 21h, Roval by ARRIS Composite Straight Pull Spokes (Ti end fittings)",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra CLX III, Tubeless, 27mm internal width carbon rim, 25.5 mm depth, 4.9mm bead hook width, Roval LF19-R hub, 24h, Roval by ARRIS Composite Straight Pull Spokes (Ti end fittings)",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire, 700x50c, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire, 700x50c, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Terra Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Terra Carbon Seat Post, 20mm Offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.2 kg (18 lb, 1.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-crux-5-expert-sram-force-axs-e1-xplr-listed-2026",
@@ -29786,7 +57309,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Crux 5 FACT 10r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Force AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1 XPLR, 13-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force E1 XPLR, DUB Wide, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68 Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1 XPLR, 13-speed, 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force Flattop E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra C III, 27mm inner width carbon rim, tubeless ready, 25.5mm depth, DT 370 hub, 24h, Sapim D-Light spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra C III, 27mm inner width carbon rim, tubeless ready, 25.5mm depth, DT 370 hub, 24h, Sapim D-Light spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Terra, carbon, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Rapide, alloy, 4 bolt, -6 degrees",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.22 kg (18 lb, 2.0 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-crux-5-sport-shimano-grx-listed-2026",
@@ -29871,7 +57491,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Crux 5 FACT 10r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shiimano GRX ST-RX820",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX RD-RX822-GS, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano GRX FC-RX820, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XT CS-M8100, 12-speed, 10-45t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT CN-M8100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano GRX BR-RX820",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano GRX BR-RX820",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G500 rim, 26mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G500 rim, 26mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear, 118.9mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Rapide, alloy, 4 bolt, -6 degrees",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.94 kg (19 lb, 11.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-4-expert-shimano-grx-di2-listed-2026",
@@ -29958,7 +57675,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge FACT 9r carbon, SWAT™ Door integration, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.2 w/ Smooth Boot, FACT 9r Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano GRX Di2 ST-RX825, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX Di2 RD-RX827, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano GRX FC-RX820, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XT M8200, 12-speed, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XT CN-M8100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano GRX BR-RX820, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano GRX BR-RX820, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra C III, 27mm inner width carbon rim, tubeless ready, 25.5mm depth, DT 370 hub, 24h, Sapim D-Light spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra C III, 27mm inner width carbon rim, tubeless ready, 25.5mm depth, DT 370 hub, 24h, Sapim D-Light spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Pro",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Terra Carbon Seat Post, 20mm Offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.38 kg (20 lb, 10.9 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-4-pro-ltd-shimano-xtr-di2-listed-2026",
@@ -30045,7 +57859,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge FACT 9r carbon, SWAT™ Door integration, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano GRX Di2 ST-RX825",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano XTR Di2 RD-M9250, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Easton EC90 ALX, 40t chainring, 4iiii power meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Easton Bottom Bracket, BSA 68",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano XTR CS-M9200, 12-speed, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano XTR CN-M9100",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano GRX BR-RX820, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano GRX BR-RX820, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra CLX III, Tubeless, 27mm internal width carbon rim, 25.5 mm depth, 4.9mm bead hook width, Roval LF18-F hub, 21h, Roval by ARRIS Composite Straight Pull Spokes (Ti end fittings)",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra CLX III, Tubeless, 27mm internal width carbon rim, 25.5 mm depth, 4.9mm bead hook width, Roval LF19-R hub, 24h, Roval by ARRIS Composite Straight Pull Spokes (Ti end fittings)",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire, 700x50c, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire, 700x50c, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Terra, carbon, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "S-Works SL, alloy, titanium bolts, 6-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Terra Carbon Seat Post, 20mm Offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.5 kg (18 lb, 11.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-4-expert-sram-rival-axs-e1-xplr-listed-2026",
@@ -30132,7 +58043,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge FACT 9r carbon, SWAT™ Door integration, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.2 w/ Smooth Boot, FACT 9r Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Rival AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS E1 XPLR, 13-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival E1 XPLR, DUB Wide, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68 Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival E1 XPLR, 13-speed, 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Rival E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Rival E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra C III, 27mm inner width carbon rim, tubeless ready, 25.5mm depth, DT 370 hub, 24h, Sapim D-Light spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra C III, 27mm inner width carbon rim, tubeless ready, 25.5mm depth, DT 370 hub, 24h, Sapim D-Light spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Pro",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Terra Carbon Seat Post, 20mm Offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Expert, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.36 kg (20 lb, 10.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-4-sport-carbon-shimano-grx-listed-2026",
@@ -30219,7 +58227,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge FACT 9r carbon, SWAT™ Door integration, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.1 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano GRX ST-RX610 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano GRX RX822, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano GRX FC-RX610, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano BSA Threaded 68mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano SLX, CS-M7100, 12-speed, 10-51t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano SLX CN-M7100, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano GRX BR-RX410 Hydraulic Disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano GRX BR-RX410 Hydraulic Disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G540 700c, Center Lock Disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G540 700c, Center Lock Disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Carbon, single-bolt, 27.2mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.79 kg (21 lb, 9.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-crux-5-sram-red-axs-xplr-e1-listed-2026",
@@ -30306,7 +58411,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "S-Works Crux 5 FACT 12r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM RED AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED AXS XPLR E1, 13-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM RED XPLR E1, Quarq power meter, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed BB Alpha, BSA DUB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XPLR E1, 13-speed, 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra Aero CLX, 27mm internal width, tubeless ready, 50mm depth, 18h, Roval LF18-F hub with ceramic SINC bearings, Centerlock disc, Roval by ARRIS, Composite Aero Spoke with Ti End Pieces",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra Aero CLX, 27mm internal width, tubeless ready, 45mm depth, 24h, Roval LF19-R hub with ceramic SINC bearings, Centerlock disc, Roval by ARRIS, Composite Aero Spoke with Ti End Pieces",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Terra Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset, Lightweight Saddle Clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.1 kg (15 lb, 10.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-crux-dsw-comp-sram-apex-xplr-listed-2026",
@@ -30392,7 +58589,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Apex, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex XPLR, mechanical, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Apex DUB Wide, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68 Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM APEX XPLR, 12sp, 11-44T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Apex D1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Apex, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Apex, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G500 rim, 26mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G500 rim, 26mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear, 118.9mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized, 3D-forged alloy, 4-bolt, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt Clamp, 12mm offset, 27.2mm, anti-corrosion hardware",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.58 kg (21 lb, 1.9 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-crux-5-frameset-listed-2026",
@@ -30471,7 +58760,29 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Not just because it’s our most aero."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "S-Works Crux 5 FACT 12r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset, Lightweight Saddle Clamp",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "1.63 kg (3 lb, 9.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-crux-5-ltd-sram-red-axs-xplr-e1-listed-2026",
@@ -30555,7 +58866,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "S-Works Crux 5 FACT 12r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM RED AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED AXS XPLR E1, 13-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM RED XPLR E1, Aero-X Sync chainring with Quarq power meter, 44t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Ceramic Speed BB Alpha, BSA DUB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XPLR E1, 13-speed, 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra Aero CLX, 27mm internal width, tubeless ready, 50mm depth, 18h, Roval LF18-F hub with ceramic SINC bearings, Centerlock disc, Roval by ARRIS, Composite Aero Spoke with Ti End Pieces",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra Aero CLX, 27mm internal width, tubeless ready, 45mm depth, 24h, Roval LF19-R hub with ceramic SINC bearings, Centerlock disc, Roval by ARRIS, Composite Aero Spoke with Ti End Pieces",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Terra Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset, Lightweight Saddle Clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "S-Works Power with Mirror",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.1 kg (15 lb, 10.4 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-crux-dsw-frameset-listed-2026",
@@ -30633,7 +59036,19 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "We took everything we learned creating the carbon Crux and used our patented D’Aluis..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "2.05 kg (4 lb, 8.3 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-4-comp-alloy-sram-apex-eagle-listed-2026",
@@ -30720,7 +59135,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge E5 Premium Aluminum, SWAT™ Door integration, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.1 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Apex",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Apex Eagle 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Apex DUB Wide, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68 Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM PG-1210 Eagle, 12-speed, 11-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM NX Eagle, 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Apex, Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Apex, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt Clamp, 12mm offset, 27.2mm, anti-corrosion hardware",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "10.6 kg (23 lb, 5.9 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-4-comp-carbon-sram-eagle-axs-listed-2026",
@@ -30807,7 +59319,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge FACT 9r carbon, SWAT™ Door integration, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.2 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Apex AXS",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM S1000 Eagle AXS",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Apex DUB Wide, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68 Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM 12-speed,10-52t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM GX T-Type 12 speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Apex, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Apex, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G540 rim, 24mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Terra Carbon Seat Post, 20mm Offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.7 kg (21 lb, 6.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-4-sport-alloy-shimano-cues-w-shadow-plus-listed-2026",
@@ -30893,7 +59502,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge E5 Premium Aluminum, SWAT™ Door integration, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.1 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano CUES ST-U6030",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano CUES 11-speed w/ Shadow Plus",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano CUES FC-U6040, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano, CS-LG400-11, CUES, 11-Speed, 11-50t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano CN-LG500",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano CUES Hydraulic Brake",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano CUES Hydraulic Brake",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "AXIS Elite Disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "AXIS Elite Disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear Hover, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Future Stem, Comp",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt Clamp, 12mm offset, 27.2mm, anti-corrosion hardware",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Sport, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "10.74 kg (23 lb, 10.8 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-4-pro-sram-force-axs-e1-xplr-listed-2026",
@@ -30980,7 +59686,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Specialized Diverge FACT 9r carbon, SWAT™ Door integration, Future Shock suspension, threaded BB, internal routing, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Future Shock 3.3 w/ Smooth Boot, FACT Carbon 12x100mm, thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Force AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Force AXS E1 XPLR, 13-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force E1 XPLR, DUB Wide, 40t, Quarq Power Meter",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68 Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Force E1 XPLR, 13-speed, 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Force E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Force E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra CL III, 27mm internal width, tubeless ready, 25.5mm depth, 21h, DT 350 hub, Centerlock disc, DT Swiss Revolution spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra CL III, 27mm internal width, tubeless ready, 25.5mm depth, 24h, DT 350 hub, Centerlock disc, DT Swiss Revolution spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Tracer TLR All Terrain Gravel Tire 700x45, Tan Sidewall, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Terra, carbon, 103mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Specialized Pro SL, alloy, 4-bolt",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Terra Carbon Seat Post, 20mm Offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Power Pro Mirror, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.72 kg (19 lb, 3.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-crux-5-comp-sram-rival-axs-e1-xplr-listed-2026",
@@ -31067,7 +59870,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Crux 5 FACT 10r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM Rival AXS E1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM Rival AXS E1 XPLR, 13-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Rival E1 XPLR, DUB Wide, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68 Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM Rival E1 XPLR, 13-speed, 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM Rival E1",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM Rival E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM Rival E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "DT Swiss G500 rim, 26mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "DT Swiss G500 rim, 26mm internal width, tubeless ready, 24h, Specialized full sealed bearing thru axle hub, centerlock disc, DT Swiss Champion 14G stainless steel spokes, DT Swiss brass nipples",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Adventure Gear, 118.9mm drop x 70mm reach x 12º flare",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Roval Rapide, alloy, 4 bolt, -6 degrees",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Power Comp, chrome alloy rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "8.89 kg (19 lb, 9.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-diverge-3-alloy-shimano-cues-listed-2026",
@@ -31152,7 +60052,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FACT carbon, full carbon steerer, 12x100 mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "Shimano CUES ST-U6030",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano CUES FD-U6030, braze-on",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano CUES RD-U6020, 10-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Shimano CUES FC-U6030, 46/32T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Shimano Threaded BSA BB",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "Shimano CUES CS-LG300-10, 10 speed, 11-39t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC XGlide",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano CUES BR-U6030 Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano CUES BR-U6030 Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "AXIS Sport Disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "AXIS Sport Disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder Wirebead Fast Gravel 700X40C",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder Wirebead Fast Gravel 700X40C",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Specialized Shallow Drop, 6061, 70x125mm, 31.8mm clamp",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "3D-forged alloy, 31.8mm, 7-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Alloy, 2-bolt Clamp, 12mm offset, 27.2mm, anti-corrosion hardware",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Body Geometry Bridge Saddle, steel rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "10.48 kg (23 lb, 1.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-crux-5-s-level-sram-red-axs-xplr-e1-listed-2026",
@@ -31239,7 +60236,99 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "700c"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Crux 5 FACT 10r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "SRAM RED AXS E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM RED AXS XPLR E1, 13-speed",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM RED XPLR E1, Quarq power meter, 40t",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM DUB BSA 68 Wide",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "SRAM RED XPLR E1, 13-speed, 10-46t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "SRAM RED E1 Flattop 12-speed",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "SRAM RED E1, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Roval Terra Aero CL, 27mm internal width, tubeless ready, 50mm depth, 21h, DT 350 hub, Centerlock disc, DT Swiss Competition spokes",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Roval Terra Aero CL, 27mm internal width, tubeless ready, 45mm depth, 24h, DT 350 hub, Centerlock disc, DT Swiss Competition spokes",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Pathfinder 700x45, Tubeless Ready",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Roval Terra Cockpit, Integrated Bar/Stem",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Power Pro Mirror, hollow Ti rails",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "7.7 kg (16 lb, 15.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-crux-5-frameset-listed-2026",
@@ -31318,7 +60407,29 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "Not just because it’s our most aero."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Crux 5 FACT 10r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle, flat-mount disc, UDH dropout",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "S-Works Tarmac SL8 Carbon seat post, FACT Carbon, 15mm offset",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "1.75 kg (3 lb, 13.7 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-s-works-crux-frameset-listed-2026",
@@ -31396,7 +60507,24 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "It’s not j..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "S-Works FACT Carbon, 12x100mm thru-axle, flat-mount disc",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Roval Alpinist Carbon Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "1.46 kg (3 lb, 3.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-riprock-comp-24-listed-2026",
@@ -31477,7 +60605,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 11,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "FORK, X-FUSION, 22-XFRMFRC-100-605, ROAMIN 34, 100MM TRAVEL, XXXX, 1.125 IN UPPER,1.5 LOWER,15MM THRU AXLE, 24IN,41 MM OFFSET, DISC, POST MOUNT, 160 BRAKE",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged Alloy, 140mm length, narrow Q-factor, w/ chainguard",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "30T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Square-tapered, 68mm",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X11, 11-speed w/ Missing Link™",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Promax DSK-926, Hydraulic Disc Brake, Adjustable Reach",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Promax DSK-926, Hydraulic Disc Brake, 160mm Rotor, Adjustable Reach",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "24\" Sleeved, 16mm Depth, 25mm Internal Width, Tubeless-ready",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy, 6-Bolt , 28H, 15x110 Boost",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy, 6-Bolt , 28H, 12x148 Boost, 11-speed compatiable",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Specialized Ground Control Wirebead 24x2.35\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Specialized Ground Control Wirebead 24x2.35\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Double Butted Alloy, 40mm rise , 11deg back sweep, 2.5deg up seep, 31.8mm, 620mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Stout 3D-forged alloy, 31.8mm, 6-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Specialized, 6061 alloy, 2-bolt clamp, 0mm setback, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Kids Saddle, 130mm",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Specialized, platform",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "11.94 kg (26 lb, 5.2 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-riprock-24-listed-2026",
@@ -31559,7 +60784,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "chainrings": 1,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "A1 Premium Butted Alloy, Alloy steerer, 15x110 mm, W/Mini Fender",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "microSHIFT Advent SL-M6190, 9-speed , short reach triggers for easy operation",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "microSHIFT Advent, 1x9 w/ clutch",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged Alloy, 140mm length, narrow Q-factor, w/ chainguard",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "30T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Square-tapered, 68mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "microSHIFT Advent, 9-speed, 11-42t",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X9EPT, 9-speed, anti-corrosion coating w/ reusable Missing Link™",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Promax DSK-926, Hydraulic Disc Brake, Adjustable Reach",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Promax DSK-926, Hydraulic Disc Brake, 160mm Rotor, Adjustable Reach",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Alloy, 16mm depth, 25mm internal width, 28H",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy, 6-Bolt, 28H, 15x110 Boost",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy, 6-Bolt, 28H, 12x148 Boost, 11-speed compatiable",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Kicker Wirebead 24X2.1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Kicker Wirebead 24X2.1",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Double Butted Alloy, 40mm rise , 11deg back sweep, 2.5deg up seep, 31.8mm, 620mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Stout 3D-forged alloy, 31.8mm, 6-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Specialized, 6061 alloy, 2-bolt clamp, 0mm setback, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Kids Saddle, 130mm",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Nylon platform w/ reflectors",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "10.56 kg (23 lb, 4.5 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-riprock-20-listed-2026",
@@ -31640,7 +60977,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 8,
    "brakeInterface": "disc",
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "A1 Premium Butted Alloy, Alloy steerer, 15x110 mm, W/Mini Fender",
+    "componentId": null
+   },
+   {
+    "label": "Shift Levers",
+    "value": "microSHIFT Acolyte Quick Trigger SL-M6285-R, 8-Speed, short reach triggers for easy operation",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "microSHIFT Super Short derailleur RD-M5185S, 8-Speed, w/ Clutch",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged Alloy, 115mm length, narrow Q-factor, w/ chainguard",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "40T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Square-tapered, 68mm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette",
+    "value": "microSHIFT Acolyte CS-H084, 12-42t, 8-speed",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X8 w/ Missing Link™",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Promax DSK-926, Hydraulic Disc Brake, Adjustable Reach",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Promax DSK-926, Hydraulic Disc Brake, 160mm Rotor, Adjustable Reach",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Alloy, 16mm depth, 25mm internal width, 28H",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Alloy, 6-Bolt, 28H, 15x110 Boost",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Alloy, 6-Bolt, 28H, 12x148 Boost, 11-speed compatiable",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Kicker Wirebead 20X2.1",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Kicker Wirebead 20X2.1",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Double Butted Alloy, 40mm rise , 11deg back sweep, 2.5deg up seep, 31.8mm, 620mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Stout 3D-forged alloy, 31.8mm, 6-degree rise",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Specialized, 6061 alloy, 2-bolt clamp, 0mm setback, 30.9mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Bridge Kids Saddle, 130mm",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Nylon platform w/ reflectors",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.58 kg (21 lb, 1.9 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-riprock-coaster-16-listed-2026",
@@ -31716,7 +61165,94 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "And to make sure of it, we designed the bike with tons of cool feature..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Hi-Ten steel",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Hi-Ten steel, 89mm",
+    "componentId": null
+   },
+   {
+    "label": "Chainrings",
+    "value": "Steel, 26T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Feimin FP-B701, 68MM",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC Z510, single-speed, anti-drop, 1/2\"x1/8\"",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "16\" alloy, 16mm depth, 21mm internal width, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Steel, bolt-on, 100mm spacing, loose ball bearings, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Coaster brake, bolt-on, loose ball bearings, 110mm spacing, 16T cog, 28h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Rhythm Lite, 30 TPI, wire bead, 16x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Rhythm Lite, 30 TPI, wire bead, 16x2.3\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "BMX, steel, 10-degree backsweep, 4-degree upsweep, 115mm rise, 520mm width, 22.2mm",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Die Cast Aluminum, 37mm length, 10 degree, 22.2 clamp diameter",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Steel, 22.2mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Specialized Kids' Henge",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Nylon platform w/ reflectors",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "9.1kg (20 lb, 1 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "specialized-hotwalk-listed-2026",
@@ -31792,7 +61328,69 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "It's for kids ..."
   ],
   "electric": null,
-  "compat": {}
+  "compat": {},
+  "componentSpec": [
+   {
+    "label": "Fork",
+    "value": "Formed steel tubes, 95mm Spacing",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "12\" alloy, 16mm depth, 21mm internal width",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Bolt-on, 95mm spacing, loose ball bearings, 16h",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Bolt-on, 95mm spacing, loose ball bearings, 16h",
+    "componentId": null
+   },
+   {
+    "label": "Spokes",
+    "value": "Stainless, 14g",
+    "componentId": null
+   },
+   {
+    "label": "Front Tire",
+    "value": "Rhythm Lite Airless, 12x2.3",
+    "componentId": null
+   },
+   {
+    "label": "Rear Tire",
+    "value": "Rhythm Lite Airless, 12x2.3",
+    "componentId": null
+   },
+   {
+    "label": "Handlebars",
+    "value": "Steel, 400mm width, 20mm rise, 8-degree backsweep",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Die Cast Aluminum, 35mm length, 22.2 clamp diameter",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Steel, 22.2mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Hotwalk Integrated Saddle/Seatpost",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "4.1 kg (9 lb, 0.6 oz)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-byb-p10-listed-2026",
@@ -31859,7 +61457,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "20"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern BYB, 6061-AL, Aluminum, TriFold patented technology, EFBE tested: ISO 4210",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore, 1 x 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore Shadow+",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "FSA Vero, Built for Tern, 53T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "11-36T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X10",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Kinetix SpeedStop V-brakes, stainless hardware",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Kinetix SpeedStop V-brakes, stainless hardware",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Kinetix Pro, Paired Spoke technology, 16H",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Kinetix Pro, Paired Spoke technology, 20H",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Kojak, Performance Line, 35-406, puncture protection",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL, Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros (G2), adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Telescope, 34.9/30.9 mm, 2014-AL",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter+ by Velo, patented GripPad design, PrimeGel padding",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS EZY",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux by FSA, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12 kg (26.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-byb-p8-listed-2026",
@@ -31926,7 +61626,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "20"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern BYB, Aluminum, TriFold patented technology, EFBE tested: ISO 4210",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano, 1 x 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Alivio, Shadow RD",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061-AL, 52T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 11-32T, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Kinetix SpeedStop V-brakes, stainless hardware",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Kinetix SpeedStop V-brakes, stainless hardware",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Kinetix Neutron Mini 74, sealed cartridge bearing Opt: BioLogic Joule 3 dynamo",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Novatec, sealed cartridge bearing",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Citizen, 42-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL, Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros (G2), adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Telescope, 34.9/30.9 mm, 2014-AL",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter, patented GripPad design",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS EZY",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.3 kg (31.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-byb-s11-listed-2026",
@@ -31993,7 +61800,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "wheelSizes": [
     "20"
    ]
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern BYB, Aluminum, TriFold patented technology, EFBE tested: ISO 4210",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano 105, 1 x 11 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105, Shadow RD",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Crankset, FSA Gossamer Pro, 54T MegaEVO BB386",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, BB-EVO8681",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 105, 11-32T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano, 11 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Tektro V, swivel link, race pad",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Tektro V, swivel link, race pad",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Kinetix Pro X, Paired Spoke technology, straight-pull design, 16H",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Kinetix Pro X, Paired Spoke technology, straight-pull design, 16H",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Marathon Racer, 40-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Kinetix Pro X, double-butted 7050-AL, Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros (G2), adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Telescope, 34.9/30.9 mm, 2014-AL",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SMC30 Pro, TiNox Rails",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS UB-LITE EZY",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux Pro, angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.7 kg (28 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-eclipse-p20-listed-2026",
@@ -32061,7 +61970,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "26"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Eclipse, hydroformed aluminum w/ smooth TIG welding, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Tiagra trigger, 2x10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Tiagra",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Tiagra",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "FSA Vero, 50/34T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano Deore, 11-32T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X10",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Tektro Auriga, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Tektro Auriga, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Kinetix Pro Disc, Paired Spoke technology, Shimano Centerlock, 20H",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Kinetix Pro Disc, Paired Spoke technology, Shimano Centerlock, 20H",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Kojak, 35-559, foldable, puncture protection, 95 psi",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Kinetix Comp, 6061-Al, VRO butted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Syntace VRO, adjustable",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-Al, forged clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter+, patented GripPad design, PrimeGel padding",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "LiteForm QR, alloy body, QR right/standard left",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.22 kg (26.9 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-eclipse-x22-listed-2026",
@@ -32129,7 +62145,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "26"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Eclipse, hydroformed aluminum w/ smooth TIG welding, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano 105 trigger, 2x11 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano 105",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano 105",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "FSA Gossamer Pro, 50/34T, BB386 oversized aluminum spindle",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA MegaEVO, BB386",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 105, 11-28T, 11 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Shimano 105, 11 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Deore, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Deore, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Kinetix Pro X Disc, Paired Spoke technology, straight-pull design, 20H, asymmetric flange, 700 g",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Kinetix Pro X Disc, Paired Spoke technology, straight-pull design, 20H, asymmetric flange, 820 g",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Kojak, 35-559, foldable, puncture protection, 95 psi",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Kinetix Pro X, 7050-Al, multi-stage butted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Syntace VRO, adjustable",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Stasis by Syntace, 7050-AL, hard-anodized",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SMC10 Sport Gel",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS UB-LITE EZY, QR",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux Pro, angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "11.3 kg (24.9 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-nbd-p8i-listed-2026",
@@ -32201,7 +62324,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern NBD, 6061-AL, Patented design, EFBE Tri-Test approved: 140 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-AL, hydroformed, EFBE approved: 140 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 400",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano 8 spd.",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern NBD custom, forged 6061-AL crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "16T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC for eBike, EPT corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Nexus 8",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern RideEasy Suspension, 34.9 mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Upright by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS Platform, Tern custom design",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux by FSA, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.7 kg (52.2 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-nbd-s5i-listed-2026",
@@ -32273,7 +62503,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern NBD, 6061-AL, Patented design, EFBE Tri-Test approved: 140 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-AL, hydroformed, EFBE approved: 140 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance, 300% Assist, 65 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 500",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano 5 spd.",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern NBD custom, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT4, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT4, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Nexus INTER-5E",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, Performance Line, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern RideEasy Suspension, 34.9 mm, Air cartridge, Preload adjustable",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Upright by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS Platform, Tern custom design",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux by FSA, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.4 kg (51.6 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-orox-r14-27-5-listed-2026",
@@ -32340,7 +62677,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 14,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Orox, 6061-AL, patented design, EFBE tested and approved",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Atlas X, butted chromoly steel, EFBE tested and approved",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "800 Wh, Bosch Dual Battery pack ready",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Rohloff, Twist",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern Orox custom, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas X, ultra-heavy duty cargo construction, 27.5\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas X, ultra-heavy duty cargo construction, 27.5\"",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas X, custom doublewall construction",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas X, CNC body, disc cooling fins, 150 Thru-Axle, integrated Tern Tool with 5mm hex/T20 Torx",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Rohloff, 526% range, 197 OLD",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Johnny Watts 27.5\" x 4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Level Nine, AL-7050, 800 mm, riser, eMTB approved",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Level Nine, 45 mm (M), 65 mm (L), Syntace VR-3 certified",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Syntace P6 AL7050, 34.9 mm, Syntace VR-3 SP-approved",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM, E-Mountain Sport, CrMo Rail",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MTB, non-slip",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA, 1.5\", angular contact bearings",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "M: 37.7 kg (83.1 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-orox-r14-29-listed-2026",
@@ -32407,7 +62866,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 14,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Orox, 6061-AL, patented design, EFBE tested and approved",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Atlas X, butted chromoly steel, EFBE tested and approved",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "800 Wh, Bosch Dual Battery pack ready",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Rohloff, Twist",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern Orox custom, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas X, ultra-heavy duty cargo construction, 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas X, ultra-heavy duty cargo construction, 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas X, custom doublewall construction",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas X, CNC body, disc cooling fins, 150 Thru-Axle, integrated Tern Tool with 5mm hex/T20 Torx",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Rohloff, 526% range, 197 OLD",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Johnny Watts 29\" x 2.6\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Level Nine, AL-7050, 800 mm, riser, eMTB approved",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Level Nine, 45 mm (M), 65 mm (L), Syntace VR-3 certified",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Syntace P6 AL7050, 34.9 mm, Syntace VR-3 SP-approved",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM, E-Mountain Sport, CrMo Rail",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MTB, non-slip",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA, 1.5\", angular contact bearings",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "M: 34.9 kg (76.9 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-orox-s12-27-5-listed-2026",
@@ -32474,7 +63055,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Orox, 6061-AL, patented design, EFBE tested and approved",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Atlas X, butted chromoly steel, EFBE tested and approved",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "725 Wh or 800 Wh, Bosch Dual Battery pack ready",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore, 1 x 12 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore XT Shadow+",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern Orox custom",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 10-51T, 12 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC 12 spd, for eBike, EPT corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas X, ultra-heavy duty cargo construction, 27.5\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas X, ultra-heavy duty cargo construction, 27.5\"",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas X, custom doublewall construction",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas X, CNC body, disc cooling fins, Boost Thru-Axle, integrated Tern Tool with 5mm hex/T20 Torx",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Tern Atlas X, CNC body, disc cooling fins, Boost Thru-Axle, Syntace X-12 standard",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Vee Snow Ball, 27.5 x 4 or Schwalbe Johnny Watts 27.5\" x 4\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Level Nine, AL-7050, 800 mm, riser, eMTB approved",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Level Nine, 45 mm (M), 65 mm (L), Syntace VR-3 certified",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Syntace P6 AL7050, 34.9 mm, Syntace VR-3 SP-approved",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM, E-Mountain Sport, CrMo Rail",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MTB, non-slip",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA, 1.5\", angular contact bearings",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "M: 37.1 kg (81.8 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-orox-s12-29-listed-2026",
@@ -32541,7 +63249,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 12,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Orox, 6061-AL, patented design, EFBE tested and approved",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Atlas X, butted chromoly steel, EFBE tested and approved",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance CX, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "725 Wh or 800 Wh, Bosch Dual Battery pack ready",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore, 1 x 12 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore XT Shadow+",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern Orox custom",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 10-51T, 12 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC 12 spd, for eBike, EPT corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas X, ultra-heavy duty cargo construction, 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas X, ultra-heavy duty cargo construction, 29\"",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas X, custom doublewall construction",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas X, CNC body, disc cooling fins, Boost Thru-Axle, integrated Tern Tool with 5mm hex/T20 Torx",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Tern Atlas X, CNC body, disc cooling fins, Boost Thru-Axle, Syntace X-12 standard",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Johnny Watts 29\" x 2.6\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Level Nine, AL-7050, 800 mm, riser, eMTB approved",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Level Nine, 45 mm (M), 65 mm (L), Syntace VR-3 certified",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Syntace P6 AL7050, 34.9 mm, Syntace VR-3 SP-approved",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SM, E-Mountain Sport, CrMo Rail",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MTB, non-slip",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "FSA, 1.5\", angular contact bearings",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "M: 34.4 kg (75.8 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-quick-haul-d8-listed-2026",
@@ -32611,7 +63446,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Quick Haul, Patented Design, 6061-AL, EFBE Tri-Test approved: 150 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Cargo, steel, EFBE approved: 150 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Active Line Plus, 270% Assist, 50 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 400",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Altus, 1 x 8 spd, trigger",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Altus Shadow",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern custom, forged 6061-AL crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 11-34T, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC for eBike, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano disc",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Low riser, 31.8, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Speedlifter, 150 mm extension, 3D Forged stem, 31.8",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "31.6 mm, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Velo Comfort",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "TH, cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "22.8 kg (50.3 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-quick-haul-long-d9-listed-2026",
@@ -32677,7 +63629,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 9,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Quick Haul Long, Patented Design, 6061-AL, DIN 79010 certified: 190 kg (419 lb)",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Cargo, Aluminum alloy, DIN 79010 certified: 190 kg (419 lb)",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 400",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Tektro, 1 x 9 spd, trigger",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Tektro custom for Tern, 1 x 9 spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern custom, forged 6061-AL crankarm, anti-drop chainring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Tektro 11-42T, 9 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC for eBike, 9 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Tektro hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Tektro hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas H, cargo",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "9 spd, disc, aluminum, Boost",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Tern x Schwalbe Super Moto-X, Green Guard puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Low riser ergo, 31.8, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Speedlifter, adjustable, 3D forged stem, 31.8",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "34.9 mm, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Velo Comfort",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "TH, cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "29.3 kg (64.6 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-quick-haul-p9-listed-2026",
@@ -32747,7 +63816,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Quick Haul, Patented Design, 6061-AL, EFBE Tri-Test approved: 150 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Cargo, steel, EFBE approved: 150 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance, 300% Assist, 65 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 400",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Alivio, 1 x 9 spd, trigger",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Alivio Shadow",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern custom, forged 6061-AL crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 11-34T, 9 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC for eBike, 9 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano disc",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Low riser, 31.8, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Speedlifter, 150 mm extension, 3D Forged stem, 31.8",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "31.6 mm, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Velo Comfort",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "TH, cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "22.9 kg (50.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-short-haul-d8-listed-2026",
@@ -32814,7 +64000,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Short Haul, Patented Design, 6061-AL, EFBE Tri-Test approved: 140 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Steel, EFBE approved: 140 kg",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "1 x 8 spd, trigger",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Altus",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061-AL crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "FSA, Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "11-34T, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "8 spd, disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Low riser, 31.8, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Forged, 31.8",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "31.6 mm, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Velo Comfort",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "TH, cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "16.1 kg (35.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-verge-r10-listed-2026",
@@ -32882,7 +64175,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Verge, hydroformed aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Tiagra, 1x10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Tiagra",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force 1 carbon, X-SYNC chainring, 52T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM GXP",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 11-32T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X10",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Tektro, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Tektro, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Novatec, sealed cartridge bearing, disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Novatec, sealed cartridge bearing, disc",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 50-406",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Kinetix Comp, double-butted 6061-AL, for VRO",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Syntace VRO, adjustable, Built for Tern",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Strut, 2014-AL, 2 bolt clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter+, patented GripPad design, PrimeGel padding",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "LiteForm QR, alloy body, QR right/standard left",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.3 kg (27.1 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-eclipse-d16-listed-2026",
@@ -32950,7 +64350,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "26"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Eclipse, hydroformed aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Integrated, hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano, 2 x 8 spd, trigger",
+    "componentId": null
+   },
+   {
+    "label": "Front Derailleur",
+    "value": "Shimano Altus",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Claris",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061-AL crank, 50/34T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano, 11-32T, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum, disc only",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano, Centerlock disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano, Centerlock disc",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Spicer Plus, 40-559, Puncture Guard, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros (G2), adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-Al, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter, patented GripPad design",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, alloy body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.8 kg (32.6 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-link-b8-listed-2026",
@@ -33013,7 +64525,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   "compat": {
    "speeds": 8,
    "chainrings": 1
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Link, patented design, aluminum, forged hinge",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano, 1 x 8 spd, twist",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Tourney TX",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061-AL, 52T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Two-piece",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 12-32T or 11-32T, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Mechanical disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Mechanical disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "8 spd, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Kenda, 20 x 1.75\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Telescope, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Comfort",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, nylon body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Ball bearing",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.6 kg (30 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-verge-d9-listed-2026",
@@ -33077,7 +64696,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 9,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Verge, hydroformed aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Integrated, hi-tensile steel, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano, trigger, 1 x 9 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Sora",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061-AL, 53T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "11-34T, 9 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC 9 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Shimano disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano disc",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "CST, 37-451, light skinwall, 60 tpi",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Syntace VRO, adjustable, Built for Tern",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter, patented GripPad design",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, alloy body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.8 kg (28.2 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-verge-p10-listed-2026",
@@ -33141,7 +64867,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 10,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Verge, hydroformed aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore, 1 x 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore Shadow+",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "FSA Vero, Built for Tern, 53T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "11-40T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X10",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Kinetix Pro Disc, Paired Spoke technology, Shimano Centerlock, 20H",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Kinetix Pro Disc, Paired Spoke technology, Shimano Centerlock, 20H",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe One, 28-451, ADDIX compound, 115 psi",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Kinetix Comp, double-butted 6061-AL, for VRO",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Syntace VRO, adjustable, Built for Tern",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Strut, 2014-AL, 2 bolt clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter+, patented GripPad design, PrimeGel padding",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "LiteForm QR, alloy body, QR right/standard left",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "11.7 kg (25.8 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-verge-s8i-listed-2026",
@@ -33209,7 +65037,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Verge, hydroformed aluminum w/ smooth TIG welding, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Alfine, 1 x 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Gates Carbon Drive",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, doublewall",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "BioLogic Joule 3 dynamo, disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Alfine, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Kinetix Comp, double-butted 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Stasis by Syntace, 7050-AL, hard-anodized",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter+, patented GripPad design, PrimeGel padding",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS UB-LITE EZY, QR",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux Pro, angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.3 kg (31.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-verge-x11-listed-2026",
@@ -33273,7 +65203,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 11,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Verge, hydroformed aluminum w/ smooth TIG welding, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-AL, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "SRAM GX trigger, 1 x 11 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "SRAM X1",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "SRAM Force® 1 carbon, X-SYNC chainring, 52T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "SRAM GXP",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "10–42T, 11 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC X11",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano Deore, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano Deore, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Kinetix Pro X Disc, Paired Spoke technology, straight-pull design, 20H, 600 g",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Kinetix Pro X Disc, Paired Spoke technology, SRAM XD Driver, straight-pull design, 20H, asymmetric flange, 720 g",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe One, 28-451, ADDIX compound, 115 psi",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Kinetix Pro X, double-butted 7050-AL, for VRO",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Syntace VRO, adjustable, Built for Tern",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Stasis by Syntace, 7050-AL, hard-anodized",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Ergon SMC10 Sport Gel",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux Pro, angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "10.2 kg (22.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-gsd-p00-listed-2026",
@@ -33338,7 +65365,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
   },
   "compat": {
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern GSD, 6061-AL, patented MultiTruss design, DIN 79010 certified: 210 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 1.5\" tapered Chromoly steerer, 32 mm stanchions, Thru-axle, 50 mm travel, EFBE approved: 210 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch 545/540 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 800 Wh max capacity",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Enviolo, Twist",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern GSD, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 180 mm rotor, Sport pads",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 180 mm rotor, Sport pads",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas, heavy duty cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas, heavy duty cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas, ultra wide 36 mm, dual reinforced joint",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas, Cooling Fins, Boost Thru-Axle, sealed cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Enviolo Heavy Duty, 380% continuously variable range, Boost",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "F: Schwalbe Big Ben Plus, Green Guard puncture protection, Reflex R: Tern x Schwalbe Super Moto-X, Green Guard puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9 mm, with LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern GSD by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "36.3 kg (80 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-gsd-p10-listed-2026",
@@ -33405,7 +65554,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 10,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern GSD, 6061-AL, patented MultiTruss design, DIN 79010 certified: 210 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 1.5\" tapered Chromoly steerer, 32 mm stanchions, Thru-axle, 50 mm travel, EFBE approved: 210 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch 500 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 500 Wh max capacity",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore, 1 x 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore Shadow+",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern GSD, forged 6061-AL DH crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 11-42T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC 10 spd, for eBike, EPT corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 180 mm rotor, Sport pads",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT5, 4-piston hydraulic disc, 180 mm rotor, Sport pads",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas, heavy duty cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas, heavy duty cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas, ultra wide 36 mm, dual reinforced joint",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas, Cooling Fins, Boost Thru-Axle, sealed cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Tern Atlas, Cooling Fins, Boost Thru-Axle, Syntace X-12 standard",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "F: Schwalbe Big Ben Plus, Green Guard puncture protection, Reflex R: Tern x Schwalbe Super Moto-X, Green Guard puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9 mm, with LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern GSD by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "34.64 kg (76.4 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-gsd-r14-listed-2026",
@@ -33472,7 +65748,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 14,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern GSD, 6061-AL, patented MultiTruss design, DIN 79010 certified: 210 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 1.5\" tapered Chromoly steerer, 34 mm stanchions, Thru-axle, DIN 79010 certified: 210 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch 800 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 800 Wh max capacity",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Rohloff E14, e-shift 14 spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern GSD, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT-C ABS, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT-C ABS, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas, heavy duty cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas, heavy duty cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas, ultra wide 36 mm, dual reinforced joint",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas, Cooling Fins, Boost Thru-Axle, sealed cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Rohloff E14, 526% range, Boost",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Pick-Up, cargo-optimized, Super Defense puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9 mm, with Cane Creek suspension and LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern GSD by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "38.77 kg (85.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-gsd-s10-listed-2026",
@@ -33539,7 +65937,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 10,
    "chainrings": 1,
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern GSD, 6061-AL, patented MultiTruss design, DIN 79010 certified: 210 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 1.5\" tapered Chromoly steerer, 34 mm stanchions, Thru-axle, DIN 79010 certified: 210 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Cargo Line, 400% Assist, 85 Nm Torque, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch 545/540 PowerPack, Fast Swap, Dual Battery bays, optional 2 x 800 Wh max capacity",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore, 1 x 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore Shadow+",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern GSD, forged 6061-AL DH crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 11-42T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC 10 spd, for eBike, EPT corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT-C ABS, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT-C ABS, 4-piston hydraulic disc, 203 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas, heavy duty cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas, heavy duty cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas, ultra wide 36 mm, dual reinforced joint",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas, Cooling Fins, Boost Thru-Axle, sealed cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Tern Atlas, Cooling Fins, Boost Thru-Axle, Syntace X-12 standard",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Pick-Up, cargo-optimized, Super Defense puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9 mm, with Cane Creek suspension and LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern GSD by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "37.32 kg (82.3 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-hsd-p00-listed-2026",
@@ -33608,7 +66133,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern HSD, 6061-AL, patented design, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 32 mm stanchions, Thru-axle, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance (BDU34, 340% Assist, 75 Nm Torque, max speed 25 km/h (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 540 or 545",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Enviolo, Twist",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern HSD, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas H, cargo",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Novatec, Thru-axle, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Enviolo Heavy Duty, 380% continuously variable range",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9mm, with LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "28.9 kg (63.7 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-hsd-p10e-listed-2026",
@@ -33679,7 +66326,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern HSD, 6061-AL, patented design, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 32 mm stanchions, Thru-axle, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance (BDU34, 340% Assist, 75 Nm Torque, max speed 25 km/h (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 540 or 545",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "TRP E.A.S.I., wireless e-shifter, w/ Bosch eShift",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "TRP E.A.S.I. A10, w/ Bosch eShift, 10 spd, Built for Tern",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern HSD",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano CUES, Linkglide 11-39T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC eGlideS, 10 spd, EPT corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas H, cargo",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Novatec, Thru-axle, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Novatec, disc, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9mm, with LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "28.3 kg (62.4 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-hsd-p10e-sport-listed-2026",
@@ -33750,7 +66524,134 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern HSD, 6061-AL, patented design, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 32 mm stanchions, Thru-axle, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance Sport (BDU34, 600% Assist, 90 Nm Torque, max speed 28 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 545",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "TRP E.A.S.I., wireless e-shifter, w/ Bosch eShift",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "TRP E.A.S.I. A10, w/ Bosch eShift, 10 spd, Built for Tern",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern HSD",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano CUES, Linkglide 11-39T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC eGlideS, 10 spd, EPT corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas H, cargo",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Novatec, Thru-axle, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Novatec, disc, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9mm, with LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "28.4 kg (62.6 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-hsd-p5i-listed-2026",
@@ -33821,7 +66722,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern HSD, 6061-AL, patented design, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 32 mm stanchions, Thru-axle, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance (BDU34, 340% Assist, 75 Nm Torque, max speed 25 km/h (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 540 or 545",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Nexus 5",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern HSD, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas H, cargo",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Novatec, Thru-axle, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Nexus 5",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9mm, with LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "28.1 kg (61.9 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-hsd-s9i-listed-2026",
@@ -33892,7 +66915,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern HSD, 6061-AL, patented design, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 34 mm stanchions, Thru-axle, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance PX (BDU34, 600% Assist, 90 Nm Torque, max speed 25 km/h (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 540 or 545",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "3x3 CMD, wireless e-shifter, w/ Bosch eShift",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern HSD, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT4, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT4, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas H, cargo",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas, Boost Thru-Axle, sealed cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "3x3 NINE, 9 spd, w/ Bosch eShift",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Ben Plus, 55-406, Green Guard puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9mm, with Cane Creek suspension and LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "28.9 kg (63.7 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-hsd-s9i-sport-listed-2026",
@@ -33963,7 +67108,129 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern HSD, 6061-AL, patented design, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Suntour custom for Tern, 34 mm stanchions, Thru-axle, EN17860 certified: 190 kg",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance Sport (BDU34, 600% Assist, 90 Nm Torque, max speed 28 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack 545",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "3x3 CMD, wireless e-shifter, w/ Bosch eShift",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern HSD, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDX belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT4, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT4, hydraulic disc, 180 mm rotor",
+    "componentId": null
+   },
+   {
+    "label": "Front Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rear Wheel",
+    "value": "Tern Atlas H, cargo wheel",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Tern Atlas H, cargo",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Tern Atlas, Boost Thru-Axle, sealed cartridge bearings",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "3x3 NINE, 9 spd, w/ Bosch eShift",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Ben Plus, 55-406, Green Guard puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern VLT 41/34.9mm, with Cane Creek suspension and LightAction levers",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Urban with non-slip surface, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux Pro Taper by FSA, 1.5\", angular contact bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "29 kg (63.9 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-node-d7i-listed-2026",
@@ -34031,7 +67298,109 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "24"
    ],
    "brakeType": "v-brake"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Node, aluminum, OCL+ joint, 2 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Integrated, hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Nexus, 1 x 7 spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Cold-forged 6061 aluminum crank arms, hand-polished",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "17T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "408H, 3/32\"",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Aluminum; Opt: Shimano 1.5W dynamo",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Nexus 7 freewheel",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, 50-507, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-Al, Tern Andros butted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-Al, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "BioLogic Como DLX",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, alloy body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "14.2 kg (31.3 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-node-d8-listed-2026",
@@ -34099,7 +67468,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "24"
    ],
    "brakeType": "v-brake"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Node, aluminum, OCL+ joint, 2 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Integrated, hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano,1 x 8 spd, trigger",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Claris",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Cold-forged 6061 aluminum crank arms, hand-polished",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano, 11-30T, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Aluminum; Opt: Shimano 1.5W dynamo",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Formula, 8 spd cassette, QR",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, 50-507, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros butted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "BioLogic Como DLX",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, alloy body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "13.3 kg (29.3 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-link-a7-listed-2026",
@@ -34163,7 +67639,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
    "speeds": 7,
    "chainrings": 1,
    "brakeType": "v-brake"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Link, aluminum, forged hinge",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano, 1 x 7 spd, twist",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Tourney",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061-AL, 52T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Two-piece",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 14-28T, 7 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "7 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "7 spd, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Kenda, 20 x 1.75\"",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Telescope, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Comfort",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, nylon body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Ball bearing",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.1 kg (26.7 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-link-c8-listed-2026",
@@ -34231,7 +67814,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "v-brake"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Link, aluminum, FBL 2 Joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Integrated, hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano, 1 x 8 spd, twist",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Tourney TX",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061 aluminum, 52T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Two-piece",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 8 spd, 11-30T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Mini, aluminum Opt: Panasonic dynamo",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "8 spd, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 50-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Fixed height, forged QR",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Velo Comfort",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, alloy body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.8 kg (28.2 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-vektron-p10-listed-2026",
@@ -34302,7 +67992,124 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Vektron, 6061-AL, hydroformed aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-Al, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Deore, 1 x 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Deore Shadow+",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern custom, forged 6061-AL crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 11-36T, 10 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "10 spd, DHT for eBike, GST corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT4, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT4, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Novatec, sealed cartridge bearing, disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Novatec, sealed cartridge bearing, disc",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, Performance Line, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Kinetix Comp, double-butted 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Telescope, 34.9/30.9 mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter+ by Velo, patented GripPad design, PrimeGel padding",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS EZY",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux by FSA, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "22.2 kg (48.9 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-vektron-p5i-listed-2026",
@@ -34373,7 +68180,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Vektron, 6061-AL, hydroformed aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-Al, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Nexus, 5 spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern custom, Gates CDX CNC machined beltring",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Gates CDX, precision CNC machined cog",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "Gates Carbon Drive CDC belt",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Magura MT4, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Magura MT4, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Nexus 5",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Big Apple, Performance Line, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Tern Sweep, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Telescope, 34.9/30.9 mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Upright by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS EZY",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux by FSA, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.6 kg (52 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-vektron-p7i-listed-2026",
@@ -34444,7 +68358,119 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Vektron, 6061-AL, hydroformed aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-Al, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Active Line Plus, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Nexus, 7 spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern custom, forged 6061-AL crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Motor integrated",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "16T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "DHT for eBike, GST corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Shimano, hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Nexus 7",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Telescope, 34.9/30.9 mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Porter+ by Velo, patented GripPad design, PrimeGel padding",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS EZY",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux by FSA, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "22.9 kg (50.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-vektron-p8i-listed-2026",
@@ -34515,7 +68541,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "hydraulic-disc"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Vektron, 6061-AL, hydroformed aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Tern Tarsus, 6061-Al, hydroformed",
+    "componentId": null
+   },
+   {
+    "label": "Motor",
+    "value": "Bosch Performance, max speed 25 kph (EU); max speed 20 mph (US)",
+    "componentId": null
+   },
+   {
+    "label": "Battery",
+    "value": "Bosch PowerPack",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Nexus, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Tern custom, forged 6061-AL crankarm",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "16T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "KMC for eBike, EPT corrosion resistant coating",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "Hydraulic disc",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Kinetix Comp, for disc",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Disc, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Nexus 8",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 55-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL, Tern Andros adapted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "Tern Telescope, 34.9/30.9 mm",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Tern Upright by Velo",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "MKS EZY",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Tern Flux by FSA, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "23.8 kg (52.5 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-link-b7-listed-2026",
@@ -34583,7 +68716,114 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "v-brake"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Link, aluminum, FBL 2 Joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano, 1 x 7 spd, twist",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Tourney",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061 aluminum, 52T",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Two-piece",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "Shimano 7 spd, 14-28T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "7 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Mini, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "7 spd, aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Road Cruiser, 47-406, KevlarGuard, puncture protection",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Telescope, 6061-AL",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "Velo Comfort",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, alloy body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Cartridge",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.1 kg (26.7 lb)",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-link-d7i-listed-2026",
@@ -34651,7 +68891,104 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "v-brake"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Link, aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Integrated, hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano Nexus, 1 x 7 spd",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061 aluminum crank arms, hand-polished",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "17T",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "408H",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Mini, aluminum Opt: Panasonic dynamo",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Shimano Nexus 7 freewheel",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 50-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-AL, Andros butted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros, adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "BioLogic Como DLX",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, alloy body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   }
+  ]
  },
  {
   "id": "tern-link-d8-listed-2026",
@@ -34719,6 +69056,113 @@ export const OFFICIAL_BIKES: BikeModel[] = [
     "20"
    ],
    "brakeType": "v-brake"
-  }
+  },
+  "componentSpec": [
+   {
+    "label": "Frame",
+    "value": "Tern Link, aluminum, OCL+ joint, 3 patented technologies",
+    "componentId": null
+   },
+   {
+    "label": "Fork",
+    "value": "Integrated, hi-tensile steel",
+    "componentId": null
+   },
+   {
+    "label": "Shifter",
+    "value": "Shimano, 1 x 8 spd, trigger",
+    "componentId": null
+   },
+   {
+    "label": "Rear Derailleur",
+    "value": "Shimano Claris",
+    "componentId": null
+   },
+   {
+    "label": "Crankset",
+    "value": "Forged 6061 aluminum crank arms, hand-polished",
+    "componentId": null
+   },
+   {
+    "label": "Bottom Bracket",
+    "value": "Cartridge, sealed bearings",
+    "componentId": null
+   },
+   {
+    "label": "Cassette/Freewheel",
+    "value": "11-32T, 8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Chain",
+    "value": "8 spd",
+    "componentId": null
+   },
+   {
+    "label": "Front Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rear Brake",
+    "value": "V, aluminum, linear spring",
+    "componentId": null
+   },
+   {
+    "label": "Rims",
+    "value": "Doublewall aluminum",
+    "componentId": null
+   },
+   {
+    "label": "Front Hub",
+    "value": "Mini, aluminum, QR Opt: Panasonic dynamo",
+    "componentId": null
+   },
+   {
+    "label": "Rear Hub",
+    "value": "Formula, 8 spd cassette",
+    "componentId": null
+   },
+   {
+    "label": "Tires",
+    "value": "Schwalbe Motion Big Apple, 50-406, puncture protection, Reflex",
+    "componentId": null
+   },
+   {
+    "label": "Handlebar",
+    "value": "Flat bar, 6061-Al, Andros butted",
+    "componentId": null
+   },
+   {
+    "label": "Stem",
+    "value": "Tern Andros (G2), adjustable, forged construction, patented technology",
+    "componentId": null
+   },
+   {
+    "label": "Seatpost",
+    "value": "SuperOversize, 6061-AL, micro-adjust clamp",
+    "componentId": null
+   },
+   {
+    "label": "Saddle",
+    "value": "BioLogic Como DLX",
+    "componentId": null
+   },
+   {
+    "label": "Pedals",
+    "value": "Folding, alloy body",
+    "componentId": null
+   },
+   {
+    "label": "Headset",
+    "value": "Flux, cartridge bearings, Physis integrated",
+    "componentId": null
+   },
+   {
+    "label": "Weight",
+    "value": "12.1 kg (26.7 lb)",
+    "componentId": null
+   }
+  ]
  }
 ];

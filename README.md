@@ -36,6 +36,26 @@ Keys are read only in server code (`src/lib/ai/*`, `src/app/api/*`, guarded by `
 
 ---
 
+## This release — official manufacturer data & Pacific integration (16 Nov 2026, part 2)
+
+UI unchanged. Full figures: [`docs/catalog-audit.md`](docs/catalog-audit.md) (`npm run audit`).
+
+### Product image pipeline (fixed at the source)
+- **Manufacturer adapters** read the image each manufacturer declares for that exact product on its own page — schema.org `Product.image`, Open Graph `og:image`, or the store’s product feed — then download, validate (HTTP 200, `image/*`, decodes, ≥ 300 px), de-duplicate by SHA-256 and store a local WebP (`scripts/research/official_images.py`, `united.py`, `wheel_images.py`). Every downloaded set was reviewed on contact sheets.
+- Registry status `manufacturer-product-image`: shown unaltered with “Official photo · © Brand” and a link to the source page. No separate licence is on file — see *Known limitations*.
+- **Coverage classes** (`imageCoverage()`): Verified official image · Verified authorised-distributor image · Licensed product image · Unverified image · Missing image — reported per brand in the audit and on `/sources`.
+- The checksum guard also exposed duplicate *records*: Canyon outlet listings under abbreviated names that are the same bike (same official photo) as an existing record; these were merged.
+
+### Pacific Bike (priority)
+- `src/data/pacific.ts`: **Primum 3.3, 3.5, 5.3, 5.5, 9.0, Pro, Pro SE; Magnus 5.0**; Whizz, Whizz 7.0, Spectre 3.0–6.0, Varilux 5.0, Magenta, Rochester Pro; Stinger 7.0/8.0/9.0, Skeleton 3.0, Invert family, Avenger E600/E700; Noris folding family, Veloce 6.0; DAHON SYTE Brooklyn/Houston/Vito; Ravella, X-Cross, Ventura XM, BMX (X-Men, Zeckrom, Avorio, Hotshot); Exotic kids and electric models.
+- Each record carries the official URL, the **full component list as published** (frame, fork, shifters, derailleurs, brakes, crankset, cassette, hubs, rims, tyres, stem, handlebar, seatpost), sizes, colours and the official listed IDR price (Java) where shown. Variants keep their own specs (e.g. Primum 3.5 hydraulic disc vs 9.0 rim caliper).
+- **SYTE** is a separate brand: rims (Chronos, carbon 50 mm, Celestial), Chronos hubs, stems, handlebars, air fork, seatpost, mechanical disc brake, plus SYTE helmets, lights, bags and pumps. Pacific-branded bottle cages, saddles and pumps, Exotic parts, and Prowheel/CST parts specified on Pacific bikes are separate records.
+- Bike → component navigation: spec rows link to component records (e.g. **Magnus 5.0 → SYTE Chronos hubs → replacement bearings**). Pacific does not publish the hub bearing designation, so the hub page says so and links the Bearing ID tool instead of guessing.
+- **Access limitation:** pacific-bike.com returns a Cloudflare block (HTTP 403) to every automated request — pages, robots.txt, sitemaps and the WooCommerce Store API. VELOX does not circumvent it. Product text was read from the search index of the exact official URLs, so Pacific records are “unverified” and show the missing-image state with a link to the official page.
+
+### United Bike (official site)
+- unitedbike.com allows crawling (`Allow: /`, Google sitemap). Imported every bicycle product page: official IDR price, category, description, geometry and the official product image.
+
 ## This release — product database & image quality overhaul (16 Nov 2026)
 
 The UI, design system and features are unchanged; this release fixes product imagery and data quality. Full numbers: [`docs/catalog-audit.md`](docs/catalog-audit.md) (`npm run audit`).

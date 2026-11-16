@@ -74,16 +74,41 @@ await step("Bike Finder: every product image is distinct, real or an honest plac
   assert(all.every((u) => u.includes("/media/products/")), "category photo found on a product card");
 });
 
-await step("Product page: placeholder links to the manufacturer and converted price is labelled", async () => {
+await step("Product page: official photo for an imported model, converted price labelled", async () => {
   await go("/bikes/canyon-ultimate-cf-7-di2-2027");
-  await page.locator("[data-image-status=missing]").first().waitFor();
-  const link = page.getByRole("link", { name: /manufacturer’s photos/ });
-  assert((await link.getAttribute("href"))?.startsWith("https://www.canyon.com/"), "official link missing");
+  await page.locator("[data-image-status=verified]").first().waitFor();
+  const src = decodeURIComponent((await page.locator("[data-image-status=verified] img").first().getAttribute("src")) ?? "");
+  assert(src.includes("/media/products/canyon-ultimate-cf-7-di2-2027"), "wrong image file: " + src);
+  await page.getByText(/Official photo · © Canyon/).first().waitFor();
   await page.getByText(/US\$3,199/).first().waitFor();
   await page.getByText(/not an Indonesian price/).first().waitFor();
+  await page.getByRole("heading", { name: "Component specification" }).waitFor();
   await go("/bikes/polygon-strattos-s3-2019");
   await page.locator("[data-image-status=verified]").first().waitFor();
   await page.getByText(/CC BY-SA 2.0/).first().waitFor();
+});
+
+await step("Pacific Magnus 5.0: official spec, missing-image state, bike → hub → bearings", async () => {
+  await go("/bikes/pacific-magnus-5-0-2022");
+  await page.locator("[data-image-status=missing]").first().waitFor();
+  const link = page.getByRole("link", { name: /manufacturer’s photos/ });
+  assert((await link.getAttribute("href")) === "https://pacific-bike.com/product/magnus-5-0/", "official link missing");
+  await page.getByText(/Shimano 105 R7000, 2×11 speed/).first().waitFor();
+  await page.getByRole("link", { name: /SYTE Chronos →/ }).first().click();
+  await page.getByRole("heading", { name: "Chronos Hubs" }).waitFor();
+  await page.getByRole("heading", { name: "Replacement bearings" }).waitFor();
+  await page.getByText(/does not publish the bearing designation/).waitFor();
+  await page.getByRole("link", { name: /Magnus 5.0/ }).first().waitFor();
+});
+
+await step("Pacific Primum 5.5 and SYTE accessories are searchable", async () => {
+  await go("/bikes?q=primum%205.5");
+  await page.waitForTimeout(300);
+  assert((await page.locator("section[aria-label=Results] article", { hasText: "Primum 5.5" }).count()) === 1, "Primum 5.5 not found");
+  await go("/components");
+  await page.getByLabel("Search components").fill("ST-F493");
+  await page.waitForTimeout(300);
+  await page.getByRole("link", { name: /Handlebar Bag 600D/ }).first().waitFor();
 });
 
 await step("Bike Finder: official-data filter and brand counts", async () => {

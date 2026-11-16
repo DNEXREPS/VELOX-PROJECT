@@ -10,7 +10,7 @@ export const SLOT_GROUPS: Array<{ title: string; slots: ComponentType[] }> = [
 
 export const SLOT_LABEL: Record<ComponentType, string> = {
   frame: "Frame", fork: "Fork", groupset: "Groupset", shifters: "Shifters", "front-derailleur": "Front derailleur", "rear-derailleur": "Rear derailleur",
-  crankset: "Crankset", cassette: "Cassette", chain: "Chain", brakes: "Brakes", wheelset: "Wheelset", tires: "Tyres", handlebar: "Handlebar",
+  crankset: "Crankset", cassette: "Cassette", chain: "Chain", brakes: "Brakes", wheelset: "Wheelset", rim: "Rims", tires: "Tyres", handlebar: "Handlebar",
   stem: "Stem", saddle: "Saddle", seatpost: "Seatpost", pedals: "Pedals", hub: "Hubs", bearing: "Bearings", accessory: "Accessories",
 };
 

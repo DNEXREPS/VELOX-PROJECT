@@ -225,6 +225,7 @@ export type ComponentType =
   | "chain"
   | "brakes"
   | "wheelset"
+  | "rim"
   | "tires"
   | "handlebar"
   | "stem"
@@ -324,8 +325,14 @@ export type ImageSourceType =
   | "licensed" // licence obtained and recorded by an admin
   | "admin-upload";
 
-/** Whether VELOX may display the file. Only "open-license" and "licensed" are ever rendered. */
-export type ImageLicenseStatus = "open-license" | "licensed" | "permission-required" | "unknown" | "rejected";
+/**
+ * Whether VELOX may display the file.
+ * - "open-license" / "licensed": licence recorded.
+ * - "manufacturer-product-image": the manufacturer's own photo of this product, taken from its
+ *   official product page and shown unaltered with credit and a link back (no separate licence on file).
+ * - anything else is never rendered.
+ */
+export type ImageLicenseStatus = "open-license" | "licensed" | "manufacturer-product-image" | "permission-required" | "unknown" | "rejected";
 
 /** How the photographed bicycle relates to the catalogue record it is attached to. */
 export type ImageModelMatch =
@@ -360,7 +367,7 @@ export interface ProductImage {
   image_model_match: ImageModelMatch;
   /** what was checked to establish the match (decals, frame shape, title, uploader…) */
   matchNotes: string;
-  view: "side-profile" | "three-quarter" | "detail" | "in-use";
+  view: "side-profile" | "three-quarter" | "detail" | "in-use" | "product";
   last_image_verified_at: string; // ISO date
   /** sha-256 of the stored file, used to detect the same photo assigned to different models */
   sha256: string;
@@ -386,7 +393,10 @@ export interface BikeModel {
    * "model-year" (default): the manufacturer's model year. "listed-in-range": the manufacturer does
    * not publish a model year — `year` is when VELOX confirmed the model in the official range.
    */
-  yearBasis?: "model-year" | "listed-in-range";
+  yearBasis?: "model-year" | "listed-in-range" | "undated";
+  /** the manufacturer's full component list, row by row; componentId links to a VELOX component record */
+  componentSpec?: Array<{ label: string; value: string; componentId?: string | null }>;
+  colors?: string[];
   generation?: string | null;
   category: CategoryId;
   subcategory: string; // subcategory id

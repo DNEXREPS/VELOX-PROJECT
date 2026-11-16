@@ -9,6 +9,7 @@ import { ComponentGlyph } from "@/components/Glyphs";
 import { CompareButton, ComponentRow, WishlistButton } from "@/components/catalog";
 import { ButtonLink, CompatBadge, DemoNotice, EmptyState, Price, ProvenanceLine, SpecRows, Tag } from "@/components/ui";
 import { formatWeightG, titleCase } from "@/lib/format";
+import { imageForComponent } from "@/data/product-images";
 
 const ATTR_LABEL: Partial<Record<keyof CompatAttrs, string>> = {
   bbStandard: "Bottom bracket", brakeMount: "Brake mount", brakeInterface: "Brake interface", rearAxle: "Rear axle", frontAxle: "Front axle", wheelSizes: "Wheel sizes", maxTireMm: "Max tyre width (mm)",
@@ -38,13 +39,18 @@ export function ComponentDetail({ id }: { id: string }) {
     ? cat.components.filter((x) => x.type === counterpartType).map((x) => ({ x, r: checkCandidate({ [c.type]: c }, x) })).filter(({ r }) => r.status !== "empty").sort((a, b) => ["compatible", "potential", "insufficient", "incompatible"].indexOf(a.r.status) - ["compatible", "potential", "insufficient", "incompatible"].indexOf(b.r.status)).slice(0, 8)
     : [];
 
+  const officialImg = imageForComponent(c.id);
+  const specifiedOn = cat.bikes.filter((b) => b.componentSpec?.some((r) => r.componentId === c.id));
   return (
     <>
       <div className="container-x pt-8"><Link href="/components" className="inline-flex items-center gap-2 text-sm text-muted hover:text-fg"><ArrowLeft className="h-4 w-4" /> Component Explorer</Link></div>
       <section className="container-x grid gap-12 pb-14 pt-10 lg:grid-cols-[1fr_1.2fr] [&>*]:min-w-0">
         <div className="relative flex aspect-square max-h-[460px] items-center justify-center overflow-hidden border hairline bg-gradient-to-b from-ink-900 to-ink-950">
           <div className="grid-bg absolute inset-0 opacity-70" />
-          {c.imageUrl ? (
+          {officialImg ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={officialImg.primary_image_url} alt={officialImg.alt} className="relative h-full w-full object-contain p-6" />
+          ) : c.imageUrl ? (
             // eslint-disable-next-line @next/next/no-img-element
             <img src={c.imageUrl} alt={label} className="relative h-full w-full object-contain p-8" />
           ) : (
@@ -99,6 +105,24 @@ export function ComponentDetail({ id }: { id: string }) {
           <h2 className="mb-5 text-2xl font-medium tracking-tight">Bearing dimensions</h2>
           <SpecRows rows={[["Designation", c.bearing.designation], ["Inner Ø × Outer Ø × Width", `${c.bearing.innerMm} × ${c.bearing.outerMm} × ${c.bearing.widthMm} mm`], ["Type", titleCase(c.bearing.kind)], ["Contact angle", c.bearing.contactAngle], ["Sealing", c.bearing.sealing ?? "Depends on the specific part (2RS, LLB, open…)"], ["Typical bicycle use", c.bearing.typicalUse]]} />
           <Link href="/mechanic?tab=bearing" className="mt-4 inline-block text-sm text-lime link-u">Identify a bearing from measurements →</Link>
+        </section>
+      )}
+      {specifiedOn.length > 0 && (
+        <section className="container-x pt-16">
+          <h2 className="mb-1 text-2xl font-medium tracking-tight">Specified on</h2>
+          <p className="mb-4 text-xs text-subtle">Bicycles whose manufacturer spec lists this part.</p>
+          <ul className="border-t hairline">{specifiedOn.map((b) => <li key={b.id} className="border-b hairline py-3 text-sm"><Link href={`/bikes/${b.slug}`} className="link-u">{cat.brandById.get(b.brandId)?.name} {b.name}</Link><span className="ml-2 text-xs text-subtle">{b.componentSpec?.find((r) => r.componentId === c.id)?.value}</span></li>)}</ul>
+        </section>
+      )}
+      {(c.type === "hub" || c.type === "wheelset") && !c.bearing && (
+        <section className="container-x pt-16">
+          <h2 className="mb-3 text-2xl font-medium tracking-tight">Replacement bearings</h2>
+          {c.wheel?.bearings ? (
+            <p className="text-sm">{c.wheel.bearings}</p>
+          ) : (
+            <p className="max-w-2xl text-sm text-muted">The manufacturer does not publish the bearing designation for this {c.type === "hub" ? "hub" : "wheelset"}, so VELOX does not suggest one. Read the marking on the old bearing or measure it (inner Ø × outer Ø × width).</p>
+          )}
+          <Link href="/mechanic?tab=bearing" className="mt-4 inline-block text-sm text-lime link-u">Identify a bearing by marking or measurements →</Link>
         </section>
       )}
       {kitParts.length > 0 && (

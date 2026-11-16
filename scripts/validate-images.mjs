@@ -51,7 +51,7 @@ await withModules(async (load) => {
       if (primaryPerSubject.has(k)) warn.push(`${tag}: more than one displayable image; the first is primary`);
       primaryPerSubject.set(k, img);
     }
-    if (!["open-license", "licensed"].includes(img.image_license_status) && img.image_verification_status === "verified") warn.push(`${tag}: verified but not licensed for display — it will not be shown`);
+    if (!["open-license", "licensed", "manufacturer-product-image"].includes(img.image_license_status) && img.image_verification_status === "verified") warn.push(`${tag}: verified but not licensed for display — it will not be shown`);
     if (remote) {
       for (const u of [img.image_source_url, img.original_file_url].filter(Boolean)) {
         try {

@@ -38,8 +38,8 @@ export function formatOriginal(o: NonNullable<PriceEntry["original"]>): string {
 }
 
 /** "2026", or "Listed 2026" when the manufacturer publishes no model year. */
-export function yearLabel(b: { year: number; yearBasis?: "model-year" | "listed-in-range" }): string {
-  return b.yearBasis === "listed-in-range" ? `Listed ${b.year}` : String(b.year);
+export function yearLabel(b: { year: number; yearBasis?: "model-year" | "listed-in-range" | "undated" }): string {
+  return b.yearBasis === "listed-in-range" ? `Listed ${b.year}` : b.yearBasis === "undated" ? "Year n/p" : String(b.year);
 }
 
 export function formatWeightG(g: number | null | undefined): string {

@@ -35,10 +35,10 @@ export function BikeImage({
             </span>
             {variant === "detail" ? (
               <a href={img.image_source_url} target="_blank" rel="noreferrer" className="rounded-[2px] bg-ink-950/75 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.1em] text-muted backdrop-blur-sm hover:text-fg">
-                Photo: {img.author ?? "Wikimedia Commons"} · {img.license}
+                {img.image_license_status === "manufacturer-product-image" ? `Official photo · © ${img.author}` : `Photo: ${img.author ?? "Wikimedia Commons"} · ${img.license}`}
               </a>
             ) : (
-              <span className="rounded-[2px] bg-ink-950/75 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.1em] text-muted backdrop-blur-sm">{img.license}</span>
+              <span className="rounded-[2px] bg-ink-950/75 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.1em] text-muted backdrop-blur-sm">{img.image_license_status === "manufacturer-product-image" ? "Official photo" : img.license}</span>
             )}
           </figcaption>
         )}

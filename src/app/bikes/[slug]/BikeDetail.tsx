@@ -38,7 +38,8 @@ export function BikeDetail({ slug }: { slug: string }) {
 
   const rows: Array<[string, unknown]> = [
     ["Brand", brand?.name],
-    ["Model year", bike.year],
+    ["Model year", bike.yearBasis === "undated" ? null : bike.yearBasis === "listed-in-range" ? `${bike.year} (listed in range; model year not published)` : bike.year],
+    ["Colours", bike.colors?.length ? bike.colors : null],
     ["Generation", bike.generation],
     ["Category", `${category?.name ?? bike.category} · ${sub?.name ?? titleCase(bike.subcategory)}`],
     ["Frame material", bike.frameMaterial],
@@ -80,7 +81,7 @@ export function BikeDetail({ slug }: { slug: string }) {
           <Link href={`/brands/${brand?.slug}`} className="eyebrow link-u inline-flex items-center gap-2 hover:text-fg">{brand?.name} · {brand?.country}</Link>
           <h1 className="display mt-4 text-[clamp(2.4rem,5vw,4.2rem)]">{bike.name}</h1>
           <div className="mt-4 flex flex-wrap gap-2">
-            <Tag>{bike.yearBasis === "listed-in-range" ? `Listed ${bike.year} · model year not published` : bike.year}</Tag>
+            <Tag>{bike.yearBasis === "listed-in-range" ? `Listed ${bike.year} · model year not published` : bike.yearBasis === "undated" ? "Model year not published" : bike.year}</Tag>
             <Tag>{category?.name}</Tag>
             <Tag>{sub?.name ?? titleCase(bike.subcategory)}</Tag>
             {brand?.region === "Indonesia" && <Tag active>Indonesian brand</Tag>}
@@ -119,6 +120,23 @@ export function BikeDetail({ slug }: { slug: string }) {
             {missing > 0 && <span className="text-xs text-subtle"><span className="tabular text-warn">{missing}</span> fields {NA.toLowerCase()} — help us complete them</span>}
           </div>
           <SpecRows rows={rows} />
+          {!!bike.componentSpec?.length && (
+            <div className="mt-10">
+              <h3 className="mb-1 text-lg font-medium tracking-tight">Component specification</h3>
+              <p className="mb-3 text-xs text-subtle">As published by the manufacturer. Linked parts open their component record.</p>
+              <dl className="divide-y divide-line border-y hairline">
+                {bike.componentSpec.map((r, i) => {
+                  const part = r.componentId ? cat.componentById.get(r.componentId) : null;
+                  return (
+                    <div key={`${i}-${r.label}`} className="grid grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 py-3 text-sm">
+                      <dt className="text-muted">{r.label}</dt>
+                      <dd className="text-fg">{part ? <Link href={`/components/${part.id}`} className="link-u text-lime">{r.value} →</Link> : r.value}</dd>
+                    </div>
+                  );
+                })}
+              </dl>
+            </div>
+          )}
           <div className="mt-6 flex flex-wrap gap-3">
             {bike.officialUrl && <a href={bike.officialUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-sm text-muted hover:text-fg">Official product page <ExternalLink className="h-3.5 w-3.5" /></a>}
             <Link href={`/submit?kind=correction&ref=${bike.id}`} className="link-u text-sm text-muted hover:text-fg">Suggest a correction</Link>

@@ -3,6 +3,7 @@ import { DEMO_PROVENANCE, est } from "./provenance";
 import { slugify } from "./brands";
 import { BEARINGS, EXTRA_WHEELS, HUBS } from "./wheels";
 import { OFFICIAL_WHEELS } from "./wheels.official";
+import { PACIFIC_COMPONENTS } from "./pacific";
 
 /**
  * Seed component catalogue.
@@ -589,6 +590,7 @@ export const COMPONENTS: Component[] = [
   ...WHEELS.map(withWheelSpec),
   ...EXTRA_WHEELS,
   ...OFFICIAL_WHEELS,
+  ...PACIFIC_COMPONENTS,
   ...HUBS,
   ...BEARINGS,
   ...TIRES,

@@ -14,7 +14,8 @@ await withModules(async (load) => {
   const { BRANDS } = await load("/src/data/brands.ts");
   const { BIKES } = await load("/src/data/bikes.ts");
   const { COMPONENTS } = await load("/src/data/components.ts");
-  const { PRODUCT_IMAGES, imageForBike } = await load("/src/data/product-images.ts");
+  const { PRODUCT_IMAGES, imageForBike, imageCoverage, COVERAGE_LABEL } = await load("/src/data/product-images.ts");
+  const { PACIFIC_BIKES, PACIFIC_COMPONENTS, PACIFIC_CATALOGUE } = await load("/src/data/pacific.ts");
   const { MEDIA_LIST } = await load("/src/data/media.ts");
   const { IMPORT_LOG } = await load("/src/data/import-log.ts");
   const { identityKey } = await load("/src/lib/ingest.ts");
@@ -90,6 +91,33 @@ await withModules(async (load) => {
     const l = BIKES.filter((b) => b.category === c.id);
     return [c.name, l.length, l.filter((b) => b.provenance.status === "verified-official").length, l.filter((b) => imageForBike(b.id)).length];
   }));
+  const classes = ["verified-official", "verified-distributor", "licensed", "unverified", "missing"];
+  const cov = (list) => Object.fromEntries(classes.map((k) => [k, list.filter((b) => imageCoverage(b) === k).length]));
+  const all = cov(BIKES);
+  line("## Image coverage — every bicycle model");
+  line("Each model is classified from the product-image registry. An image counts only if it is the manufacturer’s own photo for that exact product (or a licensed photo verified against the model), downloaded and validated, and attached to no other record.");
+  line();
+  table(["Class", "Models", "Share"], classes.map((k) => [COVERAGE_LABEL[k], all[k], `${((all[k] / BIKES.length) * 100).toFixed(1)}%`]));
+  const brandsWithBikes = [...new Set(BIKES.map((b) => b.brandId))];
+  table(["Brand", "Models", ...classes.map((k) => COVERAGE_LABEL[k])], brandsWithBikes.map((id) => { const l = BIKES.filter((b) => b.brandId === id); const c = cov(l); return [brandName.get(id) ?? id, l.length, ...classes.map((k) => c[k])]; }).sort((a, b) => b[1] - a[1]));
+  line("## Pacific Bike integration");
+  const pacIds = new Set(PACIFIC_BIKES.map((b) => b.id));
+  const fam = (f) => PACIFIC_BIKES.filter((b) => b.family === f).map((b) => b.name).join(", ");
+  table(["Measure", "Count / detail"], [
+    ["Pacific-catalogue bicycle models (Pacific, DAHON SYTE, Exotic)", PACIFIC_BIKES.length],
+    ["Primum models", fam("Primum")],
+    ["Magnus models", fam("Magnus")],
+    ["Models with a component list from the official page", PACIFIC_BIKES.filter((b) => b.componentSpec?.length).length],
+    ["Models with an official listed price", PACIFIC_BIKES.filter((b) => b.price && b.price.type === "msrp").length],
+    ["Models with a verified product image", PACIFIC_BIKES.filter((b) => imageForBike(b.id)).length],
+    ["SYTE components and accessories", PACIFIC_COMPONENTS.filter((c) => c.manufacturer === "SYTE").length],
+    ["Pacific-branded parts and accessories", PACIFIC_COMPONENTS.filter((c) => c.manufacturer === "Pacific").length],
+    ["Other brands' parts specified on Pacific bikes (Prowheel, CST, Exotic)", PACIFIC_COMPONENTS.filter((c) => !["SYTE", "Pacific"].includes(c.manufacturer)).length],
+    ["Bike → component links (componentSpec rows pointing to a component record)", PACIFIC_BIKES.reduce((n, b) => n + (b.componentSpec ?? []).filter((r) => r.componentId).length, 0)],
+  ]);
+  line(`Site access: ${PACIFIC_CATALOGUE.access} Product text was taken from the search index of the official URLs, so Pacific records are “unverified” and show the missing-image state with a link to the official page. Named in the brief but not found in the official catalogue: ${PACIFIC_CATALOGUE.notFound.join(", ")}.`);
+  line();
+  void pacIds;
   line("## Image audit");
   table(["Check", "Previous release (63dd2f2)", "Now"], [
     ["Bike records pictured", IMPORT_LOG.imageBaseline.bikes, BIKES.length],
@@ -98,12 +126,16 @@ await withModules(async (load) => {
     ["Records shown with category / cyclist photography instead of the product", IMPORT_LOG.imageBaseline.bikes, categoryAsProduct],
     ["Records with a verified photo of the actual model", IMPORT_LOG.imageBaseline.withProductPhoto, withImg.length],
     ["Same image file assigned to different models", "—", imgDupAssignments],
+    ["Broken image references (registered file missing on disk)", "—", PRODUCT_IMAGES.filter((i) => !fs.existsSync(path.join(root, "public", i.primary_image_url))).length],
+    ["Wheelsets / components with a verified official image", "—", COMPONENTS.filter((c) => PRODUCT_IMAGES.some((i) => i.subjectKind === "component" && i.subjectId === c.id)).length],
   ]);
   line(`Broken or wrong image references fixed: **${IMPORT_LOG.imageBaseline.recordsOnSharedPhotos + (IMPORT_LOG.imageBaseline.bikes - IMPORT_LOG.imageBaseline.recordsOnSharedPhotos)}** records that showed category photography now show either their own verified photo or the VELOX placeholder. No product image URL is hot-linked; \`npm run validate:images\` checks files, formats, dimensions, checksums and duplicate assignments.`);
   line();
   line("## Duplicates");
   table(["Check", "Found"], [
     ["Duplicate listings removed during official import (colour / size pages of the same model-year)", dropped],
+    ["Duplicate records merged because their official photo proved they were the same bike", IMPORT_LOG.mergedDuplicates.length],
+    ["Product images rejected because the identical file was already assigned to another record", "see validate:images / harvest logs"],
     ["Wheelset listings rejected during import (" + IMPORT_LOG.wheels.rejectedReason + ")", IMPORT_LOG.wheels.rejected],
     ["Bike records sharing brand + model + year + variant", dupKeys.length],
     ["Bike records sharing the same official product URL", dupUrls.length],

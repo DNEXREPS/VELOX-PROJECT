@@ -2,6 +2,7 @@ import type { BikeModel, CompatAttrs, SourceRef, WheelSize } from "@/lib/types";
 import { DEMO_PROVENANCE, discontinued, est } from "./provenance";
 import { slugify } from "./brands";
 import { OFFICIAL_BIKES } from "./bikes.official";
+import { PACIFIC_BIKES } from "./pacific";
 
 /**
  * Seed bicycle model catalogue.
@@ -214,14 +215,6 @@ const SEEDS: Seed[] = [
     sizes: ["20\""], ridingStyle: "Neighbourhood riding and first tricks", usage: ["leisure", "tricks"], experience: ["beginner"],
     highlights: ["Classic, affordable Indonesian BMX"], drawbacks: ["Heavy steel construction"],
     compat: { wheelSize: "20", wheelSizes: ["20"], speeds: 1, chainrings: 1 }, frameColor: "#14B8A6",
-  },
-  {
-    brand: "Pacific", family: "Invert", name: "Invert 2.0", year: 2024, category: "mtb", subcategory: "hardtail",
-    frameMaterial: "Aluminium", groupset: null, drivetrain: null, brakes: "Mechanical disc", brakeType: "mechanical-disc",
-    wheelset: null, tires: "27.5\"", wheelSize: "27.5", tireClearanceMm: null, suspension: "front", weightKg: null, priceJt: 3.9,
-    sizes: S, ridingStyle: "Recreational", usage: ["leisure", "commuting"], experience: ["beginner"],
-    highlights: ["Budget-friendly hardtail"], drawbacks: ["Most specifications not yet catalogued"],
-    compat: mtbQR("27.5", 0, "unknown", { speeds: null, protocol: null, chainrings: null }), frameColor: "#F59E0B",
   },
 
   /* ======================= REGIONAL VALUE ======================= */
@@ -745,10 +738,6 @@ const SEEDS: Seed[] = [
     sources: [["Polygon Indonesia — TAMBORA AE GRX Gravel E-Bike 2025", "https://www.polygonbikes.com/id/tambora-ae-grx/", "official-website"]], notes: "The indexed page names the motor as a Bosch Performance Line variant with 55 Nm; the exact motor name needs a reviewer check on the page." },
   { brand: "Polygon", family: "Tambora", name: "Tambora AE GX", year: 2025, category: "electric", subcategory: "e-gravel", frameMaterial: "Carbon", groupset: "SRAM GX", drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: 45, suspension: "rigid", weightKg: null, priceJt: null, sizes: ["S", "M", "L", "XL"], ridingStyle: "Assisted speed gravel", usage: ["bikepacking", "fitness"], experience: ["intermediate"], electric: { motor: null, batteryWh: null }, compat: { maxTireMm: 45 }, frameColor: "#92400E",
     sources: [["Polygon Indonesia — TAMBORA AE GX Gravel E-Bike 2025", "https://www.polygonbikes.com/id/tambora-ae-gx/", "official-website"]] },
-  { brand: "Pacific", family: "Noris", name: "Noris 2.3", year: 2025, category: "folding", subcategory: "urban-folding", frameMaterial: "Aluminium", groupset: null, drivetrain: "8-speed", brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Folding commuter", usage: ["commuting"], experience: ["beginner"], compat: { speeds: 8 }, frameColor: "#0EA5E9",
-    sources: [["BigGo Indonesia — Pacific Noris 2.3 listings (Aug 2025)", "https://biggo.id/s/sepeda%20pacific%20lipat", "retailer"]], notes: "Marketplace listings only (Rp 3.2–4.3 jt, Aug 2025) — not an official price; the official Pacific site blocks automated reading." },
-  { brand: "Pacific", family: "Aviator", name: "Aviator 2689 XT VT", year: 2025, category: "mtb", subcategory: "hardtail", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: "27.5", tireClearanceMm: null, suspension: "front", weightKg: null, priceJt: null, ridingStyle: "Entry mountain biking", usage: ["trail", "leisure"], experience: ["beginner"], compat: {}, frameColor: "#1D4ED8",
-    sources: [["BigGo Indonesia — Pacific MTB listings (Oct 2025)", "https://biggo.id/s/Pacific+MTB+Bike", "retailer"]], notes: "Model name and 27.5\" wheel size from marketplace listings (Rp 2,994,000 seen Oct 2025); not an official price." },
   { brand: "United Bike", family: "Dresden", name: "Dresden V1", year: 2025, category: "electric", subcategory: "e-urban", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Electric city riding", usage: ["commuting"], experience: ["beginner"], electric: { motor: null, batteryWh: null }, compat: {}, frameColor: "#334155",
     sources: [["Radar Tasik — United Dresden Series 2025 (30 Jun 2025)", "https://radartasik.id/2025/06/30/rekomendasi-sepeda-listrik-united-dresden-series-2025-harga-spesifikasi-terbaru/", "publication"]], notes: "Press-reported price Rp 5,490,000 (June 2025) — not confirmed with United Bike." },
   { brand: "United Bike", family: "Dresden", name: "Dresden V2", year: 2025, category: "electric", subcategory: "e-urban", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Electric city riding", usage: ["commuting"], experience: ["beginner"], electric: { motor: null, batteryWh: null }, compat: {}, frameColor: "#475569",
@@ -799,4 +788,4 @@ function toModel(s: Seed): BikeModel {
 }
 
 /** Seed + researched records first, then models imported from official manufacturer pages. */
-export const BIKES: BikeModel[] = [...SEEDS.map(toModel), ...OFFICIAL_BIKES];
+export const BIKES: BikeModel[] = [...SEEDS.map(toModel), ...OFFICIAL_BIKES, ...PACIFIC_BIKES];

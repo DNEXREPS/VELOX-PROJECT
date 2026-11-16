@@ -3,6 +3,7 @@ import { DEMO_PROVENANCE, discontinued, est } from "./provenance";
 import { slugify } from "./brands";
 import { OFFICIAL_BIKES } from "./bikes.official";
 import { PACIFIC_BIKES } from "./pacific";
+import { UNITED_BIKES } from "./bikes.united";
 
 /**
  * Seed bicycle model catalogue.
@@ -166,30 +167,6 @@ const SEEDS: Seed[] = [
   },
 
   /* ============================ UNITED ============================ */
-  {
-    brand: "United Bike", family: "Trifold", name: "Trifold", year: 2024, category: "folding", subcategory: "compact-folding",
-    frameMaterial: "Steel / chromoly", groupset: null, drivetrain: null, brakes: "Rim caliper", brakeType: "rim-caliper",
-    wheelset: "16\" (349)", tires: "16 x 1.35", wheelSize: "16", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: 9,
-    sizes: ["One size"], ridingStyle: "Ultra-compact commuting with trains and buses", usage: ["commuting"], experience: ["beginner", "intermediate"],
-    highlights: ["Tri-fold design for a very small package", "Local alternative to imported tri-fold bikes"], drawbacks: ["Small wheels feel less stable at speed"],
-    compat: { wheelSize: "16", wheelSizes: ["16"], brakeInterface: "rim" }, frameColor: "#DC2626",
-  },
-  {
-    brand: "United Bike", family: "Detroit", name: "Detroit 1.0", year: 2024, category: "mtb", subcategory: "hardtail",
-    frameMaterial: "Aluminium", groupset: "Shimano Altus", drivetrain: null, brakes: "Mechanical disc", brakeType: "mechanical-disc",
-    wheelset: null, tires: "27.5\"", wheelSize: "27.5", tireClearanceMm: null, suspension: "front", weightKg: null, priceJt: 4.5,
-    sizes: S, ridingStyle: "Recreational off-road", usage: ["leisure", "trail"], experience: ["beginner"],
-    highlights: ["Low entry price for a hardtail"], drawbacks: ["Basic components — upgrade candidates"],
-    compat: mtbQR("27.5", 9, "shimano-mtb-9", { maxTireMm: null }), frameColor: "#B91C1C",
-  },
-  {
-    brand: "United Bike", family: "Kyto", name: "Kyto 2.0", year: 2024, category: "mtb", subcategory: "cross-country",
-    frameMaterial: "Aluminium", groupset: "Shimano Deore", drivetrain: "1x12", brakes: "Hydraulic disc", brakeType: "hydraulic-disc",
-    wheelset: null, tires: "29\"", wheelSize: "29", tireClearanceMm: null, suspension: "front", weightKg: null, priceJt: 11.5,
-    sizes: S, ridingStyle: "XC racing and fast trail", usage: ["trail", "racing"], experience: ["intermediate"],
-    highlights: ["Modern 1x12 for the price"], drawbacks: ["Spec details not fully catalogued"],
-    compat: mtb("29", 12, "shimano-mtb-12", { freehub: "MicroSpline", udh: null }), frameColor: "#991B1B",
-  },
 
   /* ======================= OTHER INDONESIAN ======================= */
   {
@@ -738,10 +715,6 @@ const SEEDS: Seed[] = [
     sources: [["Polygon Indonesia — TAMBORA AE GRX Gravel E-Bike 2025", "https://www.polygonbikes.com/id/tambora-ae-grx/", "official-website"]], notes: "The indexed page names the motor as a Bosch Performance Line variant with 55 Nm; the exact motor name needs a reviewer check on the page." },
   { brand: "Polygon", family: "Tambora", name: "Tambora AE GX", year: 2025, category: "electric", subcategory: "e-gravel", frameMaterial: "Carbon", groupset: "SRAM GX", drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: 45, suspension: "rigid", weightKg: null, priceJt: null, sizes: ["S", "M", "L", "XL"], ridingStyle: "Assisted speed gravel", usage: ["bikepacking", "fitness"], experience: ["intermediate"], electric: { motor: null, batteryWh: null }, compat: { maxTireMm: 45 }, frameColor: "#92400E",
     sources: [["Polygon Indonesia — TAMBORA AE GX Gravel E-Bike 2025", "https://www.polygonbikes.com/id/tambora-ae-gx/", "official-website"]] },
-  { brand: "United Bike", family: "Dresden", name: "Dresden V1", year: 2025, category: "electric", subcategory: "e-urban", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Electric city riding", usage: ["commuting"], experience: ["beginner"], electric: { motor: null, batteryWh: null }, compat: {}, frameColor: "#334155",
-    sources: [["Radar Tasik — United Dresden Series 2025 (30 Jun 2025)", "https://radartasik.id/2025/06/30/rekomendasi-sepeda-listrik-united-dresden-series-2025-harga-spesifikasi-terbaru/", "publication"]], notes: "Press-reported price Rp 5,490,000 (June 2025) — not confirmed with United Bike." },
-  { brand: "United Bike", family: "Dresden", name: "Dresden V2", year: 2025, category: "electric", subcategory: "e-urban", frameMaterial: null, groupset: null, drivetrain: null, brakes: null, brakeType: null, wheelset: null, tires: null, wheelSize: null, tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Electric city riding", usage: ["commuting"], experience: ["beginner"], electric: { motor: null, batteryWh: null }, compat: {}, frameColor: "#475569",
-    sources: [["Radar Tasik — United Dresden Series 2025 (30 Jun 2025)", "https://radartasik.id/2025/06/30/rekomendasi-sepeda-listrik-united-dresden-series-2025-harga-spesifikasi-terbaru/", "publication"]], notes: "Press-reported price Rp 5,590,000 (June 2025) — not confirmed with United Bike." },
 
   /* ================= SPECIALTY & MISSING SUBCATEGORIES (seed) ================= */
   { brand: "Cervélo", family: "P5", name: "P5", year: 2024, category: "road", subcategory: "time-trial", frameMaterial: "Carbon", groupset: null, drivetrain: null, brakes: "Hydraulic disc", brakeType: "hydraulic-disc", wheelset: null, tires: null, wheelSize: "700c", tireClearanceMm: null, suspension: "rigid", weightKg: null, priceJt: null, ridingStyle: "Time trial and triathlon", usage: ["racing"], experience: ["advanced"], highlights: ["Dedicated aero TT platform"], drawbacks: ["Specialised position — fit required"], compat: {}, frameColor: "#0F172A" },
@@ -788,4 +761,4 @@ function toModel(s: Seed): BikeModel {
 }
 
 /** Seed + researched records first, then models imported from official manufacturer pages. */
-export const BIKES: BikeModel[] = [...SEEDS.map(toModel), ...OFFICIAL_BIKES, ...PACIFIC_BIKES];
+export const BIKES: BikeModel[] = [...SEEDS.map(toModel), ...OFFICIAL_BIKES, ...PACIFIC_BIKES, ...UNITED_BIKES];

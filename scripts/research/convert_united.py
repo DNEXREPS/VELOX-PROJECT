@@ -5,6 +5,8 @@ def slug(s):
     s = unicodedata.normalize("NFD", s.lower()); s = re.sub(r"[̀-ͯ]", "", s)
     return re.sub(r"(^-|-$)", "", re.sub(r"[^a-z0-9]+", "-", s))
 CAT = [  # (category text contains, VELOX category, subcategory)
+    ("E-Series - Folding", "electric", "e-folding"), ("E-Series - Mountain", "electric", "e-mtb"), ("E-Series - City", "electric", "e-urban"), ("E-Cargo", "electric", "e-cargo"),
+    ("Mountain - DJ/BMX", "mtb", "dirt-jump"), ("Mountain - Junior", "other", "kids"), ("Road - All Rounder", "road", "all-rounder"), ("Road - Performance", "road", "race"),
     ("Mountain - XC", "mtb", "cross-country"), ("Mountain - Trail", "mtb", "trail"), ("Mountain - All Mountain", "mtb", "all-mountain"), ("Mountain - Enduro", "mtb", "enduro"),
     ("Mountain - Downhill", "mtb", "downhill"), ("Mountain - Full", "mtb", "full-suspension"), ("Mountain", "mtb", "hardtail"),
     ("Road - Gravel", "gravel", "adventure-gravel"), ("Gravel", "gravel", "adventure-gravel"), ("Road", "road", "endurance"),
@@ -19,7 +21,10 @@ bikes, parts, skipped, seen = [], [], [], set()
 for r in json.load(open("united.json")):
     cat = r.get("category") or ""
     name = re.sub(r"\s+", " ", r["name"].replace("&quot;", '"').replace("™", "")).strip()
-    if not cat.startswith("Sepeda") or "Moped" in cat or "Motor" in cat:
+    name = re.sub(r"^(Beli|Jual)\s+(Selis\s+)?Sepeda\s+", "", name, flags=re.I)
+    name = re.sub(r"\s*-\s*United Bike$", "", name, flags=re.I)
+    name = re.sub(r"^(Vigour)?Sepeda Anak Laki-laki\s+", "", name, flags=re.I).strip()
+    if not cat.startswith("Sepeda") or "Moped" in cat or "MOPED" in r["name"].upper():
         skipped.append((name, cat)); continue
     m = next((x for x in CAT if x[0] in cat), None)
     if not m: skipped.append((name, cat)); continue
@@ -45,7 +50,7 @@ for r in json.load(open("united.json")):
            "priceHistory": [], "sizes": geo.get("sizes", []), "ridingStyle": (r.get("description") or cat.replace("Sepeda - ", "")).split(".")[0][:160],
            "usage": u, "experience": e, "electric": {"motor": None, "batteryWh": None} if c == "electric" else None, "highlights": [], "drawbacks": [],
            "geometry": {"stackMm": num(geo.get("stack")), "reachMm": num(geo.get("reach")), "note": f"Size {geo.get('size')}, from United's published geometry table"} if geo.get("stack") else None,
-           "componentSpec": None, "compat": {}, "officialUrl": r["url"], "imageUrl": None,
+           "compat": {}, "officialUrl": r["url"], "imageUrl": None,
            "provenance": {"status": "verified-official", "updatedAt": DATE, "confidence": "high",
                           "sources": [{"label": "United Bike official product page", "url": r["url"], "type": "official-website", "retrievedAt": DATE}],
                           "reviewerNotes": f"Imported from unitedbike.com (schema.org Product, category '{cat}', description and geometry). United's pages publish no component list or model year, so those fields are Not Available."}}

@@ -44,8 +44,10 @@ describe("database integrity after expansion", () => {
     const names = new Set(BRANDS.map((b) => b.name.toLowerCase()));
     for (const p of PENDING_BRANDS) expect(names.has(p.name.toLowerCase()), p.name).toBe(false);
   });
-  it("does not record unconfirmed facts flagged in research (United Bike domain)", () => {
-    expect(BRANDS.find((b) => b.id === "united-bike")!.website).toBeNull();
+  it("records the United Bike domain only with its confirming official source", () => {
+    const u = BRANDS.find((b) => b.id === "united-bike")!;
+    expect(u.website).toBe("https://www.unitedbike.com");
+    expect(u.provenance.sources.some((s) => s.url === "https://www.unitedbike.com/" && s.type === "official-website")).toBe(true);
   });
   it("covers all requested subcategories with at least one model", () => {
     for (const sub of ["time-trial", "triathlon", "track", "fat-bike", "downhill", "dirt-jump", "e-road", "e-gravel", "e-folding", "e-cargo", "tandem", "recumbent", "kids", "balance-bikes", "adaptive-bikes", "beach-cruisers", "cyclocross"]) {

@@ -7,14 +7,14 @@ Generated 2026-11-16 by `npm run audit` from the live data files. Every figure b
 |---|---|
 | Brands | 201 |
 | Brands with at least one bicycle model | 46 |
-| Bicycle models (model × year × variant records) | 571 |
-| — imported from official manufacturer pages | 405 |
-| — researched from cited sources (unverified until reviewed) | 80 |
-| — earlier editorial seed records (unverified) | 86 |
-| Verified model records (Verified Official / Distributor / Cross-Verified) | 405 |
-| Models with a verified, licensed product photo | 407 |
-| Models without a verified photo (designed placeholder + official link) | 164 |
-| Models with unverified specifications | 166 |
+| Bicycle models (model × year × variant records) | 706 |
+| — imported from official manufacturer pages | 545 |
+| — researched from cited sources (unverified until reviewed) | 78 |
+| — earlier editorial seed records (unverified) | 83 |
+| Verified model records (Verified Official / Distributor / Cross-Verified) | 545 |
+| Models with a verified, licensed product photo | 529 |
+| Models without a verified photo (designed placeholder + official link) | 177 |
+| Models with unverified specifications | 161 |
 | Component products (all types) | 627 |
 | Wheelset products | 251 |
 | — wheelsets imported from official manufacturer stores | 204 |
@@ -22,28 +22,29 @@ Generated 2026-11-16 by `npm run audit` from the live data files. Every figure b
 ## Bicycle models by category
 | Category | Models | Official imports | Verified photos |
 |---|---|---|---|
-| Road | 173 | 121 | 122 |
-| MTB | 134 | 97 | 98 |
+| Road | 176 | 124 | 125 |
+| MTB | 176 | 141 | 141 |
 | Gravel | 71 | 64 | 64 |
-| Urban & Hybrid | 6 | 0 | 0 |
-| Electric | 119 | 97 | 97 |
-| Folding | 39 | 19 | 19 |
+| Urban & Hybrid | 20 | 14 | 10 |
+| Electric | 128 | 108 | 108 |
+| Folding | 66 | 47 | 47 |
 | BMX | 7 | 0 | 0 |
-| Specialty | 22 | 7 | 7 |
+| Specialty | 62 | 47 | 34 |
 
 ## Image coverage — every bicycle model
 Each model is classified from the product-image registry. An image counts only if it is the manufacturer’s own photo for that exact product (or a licensed photo verified against the model), downloaded and validated, and attached to no other record.
 
 | Class | Models | Share |
 |---|---|---|
-| Verified official image | 405 | 70.9% |
+| Verified official image | 527 | 74.6% |
 | Verified authorised-distributor image | 0 | 0.0% |
-| Licensed product image | 2 | 0.4% |
+| Licensed product image | 2 | 0.3% |
 | Unverified image | 0 | 0.0% |
-| Missing image | 164 | 28.7% |
+| Missing image | 177 | 25.1% |
 
 | Brand | Models | Verified official image | Verified authorised-distributor image | Licensed product image | Unverified image | Missing image |
 |---|---|---|---|---|---|---|
+| United Bike | 140 | 122 | 0 | 0 | 0 | 18 |
 | Specialized | 134 | 124 | 0 | 0 | 0 | 10 |
 | Canyon | 104 | 100 | 0 | 0 | 0 | 4 |
 | Santa Cruz | 83 | 82 | 0 | 0 | 0 | 1 |
@@ -54,7 +55,6 @@ Each model is classified from the product-image registry. An image counts only i
 | Trek | 6 | 0 | 0 | 0 | 0 | 6 |
 | Giant | 6 | 0 | 0 | 0 | 0 | 6 |
 | Exotic | 6 | 0 | 0 | 0 | 0 | 6 |
-| United Bike | 5 | 0 | 0 | 0 | 0 | 5 |
 | Cannondale | 5 | 0 | 0 | 0 | 0 | 5 |
 | DAHON SYTE | 4 | 0 | 0 | 0 | 0 | 4 |
 | Surly | 3 | 0 | 0 | 0 | 0 | 3 |
@@ -110,11 +110,11 @@ Site access: Cloudflare block (HTTP 403) for automated clients on every path inc
 ## Image audit
 | Check | Previous release (63dd2f2) | Now |
 |---|---|---|
-| Bike records pictured | 94 | 571 |
+| Bike records pictured | 94 | 706 |
 | Records shown with a photo shared by other models | 91 | 0 |
 | Most models sharing one photo | 16 | 1 |
 | Records shown with category / cyclist photography instead of the product | 94 | 0 |
-| Records with a verified photo of the actual model | 0 | 407 |
+| Records with a verified photo of the actual model | 0 | 529 |
 | Same image file assigned to different models | — | 0 |
 | Broken image references (registered file missing on disk) | — | 0 |
 | Wheelsets / components with a verified official image | — | 187 |
@@ -135,39 +135,40 @@ Broken or wrong image references fixed: **94** records that showed category phot
 ## Prices
 | Price basis | Bikes | Components |
 |---|---|---|
-| Published manufacturer price (MSRP) | 397 | 204 |
+| Published manufacturer price (MSRP) | 536 | 204 |
 | — of which published in USD and converted to IDR (labelled) | 360 | 204 |
 | Retailer / distributor price | 0 | 0 |
-| VELOX estimate (seed data, labelled “Estimated”) | 66 | 321 |
-| No price (shown as Not Available) | 107 | 102 |
+| VELOX estimate (seed data, labelled “Estimated”) | 63 | 321 |
+| No price (shown as Not Available) | 106 | 102 |
 
 USD prices are converted at Bank Indonesia JISDOR (4 Nov 2026): Rp 18,148 per USD ([source](https://www.bi.go.id/en/publikasi/lelang/non-operasi-moneter/Pages/Swap-Hedging-of-External-Funding,-November-4th-2026.aspx)). Converted figures are never presented as Indonesian prices.
 
 ## Model years
 | Basis | Records |
 |---|---|
-| Manufacturer model year (official data) | 238 |
+| Manufacturer model year (official data) | 378 |
 | Listed in the official 2026 range — manufacturer publishes no model year (Specialized, Tern) | 167 |
-| Researched records (year from the cited source) | 80 |
-| Seed records whose model year has not been checked | 86 |
+| Researched records (year from the cited source) | 78 |
+| Seed records whose model year has not been checked | 83 |
 
 ## Specification completeness — official imports
 | Field | Filled | Not Available |
 |---|---|---|
-| frameMaterial | 295 | 110 |
-| groupset | 337 | 68 |
-| drivetrain | 174 | 231 |
-| brakes | 360 | 45 |
-| wheelset | 352 | 53 |
-| tires | 324 | 81 |
-| wheelSize | 179 | 226 |
-| weightKg | 395 | 10 |
+| frameMaterial | 295 | 250 |
+| groupset | 337 | 208 |
+| drivetrain | 174 | 371 |
+| brakes | 360 | 185 |
+| wheelset | 352 | 193 |
+| tires | 324 | 221 |
+| wheelSize | 199 | 346 |
+| weightKg | 395 | 150 |
 
 Fields are filled only when the manufacturer publishes them; nothing is inferred.
 
 ## Coverage by brand (bicycle models)
 | Brand | Models |
 |---|---|
+| United Bike | 140 |
 | Specialized | 134 |
 | Canyon | 104 |
 | Santa Cruz | 83 |
@@ -178,7 +179,6 @@ Fields are filled only when the manufacturer publishes them; nothing is inferred
 | Trek | 6 |
 | Giant | 6 |
 | Exotic | 6 |
-| United Bike | 5 |
 | Cannondale | 5 |
 | DAHON SYTE | 4 |
 | Surly | 3 |

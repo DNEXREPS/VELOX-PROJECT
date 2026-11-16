@@ -40,6 +40,15 @@ Keys are read only in server code (`src/lib/ai/*`, `src/app/api/*`, guarded by `
 
 UI unchanged. Full figures: [`docs/catalog-audit.md`](docs/catalog-audit.md) (`npm run audit`).
 
+| Measure (counted from the data) | Before | Now |
+| --- | --- | --- |
+| Bicycle models | 520 | 706 |
+| Models with the manufacturer's own photo of that exact product | 0 | 527 (74.6%) |
+| Models with a licensed (Wikimedia) photo | 2 | 2 |
+| Models explicitly marked “missing image” (placeholder + official link) | 518 | 177 (all 56 Pacific-catalogue models among them) |
+| Wheelsets with an official photo | 0 | 187 |
+| Broken image references / same file on two records | — | 0 / 0 |
+
 ### Product image pipeline (fixed at the source)
 - **Manufacturer adapters** read the image each manufacturer declares for that exact product on its own page — schema.org `Product.image`, Open Graph `og:image`, or the store’s product feed — then download, validate (HTTP 200, `image/*`, decodes, ≥ 300 px), de-duplicate by SHA-256 and store a local WebP (`scripts/research/official_images.py`, `united.py`, `wheel_images.py`). Every downloaded set was reviewed on contact sheets.
 - Registry status `manufacturer-product-image`: shown unaltered with “Official photo · © Brand” and a link to the source page. No separate licence is on file — see *Known limitations*.
@@ -54,7 +63,7 @@ UI unchanged. Full figures: [`docs/catalog-audit.md`](docs/catalog-audit.md) (`n
 - **Access limitation:** pacific-bike.com returns a Cloudflare block (HTTP 403) to every automated request — pages, robots.txt, sitemaps and the WooCommerce Store API. VELOX does not circumvent it. Product text was read from the search index of the exact official URLs, so Pacific records are “unverified” and show the missing-image state with a link to the official page.
 
 ### United Bike (official site)
-- unitedbike.com allows crawling (`Allow: /`, Google sitemap). Imported every bicycle product page: official IDR price, category, description, geometry and the official product image.
+- unitedbike.com allows crawling (`Allow: /`, Google sitemap). 670 product URLs read; the sitemap lists each product about four times, giving **140 distinct bicycles** (MTB, kids, folding, city, BMX/dirt jump, road, E-Series e-bikes) with **official IDR prices**, category, description, geometry and **122 official product photos** (the rest reuse another model's file and are left missing rather than duplicated). 76 e-mopeds listed under “Sepeda” are excluded. United's official domain is now confirmed and recorded; earlier unverified United placeholders (Trifold, Detroit 1.0, Kyto 2.0) and the Dresden V1/V2 records — which United files as e-mopeds — were removed.
 
 ## This release — product database & image quality overhaul (16 Nov 2026)
 
@@ -147,8 +156,8 @@ src/
     simulator.ts  visualizer.ts
     ai/ types.ts anthropic.ts registry.ts                        (server-only)
 supabase/schema.sql                23 tables, 42 RLS policies (validated on PostgreSQL 16)
-tests/                             Vitest (54 tests)
-scripts/smoke.mjs                  Playwright end-to-end (42 flows)
+tests/                             Vitest (62 tests)
+scripts/smoke.mjs                  Playwright end-to-end (44 flows)
 scripts/audit-catalog.mjs          catalogue audit → docs/catalog-audit.md
 scripts/validate-images.mjs        product-image validation
 public/media/                      category photography (WebP)
@@ -164,13 +173,17 @@ Additions to the relational schema: `source_type`, `confidence_level`, `brand_ki
 | Check | Result |
 | --- | --- |
 | `npm run lint` (TypeScript strict) | ✅ |
-| `npm test` | ✅ 54 / 54. The 43 earlier tests, plus: image registry (every image belongs to an existing model, local file with matching checksum and licence, never the same photo on two models, never category photography, only licensed and verified same-model photos shown, no fallback for models without a photo, BikeImage independent of category media); catalogue integrity (known brand, unique identity, every official import cites its official page and retrieval date, Specialized/Tern labelled “listed”, converted prices carry the original amount and rate); every non-estimate price cites a source URL and date |
-| `npm run validate:images` | ✅ 2 images, no duplicate files, URLs or assignments, dimensions and checksums match |
+| `npm test` | ✅ 62 / 62. Earlier tests plus Pacific acceptance tests (all requested Primum models and Magnus 5.0 present with official URLs; variants keep distinct specs; Magnus 5.0 matches the official spec and links SYTE Chronos hubs and rims; spec links resolve; no invented hub bearing; SYTE, Pacific and other brands separated with official sources; no unpublished model years; Pacific without a validated photo is classed “missing”) and image registry rules (local file, checksum, no file on two records, manufacturer or licensed only) |
+| `npm run validate:images` | ✅ 716 registered images (529 bikes, 187 wheelsets); files present, formats and dimensions match, checksums unchanged, no file / URL / source assigned to two records |
 | `npm run build` | ✅ (520 bike pages, 588 component pages prerendered) |
-| `npm run test:e2e` (production) | ✅ 42 / 42, no console or runtime errors. The 39 earlier flows, plus: every Finder card shows a distinct verified photo or the placeholder and never category photography; the Strattos S3 shows its own photo; a Canyon page shows the placeholder with the official link and the labelled US$ to IDR conversion; the official-data filter and brand model counts work. No horizontal overflow at 390 px on 13 routes |
+| `npm run test:e2e` (production) | ✅ 44 / 44, no console or runtime errors. Includes: Finder cards show distinct official photos or the placeholder and never category photography; a Canyon page shows its own official photo with credit, component list and labelled US$→IDR conversion; Pacific Magnus 5.0 shows the missing-image state with its official link and navigates bike → SYTE Chronos hubs → replacement-bearings guidance; Primum 5.5 and a SYTE bag are searchable; no horizontal overflow at 390 px on 13 routes |
 | `supabase/schema.sql` | ✅ applied to PostgreSQL 16 (24 tables, 44 RLS policies). `product_images` rejects the same file on a second record; `prices` rejects a non-estimate price without a source URL |
 
 ## Known limitations
+
+- **Manufacturer photos are used without a separate licence.** They are the manufacturers' own product images, shown unaltered with credit and a link to the source page. Obtain written permission (or a press/retailer image agreement) before commercial launch; any image can be withdrawn by setting `image_license_status` to `rejected`.
+- **Pacific**: the official site blocks automated access, so Pacific data comes from the search index of its official pages (unverified) and no Pacific photo could be downloaded or validated. 56 models, 27 with full component lists, 37 with official prices, 0 photos. An official CSV/JSON export from Pacific would fix both.
+- Specialized, Tern, United and Pacific publish no model year on product pages: shown as “Listed 2026” or “Model year not published”.
 
 - **Product photos:** only 2 of 520 models have a verified photo. Every other model shows the VELOX placeholder with a link to the manufacturer’s photos. Manufacturer images were not copied because their licences are unconfirmed, and Wikimedia Commons has very few photos of current models.
 - **Official imports cover five brands** (Canyon, Cervélo, Santa Cruz, Specialized, Tern). Trek, Giant and Cannondale sitemaps sit on hosts outside the allowed network. Polygon, Rodalink, Pacific, Scott and Orbea refuse automated access. Their data comes from search-indexed official pages (unverified) or is still missing. `docs/catalog-audit.md` lists the requested brands that still have fewer than three models (including Scott, Merida, BMC, Colnago, Orbea, Trek and Giant).

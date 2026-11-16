@@ -80,11 +80,11 @@ const INDONESIA: Def[] = [
     notes: "1989 is the brand founding date; PT Insera Sena's incorporation date was not found.",
   },
   {
-    name: "United Bike", country: "Indonesia", founded: 1988, website: null, categories: ["road", "mtb", "gravel", "urban", "folding", "electric", "bmx", "other"], kinds: ["bicycles", "e-bikes"],
+    name: "United Bike", country: "Indonesia", founded: 1988, website: "https://www.unitedbike.com", categories: ["road", "mtb", "gravel", "urban", "folding", "electric", "bmx", "other"], kinds: ["bicycles", "e-bikes"],
     hq: "Tangerang Selatan, Banten", parent: "PT Terang Dunia Internusa Tbk (IDX: UNTD)", color: "#EF4444", status: "cross-verified", confidence: "medium",
     description: "Bicycle and electric-mobility brand of PT Terang Dunia Internusa, listed on the Indonesia Stock Exchange. The group also sells United E-Motor electric motorcycles.",
-    sources: [["Medcom — United service network", "https://www.medcom.id/otomotif/motor/Wb7QqlPK-bengkel-united-terima-servis-sepeda-sampai-motor-listrik", "publication"], ["Kontan — PT Terang Dunia Internusa Tbk", "https://emiten.kontan.co.id/perusahaan/943/PT-Terang-Dunia-Internusa-Tbk", "publication"], ["StockAnalysis — UNTD company profile", "https://stockanalysis.com/quote/idx/UNTD/company/", "publication"]],
-    notes: "Founding year 1988 refers to the company. Official domain unresolved: sources point to terangduniainternusa.com and unitedbike.com — left empty until confirmed.",
+    sources: [["United Bike — official site", "https://www.unitedbike.com/", "official-website"], ["Medcom — United service network", "https://www.medcom.id/otomotif/motor/Wb7QqlPK-bengkel-united-terima-servis-sepeda-sampai-motor-listrik", "publication"], ["Kontan — PT Terang Dunia Internusa Tbk", "https://emiten.kontan.co.id/perusahaan/943/PT-Terang-Dunia-Internusa-Tbk", "publication"], ["StockAnalysis — UNTD company profile", "https://stockanalysis.com/quote/idx/UNTD/company/", "publication"]],
+    notes: "Founding year 1988 refers to the company. Official site confirmed 2026-11-16: unitedbike.com (company address Jl. Boulevard Alam Sutera No. 12A, Tangerang Selatan, on every page; catalogue imported from it).",
   },
   {
     name: "Pacific", country: "Indonesia", founded: 1995, website: "https://pacific-bike.com", categories: ["mtb", "road", "urban", "folding", "bmx", "electric", "other"], kinds: ["bicycles", "e-bikes"],

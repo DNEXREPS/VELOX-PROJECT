@@ -2,7 +2,7 @@
 import { useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { Camera, Copy, ImageOff, Loader2, Sparkles, X } from "lucide-react";
-import { useCatalog } from "@/lib/state";
+import { useCatalog } from "@/lib/catalog-client";
 import { buildConceptPrompt, type Concept, type Scene } from "@/lib/visualizer";
 import type { Component, ComponentType } from "@/lib/types";
 import { BikePicker, PartPickers, SimulatorPanel, useBikeProfile, usePlanPicks, type Picks } from "@/components/upgrade-config";

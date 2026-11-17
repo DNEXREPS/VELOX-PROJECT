@@ -1,7 +1,8 @@
 "use client";
 import { useMemo } from "react";
 import Link from "next/link";
-import { buildsStore, garageStore, settingsStore, useCatalog } from "@/lib/state";
+import { buildsStore, garageStore, settingsStore } from "@/lib/state";
+import { useCatalog } from "@/lib/catalog-client";
 import { useStore } from "@/lib/store";
 import { profileFromModel, virtualSelection, adviseUpgrades, type BikeProfile } from "@/lib/upgrade";
 import { profileFromGarage } from "@/lib/profiles";

@@ -68,7 +68,7 @@ export function buildIndex(data: { brands: Brand[]; bikes: BikeModel[]; componen
     docs.push({
       kind: "bike", id: m.id, title, subtitle: `${m.year} · ${m.category.toUpperCase()} · ${m.groupset ?? "Groupset n/a"}`, href: `/bikes/${m.slug}`,
       titleTokens: tokenize(title), tokens: tokenize(`${title} ${m.family} ${m.year} ${m.category} ${m.subcategory} ${m.groupset ?? ""} ${m.frameMaterial ?? ""} ${m.wheelSize ?? ""} ${m.brakes ?? ""}`),
-      meta: { category: m.category, brand: m.brandId },
+      meta: { category: m.category, brand: m.brandId, brandName: brand?.name ?? m.brandId },
     });
   }
   for (const c of data.components) {

@@ -1,5 +1,5 @@
 import type { Build, Component, ComponentType, GarageBike } from "./types";
-import type { Catalog } from "./state";
+import type { Catalog } from "./catalog-client";
 import { profileFromModel, type BikeProfile } from "./upgrade";
 import { resolveSelection } from "./builds";
 

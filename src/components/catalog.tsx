@@ -3,6 +3,7 @@ import { requireAccount } from "@/components/auth/AccountPrompt";
 import Link from "next/link";
 import { GitCompare, Heart } from "lucide-react";
 import type { BikeModel, Brand, CompareKind, Component } from "@/lib/types";
+import type { ComponentSummary } from "@/lib/catalog/types";
 import { BikeImage, ComponentPhoto } from "./BikeImage";
 import { ComponentGlyph } from "./Glyphs";
 import { Price, StatusBadge } from "./ui";
@@ -99,7 +100,7 @@ export function BikeTile({ bike, brand, className, children }: { bike: BikeModel
   );
 }
 
-export function ComponentRow({ c, action, className }: { c: Component; action?: React.ReactNode; className?: string }) {
+export function ComponentRow({ c, action, className }: { c: ComponentSummary; action?: React.ReactNode; className?: string }) {
   return (
     <div className={cx("group relative flex items-center gap-4 border-b hairline py-4", className)}>
       <Link href={`/components/${c.id}`} className="absolute inset-0" aria-label={`${c.manufacturer} ${c.name}`} />

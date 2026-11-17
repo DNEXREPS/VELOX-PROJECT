@@ -2,7 +2,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Check, RotateCcw, SlidersHorizontal, TriangleAlert, X } from "lucide-react";
-import { useCatalog } from "@/lib/state";
+import { useCatalog } from "@/lib/catalog-client";
 import Link from "next/link";
 import { useT } from "@/lib/i18n";
 import { findBikes, type FinderCriteria } from "@/lib/finder";

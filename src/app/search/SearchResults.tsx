@@ -1,20 +1,18 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { ArrowUpRight, Search } from "lucide-react";
-import { useSearchIndex } from "@/components/layout/CommandSearch";
-import { search, type SearchKind } from "@/lib/search";
+import type { SearchKind } from "@/lib/search";
+import { useRemoteSearch } from "@/lib/catalog/use-search";
 import { Chip, EmptyState } from "@/components/ui";
-import { useCatalog } from "@/lib/state";
 
 const KINDS: Array<[SearchKind | "all", string]> = [["all", "All"], ["brand", "Brands"], ["bike", "Bikes"], ["component", "Components"], ["category", "Categories"]];
 
 export function SearchResults() {
   const sp = useSearchParams();
   const router = useRouter();
-  const index = useSearchIndex();
-  const cat = useCatalog();
+  const [stats, setStats] = useState<{ brands: number; bikes: number; components: number } | null>(null);
   const [q, setQ] = useState(sp.get("q") ?? "");
   const [kind, setKind] = useState<SearchKind | "all">((sp.get("kind") as SearchKind) ?? "all");
   const [brand, setBrand] = useState("all");
@@ -24,10 +22,11 @@ export function SearchResults() {
     return () => clearTimeout(t);
   }, [q, kind, router]);
 
-  const all = useMemo(() => search(index, q, { limit: 300 }), [index, q]);
+  useEffect(() => { fetch("/api/search?stats=1").then((r) => r.json()).then((d) => setStats(d.stats ?? null)).catch(() => {}); }, []);
+  const { hits: all, loading, error } = useRemoteSearch(q, 300, 200);
   const hits = all.filter((h) => (kind === "all" || h.kind === kind) && (brand === "all" || h.meta?.brand === brand || h.meta?.manufacturer === brand || (h.kind === "brand" && h.id === brand)));
   const counts = Object.fromEntries(KINDS.map(([k]) => [k, k === "all" ? all.length : all.filter((h) => h.kind === k).length]));
-  const brandsInHits = Array.from(new Set(all.filter((h) => h.kind === "bike").map((h) => h.meta!.brand))).map((id) => cat.brandById.get(id)).filter(Boolean);
+  const brandsInHits = [...new Map(all.filter((h) => h.kind === "bike" && h.meta?.brand).map((h) => [h.meta!.brand, { id: h.meta!.brand, name: h.meta!.brandName ?? h.meta!.brand }])).values()].sort((a, b) => a.name.localeCompare(b.name));
 
   return (
     <div className="container-x py-12 md:py-16">
@@ -40,14 +39,18 @@ export function SearchResults() {
         {KINDS.map(([k, l]) => <Chip key={k} active={kind === k} onClick={() => setKind(k)}>{l} <span className="text-subtle">{counts[k]}</span></Chip>)}
         {brandsInHits.length > 1 && (
           <select value={brand} onChange={(e) => setBrand(e.target.value)} className="field ml-2 h-8 w-auto py-1 text-[13px]" aria-label="Filter by brand">
-            <option value="all">Any brand</option>{brandsInHits.map((b) => <option key={b!.id} value={b!.id}>{b!.name}</option>)}
+            <option value="all">Any brand</option>{brandsInHits.map((b) => <option key={b.id} value={b.id}>{b.name}</option>)}
           </select>
         )}
       </div>
 
       <div className="mt-10 max-w-4xl">
         {!q.trim() ? (
-          <p className="text-muted">Type to search across {cat.brands.length} brands, {cat.bikes.length} bike models and {cat.components.length} components. Typos are tolerated — try “polgon” or “ultegar”.</p>
+          <p className="text-muted">Type to search across {stats ? `${stats.brands} brands, ${stats.bikes} bike models and ${stats.components} components` : "every brand, bike model and component"}. Typos are tolerated — try “polgon” or “ultegar”.</p>
+        ) : error ? (
+          <EmptyState title="Search is temporarily unavailable">Please try again in a moment.</EmptyState>
+        ) : loading && all.length === 0 ? (
+          <p className="text-muted" aria-live="polite">Searching…</p>
         ) : hits.length === 0 ? (
           <EmptyState title={`No results for “${q}”`}>Check the spelling, try a broader term (e.g. “gravel”, “Shimano”), or <Link href="/submit" className="text-lime link-u">suggest missing data</Link>.</EmptyState>
         ) : (

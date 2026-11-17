@@ -2,7 +2,8 @@
 import { useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { Archive, Check, Download, Lock, Pencil, Plus, RotateCcw, Upload, X } from "lucide-react";
-import { canAdmin, catalogWrite, sessionStore, stagingStore, submissionsStore, useCatalog } from "@/lib/state";
+import { canAdmin, catalogWrite, sessionStore, stagingStore, submissionsStore } from "@/lib/state";
+import { useCatalog } from "@/lib/catalog-client";
 import { ADAPTERS, stage, type AnyRecord, type EntityKind, type StagedRecord } from "@/lib/ingest";
 import { useHydrated, useStore } from "@/lib/store";
 import { normalizeBrand, normalizeComponent, normalizeModel } from "@/lib/importers";

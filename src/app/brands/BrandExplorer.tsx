@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ArrowUpRight, LayoutGrid, List, Search } from "lucide-react";
-import { useCatalog } from "@/lib/state";
+import { useCatalog } from "@/lib/catalog-client";
 import type { CategoryId } from "@/lib/types";
 import { BrandMark } from "@/components/Glyphs";
 import { CompareButton } from "@/components/catalog";

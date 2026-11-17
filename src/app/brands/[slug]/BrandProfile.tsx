@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ArrowLeft, ExternalLink } from "lucide-react";
-import { useCatalog } from "@/lib/state";
+import { useCatalog } from "@/lib/catalog-client";
 import { useHydrated } from "@/lib/store";
 import { BrandMark } from "@/components/Glyphs";
 import { BikeTile, CompareButton, ComponentRow } from "@/components/catalog";

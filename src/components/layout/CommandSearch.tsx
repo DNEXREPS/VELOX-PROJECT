@@ -1,26 +1,20 @@
 "use client";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowRight, CornerDownLeft, Search, X } from "lucide-react";
-import { useCatalog } from "@/lib/state";
-import { buildIndex, search, type SearchHit, type SearchKind } from "@/lib/search";
+import type { SearchKind } from "@/lib/search";
+import { useRemoteSearch } from "@/lib/catalog/use-search";
 import { cx } from "@/lib/format";
 
 const KIND_LABEL: Record<SearchKind, string> = { brand: "Brand", bike: "Bike", component: "Component", category: "Category" };
 const SUGGESTIONS = ["Polygon Strattos", "Shimano 105 Di2", "Gravel", "Indonesia", "29 x 2.4", "Brompton", "Zipp 303"];
 
-export function useSearchIndex() {
-  const cat = useCatalog();
-  return useMemo(() => buildIndex(cat), [cat]);
-}
-
 export function CommandSearch({ open, onClose }: { open: boolean; onClose: () => void }) {
   const router = useRouter();
-  const index = useSearchIndex();
   const [q, setQ] = useState("");
   const [active, setActive] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);
-  const hits: SearchHit[] = useMemo(() => search(index, q, { limit: 12 }), [index, q]);
+  const { hits, loading } = useRemoteSearch(q, 12);
 
   useEffect(() => {
     if (open) {
@@ -77,7 +71,7 @@ export function CommandSearch({ open, onClose }: { open: boolean; onClose: () =>
               </div>
             </div>
           )}
-          {q && hits.length === 0 && (
+          {q && hits.length === 0 && !loading && (
             <div className="px-3 py-10 text-center text-sm text-muted">
               No matches for “{q}”. Check the spelling or try a brand, model or component type.
             </div>

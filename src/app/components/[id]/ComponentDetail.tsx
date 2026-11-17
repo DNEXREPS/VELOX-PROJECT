@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { ArrowLeft, Hammer } from "lucide-react";
-import { useCatalog } from "@/lib/state";
+import { useCatalog } from "@/lib/catalog-client";
 import { useHydrated } from "@/lib/store";
 import { checkCandidate } from "@/lib/compat";
 import type { CompatAttrs, Component } from "@/lib/types";

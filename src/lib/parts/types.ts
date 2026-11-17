@@ -119,7 +119,8 @@ export type ProviderOutcome =
 
 export interface PartsSearchResponse {
   query: PartsQuery;
-  parsed: import("./query").ParsedQuery;
+  /** what VELOX understood from the query (category, budget, standards) */
+  parsed: Record<string, unknown>;
   offers: Offer[];
   sources: ProviderOutcome[];
   searchedAt: string;

@@ -4,7 +4,7 @@
  *
  *   node scripts/image-health.mjs            local checks + remote checks older than 7 days
  *   node scripts/image-health.mjs --offline  local checks only (no network)
- *   node scripts/image-health.mjs --force    re-check every remote URL
+ *   node scripts/image-health.mjs --force    re-check URLs not answered in the last 12 h (resumes after interruption)
  *
  * Local: file exists, real format (magic bytes), decodable, dimensions match the record, checksum
  * unchanged, resolution, duplicate files / URLs / assignments.
@@ -38,6 +38,10 @@ const MIN_SHORT_SIDE = 600;
 const previous = fs.existsSync(OUT) ? JSON.parse(fs.readFileSync(OUT, "utf8")) : { images: [] };
 const cache = new Map();
 for (const i of previous.images ?? []) for (const k of ["source", "original"]) if (i[k]?.url && i[k]?.checkedAt) cache.set(i[k].url, i[k]);
+// Checkpoint of probes from an interrupted run, so a restart resumes instead of starting over.
+const CHECKPOINT = path.join(root, "node_modules/.cache/velox-image-health.json");
+if (fs.existsSync(CHECKPOINT)) for (const e of JSON.parse(fs.readFileSync(CHECKPOINT, "utf8"))) cache.set(e.url, e);
+const saveCheckpoint = () => { fs.mkdirSync(path.dirname(CHECKPOINT), { recursive: true }); fs.writeFileSync(CHECKPOINT, JSON.stringify([...cache.values()])); };
 
 /* ------------------------------ remote checks ------------------------------ */
 const robots = new Map();
@@ -80,17 +84,20 @@ async function remoteCheck(urls) {
   const byHost = new Map();
   for (const u of urls) {
     const c = cache.get(u);
-    if (!force && c && Date.now() - Date.parse(c.checkedAt) < TTL_MS) continue;
+    // network errors (no HTTP status) are always retried; answers are trusted for 7 days
+    const fresh = c && c.status != null && Date.now() - Date.parse(c.checkedAt) < (force ? 12 * 3600 * 1000 : TTL_MS);
+    if (fresh) continue;
     const h = new URL(u).host; if (!byHost.has(h)) byHost.set(h, []); byHost.get(h).push(u);
   }
   let done = 0; const total = [...byHost.values()].reduce((n, l) => n + l.length, 0);
   await Promise.all([...byHost.values()].map(async (list) => {
     for (const u of list) {
       cache.set(u, await probe(u));
-      if (++done % 50 === 0) console.log(`  remote ${done}/${total}`);
+      if (++done % 25 === 0) { saveCheckpoint(); if (done % 50 === 0) console.log(`  remote ${done}/${total}`); }
       await new Promise((r) => setTimeout(r, 1000)); // ≤ 1 request / second / host
     }
   }));
+  saveCheckpoint();
   return total;
 }
 

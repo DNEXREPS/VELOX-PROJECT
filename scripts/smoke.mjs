@@ -129,6 +129,28 @@ await step("Bike Finder: Indonesian-only filter", async () => {
   assert(badges > 0 && badges === local, `expected only local bikes, got ${local}/${badges}`);
 });
 
+await step("Component explorer: paged results from the catalogue API, load more, search, filters", async () => {
+  const apiCalls = [];
+  page.on("request", (r) => { if (r.url().includes("/api/catalog/components")) apiCalls.push(r.url()); });
+  await go("/components?group=wheels");
+  const total = Number(await page.getByTestId("component-total").textContent());
+  assert(total > 50, `expected more than one page of wheels, got ${total}`);
+  const rows = () => page.locator("a[href^='/components/']").count();
+  assert((await rows()) === 50, `first page should show 50 rows, got ${await rows()}`);
+  await page.getByRole("button", { name: /Load more/ }).click();
+  await page.waitForFunction(() => document.querySelectorAll("a[href^='/components/']").length > 50);
+  assert((await rows()) === Math.min(100, total), "load more did not append the next page");
+  await page.getByLabel("Search components").fill("zipp 303");
+  await page.waitForFunction(() => document.querySelector("[data-testid=component-total]")?.textContent !== "${total}" && document.querySelectorAll("a[href^='/components/']").length < 50);
+  assert(await page.getByRole("link", { name: /Zipp 303 Firecrest/ }).first().isVisible(), "Zipp 303 not found");
+  await page.getByLabel("Search components").fill("");
+  await page.getByLabel("Manufacturer").selectOption("hunt");
+  await page.waitForTimeout(600);
+  const labels = await page.locator("a[href^='/components/']").evaluateAll((as) => as.map((a) => a.getAttribute("aria-label")));
+  assert(labels.length > 0 && labels.every((l) => l.startsWith("Hunt ")), "manufacturer filter returned other brands");
+  assert(apiCalls.length >= 3 && apiCalls.every((u) => !u.includes("pageSize=1000")), "explorer should page through the API");
+});
+
 await step("Global search palette (Ctrl+K) with typo tolerance", async () => {
   await go("/");
   await page.keyboard.press("Control+k");

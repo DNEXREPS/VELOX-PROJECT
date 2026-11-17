@@ -65,3 +65,37 @@ Development uses `local`. The Product Image Manager (Phases 6–7) talks only to
 
 ## Self-hosted search note (for Phase 3)
 SearXNG needs a long-running container (not serverless). It is a metasearch engine: it fetches results from upstream search engines, and some of those engines' terms prohibit automated querying. In Phase 3 it will be configured only with engines whose terms permit it. It is wired as an optional provider so it works wherever the owner can host it, and it is tested locally if the image can be pulled.
+
+## Phase 2 results (18 Nov 2026)
+
+**Built** (local stack only; no production database exists or was touched):
+- Migrations `20261118000100`–`000500`: products / variants / sources / providers / sellers / offers / price history / cited FX rates, a 75-node EN/ID taxonomy, RLS (public read, admin write), and search functions (full-text first, typo-tolerant fallback, paging with totals, facets).
+- `scripts/local-supabase/migrate.sh` (ordered, once each, recorded in `velox_migrations`), wired into `start.sh`.
+- `scripts/catalog/export-seed.mjs` + `load-seed.sh`: the real catalogue → Postgres, idempotent, never deletes, never overwrites admin-edited rows (`seed_locked`). Loaded: 203 brands, 1,333 products (706 bikes, 627 parts), 715 image pointers, 1,124 sourced prices, 1,923 evidence rows, 229 variants, 1 offer.
+- Retailer prices are stored as **offers**, not as the product's MSRP. A data error found while doing this: a Hunt listing of a Shimano RT-MT900 rotor pair had been imported as a Hunt wheelset. The record is corrected, its retailer photo rejected and the importer now excludes non-wheel products.
+- `src/lib/catalog/repo.ts` (static | database), `/api/catalog/components`, `/api/search`; the component explorer and global search now page through the API. Catalogue construction moved out of `state.ts` so the shared layout no longer bundles the catalogue.
+
+**Measured JS loaded by the `load` event** (same method, production builds): home 2.9 → 1.9 MB, glossary 4.1 → 2.0 MB, components 4.1 → 2.0 MB. Bike Finder, Builder, Garage, Compare and Upgrade still compute over the full catalogue in the browser (next phases).
+
+**Search performance — synthetic data only** (`scripts/catalog/perf-synthetic.sh`, separate database `velox_perf_synthetic`, every row named “SYNTHETIC TEST …”, `data_origin = 'synthetic-test'`, rejected by a constraint in the real database). Median of 7 runs, local PostgreSQL 16:
+
+| Query | 50k rows | 100k rows |
+| --- | ---: | ---: |
+| text “carbon aero” | 8.7 ms | 16.8 ms |
+| prefix “endur” | 22.5 ms | 43.0 ms |
+| category tree “wheels” | 18.3 ms | 36.2 ms |
+| budget + price sort | 4.3 ms | 13.5 ms |
+| text + category + budget | 4.6 ms | 11.3 ms |
+| deep page (offset 2,400) | 80.9 ms | 149.7 ms |
+| components: type + tier | 4.6 ms | 11.4 ms |
+| components: text + weight sort | 4.8 ms | 7.6 ms |
+| typo, no match “carbn gravle” | 32.1 ms | 61.0 ms |
+| typo “synthetik” (matches every row) | 51.3 ms | 88.2 ms |
+| components typo “endurnce” | 84.5 ms | 149.1 ms |
+| facets | 3.1 ms | 5.6 ms |
+
+The first version scanned every row (1.1–1.7 s at 50k): optional filters written as `(param is null or …)` cannot use indexes. Fixed by building only the needed conditions, two-pass search (indexed full-text, then a GiST nearest-neighbour typo pass bounded to the 500 closest names), and ranking ids before fetching wide columns. Synthetic vocabulary is deliberately small, so match counts are pessimistic.
+
+**Tests:** 88/88 unit (12 new: repository paging/filters/sort/shape, database adapter mapping and failure, migrations additive + RLS + product≠offer + no secrets + synthetic guard + bound parameters), e2e 56/56 in static mode **and** 56/56 with the server in database mode, account e2e 20/20.
+
+**Not done in Phase 2 (planned):** Bike Finder, Builder, Garage, Compare, Upgrade and product pages still read the bundled catalogue; admin writes still go to the browser overlay (Phase 8); image tables/storage (Phase 6); providers/offers ingestion (Phase 3).

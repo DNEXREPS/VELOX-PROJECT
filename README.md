@@ -40,7 +40,23 @@ Never set the Supabase **service-role** key or the Google **client secret** in t
 
 ---
 
-## This release — image reliability, accounts & usability (17 Nov 2026)
+## This release — master catalogue infrastructure, Phase 2 (18 Nov 2026)
+
+Plan: `docs/ecosystem-plan.md`. Exact architecture, measurements and what is not done yet: `docs/phase2-architecture.md`.
+
+- PostgreSQL / Supabase-compatible master catalogue (`supabase/migrations/`): products (identity) separate from offers (sellers' listings), variants, evidence, providers, sellers, price history, cited FX rates, EN/ID taxonomy, RLS, indexed search. Built and tested on the **local stack only**.
+- Real catalogue loaded with `scripts/catalog/load-seed.sh` (idempotent, never deletes, never overwrites admin edits).
+- `VELOX_CATALOG_SOURCE=database` switches the component explorer and global search to the database; default stays the bundled catalogue.
+- The shared layout no longer ships the whole catalogue (home 2.9 → 1.9 MB of JS).
+- Search measured on 50k / 100k **synthetic** rows in a separate database: typical queries 4–45 ms, worst case 150 ms (`scripts/catalog/perf-synthetic.sh`).
+
+```bash
+scripts/local-supabase/start.sh          # PostgreSQL + GoTrue + PostgREST, applies schema + migrations
+scripts/catalog/load-seed.sh             # load the real catalogue
+scripts/catalog/perf-synthetic.sh 50000  # synthetic performance test (separate database)
+```
+
+## Previous release — image reliability, accounts & usability (17 Nov 2026)
 
 ### Images
 - **Investigation:** on a production build all 570 image requests on the main routes returned 200 and none were broken. Every product photo is self-hosted under `public/media/products` (downloaded once from the manufacturer's own product page, checksummed), so manufacturer hotlink protection, CORS and `next.config` `remotePatterns` cannot break them. No hotlink restriction was bypassed: sites that refuse automated access (Pacific/Exotic/SYTE behind Cloudflare, Polygon) were left alone and their models show the placeholder.

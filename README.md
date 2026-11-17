@@ -22,21 +22,68 @@ npm run dev          # http://localhost:3000
 | `npm run test:e2e` | Browser end-to-end test of every primary flow — start the app, then `BASE_URL=http://localhost:3000 npm run test:e2e` |
 | `npm run audit` | Catalogue quality audit computed from the live data → `docs/catalog-audit.md` |
 | `npm run validate:images` | Product-image checks: files, format, dimensions, checksums, duplicate files/URLs, duplicate assignments (`-- --remote` also checks source URLs over HTTP) |
+| `npm run images:health` | Image Health Checker → `src/data/image-health.json` (feeds Admin → Images). Local checks always; polite remote checks of source pages (1 req/s per host, robots.txt respected, 7-day cache, `--force` to refresh, `--local` to skip) |
+| `node scripts/auth-e2e.mjs` | Account journey against the local Supabase-compatible stack (see *Accounts* below) |
 
-### Environment variables (all optional, server-side only)
+### Environment variables (all optional — see `.env.example`)
 
-| Variable | Enables |
-| --- | --- |
-| `ANTHROPIC_API_KEY` | AI Mechanic language + photo analysis (structured output, server-side refusal fallback). Without it, the rule-based engine runs alone and the UI says so. |
-| `VELOX_AI_MODEL` | Model override (default `claude-opus-5-5`) |
-| `VELOX_IMAGE_API_URL`, `VELOX_IMAGE_API_KEY` | Image generation for the Visualizer via any provider behind a small gateway (contract in `src/lib/ai/registry.ts`). Without it, no image is generated and no illustration is substituted. |
-| `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Reserved for the Supabase backend (schema included, adapter not yet wired) |
+| Variable | Where | Enables |
+| --- | --- | --- |
+| `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | browser (public by design) | Accounts: email + Google sign-in, sync of garage, builds, favourites, comparisons, upgrade plans, AI Mechanic history and settings. Data is protected by row-level security, not by hiding the key. Without them the site works fully for guests and data stays on the device. |
+| `NEXT_PUBLIC_SITE_URL` | browser | Base URL for email links and OAuth redirects (e.g. `https://velox.example`) |
+| `NEXT_PUBLIC_AUTH_GOOGLE` | browser | `false` hides the Google button until the provider is enabled in Supabase |
+| `NEXT_PUBLIC_IMAGE_BASE` | browser | Optional CDN / Supabase Storage bucket mirroring `public/media/products` |
+| `ANTHROPIC_API_KEY`, `VELOX_AI_MODEL` | server only | AI Mechanic language + photo analysis |
+| `VELOX_IMAGE_API_URL`, `VELOX_IMAGE_API_KEY` | server only | Visualizer image generation (contract in `src/lib/ai/registry.ts`) |
 
-Keys are read only in server code (`src/lib/ai/*`, `src/app/api/*`, guarded by `server-only`) and never reach the browser.
+Never set the Supabase **service-role** key or the Google **client secret** in this app: the secret lives only in the Supabase dashboard, and a unit test fails if either appears in `src/`. Server keys are read only in `server-only` modules.
 
 ---
 
-## This release — official manufacturer data & Pacific integration (16 Nov 2026, part 2)
+## This release — image reliability, accounts & usability (17 Nov 2026)
+
+### Images
+- **Investigation:** on a production build all 570 image requests on the main routes returned 200 and none were broken. Every product photo is self-hosted under `public/media/products` (downloaded once from the manufacturer's own product page, checksummed), so manufacturer hotlink protection, CORS and `next.config` `remotePatterns` cannot break them. No hotlink restriction was bypassed: sites that refuse automated access (Pacific/Exotic/SYTE behind Cloudflare, Polygon) were left alone and their models show the placeholder.
+- **Registry** (`src/data/product-images.official.ts`, type `ProductImage`): id, subject, primary image, **gallery**, source page + site, original file URL, stored path, format, dimensions, sha256, attribution, licence status, verification status, last verified, updated.
+- **Delivery:** `next/image` with AVIF/WebP, responsive `sizes`, lazy loading below the fold, 30-day optimizer cache. `NEXT_PUBLIC_IMAGE_BASE` moves the originals to a CDN without code changes.
+- **Storage evaluation:** for this catalogue (≈1,000 files, ≈60 MB) the repository + Vercel/Next image optimizer is the simplest reliable option. **Supabase Storage** (public bucket, same project as auth) is recommended once admins upload images from the UI; Cloudinary/S3 add a vendor or IAM setup without a current need.
+- **Fallback chain** (`BikeImage`): primary → gallery images of the same product → admin-supplied image → VELOX placeholder with “View photos on the official site”. Never a photo of another model. Rejected images (admin review) are skipped.
+- **Galleries:** 317 extra official angles for 227 models (thumbnails on the product page). 111 candidate images were rejected because they showed related products (apparel, helmets, bottles) rather than the bike.
+- **Image Health Checker** (`npm run images:health`): file present, real format by magic bytes, decodable, dimensions, low resolution, checksum, duplicates across products, gallery files, association to an existing record, and (rate-limited, robots.txt-aware, cached) whether the source page and original file still answer. Statuses: verified · pending verification · failed · unverified · licence restricted · missing (with reason).
+- **Admin → Images:** coverage, reasons for missing photos, failed checks, set an image source for a missing model (validated, stored as *unverified* until reviewed), retry validation, confirm or reject an association, decision log.
+
+### Accounts (Supabase Auth)
+- Provider: **Supabase Auth** via `@supabase/ssr` + `@supabase/supabase-js` (the only new dependencies). Passwords, hashing, email verification and OAuth are handled by Supabase — no custom cryptography. PKCE flow; the code exchange happens server-side in `src/app/auth/callback/route.ts`, which only redirects to same-site paths.
+- Pages: `/login`, `/signup` (full name, email, password + confirmation, terms), `/forgot-password`, `/reset-password`, `/account`, `/terms`, `/privacy`. Password reset and sign-in errors never reveal whether an address has an account.
+- “Keep me signed in” (default on) keeps the session across tabs and restarts; off ends it with the browser session.
+- **Guests** can use everything. Saving (garage, favourites, builds, upgrade plans) shows a short prompt: create an account, sign in, or save on this device only.
+- **Sync** (`src/lib/sync.ts`): on sign-in, device data merges into the account (account wins on conflicts) and is kept in `user_collections` (one row per user per collection, owner-only RLS). Sign-out and account switches clear personal data from the device.
+- **Account settings:** name, avatar, sign-in methods, password change, currency, units, language, notifications, sync status, sign out, and account deletion (type DELETE; removes the auth user and all rows via the `delete_my_account()` function).
+
+#### Production setup
+1. Create a Supabase project and run `supabase/schema.sql` in the SQL editor.
+2. Supabase → Authentication → URL configuration: Site URL `https://<your-domain>`; Redirect URLs `https://<your-domain>/auth/callback` (add `http://localhost:3000/auth/callback` for development).
+3. Configure SMTP (Authentication → Emails) — Supabase's built-in sender is rate-limited and meant for testing.
+4. Google: in Google Cloud Console create an OAuth client (Web application). Authorised redirect URI: `https://<project-ref>.supabase.co/auth/v1/callback`. Paste the client ID and secret into Supabase → Authentication → Providers → Google and enable it.
+5. Set `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `NEXT_PUBLIC_SITE_URL` (and `NEXT_PUBLIC_AUTH_GOOGLE=false` until step 4 is done) in the hosting environment and redeploy.
+6. Promote an admin with SQL: `update profiles set role = 'admin' where id = '<user id>';` (users cannot change their own role).
+
+#### Local test stack
+`scripts/local-supabase/start.sh` starts PostgreSQL 16, GoTrue and PostgREST (Docker) behind a small gateway on `:54321` with an SMTP sink, applies the schema and writes `scripts/local-supabase/.env.local-stack` (git-ignored, local-only secrets). Then:
+```bash
+set -a; . scripts/local-supabase/.env.local-stack; set +a
+VELOX_DIST_DIR=.next-auth npm run build && VELOX_DIST_DIR=.next-auth PORT=3100 npm start &
+node scripts/auth-e2e.mjs
+```
+
+### Usability
+- **Bahasa Indonesia + English:** follows the saved preference, else the browser language (Indonesian browsers get Indonesian). Toggle in the header and in Account. Navigation, accounts, prompts, images, finder controls and the glossary are translated; long editorial text (hero copy, product descriptions, guides) is still English.
+- **Beginner glossary** (`/glossary`, 16 terms): groupset, bottom bracket, headset, freehub, hub, thru-axle, rim depth, tyre clearance, carbon layup, mechanical vs hydraulic brakes and more, shown as dotted-underline tooltips on spec labels (hover, focus or tap).
+- **Discovery:** search also matches wheelset, tyres, brakes, use and published component lists; “newest” sorts undated models last; filters combine (brand + category + budget + use + material + groupset…).
+- **Currency:** IDR default. USD display uses the Bank Indonesia JISDOR rate (Rp 18.148, 4 Nov 2026), cited in the UI.
+- **Security:** rate limits on `/api/mechanic` (20/min) and `/api/visualizer` (10/min), input validation with Zod, security headers (`X-Content-Type-Options`, `Referrer-Policy`, `X-Frame-Options`, `Permissions-Policy`).
+
+## Previous release — official manufacturer data & Pacific integration (16 Nov 2026, part 2)
 
 UI unchanged. Full figures: [`docs/catalog-audit.md`](docs/catalog-audit.md) (`npm run audit`).
 
@@ -173,11 +220,12 @@ Additions to the relational schema: `source_type`, `confidence_level`, `brand_ki
 | Check | Result |
 | --- | --- |
 | `npm run lint` (TypeScript strict) | ✅ |
-| `npm test` | ✅ 62 / 62. Earlier tests plus Pacific acceptance tests (all requested Primum models and Magnus 5.0 present with official URLs; variants keep distinct specs; Magnus 5.0 matches the official spec and links SYTE Chronos hubs and rims; spec links resolve; no invented hub bearing; SYTE, Pacific and other brands separated with official sources; no unpublished model years; Pacific without a validated photo is classed “missing”) and image registry rules (local file, checksum, no file on two records, manufacturer or licensed only) |
-| `npm run validate:images` | ✅ 716 registered images (529 bikes, 187 wheelsets); files present, formats and dimensions match, checksums unchanged, no file / URL / source assigned to two records |
-| `npm run build` | ✅ (520 bike pages, 588 component pages prerendered) |
-| `npm run test:e2e` (production) | ✅ 44 / 44, no console or runtime errors. Includes: Finder cards show distinct official photos or the placeholder and never category photography; a Canyon page shows its own official photo with credit, component list and labelled US$→IDR conversion; Pacific Magnus 5.0 shows the missing-image state with its official link and navigates bike → SYTE Chronos hubs → replacement-bearings guidance; Primum 5.5 and a SYTE bag are searchable; no horizontal overflow at 390 px on 13 routes |
-| `supabase/schema.sql` | ✅ applied to PostgreSQL 16 (24 tables, 44 RLS policies). `product_images` rejects the same file on a second record; `prices` rejects a non-estimate price without a source URL |
+| `npm test` | ✅ 75 / 75 — adds open-redirect guard, callback guard, no secrets in `src/`, RLS SQL (owner-only, no self-promotion, account deletion), `.env.example` placeholders, Indonesian key coverage + language detection, JISDOR conversion, glossary terms in both languages, newest sort, part search, combined filters, galleries never shared across products |
+| `npm run validate:images` | ✅ 716 registered images + 317 gallery files; formats, dimensions, checksums, no file assigned to two products |
+| `npm run build` | ✅ |
+| `npm run test:e2e` (production, guest build) | ✅ 55 / 55, no runtime errors — adds language switch, glossary tooltip, gallery switching, broken-image fallback (forced 404 → next image / placeholder), Admin → Images, saved upgrade plan + AI Mechanic history, no overflow at 390 px on 17 routes |
+| `scripts/auth-e2e.mjs` (production build against the local Supabase stack) | ✅ 20 / 20 — guest browse → save prompt → sign-up validation → verification email → unconfirmed blocked → verify returns to the bike → save synced to the database → session persists → sign-out clears device → generic invalid-credential error → sign-in restores garage → password reset → neutral reset for unknown email → RLS isolation (incl. role self-promotion blocked) → second account on same device sees nothing → admin closed → Google hand-off (PKCE, callback) → account deletion → phone/tablet layout → no runtime errors |
+| Google sign-in with a real Google account | ⚠️ **Not tested** — no Google OAuth credentials in this environment. Only the hand-off to the provider was verified. |
 
 ## Known limitations
 
@@ -185,13 +233,15 @@ Additions to the relational schema: `source_type`, `confidence_level`, `brand_ki
 - **Pacific**: the official site blocks automated access, so Pacific data comes from the search index of its official pages (unverified) and no Pacific photo could be downloaded or validated. 56 models, 27 with full component lists, 37 with official prices, 0 photos. An official CSV/JSON export from Pacific would fix both.
 - Specialized, Tern, United and Pacific publish no model year on product pages: shown as “Listed 2026” or “Model year not published”.
 
-- **Product photos:** only 2 of 520 models have a verified photo. Every other model shows the VELOX placeholder with a link to the manufacturer’s photos. Manufacturer images were not copied because their licences are unconfirmed, and Wikimedia Commons has very few photos of current models.
+- **Product photos:** 529 of 706 models have a verified photo; 177 show the placeholder (56 Pacific/Exotic/SYTE and 26 Polygon behind access blocks, 18 United with no usable product image, ~77 editorial/researched records without an official product page). Admin → Images lists each with its reason.
 - **Official imports cover five brands** (Canyon, Cervélo, Santa Cruz, Specialized, Tern). Trek, Giant and Cannondale sitemaps sit on hosts outside the allowed network. Polygon, Rodalink, Pacific, Scott and Orbea refuse automated access. Their data comes from search-indexed official pages (unverified) or is still missing. `docs/catalog-audit.md` lists the requested brands that still have fewer than three models (including Scott, Merida, BMC, Colnago, Orbea, Trek and Giant).
 - **Thin categories:** Urban & Hybrid (5), BMX (3) and Specialty (16) are thin because the imported brands focus on road, MTB, gravel and e-bikes.
 - **Prices:** imported prices are US MSRPs converted to IDR (labelled). No official Indonesian MSRP was retrievable. 67 seed bikes still carry labelled VELOX estimates.
 - **Model years:** 87 seed records have unchecked model years. Specialized and Tern are marked “Listed 2026” because neither publishes a model year.
 - **No live AI in this build** (no `ANTHROPIC_API_KEY` or image provider), and the Anthropic provider code has not been exercised against the live API.
-- Persistence is still per-browser (localStorage); Supabase schema is ready but not wired. The demo admin role is not security.
+- **Accounts** are implemented and tested against a local Supabase-compatible stack (GoTrue + PostgREST), not yet against a hosted Supabase project. **Google login has not been tested with real credentials.** Without Supabase variables the site runs in guest/device mode, and `/account` offers a labelled developer demo role switch (not security).
+- Indonesian covers the interface, not long editorial text or product descriptions.
+- Remote image-source checks may report hosts as unreachable from restricted networks; that does not affect the self-hosted files.
 
 ## Recommended next steps
 
@@ -200,4 +250,5 @@ Additions to the relational schema: `source_type`, `confidence_level`, `brand_ki
 3. **More official imports:** allow the sitemap hosts for Trek, Giant and Cannondale, and add Scott, Merida, Orbea, BMC and Cube when reachable. The harvesters follow the same pattern as the five done.
 4. Review and promote the 26 researched records, and replace the 67 remaining seed price estimates with sourced prices or “Not Available”.
 5. Set `ANTHROPIC_API_KEY` and an image provider, then evaluate AI Mechanic and the Visualizer on real inputs.
-6. Wire Supabase and add Bahasa Indonesia localisation.
+6. Connect a hosted Supabase project, configure SMTP and Google OAuth (see *Production setup*), then test Google sign-in with a real account.
+7. Translate long-form editorial text into Bahasa Indonesia.

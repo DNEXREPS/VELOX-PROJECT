@@ -139,6 +139,14 @@ await withModules(async (load) => {
     if (seenFile.has(i.primary_image_url) && seenFile.get(i.primary_image_url) !== i.subjectId) issues.push(`same URL also assigned to ${seenFile.get(i.primary_image_url)}`);
     seenFile.set(i.primary_image_url, i.subjectId);
     if (!subjectExists(i)) issues.push("incorrect association: product record not found");
+    for (const g of i.gallery ?? []) {
+      const gf = path.join(root, "public", g.src);
+      if (!fs.existsSync(gf)) { issues.push(`gallery file missing: ${g.src}`); continue; }
+      const gsha = crypto.createHash("sha256").update(fs.readFileSync(gf)).digest("hex");
+      if (gsha !== g.sha256) issues.push(`gallery checksum changed: ${g.src}`);
+      if (seenSha.has(gsha) && seenSha.get(gsha) !== i.subjectId) issues.push(`gallery file also assigned to ${seenSha.get(gsha)}`);
+      seenSha.set(gsha, i.subjectId);
+    }
     const source = cache.get(i.image_source_url) ?? null;
     const original = i.original_file_url ? cache.get(i.original_file_url) ?? null : null;
     if (source && source.ok === false) issues.push(`source page now answers ${source.status ?? source.note} — re-verify`);
@@ -150,7 +158,7 @@ await withModules(async (load) => {
       : i.image_verification_status === "pending-review" ? "pending"
       : i.image_verification_status === "verified" && isDisplayable(i) ? "verified"
       : "unverified";
-    images.push({ id: i.id, subjectKind: i.subjectKind, subjectId: i.subjectId, status, file: f, source, original, issues, gallery: i.gallery_images?.length ?? 0 });
+    images.push({ id: i.id, subjectKind: i.subjectKind, subjectId: i.subjectId, status, file: f, source, original, issues, gallery: (i.gallery?.length ?? 0) + (i.gallery_images?.length ?? 0) });
   }
 
   // missing images, with the actual reason

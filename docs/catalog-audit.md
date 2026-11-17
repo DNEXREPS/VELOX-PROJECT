@@ -1,6 +1,6 @@
 # VELOX catalogue audit
 
-Generated 2026-11-16 by `npm run audit` from the live data files. Every figure below is a count of actual records.
+Generated 2026-11-17 by `npm run audit` from the live data files. Every figure below is a count of actual records.
 
 ## Totals
 | Measure | Count |

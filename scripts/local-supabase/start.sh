@@ -16,7 +16,8 @@ mkdir -p "$STATE"; chown postgres "$STATE"
 if [ ! -d "$STATE/data" ]; then
   su postgres -c "$PGBIN/initdb -D $STATE/data -A trust >/dev/null"
 fi
-su postgres -c "$PGBIN/pg_ctl -D $STATE/data -o '-p $PG_PORT -k $STATE -c listen_addresses=127.0.0.1' -l $STATE/pg.log start" >/dev/null
+su postgres -c "$PGBIN/pg_ctl -D $STATE/data status" >/dev/null 2>&1 || \
+  su postgres -c "$PGBIN/pg_ctl -D $STATE/data -o '-p $PG_PORT -k $STATE -c listen_addresses=127.0.0.1' -l $STATE/pg.log start" >/dev/null
 for i in $(seq 1 30); do su postgres -c "psql -h $STATE -p $PG_PORT -c 'select 1'" >/dev/null 2>&1 && break; sleep 0.5; done
 
 PSQL="psql -h $STATE -p $PG_PORT -U postgres -v ON_ERROR_STOP=1 -q"
@@ -49,7 +50,7 @@ docker run -d --name velox-gotrue --network host \
 
 # gateway + SMTP sink (GoTrue needs the SMTP port at send time)
 pkill -f "local-supabase/gateway.mjs" >/dev/null 2>&1 || true
-nohup node "$HERE/gateway.mjs" > "$STATE/gateway.log" 2>&1 &
+nohup setsid node "$HERE/gateway.mjs" > "$STATE/gateway.log" 2>&1 < /dev/null &
 
 # wait for GoTrue migrations (auth.users) then apply the VELOX schema
 for i in $(seq 1 60); do

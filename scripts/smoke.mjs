@@ -336,6 +336,87 @@ await step("AI Visualizer: builds a brief and refuses to fake an image without a
   await page.getByText(/No image was generated/).first().waitFor();
 });
 
+await step("Language switch: Bahasa Indonesia and back", async () => {
+  await go("/bikes");
+  await page.getByRole("button", { name: /Language: English/ }).click();
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Cari Sepeda" }).waitFor();
+  assert((await page.evaluate(() => document.documentElement.lang)) === "id", "html lang not updated");
+  await page.getByRole("button", { name: /Bahasa: Bahasa Indonesia/ }).click();
+  await page.getByRole("navigation", { name: "Primary" }).getByRole("link", { name: "Bike Finder" }).waitFor();
+});
+
+await step("Glossary: technical terms explain themselves on product pages", async () => {
+  await go("/bikes/canyon-ultimate-cf-7-di2-2027");
+  const term = page.getByRole("button", { name: "Groupset" }).first();
+  await term.hover();
+  await page.getByRole("tooltip").getByText(/shift gears and stop the bike/).waitFor();
+  await go("/glossary");
+  await page.getByText("Bottom bracket").first().waitFor();
+});
+
+await step("Product gallery: official photos of the same product, switchable", async () => {
+  await go("/bikes/cervelo-caledonia-105-2027");
+  const thumbs = page.getByRole("group", { name: "Product photos" }).getByRole("button");
+  assert((await thumbs.count()) >= 2, "no gallery thumbnails");
+  const first = decodeURIComponent((await page.locator("[data-image-status=verified] img").first().getAttribute("src")) ?? "");
+  await thumbs.nth(1).click();
+  await page.waitForTimeout(300);
+  const second = decodeURIComponent((await page.locator("[data-image-status=verified] img").first().getAttribute("src")) ?? "");
+  assert(first !== second && second.includes("cervelo-caledonia-105-2027--g"), `gallery did not switch (${second})`);
+});
+
+await step("Broken image falls back to the same product's gallery, then a labelled placeholder", async () => {
+  const ctx2 = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+  const p2 = await ctx2.newPage();
+  await p2.route(/cervelo-caledonia-105-2027\.webp/, (r) => r.fulfill({ status: 404, body: "" }));
+  await p2.goto(BASE + "/bikes/cervelo-caledonia-105-2027", { waitUntil: "networkidle" });
+  await p2.locator("[data-image-step=gallery]").first().waitFor();
+  await p2.route(/cervelo-caledonia-105-2027--g\d\.webp/, (r) => r.fulfill({ status: 404, body: "" }));
+  await p2.goto(BASE + "/bikes/cervelo-caledonia-105-2027", { waitUntil: "networkidle" });
+  await p2.locator("[data-image-status=failed]").first().waitFor();
+  await p2.getByText("Photo failed to load").first().waitFor();
+  const other = await p2.locator("img").evaluateAll((els) => els.map((e) => decodeURIComponent(e.getAttribute("src") ?? "")).filter((u) => u.includes("/media/products/") && !u.includes("cervelo-caledonia-105-2027")));
+  // related-bike tiles further down the page may show their own photos; the hero must not
+  const hero = await p2.locator("section").first().locator("img").evaluateAll((els) => els.map((e) => e.getAttribute("src") ?? ""));
+  assert(hero.every((u) => !u.includes("/media/products/") || decodeURIComponent(u).includes("cervelo-caledonia-105-2027")), "hero shows another product's photo");
+  void other;
+  await ctx2.close();
+});
+
+await step("Admin Images tab: coverage, missing reasons, association review", async () => {
+  await go("/account");
+  if (await page.getByLabel("Display name").count()) {
+    await page.getByLabel("Display name").fill("QA Admin");
+    await page.getByRole("radio", { name: "Administrator" }).click();
+    await page.getByRole("button", { name: "Continue" }).click();
+  } else if (!(await page.getByText("Role: admin").count())) {
+    await page.getByRole("button", { name: "Sign out" }).click();
+    await page.getByLabel("Display name").fill("QA Admin");
+    await page.getByRole("radio", { name: "Administrator" }).click();
+    await page.getByRole("button", { name: "Continue" }).click();
+  }
+  await go("/admin");
+  await page.getByRole("radio", { name: "Images" }).click();
+  await page.getByText("Verified images").waitFor();
+  await page.getByText("Why images are missing").waitFor();
+  await page.getByText(/Official site blocks automated access/).first().waitFor();
+  await page.getByRole("radio", { name: "Review associations" }).click();
+  await page.getByRole("button", { name: "Retry validation" }).first().click();
+  await page.getByText(/Image loads/).first().waitFor();
+});
+
+await step("Upgrade plan and AI Mechanic history are saved to My Garage", async () => {
+  await go("/upgrade?bike=giant-tcr-advanced-1-2024");
+  await page.getByRole("button", { name: /Generate|Recommend|Show upgrades/ }).first().click().catch(() => {});
+  await page.getByRole("button", { name: "Save plan" }).first().click();
+  await go("/mechanic?q=" + encodeURIComponent("creaking noise from bottom bracket when pedalling"));
+  await page.waitForTimeout(1500);
+  await go("/garage?tab=plans");
+  await page.getByText(/Giant TCR Advanced 1/).first().waitFor();
+  await go("/garage?tab=history");
+  await page.getByText(/creaking noise from bottom bracket/).first().waitFor();
+});
+
 await step("Sources page lists image licences and research findings", async () => {
   await go("/sources");
   await page.getByRole("heading", { name: "Product photography" }).waitFor();
@@ -346,7 +427,7 @@ await step("Sources page lists image licences and research findings", async () =
 /* --------------------------- responsive checks --------------------------- */
 const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1 });
 const m = await mobile.newPage();
-for (const p of ["/", "/bikes", "/build", "/upgrade", "/brands", "/components", "/compare", "/garage", "/bikes/polygon-strattos-s4-2024", "/mechanic", "/visualizer", "/simulator", "/sources"]) {
+for (const p of ["/", "/bikes", "/build", "/upgrade", "/brands", "/components", "/compare", "/garage", "/bikes/polygon-strattos-s4-2024", "/mechanic", "/visualizer", "/simulator", "/sources", "/glossary", "/login", "/signup", "/account", "/bikes/pacific-magnus-5-0-2022"]) {
   await step(`Mobile 390px has no horizontal overflow: ${p}`, async () => {
     await m.goto(BASE + p, { waitUntil: "networkidle" });
     const over = await m.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);

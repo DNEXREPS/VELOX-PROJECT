@@ -96,7 +96,7 @@ await step("Unconfirmed account cannot sign in yet", async () => {
 
 await step("Email verification link signs the user in and returns them to the bike they were saving", async () => {
   const link = verifyLink(await mailTo(A.email, /confirm/i));
-  assert(decodeURIComponent(link).includes(`/auth/callback?next=${BIKE}`), "verification link does not return to the product page");
+  assert(decodeURIComponent(decodeURIComponent(link)).includes(`/auth/callback?next=${BIKE}`), "verification link does not return to the product page");
   await page.goto(link, { waitUntil: "networkidle" });
   await page.waitForURL(BASE + BIKE);
   await page.getByRole("link", { name: new RegExp(`Account: ${A.name}`) }).waitFor();

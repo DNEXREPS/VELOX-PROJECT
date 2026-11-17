@@ -46,6 +46,15 @@ await withModules(async (load) => {
       if (prev && prev.subjectId !== img.subjectId) problems.push(`${tag}: ${what} already assigned to ${prev.subjectKind}:${prev.subjectId}`);
       map.set(key, img);
     }
+    for (const g of img.gallery ?? []) {
+      const gf = path.join(root, "public", g.src);
+      if (!fs.existsSync(gf)) { problems.push(`${tag}: gallery file missing (${g.src})`); continue; }
+      const gsha = crypto.createHash("sha256").update(fs.readFileSync(gf)).digest("hex");
+      if (gsha !== g.sha256) problems.push(`${tag}: gallery checksum mismatch (${g.src})`);
+      const prev = byHash.get(gsha);
+      if (prev && prev.subjectId !== img.subjectId) problems.push(`${tag}: gallery file already assigned to ${prev.subjectKind}:${prev.subjectId}`);
+      byHash.set(gsha, img);
+    }
     if (isDisplayable(img)) {
       const k = `${img.subjectKind}:${img.subjectId}`;
       if (primaryPerSubject.has(k)) warn.push(`${tag}: more than one displayable image; the first is primary`);

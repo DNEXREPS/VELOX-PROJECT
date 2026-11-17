@@ -36,9 +36,13 @@ def cands(r):
     if b == "specialized":
         out += sorted(set(m.split("?")[0] for m in re.findall(r'https://resources\.specialized\.com/media-libraries/[^"\s]+?_(?:FDSQ|RDSQ|FDTQ|RDTQ|DET\d?)[^"\s]*?\.(?:webp|jpg|png)', h)))
     return [x for x in out if x]
-out = []
+import os.path
+out = json.load(open("images_gallery.json")) if os.path.exists("images_gallery.json") else []
+done = {x["subjectId"] for x in out}
+for x in out:
+    for g in x["gallery"]: seen.add(g.get("sourceSha256", ""))
 for i, r in enumerate(recs):
-    if r["id"] not in prim: continue
+    if r["id"] not in prim or r["id"] in done: continue
     got = []
     try:
         for c in cands(r):

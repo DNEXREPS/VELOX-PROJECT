@@ -26,7 +26,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "c33ceab077e25cf12d8d1fad771c87665ed4b79eea0a2475fb70fc7c58661003"
+  "sha256": "c33ceab077e25cf12d8d1fad771c87665ed4b79eea0a2475fb70fc7c58661003",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-precede-on-comfort-5-2024--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "90181461a70dec370ce282ccf59766ad5e562830cd2995cda9475f659e1d0fd9",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1733938190/CE9D004A-A33D-4069-A5189B077609C149"
+   },
+   {
+    "src": "/media/products/canyon-precede-on-comfort-5-2024--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "0df08ce0c6c753b5430299cb346819374e6880f24ec6d4548d9a02f5455554b8",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1733932246/40756F1B-EE35-483F-80325AB6748C1CE0"
+   }
+  ]
  },
  {
   "id": "img-canyon-strive-on-cfr-underdog-2024",
@@ -202,7 +218,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d05fdaecbcf6d9cf49fa2e93173d249ce053a3e264b17339cd7188879e2024db"
+  "sha256": "d05fdaecbcf6d9cf49fa2e93173d249ce053a3e264b17339cd7188879e2024db",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grizl-6-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "2dcfeebe82ee17117cff4ac4def90315e2b599a3cb59c09f3151e5323e04448a",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1778675178/2027_FULL_grizl_al-6_4444_R124_P02_fb0qgg"
+   }
+  ]
  },
  {
   "id": "img-canyon-grizl-cf-6-2027",
@@ -224,7 +249,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "fcf66fe285632688e5c375ff36103f396ceb16597daea8d27cfcc7ac0c6a9537"
+  "sha256": "fcf66fe285632688e5c375ff36103f396ceb16597daea8d27cfcc7ac0c6a9537",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grizl-cf-6-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "9fbf61a5ffb5ee48b7ebf163f5f4b80f6bef64da9a03aab57f75b5721f0c7bdc",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1785934002/2027_FULL_grizl_cf-6_4552_R126_P05_t2uasb"
+   }
+  ]
  },
  {
   "id": "img-canyon-grizl-cf-7-axs-2027",
@@ -246,7 +280,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "48025677c233d48e4350b69172b0a36b4132bdf69e0c5392b554fe1a9dba989d"
+  "sha256": "48025677c233d48e4350b69172b0a36b4132bdf69e0c5392b554fe1a9dba989d",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grizl-cf-7-axs-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "a89bcc82d3785ea8114b89f94e6f162a198d73fee805e3fee613764fde278ed6",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1785934022/2027_FULL_grizl_cf-7-axs_4554_R126_P06_rng04b"
+   }
+  ]
  },
  {
   "id": "img-canyon-grizl-cf-7-esc-2027",
@@ -268,7 +311,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "12317782ff1af691c891ccd7a470e4e6e262faf05829371684ac18a51d78a666"
+  "sha256": "12317782ff1af691c891ccd7a470e4e6e262faf05829371684ac18a51d78a666",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grizl-cf-7-esc-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "e0501bc7c0d066c5617d598457bb6b6f034b6f1a42245a298736ef3ae56a29cd",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1785934006/2027_FULL_grizl_cf-7-esc_4555_R126_P05_swvcib"
+   }
+  ]
  },
  {
   "id": "img-canyon-grizl-cf-8-di2-2027",
@@ -290,7 +342,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "65375e6d5d0db9968e60772fc11f892c1400485e92691f11d73ea80c28c125b7"
+  "sha256": "65375e6d5d0db9968e60772fc11f892c1400485e92691f11d73ea80c28c125b7",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grizl-cf-8-di2-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "5b8fcfabf7c12082d02e850f55722c6ed9d8c59f688eb24719b0c8714a826bbd",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1785934012/2027_FULL_grizl_cf-8-di2_4556_R126_P05_qcryz8"
+   }
+  ]
  },
  {
   "id": "img-canyon-grizl-cf-8-esc-w-eclips-2027",
@@ -334,7 +395,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "4d0c9cf65deffdce489762f7bbeae9b8805e3350f92cf545fb42317146fbf0b3"
+  "sha256": "4d0c9cf65deffdce489762f7bbeae9b8805e3350f92cf545fb42317146fbf0b3",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grail-cf-slx-7-di2-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "50247aa6b6411b4dd2893d10d667d34004f63d96dc50cb15f2340e29cbd2f61c",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1788242355/2027_FULL_grail_cf-slx-7-di2_4503_R140_P02_qmsvbx"
+   }
+  ]
  },
  {
   "id": "img-canyon-grail-cf-slx-8-axs-2027",
@@ -356,7 +426,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9f8da64600ab2e024e9390ba656ef611f1c4b0c45d778dd33b0cf12d08202fb7"
+  "sha256": "9f8da64600ab2e024e9390ba656ef611f1c4b0c45d778dd33b0cf12d08202fb7",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grail-cf-slx-8-axs-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "426d033ac34b9817d0b96d447869b5baeb8e7dcdce2c279e1059bbdf47675e7f",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1788242448/2027_FULL_grail_cf-slx-8-axs_4505_R140_P02_mv1rd2"
+   }
+  ]
  },
  {
   "id": "img-canyon-grail-cf-7-speed-2027",
@@ -378,7 +457,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "c3d2525f4c7497cb5c9abca997c64b5ee403282278ccc265e1e87e611e82a191"
+  "sha256": "c3d2525f4c7497cb5c9abca997c64b5ee403282278ccc265e1e87e611e82a191",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grail-cf-7-speed-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "609f040161fa4ddfc52c539ee97fe9fd47386c61601a17db56d697c351351d17",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1788242662/2027_FULL_grail_cf-7-spd_4509_R139_P02_dxtzkt"
+   }
+  ]
  },
  {
   "id": "img-canyon-grail-cf-7-2027",
@@ -400,7 +488,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "4189e99d9baa8120c272e94779a8c35b90cd917a6c21ad46a318670a73809fa1"
+  "sha256": "4189e99d9baa8120c272e94779a8c35b90cd917a6c21ad46a318670a73809fa1",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-grail-cf-7-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "fa9ade10abaf5db2c9faa80319a10ca09a657cddd4500e17b04883332c061697",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1788242511/2027_FULL_grail_cf-7_4508_R139_P02_gvrm3b"
+   }
+  ]
  },
  {
   "id": "img-canyon-grail-cfr-axs-2027",
@@ -466,7 +563,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "a2aa605461e236fd0cb0bb27226e72e246e4189d4e5bf3bedd2ea1682b84d745"
+  "sha256": "a2aa605461e236fd0cb0bb27226e72e246e4189d4e5bf3bedd2ea1682b84d745",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-lux-world-cup-cf-9-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "3a668bfff376e22c0ac5f764ed841bda9637230882e0299e609cc84bb77ac8a7",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1776256207/2027_FULL_lux-wc_cf-9_4406_M195_P05_pjlljv"
+   }
+  ]
  },
  {
   "id": "img-canyon-lux-world-cup-cfr-x0-axs-2027",
@@ -576,7 +682,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "86a7824f42e260928d963e10f6f64b512ef8fb8ab7496e74fc91714d52f193c2"
+  "sha256": "86a7824f42e260928d963e10f6f64b512ef8fb8ab7496e74fc91714d52f193c2",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-lux-trail-cf-6-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "97995eb55a950f1e9ed1099172e3ebc66cb5aedacf242bdf6f242c97d605507a",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1781845091/2027_FULL_lux-trail_cf-6_4402_M194_P01_u750eg"
+   }
+  ]
  },
  {
   "id": "img-canyon-lux-trail-cf-7-2027",
@@ -598,7 +713,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "f76a8d9dbbed4767fc66faa4a4e0915ac428eef8c1fc6f4227df89a6c6ae269f"
+  "sha256": "f76a8d9dbbed4767fc66faa4a4e0915ac428eef8c1fc6f4227df89a6c6ae269f",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-lux-trail-cf-7-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "fdef819910d94842ccaa62229b0eee2c1e4a9a1935a55fdd9de8bc41d4e11720",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1781856096/2027_FULL_lux-trail_cf-7_4403_M194_P02_rmi229"
+   }
+  ]
  },
  {
   "id": "img-canyon-lux-trail-cf-8-2027",
@@ -664,7 +788,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "6e4a70862c72199999d3065ff80eb53e1eae0c5d3afe9ff9cefb64a9d000f9d4"
+  "sha256": "6e4a70862c72199999d3065ff80eb53e1eae0c5d3afe9ff9cefb64a9d000f9d4",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-neuron-5-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "ae4fd9b721782a1da5c903fcd5f55321b57fb647a9b9c1d5e8d6df390309dcd6",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1783585560/2027_FULL_neuron_5_4416_M118_P14_jttjq9"
+   }
+  ]
  },
  {
   "id": "img-canyon-neuron-6-2027",
@@ -686,7 +819,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "0193072017bb8a33c3ea13f98b1e404dfbbabd680916006677caca1811ecc0bb"
+  "sha256": "0193072017bb8a33c3ea13f98b1e404dfbbabd680916006677caca1811ecc0bb",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-neuron-6-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "18c99c77a7322d8b4e044d61eb362dcc32388b136fe87dcafc5126609755a7fc",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1783584699/2027_FULL_neuron_6_4417_M118_P16_gw3ldk"
+   }
+  ]
  },
  {
   "id": "img-canyon-spectral-5-2027",
@@ -708,7 +850,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "f14d3c94454285c4550ed5fa318a6fee2549dce479f31b8c100f0ffcd3f24bb8"
+  "sha256": "f14d3c94454285c4550ed5fa318a6fee2549dce479f31b8c100f0ffcd3f24bb8",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-spectral-5-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "378323f9a8c547fcb52dde40eee084edfbcd45894a796c4a381c82bd5e3ae90f",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1785483079/2027_FULL_spectral_5_4377_M178_P05_P5_29_trnk2b"
+   }
+  ]
  },
  {
   "id": "img-canyon-spectral-6-2027",
@@ -730,7 +881,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "66d1f67b24cae4e0c14bf685c8bcd27de2051aab44a8e99eb8edde7bc6cc9fc0"
+  "sha256": "66d1f67b24cae4e0c14bf685c8bcd27de2051aab44a8e99eb8edde7bc6cc9fc0",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-spectral-6-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "27fca2d54f0610c4fbf65f1d17dba766be05f8b69ab4fdc722e3ae932faf0133",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1785846236/2027_FULL_spectral_6_4378_M178_P05_P5_29_twvsxr"
+   }
+  ]
  },
  {
   "id": "img-canyon-spectral-cf-7-2027",
@@ -752,7 +912,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9f63b5526e2d183de77c5e9a6f434e1ae11f926e940a1c94679336c84a92dda8"
+  "sha256": "9f63b5526e2d183de77c5e9a6f434e1ae11f926e940a1c94679336c84a92dda8",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-spectral-cf-7-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "2f6a1e4eb59ac90e7a8ec8da303b2b7eb3cb07e948d8d4cd52983f49b7b5e57e",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1787554526/2027_FULL_spectral_cf-7_4380_M179_P08_P5_29_yyqkjb"
+   }
+  ]
  },
  {
   "id": "img-canyon-spectral-cf-8-2027",
@@ -1148,7 +1317,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "a1db1aaf8486cbd63bd73683c630d36c50adcf004ddc915a58f5a1d767aa50f1"
+  "sha256": "a1db1aaf8486cbd63bd73683c630d36c50adcf004ddc915a58f5a1d767aa50f1",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-aeroad-cf-slx-7-axs-2027--g1.webp",
+    "width": 900,
+    "height": 507,
+    "sha256": "3ffe02596357a3d4d7a5b65fa9b8635e102b89975fa2883078302864c1e21cc1",
+    "original_file_url": "https://www.canyon.com/dw/image/v2/BCML_PRD/on/demandware.static/-/Sites-canyon-master/default/dwe3fe6132/images/full/2027_FULL_/2027/2027_FULL_aeroad_cf-slx-7-axs_4530_R107_P01.png"
+   }
+  ]
  },
  {
   "id": "img-canyon-aeroad-cf-slx-8-di2-2027",
@@ -1676,7 +1854,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1067 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9e8a75db2c80ae7835e66bb46137db1974e70688ea9e64995072ccfe08832e66"
+  "sha256": "9e8a75db2c80ae7835e66bb46137db1974e70688ea9e64995072ccfe08832e66",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-ultimate-cf-sl-7-di2-2023--g1.webp",
+    "width": 900,
+    "height": 600,
+    "sha256": "0854253dab3940ffa27e2800dcc0501e24c709984acf59784f75c13aead8546f",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1790959767/FULL_50056175-0001125263_hjigex"
+   },
+   {
+    "src": "/media/products/canyon-ultimate-cf-sl-7-di2-2023--g2.webp",
+    "width": 900,
+    "height": 600,
+    "sha256": "47d85fd4ee3b48aca9d62e3bbc2eae676f5891ec04825e0f98a2c27a73d12cf8",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1790960038/FULL_50056175-0001125597_v10tgz"
+   }
+  ]
  },
  {
   "id": "img-canyon-ultimate-cf-sl-7-etap-2023",
@@ -1874,7 +2068,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9f511680fcd19d84cf16812a0ab8ddc53d4c8b6130e0c5e710f00e8140a55039"
+  "sha256": "9f511680fcd19d84cf16812a0ab8ddc53d4c8b6130e0c5e710f00e8140a55039",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-aeroad-cf-slx-7-di2-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "8c8b9901aa714086d4c11b494f55d068745b95aa20c46bc9eaf9c679d1d456a7",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1777386001/2027_FULL_aeroad_cf-slx-7-di2_4531_R107_P12_wpmizp"
+   }
+  ]
  },
  {
   "id": "img-canyon-aeroad-cf-slx-8-axs-2027",
@@ -1940,7 +2143,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "1b3074078e73462d932683441974fc736fbbd4f4397774e0e6ef7f1fc388d607"
+  "sha256": "1b3074078e73462d932683441974fc736fbbd4f4397774e0e6ef7f1fc388d607",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-endurace-cf-slx-8-di2-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "27adda30db524701018ede1550b64a0088554751b5b7c7e4e6d90368b70c0f02",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1792653150/2027_FULL_endurace_cf-slx-8-di2_4432_R130_P02_zqw3jc"
+   }
+  ]
  },
  {
   "id": "img-canyon-endurace-cf-6-2027",
@@ -1984,7 +2196,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "0be45ece2ef6f070ea81d0d09aafad52d647715ec06d4b55a028515f92a50e9e"
+  "sha256": "0be45ece2ef6f070ea81d0d09aafad52d647715ec06d4b55a028515f92a50e9e",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-endurace-cf-7-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "1ebf5100e15ca6d3811ce5dedfca740bb3d7e126a6609faa27bb4124b7d5055c",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1779435689/2027_FULL_endurace_cf-7_4627_R129_P02_vcr5zj"
+   }
+  ]
  },
  {
   "id": "img-canyon-ultimate-cf-7-di2-2027",
@@ -2116,7 +2337,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "127c8f903c14971432fcd25d757a019f79969a0f3dbce75119314077572508c8"
+  "sha256": "127c8f903c14971432fcd25d757a019f79969a0f3dbce75119314077572508c8",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-speedmax-cf-slx-8-di2-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4448134653cf1a6ff7d452bdca82b1a7fee766bd4d2c29a7d584ef24603c603e",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1782294037/2027_FULL_speedmax_cf-slx-8-di2_4520_R133_P02_cz4shv"
+   }
+  ]
  },
  {
   "id": "img-canyon-speedmax-cf-7-di2-2026",
@@ -2160,7 +2390,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d792450bb4b52ac2781c9246861dad34b8d72f77a29b30d50e57b10981f5aac9"
+  "sha256": "d792450bb4b52ac2781c9246861dad34b8d72f77a29b30d50e57b10981f5aac9",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-speedmax-cfr-axs-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "63f185d2f24143a592ef0eeb960c34bd2a289105dd5bd00d5b4097e9143fb779",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1782294137/2027_FULL_speedmax_cfr-axs_4524_R134_P01_oxgd7j"
+   },
+   {
+    "src": "/media/products/canyon-speedmax-cfr-axs-2027--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4a4b6ac323cbd67b5bd9ae49a896499200f9b9af2d9957cfc102237afd547e2a",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1782294130/2027_FULL_speedmax_cfr-axs_4524_R134_P02_a70ls1"
+   }
+  ]
  },
  {
   "id": "img-canyon-speedmax-cfr-di2-2026",
@@ -2204,7 +2450,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Canyon's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×900 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9adf04c36cd06f8deb7d58ffc8c58edc7028e7e6322f4674e05e441de6863581"
+  "sha256": "9adf04c36cd06f8deb7d58ffc8c58edc7028e7e6322f4674e05e441de6863581",
+  "gallery": [
+   {
+    "src": "/media/products/canyon-speedmax-cfr-di2-2027--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "c557d9d3d94ace8a351ee79254ed6681a3193ac48a952f5ba4cdfa253e003b51",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1782294218/2027_FULL_speedmax_cfr-di2_4525_R134_P01_ussapn"
+   },
+   {
+    "src": "/media/products/canyon-speedmax-cfr-di2-2027--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "882c4a428f8fd148161b816d24f8c156c4d6bcd92f8489c09e4cfe7c8d7532c0",
+    "original_file_url": "https://dma.canyon.com/image/upload/w_1600,c_fit/f_jpg/q_85/v1782294209/2027_FULL_speedmax_cfr-di2_4525_R134_P02_imly9r"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-5-force-axs-1-2027",
@@ -2226,7 +2488,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "6f9caafa6087716e6218b0a39a99400571db31ffadcd0db691ace2c4b28b28a7"
+  "sha256": "6f9caafa6087716e6218b0a39a99400571db31ffadcd0db691ace2c4b28b28a7",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-5-force-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "b9d03a38bf40f5f3d954b41983d98fd89a26a7f5efa3b07e3f528a3dbd561b6c",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ALBFE2C_PROFILE-WEB_8e353132-f15b-449a-9a41-5a46af694321.png?v=1786574024&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-5-force-axs-1-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "6133317e7cbd97e16fa83cc53f1791e60ccba611b58de1828fc7b77d543ca167",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ALBFE1C_PROFILE-WEB-RESIZED_a3dc112e-dc4b-41b5-82d0-ed9e583e51f1.png?v=1792024356&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-5-frameset-2027",
@@ -2248,7 +2526,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2fbacfd4e473a410ea912a5b7447090e481e49d06db7083734435779c21568e4"
+  "sha256": "2fbacfd4e473a410ea912a5b7447090e481e49d06db7083734435779c21568e4",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-5-frameset-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "991f7aba9e5c76fba06ed5ba38e9873bf5602c73149a10682d36384c94358737",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ALBFS1X_PROFILE-WEB_f97f3fd2-9bb2-476d-bd06-47ebae472cc8.png?v=1788369906&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-5-frameset-2027--g2.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "37e81cb494b173804f9626eb656ea25deff975bc6515be849149bf739215482b",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ALBFS3X_PROFILE-WEB_02873ec3-a035-488e-98a7-c1b00e2b39ef.png?v=1788369906&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-5-grx-rx827-di2-2027",
@@ -2270,7 +2564,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "74b42236f886021d581ea10684dd9e2ba6bdc7d30bfe7f1abbc251a49a05fe92"
+  "sha256": "74b42236f886021d581ea10684dd9e2ba6bdc7d30bfe7f1abbc251a49a05fe92",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-5-grx-rx827-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "85ac28eec7bbcf19750531d20e43995b79581fb8e122406c2595067f491b9cd4",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ALBG12C_PROFILE-WEB_30244875-f704-4dbd-8632-8aa8a2b65beb.png?v=1786574024&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-5-grx-rx827-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "f807476f8a3827c0f07b2d6f5fd1a0fcf6b79793befd6a4f312579a93becc9eb",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ALBG11C_PROFILE-WEB-RESIZED_1e13a51f-928b-464c-b2dd-79d92dae01ac.png?v=1792024356&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-5-red-axs-2027",
@@ -2292,7 +2602,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "e48b0eb6db5dcb706842a7e0474faec60ec2928d6e67828ca3477977fe7c86f2"
+  "sha256": "e48b0eb6db5dcb706842a7e0474faec60ec2928d6e67828ca3477977fe7c86f2",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-5-red-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "996efb8302d74fa1c5218c62b3c43df449466f52685065f07fb82811796c1b1d",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ALBRE2C_PROFILE-WEB_703eb0e5-1a36-4ca1-bdb5-61369d3faa0c.png?v=1786574025&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-5-red-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "5431accf0d0ff69caf5422502023e4ca9ce8c205c07451697bc9aeb8973c9497",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ALBRE1C_PROFILE-WEB-RESIZED_6f0a759d-c4f4-42de-89eb-4fa1c987552d.png?v=1792024360&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-apex-1-2027",
@@ -2314,7 +2640,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "1e93d4bb4bf4484f4913fba45cb1e4d01f17e8a622ff36d51303e0b85caf102d"
+  "sha256": "1e93d4bb4bf4484f4913fba45cb1e4d01f17e8a622ff36d51303e0b85caf102d",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-apex-1-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "301e8215fbf2809ade87d15333b2e081361596b969e58dfb8c32037f5a76057d",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBA12A_PROFILE-WEB_5d46fc6e-5f72-4990-b0b7-8e4ab108a712.png?v=1787946735&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-apex-1-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "de522a2ba2547884e92dc391d5efd04ee101845819cfbf7e5f8d5304645876ab",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBA11A_PROFILE-WEB-RESIZED_bcbaabcf-e27a-4f3f-b0dd-957ab868c388.png?v=1792024427&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-apex-axs-1-2027",
@@ -2336,7 +2678,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "118900468f8a9447871f9986cd8089034286c415304a05a001ad4247c8088dc9"
+  "sha256": "118900468f8a9447871f9986cd8089034286c415304a05a001ad4247c8088dc9",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-apex-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "82b54ac912d988a22f16fdb782efb194e588778ad0cc956e8b06f3422b06d421",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBAE2A_PROFILE-WEB_1e532b33-89b7-41bb-95a2-0f190d837731.png?v=1787946735&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-apex-axs-1-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "aab6b781f0e48e70e051e5c64774fab03ed0f1206218ff53eb804b82a28f5a40",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBAE1A_PROFILE-WEB-RESIZED_4f7d4e5b-14bc-40e8-842d-647d9e58d2be.png?v=1792024424&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-force-axs-1-2027",
@@ -2358,7 +2716,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "5b8d8b5d639065a56273b4072fd711f921d400cc4772f326ec332544eef4a17f"
+  "sha256": "5b8d8b5d639065a56273b4072fd711f921d400cc4772f326ec332544eef4a17f",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-force-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "460f71992584f4fc6b61c9d3f857b9eb2beb989d631ff54bf05de2cd8efdb298",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBFE2C_PROFILE-WEB_05634647-fea0-4f26-8557-a4900b0ffa0a.png?v=1787946736&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-force-axs-1-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "90bddf5d33ba6d9644030c40193a6286fa5a13277dd15c9920d0c258cb9932cf",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBFE1C_PROFILE-WEB-RESIZED_1a4e503d-2e18-44cb-a125-6cd331ba2bba.png?v=1792024409&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-frameset-2027",
@@ -2380,7 +2754,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "8ebc01c94318828c5fb869d462a949830a191d7efccc363f293bf7616f21ca18"
+  "sha256": "8ebc01c94318828c5fb869d462a949830a191d7efccc363f293bf7616f21ca18",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-frameset-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "6fd7eba25e3e2cdab2dae1bc81d5c41bc5b530a1803147856a3a59cd73376876",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBFS3X_PROFILE-WEB_7865e43c-81ab-42ad-93b8-f2396a1e4706.png?v=1790186181&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-frameset-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "a1e2ed9688e2a03ae1f0ccb4868d7cb91f18c895cf34c1d4bd65e038523de1d6",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBFS2X_PROFILE-WEB-RESIZED_2b28aed4-db60-497a-b40f-ad07936d93ed.png?v=1792024491&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-grx-rx610-1-2027",
@@ -2402,7 +2792,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "55ebb1653c9eedefa073aa56d3310a4a8a184ba6c2c8cd57aa34cab60391e56a"
+  "sha256": "55ebb1653c9eedefa073aa56d3310a4a8a184ba6c2c8cd57aa34cab60391e56a",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-grx-rx610-1-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "cee0fe150a8b09c32161dfb97ab6a785fb8d05d07518689c6edf2a21830efdb7",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASB612A_PROFILE-WEB_49ad779a-8a1f-47f2-a689-ff8f39566c37.png?v=1787946735&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-grx-rx610-1-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "4e7101e453c671e22d0e34a5bff17669d0802eea32d47b059cfc351649493024",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASB611A_PROFILE-WEB-RESIZED_8fa06b3f-2b2e-42a6-95c6-ac0d04594b61.png?v=1792024420&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-grx-rx827-di2-2027",
@@ -2424,7 +2830,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "7803738e7de81cbdcb95d3dae072aa58623309df60903c4d9cf96196bf219101"
+  "sha256": "7803738e7de81cbdcb95d3dae072aa58623309df60903c4d9cf96196bf219101",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-grx-rx827-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "1b4a4a0b4d78ff7330ea14eab94b118a841fe5fa4594559448841b2410db97e8",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBG12C_PROFILE-WEB_94f8e016-9309-43d2-8754-76b71c5e1a31.png?v=1787946763&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-grx-rx827-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "23c54795d8aa5cb9fb8e7437e14c610ad2fa71e43f50dacd422d065f84fee940",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBG11C_PROFILE-WEB-RESIZED_f2d0e581-a776-40b2-8639-e0f441a02d82.png?v=1792024439&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-aspero-rival-axs-1-2027",
@@ -2446,7 +2868,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "5ef6eded64859922c0d4c24fbd83a3e67567282650f29242decadcd2278ed02e"
+  "sha256": "5ef6eded64859922c0d4c24fbd83a3e67567282650f29242decadcd2278ed02e",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-aspero-rival-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "7d0b726899e0ed7c6cb0eb79ed62fc41f28b39ba4eecad3973cfa1749fe94ef6",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBXE2C_PROFILE-WEB_42170d0d-9ca8-4a3f-8277-5ce61056b1a9.png?v=1787946764&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-aspero-rival-axs-1-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "114ed1d9290d4397efe17fc3e526f680e126ac49e9d4f1f9c4fc3e92b0a32e1b",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ASBXE1C_PROFILE-WEB-RESIZED_41830aa9-8678-4080-bea1-3988bbf2212a.png?v=1792024426&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-105-2027",
@@ -2468,7 +2906,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "7ae1ace4d7d632a3b1c6dabf31277ad2f5e660ac37c5c795471eccc77a547010"
+  "sha256": "7ae1ace4d7d632a3b1c6dabf31277ad2f5e660ac37c5c795471eccc77a547010",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-105-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "47b5d93a305b1fc7a472ea10d111cab330c20a1678abda031f6c97878a4f5fa1",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CAB112A_PROFILE-WEB_97816ad2-bb1e-407a-a126-94e41d25da36.png?v=1786650388&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-105-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "c15d415b77ee2469c70e0d683a916f3266ab234c210f9660411aae71597aaff1",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CAB111A_PROFILE-WEB-RESIZED_732c84b2-af1e-42fd-a8ff-e9d6ebb0996b.png?v=1792024371&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-105-di2-2027",
@@ -2490,7 +2944,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "728dda95a6ddcb369e6f6afdb56bc33a263ec5253aa2fd1b2a856c3350175d67"
+  "sha256": "728dda95a6ddcb369e6f6afdb56bc33a263ec5253aa2fd1b2a856c3350175d67",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-105-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "84038d3937a4ca4df781d030cd711645fcabfb8660ccef0a0b6d96f360afb784",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CAB1I2A_PROFILE-WEB_de06dfe6-1c59-4662-9a20-2c60a385a511.png?v=1786650388&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-105-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "88238ab6b1960999c0a0d5ad554273d5e3813459ede7b2099354847f32fcca46",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CAB1I1A_PROFILE-WEB-RESIZED_012472bc-3b49-45ae-8c99-8993e3e616cb.png?v=1792024372&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-5-dura-ace-di2-2027",
@@ -2512,7 +2982,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "bcc7ec88198d66724475c9debe22e1676ff41e125237dac6494add92b16c15ec"
+  "sha256": "bcc7ec88198d66724475c9debe22e1676ff41e125237dac6494add92b16c15ec",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-5-dura-ace-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "dd45d6c1f50987fe83e2c3e7c6302d823386368460111cedb0659ddd917d8c17",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBDI2C_PROFILE-WEB_4a5a678b-0c51-4f22-b58c-6860dce06820.png?v=1787946043&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-5-dura-ace-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "2320033be693b537b134e509efbaf04f3863ba838dc82a488e274d0de40fdc59",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBDI1C_PROFILE-WEB-RESIZED_b3b844c6-bcf1-4fbd-8dbb-01d656b8710f.png?v=1792024405&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-5-force-axs-2027",
@@ -2534,7 +3020,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9a4c580172ea0c9d9976de08398915820ebcfb66e5434d8216120c9a31077b94"
+  "sha256": "9a4c580172ea0c9d9976de08398915820ebcfb66e5434d8216120c9a31077b94",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-5-force-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "7ff5313c16fb7d16d022a7bf4c0fd1016b740527a7eaf73cc876a006632624c4",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBFX2C_PROFILE-WEB_a32875a8-2b17-4192-a3b2-55990e8f461c.png?v=1787946043&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-5-force-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "b49b8baff9510491b59a6a1b377bfbb68df2c640331020046c33bb4cc42f70d9",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBFX1C_PROFILE-WEB-RESIZED_d2ef5a13-e4a1-4b28-984e-a230a126177f.png?v=1792024403&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-5-frameset-2027",
@@ -2556,7 +3058,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "c63158546e440ce6e756395e9145ddfc685be55897081a204c5af37e489afb20"
+  "sha256": "c63158546e440ce6e756395e9145ddfc685be55897081a204c5af37e489afb20",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-5-frameset-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "cdb609ad079bcc27185f2be2c81a2107f5f8886df8a978c755a80e7ce30a4b87",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBFS2X_PROFILE-WEB_f4b7606a-c0e6-4bd3-9d9b-a2d4283e6cdd.png?v=1788369647&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-5-frameset-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "55d7e4fb2f6a616738f81969af296d7fd2cf6fc66fc65458f045c1311abde050",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBFS1X_PROFILE-WEB-RESIZED_fa8e7a29-3002-4ae1-bb5c-9627d9db6a46.png?v=1792024479&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-5-red-axs-2027",
@@ -2578,7 +3096,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "50e979cbc99e9d8813cc62e4f220428c561ea6d52e5394cb6075b18f9f3054ff"
+  "sha256": "50e979cbc99e9d8813cc62e4f220428c561ea6d52e5394cb6075b18f9f3054ff",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-5-red-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "1bdbc95347c416a6be52f90516a1e928e65ab01395148f4e5f9cebbd7389447b",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBRX2C_PROFILE-WEB_b9686e11-bb6f-439f-903e-fc1bbfae49a0.png?v=1787946043&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-5-red-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "d0231897a0591f351dab563aeda493ea857182dd043ef470862ca08883b9ef78",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBRX1C_PROFILE-WEB-RESIZED_294d7f44-8dd8-42fa-8e30-3c96cea4a195.png?v=1792024400&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-5-rival-axs-2027",
@@ -2600,7 +3134,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "7d54fb8475a55d45dd75266cc913d697bc34e48e64d021b4e3d000de9bedcbca"
+  "sha256": "7d54fb8475a55d45dd75266cc913d697bc34e48e64d021b4e3d000de9bedcbca",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-5-rival-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "31e2c8c787a14a804b59bb1b6aaf3357946b19fc3412f208b460f2cbe932a34d",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBVX2C_PROFILE-WEB_8ec9b155-184c-44b0-9bec-84e06e6280aa.png?v=1787946072&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-5-rival-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "4f4ed2c904ed62232cf68e699bf46c3bb5915f217d85eb1183894ac53f3848ab",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBVX1C_PROFILE-WEB-RESIZED_9c2f5aad-3391-4d28-9b11-bdf6c4ac919b.png?v=1792024410&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-5-ultegra-di2-2027",
@@ -2622,7 +3172,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "dfabc16f1654a76f78264cc926bb83b8463b2f8545bd8a411201548926edd2cc"
+  "sha256": "dfabc16f1654a76f78264cc926bb83b8463b2f8545bd8a411201548926edd2cc",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-5-ultegra-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "f680c5bc111cfe88330614c7228819e943620ef8cf00d91a7d31e578f533d442",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBUI2C_PROFILE-WEB_e21cfe75-1ecd-4690-b935-4d0f5b9a2bac.png?v=1787946043&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-5-ultegra-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "abd368d1450e9c6ce5114abe32cb9d458432d5d04fd007524780059ef5dcad96",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0CFBUI1C_PROFILE-WEB-RESIZED_eedd8970-3141-41d9-92cb-2a302f581efc.png?v=1792024417&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-force-axs-2027",
@@ -2644,7 +3210,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "f9625aa37075abbd01cd385d204a3131b6bb85df1a2ca058eecfe57b211e138c"
+  "sha256": "f9625aa37075abbd01cd385d204a3131b6bb85df1a2ca058eecfe57b211e138c",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-force-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "6f14627b4e7bb00963a68a6fa6e54338a0f1edbbeec2f717aabc21c3d0f6c1bc",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CABFX2C_PROFILE-WEB_5ce36080-e79e-41f9-9ff7-43bf049d39c7.png?v=1786650389&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-force-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "a6108687327b680bf01fe5fe4c6ef9190cf3daec214b4a594dbea8c4911756c2",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CABFX1C_PROFILE-WEB-RESIZED_15cc9033-fef0-4612-8af4-593d3cb5033f.png?v=1792024359&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-caledonia-rival-axs-2027",
@@ -2666,7 +3248,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "8d729fe6201694c6a4a15b9f34be4ceb775956a855b31a8358deb4fbca66375b"
+  "sha256": "8d729fe6201694c6a4a15b9f34be4ceb775956a855b31a8358deb4fbca66375b",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-caledonia-rival-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "842da252c57601d0d096f12564164c1dd1036f930ec5871233c6619ff3daec5f",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CABVX2A_PROFILE-WEB_c190f2e8-c88a-4b7a-9980-40d70342b0e7.png?v=1786650389&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-caledonia-rival-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "c0280116b4b68b2ad08cb78393d7732bab3d4b9ce041ab6af4d4ae6c97064042",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CABVX1A_PROFILE-WEB-RESIZED_b2eee3fe-eb42-4cbe-8eeb-bdf61f4748c8.png?v=1792024370&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p-series-105-2027",
@@ -2688,7 +3286,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "c4501ad7563be29552fbafd3110e2bfa3fe89962af9d73ad392377571d0d1e02"
+  "sha256": "c4501ad7563be29552fbafd3110e2bfa3fe89962af9d73ad392377571d0d1e02",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p-series-105-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "e00cf1d703843e900fd723561b29083fd194168dfadccfe2623d48e009447b22",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSF112C_PROFILE-WEB_97236979-9e4e-425c-86e6-36ecaec07774.png?v=1787944035&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-p-series-105-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "d534af48d065e52eb16800706caeea45654c856502e8c76d520e6b0430263e83",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSF111C_PROFILE-WEB-RESIZED_023a3579-76fe-4866-ab26-a0dbb1761d17.png?v=1792024371&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p-series-105-di2-2027",
@@ -2710,7 +3324,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "114310ef16130f8d4a0948da5174b456bebd0965daea452fe9f15b1532c3a925"
+  "sha256": "114310ef16130f8d4a0948da5174b456bebd0965daea452fe9f15b1532c3a925",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p-series-105-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "386a11927fe68e2ef8a32342a1ca6047653e0b63897fc83787a308e00d1df074",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSF1I2C_PROFILE-WEB_f263fab6-e435-4576-a47a-07fcbd3a8b47.png?v=1787944034&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-p-series-105-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "314097ddf0cdda7f567fae35d34595128cc90d60fa96283752b89dd9940ed117",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSF1I1C_PROFILE-WEB-RESIZED_3aab9bd1-bb6c-4861-b2db-193cd6f5358d.png?v=1792024381&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p-series-force-axs-1-2027",
@@ -2732,7 +3362,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "dd124b38e1f7c15df7ab4ec9d8986d250d3f4fdd97338e00e52ef192fb974090"
+  "sha256": "dd124b38e1f7c15df7ab4ec9d8986d250d3f4fdd97338e00e52ef192fb974090",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p-series-force-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "33dba4d43034914ef90f09c524e217f2a1265bf378da6adee7f95d665929650e",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSFF11C_PROFILE-WEB-RESIZED_bd3ee406-755e-447f-92b6-b659fd39a45b.png?v=1792024380&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p-series-frameset-2027",
@@ -2754,7 +3393,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "6a80e7641974e936761d08fdf0259d294a3aa054571d9af949e3ac0ba50b570f"
+  "sha256": "6a80e7641974e936761d08fdf0259d294a3aa054571d9af949e3ac0ba50b570f",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p-series-frameset-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "525c449608a614ff3061a22606ff6670ef490bdbe4a74b66bf370ad3f106edf4",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSFFS1X_PROFILE-WEB_0cd4025c-0235-46e6-81cf-7fa824f5afe2.png?v=1788369029&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-p-series-frameset-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "667115cc803c18fd665c406c43eccf68a2b0d1137830251d8f3c624b712b392e",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSFFS2X_PROFILE-WEB-RESIZED_dc822966-c70c-4ce9-9b7c-d8aedf19655c.png?v=1792024480&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p-series-rival-axs-1-2027",
@@ -2776,7 +3431,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "b9dedbf8f6d78777a143293409d0f354427329be7f9e2a8ef0b9f39544186d20"
+  "sha256": "b9dedbf8f6d78777a143293409d0f354427329be7f9e2a8ef0b9f39544186d20",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p-series-rival-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "804a5717666b2beaa151b7a4a38ada3e49b62c462b6e0c134c63843840b8dc62",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSFV11C_PROFILE-WEB-RESIZED_f0a18722-50b7-4cfd-a6e6-1d9d1ccef9ec.png?v=1792024389&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p-series-ultegra-di2-2027",
@@ -2798,7 +3462,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "87c4d76fa5dff62b334fce4d2a8e600bb0b8361f0b0f6e2bc514c9aa04be90a9"
+  "sha256": "87c4d76fa5dff62b334fce4d2a8e600bb0b8361f0b0f6e2bc514c9aa04be90a9",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p-series-ultegra-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "8625fd0bc181cb819b7c56663fc06f158d5e8ee2d6e598323aa336985f0937e1",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSFUI2C_PROFILE-WEB_198fb458-b29a-4f73-8b65-999b03231a64.png?v=1787944047&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-p-series-ultegra-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "100b2d3250cec074ae95d2a44a7079791f998708f5f566b1727eb6b6768ef206",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0PSFUI1C_PROFILE-WEB-RESIZED_958f855e-3cb8-4907-b00d-d9209a4bba3e.png?v=1792024381&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p-series-ultegra-di2-classified-2027",
@@ -2842,7 +3522,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "c19df873feeb99a5dbed5cd66ec0a12b4ee0046b933262211040e616dd0d90d5"
+  "sha256": "c19df873feeb99a5dbed5cd66ec0a12b4ee0046b933262211040e616dd0d90d5",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p5-dura-ace-di2-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "0f555b158e768cafb58a43b766ab7591b3240c815eb3a7353c80dab1d9362258",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0P5FDI1C_PROFILE-WEB-RESIZED_32089474-1ff6-415f-94a4-70fd053eaa6b.png?v=1792024461&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p5-force-axs-2027",
@@ -2864,7 +3553,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "06b0e288f239e58369610cb24520c98dae7e79c3c075a0a173aa49c9d58d8347"
+  "sha256": "06b0e288f239e58369610cb24520c98dae7e79c3c075a0a173aa49c9d58d8347",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p5-force-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "c1a6867d1aee8d1e0a3fef5706b8fd41ad8b49086c930e97edac3e460178505a",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0P5FFX2C_PROFILE-WEB_2ecf62c2-d31e-4b2d-ae69-a24e4f5fcede.png?v=1787947779&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-p5-force-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "3c6f7c806e41fa37c02498f1878daa11e6cab0d6e6518a31c87655bcc015dd15",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0P5FFX1C_PROFILE-WEB-RESIZED_b275b383-2fb3-4a84-a2b9-94849ca70425.png?v=1792024455&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p5-frameset-2027",
@@ -2886,7 +3591,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2952402b48324f556cbe416cf82ee95f536bb29697c413daee95c1347c928275"
+  "sha256": "2952402b48324f556cbe416cf82ee95f536bb29697c413daee95c1347c928275",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p5-frameset-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "ff3b6837cb5ad778d79d66b73e300091c3f837fd138718afbf205f7fb07c01ad",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0P5FFS3X_PROFILE-WEB_a2313ca4-1134-46e9-a7d8-78ff5f22cedf.png?v=1788370618&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-p5-frameset-2027--g2.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "4195969db6f5e3d51be9e0437a0dbb4ac5ae5e282377fc79e0a93c6ea5363f93",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0P5FFS2X_PROFILE-WEB_2138ac68-dec0-442d-8026-ccd600fbd3ba.png?v=1788370618&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p5-red-axs-1-2027",
@@ -2908,7 +3629,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "b332dbbcaf95c860ad84c7562ef47c6a8e11528bc0fe5059a1ad87bd89ae81e5"
+  "sha256": "b332dbbcaf95c860ad84c7562ef47c6a8e11528bc0fe5059a1ad87bd89ae81e5",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p5-red-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "b6692ef9ade9ae4d5fe7f1abebdf36c25f08567102146847e81eb3adf7406946",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0P5FR11C_PROFILE-WEB-RESIZED_f46b0234-88c2-4609-91c0-386b308fb29e.png?v=1792024451&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-p5-ultegra-di2-2027",
@@ -2930,7 +3660,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9cea3c4646a61f3ae1239cf4ea1b2ae6b21abe950367eaf4b3e2225222213a90"
+  "sha256": "9cea3c4646a61f3ae1239cf4ea1b2ae6b21abe950367eaf4b3e2225222213a90",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-p5-ultegra-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "9f3575e33a6fa5c8fd7675e21e702511173525b13d9800801587d23bc01809a5",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0P5FUI2C_PROFILE-WEB_42b67721-ed15-48b5-b3dd-db8d929f3027.png?v=1787947780&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-p5-ultegra-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "b5ee4a03e60259320ebcb2ff2cbf3bd3773e5f3be8db631a05081e6aea77d60f",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0P5FUI1C_PROFILE-WEB-RESIZED_3f46dcd6-178c-40ca-9862-c98a52275529.png?v=1792024456&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-r5-cx-rival-axs-1-2027",
@@ -2952,7 +3698,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×977 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "ebc99166784008941632a73586aca97f94dea07fbccaed8e1e6de231e9f5c51a"
+  "sha256": "ebc99166784008941632a73586aca97f94dea07fbccaed8e1e6de231e9f5c51a",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-r5-cx-rival-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "b8dcc79fca6ff5e33e7c86d0188cc7d0f242e2334968712b8899ad19900025e0",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CXAVX1A_PROFILE-WEB-RESIZED.png?v=1792431814&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-r5-cx-rival-axs-1-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "8bd5be5ca19ad01e9e8ae089a759938f8191034021c1dc027196d96809ad9965",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0CXAFS1X_PROFILE-WEB-RESIZED.png?v=1792431813&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-r5-dura-ace-di2-2027",
@@ -2996,7 +3758,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d52a9781da823fc047caa1b823de484544d3046e928c1fe0df0c50d714d2bfd3"
+  "sha256": "d52a9781da823fc047caa1b823de484544d3046e928c1fe0df0c50d714d2bfd3",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-r5-force-axs-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "32f1a1d8150e4f1df67f7c5a1856d305ca739064a30423136d5f57a91865234a",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0R5HFX2C_PROFILE-WEB-RESIZED_1.png?v=1793217527&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-r5-frameset-2027",
@@ -3018,7 +3789,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×977 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "da7b9fcff19e57a9662bd641b9de1ff60a69608ed792996fd1433357dfbaf533"
+  "sha256": "da7b9fcff19e57a9662bd641b9de1ff60a69608ed792996fd1433357dfbaf533",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-r5-frameset-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "af63b9fa19f99a4f2be05d1ca75f777d2d3529e20ba9ca0bb0bb916bc4b82549",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0R5HFS1X_PROFILE-WEB_812164b9-779b-48c5-9c38-c4bb13e626a4.png?v=1788368353&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-r5-frameset-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "b0851c68932223cb1f1456ac3fd7044d41f07ad4862fcc0a2b41fd4982252bf1",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0R5HFS2X_PROFILE-WEB-RESIZED.png?v=1793220688&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-r5-red-axs-2027",
@@ -3084,7 +3871,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "68895175b4e849d5cb62aac55a472dcf5a89675ca8a6b71bf465d6379ba82d9c"
+  "sha256": "68895175b4e849d5cb62aac55a472dcf5a89675ca8a6b71bf465d6379ba82d9c",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-r5-ultegra-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "efe5df635b1221c285d54861226c0abcc1cf86c0c9db2b4060371f80c3ec6a45",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0L0R5HUI2C_PROFILE-WEB_c85846bf-f271-4d52-b790-dda2c52d6653.png?v=1788368336&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-rouvida-force-xplr-1-2027",
@@ -3106,7 +3902,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "33d61365e26045b64a9f1676d343672c66b14874a807f822b97d15748d531e55"
+  "sha256": "33d61365e26045b64a9f1676d343672c66b14874a807f822b97d15748d531e55",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-rouvida-force-xplr-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "b0a7f015d4d3bb9f97455c6746c69e0108d939a0f1146694591eb4858277f951",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ERAXF2C_PROFILE-WEB-RESIZED_d6a4c90d-9120-4760-bed0-3ef12074973c.png?v=1792024474&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-rouvida-grx-rx610-1-2027",
@@ -3128,7 +3933,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "05f16f3ddd31b9447970b2b382ef546b3cb431c89c8a3794953cfad8e3936588"
+  "sha256": "05f16f3ddd31b9447970b2b382ef546b3cb431c89c8a3794953cfad8e3936588",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-rouvida-grx-rx610-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "118e991f3e1a9eb56cf1d1232fff0b66e490d27cb1052d37771e0ba828b80975",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ERAX62C_PROFILE-WEB-RESIZED_c4c49a0c-fab8-45a9-b0aa-974e8fecd0d9.png?v=1792024469&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-rouvida-red-xplr-2027",
@@ -3150,7 +3964,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "37547a87eb2e68c0c5c29fd20e60c23c969db29a300bf1c8a9a788c18417d432"
+  "sha256": "37547a87eb2e68c0c5c29fd20e60c23c969db29a300bf1c8a9a788c18417d432",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-rouvida-red-xplr-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "f5683d7358058a5896b862c7f43373ce0fa1e18c1605f3eab90fab5c04509975",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ERARR1C_PROFILE-WEB-RESIZED_173f4a51-70c8-4f20-b8a0-dcdc7473e2a3.png?v=1792024472&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-rouvida-rival-axs-1-2027",
@@ -3172,7 +3995,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "4aae2d1603df54fc6a0a14b99ad2ceb997e99c440f389db4fe91015d45c21ec4"
+  "sha256": "4aae2d1603df54fc6a0a14b99ad2ceb997e99c440f389db4fe91015d45c21ec4",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-rouvida-rival-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "17bfee308cd05a7c59a9b4a48fd75d3a4f5bf9a46c0ac40a896f067ab2370fea",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0ERAXI1A_PROFILE-WEB-RESIZED_746c29c5-5f46-4501-a412-a1fec62b10ad.png?v=1792024471&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-s5-dura-ace-di2-2027",
@@ -3194,7 +4026,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "910356eff59132f8cda954d2f49e89414e830e9b7e14b2a54d560cf23063831c"
+  "sha256": "910356eff59132f8cda954d2f49e89414e830e9b7e14b2a54d560cf23063831c",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-s5-dura-ace-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "02dbffb291233ffff56721786d62ea732802fa28b5d327c63a21c660766112a7",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GDI1C_PROFILE-WEB_db590dc2-5a67-4496-98cd-9c49e8d986ff.png?v=1787946922&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-s5-dura-ace-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "ea4902764c8a741ff314bc60c406f3e7e21b854507b93e60a16d667151d1f2cf",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GDI1C_PROFILE-WEB-RESIZED_3e1a1f26-7fc4-4971-8820-fad817ce34b3.png?v=1792024439&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-s5-force-axs-2027",
@@ -3216,7 +4064,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "66d4ae5d333b4c4fd01bdba3069953e408e9269313c3873ee5f397d81a393fe9"
+  "sha256": "66d4ae5d333b4c4fd01bdba3069953e408e9269313c3873ee5f397d81a393fe9",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-s5-force-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "e7c83d57df74e87b0930908dc1941d1a873f1a82850f9fa34a1edaf3b0cd4a6f",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GFX2C_PROFILE-WEB_7ef75f4d-d5d6-4406-a529-f768ed1d54e0.png?v=1787946922&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-s5-force-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "a2b55bdb887a5da81fb4e3da7078b49ab4a1c7fcf81cf109f8102ac8405a6be7",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GFX1C_PROFILE-WEB-RESIZED_18589860-f5ba-48cf-90c0-5786bdbb9871.png?v=1792024431&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-s5-frameset-2027",
@@ -3238,7 +4102,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "a64b776fc27ca55333d037410c6faffcadb6fabd077d374bf82edc3f4fbc9e71"
+  "sha256": "a64b776fc27ca55333d037410c6faffcadb6fabd077d374bf82edc3f4fbc9e71",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-s5-frameset-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "cc431547cec343d68973b0bc96c0ac686d18b53b02a05cfe2264580b2cca637e",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GFS3X_PROFILE-WEB_489a16e8-41a5-4ff9-96bf-e24d121a8ae7.png?v=1788370283&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-s5-frameset-2027--g2.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "0f93ec04b5bd17d43f22880a00881dade45a03b7f5ad7d19e67e271b20a6d0c3",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GFS2X_PROFILE-WEB_eae36a44-526f-4a09-a14f-8f71afce8004.png?v=1788370283&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-s5-red-axs-1-2027",
@@ -3260,7 +4140,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "78d4cfdb5b171ceca76b192a6b2a0a72a756380bc421bd5895e278d2866164f9"
+  "sha256": "78d4cfdb5b171ceca76b192a6b2a0a72a756380bc421bd5895e278d2866164f9",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-s5-red-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "e6b56ecae654dbeef82e1baab6d40371376d8e9eb28a4639c0963f6acdccb819",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GR11C_PROFILE-WEB-RESIZED_1fa5e44c-02ae-4918-8404-9049cf89e992.png?v=1792024440&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-s5-red-axs-2027",
@@ -3282,7 +4171,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "95e5b7cfec2d86427595e20fa9813a52df73e2ec7cea8f9134ba3977e8cad260"
+  "sha256": "95e5b7cfec2d86427595e20fa9813a52df73e2ec7cea8f9134ba3977e8cad260",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-s5-red-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "c9ecd53ae2cd01316e6967cb1473bfd99381a906d69b6127de1fa022980636b6",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GRX2C_PROFILE-WEB_b2acbfad-b0b8-4b53-b6b2-1a6fb98891d8.png?v=1787946922&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-s5-red-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "f338825377c1d01a65e0aaba9b615e23112cc270786082855f355ed8d0430e18",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GRX1C_PROFILE-WEB-RESIZED_1cc95ba9-4e73-4a40-a24f-d993c52c5fbf.png?v=1792024436&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-s5-ultegra-di2-2027",
@@ -3304,7 +4209,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "c46e53f71dd6c9835c0f5390369fc9c19cb449adc10cc7ec83018f0a817bb10b"
+  "sha256": "c46e53f71dd6c9835c0f5390369fc9c19cb449adc10cc7ec83018f0a817bb10b",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-s5-ultegra-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "791310e6bee84f384750ed65100c642ddd9ae300ecb3d8a41fe45b6baff03cc0",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GUI2C_PROFILE-WEB_3febef39-1edc-420b-a828-72411c5506d5.png?v=1787946943&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-s5-ultegra-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "08a520c485c57ae61cba4a199e82a52782ea916fa0914a2d11c38d352e22d360",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0S5GUI1C_PROFILE-WEB-RESIZED_21f84e04-0214-4c83-a030-255d6cf0b646.png?v=1792024450&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-soloist-force-axs-2027",
@@ -3326,7 +4247,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "586db50f8915e1672fbefd3ccb45d457497b5480af087ab9c15c2e3b2c376a95"
+  "sha256": "586db50f8915e1672fbefd3ccb45d457497b5480af087ab9c15c2e3b2c376a95",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-soloist-force-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "cf07ce70c4e84b1b5c1f4a778fc440600f494cc085a1caba4af286d13a648c3a",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBFX2C_PROFILE-WEB_fb2b3487-4632-4350-8efa-04c54225c0d3.png?v=1787945358&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-soloist-force-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "23c0e95d4f59078d88d42ae5b1b19ae06a28b5323c0d8116ff260b5b523311b4",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBFX1C_PROFILE-WEB-RESIZED_ca3d7603-7031-44b6-a1bb-1179d2a2df34.png?v=1792024388&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-soloist-force-xplr-axs-1-2027",
@@ -3348,7 +4285,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "ba9cfae2f41a11189885716c156dd53ebb453f921df3a1857d9959bf4c24a412"
+  "sha256": "ba9cfae2f41a11189885716c156dd53ebb453f921df3a1857d9959bf4c24a412",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-soloist-force-xplr-axs-1-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "2eb2330e4638cdfbdd6df7774648a56d937a94f7cf9e180d1135bb25afd84acf",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBXF2C_PROFILE-WEB-RESIZED_fde96330-83e7-4cce-8e9d-20b68cdf07e8.png?v=1792024398&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-soloist-frameset-2027",
@@ -3370,7 +4316,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "f2a3316ee31ae0e38778770ac9426a51dbd49b5f0bb8cf30714e46aba1db9cd5"
+  "sha256": "f2a3316ee31ae0e38778770ac9426a51dbd49b5f0bb8cf30714e46aba1db9cd5",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-soloist-frameset-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "cb158aa9ff1473ba1ebb26f15dac878247c789397d34d4e4116f4b816920b4f1",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBFS2X_PROFILE-WEB_ae984bc6-50d2-409f-beef-d7c2d7a4437f.png?v=1788369347&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-soloist-frameset-2027--g2.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "5017dae1b98b2e5fc40853930590055dfc88ca7a91b99de484975bd25dfb91bd",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBFS3X_PROFILE-WEB_ee559807-2b49-42df-a2e0-637248ffb034.png?v=1788369347&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-soloist-red-axs-2027",
@@ -3392,7 +4354,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9b822d509bd6d9ed39c8b88a8a5e9dc71b018369ca92acdf20efaad83e92e688"
+  "sha256": "9b822d509bd6d9ed39c8b88a8a5e9dc71b018369ca92acdf20efaad83e92e688",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-soloist-red-axs-2027--g1.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "398c88ccf8c098fc07486cb5b2468f93e618bedff4736cb7b52e7e3e46754761",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBRX1C_PROFILE-WEB-RESIZED_39d26d7e-25f9-4c1d-a489-23bd653941e7.png?v=1792024390&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-soloist-rival-axs-2027",
@@ -3414,7 +4385,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "fa592951fa93639340f67e45c038bffacccb9377d15a70987bbd2cad9459c68a"
+  "sha256": "fa592951fa93639340f67e45c038bffacccb9377d15a70987bbd2cad9459c68a",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-soloist-rival-axs-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "4eaa5d6f510ea8500facd7e4736281a5ca27fb63a6c838f4be75dd4e9489bf6c",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBVX2C_PROFILE-WEB_1d410fe6-4d81-42c1-a2c7-9981812eb993.png?v=1787945356&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-soloist-rival-axs-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "d8bd9adbcb7a0061ef387181dbce31b19a40c9d548e622264a23965c99521137",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBVX1C_PROFILE-WEB-RESIZED_a10abe31-7986-4e38-890a-4831fe56bcea.png?v=1792024396&width=1600"
+   }
+  ]
  },
  {
   "id": "img-cervelo-soloist-ultegra-di2-2027",
@@ -3436,7 +4423,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Cervélo's own product page (schema.org Product image + Open Graph image). Downloaded 2026-11-16: HTTP 200, image/webp, 1600×869 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d71b7b87119f862cafd54c6cfae41127ca24889dd5e6daeda84832aa6747e13d"
+  "sha256": "d71b7b87119f862cafd54c6cfae41127ca24889dd5e6daeda84832aa6747e13d",
+  "gallery": [
+   {
+    "src": "/media/products/cervelo-soloist-ultegra-di2-2027--g1.webp",
+    "width": 900,
+    "height": 489,
+    "sha256": "1a5af5ba8fb1bf051cc2c08cd5dba801f164a6299dc75fe3185c3555e76f49fa",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBUI2C_PROFILE-WEB_2ef3ba65-c3af-41b1-a64f-081f36345a83.png?v=1787945356&width=1600"
+   },
+   {
+    "src": "/media/products/cervelo-soloist-ultegra-di2-2027--g2.webp",
+    "width": 900,
+    "height": 550,
+    "sha256": "a9c31d5f8a95e8280da3300fb1e9a6ed55bca91facb654448e90641b1af0f8f2",
+    "original_file_url": "https://www.cervelo.com/cdn/shop/files/0M0STBUI1C_PROFILE-WEB-RESIZED_91cd0b90-cade-4163-84ff-6dc6f3fb74ae.png?v=1792024389&width=1600"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-al-deore-7200-2027",
@@ -3458,7 +4461,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "43a9952b2b1580280d58c0d83f10b7364163e6abed83c160489a7e78f37ecc74"
+  "sha256": "43a9952b2b1580280d58c0d83f10b7364163e6abed83c160489a7e78f37ecc74",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-al-deore-7200-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "e7ca9c1ea9669c0a6c9c6507a395bfb141e2615465bfc545478adc9fdb161481",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Vala_AL_Deore_7200_GlossMetallicPewter.png?v=1791223658"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-xx-axs-race-fa-rsv-2027",
@@ -3480,7 +4492,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "a7b2403e7785032fd66c807449ad96fc19b426ae965b1e06d9c2ba2182e8ac44"
+  "sha256": "a7b2403e7785032fd66c807449ad96fc19b426ae965b1e06d9c2ba2182e8ac44",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-xx-axs-race-fa-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "386f36ec322dc1642436e4b10893b10ea3cf6ad559c1e5b9a6cf8fbde71d5e92",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/58-27326-473-4-932-121402_MY27_Blur_CC_XX_Race_FA_RSV_GlossTartCherry.png?v=1784564811"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-gx-axs-race-rsv-2027",
@@ -3502,7 +4523,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "a44d76a2188b42eba9526548231224c799b12d1e470b679b00fd7c0932677be5"
+  "sha256": "a44d76a2188b42eba9526548231224c799b12d1e470b679b00fd7c0932677be5",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-gx-axs-race-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "bac0ca00795e795c7a6b07a5f20277de3ed98e395b4a7cbe2d6bc8f3257eada8",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/58-27326-470-4-932-103802_MY27_Blur_CC_GX_Race_RSV_GlossTartCherry.png?v=1784564811"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-xtr-rsv-2027",
@@ -3524,7 +4554,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "6ba27825043583f243bd86c5225fa266d3d4025f10a37d23ee5fbee0767c0bd8"
+  "sha256": "6ba27825043583f243bd86c5225fa266d3d4025f10a37d23ee5fbee0767c0bd8",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-xtr-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "2b905e45c6e2c5e9c34cad546ad02f5ad8a81f1262e66bf707487b102ecb21ac",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/58-27326-123-4-932-161802_MY27_Blur_CC_XTR_RSV_GlossTartCherry.png?v=1784564811"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-x0-axs-rsv-2027",
@@ -3546,7 +4585,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "a109291bad1e0ad7788869b83fc9605fa92356b4d715db4cacf18849f58046e4"
+  "sha256": "a109291bad1e0ad7788869b83fc9605fa92356b4d715db4cacf18849f58046e4",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-x0-axs-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "102dce95236699b32bfbedac087c75a1fe273efdc9a913af2e1d9034fa387803",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/58-27326-350-4-932-161802_MY27_Blur_CC_X0_RSV_GlossTartCherry.png?v=1784564812"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-gx-axs-2027",
@@ -3568,7 +4616,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "31691666ac11ab3cbac25a646c62ba72ccaa1e01fc0718d3b7e0ed7842b8238c"
+  "sha256": "31691666ac11ab3cbac25a646c62ba72ccaa1e01fc0718d3b7e0ed7842b8238c",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-gx-axs-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "ad14656aaa4ee304c291ce308d466f40414d7030474ce74a6dc10143ff5c8973",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/58-27326-334-4-932-151701_MY27_Blur_CC_GX_GlossTartCherry.png?v=1784564812"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-90-2027",
@@ -3590,7 +4647,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "10257b21b95241b75c1463b875c2c85f1a6a37d32fcebb306fa30dcb4576c0bf"
+  "sha256": "10257b21b95241b75c1463b875c2c85f1a6a37d32fcebb306fa30dcb4576c0bf",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-90-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "d97d43fe3d704be89ab7abb3dfeaecca6ce91313f858c8adbbff016afd64310c",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/58-27326-455-4-932-141601_MY27_Blur_CC_90_GlossTartCherry.png?v=1784564812"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-deore-2027",
@@ -3612,7 +4678,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "3ccf4553edab1e60d95a6da93f790c8f1ea736d7efcbf446545ef52c546492e0"
+  "sha256": "3ccf4553edab1e60d95a6da93f790c8f1ea736d7efcbf446545ef52c546492e0",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-deore-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "e915ba95d4eb002959c996ce8d406f23011f339338176c841202a52f4438b632",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/58-27326-449-4-932-131501_MY27_Blur_CC_Deore_GlossTartCherry.png?v=1784564811"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-frame-2027",
@@ -3634,7 +4709,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "840b4e343f250ce5926a0c97dcf3870e59286e2161df888c613e5af6cf36ed5d"
+  "sha256": "840b4e343f250ce5926a0c97dcf3870e59286e2161df888c613e5af6cf36ed5d",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-frame-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "2ad156d1b6468dc32280d12bff380d50ab5eb63248bc1cf86e657c132bb66695",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/68-27326-4-932-1699_MY27_Blur_CC_Frame_GlossTartCherry.png?v=1784564810"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-tallboy-xx-axs-fa-rsv-2027",
@@ -3678,7 +4762,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "bcf4210bf84f75205877e03e7aa86527da019033df604a4ad58a24b33860d080"
+  "sha256": "bcf4210bf84f75205877e03e7aa86527da019033df604a4ad58a24b33860d080",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-frame-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "d4215045a60d1e7214b238a2dda64d1989ce0b2d9a4c5861069b725da7fcfa9b",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Stigmata_CC_Frame_GlossSageLuster_530cfe0f-02a9-4991-9e6b-5e7075115a85.png?v=1783353897"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-apex-2027",
@@ -3700,7 +4793,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "a3ec376b7cd94da270ccf8d290b9b308e7494b6cce23da449515976b5d299212"
+  "sha256": "a3ec376b7cd94da270ccf8d290b9b308e7494b6cce23da449515976b5d299212",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-apex-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "fb885bb704845a305fc5b94323ddec69b854a6c525cc23cd5ac1f3df09a55678",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Stigmata_CC_Apex_GlossSageLuster_268b4330-69c5-444a-a7cc-c625dc68c54b.png?v=1783353903"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-force-1x-axs-rsv-2027",
@@ -3722,7 +4824,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "41d6c23cffbfb8cad5fcf68d4f81457251fdc9d5e99268db88f6d9d723a47b16"
+  "sha256": "41d6c23cffbfb8cad5fcf68d4f81457251fdc9d5e99268db88f6d9d723a47b16",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-force-1x-axs-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "ce239baf7dec5b2cfc0c70cca8a6579d7c04c61a91bce6b8bfda673594c361b8",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Stigmata_CC_Force_RSV_GlossSageLuster_6421d3c6-8fe2-4725-9dfe-0e3b02e6fd97.png?v=1783353904"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-force-axs-rudy-rsv-2027",
@@ -3744,7 +4855,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "856768b84d1f84704cfffb25685fd084f061870dc74ba3a1fd3c7b7316b2063f"
+  "sha256": "856768b84d1f84704cfffb25685fd084f061870dc74ba3a1fd3c7b7316b2063f",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-force-axs-rudy-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "94eb0cacdf1af7d1358c30283332c990baa618f534d6e285c02ff07fc972c882",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Stigmata_CC_Force_Rudy_RSV_GlossSageLuster_1e012a9f-5a45-4b3b-ac40-001641111a0c.png?v=1783353904"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-xt-lite-2027",
@@ -3766,7 +4886,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2ceec5ae345cc570737e40140b10d5ced499fc8d9140425236a306eebe0f5ff6"
+  "sha256": "2ceec5ae345cc570737e40140b10d5ced499fc8d9140425236a306eebe0f5ff6",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-xt-lite-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "6a27449d00e234c2ac13d498fff3bddcac6dd53b65be8a7004202b3371859d9c",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Vala_C_XT_Lite_MatteCarbon_e741b73b-9b76-4aad-8e72-91bade4bac87.png?v=1783353905"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bronson-deore-2027",
@@ -3788,7 +4917,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "104d56e8046276010480aaa3aa2078c6a5cba044b8de1546aae11840922a4a20"
+  "sha256": "104d56e8046276010480aaa3aa2078c6a5cba044b8de1546aae11840922a4a20",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bronson-deore-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "3d07e73cf899093298910bc948099b9417be8cfd3c7130ca01e48421552a9bca",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Bronson_C_Deore_MattePoblanoGreen_e8ab2666-4e7c-44d3-ae06-35c179e390b8.png?v=1783354034"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-rival-axs-rudy-2027",
@@ -3810,7 +4948,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2ad79030ca5a34c25fac0053ec53883c3fe81283d4ae61ab7819775065ad2e1f"
+  "sha256": "2ad79030ca5a34c25fac0053ec53883c3fe81283d4ae61ab7819775065ad2e1f",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-rival-axs-rudy-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "1d5eee136541995b5599d2b3563d3a2567101093577c3bc8580bd9325b785c92",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Stigmata_CC_Rival_Rudy_GlossSageLuster_82bbb259-1e05-41a5-8458-d8223a591794.png?v=1783353903"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-rival-1x-axs-2027",
@@ -3832,7 +4979,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "18403e89f536a3cca2739dea97913ac1d9adc641ef505155607ba18afd9fc0b5"
+  "sha256": "18403e89f536a3cca2739dea97913ac1d9adc641ef505155607ba18afd9fc0b5",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-rival-1x-axs-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "afa001b936050dc37376fc8e15cde387500eabc17083ae504f9f11d91b89d9e3",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Stigmata_CC_Rival_GlossSageLuster_f791f6da-aa85-441e-b579-6c5620627113.png?v=1783353904"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-al-deore-6200-2027",
@@ -3854,7 +5010,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "0bc3fe669b273509b3f6816d9ef8af5d8d992cdb298ac1ef74e0ecd2034a3c1c"
+  "sha256": "0bc3fe669b273509b3f6816d9ef8af5d8d992cdb298ac1ef74e0ecd2034a3c1c",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-al-deore-6200-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "7fb8d323f3c151c965220b6f45fdfb4da2f681ff66b73d163ca459444718eda3",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Vala_AL_Deore_6200_GlossMetallicPewter_7bc0c9cd-3d44-4cad-8997-30b4bacc1ac0.png?v=1783353906"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-hightower-deore-2027",
@@ -3876,7 +5041,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "876f854b5492dfa79401480a88c532c15d0670fa5f835e857bce644c16ae9353"
+  "sha256": "876f854b5492dfa79401480a88c532c15d0670fa5f835e857bce644c16ae9353",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-hightower-deore-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "9d312a219be8b4258b7f5b36515c2aa3dcabb6d647d87275b18609fc64c2f3d5",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Hightower_C_Deore_GlossBrickRed_a61be21b-e14b-4b98-9d14-e5cf97000ef1.png?v=1783354054"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-nomad-deore-2027",
@@ -3898,7 +5072,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "60b45b692b30a852f0f291c791bfa49f4987793fa5b69ae5706eb78e29a7690a"
+  "sha256": "60b45b692b30a852f0f291c791bfa49f4987793fa5b69ae5706eb78e29a7690a",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-nomad-deore-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "17a6e55d782cbe339decd28c949eb707330db2bcdd6ea5ee73605c1479ab6f7b",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Nomad_CC_Deore_MatteMetallicEarth.png?v=1780937894"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-tallboy-deore-2027",
@@ -3920,7 +5103,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "b89416d0c553df023898a725c2f88bdabda61a80f8b805548d68fa31a285e385"
+  "sha256": "b89416d0c553df023898a725c2f88bdabda61a80f8b805548d68fa31a285e385",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-tallboy-deore-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "41cafb7d81c80d349bd9efea3658c3af0c43455aa2d6dfdb8280483b3cfa2287",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Tallboy_CC_Deore_GlossCarbon.png?v=1781115127"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-tallboy-90-2027",
@@ -3942,7 +5134,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "eaea8b10aa8427589169add4c3e4d4b36cc03c8a6a96c7cb3bcc4413b3dc7463"
+  "sha256": "eaea8b10aa8427589169add4c3e4d4b36cc03c8a6a96c7cb3bcc4413b3dc7463",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-tallboy-90-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "93a55553f48ffcb11372b834da594c997888960647f71b13ac488ef4af8b4ae6",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Tallboy_CC_90_GlossMidnightViolet_8e4ceacc-3464-44ec-805e-66bcbfc4d808.png?v=1778191999"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-tallboy-xt-di2-2027",
@@ -3964,7 +5165,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d353fe4200f6446e100679166b7411d72b298b427766fc930cee65623d00a761"
+  "sha256": "d353fe4200f6446e100679166b7411d72b298b427766fc930cee65623d00a761",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-tallboy-xt-di2-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "43be6e8e6ce1c54cc263726d6bcb5d5fbed83510a5e9996510eb7a351b962f0a",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Tallboy_CC_XT_Di2_RSV_GlossMidnightViolet.png?v=1778175211"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-tallboy-x0-axs-rsv-2027",
@@ -3986,7 +5196,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d33fcef5c68439edaff713c2136afc40f24472ebfbeb4805a0d93635acf263f5"
+  "sha256": "d33fcef5c68439edaff713c2136afc40f24472ebfbeb4805a0d93635acf263f5",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-tallboy-x0-axs-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "195b5a11c5e97fd9c4fe33a8df27e4907c2bf46e598dc5099454bf75d939c01a",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Tallboy_CC_X0_AXS_RSV_GlossCarbon_png.png?v=1778175210"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-tallboy-gx-axs-2027",
@@ -4008,7 +5227,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "1397d10223dae5962913554625758ded095b3e4e106c90d481e3ae5acfaec5e1"
+  "sha256": "1397d10223dae5962913554625758ded095b3e4e106c90d481e3ae5acfaec5e1",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-tallboy-gx-axs-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "a56d584c4621b54e3a20536fa7da3d0ffd354f2a789fb0af2bfe085885841529",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Tallboy_CC_GX_AXS_GlossCarbon_png.png?v=1778175210"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-tallboy-frame-2027",
@@ -4030,7 +5258,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3201×2401 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "eef2be2bd89c95109c8b5d599b6536e74914faa59db4f9424b64e1d7b0d5f8cb"
+  "sha256": "eef2be2bd89c95109c8b5d599b6536e74914faa59db4f9424b64e1d7b0d5f8cb",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-tallboy-frame-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "3ff54ebc0c8086824dad6398ed4971aec1853e9527be536b2c4b371fb2700e8a",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Tallboy_CC_FrameOnly_GlossMidnightViolet.png?v=1778175285"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-xx-axs-lite-rsv-2027",
@@ -4052,7 +5289,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "5a72dbd6581f6ccb82c113087876b35b3d31eda5fb7141766ad2038720b9b6d5"
+  "sha256": "5a72dbd6581f6ccb82c113087876b35b3d31eda5fb7141766ad2038720b9b6d5",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-xx-axs-lite-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "35479bb9a48f421bbbc0cd824874030948397a9aaf579e52e37ecba66eaac853",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Vala_CC_XX_AXS_Lite_RSV_MatteCarbon.png?v=1776196245"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-xt-di2-lite-rsv-2027",
@@ -4074,7 +5320,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "bc8e987ad0697c5d9f4cbff0944b0c8bdff3b8bf72b4810d15da6a1c205d697b"
+  "sha256": "bc8e987ad0697c5d9f4cbff0944b0c8bdff3b8bf72b4810d15da6a1c205d697b",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-xt-di2-lite-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "5668f593e45d1a56e0d4a412a843e066b3d42a5975dc54e5422ab49b2588d8e9",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Vala_CC_XT_Di2_Lite_RSV_MatteCarbon.png?v=1776196245"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bullit-x0-axs-rsv-2027",
@@ -4096,7 +5351,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d19b433053938a9d0af088ca5894b9c766884ae0f21860661a4273819928f099"
+  "sha256": "d19b433053938a9d0af088ca5894b9c766884ae0f21860661a4273819928f099",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bullit-x0-axs-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "5b5030e1332d3eda16f029ffaa05f8ead3d81119abab68d2469f2f79ccfe11b0",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Bullit_CC_X0_AXS_RSV_GlossPurpleSmoke_e57a651b-77ed-4d05-ac64-a6f39aab29ae.png?v=1776286899"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bullit-xt-di2-rsv-2027",
@@ -4118,7 +5382,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "bdf398f011c71d78e8f48fdbc1f5408279572b78e0b15efa6fd5bb5324d2020e"
+  "sha256": "bdf398f011c71d78e8f48fdbc1f5408279572b78e0b15efa6fd5bb5324d2020e",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bullit-xt-di2-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "b8b2b6273af0205ca993c96af02a8f3043820fb8eb04213a1c99df8507c85aac",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Bullit_CC_XT_Di2_RSV_GlossPurpleSmoke_b8b47a98-212f-4cd2-8f24-5d755f360f97.png?v=1776286896"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-xt-di2-rsv-2027",
@@ -4140,7 +5413,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "065c1736cb714d64e24e30dd7dc09545ddfdac21c631d03abcf016eb8d95546d"
+  "sha256": "065c1736cb714d64e24e30dd7dc09545ddfdac21c631d03abcf016eb8d95546d",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-xt-di2-rsv-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "aca00f0e3588eb0d80615fdacef86a86df0cd6ef89d40a76e1589c1b54151b03",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Vala_CC_XT_Di2_RSV_MatteCarbon.png?v=1776196246"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-nomad-frame-2027",
@@ -4162,7 +5444,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "4a5cebbd1d7789f6e2bd2239821675561f627901a558a084ffb01e6617f9754d"
+  "sha256": "4a5cebbd1d7789f6e2bd2239821675561f627901a558a084ffb01e6617f9754d",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-nomad-frame-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "73362fd8e4022207cbe5eebb04d33e9e27eac393ccd309346c625399fd4aad8f",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Nomad_CC_DHX2_FrameOnly_GlossAquaMagenta.png?v=1775078958"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-nomad-xt-di2-coil-2027",
@@ -4184,7 +5475,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "1492288f17794d6ecf6d1299e615d1aa7679a107864c74f399bb490dcab73698"
+  "sha256": "1492288f17794d6ecf6d1299e615d1aa7679a107864c74f399bb490dcab73698",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-nomad-xt-di2-coil-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "77c51190117f8bc3386fb324a5485088355d801ad24fca363cf5e8612299d033",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Nomad_CC_XT_Di2_GlossAquaMagenta_b7236502-ef9e-4686-b3c4-c0195326c3ad.png?v=1775243681"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-nomad-x0-axs-rsv-coil-2027",
@@ -4206,7 +5506,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "b738d707f079f55db86535ad75dcb913cadc52465638bcc6a61dbff760128710"
+  "sha256": "b738d707f079f55db86535ad75dcb913cadc52465638bcc6a61dbff760128710",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-nomad-x0-axs-rsv-coil-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "dcd8502bb7011b1aaaafb83f4e481fdbffabc4cd70bd8bda02b02bea1c887e76",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Nomad_CC_X0_AXS_RSV_MatteMetallicEarth_17205175-7a9e-4d75-a0c5-df22bc9861b2.png?v=1775244102"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-nomad-90-2027",
@@ -4228,7 +5537,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "f9a3468085693c882ca486842d91bb3e492f7cf5abfc8e0c80ccd201a52d11ab"
+  "sha256": "f9a3468085693c882ca486842d91bb3e492f7cf5abfc8e0c80ccd201a52d11ab",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-nomad-90-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "38e83f38164400ff497efd9149f1d3984ad77d27ef330602e2634d471c16a868",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Nomad_CC_90_GlossAquaMagenta_80af1c04-e9b5-40cb-be97-c46157e77c64.png?v=1775243667"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-nomad-gx-axs-2027",
@@ -4250,7 +5568,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "e9c006fb0ec58d089b5a81711e5051fe58e7ac21cb996ab404872f950cf1976f"
+  "sha256": "e9c006fb0ec58d089b5a81711e5051fe58e7ac21cb996ab404872f950cf1976f",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-nomad-gx-axs-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "47844a0ac737e63560f3b52ad8eb2971ed6e3bb60be5af5da394657bb7c7b454",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_Nomad_CC_GX_AXS_MatteMetallicEarth_f9faeacb-80df-47bc-8a6d-e34dc1d98ae7.png?v=1775244103"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-v10-dh-x01-2027",
@@ -4272,7 +5599,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "0e40c884e9bcbec07dbf413feb9522061486062af20cd857147fca8b84e915cc"
+  "sha256": "0e40c884e9bcbec07dbf413feb9522061486062af20cd857147fca8b84e915cc",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-v10-dh-x01-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "2c1572f1af0a487ab18cd00a9ef319a098b5f3066b807794fe22fbdec9772a0c",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_V10_CC_DH_X01_GlossKelpGreen_3051f972-6c93-4193-a844-647a2f6e4d84.png?v=1773349919"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-v10-dh-s-2027",
@@ -4294,7 +5630,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "dab14496c7ba8468711e336e232b22673bccb1c6cedd352df92bb1d22ef884f8"
+  "sha256": "dab14496c7ba8468711e336e232b22673bccb1c6cedd352df92bb1d22ef884f8",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-v10-dh-s-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "6ec02eaad00937c1b227f1209bee0bd9393d344d4fb427539c64b8f5aca24ebf",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_V10_CC_DH_S_GlossLiquidBlue.png?v=1770929071"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-v10-frame-2027",
@@ -4316,7 +5661,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "921e9b86b9f4f4b553f25a207dde34b778c64f2d9cba71aecdb8b6aa00b26e4d"
+  "sha256": "921e9b86b9f4f4b553f25a207dde34b778c64f2d9cba71aecdb8b6aa00b26e4d",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-v10-frame-2027--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "c2a73bad783026fe456f1254d60e61e08c8ac4c1463b49a615613b096f216df1",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY27_V10_CC_FactoryDHX2_FrameOnly_GlossKelpGreen.png?v=1767915021"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-htsqd-frame-2026",
@@ -4382,7 +5736,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "20b139a66007853fdf152aa73f6e990ddb4ecbbd9c79ea110dda0378030eb88e"
+  "sha256": "20b139a66007853fdf152aa73f6e990ddb4ecbbd9c79ea110dda0378030eb88e",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-frame-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "a45cfeda164f722babec53b6e11412e56122287d7386c0bf50dc8ed7bcdb7309",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Stigmata_CC_FRAME_MatteCarbon.png?v=1755206506"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-rival-1x-axs-rudy-2026",
@@ -4404,7 +5767,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "1e18749087d6a8470d15a6f6296a2864ad25757b078aa34702acce685a731f4a"
+  "sha256": "1e18749087d6a8470d15a6f6296a2864ad25757b078aa34702acce685a731f4a",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-rival-1x-axs-rudy-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "7b3fd4778ad92934e84e052377add71bcbbc362554e4835e0308de580c20a96f",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Stigmata_CC_RIVAL_1X_AXS_RUDY_BritishRacingGreen_0ed32c3e-1a17-4e7e-a6d4-d90bd8711225.png?v=1755206821"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-rival-1x-axs-2026",
@@ -4426,7 +5798,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "faaf76a0511ac204d50e87dce03abe34c4181c40683f7926168f20b2de596cf1"
+  "sha256": "faaf76a0511ac204d50e87dce03abe34c4181c40683f7926168f20b2de596cf1",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-rival-1x-axs-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "9b76e4db95122ad8ea775eea09e0b0d6eca91003c28ee7f0ac161297f26a5b10",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Stigmata_CC_RIVAL_1X_AXS__BritishRacingGreen.png?v=1755206508"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-apex-2026",
@@ -4448,7 +5829,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "62a89ff5119312a455126f121b76359e62b65d18e60bb8dd857f6ecce8fa350c"
+  "sha256": "62a89ff5119312a455126f121b76359e62b65d18e60bb8dd857f6ecce8fa350c",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-apex-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "6fe1bd8711f7623fd8cac2834a1c00a716c30550ce19ad25d1cfe9d5b9435c3a",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Stigmata_CC_APEX_BritishRacingGreen_5ab42044-2ff9-4fb2-aa23-7b684d498923.png?v=1755206808"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-force-1x-axs-rsv-rudy-2026",
@@ -4470,7 +5860,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "dda8e4ab642e5207ec2a035f01872003f83ef288cfe6ebf1f3aaf7f6ef0bd3f6"
+  "sha256": "dda8e4ab642e5207ec2a035f01872003f83ef288cfe6ebf1f3aaf7f6ef0bd3f6",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-force-1x-axs-rsv-rudy-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "1cfb66315bb58601903fa192fe3c69ac7cbaccd6c49baf8ae011330d6a80c622",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Stigmata_CC_FORCE_1X_AXS_RSV_RUDY_BritishRacingGreen_8692d437-33a5-4167-89ba-dabaee544268.png?v=1755206810"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-stigmata-force-1x-axs-rsv-2026",
@@ -4492,7 +5891,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "966b564398d7bc8c0907d52c025b8a8af4984a247579cfd9d46feb9d17dbba5b"
+  "sha256": "966b564398d7bc8c0907d52c025b8a8af4984a247579cfd9d46feb9d17dbba5b",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-stigmata-force-1x-axs-rsv-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "9a2373fd4f7ceceace13566bd0ddb6289954698441ec96eb75dad63b52d04399",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Stigmata_CC_FORCE_1X_AXS_RSV_BritishRacingGreen_c0ff0e88-d974-4f2a-9020-d97fa5c6184d.png?v=1755206806"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-al-deore-2026",
@@ -4514,7 +5922,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "468f5708981a2bfa0f7b120f2d323f5dcaff2ed3115c03b8f99b97b068887cab"
+  "sha256": "468f5708981a2bfa0f7b120f2d323f5dcaff2ed3115c03b8f99b97b068887cab",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-al-deore-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "f9eb906db3e329088a567c7a128e92fbac0502ba26bff6bec9406f8f78c2f14f",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Vala_AL_Deore_GlossStormbringerPurple.png?v=1752592555"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-al-70-2026",
@@ -4536,7 +5953,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "aea7bd22078afffff505f24016588191524d52de4580401bec96d0551b9901a5"
+  "sha256": "aea7bd22078afffff505f24016588191524d52de4580401bec96d0551b9901a5",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-al-70-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "b922f3a308dbaa362d0fcdf5b9c4286fe55e4f8db0325381cb7b4e0abcb9d003",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Vala_AL_70_GlossLunarGray_2c1607bd-cbdd-4751-8a90-483d546d5d1b.png?v=1752785668"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-hightower-frame-c-2026",
@@ -4558,7 +5984,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "dc236e1fd671da2b846db457f3cb5be9e76fc32c7ff648614d771b4e3a73ec91"
+  "sha256": "dc236e1fd671da2b846db457f3cb5be9e76fc32c7ff648614d771b4e3a73ec91",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-hightower-frame-c-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "c3c7f07433c3b94435a13355bfa77e17c12668310a783c04b88e38c4f4fd6abd",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Hightower_C_PerfEliteFLoatX_FrameOnly_GlossBrickRed_3fb0c89c-9364-4df7-9ab9-1fc71345acf2.png?v=1742340660"
+   },
+   {
+    "src": "/media/products/santa-cruz-hightower-frame-c-2026--g2.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "184a76772fe2c3fd6832dd33f7111be665e1c53fb5c3ad18e60f881e0cf8d843",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Hightower_C_Frame_MatteBlack_6b4a8304-425c-419e-91ea-7d61218325f0.png?v=1751564612"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bronson-gx-axs-2026",
@@ -4580,7 +6022,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "22babde137b066c47d48edbe5822186baf5c044c7e05d37d803a67bd38c2fa69"
+  "sha256": "22babde137b066c47d48edbe5822186baf5c044c7e05d37d803a67bd38c2fa69",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bronson-gx-axs-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "2a20e5be202a355f20cd47294f1357edfbf4406f6712e71691d9b0e233c1c71f",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Bronson_C_GX_AXS_GlossCarbon_87ab7eca-f466-40d1-9819-c2ba2234f0d7.png?v=1763168528"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-xx-axs-rsv-2026",
@@ -4602,7 +6053,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3201×2401 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "7bcd7ac3b0e1afab4c6cf9a325193753c9839ed1d9e1fcc2b0a1b42b5859448c"
+  "sha256": "7bcd7ac3b0e1afab4c6cf9a325193753c9839ed1d9e1fcc2b0a1b42b5859448c",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-xx-axs-rsv-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "e265d324c6c44021c90cbc01cc3e9021de8a7f625be4452197bedaa5af5b2776",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Vala_CC_XX_AXS_RSV_MidnightGreen_864856aa-48e9-424c-a30d-89e6e216eb3b.png?v=1751578977"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-x0-axs-rsv-2026",
@@ -4624,7 +6084,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3201×2401 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2ed9943949dd69de4470ed2dfe146708f06856aa4393a0f06fe8645997eabfa9"
+  "sha256": "2ed9943949dd69de4470ed2dfe146708f06856aa4393a0f06fe8645997eabfa9",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-x0-axs-rsv-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "d2f94246504838640f728e8f73e2ba64b309285a119e6ce06de8fd9b0922db7d",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Vala_CC_X0_AXS_RSV_GlossGrey_33f615dd-4cf2-4f4f-b53b-e56dd1c900d5.png?v=1751985823"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-gx-axs-2026",
@@ -4646,7 +6115,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3201×2401 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "1af25f084b2662c1168f91a529885fb762213babbe5dc0fa58058584716f99a4"
+  "sha256": "1af25f084b2662c1168f91a529885fb762213babbe5dc0fa58058584716f99a4",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-gx-axs-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "b7c279fe7710b25564099d39642b90d6d4f298c7df037245d844ed5fa158dd07",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Vala_C_GX_AXS_MidnightGreen_166c77ee-1b92-4244-b9fc-24713afa198a.png?v=1751578979"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-hightower-gx-axs-2026",
@@ -4668,7 +6146,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "944daf8b2dd0f1c79c141abe9e7f081b0931129fc236e2cadb4ab53ce79401dc"
+  "sha256": "944daf8b2dd0f1c79c141abe9e7f081b0931129fc236e2cadb4ab53ce79401dc",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-hightower-gx-axs-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "f3b34fcd01d9ebc768798cc15b3296c4f46aa8d55a8e1f3ef18765af8036431a",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Hightower_C_GX_AXS_GlossBrickRed_6d05734c-a5bc-400f-9e13-0be2c317471c.png?v=1751578923"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-hightower-xtr-rsv-2026",
@@ -4712,7 +6199,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "67496bb3602ae85f1c9c391f528fb0aa3c49683e0a72b9ef91f5c08a7611a451"
+  "sha256": "67496bb3602ae85f1c9c391f528fb0aa3c49683e0a72b9ef91f5c08a7611a451",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-skitch-gx-axs-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "eb74bf505b4e76ef154e092f59043164dadbdd327b81a8fd6b28a61a56f134f3",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Skitch_CC_GX_AXS_MatteIronOre.png?v=1751994653"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-skitch-apex-flat-bar-2026",
@@ -4734,7 +6230,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "73d2a6aed37a8f52ee107d919d8d4a23d36734ca3cf2a8991f1a30eacbd8bc40"
+  "sha256": "73d2a6aed37a8f52ee107d919d8d4a23d36734ca3cf2a8991f1a30eacbd8bc40",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-skitch-apex-flat-bar-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "e80292104923d79ea166ed5c0697edd56c2be390c14f6138e6e994efaf0afc4f",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Skitch_CC_Apex_Flat_MatteIronOre.png?v=1751994651"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-skitch-gx-axs-flat-bar-2026",
@@ -4756,7 +6261,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "dd33a27fd28bb230d6236fa10834dc4d3e74539bbe2a7954359b9d2e1ca7724d"
+  "sha256": "dd33a27fd28bb230d6236fa10834dc4d3e74539bbe2a7954359b9d2e1ca7724d",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-skitch-gx-axs-flat-bar-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "888c0caa30bb399e8149ef93fc443d3715a817845c3b374bf79a895d66a4926d",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Skitch_CC_GX_AXS_Flat_GlossBlack.png?v=1751994646"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-skitch-apex-2026",
@@ -4778,7 +6292,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2f3c9f4de91e10ce87db99cbaec8a35c816a91839adec83dc2095f50a302b45a"
+  "sha256": "2f3c9f4de91e10ce87db99cbaec8a35c816a91839adec83dc2095f50a302b45a",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-skitch-apex-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "e98233e6a96d3ae6b1c6d7ef94e811972292b36a41ba1c7789f83f282efe45f0",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Skitch_CC_Apex_MatteIronOre.png?v=1751994618"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-heckler-sl-70-2026",
@@ -4800,7 +6323,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "347db32715cadd263c6fff434c29e81ebac99eefd0d986be696d3c39a2584832"
+  "sha256": "347db32715cadd263c6fff434c29e81ebac99eefd0d986be696d3c39a2584832",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-heckler-sl-70-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "58a7f899dfc49a6d557fdd027bfe3d285dc1ab52929441c186c79d666fb7f968",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_HecklerSL_C_70_GlossMustardYellow.png?v=1742243775"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-heckler-sl-gx-axs-2026",
@@ -4822,7 +6354,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "cb85f97463d604a0101a0a3b16c4878b99287debdf59bac875046f99e612f4b9"
+  "sha256": "cb85f97463d604a0101a0a3b16c4878b99287debdf59bac875046f99e612f4b9",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-heckler-sl-gx-axs-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "a2e178bc8bbca882cc3ef1d11343e935f7fb0ee246f003529026d861b7a8f926",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_HecklerSL_C_GX_AXS_GlossMustardYellow.png?v=1751979232"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-heckler-sl-90-2026",
@@ -4844,7 +6385,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "280fa720c61856e79e089d7063e893c82b2d5029d4170cc75d0853fa30a84c38"
+  "sha256": "280fa720c61856e79e089d7063e893c82b2d5029d4170cc75d0853fa30a84c38",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-heckler-sl-90-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "59f75848915785dd99e39e5e9b7811c5dacb907f9f95a5870bb13065a3cfb0ab",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_HecklerSL_C_90_GlossMustardYellow.png?v=1742243775"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-heckler-sl-stout-2026",
@@ -4866,7 +6416,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "de037d91eef35852055a5706f20ac92922553efa529cbfcd0575fcaecb52045f"
+  "sha256": "de037d91eef35852055a5706f20ac92922553efa529cbfcd0575fcaecb52045f",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-heckler-sl-stout-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "d9e45575b5cf6e9f65d93285d19909744836b7800336448d4052e80232e4b23e",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Heckler_SL_C_STOUT_GlossMustardYellow.png?v=1751575285"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bronson-frame-c-2026",
@@ -4888,7 +6447,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "646f2797073a702eadf96754fd37fcfd704cc642364204fe7225b0a2f21ac3dd"
+  "sha256": "646f2797073a702eadf96754fd37fcfd704cc642364204fe7225b0a2f21ac3dd",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bronson-frame-c-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "49fff97e419d7bcd64dc6a1577b91c48f0807a3271b5056f4caa16a2020bd916",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Bronson_C_PerfEliteFLoatX_FrameOnly_MattePoblanoGreen_ef816976-424b-43b2-a5b8-c7427d432e71.png?v=1763168497"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-highball-90-2026",
@@ -4932,7 +6500,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "3cd159412dfcc1aed71c85d0ba21b7650ef025ea92256b9201e3d54d4f29fbfd"
+  "sha256": "3cd159412dfcc1aed71c85d0ba21b7650ef025ea92256b9201e3d54d4f29fbfd",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-hightower-90-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "bcd1a8f17c3f323dc74061f6f41bb91ada5825200d2a6077b9bf3ea4e200698e",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Hightower_C_90_GlossBrickRed_a411f834-8898-43cb-9957-c80cd448489e.png?v=1742340638"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-hightower-70-2026",
@@ -4954,7 +6531,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "1fea0c79c66e0d9e93829af47f4cf4b5cda9690eae074971f7ddeb358e3a6cac"
+  "sha256": "1fea0c79c66e0d9e93829af47f4cf4b5cda9690eae074971f7ddeb358e3a6cac",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-hightower-70-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "0eeb390abb08652aea8733ec0f267323bb70c198012ae087054a5e867911efc0",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Hightower_C_70_GlossBrickRed_c7540d50-25ed-4b40-89b0-a758d9ae718f.png?v=1742340633"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-megatower-90-2026",
@@ -4976,7 +6562,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "03996175f6dc7b49c08a3ab4b39eb222df456b4910ac44b029e2b3484926ebf2"
+  "sha256": "03996175f6dc7b49c08a3ab4b39eb222df456b4910ac44b029e2b3484926ebf2",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-megatower-90-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "9ccb570465b2d72cbda0dedc1c9c7902d2656f3d256fcdc50078f52b2c2a67fe",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Megatower_C_90_MatteOliveDrab_ad46b561-0e8b-4d39-951a-fed87b32d4d4.png?v=1742340610"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-nomad-90-2026",
@@ -4998,7 +6593,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "97c1bc0044e8385017a23569daf9dfd7d8c53d4858d0d92b3e8f4e2a82dc924d"
+  "sha256": "97c1bc0044e8385017a23569daf9dfd7d8c53d4858d0d92b3e8f4e2a82dc924d",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-nomad-90-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "0d1d1e99a291263462a712ebbc12ddd8e1292cd56b321d9e67f7019d44f52710",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Nomad_C_90_GlossCoral_a2d5b527-4027-416b-bc6a-e3a8498f7187.png?v=1742340630"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-nomad-70-2026",
@@ -5020,7 +6624,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "221f1d200069f529ed97b1f73e5adee2c1ba3d1d7b69516d09c52d8512a4e3da"
+  "sha256": "221f1d200069f529ed97b1f73e5adee2c1ba3d1d7b69516d09c52d8512a4e3da",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-nomad-70-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "91fd4df6905d48e02057bd1424840647ec1dedaeccc14af776a8e2c9572f9e83",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Nomad_C_70_GlossCoral_0c5aee45-2c52-40fb-b652-1760de6e5d0e.png?v=1742340626"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bullit-90-2026",
@@ -5042,7 +6655,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "efad01b765412aaaff0b3bef9a1a58b3afe5743fc92061c4d8dcfb7c2da8ace4"
+  "sha256": "efad01b765412aaaff0b3bef9a1a58b3afe5743fc92061c4d8dcfb7c2da8ace4",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bullit-90-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "866d486345ecc0ae8a53feaa6395162a3702a0618e861ecce0b8e10763f4e045",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Bullit_C_90_MatteTealSparkle_11a2b45c-902c-424a-905e-26129e1076c3.png?v=1751988052"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bullit-70-2026",
@@ -5064,7 +6686,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "76d5d2c5302469c003bbd47eb73668a7d299326f714665e00570e3ada16ac57b"
+  "sha256": "76d5d2c5302469c003bbd47eb73668a7d299326f714665e00570e3ada16ac57b",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bullit-70-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "a444e123c9ddb0ef2d726e243a91bc600b7e4a0312f7c58401a66db75446b30c",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Bullit_C_70_GlossBlack_fd19eb77-a5af-41b8-a94f-716a9b27d4a2.png?v=1751988051"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bullit-gx-axs-2026",
@@ -5086,7 +6717,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "05031866b13b517519eb203ebfb548ccba6234b93dce511b3267956d226b36c9"
+  "sha256": "05031866b13b517519eb203ebfb548ccba6234b93dce511b3267956d226b36c9",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bullit-gx-axs-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "504991666f2cedeba336fc350ef9a6842dd3282e4f450ba6211a4be4b7edc1c2",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Bullit_C_GX_AXS_GlossBlack_132839c5-f65c-4e6f-8571-2efdec2712a8.png?v=1751988051"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bullit-x0-axs-rsv-2026",
@@ -5108,7 +6748,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2c3a44eff5d8d55dcf4cfeb51efa0d686f8fe9bc7b0e6e02fabb31d4f36dc900"
+  "sha256": "2c3a44eff5d8d55dcf4cfeb51efa0d686f8fe9bc7b0e6e02fabb31d4f36dc900",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bullit-x0-axs-rsv-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "8b63c242bb1b36a38cf5ca89074eda9384bc645a441364b2e143946d0bda787f",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Bullit_CC_X0_AXS_RSV_MatteTealSparkle_56c270fb-6e1c-47b2-aeb0-2af5c1ae0d5d.png?v=1751988054"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-70-2026",
@@ -5130,7 +6779,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "27bdf69c505539e59b7667a2ea686a784df5283c375b19d9441f70f6fbe37c33"
+  "sha256": "27bdf69c505539e59b7667a2ea686a784df5283c375b19d9441f70f6fbe37c33",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-70-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "75bc623f0385e24f1d85472b4f2e8984a9e07d087b190a7d9cd40fab11dc5b0a",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Vala_C_70_MidnightGreen.png?v=1742243834"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-vala-90-2026",
@@ -5152,7 +6810,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "eea4b021be28fb25dc4f06701d5107246e8c30e607ffa7b8bf83054d64ccc5b3"
+  "sha256": "eea4b021be28fb25dc4f06701d5107246e8c30e607ffa7b8bf83054d64ccc5b3",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-vala-90-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "403248bb37ca10c8a97cd150e3f4b326430519fffe061c11fb57d936a0f01c49",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Vala_C_90_MidnightGreen.png?v=1742243834"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bronson-90-2026",
@@ -5174,7 +6841,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "42c81dfcd57cedb8baec019e8343ffa86ed07f96df4d74f3e48b1d20b1c710bb"
+  "sha256": "42c81dfcd57cedb8baec019e8343ffa86ed07f96df4d74f3e48b1d20b1c710bb",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bronson-90-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "e5c57142aaddd6921d1e1b3e53337ed550966b416f6414612fd884e6ff0e4920",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Bronson_C_90_MattePoblanoGreen_1096571f-7821-4e82-9c9e-07ae0301ff8b.png?v=1763168498"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-bronson-70-2026",
@@ -5196,7 +6872,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "22b6705c6d09d9d49894e2805640a92441558f3276700ccfcd1167583202c326"
+  "sha256": "22b6705c6d09d9d49894e2805640a92441558f3276700ccfcd1167583202c326",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-bronson-70-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "35c4f54972d1f11f847edc9087f59dd6e136f5a08726cfce25a34f4f5c377bfe",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Bronson_C_70_MattePoblanoGreen_68d0ad42-a0c1-4571-90b4-c5ccce67f85a.png?v=1763168498"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-70-trail-2026",
@@ -5218,7 +6903,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2cfecde2585701dcb8cecd7d655d03bb7a8444eac984a5f29ab94b371145dce7"
+  "sha256": "2cfecde2585701dcb8cecd7d655d03bb7a8444eac984a5f29ab94b371145dce7",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-70-trail-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "98e8f21b4f6479e304a68a3b2e6cec1e967aeccbaa669be8f2075bd718c1a057",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Blur_C_70_GlossLightTeal_dbea44b8-61b3-43d3-8b36-ee632427af7b.png?v=1742340606"
+   }
+  ]
  },
  {
   "id": "img-santa-cruz-blur-90-trail-2026",
@@ -5240,7 +6934,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Santa Cruz's own product page (Shopify product feed (product images)). Downloaded 2026-11-16: HTTP 200, image/webp, 3200×2400 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "8298845eaf86da7a8750702e11636150dcd1d78eb0d87e8b6e03ab8cb8bd5097"
+  "sha256": "8298845eaf86da7a8750702e11636150dcd1d78eb0d87e8b6e03ab8cb8bd5097",
+  "gallery": [
+   {
+    "src": "/media/products/santa-cruz-blur-90-trail-2026--g1.webp",
+    "width": 900,
+    "height": 675,
+    "sha256": "fda2f8c0d20da50024b63c223d77ff4698bc990e96d473c78ede8a54ff5a6488",
+    "original_file_url": "https://cdn.shopify.com/s/files/1/0897/4355/6890/files/MY26_Blur_C_90_GlossLightTeal_9076f825-6785-4111-80f9-7f5342983cde.png?v=1742340606"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-turbo-creo-2-sram-red-axs-listed-2026",
@@ -5262,7 +6965,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "ff0274d3d8fede822d4ffa04cbda5301c21a3ca7a68bd9fdc31a88ae9ac7e893"
+  "sha256": "ff0274d3d8fede822d4ffa04cbda5301c21a3ca7a68bd9fdc31a88ae9ac7e893",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-turbo-creo-2-sram-red-axs-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "a3ab123af0ff9a819b4eae47c1998f7f445187e91ab951df6f035c0ce7146d82",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL1zlvIzSZ5tDas6StjBSHhImW/98125-00_CREO-SL-SW-CARBON-UL-CARB-BLUPRL-LQDSIL_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-turbo-creo-2-sram-red-axs-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "52611a9e344913d9ef699c2be8d349e722b7386ef14502779e69a09b3718284e",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL20ELgYIgLmNCyPiWcUycqI2k/98125-00_CREO-SL-SW-CARBON-UL-CARB-BLUPRL-LQDSIL_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-creo-2-expert-shimano-grx-di2-listed-2026",
@@ -5328,7 +7047,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "927699197d64e1fa06663f5a1249bb12e79040e14de8497004ca6a0385703dc1"
+  "sha256": "927699197d64e1fa06663f5a1249bb12e79040e14de8497004ca6a0385703dc1",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-tarmac-sl9-sram-red-axs-e1-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "28f70b4da52f542393eff8b25a339b2c016d319c2910f4fda07d0118b536790b",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKx3MjB2ZJoaIDZALh3vN8n35W/94927-00_TARMAC-SL9-SW-AXS-SILDST-SPCTFLR-CHRM_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-tarmac-sl9-sram-red-axs-e1-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "5c722f60bbd2ab191dae6d6ba1daa26e3749164bdf525d098962a33c6827cf57",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKx3eVm9czZkvjfhvrziMhlBzJ/94927-00_TARMAC-SL9-SW-AXS-SILDST-SPCTFLR-CHRM_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-aethos-2-sram-red-axs-e1-listed-2026",
@@ -5548,7 +7283,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "08df668d1a07eb69584d23c4caf64fa695e041cabda1a6afc56469f290b8cfce"
+  "sha256": "08df668d1a07eb69584d23c4caf64fa695e041cabda1a6afc56469f290b8cfce",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-shiv-tt-disc-module-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "c03ff09dc7137aafbcc8035c3b460a005bd39b127e417b98e0a895d4a96586d7",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3JptxvqH068T7C7Cmrolr3PqwPw/77427-00_SHIV-TT-SW-MODULE-RBYMET-METWHTSIL_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-shiv-tt-disc-module-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "bcd7a15fb76d75e55ce8e08c89309773776d3cca2a6238578439b82f2ed6f839",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3JptyQJ8MhQizugRsyGOpsVjYGi/77427-00_SHIV-TT-SW-MODULE-RBYMET-METWHTSIL_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-aethos-2-pro-shimano-ultegra-di2-listed-2026",
@@ -5636,7 +7387,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "39a383548609bd6092df22344cec28301d3246bc92df8d3387e1254e3cfc5ba6"
+  "sha256": "39a383548609bd6092df22344cec28301d3246bc92df8d3387e1254e3cfc5ba6",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-roubaix-sl8-expert-sram-force-axs-e1-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4bd747d0c6cc6a6f62f53d65761db3e46a1c7c22ca84100985b455f0169f89fb",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvGBUBflhI4FsIM5xu02zYTKjF/94427-30_ROUBAIX-EXPERT-BRCH-BDXMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-roubaix-sl8-shimano-tiagra-listed-2026",
@@ -5680,7 +7440,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "4eb25cf9e0b0e29c35b149d063a437719fcc16a927421e37d58174af4db6ef34"
+  "sha256": "4eb25cf9e0b0e29c35b149d063a437719fcc16a927421e37d58174af4db6ef34",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-allez-comp-shimano-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "e69dc8e56c61a517fb79a82c106053e60eb2a9bafbf40c6d6eb5de5c2c9ce11e",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKqdB8R1ENr1tJGIFbxbytDYLJ/90026-70_ALLEZ-E5-COMP-CSTBLUMET-DUNEWHT_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-allez-comp-shimano-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "237c06c5a685861387a2d2c0e87760b81ccfcec124a8eabcda9aa3b08dbef700",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKqdb9Qgqd68gXDWU1Z5sObLMW/90026-70_ALLEZ-E5-COMP-CSTBLUMET-DUNEWHT_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-roubaix-sl8-shimano-dura-ace-listed-2026",
@@ -5812,7 +7588,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "fbdf1e4b6c822700d0b6fadb6ceb47ef21186e3483aac2f8b5a225137d1de5ba"
+  "sha256": "fbdf1e4b6c822700d0b6fadb6ceb47ef21186e3483aac2f8b5a225137d1de5ba",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-allez-shimano-cues-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "d43d701a3b6315d594949602bad1b0003b6578cf318843c97451e4a5bf00994d",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKqcJCNcNqepcZhG9FRFSxPj5Q/90026-60_ALLEZ-E5-OBSD-DOVGRY_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-roubaix-sl8-frameset-listed-2026",
@@ -5834,7 +7619,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "cd25123a0197c513c45136e80e8cd137f9668b5b5018cca3b035a75143a2dc33"
+  "sha256": "cd25123a0197c513c45136e80e8cd137f9668b5b5018cca3b035a75143a2dc33",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-roubaix-sl8-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "85e2ac525672d96ee33cd46108d352987257e7ab4c7bc62cb0679a319f120b04",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvGCfJIpwRzk5i9cDQ5A6aqkEQ/74427-00_ROUBAIX-SW-FRMSET-CYNPRPCMLN-METWHTSIL-WHT_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-roubaix-sl8-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "8b9d72adb3935461f918a19d7919c94a4cee69f7faabd5890b6eeaa5cc630cc5",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvGCrYmPCj7Xic2OqCj9dHl5Eb/74427-00_ROUBAIX-SW-FRMSET-CYNPRPCMLN-METWHTSIL-WHT_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-aethos-2-expert-shimano-ultegra-di2-listed-2026",
@@ -5878,7 +7679,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "8149c5a384ca5a9a16ce6e75e914d99247fc3e71481be0d1fd8dc816fe9e8e85"
+  "sha256": "8149c5a384ca5a9a16ce6e75e914d99247fc3e71481be0d1fd8dc816fe9e8e85",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-allez-sprint-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "5c86981c9f59b5f801203be211408ccda996454f1958df98fe7a50cd41b47d7a",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEby8qmbLMqJoMjXCwIPthaq6q/70027-71_ALLEZ-SPRINT-FRMSET-CSTBLUMET-METDPMRNBLU-RSSHM_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-aethos-2-frameset-listed-2026",
@@ -5900,7 +7710,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "af38e3b9987fdc6ffc6296a8926d0b66cbcbd2d25a452d245ec50e99c090aef7"
+  "sha256": "af38e3b9987fdc6ffc6296a8926d0b66cbcbd2d25a452d245ec50e99c090aef7",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-aethos-2-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "fcda4c362b4a94589c6bf219c48df4882e24617452192764644123ab3d2b63c2",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKox8XnOhTHmdgsXt0SsfDXvcb/77226-70_AETHOS-FRMSET-NBLMET-BNTGLDMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-aethos-2-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "c13b2ad4cfc71ebd93f1d002a61d25f92397b01c873c1e7220765afb47c208f6",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKox8dQ18INPQpbWvjiJBlvPiA/77226-70_AETHOS-FRMSET-NBLMET-BNTGLDMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-roubaix-sl8-pro-sram-force-axs-e1-listed-2026",
@@ -5944,7 +7770,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "b30d7b513c61c7c00b3f11c204493388b4afcf9ea228e1ead8fd9f3c42605e3f"
+  "sha256": "b30d7b513c61c7c00b3f11c204493388b4afcf9ea228e1ead8fd9f3c42605e3f",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-tarmac-sl9-comp-shimano-di2-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4049c100131db82ead4976af4a248f8883bb4cfd628387f8f5cd15621b2c1d9f",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEan7XPN8oCOEo9ysI1ajLVhbl/94927-52_TARMAC-SL9-COMP-DI2-DLMMET-CAYNMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-roubaix-sl8-comp-shimano-di2-listed-2026",
@@ -6010,7 +7845,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "0ded98212311c3e3417a38900ffed91a03baaf6f964e8634b0d069c9fb11054e"
+  "sha256": "0ded98212311c3e3417a38900ffed91a03baaf6f964e8634b0d069c9fb11054e",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-tarmac-sl7-sport-shimano-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "57af8824d9777aa72a2eff252fb08c568a778e9817ac8e5a22a1d9409402967a",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKs7nXDwWpAT0qsBFy6MVmlm5g/90626-60_TARMAC-SL7-SPORT-OISTNT-WHT_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-tarmac-sl7-sport-shimano-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "0916e778fc108cb59d6c4483ce0b2f0aa82a88644170b6b582eb3399e418f841",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKs7xgxY4auJVMjDX8fiLaCaus/90626-60_TARMAC-SL7-SPORT-OISTNT-WHT_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-creo-2-comp-sram-x1-eagle-axs-listed-2026",
@@ -6076,7 +7927,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d72310f6da140fb89c948634b323b479e9ea45a6879ab1905ef7af6e6c163159"
+  "sha256": "d72310f6da140fb89c948634b323b479e9ea45a6879ab1905ef7af6e6c163159",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-stumpjumper-15-evo-shimano-xtr-di2-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "b20b65ff96f936a9d6a91de144c4b5d219289c885267673558599f71e832a418",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuyx4JCqDLz0wGzwhUyVqV4eU/93326-00_SJ-15-SW-DI2-DLMMET-SMKLQDMET_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-4-evo-comp-listed-2026",
@@ -6098,7 +7958,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "05439228694d64334b04dbdb639ef3ef6732ac2cd4b6af8b363deb6ab1929042"
+  "sha256": "05439228694d64334b04dbdb639ef3ef6732ac2cd4b6af8b363deb6ab1929042",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-4-evo-comp-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "dc14e971eed0ab386d9d52b41866fbad67e7e3ebd5ea02fae75ed4996a077a24",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvEWMsPMpstphpdWN9sPXXjShi/95227-50_LEVO-COMP-EVO-G4-WRMSMKMET-PST-BRSHCP_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-turbo-levo-4-listed-2026",
@@ -6142,7 +8011,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "144b70a6602a3d87dee1ff63c928bdb971b27c5e24f7a593934ff517b1332247"
+  "sha256": "144b70a6602a3d87dee1ff63c928bdb971b27c5e24f7a593934ff517b1332247",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-r-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "592a2a7ece1de6a42349a8434e51e7f8bde5cc3e464d5d430a645f7a5e9a64bf",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKyQHeUVsRpgrxjXOB9dhKMbk2/95226-00_LEVO-R-4-SW-SHDWSIL-CARB-SILDST-S2--_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-r-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "7f788ada16607d2e75ca3118c888aba3d03e27aa7f5dc7b7b5e3b75d5060eecc",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKyQS8NrkZSSwj94MrmKYGOGTO/95226-00_LEVO-R-4-SW-SHDWSIL-CARB-SILDST-S2--_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-r-expert-listed-2026",
@@ -6186,7 +8071,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "162dd795204a02ea1f1481b189a3c54cd452424fdb375781d91307886ed85e7c"
+  "sha256": "162dd795204a02ea1f1481b189a3c54cd452424fdb375781d91307886ed85e7c",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-r-comp-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "528edefe5c4d2578763c3a76d5c9ce3f4eb746da2af64d1f762fd87637651b98",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKyWJ9kYU3knHYqqid07WBiirB/95226-80_LEVO-R-4-COMP-GUN-WHTMTN-S1--_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-4-pro-listed-2026",
@@ -6208,7 +8102,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "443b9942d8137cbda78ac1ac01460e79051ec92c3af9f118ad8437aae2569043"
+  "sha256": "443b9942d8137cbda78ac1ac01460e79051ec92c3af9f118ad8437aae2569043",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-4-pro-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "96f5fd50cfe1d874f6982a93dc0c73abefe3350ecd05822a5ff30ef2e2e5ed4b",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKyGG17LFxg9Slh4ppLrTxL3fX/95224-10_LEVO-PRO-CARBON-G4-BLUONYX-DKNVY-BLUGSTPRL_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-turbo-levo-4-pro-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "29d7c743ad965fc6c6dd75c2ec0669f6fc101eac221571af3349ce5ed60e5002",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKyGRkYnw2IR5hU2WXfU9I4vnh/95224-10_LEVO-PRO-CARBON-G4-BLUONYX-DKNVY-BLUGSTPRL_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-turbo-levo-4-frameset-listed-2026",
@@ -6252,7 +8162,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "7151f9d9bff2a12d033f64e53185224c0d441ece3da436ad776d4683e3911585"
+  "sha256": "7151f9d9bff2a12d033f64e53185224c0d441ece3da436ad776d4683e3911585",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-alloy-shimano-slx-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "a94b89e826959a903313d734101394f29d7e7894f573c8ce88a48ee99a08ecff",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuxcJ31KEtsVK0MmxsbB53qb0/93325-74_SJ-15-FOX-COIL-ALLOY-BRSH-LQDMET-CSTBLU_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-15-alloy-shimano-slx-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4095aaf01a7593f42bf225c007cf844c6602932bcda24215c778bb5f7b7c631d",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuxxDC3D3sNPWag459Ld9GBkm/93325-74_SJ-15-FOX-COIL-ALLOY-BRSH-LQDMET-CSTBLU_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-epic-9-listed-2026",
@@ -6274,7 +8200,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "27dba7db60b8026428701ab6eaa869e1b56b9cab179c7a812a57fae1eda52224"
+  "sha256": "27dba7db60b8026428701ab6eaa869e1b56b9cab179c7a812a57fae1eda52224",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-epic-9-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "14601e9e8876a14ef45c3d533e542c945a4285624d0b09f26efdb0fc2f2ddfb8",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvDoIGEuHjJy6zL1kJnv9LSPfP/90327-01_EPIC-9-SW-REDTNT-REDPRL-METWHTSIL_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-epic-9-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "e29d3d5e068b92e4a3e37f15cdef217bb38388857d621e46d44d5bf6d8b33420",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvDplQBRGQ28Py37OHumxCNgvm/90327-01_EPIC-9-SW-REDTNT-REDPRL-METWHTSIL_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-epic-9-pro-listed-2026",
@@ -6296,7 +8238,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "bc2d893d2f21965a1d8c22da8838967e999bf43a7343216682e0f5f9a16bf571"
+  "sha256": "bc2d893d2f21965a1d8c22da8838967e999bf43a7343216682e0f5f9a16bf571",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-epic-9-pro-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "56c6108734d76b243184c929e19801ccbcd078d0bf64491b08fa1a091a12e337",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvDp81JzcgN7fIPpLtb1vx5Xir/90327-10_EPIC-9-PRO-CARB-PRL-CHRM_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-epic-9-pro-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "3bf3e3da974f64684d2da140d394eadcb70586e783daa60a88c140c1b344015b",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvDsCHOli4Lq7ny6m3vcnzBC9q/90327-10_EPIC-9-PRO-CARB-PRL-CHRM_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-demo-11-ltd-sram-xx-dh-axs-t-type-listed-2026",
@@ -6340,7 +8298,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "7875b57957cce9e52870197837c52b2f420bf3191f05480d51a1b3a1f9331c7f"
+  "sha256": "7875b57957cce9e52870197837c52b2f420bf3191f05480d51a1b3a1f9331c7f",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-demo-11-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "8e097a5b4e698bdbc07df9d702bae56fb64996ffced1741ed3c860be0c2607bc",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvEo41OS17DXhcdpElLpnmRJkl/94527-00_DEMO-11-SW-PDRNDGOTNT-BLKTNT-WHT_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-stumpjumper-15-evo-listed-2026",
@@ -6406,7 +8373,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "4513669f376a6fce3ad2de342fed028f51bb9025617b1517beaf8901dae6066e"
+  "sha256": "4513669f376a6fce3ad2de342fed028f51bb9025617b1517beaf8901dae6066e",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-r-pro-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "60a6f1c1eb3757188c4a7053091ebdae8cd6bef3d19771d78201876e54f1acf5",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcYRGTQLszqvHKBHiBk4DpJdk/95727-10_LEVO-R-PRO-REDBLKCMLN-BLK-DLMMET-S2--_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-turbo-levo-r-pro-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "fba720e87029d9c0d10200f253c15bb51edb1ad7fdb49eef1d0fe1214af44d22",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcaK4Ua2wZ9qO7WnFsKAgAtXR/95727-10_LEVO-R-PRO-REDBLKCMLN-BLK-DLMMET-S2--_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-epic-9-expert-listed-2026",
@@ -6450,7 +8433,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "e627c666ddf1d42236a53d0011b7bad3d724fb170505b77fc501849c6d9a2043"
+  "sha256": "e627c666ddf1d42236a53d0011b7bad3d724fb170505b77fc501849c6d9a2043",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-pro-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "1c46591d740a2d4040e2f87a485ea02e6a00b132b3a26f6a906e9ffa22f0f4de",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcHaxHFhBx0FnvrHNJ64xDb2p/93327-11_SJ-15-PRO-SHDWSIL-SILDST_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-epic-9-comp-listed-2026",
@@ -6494,7 +8486,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "20471fac37b6e4a7930434a542d60e844706f1f99a0539746e19e08b46e355f6"
+  "sha256": "20471fac37b6e4a7930434a542d60e844706f1f99a0539746e19e08b46e355f6",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-sram-gx-eagle-transmission-derailleur-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "539ae8ab884c66b47f6fe6a67551d702e096671f56d958f7e9039a4e56d370a0",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuyBxmkGkmm4rQBqlTVwyrupB/93325-75_SJ-15-OHLINS-COILCOP-SILDST_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-15-sram-gx-eagle-transmission-derailleur-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "3ec1ba43203d24b7eb9fae835d35649db1a5b6e298319489879c5cfede0a8708",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuyHjOZp80IPzCEBMS9sWMHTP/93325-75_SJ-15-OHLINS-COILCOP-SILDST_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-epic-9-sport-listed-2026",
@@ -6516,7 +8524,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "a9e825bb77882b68e393ce966e0c9e7aa61495c1a08b23b60afa67f041e2143d"
+  "sha256": "a9e825bb77882b68e393ce966e0c9e7aa61495c1a08b23b60afa67f041e2143d",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-epic-9-sport-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4e575088e43342917d829c54d4197679dc85793f0bccfd2f017b440bd29e734f",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvDogPoLUTi1Knww6gBa9Illg1/90327-60_EPIC-9-SPORT-DLMMET-METOBSD_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-turbo-levo-4-x-listed-2026",
@@ -6538,7 +8555,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2bd45dadc9332103cd993ff73f65d8de94d1586a5482083e9865d07f963d4268"
+  "sha256": "2bd45dadc9332103cd993ff73f65d8de94d1586a5482083e9865d07f963d4268",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-4-x-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "5a1af261cce655b81451e0151f621a26868d42566d61aef94bbbbc49d0922ff1",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3EjCHEZkkpCNlAVylhpEe8g9CDS/95226-08_LEVO-X-SW-G4-FRYRED-BLK_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-4-comp-alloy-listed-2026",
@@ -6560,7 +8586,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9ff6e43cfd78b7fd9ce66ad29282ff2c9a5fac30a10c74af57e51c9683c3abca"
+  "sha256": "9ff6e43cfd78b7fd9ce66ad29282ff2c9a5fac30a10c74af57e51c9683c3abca",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-4-comp-alloy-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "b54968ab367bfdbf9941c702921a05b32ba0e9132229d9870a852dc63db2a58c",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEbXcwFcws7Q1GEN680xC2PfY0/95227-60_LEVO-COMP-ALLOY-G4-METOBSD-BRCH_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-demo-11-frameset-listed-2026",
@@ -6582,7 +8617,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "8151d60f0054389a9f3d1492c88ca24f9bd952681c042ee2fbc1a1e4e6fb5181"
+  "sha256": "8151d60f0054389a9f3d1492c88ca24f9bd952681c042ee2fbc1a1e4e6fb5181",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-demo-11-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "b9f165e2bceac51a608f5bc9afc792dd1fc1a5894efa5842ab32f21e52bbcbf8",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvF5x1CnKXQzHCtKFJbsIHoLAs/74527-00_DEMO-11-SW-FRM-TLTNT-SMK-WHT_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-demo-11-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "7de2ff1e4c0bb8e7f83215da482b0ed83ce6f3904a3b9cb22750586ece11af64",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvF5zjsaKiF5CqCcBPK2HBF14p/74527-00_DEMO-11-SW-FRM-TLTNT-SMK-WHT_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-15-evo-elite-alloy-listed-2026",
@@ -6604,7 +8655,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "c830b35562cef95a4b121d0769b33d9d5e13704214d8da4960959346d689a504"
+  "sha256": "c830b35562cef95a4b121d0769b33d9d5e13704214d8da4960959346d689a504",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-elite-alloy-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "1dd93305295ee058a8070097efb180ed8ed9f1af4f8ed79a3c41c96ceb921e1b",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcGeX9lZcpveCuvkHOmIlUIuA/93327-40_SJ-15-ELITE-ALLOY-ESTSRS-SNDSTNMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-elite-alloy-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "d7997fa282b1f6e9d4d91bf8ab7b9de33185b84618aa48f31dd24774ce361188",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcIFDqsMDhb0qCCF7qGu8gRoK/93327-40_SJ-15-ELITE-ALLOY-ESTSRS-SNDSTNMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-rockhopper-sport-listed-2026",
@@ -6670,7 +8737,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "58e8d0b903b97e8cd68b33f1587f550fa15af6b8f75398ad07ec2f76d1a8e1a4"
+  "sha256": "58e8d0b903b97e8cd68b33f1587f550fa15af6b8f75398ad07ec2f76d1a8e1a4",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-4-expert-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "97b38a3ffaa76fceeb1e18517657faea6aa99b9ee8f56c2c5030ab92cfa7cd94",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcTPXLWbMrFswNwOpn6cY1jUP/95227-30_LEVO-EXPERT-CARBON-G4-METDPMRNBLU-SILDST_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-15-evo-expert-listed-2026",
@@ -6736,7 +8812,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "b7db130251098c2b758bda9e7b953dfb349462a297e4417ad47d7b0da22ef6a1"
+  "sha256": "b7db130251098c2b758bda9e7b953dfb349462a297e4417ad47d7b0da22ef6a1",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-stumpjumper-15-evo-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "6a1ad4657025f073b28823a87e13ff0a86a8d74f4cce04993ddbc2164e4255b0",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcIESAXB5jXpk5sPSzM7dzNQJ/73327-00_SJ-15-SW-FRM-SNDSTNMET-OAKGRNMET-SMKLQDMET_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-stumpjumper-15-evo-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "07925176dd1da067f6bfdba934c5339dee5bc0944195415711612373a872b233",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcJ7SsTKNKnkn8pyAr1Lb1ZAR/73327-00_SJ-15-SW-FRM-SNDSTNMET-OAKGRNMET-SMKLQDMET_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-4-comp-listed-2026",
@@ -6758,7 +8850,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "75b74eab5c70f624a94cecfa006507d433f3209dd9a9c6cb7cb3ed06d779c575"
+  "sha256": "75b74eab5c70f624a94cecfa006507d433f3209dd9a9c6cb7cb3ed06d779c575",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-4-comp-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "04029625f93eec6f759c917c644d38af011e32450af964e79bcc3034ecf0bfe8",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcV2AYbCmpayfegxakgTDSVXT/95227-66_LEVO-COMP-CARBON-G4-DLMMET-SHDWSIL_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-rockhopper-comp-listed-2026",
@@ -6780,7 +8881,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "98bc505f0316ccac17efdfdc7305cfb90b351d02bd7d0d91e0fe1193d138173e"
+  "sha256": "98bc505f0316ccac17efdfdc7305cfb90b351d02bd7d0d91e0fe1193d138173e",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-rockhopper-comp-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "00955b3b701aa857233c0c9683c8cdd0d08a615328e217054ca6b8bea51e5eb3",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3EjCL7HuCN4IhckCAbCIwb06i6m/91827-55_ROCKHOPPER-COMP-KH-SHDWSIL-SILDST-M---29_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-4-alloy-listed-2026",
@@ -6802,7 +8912,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "90432e647527f49a40977373d14a24c03f1a0032c32d5b846fec48bf3cf88cb7"
+  "sha256": "90432e647527f49a40977373d14a24c03f1a0032c32d5b846fec48bf3cf88cb7",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-4-alloy-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "bec0ba6e027c682fd190e482538f1c3091db5f668d70da311c3c12111c4cbbf7",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEbWsgmbmthGrQyibGeLPxJidJ/95227-70_LEVO-ALLOY-G4-CLGRY-SMK_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-rockhopper-expert-listed-2026",
@@ -6824,7 +8943,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "c6933160e5c5f57498f95fd4f39dccf782890c51e249c38c2e9e80940d7fceff"
+  "sha256": "c6933160e5c5f57498f95fd4f39dccf782890c51e249c38c2e9e80940d7fceff",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-rockhopper-expert-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "583a62e04a558132cc2d622e299376df0dabce0c8ceb5ca3fe9748e5c976ed8b",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEbjCdqIcJI64hqmTpluYuruMv/91827-33_ROCKHOPPER-EXPERT-KH-REDTNTALU-ALU-WHT-M---29_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-epic-9-frameset-listed-2026",
@@ -6846,7 +8974,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "7b9f29889dc6d71eab42efbf59c6b63993af333e617883668a06b01e6d4f7d2e"
+  "sha256": "7b9f29889dc6d71eab42efbf59c6b63993af333e617883668a06b01e6d4f7d2e",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-epic-9-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "241b584a68a706c90ea95d035c8e3f860b05675fa9346818a0314766f4b99cf3",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvDmRsPALd4GdoMbl3JoVKi65D/70327-01_EPIC-9-SW-FRMSET-BDXMET-BLUPRL-METWHTSIL_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-r-comp-alloy-listed-2026",
@@ -6890,7 +9027,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "3a74286acdca69e8534b651c19683b43a82783cd8f069271f03533f7415c1913"
+  "sha256": "3a74286acdca69e8534b651c19683b43a82783cd8f069271f03533f7415c1913",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-r-ultralight-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "75801fe11fe89bcb83ad609d1750357c12d675a057919586ff626c6058bfb2cd",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEbwDUzsG47F9RioHagycUS9qi/95727-04_LEVO-R-SW-LTD-UL-CARB-SILHLG-S2--_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-r-ultralight-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "dca27b396ab946e793ee2b637b6f304a5fba692296cb3ca50fe3de6a403786e6",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEbwowRwb0sp9splCKhATBOlgB/95727-04_LEVO-R-SW-LTD-UL-CARB-SILHLG-S2--_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-4-evo-pro-listed-2026",
@@ -6912,7 +9065,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "e357ed9b5c3e9f386679b64a8d2caa3d48fe689c433f246868f5b3e99385a550"
+  "sha256": "e357ed9b5c3e9f386679b64a8d2caa3d48fe689c433f246868f5b3e99385a550",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-4-evo-pro-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "c83660393720d9cff471f60a0c29b3f10c66995a83ea7bd30240f28d9471d30a",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvETKYF3BNJeJpwWE8cjRMSLV6/95227-10_LEVO-PRO-EVO-G4-SHDWSIL-BLKPRL-SILDST_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-15-evo-pro-sram-x0-eagle-transmission-listed-2026",
@@ -6956,7 +9118,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "1752ba3e2ab30ff2c48ef8efc101cfa767411109529731a59182581291f3b5dd"
+  "sha256": "1752ba3e2ab30ff2c48ef8efc101cfa767411109529731a59182581291f3b5dd",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-comp-sram-eagle-axs-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "44e5b30799bebd6299385f1c32d11329ec07dfb6e4cdaf58e7e4d65093443434",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKv3QK5y5mTKXWH2CGH15zsAxR/93326-50_SJ-15-COMP-SHDWSIL-MAJBLUMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-15-evo-expert-sram-gx-eagle-axs-transmission-listed-2026",
@@ -6978,7 +9149,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "7ab70c30a9a307467e1d0f52fc00f694a8c73f2f394b40b6260aa61bd74059ac"
+  "sha256": "7ab70c30a9a307467e1d0f52fc00f694a8c73f2f394b40b6260aa61bd74059ac",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-expert-sram-gx-eagle-axs-transmission-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "8d239e8a14ef338eadbe5757eb7bb221bf46e3cb2d01fe13ee36a0fa6d5a15fd",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKv39HhKV0xwrbICWYep9VfkRc/93326-33_SJ-15-EXPERT-AXS-PST-DKMOS_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-expert-sram-gx-eagle-axs-transmission-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "f0df358dc45d89e673cab312d6bde83a38f2e3adbfd22e3ebce881dde1eb6503",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKv3PX6yrkLQMkhtm1xHzE4F31/93326-33_SJ-15-EXPERT-AXS-PST-DKMOS_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-evo-elite-alloy-sram-gx-eagle-listed-2026",
@@ -7000,7 +9187,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2c604a2cbe003f9149e164a496e803739e2be1122ad378651b4f437b23822644"
+  "sha256": "2c604a2cbe003f9149e164a496e803739e2be1122ad378651b4f437b23822644",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-evo-elite-alloy-sram-gx-eagle-listed-2026--g1.webp",
+    "width": 900,
+    "height": 707,
+    "sha256": "15f6ce3f2e7688ce025b0704f46e3901db60d9b470ed74efa2458e83b5bb8504",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKzxo1a3GbVZ0iA1SiMrgJ2M1G/96323-40_SJ-EVO-ELITE-ALLOY-SILDST-BLKTNT_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-evo-elite-alloy-sram-gx-eagle-listed-2026--g2.webp",
+    "width": 900,
+    "height": 808,
+    "sha256": "69a556df4cff2956cc27e21b3af209c8e72f42a6103052ec8573ba2cbb262ccf",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKzxotQqf9jrGWWPRtpo4Z7qW8/96323-40_SJ-EVO-ELITE-ALLOY-SILDST-BLKTNT_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-rockhopper-listed-2026",
@@ -7022,7 +9225,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "20d0a50652bed795f340ca22896a2caa0be81d26833b3a758191bd28896ef889"
+  "sha256": "20d0a50652bed795f340ca22896a2caa0be81d26833b3a758191bd28896ef889",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-rockhopper-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4317b2af830daf5fd4f0cae977c5ab49e104b46eafe2507526eba336b94020a2",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKtdnXmjeunom2K5tdheLJ3SzO/91826-79_ROCKHOPPER-BASE-KH-OBSD-DUNEWHT_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-rockhopper-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "da0e359db7a7c5ca575bc6b606193279bbc647491ea2e02f11fd477a5a984789",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKte16rgd1sixRF7vFEA8JDY3Y/91826-79_ROCKHOPPER-BASE-KH-OBSD-DUNEWHT_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-15-evo-alloy-frameset-listed-2026",
@@ -7044,7 +9263,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "efea8664a031b643bef1709f8fa3e29aedacb65d29d3ef7dbeba80e21d5af0d9"
+  "sha256": "efea8664a031b643bef1709f8fa3e29aedacb65d29d3ef7dbeba80e21d5af0d9",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-alloy-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 600,
+    "sha256": "10c2f580b059299248a52a3d5ac68000ab612d37886c1ae2cdcdc19c6371f53f",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoALXS1GJKNErpoAExtna1utr/73326-70_SJ-15-ALLOY-FRM-BRSH-LQDMET-CSTBLU_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-alloy-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 600,
+    "sha256": "1015bc85d0ce26049691fe6b5ff63393cd59918b1ce86f8c3a6fb53c8f3666dd",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoAS6cgjhVEg9YMKFq4mRTqOU/73326-70_SJ-15-ALLOY-FRM-BRSH-LQDMET-CSTBLU_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-chisel-hardtail-comp-listed-2026",
@@ -7066,7 +9301,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "3064af519e1f48ae987ec859a1f5bd545b8b853bb6df352d5118719e24cd32e1"
+  "sha256": "3064af519e1f48ae987ec859a1f5bd545b8b853bb6df352d5118719e24cd32e1",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-chisel-hardtail-comp-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "13ca32e28b82751ed337c3a183fd4e1eb1a3ed9ff7fe0216ccc39198f906ebe0",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKtUwMeqy0ZwN5UDc6FbdzPbJ5/91725-50_CHISEL-HT-COMP-GLOSS-METALLIC-DEEP-MARINE---WHITE_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-chisel-hardtail-comp-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "7ba87f12983ec8ff5e5037cf994f42aa2dada6390ff21e7b8344d97803b5c3d3",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKtV4G7Luj9RLOLHpNkQFdxZIe/91725-50_CHISEL-HT-COMP-GLOSS-METALLIC-DEEP-MARINE---WHITE_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-chisel-frameset-listed-2026",
@@ -7088,7 +9339,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9101928cb08bb0300cd0ff40b01501ef7b1d7afd068d960a8da980d2cadfb647"
+  "sha256": "9101928cb08bb0300cd0ff40b01501ef7b1d7afd068d960a8da980d2cadfb647",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-chisel-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "ad1a617fcf589a7c30725ca7f6ab844baa3bfd8635402eb9542006fe8722ba47",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoDXLK33AMCghidsNbNNqeeL2/73825-70_CHISEL-FRM-RBLPNKTNT-IONMET-BRSH_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-chisel-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "f3353e4a82a4390be73779dcf796da4ea018e70886cd13b3256cd0f55734f710",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoDgKb7t4JmsBWEbiL6LgBJeB/73825-70_CHISEL-FRM-RBLPNKTNT-IONMET-BRSH_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-chisel-hardtail-listed-2026",
@@ -7110,7 +9377,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "ad56cca84d7b6aebfd87b2bcd9bd4b0026d4e5339b673c93948e027fdd8fb108"
+  "sha256": "ad56cca84d7b6aebfd87b2bcd9bd4b0026d4e5339b673c93948e027fdd8fb108",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-chisel-hardtail-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "cf6c8cb8fc83af38909cf48d16d56fd2db75f11b2f62fd482415cdd3ffe16ac6",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKtVQIY37hTqjq2fRA2sHKGUsp/91725-52_CHISEL-HT-GLOSS-MAROON---WHITE_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-turbo-levo-sl-2-di2-listed-2026",
@@ -7132,7 +9408,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "e9332ca72ac9d584e204e2ec9b9a994c30cb23cccf42f9a12a901f2ba7db73d3"
+  "sha256": "e9332ca72ac9d584e204e2ec9b9a994c30cb23cccf42f9a12a901f2ba7db73d3",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-sl-2-di2-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "1b2fb76368808ba44ccd8eb24c2288d6810b893fda7850dbe0cd5151bc2f0af9",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL0f5fLhMX5kMbYGL11YyTLLSO/96826-00_LEVO-SL-SW-CARBON-DI2-CHARTNT-SILDST-CHRM_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-sl-2-di2-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "b5d9c7da6ec71e6b1cb6ef0a93c9749e2d74cac8eef9bb533af2797c42638266",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL0fPun9yNjMtZHMeN4l1owmkp/96826-00_LEVO-SL-SW-CARBON-DI2-CHARTNT-SILDST-CHRM_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-sl-2-expert-di2-listed-2026",
@@ -7154,7 +9446,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "01b726223e9ad2577128faa7427383dd1d11c7b3c7763a002a8a016011748463"
+  "sha256": "01b726223e9ad2577128faa7427383dd1d11c7b3c7763a002a8a016011748463",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-sl-2-expert-di2-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "e03fb5efc71c373efb7eba81283a08807f2c88efef79cbb11dff06c2e1815609",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL0iRobY2Q4VUog1h2GvGqJBas/96826-30_LEVO-SL-EXPERT-CARBON-DI2-BDXMET-WHT_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-turbo-kenevo-sl-2-frameset-listed-2026",
@@ -7198,7 +9499,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "689f423c447fdf99e7e97c26ade5b584c916aeb444728571ae76d2d1a2c6fd66"
+  "sha256": "689f423c447fdf99e7e97c26ade5b584c916aeb444728571ae76d2d1a2c6fd66",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-p-4-frame-listed-2026--g1.webp",
+    "width": 900,
+    "height": 600,
+    "sha256": "b44c54c0c90df2fa69a34bf566d04902a53f7e33736c8c97a3e1a7b042a8ae95",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKo3wc8vGx6GpS5CS3dtAVrccF/71923-50_P4-FRM-RSTDRED-WHTSGE_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-p-4-frame-listed-2026--g2.webp",
+    "width": 900,
+    "height": 600,
+    "sha256": "a1c6b9cd0f64e179f489842a6504745d89367cae43642bf70d81774a24acae16",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKo3yUWCjuEE1laPLsxv3fCSAs/71923-50_P4-FRM-RSTDRED-WHTSGE_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-kenevo-sl-2-comp-listed-2026",
@@ -7220,7 +9537,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "65404cb51b0aba5cddc8eb1767a87a118a1bfa6a48dd58ff136b8e36f52080d3"
+  "sha256": "65404cb51b0aba5cddc8eb1767a87a118a1bfa6a48dd58ff136b8e36f52080d3",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-kenevo-sl-2-comp-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "83846f82fc0cfe0ebe68c58e67ded22db4a473ec2776334038514a9bf3145fa9",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL1h2J2u3Q3snVCUnezJoSIiva/98026-50_KENEVO-SL-COMP-CARBON-29-NBLMET-DLMMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-turbo-kenevo-sl-2-comp-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "ff2b0df91b541dd3533ce770fd7aca725bfe5ff22d3de7b93e16bb8ac19e15cc",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL1h7cNJn8QvgSZk0EwORSJzaV/98026-50_KENEVO-SL-COMP-CARBON-29-NBLMET-DLMMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-turbo-levo-sl-2-comp-listed-2026",
@@ -7242,7 +9575,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "feb933781c2fef25bc5976295081a034d992499450dadba0b0e214a6ae485fcc"
+  "sha256": "feb933781c2fef25bc5976295081a034d992499450dadba0b0e214a6ae485fcc",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-turbo-levo-sl-2-comp-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "0206d485c77b1ab28585db1c2e79a92a365c66f1d473fb299731dc52c6aca007",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL0kuCFnQ2Z62SLlmcnfKPSDTT/96826-52_LEVO-SL-COMP-CARBON-METOBSD-SHDWSIL_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-turbo-levo-sl-2-comp-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "f08d86ff7f24fa10d815e53a9ad79a67ce6e4eedf87705f22c851c90f4267226",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DL0l69JTPStqcsN9yM1no1Gjg3/96826-52_LEVO-SL-COMP-CARBON-METOBSD-SHDWSIL_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-15-pro-sram-x0-eagle-transmission-derailleur-listed-2026",
@@ -7264,7 +9613,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9ad758cd0d568c83c66bd07cd889fcf46bf7a72e549c6d0fb450fcd591ad7d5a"
+  "sha256": "9ad758cd0d568c83c66bd07cd889fcf46bf7a72e549c6d0fb450fcd591ad7d5a",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-pro-sram-x0-eagle-transmission-derailleur-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "a244b46afb518ea61d887a2cac6c131d9adfcf99177fea599b7cede307b7ddf7",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuvnbNwWZ8z0FUzmc48zE3Ajq/93325-10_SJ-15-PRO-GRNTNT-GUN-METSLPHR_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-15-pro-sram-x0-eagle-transmission-derailleur-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "fc5428da1be000c0b7838d0c2074ae4b14ebeb24560aee4456b47a8e56c74b37",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuw74k3w72pDAKqtIookwnLqz/93325-10_SJ-15-PRO-GRNTNT-GUN-METSLPHR_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-turbo-levo-sl-2-frameset-listed-2026",
@@ -7286,7 +9651,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "4cfe1963cde5035cc7d63e17db9c92e049cb8f5de64ddca4f5559eb6db157d8b"
+  "sha256": "4cfe1963cde5035cc7d63e17db9c92e049cb8f5de64ddca4f5559eb6db157d8b",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-sl-2-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "39eed64bf8662f9bc728004a3e8b3c68861c43e257998f49bc08a9753fad690d",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoobIXilPtBIAV33RdeBMstMy/76825-00_LEVO-SL-SW-CARBON-FRMSET-UL-TEAMYELTNT-PRL-DKMOS_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-turbo-levo-sl-2-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "0aa57c36245ce39a94613ad5c3ff2ce2c50bb963263e1c650aab58a296542dcf",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKoolFLRzgWWvLFUd9YxljKSVw/76825-00_LEVO-SL-SW-CARBON-FRMSET-UL-TEAMYELTNT-PRL-DKMOS_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-stumpjumper-15-sram-xx-eagle-transmission-derailleur-listed-2026",
@@ -7308,7 +9689,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "e12be463c1f5c87fc2b95e82e6d93c844a9d24ee4837e5288e448a3091840382"
+  "sha256": "e12be463c1f5c87fc2b95e82e6d93c844a9d24ee4837e5288e448a3091840382",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-stumpjumper-15-sram-xx-eagle-transmission-derailleur-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "763d28e37436817f1a9f3d4ffdb64cd056605bb63604f60529e4c4056f2d60a1",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuv5KjM1BTOfNj3D625tw0RNS/93325-00_SJ-15-SW-GUN-CLY-WHTMTN_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-stumpjumper-15-sram-xx-eagle-transmission-derailleur-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "6e47a62ad216b8d5cc5b2953785cac3631489832f53373ad7e1045bd94e07e33",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKuvFTPTow4Vaw8OHZaBlrsNuy/93325-00_SJ-15-SW-GUN-CLY-WHTMTN_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-15-expert-sram-gx-eagle-transmission-derailleur-listed-2026",
@@ -7352,7 +9749,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "0dfc6566ab5ac9d5ac333e448dc5cad3383a45ba57d0d408e98fa035e9dec255"
+  "sha256": "0dfc6566ab5ac9d5ac333e448dc5cad3383a45ba57d0d408e98fa035e9dec255",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-expert-shimano-xt-di2-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "16c767e762d05a99a5f4301709cba7fab0333a2626843c1988176dddea46bf55",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKv22sKEhExRVPkPvtstfSR2E7/93326-30_SJ-15-EXPERT-DI2-NBLMET-DLMMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-15-evo-expert-shimano-xt-di2-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "1591a7844bb2c3228110849fb209eabf4fceccf38f407cee8dc53945396ec966",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKv2VNt4ZcjLf16WyuHI15zo7i/93326-30_SJ-15-EXPERT-DI2-NBLMET-DLMMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-stumpjumper-15-alloy-frameset-listed-2026",
@@ -7374,7 +9787,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "8fd245f9f32bb6c7e230c94781b18fcb65ed94b13b7bebb87e8c7cfbf5e5458c"
+  "sha256": "8fd245f9f32bb6c7e230c94781b18fcb65ed94b13b7bebb87e8c7cfbf5e5458c",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-stumpjumper-15-alloy-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "cd80dcf0fb91bffac35031e08e0add460c49a8ca92a0f2dc817208428a9e7bc1",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKo9f62ubuJWQjqqNJJfUazn3N/73325-70_SJ-15-ALLOY-FRM-OBSD-SILDST_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-stumpjumper-15-alloy-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "a64022c17dc1fc07bbd23c31fa9c7dd6bb295a64d869c529263c7a35b311851e",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKo9mPx37xC5CQxH2nicFaxIyb/73325-70_SJ-15-ALLOY-FRM-OBSD-SILDST_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-stumpjumper-15-frameset-listed-2026",
@@ -7396,7 +9825,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "b2617e34b58991e0c378266e251638bbc16887cf0eb087ae1a7a671e0288fe7c"
+  "sha256": "b2617e34b58991e0c378266e251638bbc16887cf0eb087ae1a7a671e0288fe7c",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-stumpjumper-15-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "12d31ba0a4976386d988150ed2d2dc230b65f49c00104eab59c22b8294aaac86",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKo999NMvc8AkxlYPjVrBT9aEJ/73325-00_SJ-15-SW-FRM-NRBLK-BLK-CLGRY_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-stumpjumper-15-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4880696b40de0140d1d894502fef1bbdac09d4423ba93bfb75fcb1ff60ab145f",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKo9JFsbqYiq4kRTUiFbv5Ztzt/73325-00_SJ-15-SW-FRM-NRBLK-BLK-CLGRY_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-diverge-4-sram-red-axs-xplr-e1-listed-2026",
@@ -7418,7 +9863,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "2b3f17718f58718e1110ae76c24153bef594516013e86b9415f760eb0075be84"
+  "sha256": "2b3f17718f58718e1110ae76c24153bef594516013e86b9415f760eb0075be84",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-diverge-4-sram-red-axs-xplr-e1-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "b86cd94e34ea2f56f7dc3e4312da09d6ef1f89f82981520798ba09373e079ad9",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEalsYsK0EBvgpo5kFAihG1SzG/95427-00_DIVERGE-SW-WRMSMKMET-CARB-SILDST_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-diverge-4-sram-red-axs-xplr-e1-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "3e48b626f0b6de6ad1261cc4d7e29c71f03eee26194acb00c73bbae3493474b0",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEam6yhzNecb2DkWKoYp4b7bHD/95427-00_DIVERGE-SW-WRMSMKMET-CARB-SILDST_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-crux-5-expert-sram-force-axs-e1-xplr-listed-2026",
@@ -7462,7 +9923,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "158291020a20ddccc90ae7f492892045b9357e152179f1441c078b607bb7e90f"
+  "sha256": "158291020a20ddccc90ae7f492892045b9357e152179f1441c078b607bb7e90f",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-crux-5-sport-shimano-grx-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "127e50688b6b62df5380f495d4b71a7d83cbe59d0a88ae217dc40110bc275fab",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvExn5l8MM2WYCDNQIE4Ug80Ig/91427-61_CRUX-5-SPORT-SILPRL-SMK-SILDST_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-diverge-4-expert-shimano-grx-di2-listed-2026",
@@ -7484,7 +9954,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "b62d95980f3fcb8a28d3a3927977e3d0b9f16fc674134f273e27ca98982bfd54"
+  "sha256": "b62d95980f3fcb8a28d3a3927977e3d0b9f16fc674134f273e27ca98982bfd54",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-4-expert-shimano-grx-di2-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "e33468d06867f09aeeb5f49cb1a57e55bc380b2324041ffa79b3925f126daf18",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3EjCqtE3CEAqlsEKsf4CQWEmrAk/95427-35_DIVERGE-EXPERT-DI2-SMK-SNDSTNMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-diverge-4-expert-shimano-grx-di2-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "acc46d6dd56d08e5feec8f130fd46d693ae29ab6cfa82869fdacfc44c18cafe7",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3EjCsbUGfxanKkbmydJUxvqKI28/95427-35_DIVERGE-EXPERT-DI2-SMK-SNDSTNMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-diverge-4-pro-ltd-shimano-xtr-di2-listed-2026",
@@ -7506,7 +9992,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "edce8181a4ba2db48f85bd5af4ecd5c55f68d16262a8d6f7883fce8189e3f386"
+  "sha256": "edce8181a4ba2db48f85bd5af4ecd5c55f68d16262a8d6f7883fce8189e3f386",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-4-pro-ltd-shimano-xtr-di2-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "69ace91171736d763512a80f21870c1cc4c49904bdf3efd978cc4545b2ba6364",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz8Xb34xHPk6fu8x3I0bEKxVB/95427-11_DIVERGE-PRO-LTD-SILDST-SHDWSIL-METOBSD_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-diverge-4-expert-sram-rival-axs-e1-xplr-listed-2026",
@@ -7528,7 +10023,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "87fe11234344b9c5bb96f70361d517b43dc93d07f68e0049f5e59239e289c1c4"
+  "sha256": "87fe11234344b9c5bb96f70361d517b43dc93d07f68e0049f5e59239e289c1c4",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-4-expert-sram-rival-axs-e1-xplr-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "3078beb2af03006a1b7a86ef30ff2b357b6d182fa80ecbd333f85fcb53005c9f",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3EjCrQxECo17csw3XogcPNLPkEO/95427-30_DIVERGE-EXPERT-AXS-FJDMET-GRNPRL-EMDMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-diverge-4-sport-carbon-shimano-grx-listed-2026",
@@ -7550,7 +10054,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "6919f3b42157c7f6bc83bb1c5f1a1839e2505cc73079981b66393dfc062a443e"
+  "sha256": "6919f3b42157c7f6bc83bb1c5f1a1839e2505cc73079981b66393dfc062a443e",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-4-sport-carbon-shimano-grx-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "a3de672f278363b2002bcf217cdbd114985abd05b96a8e16a0d847b521b7b684",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz6JmRRGWpXIQFR4pOVsRm7Xp/95426-60_DIVERGE-SPORT-EMDMET-SILDST_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-diverge-4-sport-carbon-shimano-grx-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "3df99da6832762e89f0e45915d6deee7f8d203f4f4a56cb0c1b998791e90c966",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz6T57x3qdBA0xrXvtBk3SuNO/95426-60_DIVERGE-SPORT-EMDMET-SILDST_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-crux-5-sram-red-axs-xplr-e1-listed-2026",
@@ -7572,7 +10092,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "eb8db26ba2518adba7c8b64dc3716010290533f0170d191136f2ab3cabbb1c76"
+  "sha256": "eb8db26ba2518adba7c8b64dc3716010290533f0170d191136f2ab3cabbb1c76",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-crux-5-sram-red-axs-xplr-e1-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "1e1bfa90fc54fe2dd933b322bfd6999dbb41b981a837272bfc249f1c094462c2",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvFbAwV0BMUMSac4K5aB9SYVgw/91427-01_CRUX-5-SW-AXS-GLDPRL-SILDST-NBLMET_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-crux-5-sram-red-axs-xplr-e1-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "02c4032114e1d97ff50f02e44b49a3ffdfbd1faa1a7956cf68fa29b7185b9db1",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvFbOWdx17Q0ozlHbnKqByEnKL/91427-01_CRUX-5-SW-AXS-GLDPRL-SILDST-NBLMET_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-crux-dsw-comp-sram-apex-xplr-listed-2026",
@@ -7638,7 +10174,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d70b44196d154f3b771644170784a05842738b460d5f364b8c073c3635880643"
+  "sha256": "d70b44196d154f3b771644170784a05842738b460d5f364b8c073c3635880643",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-s-works-crux-5-ltd-sram-red-axs-xplr-e1-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "c382d2916225fd999a833ed912ac790cd559d70f1bb3e68b9b8e76a0a8d21b06",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3IVci10AA6KHcsi0qMFm4PMMd3U/91427-02_CRUX-5-SW-LTD-MADE-IN-RACING-REDPRL-REDTNT-METWHTSIL_FDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-s-works-crux-5-ltd-sram-red-axs-xplr-e1-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4a1c85650888166a69c61f779d4ad094d0f333ac9d2d1e31a1c0a84db8dbae90",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3IVcidJ1m4KUk8yyD8tzNDNUMM6/91427-02_CRUX-5-SW-LTD-MADE-IN-RACING-REDPRL-REDTNT-METWHTSIL_RDSQ_DARK.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-crux-dsw-frameset-listed-2026",
@@ -7660,7 +10212,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "5b99f7a411689804bd61bae04027ca757d301d96058755a22c15c70cf49c4c80"
+  "sha256": "5b99f7a411689804bd61bae04027ca757d301d96058755a22c15c70cf49c4c80",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-crux-dsw-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "b4db111868a64c70332a05e77866f33b9e0456f90ca6a511eb4c2ec41b99952c",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcuI9ir2aw8oNHtkjZ6UZzVGz/71427-76_CRUX-DSW-FRMSET-SILDST-SHDWSIL-WRMSMKMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-crux-dsw-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "2accec969ec8014c934015bd24b6077c328859fe83d0de296cf4c9b9cdd96c58",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3HEcuTW9s4gctm5qTQE45yvexkd/71427-76_CRUX-DSW-FRMSET-SILDST-SHDWSIL-WRMSMKMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-diverge-4-comp-alloy-sram-apex-eagle-listed-2026",
@@ -7682,7 +10250,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "8fbaea751257672bcc54cdecc4d520b34afefea16b9257407cf73d322ae6d1f9"
+  "sha256": "8fbaea751257672bcc54cdecc4d520b34afefea16b9257407cf73d322ae6d1f9",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-4-comp-alloy-sram-apex-eagle-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "3a12ebf022b397cd41dc56aa3182b60f25aca0a30ee78198c22785ab1ce54423",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz5CH8Hs6PUCO4A28ZLkThNE1/95426-51_DIVERGE-E5-COMP-MVEMET-OBSD_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-diverge-4-comp-alloy-sram-apex-eagle-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "3dacad4e569ac6e7642dc8b482416619c5f08eb0dc4ed0fc63bc01eb2f92d05a",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz5JZ5GJtHCQyEDGLxixqrMe3/95426-51_DIVERGE-E5-COMP-MVEMET-OBSD_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-diverge-4-comp-carbon-sram-eagle-axs-listed-2026",
@@ -7704,7 +10288,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "d9a603639b5b9d67cbd80bc7edfbded776bbd62d7c9a3309b99bfac027292aa9"
+  "sha256": "d9a603639b5b9d67cbd80bc7edfbded776bbd62d7c9a3309b99bfac027292aa9",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-4-comp-carbon-sram-eagle-axs-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "c7df023915c38f5c16a70168269a3b3fb728119e6508990e08716ac28cb3c5cb",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz4o5Ok5YV5QTqr9nwg5astqg/95426-50_DIVERGE-COMP-DLMMET-ORGZST_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-diverge-4-comp-carbon-sram-eagle-axs-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "66447076564dbf926f5826985157272d44f6ae90f5797c477d806466051a7b2f",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz57ZhXxiRAFc1w2iThwUzO1d/95426-50_DIVERGE-COMP-DLMMET-ORGZST_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-diverge-4-sport-alloy-shimano-cues-w-shadow-plus-listed-2026",
@@ -7726,7 +10326,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "9b0c8291a3d65856ed024984f82a0120fd28a366f3d8206b439a7182de9470af"
+  "sha256": "9b0c8291a3d65856ed024984f82a0120fd28a366f3d8206b439a7182de9470af",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-4-sport-alloy-shimano-cues-w-shadow-plus-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "4046a989ba9d2f2be584a570e7e5c20872ac5ef70dc7df7bc3aebd170971bbee",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz6nNhffitW7n3bIDBgNr2ck8/95426-62_DIVERGE-E5-SPORT-BNTGLDMET-SHDWSIL_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-diverge-4-sport-alloy-shimano-cues-w-shadow-plus-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "9267321e5cd63f14854c3facfb1840db454b87271847be280ff6234a5ea2dfb2",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz73RkxYj8NKW4OtkyWaUk5s4/95426-62_DIVERGE-E5-SPORT-BNTGLDMET-SHDWSIL_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-diverge-4-pro-sram-force-axs-e1-xplr-listed-2026",
@@ -7748,7 +10364,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "5e19080bd1e60eef1446d2a4b0ebeaa25f51b913b3c2e2b0e9c512c04fea3242"
+  "sha256": "5e19080bd1e60eef1446d2a4b0ebeaa25f51b913b3c2e2b0e9c512c04fea3242",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-4-pro-sram-force-axs-e1-xplr-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "45355838fa6b453b8d5db93c0d90759daaea9069f76efe805073e34f2ebbb714",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz8ED6EKZeYwQtObTRwoaVrVu/95427-10_DIVERGE-PRO-DUNEWHT-GLDPRL-BNTGLDMET_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-diverge-4-pro-sram-force-axs-e1-xplr-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "7f4a7285d9d0322e7f46bacdfcb76b0f1c2841b5c91b5343bb72c1ff6659817a",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz8RKES08JSj3pve5IL7g0n5a/95427-10_DIVERGE-PRO-DUNEWHT-GLDPRL-BNTGLDMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-crux-5-comp-sram-rival-axs-e1-xplr-listed-2026",
@@ -7792,7 +10424,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "582cdc9f82fe2009c4f3be74638894ae25a1abdf119059bd503aee906957a1a4"
+  "sha256": "582cdc9f82fe2009c4f3be74638894ae25a1abdf119059bd503aee906957a1a4",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-diverge-3-alloy-shimano-cues-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "021495d5aae7d41290a55118b7197a020fe1695a42613bc2eb401019475f9276",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz7dvtLEpMXGRadEooqEGoiAP/95426-70_DIVERGE-E5-DUNEWHT-ASHGRY_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-diverge-3-alloy-shimano-cues-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "d0d646c6362a4b04010f1c7599aa0676acb386ddc62198aef2919bf54183d751",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DKz7gRaFVd9SnJhyrkkeHkNxbX/95426-70_DIVERGE-E5-DUNEWHT-ASHGRY_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-crux-5-s-level-sram-red-axs-xplr-e1-listed-2026",
@@ -7836,7 +10484,23 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "feafd0617aa683ac24508a892e2382e978af0e3177de5c479c70ff6887624c55"
+  "sha256": "feafd0617aa683ac24508a892e2382e978af0e3177de5c479c70ff6887624c55",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-crux-5-frameset-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "6f91501ecbed5e013389765459fa2441f4817d41c9a40e895b426065d8a05d61",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvFOdIy9N5zl6onfiVdZidsZfu/71427-71_CRUX-5-10R-FRMSET-NBLMET-WRMSMKMET-SILDST_FDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   },
+   {
+    "src": "/media/products/specialized-crux-5-frameset-listed-2026--g2.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "1eefacf77924d422b35688be2fa1c067a441827ec0aa8a32aa55618215e0d1c1",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvFOhm1CvSncjvpcw3S9lRPiZ8/71427-71_CRUX-5-10R-FRMSET-NBLMET-WRMSMKMET-SILDST_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-s-works-crux-frameset-listed-2026",
@@ -7880,7 +10544,16 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "matchNotes": "Image declared for this exact product by Specialized's own product page (Open Graph image). Downloaded 2026-11-16: HTTP 200, image/jpeg, 1600×1600 px; visually checked on a review contact sheet; no other record uses the same source file.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
-  "sha256": "f81b31d68271089151940a6e4801d616ac10a36a1a90b42e99c23f38d8cfb25f"
+  "sha256": "f81b31d68271089151940a6e4801d616ac10a36a1a90b42e99c23f38d8cfb25f",
+  "gallery": [
+   {
+    "src": "/media/products/specialized-riprock-comp-24-listed-2026--g1.webp",
+    "width": 900,
+    "height": 506,
+    "sha256": "19fc87242a8d8542870c9ac70efd4a9d1b31c42cb1ac45c637ec41a177d886f0",
+    "original_file_url": "https://resources.specialized.com/media-libraries/mleF1gIlpsGs/images/containers/3DvDjFzIMJBiET9nuKlimmV2t9d/96527-50_RIPROCK-COMP-24-AGVE-OAKGRNMET_RDSQ.webp?q=85&w=1600&fit=max&fm=jpg"
+   }
+  ]
  },
  {
   "id": "img-specialized-riprock-24-listed-2026",

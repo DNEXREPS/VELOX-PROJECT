@@ -59,6 +59,7 @@ done
 if ! su postgres -c "$PSQL -tAc \"select to_regclass('public.user_collections') is not null\"" | grep -q t; then
   su postgres -c "$PSQL -f $ROOT/supabase/schema.sql" >/dev/null
 fi
+bash "$HERE/migrate.sh" postgres
 
 docker run -d --name velox-postgrest --network host \
   -e PGRST_DB_URI="postgres://authenticator:authenticator@127.0.0.1:$PG_PORT/postgres" -e PGRST_DB_SCHEMAS=public -e PGRST_DB_ANON_ROLE=anon \

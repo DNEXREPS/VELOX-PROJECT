@@ -14728,9 +14728,9 @@ export const OFFICIAL_PRODUCT_IMAGES: ProductImage[] = [
   "license": "© Hunt",
   "licenseUrl": null,
   "author": "Hunt",
-  "image_verification_status": "verified",
+  "image_verification_status": "rejected",
   "image_model_match": "exact",
-  "matchNotes": "First product image in Hunt's official store feed for this exact product. Downloaded 2026-11-16: HTTP 200, image/jpeg, 925×719 px; no other record uses the same file.",
+  "matchNotes": "Rejected 2026-11-18: Hunt (a retailer of this Shimano product) photo, not a manufacturer image; the record was misclassified as a Hunt wheelset.",
   "view": "product",
   "last_image_verified_at": "2026-11-16",
   "sha256": "fbb26fb43ada556434198821a8288b2e1b4ecd782f77357f7fc4a0b75ab79a54"

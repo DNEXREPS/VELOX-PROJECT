@@ -4,7 +4,7 @@ RATE_SRC="https://www.bi.go.id/en/publikasi/lelang/non-operasi-moneter/Pages/Swa
 def slug(s):
     s=unicodedata.normalize("NFD",s.lower()); s=re.sub(r"[̀-ͯ]","",s); return re.sub(r"(^-|-$)","",re.sub(r"[^a-z0-9]+","-",s))
 d=json.load(open("wheels.json"))
-JUNK=re.compile(r"heiwu|complete bikes|outlet build|pre-?order|black friday|gift|sample|test\b|custom build|\bkit\b",re.I)
+JUNK=re.compile(r"heiwu|complete bikes|outlet build|pre-?order|black friday|gift|sample|test\b|custom build|\bkit\b|\brotors?\b|\btyres?\b|\btires?\b|\bbearings?\b",re.I)  # non-wheel products sold in wheel stores (e.g. a Shimano rotor pair) are not wheelsets
 def norm_title(t):
     t=re.sub(r"\(.*?\)","",t); t=re.sub(r"\|\s*IC\d+","",t)
     t=re.sub(r"[-\s]+\b(US|EU|UK|AU|NZ|CA|JP|ASIA)\b"," ",t); return re.sub(r"\s+"," ",t).strip(" -|")

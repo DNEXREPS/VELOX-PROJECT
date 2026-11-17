@@ -10209,10 +10209,10 @@ export const OFFICIAL_WHEELS: Component[] = [
  },
  {
   "id": "wheel-hunt-shimano-rt-mt900-ice-tech-center-lock-rotors",
-  "type": "wheelset",
-  "manufacturer": "Hunt",
-  "manufacturerSlug": "hunt",
-  "name": "Shimano RT-MT900 Ice Tech Center Lock rotors",
+  "type": "accessory",
+  "manufacturer": "Shimano",
+  "manufacturerSlug": "shimano",
+  "name": "RT-MT900 Ice Tech Center Lock rotors (pair)",
   "discipline": [
    "universal"
   ],
@@ -10223,40 +10223,30 @@ export const OFFICIAL_WHEELS: Component[] = [
   "price": {
    "amount": 2468000.0,
    "currency": "IDR",
-   "type": "msrp",
-   "source": "Hunt official online store",
+   "type": "retailer",
+   "source": "Hunt online store (retailer of this Shimano product)",
    "sourceUrl": "https://us.huntbikewheels.com/products/shimano-rt-mt900-s-ice-tech-center-lock-rotors-pair",
    "date": "2026-11-16",
-   "note": "Manufacturer's direct online price in USD; IDR converted at Bank Indonesia JISDOR Rp 18,148/USD (4 Nov 2026).",
+   "note": "Hunt's US store price in USD for this Shimano product (a retailer price, not Shimano's MSRP); IDR converted at Bank Indonesia JISDOR Rp 18,148/USD (4 Nov 2026).",
    "original": {
     "amount": 135.99,
     "currency": "USD",
     "rate": 18148
    }
   },
-  "specs": {
-   "Depth": null,
-   "Internal width": null,
-   "External width": null
-  },
+  "specs": {},
   "compat": {},
-  "wheel": {
-   "rimMaterial": null,
-   "rimDepthMm": null,
-   "internalWidthMm": null,
-   "externalWidthMm": null
-  },
   "productId": "shimano-rt-mt900-s-ice-tech-center-lock-rotors-pair",
   "imageUrl": null,
-  "officialUrl": "https://us.huntbikewheels.com/products/shimano-rt-mt900-s-ice-tech-center-lock-rotors-pair",
+  "officialUrl": null,
   "benefits": [],
   "provenance": {
-   "status": "verified-official",
+   "status": "unverified",
    "sources": [
     {
-     "label": "Hunt official product page",
+     "label": "Hunt online store listing (retailer)",
      "url": "https://us.huntbikewheels.com/products/shimano-rt-mt900-s-ice-tech-center-lock-rotors-pair",
-     "type": "official-website",
+     "type": "retailer",
      "retrievedAt": "2026-11-16"
     },
     {
@@ -10266,9 +10256,9 @@ export const OFFICIAL_WHEELS: Component[] = [
      "retrievedAt": "2026-11-16"
     }
    ],
-   "updatedAt": "2026-11-16",
-   "confidence": "high",
-   "reviewerNotes": "Imported from the manufacturer's own store product data. Depth, widths and weight are filled only where stated in the product title or as an explicit labelled value; other fields are Not Available."
+   "updatedAt": "2026-11-18",
+   "confidence": "low",
+   "reviewerNotes": "Corrected 18 Nov 2026: this is a Shimano RT-MT900 rotor pair sold by Hunt, not a Hunt wheelset. Listed via a retailer page, so identity is unverified against Shimano."
   }
  },
  {

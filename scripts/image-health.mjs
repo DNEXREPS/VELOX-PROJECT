@@ -18,6 +18,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import sharp from "sharp";
+import { parseRobots, robotsAllows } from "./lib/robots.mjs";
 import { spawnSync } from "node:child_process";
 import { withModules } from "./lib/load-ts.mjs";
 
@@ -50,19 +51,12 @@ async function allowedByRobots(url) {
   if (!robots.has(u.host)) {
     let rules = [];
     try {
-      const r = await fetch(`${u.protocol}//${u.host}/robots.txt`, { headers: { "user-agent": UA } });
-      if (r.ok) {
-        let applies = false;
-        for (const line of (await r.text()).split("\n")) {
-          const [k, ...rest] = line.split(":"); const v = rest.join(":").trim(); const key = k.trim().toLowerCase();
-          if (key === "user-agent") applies = v === "*" || UA.toLowerCase().startsWith(v.toLowerCase());
-          else if (applies && key === "disallow" && v) rules.push(v);
-        }
-      }
+      const r = await fetch(`${u.protocol}//${u.host}/robots.txt`, { headers: { "user-agent": UA }, signal: AbortSignal.timeout(15000) });
+      if (r.ok) rules = parseRobots(await r.text(), UA);
     } catch { /* unreachable robots.txt: treat as no rules */ }
     robots.set(u.host, rules);
   }
-  return !robots.get(u.host).some((d) => u.pathname.startsWith(d.replace(/\*.*$/, "")));
+  return robotsAllows(robots.get(u.host), u.pathname + u.search);
 }
 
 async function probe(url) {

@@ -98,3 +98,19 @@ describe("image galleries", () => {
     }
   });
 });
+
+describe("image health checker etiquette", () => {
+  it("honours robots.txt wildcards, $ anchors, Allow precedence and agent groups", async () => {
+    // @ts-expect-error plain ESM helper without types
+    const { parseRobots, robotsAllows } = await import("../scripts/lib/robots.mjs");
+    const txt = "User-agent: *\nDisallow: /*?sort=\nDisallow: /checkout\nAllow: /checkout/ok$\n\nUser-agent: velox-image-health\nDisallow: /private\n";
+    const star = parseRobots(txt, "other-bot/1");
+    expect(robotsAllows(star, "/en/bike.html")).toBe(true); // a wildcard rule must not block everything
+    expect(robotsAllows(star, "/list?sort=price")).toBe(false);
+    expect(robotsAllows(star, "/checkout/ok")).toBe(true);
+    expect(robotsAllows(star, "/checkout/ok2")).toBe(false);
+    const own = parseRobots(txt, "VELOX-image-health/1.0");
+    expect(robotsAllows(own, "/private/x")).toBe(false);
+    expect(robotsAllows(own, "/checkout")).toBe(true);
+  });
+});

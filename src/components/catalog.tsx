@@ -1,8 +1,9 @@
 "use client";
+import { requireAccount } from "@/components/auth/AccountPrompt";
 import Link from "next/link";
 import { GitCompare, Heart } from "lucide-react";
 import type { BikeModel, Brand, CompareKind, Component } from "@/lib/types";
-import { BikeImage } from "./BikeImage";
+import { BikeImage, ComponentPhoto } from "./BikeImage";
 import { ComponentGlyph } from "./Glyphs";
 import { Price, StatusBadge } from "./ui";
 import { toast } from "./ui/toast";
@@ -55,7 +56,7 @@ export function WishlistButton({ kind, refId, label, className }: { kind: "bike"
         e.preventDefault();
         e.stopPropagation();
         if (on) { wishlistStore.set(list.filter((w) => !(w.kind === kind && w.refId === refId))); toast("Removed from wishlist", { body: label, tone: "info" }); }
-        else { wishlistStore.set([...list, { id: uid("wish"), kind, refId, addedAt: new Date().toISOString() }]); toast("Saved to wishlist", { body: label, action: { label: "View garage", href: "/garage?tab=wishlist" } }); }
+        else requireAccount("wishlist", () => { wishlistStore.set((l) => [...l, { id: uid("wish"), kind, refId, addedAt: new Date().toISOString() }]); toast("Saved to wishlist", { body: label, action: { label: "View garage", href: "/garage?tab=wishlist" } }); });
       }}
       aria-pressed={on}
       aria-label={on ? `Remove ${label} from wishlist` : `Save ${label} to wishlist`}
@@ -102,9 +103,7 @@ export function ComponentRow({ c, action, className }: { c: Component; action?: 
   return (
     <div className={cx("group relative flex items-center gap-4 border-b hairline py-4", className)}>
       <Link href={`/components/${c.id}`} className="absolute inset-0" aria-label={`${c.manufacturer} ${c.name}`} />
-      <div className="flex h-14 w-14 shrink-0 items-center justify-center border hairline bg-ink-900 text-muted group-hover:text-lime">
-        <ComponentGlyph type={c.type} className="h-8 w-8" />
-      </div>
+      <ComponentPhoto componentId={c.id} type={c.type} alt={`${c.manufacturer} ${c.name}`} className="h-14 w-14 shrink-0 border hairline group-hover:border-line-strong" />
       <div className="min-w-0 flex-1">
         <p className="label-tech">{c.manufacturer} · {titleCase(c.type)}</p>
         <p className="mt-0.5 truncate text-[15px] font-medium tracking-tight">{c.name}</p>

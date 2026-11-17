@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { rateLimit } from "@/lib/ratelimit";
 import Anthropic from "@anthropic-ai/sdk";
 import { z } from "zod";
 import { COMPONENTS } from "@/data/components";
@@ -22,6 +23,8 @@ const Body = z.object({
  * model's structured analysis; failures degrade to the local result with an explanatory `aiError`.
  */
 export async function POST(request: Request) {
+  const limited = rateLimit(request, "mechanic", 20);
+  if (limited) return limited;
   let body: z.infer<typeof Body>;
   try {
     body = Body.parse(await request.json());

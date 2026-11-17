@@ -1,9 +1,10 @@
 "use client";
+import { requireAccount } from "@/components/auth/AccountPrompt";
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ArrowUpRight, Hammer, Plus, Trash2, X } from "lucide-react";
-import { buildsStore, garageStore, settingsStore, useCatalog, wishlistStore } from "@/lib/state";
+import { buildsStore, garageStore, mechanicHistoryStore, settingsStore, upgradePlansStore, useCatalog, wishlistStore } from "@/lib/state";
 import { useHydrated, useStore } from "@/lib/store";
 import { summarize } from "@/lib/builds";
 import { estimateValue } from "@/lib/garage";
@@ -17,7 +18,7 @@ import { Button, ButtonLink, EmptyState, Field, PageHeader, Price, Segmented, Sk
 import { toast } from "@/components/ui/toast";
 import { cx, formatMoney, titleCase, uid } from "@/lib/format";
 
-type Tab = "bikes" | "builds" | "wishlist";
+type Tab = "bikes" | "builds" | "wishlist" | "plans" | "history";
 
 export function Garage() {
   const cat = useCatalog();
@@ -28,6 +29,8 @@ export function Garage() {
   const wishlist = useStore(wishlistStore);
   const { currency } = useStore(settingsStore);
   const [tab, setTab] = useState<Tab>((sp.get("tab") as Tab) ?? "bikes");
+  const plans = useStore(upgradePlansStore);
+  const history = useStore(mechanicHistoryStore);
   const [adding, setAdding] = useState(false);
 
   const totalValue = garage.reduce((s, g) => s + (estimateValue(g).value ?? 0), 0);
@@ -43,7 +46,7 @@ export function Garage() {
             <div key={l as string}><p className="label-tech">{l}</p><p className="tabular mt-1 text-2xl font-medium tracking-tight">{v}</p></div>
           ))}
         </div>
-        <Segmented value={tab} onChange={setTab} options={[{ value: "bikes", label: "Bikes" }, { value: "builds", label: "Saved builds" }, { value: "wishlist", label: "Wishlist" }]} />
+        <Segmented value={tab} onChange={setTab} options={[{ value: "bikes", label: "Bikes" }, { value: "builds", label: "Saved builds" }, { value: "wishlist", label: "Wishlist" }, { value: "plans", label: `Upgrade plans${plans.length ? ` (${plans.length})` : ""}` }, { value: "history", label: `AI Mechanic history${history.length ? ` (${history.length})` : ""}` }]} />
 
         <div className="mt-8">
           {!hydrated ? <Skeleton className="h-64" /> : tab === "bikes" ? (
@@ -78,6 +81,32 @@ export function Garage() {
                     </li>
                   );
                 })}
+              </ul>
+            )
+          ) : tab === "plans" ? (
+            plans.length === 0 ? <EmptyState title="No saved upgrade plans" action={<ButtonLink href="/upgrade">Open Upgrade Advisor</ButtonLink>}>Generate recommendations for a bike, then choose “Save plan” on the tier you like.</EmptyState> : (
+              <ul className="border-t hairline">
+                {plans.map((p) => (
+                  <li key={p.id} className="border-b hairline py-4">
+                    <div className="flex flex-wrap items-baseline gap-3"><p className="text-[15px] font-medium">{p.tier} · {p.bikeLabel}</p><span className="text-xs text-muted">{new Date(p.savedAt).toLocaleDateString("en-GB")} · goals: {p.goal}</span>
+                      <span className="tabular ml-auto text-sm">{p.totalIdr != null ? formatMoney(p.totalIdr, currency) : "—"}</span>
+                      <button onClick={() => upgradePlansStore.set((l) => l.filter((x) => x.id !== p.id))} className="text-subtle hover:text-bad" aria-label={`Delete plan ${p.tier}`}><Trash2 className="h-4 w-4" /></button></div>
+                    <ul className="mt-2 flex flex-wrap gap-x-4 gap-y-1 text-xs text-muted">{p.parts.map((x) => <li key={x.componentId}><Link href={`/components/${x.componentId}`} className="link-u hover:text-fg">{x.name}</Link></li>)}</ul>
+                  </li>
+                ))}
+              </ul>
+            )
+          ) : tab === "history" ? (
+            history.length === 0 ? <EmptyState title="No diagnoses yet" action={<ButtonLink href="/mechanic">Open AI Mechanic</ButtonLink>}>Each diagnosis you run is kept here so you can track recurring problems.</EmptyState> : (
+              <ul className="border-t hairline">
+                {history.map((h) => (
+                  <li key={h.id} className="flex flex-wrap items-start gap-3 border-b hairline py-4">
+                    <div className="min-w-0 flex-1"><p className="text-[15px]">{h.text}</p><p className="mt-1 text-xs text-muted">{new Date(h.at).toLocaleString("en-GB")}{h.bike ? ` · ${h.bike}` : ""} · {h.topCauses.join(" · ") || "No likely cause"}</p></div>
+                    <span className={cx("label-tech", h.safety === "stop" ? "text-bad" : h.safety === "caution" ? "text-warn" : "text-muted")}>{h.safety}</span>
+                    <Link href={`/mechanic?q=${encodeURIComponent(h.text)}`} className="text-xs text-lime link-u">Run again</Link>
+                    <button onClick={() => mechanicHistoryStore.set((l) => l.filter((x) => x.id !== h.id))} className="text-subtle hover:text-bad" aria-label="Delete diagnosis"><Trash2 className="h-4 w-4" /></button>
+                  </li>
+                ))}
               </ul>
             )
           ) : wishlist.length === 0 ? (
@@ -161,9 +190,11 @@ function AddBike({ onDone }: { onDone: () => void }) {
         manual: { brand: man.brand, model: man.model, year: man.year ? Number(man.year) : null, category: man.category, frameMaterial: man.frameMaterial || null, groupset: man.groupset || null, wheelset: man.wheelset || null, brakes: man.brakes || null, brakeType: (man.brakeType || null) as BrakeType | null, wheelSize: (man.wheelSize || null) as WheelSize | null },
       };
     }
-    garageStore.set((g) => [...g, bike]);
-    toast("Bike added to your garage", { body: bike.nickname, action: { label: "Open profile", href: `/garage/${id}` } });
-    onDone();
+    requireAccount("garage", () => {
+      garageStore.set((g) => [...g, bike]);
+      toast("Bike added to your garage", { body: bike.nickname, action: { label: "Open profile", href: `/garage/${id}` } });
+      onDone();
+    });
   };
 
   return (

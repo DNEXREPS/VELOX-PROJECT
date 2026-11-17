@@ -341,7 +341,8 @@ export type ImageModelMatch =
   | "generation" // same frame generation, different build / trim / colour
   | "family"; // same family, different generation — never used as a primary image
 
-export type ImageVerificationStatus = "verified" | "pending-review" | "rejected";
+/** verified · pending-review (Pending Verification) · failed (file broken) · unverified · rejected (wrong product / withdrawn) */
+export type ImageVerificationStatus = "verified" | "pending-review" | "failed" | "unverified" | "rejected";
 
 export interface ProductImage {
   id: string;
@@ -350,7 +351,13 @@ export interface ProductImage {
   subjectId: string;
   /** local, stable copy served by VELOX (never a search-result or hot-linked URL) */
   primary_image_url: string;
+  /** additional verified photos of the SAME product (official gallery / colourways), in display order */
   gallery_images?: string[];
+  gallery?: Array<{ src: string; width: number; height: number; sha256: string; original_file_url: string | null }>;
+  /** stored format and the website the image came from */
+  format?: "webp" | "jpeg" | "png" | "avif";
+  source_site?: string;
+  updated_at?: string;
   width: number;
   height: number;
   alt: string;

@@ -3,7 +3,8 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ArrowRight, Heart, Info, Warehouse } from "lucide-react";
-import { buildsStore, garageStore, useCatalog, wishlistStore } from "@/lib/state";
+import { buildsStore, garageStore, upgradePlansStore, useCatalog, wishlistStore } from "@/lib/state";
+import { requireAccount } from "@/components/auth/AccountPrompt";
 import { useHydrated, useStore } from "@/lib/store";
 import { adviseUpgrades, AREA_LABEL, GOALS, profileFromModel, type BikeProfile, type Goal, type Recommendation, type UpgradeArea } from "@/lib/upgrade";
 import { profileFromGarage } from "@/lib/profiles";
@@ -189,6 +190,13 @@ export function Advisor() {
                       <div className="flex items-center gap-3">
                         {plan.items.length > 0 && profileRef && <Link href={`/simulator?${profileRef}`} className="text-xs text-muted link-u hover:text-fg">Simulate</Link>}
                         {plan.items.length > 0 && profileRef && <Link href={`/visualizer?${profileRef}`} className="text-xs text-muted link-u hover:text-fg">Visualise</Link>}
+                        {plan.items.length > 0 && profile && (
+                          <button type="button" className="text-xs text-lime link-u" onClick={() => requireAccount("plan", () => {
+                            upgradePlansStore.set((l) => [{ id: uid("plan"), bikeLabel: profile.label, bikeRef: profileRef ?? "manual", goal: goals.join(", "), tier: plan.title, totalIdr: plan.total, savedAt: new Date().toISOString(),
+                              parts: plan.items.map((r) => ({ slot: r.area, componentId: r.component.id, name: `${r.component.manufacturer} ${r.component.name}` })) }, ...l]);
+                            toast("Upgrade plan saved", { body: `${plan.title} · ${profile.label}`, action: { label: "View in My Garage", href: "/garage?tab=plans" } });
+                          })}>Save plan</button>
+                        )}
                         <p className="tabular text-lg">{formatMoney(plan.total)} <span className="text-xs text-subtle">est.</span></p>
                       </div>
                     </div>

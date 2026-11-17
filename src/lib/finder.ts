@@ -112,7 +112,8 @@ export function matchesHardFilters(b: BikeModel, brand: Brand | undefined, c: Fi
   if (c.wheelSize && c.wheelSize !== "all" && b.wheelSize !== c.wheelSize) return false;
   if (c.suspension && c.suspension !== "all" && b.suspension !== c.suspension) return false;
   if (c.q) {
-    const hay = `${brand?.name ?? ""} ${b.name} ${b.family} ${b.groupset ?? ""} ${b.frameMaterial ?? ""} ${b.category} ${b.subcategory}`.toLowerCase();
+    // name, brand, family, category and the published component list (groupset, wheelset, tyres, brakes, parts)
+    const hay = `${brand?.name ?? ""} ${b.name} ${b.family} ${b.groupset ?? ""} ${b.frameMaterial ?? ""} ${b.category} ${b.subcategory} ${b.wheelset ?? ""} ${b.tires ?? ""} ${b.brakes ?? ""} ${b.usage.join(" ")} ${(b.componentSpec ?? []).map((r) => r.value).join(" ")}`.toLowerCase();
     if (!c.q.toLowerCase().split(/\s+/).filter(Boolean).every((t) => hay.includes(t))) return false;
   }
   return true;
@@ -182,7 +183,8 @@ export function findBikes(bikes: BikeModel[], brands: Map<string, Brand>, c: Fin
     case "price-asc": return results.sort((a, b) => price(a) - price(b));
     case "price-desc": return results.sort((a, b) => (b.bike.price?.amount ?? -1) - (a.bike.price?.amount ?? -1));
     case "value": return results.sort((a, b) => (b.valueIndex ?? 0) - (a.valueIndex ?? 0));
-    case "newest": return results.sort((a, b) => b.bike.year - a.bike.year);
+    // undated records (manufacturer publishes no model year) never outrank dated ones
+    case "newest": { const y = (r: FinderResult) => (r.bike.yearBasis === "undated" ? -Infinity : r.bike.year); return results.sort((a, b) => y(b) - y(a)); }
     default: return results.sort((a, b) => b.score - a.score || price(a) - price(b));
   }
 }

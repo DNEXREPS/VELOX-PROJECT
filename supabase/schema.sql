@@ -306,53 +306,42 @@ create index data_sources_subject_idx on data_sources(subject, subject_id);
 -- ---------- users & personal data ------------------------------------
 create table profiles (
   id           uuid primary key references auth.users(id) on delete cascade,
-  display_name text,
+  display_name text check (char_length(display_name) <= 80),
+  avatar_url   text,
   role         user_role not null default 'user',
-  created_at   timestamptz not null default now()
+  created_at   timestamptz not null default now(),
+  updated_at   timestamptz not null default now()
 );
 
-create table builds (
-  id          uuid primary key default gen_random_uuid(),
+-- Personal data, one row per user per collection. The app's data shapes (garage bikes with their log,
+-- builds, favourites, compare list, upgrade plans, AI Mechanic history, preferences) are stored as JSON
+-- documents because the catalogue they reference ships as versioned static data, not database rows.
+create table user_collections (
   owner_id    uuid not null references profiles(id) on delete cascade,
-  name        text not null,
-  discipline  text not null,
-  selection   jsonb not null default '{}',  -- { slot: component_id }
-  accessories text[] not null default '{}',
-  created_at  timestamptz not null default now(),
-  updated_at  timestamptz not null default now()
+  collection  text not null check (collection in ('garage','builds','wishlist','compare','upgrade_plans','mechanic_history','settings')),
+  data        jsonb not null,
+  updated_at  timestamptz not null default now(),
+  primary key (owner_id, collection),
+  check (pg_column_size(data) < 2000000)
 );
 
-create table garage_bikes (
-  id                 uuid primary key default gen_random_uuid(),
-  owner_id           uuid not null references profiles(id) on delete cascade,
-  nickname           text not null,
-  model_id           text references bike_models(id) on delete set null,
-  build_id           uuid references builds(id) on delete set null,
-  manual             jsonb,                  -- unlisted bike details
-  purchase_year      int,
-  purchase_price_idr bigint,
-  odometer_km        int,
-  created_at         timestamptz not null default now()
-);
+-- profile row for every new auth user (email or Google)
+create or replace function handle_new_user() returns trigger language plpgsql security definer set search_path = public as $$
+begin
+  insert into profiles (id, display_name, avatar_url)
+  values (new.id, left(coalesce(new.raw_user_meta_data->>'full_name', new.raw_user_meta_data->>'name', split_part(new.email, '@', 1)), 80), new.raw_user_meta_data->>'avatar_url')
+  on conflict (id) do nothing;
+  return new;
+end $$;
+create trigger on_auth_user_created after insert on auth.users for each row execute function handle_new_user();
 
-create table garage_log (
-  id        uuid primary key default gen_random_uuid(),
-  bike_id   uuid not null references garage_bikes(id) on delete cascade,
-  logged_on date not null default current_date,
-  kind      text not null check (kind in ('modification','component-change','maintenance','note')),
-  title     text not null,
-  detail    text,
-  cost_idr  bigint
-);
-
-create table wishlist (
-  id       uuid primary key default gen_random_uuid(),
-  owner_id uuid not null references profiles(id) on delete cascade,
-  subject  subject_type not null,
-  subject_id text not null,
-  added_at timestamptz not null default now(),
-  unique (owner_id, subject, subject_id)
-);
+-- self-service account deletion: removes the caller's auth user; profile and personal data cascade.
+create or replace function delete_my_account() returns void language plpgsql security definer set search_path = public, auth as $$
+begin
+  if auth.uid() is null then raise exception 'not signed in'; end if;
+  delete from auth.users where id = auth.uid();
+end $$;
+revoke all on function delete_my_account() from public;
 
 -- ingestion staging: nothing enters the catalogue without review
 create table ingest_staging (
@@ -402,16 +391,11 @@ end $$;
 
 alter table profiles enable row level security;
 create policy "own profile" on profiles for select using (id = auth.uid() or is_admin());
+-- a signed-in user may edit their own name/avatar but never their role
 create policy "update own profile (not role)" on profiles for update using (id = auth.uid()) with check (id = auth.uid() and role = (select role from profiles where id = auth.uid()));
 
-alter table builds enable row level security;
-create policy "own builds" on builds for all using (owner_id = auth.uid()) with check (owner_id = auth.uid());
-alter table garage_bikes enable row level security;
-create policy "own garage" on garage_bikes for all using (owner_id = auth.uid()) with check (owner_id = auth.uid());
-alter table garage_log enable row level security;
-create policy "own garage log" on garage_log for all using (exists (select 1 from garage_bikes g where g.id = bike_id and g.owner_id = auth.uid()));
-alter table wishlist enable row level security;
-create policy "own wishlist" on wishlist for all using (owner_id = auth.uid()) with check (owner_id = auth.uid());
+alter table user_collections enable row level security;
+create policy "own collections" on user_collections for all using (owner_id = auth.uid()) with check (owner_id = auth.uid());
 
 alter table ingest_staging enable row level security;
 create policy "admin only staging" on ingest_staging for all using (is_admin()) with check (is_admin());
@@ -421,3 +405,11 @@ create policy "submit when signed in" on submissions for insert with check (auth
 create policy "read own submissions" on submissions for select using (submitted_by = auth.uid() or is_admin());
 create policy "admin review" on submissions for update using (is_admin()) with check (is_admin());
 
+-- ---------- grants (Supabase roles: anon = visitors, authenticated = signed-in users) ----------
+grant usage on schema public to anon, authenticated;
+grant select on all tables in schema public to anon, authenticated;
+grant select, update on profiles to authenticated;
+grant select, insert, update, delete on user_collections to authenticated;
+grant insert on submissions to authenticated;
+grant execute on function delete_my_account() to authenticated;
+revoke select on ingest_staging from anon;

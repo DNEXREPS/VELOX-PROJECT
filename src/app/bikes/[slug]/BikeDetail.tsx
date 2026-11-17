@@ -1,17 +1,23 @@
 "use client";
+import { TermLabel } from "@/components/Term";
+import { requireAccount } from "@/components/auth/AccountPrompt";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, Check, ExternalLink, Minus, Plus, Sparkles } from "lucide-react";
-import { useCatalog, garageStore } from "@/lib/state";
-import { BikeImage } from "@/components/BikeImage";
+import { useCatalog, garageStore, settingsStore } from "@/lib/state";
+import { useStore } from "@/lib/store";
+import { BikeGalleryThumbs, BikeImage } from "@/components/BikeImage";
+import { useState } from "react";
 import { BikeTile, CompareButton, WishlistButton } from "@/components/catalog";
 import { Button, ButtonLink, DemoNotice, EmptyState, Price, ProvenanceLine, SpecRows, Tag } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
-import { formatOriginal, formatWeightKg, NA, PRICE_TYPE_LABEL, titleCase, uid } from "@/lib/format";
+import { formatOriginal, formatWeightKg, formatWeightPref, NA, PRICE_TYPE_LABEL, titleCase, uid } from "@/lib/format";
 import { useHydrated } from "@/lib/store";
 
 export function BikeDetail({ slug }: { slug: string }) {
   const cat = useCatalog();
+  const [photo, setPhoto] = useState(0);
+  const { units } = useStore(settingsStore);
   const router = useRouter();
   const hydrated = useHydrated();
   const bike = cat.bikeBySlug.get(slug);
@@ -51,7 +57,7 @@ export function BikeDetail({ slug }: { slug: string }) {
     ["Wheel size", bike.wheelSize],
     ["Tyre clearance", bike.tireClearanceMm ? `${bike.tireClearanceMm} mm` : null],
     ["Suspension", bike.suspension === "rigid" ? "Rigid" : bike.suspension === "front" ? `Front${bike.travel ? ` · ${bike.travel}` : ""}` : `Full${bike.travel ? ` · ${bike.travel}` : ""}`],
-    ["Weight", bike.weightKg ? formatWeightKg(bike.weightKg) : null],
+    ["Weight", bike.weightKg ? formatWeightPref(bike.weightKg, units) : null],
     ["Available sizes", bike.sizes],
     ["Riding style", bike.ridingStyle],
     ["Intended use", bike.usage.map(titleCase)],
@@ -62,11 +68,11 @@ export function BikeDetail({ slug }: { slug: string }) {
   ];
   const missing = rows.filter(([, v]) => v == null || (Array.isArray(v) && !v.length)).length;
 
-  const addToGarage = () => {
+  const addToGarage = () => requireAccount("garage", () => {
     const id = uid("bike");
     garageStore.set((g) => [...g, { id, nickname: label, modelId: bike.id, purchaseYear: bike.year, purchasePriceIdr: bike.price?.amount ?? null, odometerKm: 0, log: [], createdAt: new Date().toISOString() }]);
     toast("Added to My Garage", { body: label, action: { label: "Open bike profile", href: `/garage/${id}` } });
-  };
+  });
 
   return (
     <>
@@ -74,8 +80,11 @@ export function BikeDetail({ slug }: { slug: string }) {
         <button onClick={() => router.back()} className="inline-flex items-center gap-2 text-sm text-muted hover:text-fg"><ArrowLeft className="h-4 w-4" /> Back</button>
       </div>
       <section className="container-x grid gap-10 pb-16 pt-8 lg:grid-cols-[1.25fr_1fr] lg:gap-16 [&>*]:min-w-0">
-        <div className="relative order-2 aspect-[4/3] overflow-hidden bg-ink-900 lg:order-1">
-          <BikeImage bike={bike} brandName={brand?.name} variant="detail" priority sizes="(min-width: 1024px) 55vw, 100vw" className="absolute inset-0 h-full w-full" />
+        <div className="order-2 lg:order-1">
+          <div className="relative aspect-[4/3] overflow-hidden bg-ink-900">
+            <BikeImage key={photo} index={photo} bike={bike} brandName={brand?.name} variant="detail" priority sizes="(min-width: 1024px) 55vw, 100vw" className="absolute inset-0 h-full w-full" />
+          </div>
+          <BikeGalleryThumbs bikeId={bike.id} active={photo} onSelect={setPhoto} />
         </div>
         <div className="order-1 animate-fade-up lg:order-2">
           <Link href={`/brands/${brand?.slug}`} className="eyebrow link-u inline-flex items-center gap-2 hover:text-fg">{brand?.name} · {brand?.country}</Link>
@@ -129,7 +138,7 @@ export function BikeDetail({ slug }: { slug: string }) {
                   const part = r.componentId ? cat.componentById.get(r.componentId) : null;
                   return (
                     <div key={`${i}-${r.label}`} className="grid grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 py-3 text-sm">
-                      <dt className="text-muted">{r.label}</dt>
+                      <dt className="text-muted"><TermLabel label={r.label} /></dt>
                       <dd className="text-fg">{part ? <Link href={`/components/${part.id}`} className="link-u text-lime">{r.value} →</Link> : r.value}</dd>
                     </div>
                   );

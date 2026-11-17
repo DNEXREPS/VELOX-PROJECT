@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { AlertOctagon, Camera, CheckCircle2, CircleHelp, Loader2, Mic, MicOff, ScanLine, Sparkles, Stethoscope, TriangleAlert, Wrench, X } from "lucide-react";
-import { buildsStore, garageStore, useCatalog } from "@/lib/state";
+import { buildsStore, garageStore, mechanicHistoryStore, useCatalog } from "@/lib/state";
 import { useHydrated, useStore } from "@/lib/store";
 import { diagnose, suggestReplacements, type Diagnosis } from "@/lib/mechanic/engine";
 import { SYSTEM_LABEL, type System } from "@/lib/mechanic/knowledge";
@@ -15,7 +15,7 @@ import type { MechanicAIResult, AIStatus } from "@/lib/ai/types";
 import { AIStatusBadge, useAIStatus } from "@/components/AIStatusBadge";
 import { Button, Chip, CompatBadge, Field, Segmented, StatusBadge } from "@/components/ui";
 import { ComponentGlyph } from "@/components/Glyphs";
-import { cx, titleCase } from "@/lib/format";
+import { cx, titleCase, uid } from "@/lib/format";
 import type { Build, GarageBike } from "@/lib/types";
 
 interface Img { name: string; mediaType: "image/jpeg"; base64: string; preview: string }
@@ -83,6 +83,11 @@ function Diagnose({ cat, garage, builds, status, initial }: { cat: ReturnType<ty
     return null;
   }, [bikeRef, garage, cat, builds]);
 
+  /** AI Mechanic history: kept on this device for everyone; synced to the account when signed in. */
+  const remember = (d: Diagnosis) => {
+    if (!text.trim()) return;
+    mechanicHistoryStore.set((h) => [{ id: uid("diag"), at: new Date().toISOString(), text: text.trim().slice(0, 500), bike: profile?.label ?? null, safety: d.safety.level, topCauses: [...d.likely, ...d.possible].slice(0, 3).map((c) => c.title), systems: d.systems.slice(0, 3).map((x) => x.system) }, ...h.filter((x) => x.text !== text.trim().slice(0, 500))].slice(0, 50));
+  };
   const run = async (nextAnswers = answers) => {
     if (!text.trim() && !systems.length) return;
     setLoading(true);
@@ -92,9 +97,12 @@ function Diagnose({ cat, garage, builds, status, initial }: { cat: ReturnType<ty
       if (!res.ok) throw new Error(String(res.status));
       const data = await res.json();
       setResult({ local: data.local, ai: data.ai, aiError: data.aiError, aiProvider: data.aiProvider });
+      remember(data.local);
     } catch {
       // network/server unavailable: run the same engine in the browser
-      setResult({ local: diagnose({ text, answers: nextAnswers, systems, bike, imageCount: images.length }), ai: null, aiError: "Server unavailable — showing the in-browser analysis." });
+      const local = diagnose({ text, answers: nextAnswers, systems, bike, imageCount: images.length });
+      setResult({ local, ai: null, aiError: "Server unavailable — showing the in-browser analysis." });
+      remember(local);
     } finally {
       setLoading(false);
     }

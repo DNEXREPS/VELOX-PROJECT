@@ -1,4 +1,5 @@
 "use client";
+import { requireAccount } from "@/components/auth/AccountPrompt";
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
@@ -84,11 +85,11 @@ export function Builder() {
     setPicker(null);
   };
 
-  const save = () => {
+  const save = () => requireAccount("build", () => {
     const b = { ...draft, updatedAt: new Date().toISOString() };
     buildsStore.set((list) => (list.some((x) => x.id === b.id) ? list.map((x) => (x.id === b.id ? b : x)) : [b, ...list]));
     toast(isSaved ? "Build updated" : "Build saved", { body: b.name, action: { label: "View in My Garage", href: "/garage?tab=builds" } });
-  };
+  });
   const duplicate = () => {
     const b = { ...structuredClone(draft), id: uid("build"), name: `${draft.name} (copy)`, createdAt: new Date().toISOString() };
     draftStore.set(b);

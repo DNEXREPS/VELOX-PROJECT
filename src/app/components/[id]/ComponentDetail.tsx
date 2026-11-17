@@ -5,7 +5,7 @@ import { useCatalog } from "@/lib/state";
 import { useHydrated } from "@/lib/store";
 import { checkCandidate } from "@/lib/compat";
 import type { CompatAttrs, Component } from "@/lib/types";
-import { ComponentGlyph } from "@/components/Glyphs";
+import { ComponentPhoto } from "@/components/BikeImage";
 import { CompareButton, ComponentRow, WishlistButton } from "@/components/catalog";
 import { ButtonLink, CompatBadge, DemoNotice, EmptyState, Price, ProvenanceLine, SpecRows, Tag } from "@/components/ui";
 import { formatWeightG, titleCase } from "@/lib/format";
@@ -47,18 +47,9 @@ export function ComponentDetail({ id }: { id: string }) {
       <section className="container-x grid gap-12 pb-14 pt-10 lg:grid-cols-[1fr_1.2fr] [&>*]:min-w-0">
         <div className="relative flex aspect-square max-h-[460px] items-center justify-center overflow-hidden border hairline bg-gradient-to-b from-ink-900 to-ink-950">
           <div className="grid-bg absolute inset-0 opacity-70" />
-          {officialImg ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={officialImg.primary_image_url} alt={officialImg.alt} className="relative h-full w-full object-contain p-6" />
-          ) : c.imageUrl ? (
-            // eslint-disable-next-line @next/next/no-img-element
-            <img src={c.imageUrl} alt={label} className="relative h-full w-full object-contain p-8" />
-          ) : (
-            <>
-              <ComponentGlyph type={c.type} className="relative h-1/2 w-1/2 text-fg/80" />
-              <p className="label-tech absolute bottom-3 left-4">Technical glyph — not product photography</p>
-            </>
-          )}
+          <ComponentPhoto componentId={c.id} type={c.type} alt={label} large sizes="(min-width: 1024px) 40vw, 100vw" className="absolute inset-0 h-full w-full bg-transparent" />
+          {!officialImg && <p className="label-tech absolute bottom-3 left-4">Technical glyph — not product photography</p>}
+          {officialImg && <a href={officialImg.image_source_url} target="_blank" rel="noreferrer" className="absolute bottom-3 right-3 rounded-[2px] bg-ink-950/75 px-1.5 py-0.5 font-mono text-[9px] uppercase tracking-[0.1em] text-muted hover:text-fg">Official photo · © {officialImg.author}</a>}
         </div>
         <div className="animate-fade-up">
           <Link href={`/components?mfr=${c.manufacturerSlug}`} className="eyebrow link-u">{c.manufacturer}</Link>

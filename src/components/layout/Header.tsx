@@ -8,16 +8,18 @@ import { CommandSearch } from "./CommandSearch";
 import { compareStore, sessionStore, settingsStore } from "@/lib/state";
 import { useStore } from "@/lib/store";
 import { cx } from "@/lib/format";
+import { useT, useLang, type TKey } from "@/lib/i18n";
+import { useAuth } from "@/lib/auth";
 
-export const NAV = [
+export const NAV: Array<{ href: string; label: string; tkey?: TKey }> = [
   { href: "/", label: "Home" },
-  { href: "/bikes", label: "Bike Finder" },
-  { href: "/build", label: "Build a Bike" },
-  { href: "/upgrade", label: "Upgrade Advisor" },
-  { href: "/brands", label: "Brands" },
-  { href: "/components", label: "Components" },
-  { href: "/compare", label: "Compare" },
-  { href: "/garage", label: "My Garage" },
+  { href: "/bikes", label: "Bike Finder", tkey: "nav.finder" },
+  { href: "/build", label: "Build a Bike", tkey: "nav.build" },
+  { href: "/upgrade", label: "Upgrade Advisor", tkey: "nav.upgrade" },
+  { href: "/brands", label: "Brands", tkey: "nav.brands" },
+  { href: "/components", label: "Components", tkey: "nav.components" },
+  { href: "/compare", label: "Compare", tkey: "nav.compare" },
+  { href: "/garage", label: "My Garage", tkey: "nav.garage" },
 ];
 
 export const TOOLS = [
@@ -36,6 +38,10 @@ export function Header() {
   const compare = useStore(compareStore);
   const session = useStore(sessionStore);
   const settings = useStore(settingsStore);
+  const t = useT();
+  const lang = useLang();
+  const auth = useAuth();
+  const toggleLang = () => settingsStore.set((x) => ({ ...x, language: lang === "id" ? "en" : "id" }));
 
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -71,7 +77,7 @@ export function Header() {
                 aria-current={isActive(n.href) ? "page" : undefined}
                 className={cx("group relative rounded-full px-3 py-1.5 text-[13px] tracking-[-0.005em] transition-colors", isActive(n.href) ? "text-fg" : "text-fg/60 hover:text-fg")}
               >
-                {n.label}
+                {n.tkey ? t(n.tkey) : n.label}
                 {n.href === "/compare" && compare.length > 0 && <span className="ml-1.5 inline-flex h-4 min-w-4 items-center justify-center rounded-full bg-lime px-1 font-mono text-[10px] text-ink-950">{compare.length}</span>}
                 <span className={cx("absolute inset-x-3 -bottom-[17px] h-px origin-left bg-lime transition-transform duration-300", isActive(n.href) ? "scale-x-100" : "scale-x-0")} />
               </Link>
@@ -83,7 +89,7 @@ export function Header() {
                 aria-haspopup="true"
                 className={cx("flex items-center gap-1 rounded-full px-3 py-1.5 text-[13px] transition-colors", toolsActive || toolsOpen ? "text-fg" : "text-fg/60 hover:text-fg")}
               >
-                Tools <span className="rounded-full bg-lime/15 px-1.5 font-mono text-[9px] uppercase tracking-wider text-lime">AI</span>
+                {t("nav.tools")} <span className="rounded-full bg-lime/15 px-1.5 font-mono text-[9px] uppercase tracking-wider text-lime">AI</span>
                 <ChevronDown className={cx("h-3.5 w-3.5 transition-transform", toolsOpen && "rotate-180")} />
               </button>
               {toolsOpen && (
@@ -101,20 +107,24 @@ export function Header() {
           <div className="ml-auto flex items-center gap-1">
             <button onClick={() => setSearchOpen(true)} className="flex h-9 items-center gap-2.5 rounded-full border border-line-strong/70 bg-white/[0.03] pl-3 pr-2 text-[13px] text-fg/60 transition-colors hover:border-fg/30 hover:text-fg" aria-label="Search (Ctrl+K)">
               <Search className="h-3.5 w-3.5" />
-              <span className="hidden md:inline">Search</span>
+              <span className="hidden md:inline">{t("nav.search")}</span>
               <kbd className="hidden rounded-full bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-subtle lg:inline">⌘K</kbd>
             </button>
             <button
               onClick={() => settingsStore.set((s) => ({ ...s, currency: s.currency === "IDR" ? "USD" : "IDR" }))}
               className="hidden h-9 rounded-full px-3 font-mono text-[11px] text-fg/60 hover:text-fg sm:block"
               aria-label={`Currency: ${settings.currency}. Click to switch.`}
-              title={settings.currency === "USD" ? "USD shown at a fixed demo rate (1 USD = Rp 16.000)" : "Prices in Indonesian Rupiah"}
+              title={settings.currency === "USD" ? "USD: published USD price where one exists, otherwise converted at Bank Indonesia JISDOR (Rp 18.148 / USD, 4 Nov 2026)" : "Prices in Indonesian Rupiah"}
             >
               {settings.currency}
             </button>
-            <Link href="/account" className="flex h-9 items-center gap-2 rounded-full px-3 text-[13px] text-fg/60 hover:text-fg" aria-label="Account">
-              <User className="h-4 w-4" />
-              <span className="hidden max-w-24 truncate 2xl:inline">{session.signedIn ? session.name || "Account" : "Sign in"}</span>
+            <button onClick={toggleLang} className="hidden h-9 rounded-full px-2 font-mono text-[11px] text-fg/60 hover:text-fg sm:block" aria-label={`${t("account.language")}: ${lang === "id" ? "Bahasa Indonesia" : "English"}`} title={lang === "id" ? "Switch to English" : "Ganti ke Bahasa Indonesia"}>{lang === "id" ? "ID" : "EN"}</button>
+            <Link href={auth.status === "signed-out" ? "/login" : "/account"} className="flex h-9 items-center gap-2 rounded-full px-3 text-[13px] text-fg/60 hover:text-fg" aria-label={session.signedIn ? `${t("nav.account")}: ${session.name}` : auth.status === "signed-out" ? t("nav.signIn") : t("nav.account")}>
+              {auth.user?.avatarUrl
+                // eslint-disable-next-line @next/next/no-img-element
+                ? <img src={auth.user.avatarUrl} alt="" className="h-6 w-6 rounded-full object-cover" referrerPolicy="no-referrer" />
+                : <User className="h-4 w-4" />}
+              <span className="hidden max-w-28 truncate lg:inline">{session.signedIn ? session.name || t("nav.account") : t("nav.signIn")}</span>
             </Link>
             <button className="flex h-9 w-9 items-center justify-center text-fg xl:hidden" onClick={() => setMenuOpen((m) => !m)} aria-label={menuOpen ? "Close menu" : "Open menu"} aria-expanded={menuOpen}>
               {menuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -126,18 +136,20 @@ export function Header() {
             {NAV.map((n, i) => (
               <Link key={n.href} href={n.href} aria-current={isActive(n.href) ? "page" : undefined} className={cx("flex items-baseline gap-4 border-b hairline py-3.5 text-2xl font-medium tracking-tight", isActive(n.href) ? "text-fg" : "text-muted")}>
                 <span className="font-mono text-[11px] text-subtle">{String(i + 1).padStart(2, "0")}</span>
-                {n.label}
+                {n.tkey ? t(n.tkey) : n.label}
                 {isActive(n.href) && <span className="ml-auto h-1.5 w-1.5 self-center rounded-full bg-lime" />}
               </Link>
             ))}
-            <p className="label-tech mb-1 mt-6">Tools</p>
+            <p className="label-tech mb-1 mt-6">{t("nav.tools")}</p>
             {TOOLS.map((t) => (
               <Link key={t.href} href={t.href} className={cx("flex items-center gap-3 border-b hairline py-3.5 text-lg", isActive(t.href) ? "text-fg" : "text-muted")}>
                 <t.icon className="h-4 w-4 text-lime" /> {t.label}
               </Link>
             ))}
             <div className="mt-5 flex gap-2">
-              <button onClick={() => settingsStore.set((s) => ({ ...s, currency: s.currency === "IDR" ? "USD" : "IDR" }))} className="rounded-full border hairline px-3 py-2 font-mono text-xs text-muted">Currency: {settings.currency}</button>
+              <button onClick={() => settingsStore.set((s) => ({ ...s, currency: s.currency === "IDR" ? "USD" : "IDR" }))} className="rounded-full border hairline px-3 py-2 font-mono text-xs text-muted">{t("account.currency")}: {settings.currency}</button>
+              <button onClick={toggleLang} className="rounded-full border hairline px-3 py-2 font-mono text-xs text-muted">{lang === "id" ? "English" : "Bahasa Indonesia"}</button>
+              <Link href={session.signedIn ? "/account" : "/login"} className="rounded-full border hairline px-3 py-2 text-xs text-muted">{session.signedIn ? t("nav.account") : t("nav.signIn")}</Link>
               {session.role === "admin" && <Link href="/admin" className="rounded-full border hairline px-3 py-2 text-xs text-muted">Admin</Link>}
             </div>
           </nav>

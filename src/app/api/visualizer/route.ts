@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { rateLimit } from "@/lib/ratelimit";
 import { z } from "zod";
 import { getImageProvider } from "@/lib/ai/registry";
 
@@ -13,6 +14,8 @@ const Body = z.object({
 
 /** POST /api/visualizer — generates concept images when an image provider is configured; 503 otherwise. */
 export async function POST(request: Request) {
+  const limited = rateLimit(request, "visualizer", 10);
+  if (limited) return limited;
   let body: z.infer<typeof Body>;
   try {
     body = Body.parse(await request.json());

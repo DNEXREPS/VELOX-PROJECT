@@ -88,3 +88,16 @@ const noop = () => () => {};
 export function useHydrated(): boolean {
   return useSyncExternalStore(noop, () => true, () => false);
 }
+
+/** In-memory store (no persistence) — for state whose source of truth lives elsewhere, e.g. the auth session cookie. */
+export function createMemoryStore<T>(initial: T): Store<T> {
+  let state = initial;
+  const listeners = new Set<() => void>();
+  return {
+    initial,
+    get: () => state,
+    set: (next) => { state = typeof next === "function" ? (next as (p: T) => T)(state) : next; listeners.forEach((l) => l()); },
+    subscribe: (fn) => { listeners.add(fn); return () => listeners.delete(fn); },
+    reset: () => { state = initial; listeners.forEach((l) => l()); },
+  };
+}

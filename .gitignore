@@ -8,3 +8,5 @@ next-env.d.ts
 coverage
 test-results
 screenshots
+scripts/local-supabase/.env.local-stack
+.next-*/

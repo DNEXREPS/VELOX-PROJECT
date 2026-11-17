@@ -36,7 +36,23 @@ export const buildsStore = createStore<Build[]>("builds", []);
 export const wishlistStore = createStore<WishlistItem[]>("wishlist", []);
 export const compareStore = createStore<CompareItem[]>("compare", []);
 export const submissionsStore = createStore<Submission[]>("submissions", []);
-export const settingsStore = createStore<{ currency: Currency }>("settings", { currency: "IDR" });
+export interface Settings {
+  currency: Currency;
+  /** "auto" follows the browser language (Indonesian browsers → Bahasa Indonesia) */
+  language: "auto" | "en" | "id";
+  units: "metric" | "imperial";
+  notifications: { priceChanges: boolean; productNews: boolean };
+}
+export const settingsStore = createStore<Settings>("settings", { currency: "IDR", language: "auto", units: "metric", notifications: { priceChanges: false, productNews: false } });
+
+/** Saved upgrade plans (Upgrade Advisor) — synced to the account when signed in. */
+export interface UpgradePlan { id: string; bikeLabel: string; bikeRef: string; goal: string; tier: string; parts: Array<{ slot: string; componentId: string; name: string }>; totalIdr: number | null; savedAt: string }
+export const upgradePlansStore = createStore<UpgradePlan[]>("upgrade-plans", []);
+/** AI Mechanic history — saved per diagnosis, synced when signed in. */
+export interface MechanicHistoryEntry { id: string; at: string; text: string; bike?: string | null; safety: string; topCauses: string[]; systems: string[] }
+export const mechanicHistoryStore = createStore<MechanicHistoryEntry[]>("mechanic-history", []);
+/** Admin image review decisions (overlay over the generated registry). */
+export const imageReviewStore = createStore<Record<string, "verified" | "rejected">>("image-reviews", {});
 /** Ingestion staging queue — records wait here until an administrator reviews them. */
 export const stagingStore = createStore<StagedRecord[]>("staging", []);
 
@@ -118,4 +134,9 @@ export const catalogWrite = {
     }));
   },
   resetOverlay() { assertAdmin(); overlayStore.reset(); },
+  /** confirm or withdraw a product-image association (admin review) */
+  reviewImage(imageId: string, decision: "verified" | "rejected" | null) {
+    assertAdmin();
+    imageReviewStore.set((r) => { const n = { ...r }; if (decision) n[imageId] = decision; else delete n[imageId]; return n; });
+  },
 };

@@ -754,6 +754,7 @@ function toModel(s: Seed): BikeModel {
     geometry: null,
     price: priceJt == null ? null : est(jt(priceJt)),
     priceHistory: priceHistory ?? [],
+    officialUrl: rest.officialUrl ?? sources?.find(([, , type]) => type === "official-website")?.[1] ?? null,
     provenance: sources?.length
       ? { status: status ?? "unverified", sources: sources.map(([label, url, type]) => ({ label, url, type, retrievedAt: "2026-11-16" })), updatedAt: "2026-11-16", confidence: "medium", reviewerNotes: notes ?? "Model existence and listed facts from the cited sources; other specs await the official spec sheet." }
       : status === "discontinued" ? discontinued() : DEMO_PROVENANCE,

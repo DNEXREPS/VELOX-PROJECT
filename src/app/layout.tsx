@@ -5,6 +5,9 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Toaster } from "@/components/ui/toast";
+import { AuthBridge } from "@/lib/auth";
+import { HtmlLang } from "@/lib/i18n";
+import { AccountPrompt } from "@/components/auth/AccountPrompt";
 
 export const metadata: Metadata = {
   title: { default: "VELOX — Ride Smarter", template: "%s · VELOX" },
@@ -23,6 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="main">{children}</main>
         <Footer />
         <Toaster />
+        <AccountPrompt />
+        <AuthBridge />
+        <HtmlLang />
       </body>
     </html>
   );

@@ -3,6 +3,8 @@ import { useEffect, useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { Check, RotateCcw, SlidersHorizontal, TriangleAlert, X } from "lucide-react";
 import { useCatalog } from "@/lib/state";
+import Link from "next/link";
+import { useT } from "@/lib/i18n";
 import { findBikes, type FinderCriteria } from "@/lib/finder";
 import type { CategoryId, Experience, Usage, WheelSize } from "@/lib/types";
 import { BikeTile } from "@/components/catalog";
@@ -56,6 +58,7 @@ export function BikeFinder() {
   }, [c.category, c.subcategory, c.region, c.brandIds, c.budgetMax, c.experience, c.usage, c.q, pathname, router]);
 
   const set = <K extends keyof FinderCriteria>(k: K, v: FinderCriteria[K]) => setC((p) => ({ ...p, [k]: v }));
+  const t = useT();
   const [onlyOfficial, setOnlyOfficial] = useState(false);
   const [onlyPhoto, setOnlyPhoto] = useState(false);
   const results = useMemo(
@@ -173,22 +176,27 @@ export function BikeFinder() {
         <section aria-label="Results" aria-live="polite">
           <div className="mb-6 flex flex-wrap items-center gap-3">
             <p className="text-sm text-muted"><span className="tabular text-fg">{results.length}</span> {results.length === 1 ? "bike" : "bikes"} {c.budgetMax ? `under ${formatIdrShort(c.budgetMax)}` : ""}</p>
-            <input type="search" placeholder="Filter by name…" value={c.q} onChange={(e) => set("q", e.target.value)} className="field h-9 max-w-52 py-1.5" aria-label="Filter results by name" />
+            <input type="search" placeholder="Name, brand or part…" value={c.q} onChange={(e) => set("q", e.target.value)} className="field h-9 max-w-60 py-1.5" aria-label="Filter results by name, brand, groupset, wheelset or part" />
             <div className="ml-auto flex items-center gap-2">
               <button onClick={() => setFiltersOpen(true)} className="inline-flex h-9 items-center gap-2 rounded-sm border hairline px-3 text-[13px] text-muted lg:hidden">
                 <SlidersHorizontal className="h-4 w-4" /> Filters{activeCount ? ` (${activeCount})` : ""}
               </button>
               <label htmlFor="f-sort" className="label-tech hidden sm:block">Sort</label>
               <select id="f-sort" className="field h-9 w-auto py-1.5" value={c.sort} onChange={(e) => set("sort", e.target.value as FinderCriteria["sort"])}>
-                <option value="match">Best match</option>
+                <option value="match">{t("finder.sortMatch")}</option>
                 <option value="value">Best value</option>
-                <option value="price-asc">Price: low → high</option>
-                <option value="price-desc">Price: high → low</option>
-                <option value="newest">Newest</option>
+                <option value="price-asc">{t("finder.sortPriceAsc")}</option>
+                <option value="price-desc">{t("finder.sortPriceDesc")}</option>
+                <option value="newest">{t("finder.sortNewest")}</option>
               </select>
             </div>
           </div>
 
+          {activeCount === 0 && (
+            <p className="mb-6 border-l-2 border-lime/60 bg-white/[0.02] px-4 py-3 text-sm text-muted">
+              <span className="text-fg">{t("finder.beginner")}</span> {t("finder.beginnerBody")} <Link href="/glossary" className="text-lime link-u">{t("nav.glossary")} →</Link>
+            </p>
+          )}
           {!hydrated ? (
             <div className="grid gap-x-8 gap-y-12 md:grid-cols-2 2xl:grid-cols-3">{Array.from({ length: 6 }).map((_, i) => <Skeleton key={i} className="aspect-[5/4]" />)}</div>
           ) : results.length === 0 ? (

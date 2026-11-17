@@ -1,0 +1,58 @@
+/** Beginner-friendly explanations of cycling terms (English + Bahasa Indonesia). */
+export interface Term { id: string; match: RegExp; en: { term: string; text: string }; id_: { term: string; text: string } }
+
+export const GLOSSARY: Term[] = [
+  { id: "groupset", match: /^(groupset|grupset)$/i,
+    en: { term: "Groupset", text: "The set of parts that shift gears and stop the bike: shifters, derailleurs, crankset, cassette, chain and usually brakes. Higher tiers are lighter and shift more precisely." },
+    id_: { term: "Groupset", text: "Rangkaian komponen untuk memindah gigi dan mengerem: shifter, derailleur, crankset, sproket, rantai, dan biasanya rem. Tingkat lebih tinggi lebih ringan dan perpindahannya lebih presisi." } },
+  { id: "drivetrain", match: /^drivetrain$/i,
+    en: { term: "Drivetrain", text: "How many chainrings × rear cogs the bike has, e.g. 2x12 = two front rings and twelve rear cogs. More gears give smaller steps; 1x is simpler and lighter." },
+    id_: { term: "Drivetrain", text: "Jumlah gir depan × sproket belakang, misalnya 2x12 = dua gir depan dan dua belas sproket. Lebih banyak gigi berarti lompatan lebih halus; 1x lebih sederhana dan ringan." } },
+  { id: "bottom-bracket", match: /^(bottom bracket|bottom bracket shell|bb|bb shell)$/i,
+    en: { term: "Bottom bracket", text: "The bearings inside the frame that the crank spins on. Standards (BSA threaded, T47, BB86, PF30…) must match the frame — a common source of creaks." },
+    id_: { term: "Bottom bracket", text: "Bearing di dalam frame tempat crank berputar. Standarnya (BSA ulir, T47, BB86, PF30…) harus sesuai frame — sering jadi sumber bunyi berderit." } },
+  { id: "headset", match: /^headset$/i,
+    en: { term: "Headset", text: "The bearings that let the fork and handlebar steer. Sized with SHIS codes such as IS42/28.6 | IS52/40." },
+    id_: { term: "Headset", text: "Bearing yang membuat garpu dan setang bisa berbelok. Ukurannya memakai kode SHIS seperti IS42/28.6 | IS52/40." } },
+  { id: "freehub", match: /^(freehub|freehub options|freehub body)$/i,
+    en: { term: "Freehub", text: "The part of the rear hub the cassette slides onto. It must match the cassette: Shimano HG, Shimano Micro Spline, SRAM XD/XDR or Campagnolo." },
+    id_: { term: "Freehub", text: "Bagian hub belakang tempat sproket dipasang. Harus cocok dengan sproket: Shimano HG, Micro Spline, SRAM XD/XDR, atau Campagnolo." } },
+  { id: "hub", match: /^(hub|hubs|front hub|rear hub)$/i,
+    en: { term: "Hub", text: "The centre of the wheel that holds the axle and bearings. Hub quality affects rolling smoothness, engagement and how easily it can be serviced." },
+    id_: { term: "Hub", text: "Bagian tengah roda yang memuat as dan bearing. Kualitas hub memengaruhi kelancaran putaran, engagement, dan kemudahan servis." } },
+  { id: "thru-axle", match: /^(thru[- ]?axle|axles?.*|front thru axle|rear thru axle|rear spacing)$/i,
+    en: { term: "Thru-axle", text: "A bolt-through axle (e.g. 12×142 mm, 12×148 mm Boost) that clamps the wheel stiffly. It replaced quick-release skewers on most disc-brake bikes; wheel and frame standards must match." },
+    id_: { term: "Thru-axle", text: "As tembus yang dibaut (misal 12×142 mm, 12×148 mm Boost) sehingga roda terkunci kaku. Menggantikan quick release pada kebanyakan sepeda rem cakram; standar roda dan frame harus sama." } },
+  { id: "rim-depth", match: /^(rim depth|depth|height)$/i,
+    en: { term: "Rim depth", text: "How tall the rim is. Deeper rims (45–65 mm) are more aerodynamic but heavier and more affected by crosswinds; shallow rims climb and handle wind better." },
+    id_: { term: "Tinggi rim", text: "Seberapa tinggi rim. Rim tinggi (45–65 mm) lebih aerodinamis tapi lebih berat dan lebih terpengaruh angin samping; rim rendah lebih baik untuk tanjakan dan angin." } },
+  { id: "internal-width", match: /^(internal width|inner width)$/i,
+    en: { term: "Internal rim width", text: "The inside width of the rim. It shapes the tyre: wider rims support wider tyres at lower pressure for grip and comfort." },
+    id_: { term: "Lebar dalam rim", text: "Lebar bagian dalam rim. Menentukan bentuk ban: rim lebar mendukung ban lebar bertekanan rendah untuk cengkeraman dan kenyamanan." } },
+  { id: "tire-clearance", match: /^(tyre clearance|tire clearance|max tire clearance|max\.? tyre)$/i,
+    en: { term: "Tyre clearance", text: "The widest tyre the frame and fork can fit with safe space for mud. Check it before buying wider tyres." },
+    id_: { term: "Ruang ban", text: "Ban terlebar yang muat di frame dan garpu dengan sisa ruang aman untuk lumpur. Cek sebelum membeli ban yang lebih lebar." } },
+  { id: "carbon-layup", match: /^(frame material|material|carbon layup)$/i,
+    en: { term: "Frame material & carbon layup", text: "Aluminium is affordable and durable; steel is comfortable and repairable; carbon is light and stiff. A carbon 'layup' (e.g. FACT 10r vs 12r) is how fibre sheets are arranged — higher grades save weight, not necessarily comfort." },
+    id_: { term: "Material frame & layup karbon", text: "Aluminium terjangkau dan awet; baja nyaman dan mudah diperbaiki; karbon ringan dan kaku. 'Layup' karbon (misal FACT 10r vs 12r) adalah susunan lembaran serat — tingkat lebih tinggi menghemat berat, belum tentu lebih nyaman." } },
+  { id: "brakes", match: /^(brakes|brake type|front brake|rear brake)$/i,
+    en: { term: "Mechanical vs hydraulic brakes", text: "Mechanical disc and rim brakes use a steel cable — simple to service. Hydraulic disc brakes use fluid — stronger, more consistent in rain, and need occasional bleeding. Brakes are safety-critical." },
+    id_: { term: "Rem mekanik vs hidrolik", text: "Rem cakram mekanik dan rem rim memakai kabel baja — mudah dirawat. Rem cakram hidrolik memakai cairan — lebih pakem dan konsisten saat hujan, sesekali perlu di-bleeding. Rem adalah komponen keselamatan." } },
+  { id: "wheel-size", match: /^wheel size$/i,
+    en: { term: "Wheel size", text: "700c is the road/gravel standard; 29\" and 27.5\" are mountain-bike sizes; 20\" and 16\" are common on folding and kids' bikes. Wheels and tyres must match the frame's size." },
+    id_: { term: "Ukuran roda", text: "700c standar road/gravel; 29\" dan 27.5\" untuk MTB; 20\" dan 16\" umum di sepeda lipat dan anak. Roda dan ban harus sesuai ukuran frame." } },
+  { id: "cassette", match: /^(cassette|cassette\/freewheel)$/i,
+    en: { term: "Cassette", text: "The cluster of rear cogs, written as a range like 11-34T. A bigger largest cog gives an easier climbing gear." },
+    id_: { term: "Sproket (cassette)", text: "Kumpulan gir belakang, ditulis sebagai rentang seperti 11-34T. Gir terbesar yang lebih besar memberi gigi tanjakan yang lebih ringan." } },
+  { id: "crankset", match: /^(crankset|crank)$/i,
+    en: { term: "Crankset", text: "The arms and chainrings you pedal. Chainring sizes (e.g. 50/34T) set your top speed and climbing gears." },
+    id_: { term: "Crankset", text: "Lengan pedal dan gir depan. Ukuran gir (misal 50/34T) menentukan kecepatan puncak dan gigi tanjakan." } },
+  { id: "suspension", match: /^(suspension|travel|fork)$/i,
+    en: { term: "Suspension & travel", text: "Travel is how far the fork or shock compresses. XC bikes use ~100–120 mm, trail 130–150 mm, enduro 160–180 mm, downhill 200 mm. Rigid bikes have none." },
+    id_: { term: "Suspensi & travel", text: "Travel adalah jarak kompresi garpu atau shock. XC ~100–120 mm, trail 130–150 mm, enduro 160–180 mm, downhill 200 mm. Sepeda rigid tidak punya suspensi." } },
+];
+
+export function findTerm(label: string): Term | undefined {
+  const l = label.trim();
+  return GLOSSARY.find((t) => t.match.test(l));
+}

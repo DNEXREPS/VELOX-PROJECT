@@ -36,6 +36,18 @@ export function imageForComponent(componentId: string): ProductImage | null {
   return BY_SUBJECT.get(`component:${componentId}`) ?? null;
 }
 
+/** Delivery base for product images: "" serves /media/products from this app; set NEXT_PUBLIC_IMAGE_BASE to a CDN / Supabase Storage bucket holding the same paths. */
+const IMAGE_BASE = (process.env.NEXT_PUBLIC_IMAGE_BASE ?? "").replace(/\/$/, "");
+export const imageUrl = (p: string) => (p.startsWith("/media/products/") && IMAGE_BASE ? IMAGE_BASE + p.replace(/^\/media/, "") : p);
+
+/** Ordered, verified photos of one product: primary first, then its official gallery. */
+export function photoSources(img: ProductImage): Array<{ src: string; width: number; height: number }> {
+  const out = [{ src: imageUrl(img.primary_image_url), width: img.width, height: img.height }];
+  for (const g of img.gallery ?? []) out.push({ src: imageUrl(g.src), width: g.width, height: g.height });
+  for (const g of img.gallery_images ?? []) if (!out.some((o) => o.src === imageUrl(g))) out.push({ src: imageUrl(g), width: img.width, height: img.height });
+  return out;
+}
+
 export const MATCH_LABEL: Record<ImageModelMatch, string> = {
   exact: "Exact model & year",
   model: "Same model · year not confirmed",

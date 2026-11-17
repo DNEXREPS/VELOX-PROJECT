@@ -3,8 +3,12 @@ import type { PriceEntry, PriceType, VerificationStatus } from "./types";
 export const NA = "Not Available";
 
 export type Currency = "IDR" | "USD";
-/** Demo conversion only — clearly labelled in the UI. */
-export const DEMO_USD_RATE = 16_000;
+/**
+ * IDR→USD display conversion: Bank Indonesia JISDOR reference rate, 4 Nov 2026 (cited in
+ * src/data/import-log.ts). Used only when no published USD price exists; always labelled.
+ */
+export const DEMO_USD_RATE = 18_148;
+export const USD_RATE_SOURCE = "Bank Indonesia JISDOR, 4 Nov 2026";
 
 export function formatMoney(amount: number | null | undefined, currency: Currency = "IDR"): string {
   if (amount == null || Number.isNaN(amount)) return NA;
@@ -46,6 +50,12 @@ export function formatWeightG(g: number | null | undefined): string {
   if (g == null) return NA;
   if (g >= 1000) return `${(g / 1000).toLocaleString("en-US", { maximumFractionDigits: 2 })} kg`;
   return `${g} g`;
+}
+
+/** Weight in the visitor's preferred units (manufacturer value is always kept in kg). */
+export function formatWeightPref(kg: number | null | undefined, units: "metric" | "imperial" = "metric"): string {
+  if (kg == null) return NA;
+  return units === "imperial" ? `${(kg * 2.20462).toLocaleString("en-US", { maximumFractionDigits: 1 })} lb (${formatWeightKg(kg)})` : formatWeightKg(kg);
 }
 
 export function formatWeightKg(kg: number | null | undefined): string {

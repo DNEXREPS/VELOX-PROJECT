@@ -1,4 +1,5 @@
 "use client";
+import { TermLabel } from "@/components/Term";
 import Link from "next/link";
 import type { ComponentProps, ReactNode } from "react";
 import { AlertTriangle, Check, CircleHelp, Inbox, X } from "lucide-react";
@@ -155,7 +156,7 @@ export function Tag({ children, className, active }: { children: ReactNode; clas
 export function Field({ label, hint, children, className, htmlFor }: { label: string; hint?: string; children: ReactNode; className?: string; htmlFor?: string }) {
   return (
     <div className={cx("flex flex-col gap-1.5", className)}>
-      <label htmlFor={htmlFor} className="label-tech">{label}</label>
+      <label htmlFor={htmlFor} className="label-tech"><TermLabel label={label} /></label>
       {children}
       {hint && <p className="text-xs text-subtle">{hint}</p>}
     </div>
@@ -207,7 +208,7 @@ export function SpecRows({ rows, className }: { rows: Array<[string, unknown]>; 
         const val = show(v);
         return (
           <div key={`${i}-${k}`} className="grid grid-cols-[minmax(0,2fr)_minmax(0,3fr)] gap-4 py-3 text-sm">
-            <dt className="text-muted">{k}</dt>
+            <dt className="text-muted"><TermLabel label={k} /></dt>
             <dd className={cx("tabular", val === NA ? "text-subtle italic" : "text-fg")}>{val}</dd>
           </div>
         );

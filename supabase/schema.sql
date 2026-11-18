@@ -372,8 +372,9 @@ create table submissions (
 );
 
 -- ---------- row-level security ----------------------------------------
-create or replace function is_admin() returns boolean language sql stable as $$
-  select exists (select 1 from profiles where id = auth.uid() and role = 'admin');
+-- security definer: reads the caller's role without re-entering the profiles RLS policy (which calls is_admin())
+create or replace function is_admin() returns boolean language sql stable security definer set search_path = public as $$
+  select exists (select 1 from public.profiles where id = auth.uid() and role = 'admin');
 $$;
 
 do $$

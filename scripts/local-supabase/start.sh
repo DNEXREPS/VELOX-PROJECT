@@ -76,6 +76,11 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=$ANON
 NEXT_PUBLIC_SITE_URL=$SITE_URL
 NEXT_PUBLIC_AUTH_GOOGLE=false
 ENV
+# privileged key for background jobs ONLY (scripts/providers/sync.mjs) — kept out of the web app's env file
+node -e '
+const c=require("crypto");const s=process.argv[1];const b=o=>Buffer.from(JSON.stringify(o)).toString("base64url");
+const h=b({alg:"HS256",typ:"JWT"}),q=b({iss:"supabase-local",role:"service_role",iat:1700000000,exp:2000000000});
+console.log("VELOX_JOB_DB_URL=http://localhost:54321\nVELOX_JOB_DB_KEY="+h+"."+q+"."+c.createHmac("sha256",s).update(h+"."+q).digest("base64url"))' "$JWT_SECRET" > "$HERE/.env.jobs-local"
 for i in $(seq 1 40); do curl -sf http://localhost:54321/auth/v1/health >/dev/null && curl -sf -H "apikey: $ANON" "http://localhost:54321/rest/v1/" >/dev/null && break; sleep 1; done
 curl -s http://localhost:54321/auth/v1/health; echo
 echo "local stack ready — env in $HERE/.env.local-stack"

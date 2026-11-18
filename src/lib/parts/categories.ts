@@ -17,9 +17,10 @@ export const PART_CATEGORIES: CategoryDef[] = [
   { id: "headset", en: "Headsets", id_: "Headset (komstir)", words: ["headset", "headsets", "komstir", "headset bearing"], types: [] },
   { id: "freehub", en: "Freehub bodies", id_: "Body freehub", words: ["freehub", "freehub body", "free hub", "driver body", "ratchet", "pawl", "pawls", "body hub"], types: [] },
   { id: "bearing", en: "Bearings", id_: "Bearing (laher)", words: ["bearing", "bearings", "laher", "lahar", "2rs", "ceramic bearing"], types: ["bearing"] },
+  { id: "spokes", en: "Spokes & nipples", id_: "Jari-jari & nipple", words: ["spoke", "spokes", "spoke bundle", "nipple", "nipples", "jari-jari", "jari jari", "ruji"], types: [] },
   { id: "wheelset", en: "Wheelsets", id_: "Wheelset", words: ["wheelset", "wheelsets", "wheel set", "wheels", "sepasang roda", "roda", "velg set"], types: ["wheelset"] },
   { id: "rim", en: "Rims", id_: "Rim / velg", words: ["rim", "rims", "velg", "velk"], types: ["rim"] },
-  { id: "hub", en: "Hubs", id_: "Hub (hab)", words: ["hub", "hubs", "hubset", "hab", "front hub", "rear hub"], types: ["hub"] },
+  { id: "hub", en: "Hubs", id_: "Hub (hab)", words: ["hub", "hubs", "hubset", "hab", "front hub", "rear hub", "axle adapter", "axle adapters", "end cap", "end caps", "axle"], types: ["hub"] },
   { id: "groupset", en: "Groupsets", id_: "Groupset", words: ["groupset", "groupsets", "group set", "gruppo"], types: ["groupset"] },
   { id: "crankset", en: "Cranksets", id_: "Crankset", words: ["crankset", "cranksets", "crank", "cranks", "chainring", "chainrings", "gir depan"], types: ["crankset"] },
   { id: "derailleur", en: "Derailleurs", id_: "Derailleur (RD/FD)", words: ["derailleur", "derailleurs", "rear derailleur", "front derailleur", "rd", "fd", "dérailleur"], types: ["rear-derailleur", "front-derailleur"] },
@@ -36,7 +37,10 @@ export const PART_CATEGORIES: CategoryDef[] = [
   { id: "pedals", en: "Pedals", id_: "Pedal", words: ["pedal", "pedals", "cleat", "cleats", "clipless"], types: ["pedals"] },
   { id: "fork", en: "Forks", id_: "Fork (garpu)", words: ["fork", "forks", "garpu", "suspension fork", "rigid fork"], types: ["fork"] },
   { id: "suspension", en: "Suspension", id_: "Suspensi", words: ["shock", "rear shock", "suspension", "suspensi", "shock absorber", "per belakang"], types: [] },
-  { id: "accessory", en: "Accessories", id_: "Aksesori", words: ["accessory", "accessories", "aksesori", "bottle cage", "light", "lights", "lampu", "computer", "bag", "tas", "pump", "pompa", "tool", "tools", "valve", "sealant", "bar tape"], types: ["accessory", "frame"] },
+  { id: "accessory", en: "Accessories", id_: "Aksesori", words: ["accessory", "accessories", "aksesori", "bottle cage", "light", "lights", "lampu", "computer", "bag", "tas", "pump", "pompa", "tool", "tools", "valve", "valves", "sealant", "lockring", "bar tape", "frame bag", "battery", "battery holder", "mount", "bell", "fender", "mudguard", "spatbor"], types: ["accessory"] },
+  { id: "apparel", en: "Apparel", id_: "Pakaian", words: ["jersey", "jerseys", "t-shirt", "tshirt", "shirt", "jacket", "bib", "bibs", "shorts", "socks", "cap", "gloves", "helmet", "shoes", "kaos", "jaket", "sarung tangan", "helm", "sepatu"], types: [] },
+  // last, so "frame bag" / "frame protector" stay accessories
+  { id: "frame", en: "Frames & framesets", id_: "Frame / rangka", words: ["frameset", "framesets", "frame", "frames", "rangka", "frame set"], types: ["frame"] },
 ];
 
 export const CATEGORY_BY_ID = new Map(PART_CATEGORIES.map((c) => [c.id, c]));
@@ -56,6 +60,5 @@ export function detectCategory(text: string): PartCategory | null {
 export function categoryForType(t: ComponentType): PartCategory {
   if (t === "front-derailleur" || t === "rear-derailleur") return "derailleur";
   if (t === "shifters") return "shifter";
-  if (t === "frame") return "accessory";
   return (PART_CATEGORIES.find((c) => c.types.includes(t))?.id ?? "other") as PartCategory;
 }

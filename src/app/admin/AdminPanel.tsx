@@ -10,11 +10,12 @@ import { normalizeBrand, normalizeComponent, normalizeModel } from "@/lib/import
 import { download, toCsv } from "@/lib/csv";
 import type { BikeModel, Brand, CategoryId, Component, PriceType, VerificationStatus } from "@/lib/types";
 import { ImagesAdmin } from "./ImagesAdmin";
+import { SourcesAdmin } from "./SourcesAdmin";
 import { Button, ButtonLink, EmptyState, Field, PageHeader, Segmented, Skeleton, StatusBadge } from "@/components/ui";
 import { toast } from "@/components/ui/toast";
 import { cx, formatIdrShort, isVerified, NA, PRICE_TYPE_LABEL, STATUS_LABEL, titleCase } from "@/lib/format";
 
-type Tab = "overview" | "brands" | "models" | "components" | "categories" | "submissions" | "data" | "review" | "images";
+type Tab = "overview" | "brands" | "models" | "components" | "categories" | "submissions" | "data" | "review" | "images" | "sources";
 type Entity = "brands" | "models" | "components";
 const STATUSES = Object.keys(STATUS_LABEL) as VerificationStatus[];
 const PRICE_TYPES = Object.keys(PRICE_TYPE_LABEL) as PriceType[];
@@ -50,7 +51,7 @@ export function AdminPanel() {
       </PageHeader>
       <div className="container-x py-10">
         <div className="-mx-4 overflow-x-auto px-4">
-          <Segmented value={tab} onChange={setTab} options={[{ value: "overview", label: "Overview" }, { value: "brands", label: "Brands" }, { value: "models", label: "Bike models" }, { value: "components", label: "Components" }, { value: "categories", label: "Categories" }, { value: "submissions", label: "Submissions" }, { value: "data", label: "Import / Export" }, { value: "review", label: "Review queue" }, { value: "images", label: "Images" }]} />
+          <Segmented value={tab} onChange={setTab} options={[{ value: "overview", label: "Overview" }, { value: "brands", label: "Brands" }, { value: "models", label: "Bike models" }, { value: "components", label: "Components" }, { value: "categories", label: "Categories" }, { value: "submissions", label: "Submissions" }, { value: "data", label: "Import / Export" }, { value: "review", label: "Review queue" }, { value: "images", label: "Images" }, { value: "sources", label: "Data sources" }]} />
         </div>
         <div className="mt-10">
           {tab === "overview" && <Overview go={setTab} />}
@@ -62,6 +63,7 @@ export function AdminPanel() {
           {tab === "data" && <DataTools go={setTab} />}
           {tab === "review" && <ReviewQueue />}
           {tab === "images" && <ImagesAdmin />}
+          {tab === "sources" && <SourcesAdmin />}
         </div>
       </div>
     </>

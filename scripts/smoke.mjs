@@ -425,6 +425,9 @@ await step("Admin Images tab: coverage, missing reasons, association review", as
   await page.getByRole("radio", { name: "Review associations" }).click();
   await page.getByRole("button", { name: "Retry validation" }).first().click();
   await page.getByText(/Image loads/).first().waitFor();
+  // server-side admin features are honest about needing real accounts in device-only demo mode
+  await page.getByRole("radio", { name: "Data sources" }).click();
+  await page.getByText(/need Supabase Auth/).waitFor();
 });
 
 await step("Upgrade plan and AI Mechanic history are saved to My Garage", async () => {

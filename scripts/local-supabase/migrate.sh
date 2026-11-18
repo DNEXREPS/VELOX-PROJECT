@@ -12,6 +12,8 @@ for f in "$ROOT"/supabase/migrations/*.sql; do
   echo "applying $n to $DB"
   su postgres -c "$PSQL -1 -f $f -c \"insert into velox_migrations(name) values ('$n')\""
 done
+# mirror Supabase defaults in the LOCAL stack: service_role (background jobs only) has full table privileges and bypasses RLS
+su postgres -c "$PSQL -c 'grant usage on schema public to service_role; grant all on all tables in schema public to service_role; grant all on all sequences in schema public to service_role; grant execute on all functions in schema public to service_role'" >/dev/null 2>&1 || true
 # PostgREST caches the schema; ask it to reload (ignored when it is not running)
 su postgres -c "$PSQL -c \"notify pgrst, 'reload schema'\"" >/dev/null 2>&1 || true
 # the local PostgREST runs with the notification channel disabled: restart it so new tables/functions are visible

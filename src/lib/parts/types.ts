@@ -9,14 +9,14 @@
 export type PartCategory =
   | "wheelset" | "hub" | "bearing" | "groupset" | "crankset" | "derailleur" | "cassette" | "chain"
   | "brakes" | "rotor" | "tires" | "handlebar" | "stem" | "saddle" | "seatpost" | "pedals" | "fork"
-  | "suspension" | "bottom-bracket" | "headset" | "freehub" | "rim" | "shifter" | "accessory" | "other";
+  | "suspension" | "bottom-bracket" | "headset" | "freehub" | "rim" | "shifter" | "spokes" | "frame" | "apparel" | "accessory" | "other";
 
 /** Who stands behind the listing. Marketplace listings are never presented as manufacturer-verified. */
 export type SourceKind = "velox-catalog" | "official-manufacturer" | "authorized-distributor" | "retailer" | "marketplace" | "web" | "community";
 
 export type ProviderType = "internal-catalog" | "manufacturer-store" | "retailer-feed" | "marketplace-api" | "web-search-api" | "compatibility-api";
 
-export type Condition = "new" | "used" | "refurbished" | "unknown";
+export type Condition = "new" | "used" | "refurbished" | "open-box" | "unknown";
 
 /** Specifications parsed from a listing. `basis` says where each value came from. */
 export interface PartSpecs {
@@ -84,6 +84,8 @@ export interface Offer {
   /** internal catalogue component id when the offer IS a VELOX catalogue record */
   catalogId?: string | null;
   verification: "verified" | "unverified";
+  /** the listing's own variants (sizes, options) — kept on the offer, never merged into other products */
+  variants?: Array<{ title: string; price: number | null; available: boolean | null; sku: string | null }> | null;
 }
 
 export interface ProductGroup {

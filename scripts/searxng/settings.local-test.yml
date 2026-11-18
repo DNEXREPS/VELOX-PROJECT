@@ -1,0 +1,32 @@
+# LOCAL TEST ONLY: the development network blocks Wikipedia/Wikidata, so this test instance adds one
+# permitted upstream — ICAN's public storefront search endpoint (robots.txt allows /search/suggest.json) —
+# to verify VELOX ⇄ SearXNG end to end. Not for production.
+use_default_settings:
+  engines:
+    keep_only:
+      - wikipedia
+      - wikidata
+search:
+  formats: [html, json]
+server:
+  limiter: false
+  public_instance: false
+  image_proxy: false
+outgoing:
+  request_timeout: 8.0
+  verify: /etc/ssl/certs/velox-ca-bundle.crt
+  proxies:
+    all://:
+      - http://127.0.0.1:__PROXY_PORT__
+engines:
+  - name: ican store (test)
+    engine: json_engine
+    shortcut: ican
+    categories: general
+    search_url: https://icancycling.com/search/suggest.json?q={query}&resources%5Btype%5D=product&resources%5Blimit%5D=10
+    results_query: resources/results/products
+    url_query: url
+    url_prefix: https://icancycling.com
+    title_query: title
+    content_query: type
+    disabled: false

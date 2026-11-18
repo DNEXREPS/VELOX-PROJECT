@@ -11,3 +11,4 @@ screenshots
 scripts/local-supabase/.env.local-stack
 .next-*/
 .cache/
+scripts/local-supabase/.env.jobs-local

@@ -40,7 +40,17 @@ Never set the Supabase **service-role** key or the Google **client secret** in t
 
 ---
 
-## This release — master catalogue infrastructure, Phase 2 (18 Nov 2026)
+## This release — external data providers, Phase 3 (18 Nov 2026)
+
+Details: `docs/phase3-providers.md`.
+
+- Provider adapter architecture (`src/lib/providers`): polite HTTP (robots.txt, ≤1 req/s per host, retries, no bypassing), parallel aggregator with timeouts, cache, partial results and health.
+- Working with zero paid APIs: four verified official manufacturer stores (ICAN, Winspace/Lún, Hunt, Yoeleo — 3,478 offers synced with price history), self-hosted SearXNG, CSV/JSON/XML feed imports, manual URL submission and a manual research form.
+- eBay, Brave and YouTube adapters are built but report "not configured" until keys exist; Shopee, AliExpress, Tokopedia, DST, BIDEX, Bike Matrix and others are registered with the agreement or manual workflow they need.
+- Admin → Data sources: provider status, enable/disable, connectivity tests, URL submission, research queue with notes and review decisions. All admin APIs are authorised on the server.
+- Fixed a baseline schema bug: `is_admin()` recursed through the `profiles` policy, so no admin write could pass RLS.
+
+## Previous release — master catalogue infrastructure, Phase 2 (18 Nov 2026)
 
 Plan: `docs/ecosystem-plan.md`. Exact architecture, measurements and what is not done yet: `docs/phase2-architecture.md`.
 
